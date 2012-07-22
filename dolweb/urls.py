@@ -1,17 +1,20 @@
 from django.conf.urls import patterns, include, url
+from django.contrib import admin
 
-# Uncomment the next two lines to enable the admin:
-# from django.contrib import admin
-# admin.autodiscover()
+admin.autodiscover()
 
 urlpatterns = patterns('',
-    # Examples:
-    # url(r'^$', 'dolweb.views.home', name='home'),
-    # url(r'^dolweb/', include('dolweb.foo.urls')),
+    # Homepage
+    url(r'^$', 'dolweb.homepage.views.home', name='home'),
+    url(r'^news/(?P<slug>[\w-]+)/$', 'dolweb.homepage.views.news_article',
+        name='news-article'),
 
-    # Uncomment the admin/doc line below to enable admin documentation:
-    # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
+    # Documentation (FAQ and guides)
+    url(r'^docs/', include('dolweb.docs.urls')),
 
-    # Uncomment the next line to enable the admin:
-    # url(r'^admin/', include(admin.site.urls)),
+    # Downloads
+    url(r'^download/', include('dolweb.downloads.urls')),
+
+    # Django administration
+    url(r'^admin/', include(admin.site.urls)),
 )
