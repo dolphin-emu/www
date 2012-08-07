@@ -1,9 +1,8 @@
 Django==1.4
 Markdown==2.2.0
+PIL==1.1.7
 distribute==0.6.24
-django-appconf==0.5
 django-bootstrap-form==2.0.3
 django-debug-toolbar==0.9.4
 django-grappelli==2.3.8
-django-staticfiles==1.2.1
 wsgiref==0.1.2
