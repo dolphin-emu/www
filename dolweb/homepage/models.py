@@ -6,6 +6,7 @@ class Screenshot(models.Model):
     game_name = models.CharField(max_length=64)
     description = models.TextField(blank=True)
     image = models.ImageField(upload_to='homepage/screenshots')
+    published = models.BooleanField(default=False)
 
     def __unicode__(self):
         return self.game_name
@@ -22,6 +23,7 @@ class NewsArticle(models.Model):
     posted_on = models.DateTimeField(auto_now_add=True)
     forum_pid = models.IntegerField(null=True)
     text = models.TextField()
+    published = models.BooleanField(default=False)
 
     def __unicode__(self):
         return self.title

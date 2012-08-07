@@ -24,6 +24,7 @@ class Guide(models.Model):
     author = models.CharField(max_length=128)
     last_updated = models.DateTimeField(auto_now=True, auto_now_add=True)
     text = models.TextField()
+    published = models.BooleanField(default=False)
 
     def __unicode__(self):
         return self.title
