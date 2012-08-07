@@ -1,12 +1,24 @@
 from django.conf import settings
 from django.http import Http404, HttpResponse
+from django.shortcuts import render_to_response
 from django.views.decorators.csrf import csrf_exempt
-from dolweb.downloads.models import DevVersion
+from dolweb.downloads.models import DevVersion, ReleaseVersion
 
 import hashlib
 import hmac
 
 def index(request):
+    """Displays the downloads index"""
+
+    releases = ReleaseVersion.objects.order_by('-date')
+    master_builds = DevVersion.objects.filter(branch='master').order_by('-date')[:20]
+
+    return render_to_response('downloads-index.html', {
+        'releases': releases,
+        'master_builds': master_builds,
+    })
+
+def branches(request):
     raise NotImplemented
 
 @csrf_exempt
