@@ -2,11 +2,46 @@
 
 <html>
     <head>
+        <meta charset="utf-8">
         <title>Dolphin Emulator - {% block "title" %}{% endblock %}</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="{{ STATIC_URL }}css/bootstrap.min.css" rel="stylesheet">
+        <link href="{{ STATIC_URL }}css/dolphin.css" rel="stylesheet">
     </head>
 
     <body>
-        {% block "body" %}
-        {% endblock %}
+        <div class="navbar">
+            <div class="navbar-inner">
+                <div class="container">
+                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <a class="brand" href="#">Dolphin Emulator</a>
+                    <div class="nav-collapse">
+                        <ul class="nav">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Media</a></li>
+                            <li><a href="#">Download</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Guides</a></li>
+                            <li><a href="#">Forum</a></li>
+                            <li><a href="#">Wiki</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            {% block "body" %}
+            {% endblock %}
+        </div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <script src="{{ STATIC_URL }}js/bootstrap.min.js"></script>
     </body>
 </html>

@@ -1,6 +1,7 @@
 from django.conf import settings
 from django.http import Http404, HttpResponse
 from django.shortcuts import render_to_response
+from django.template import RequestContext
 from django.views.decorators.csrf import csrf_exempt
 from dolweb.downloads.models import DevVersion, ReleaseVersion
 
@@ -16,7 +17,7 @@ def index(request):
     return render_to_response('downloads-index.html', {
         'releases': releases,
         'master_builds': master_builds,
-    })
+    }, context_instance=RequestContext(request))
 
 def branches(request):
     raise NotImplemented
