@@ -72,7 +72,7 @@ STATIC_URL = '/media/static/'
 
 # Additional locations of static files
 STATICFILES_DIRS = (
-    os.path.join(PROJECT_ROOT, 'static')
+    os.path.join(PROJECT_ROOT, 'static'),
 )
 
 # List of finder classes that know how to find static files in
@@ -112,8 +112,6 @@ TEMPLATE_DIRS = (
     os.path.join(PROJECT_ROOT, 'templates'),
 )
 
-GRAPPELLI_ADMIN_TITLE = 'Dolphin Website Administration Panel'
-
 INSTALLED_APPS = (
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -121,14 +119,11 @@ INSTALLED_APPS = (
     'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.admin',
 
     # External
     'bootstrapform',
     'debug_toolbar',
-    'grappelli',
-
-    # Needs to be after Grappelli
-    'django.contrib.admin',
 
     # Internal
     'dolweb.homepage',

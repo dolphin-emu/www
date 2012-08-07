@@ -1,1 +1,5 @@
-# Create your views here.
+def index(request):
+    raise NotImplemented
+
+def new(request):
+    raise NotImplemented
