@@ -1,3 +1,10 @@
 h1 a.anchor, h2 a.anchor {
     font-size: 60%;
 }
+
+#gallery > a {
+    border: 1px solid #777;
+    display: inline-block;
+    margin: 0 1.5em 1.5em 0;
+    padding: 4px;
+}
