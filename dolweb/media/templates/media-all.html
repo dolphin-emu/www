@@ -23,7 +23,7 @@
     {% for image in images %}
     {% thumbnail image.image "x1080" upscale=False format="JPEG" quality=80 as big %}
     <a href="{{ big.url }}" title="{{ image.game_name }}" rel="gallery">
-        {% thumbnail image.image "100x100" crop="center" as small %}
+        {% thumbnail image.image "150x150" crop="center" as small %}
         <img src="{{ small.url }}" alt="{{ image.game_name }}">
         {% endthumbnail %}
     </a>
