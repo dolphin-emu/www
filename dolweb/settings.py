@@ -137,6 +137,7 @@ INSTALLED_APPS = (
     # External
     'bootstrapform',
     'debug_toolbar',
+    'sorl.thumbnail',
 
     # Internal
     'dolweb.homepage',

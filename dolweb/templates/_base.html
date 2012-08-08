@@ -11,6 +11,8 @@
 
         <link href="{{ STATIC_URL }}css/bootstrap.min.css" rel="stylesheet">
         <link href="{{ STATIC_URL }}css/dolphin.css" rel="stylesheet">
+        {% block "extracss" %}
+        {% endblock %}
     </head>
 
     <body>
@@ -26,7 +28,7 @@
                     <div class="nav-collapse">
                         <ul class="nav">
                             <li><a href="{% url home %}">{% trans "Home" %}</a></li>
-                            <li><a href="#">{% trans "Media" %}</a></li>
+                            <li><a href="{% url media-all %}">{% trans "Media" %}</a></li>
                             <li><a href="{% url downloads-index %}">{% trans "Download" %}</a></li>
                             <li><a href="{% url docs-faq %}">{% trans "FAQ" %}</a></li>
                             <li><a href="{% url docs-guides-index %}">{% trans "Guides" %}</a></li>
@@ -46,5 +48,7 @@
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
         <script src="{{ STATIC_URL }}js/bootstrap.min.js"></script>
+        {% block "extrajs" %}
+        {% endblock %}
     </body>
 </html>

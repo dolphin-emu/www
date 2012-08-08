@@ -6,3 +6,4 @@ django-bootstrap-form==2.0.3
 django-debug-toolbar==0.9.4
 wsgiref==0.1.2
 django-annoying==0.7.6
+sorl-thumbnail==11.12

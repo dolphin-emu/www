@@ -1,0 +1,44 @@
+{% extends "_base.html" %}
+
+{% load i18n %}
+{% load thumbnail %}
+
+{% block "title" %}{% trans "Media gallery" %}{% endblock %}
+
+{% block "extracss" %}
+<link rel="stylesheet" href="{{ STATIC_URL }}css/bootstrap-image-gallery.min.css">
+{% endblock %}
+
+{% block "extrajs" %}
+<script src="{{ STATIC_URL }}js/load-image.min.js"></script>
+<script src="{{ STATIC_URL }}js/bootstrap-image-gallery.min.js"></script>
+{% endblock %}
+
+{% block "body" %}
+<div class="page-header">
+    <h1>{% trans "Media gallery" %}</h1>
+</div>
+
+<div id="modal-gallery" class="modal modal-gallery hide fade">
+    <div class="modal-header">
+        <a class="close" data-dismiss="modal">&times;</a>
+        <h3 class="modal-title"></h3>
+    </div>
+    <div class="modal-body"><div class="modal-image"></div></div>
+    <div class="modal-footer">
+        <a class="btn modal-download" target="_blank"><i class="icon-download"></i> Download</a>
+        <a class="btn btn-info modal-prev"><i class="icon-arrow-left icon-white"></i> Previous</a>
+        <a class="btn btn-primary modal-next">Next <i class="icon-arrow-right icon-white"></i></a>
+    </div>
+</div>
+
+<div id="gallery" data-toggle="modal-gallery" data-target="#modal-gallery">
+    {% for image in images %}
+    <a href="{{ image.get_absolute_url }}" title="{{ image.game_name }}" rel="gallery">
+        {% thumbnail image.image "100x100" crop="center" as small %}
+        <img src="{{ small.url }}" alt="{{ image.game_name }}">
+        {% endthumbnail %}
+    </a>
+    {% endfor %}
+</div>
+{% endblock %}
