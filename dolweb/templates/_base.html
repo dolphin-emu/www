@@ -46,6 +46,9 @@
             {% endblock %}
         </div>
 
+        {% block "outerbody" %}
+        {% endblock %}
+
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
         <script src="{{ STATIC_URL }}js/bootstrap.min.js"></script>
         {% block "extrajs" %}
