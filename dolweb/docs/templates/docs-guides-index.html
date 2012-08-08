@@ -1,0 +1,19 @@
+{% extends "_base.html" %}
+
+{% load i18n %}
+
+{% block "title" %}{% trans "Guides" %}{% endblock %}
+
+{% block "body" %}
+<div class="page-header">
+    <h1>{% trans "Guides" %}</h1>
+</div>
+
+<ul>
+{% for guide in guides %}
+<li><a href="{{ guide.get_absolute_url }}">{{ guide.title }}</a>
+    {% blocktrans with author=guide.author %}(by {{ author }}){% endblocktrans %}</li>
+{% empty %}
+<li><em>{% trans "No published guide available" %}</em></ul>
+{% endfor %}
+{% endblock %}

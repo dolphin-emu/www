@@ -10,7 +10,9 @@ def faq(request):
                               context_instance=RequestContext(request))
 
 def guides_index(request):
-    raise NotImplemented
+    guides = Guide.objects.filter(published=True).order_by('title')
+    return render_to_response('docs-guides-index.html', { 'guides': guides },
+                              context_instance=RequestContext(request))
 
 def guide(request):
     raise NotImplemented
