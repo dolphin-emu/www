@@ -6,7 +6,7 @@ DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 SERVE_MEDIA = DEBUG
 
-PROJECT_ROOT = os.path.abspath(os.path.dirname(__file__))
+PROJECT_ROOT = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
 
 ADMINS = (
     # ('Your Name', 'your_email@example.com'),
@@ -58,7 +58,7 @@ MEDIA_ROOT = os.path.join(PROJECT_ROOT, 'media', 'user')
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a
 # trailing slash.
 # Examples: "http://media.lawrence.com/media/", "http://example.com/media/"
-MEDIA_URL = '/media/user/'
+MEDIA_URL = '/m/user/'
 
 # Absolute path to the directory static files should be collected to.
 # Don't put anything in this directory yourself; store your static files
@@ -68,11 +68,11 @@ STATIC_ROOT = os.path.join(PROJECT_ROOT, 'media', 'static')
 
 # URL prefix for static files.
 # Example: "http://media.lawrence.com/static/"
-STATIC_URL = '/media/static/'
+STATIC_URL = '/m/static/'
 
 # Additional locations of static files
 STATICFILES_DIRS = (
-    os.path.join(PROJECT_ROOT, 'static'),
+    os.path.join(PROJECT_ROOT, 'dolweb', 'static'),
 )
 
 # List of finder classes that know how to find static files in
@@ -120,7 +120,7 @@ ROOT_URLCONF = 'dolweb.urls'
 WSGI_APPLICATION = 'dolweb.wsgi.application'
 
 TEMPLATE_DIRS = (
-    os.path.join(PROJECT_ROOT, 'templates'),
+    os.path.join(PROJECT_ROOT, 'dolweb', 'templates'),
 )
 
 INSTALLED_APPS = (
