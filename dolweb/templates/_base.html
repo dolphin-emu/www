@@ -25,11 +25,11 @@
                     <a class="brand" href="#">Dolphin Emulator</a>
                     <div class="nav-collapse">
                         <ul class="nav">
-                            <li><a href="#">{% trans "Home" %}</a></li>
+                            <li><a href="{% url home %}">{% trans "Home" %}</a></li>
                             <li><a href="#">{% trans "Media" %}</a></li>
                             <li><a href="{% url downloads-index %}">{% trans "Download" %}</a></li>
                             <li><a href="{% url docs-faq %}">{% trans "FAQ" %}</a></li>
-                            <li><a href="#">{% trans "Guides" %}</a></li>
+                            <li><a href="{% url docs-guides-index %}">{% trans "Guides" %}</a></li>
                             <li><a href="{{ FORUM_URL }}">{% trans "Forum" %}</a></li>
                             <li><a href="{{ WIKI_URL }}">{% trans "Wiki" %}</a></li>
                             <li><a href="{{ GCODE_URL }}">{% trans "Development" %}</a></li>
