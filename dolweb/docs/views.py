@@ -1,4 +1,4 @@
-from django.shortcuts import render_to_response
+from django.shortcuts import get_object_or_404, render_to_response
 from django.template import RequestContext
 from dolweb.docs.models import FAQCategory, FAQ, Guide
 
@@ -14,5 +14,7 @@ def guides_index(request):
     return render_to_response('docs-guides-index.html', { 'guides': guides },
                               context_instance=RequestContext(request))
 
-def guide(request):
-    raise NotImplemented
+def guide(request, slug):
+    guide = get_object_or_404(Guide, slug=slug)
+    return render_to_response('docs-guide.html', { 'guide': guide },
+                              context_instance=RequestContext(request))
