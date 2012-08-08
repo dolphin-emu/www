@@ -1,19 +1,5 @@
 from django.db import models
 
-class Screenshot(models.Model):
-    """A screenshot that is displayed on the homepage"""
-
-    game_name = models.CharField(max_length=64)
-    description = models.TextField(blank=True)
-    image = models.ImageField(upload_to='homepage/screenshots')
-    published = models.BooleanField(default=False)
-
-    def __unicode__(self):
-        return self.game_name
-
-    def get_absolute_url(self):
-        return self.image.url
-
 class NewsArticle(models.Model):
     """A news article which can be linked to a forum post for comments"""
 

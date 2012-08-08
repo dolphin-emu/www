@@ -142,6 +142,7 @@ INSTALLED_APPS = (
     'dolweb.homepage',
     'dolweb.downloads',
     'dolweb.docs',
+    'dolweb.media',
 )
 
 # A sample logging configuration. The only tangible logging
