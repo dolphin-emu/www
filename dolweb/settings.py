@@ -132,6 +132,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'django.contrib.admin',
     'django.contrib.humanize',
+    'django.contrib.markup',
 
     # External
     'bootstrapform',

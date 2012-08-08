@@ -1,6 +1,7 @@
 {% extends "_base.html" %}
 
 {% load i18n %}
+{% load markup %}
 
 {% block "title" %}{% trans "Frequently Asked Questions" %}{% endblock %}
 
@@ -30,7 +31,7 @@
             <h2 id="{{ question.slug }}">{{ question.title }}
                 <a class="anchor" href="#{{ question.slug }}">¶</a></h2>
 
-            <p>{{ question.text }}</p>
+            {{ question.text|markdown:"safe" }}
             {% endfor %}
             </section>
         {% endfor %}
