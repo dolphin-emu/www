@@ -8,6 +8,9 @@ class FAQCategory(models.Model):
     slug = models.SlugField()
     display_order = models.IntegerField()
 
+    def sorted_questions(self):
+        return self.questions.order_by('title')
+
     def __unicode__(self):
         return self.title
 

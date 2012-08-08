@@ -12,7 +12,7 @@
                 <ul class="nav nav-list">
                     {% for category in categories %}
                     <li class="nav-header">{{ category.title }}</li>
-                    {% for question in category.questions.all %}
+                    {% for question in category.sorted_questions %}
                     <li><a href="#{{ question.slug }}">{{ question.title }}</a></li>
                     {% endfor %}
                     {% endfor %}
@@ -26,7 +26,7 @@
                 <h1>{{ category.title }}</h1>
             </div>
 
-            {% for question in category.questions.all %}
+            {% for question in category.sorted_questions %}
             <h2 id="{{ question.slug }}">{{ question.title }}
                 <a class="anchor" href="#{{ question.slug }}">¶</a></h2>
 
