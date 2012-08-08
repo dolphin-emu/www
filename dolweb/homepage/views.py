@@ -1,9 +1,9 @@
-from django.shortcuts import render_to_response
+from annoying.decorators import render_to
 from django.template import RequestContext
 
+@render_to('homepage-home.html')
 def home(request):
-    return render_to_response("homepage-home.html", {},
-                              context_instance=RequestContext(request))
+    return {}
 
 def news_article(request):
     raise NotImplemented

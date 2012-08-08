@@ -1,23 +1,20 @@
+from annoying.decorators import render_to
 from django.conf import settings
 from django.http import Http404, HttpResponse
-from django.shortcuts import render_to_response
-from django.template import RequestContext
 from django.views.decorators.csrf import csrf_exempt
 from dolweb.downloads.models import DevVersion, ReleaseVersion
 
 import hashlib
 import hmac
 
+@render_to('downloads-index.html')
 def index(request):
     """Displays the downloads index"""
 
     releases = ReleaseVersion.objects.order_by('-date')
     master_builds = DevVersion.objects.filter(branch='master').order_by('-date')[:20]
 
-    return render_to_response('downloads-index.html', {
-        'releases': releases,
-        'master_builds': master_builds,
-    }, context_instance=RequestContext(request))
+    return { 'releases': releases, 'master_builds': master_builds }
 
 def branches(request):
     raise NotImplemented
