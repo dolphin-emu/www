@@ -28,7 +28,7 @@
 
             {% for question in category.questions.all %}
             <h2 id="{{ question.slug }}">{{ question.title }}
-                <a href="#{{ question.slug }}">¶</a></h2>
+                <a class="anchor" href="#{{ question.slug }}">¶</a></h2>
 
             <p>{{ question.text }}</p>
             {% endfor %}
