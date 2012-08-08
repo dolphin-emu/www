@@ -1,0 +1,40 @@
+{% extends "_base.html" %}
+
+{% load i18n %}
+
+{% block "title" %}{% trans "Frequently Asked Questions" %}{% endblock %}
+
+{% block "body" %}
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="span3">
+            <div class="well sidebar-nav">
+                <ul class="nav nav-list">
+                    {% for category in categories %}
+                    <li class="nav-header">{{ category.title }}</li>
+                    {% for question in category.questions.all %}
+                    <li><a href="#{{ question.slug }}">{{ question.title }}</a></li>
+                    {% endfor %}
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+        <div class="span9">
+        {% for category in categories %}
+            <section id="{{ category.slug }}">
+            <div class="page-header">
+                <h1>{{ category.title }}</h1>
+            </div>
+
+            {% for question in category.questions.all %}
+            <h2 id="{{ question.slug }}">{{ question.title }}
+                <a href="#{{ question.slug }}">¶</a></h2>
+
+            <p>{{ question.text }}</p>
+            {% endfor %}
+            </section>
+        {% endfor %}
+        </div>
+    </div>
+</div>
+{% endblock %}

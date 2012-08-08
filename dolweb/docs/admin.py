@@ -1,5 +1,11 @@
 from django.contrib import admin
-from dolweb.docs.models import FAQ, Guide
+from dolweb.docs.models import FAQCategory, FAQ, Guide
+
+class FAQCategoryAdmin(admin.ModelAdmin):
+    list_display = ('title', 'display_order')
+    ordering = ('display_order',)
+    prepopulated_fields = { 'slug': ('title',) }
+admin.site.register(FAQCategory, FAQCategoryAdmin)
 
 class FAQAdmin(admin.ModelAdmin):
     list_display = ('category', 'title', 'last_updated')
