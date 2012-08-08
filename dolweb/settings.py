@@ -103,6 +103,17 @@ MIDDLEWARE_CLASSES = (
     # Uncomment the next line for simple clickjacking protection:
 )
 
+TEMPLATE_CONTEXT_PROCESSORS = (
+    "django.contrib.auth.context_processors.auth",
+    "django.core.context_processors.debug",
+    "django.core.context_processors.i18n",
+    "django.core.context_processors.media",
+    "django.core.context_processors.static",
+    "django.core.context_processors.tz",
+    "django.contrib.messages.context_processors.messages",
+    'dolweb.utils.context_processors.website_urls',
+)
+
 ROOT_URLCONF = 'dolweb.urls'
 
 # Python dotted path to the WSGI application used by Django's runserver.
@@ -160,6 +171,10 @@ LOGGING = {
         },
     }
 }
+
+FORUM_URL = "http://forums.dolphin-emu.org/"
+WIKI_URL = "http://wiki.dolphin-emu.org/"
+GCODE_URL = "http://code.google.com/p/dolphin-emu/"
 
 try:
     from local_settings import *
