@@ -2,6 +2,11 @@
 
 h1 a.anchor, h2 a.anchor {
     font-size: 60%;
+    visibility: hidden;
+}
+
+h1:hover a.anchor, h2:hover a.anchor {
+    visibility: visible;
 }
 
 #gallery {
