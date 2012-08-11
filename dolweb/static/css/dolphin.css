@@ -23,3 +23,43 @@ h1:hover a.anchor, h2:hover a.anchor {
 .commithash {
     font-family: monospace;
 }
+
+ul.versions-list {
+    list-style-type: none;
+}
+
+ul.versions-list span.version {
+    font-weight: bold;
+}
+
+ul.versions-list span.reldate {
+    font-size: 85%;
+}
+
+ul.dev-versions span.description {
+    padding-left: 2em;
+    font-style: italic;
+}
+
+div#download-stable {
+    margin-bottom: 3em;
+}
+
+div#download-stable h1, div#download-dev h1 {
+    margin-bottom: 0.5em;
+}
+
+ul.versions-list div.download-links-div {
+    margin-left: 1.5em;
+    margin-top: 0.2em;
+}
+
+ul.versions-list li:first-child {
+    border-top: 1px solid #CCC;
+}
+
+ul.versions-list li {
+    border-bottom: 1px solid #CCC;
+    padding-top: 0.6em;
+    padding-bottom: 0.6em;
+}

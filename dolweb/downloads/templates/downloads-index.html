@@ -10,6 +10,7 @@
     <h1>{% trans "Download" %}</h1>
 </div>
 
+<div id="download-stable">
 <h1>{% trans "Stable versions" %}</h2>
 
 <p>{% blocktrans %}
@@ -18,13 +19,13 @@
     should use, the latest stable version is generally the best.
 {% endblocktrans %}</p>
 
-<ul class="stable-versions">
+<ul class="versions-list stable-versions">
 {% for ver in releases %}
     <li>
     <span class="version">Dolphin {{ ver.version }}</span>
     <span class="reldate">
         {% blocktrans with reldate=ver.date|naturaltime %}
-        Released {{ reldate }}
+        (released {{ reldate }})
         {% endblocktrans %}
     </span>
     {% include "downloads-links.html" %}
@@ -33,7 +34,9 @@
     <li><em>{% trans "No stable release yet" %}</em></li>
 {% endfor %}
 </ul>
+</div>
 
+<div id="download-dev">
 <h1>{% trans "Development versions" %}</h1>
 
 <p>{% blocktrans %}
@@ -46,13 +49,13 @@
 <a href="{% url downloads-branches %}">{% trans "See all available branches" %}</a>
 </p>
 
-<ul>
+<ul class="versions-list dev-versions">
 {% for ver in master_builds %}
     <li>
     <span class="version"><a href="{{ ver.get_absolute_url }}">{{ ver.shortrev }}</a></span>
     <span class="reldate">
         {% blocktrans with reldate=ver.date|naturaltime %}
-        Released {{ reldate }}
+        (released {{ reldate }})
         {% endblocktrans %}
     </span>
     <span class="description">{{ ver.description_abbrev }}</span>
@@ -64,5 +67,6 @@
 </ul>
 
 <p><a class="btn" href="">{% trans "View older versions »" %}</a></p>
+</div>
 
 {% endblock %}

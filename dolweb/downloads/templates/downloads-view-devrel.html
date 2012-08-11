@@ -11,7 +11,7 @@
 </div>
 
 <div class="row-fluid">
-    <div class="span4">
+    <div class="span5">
         <dl>
             <dt>{% trans "Version" %}
             <dd>{{ ver.shortrev }}
@@ -26,7 +26,7 @@
 
         {% include "downloads-links.html" %}
     </div>
-    <div class="span8">
+    <div class="span7">
         <dl>
             <dt>{% trans "Commit" %}
             <dd class="commithash"><a href="{{ GCODE_URL }}source/detail?r={{ ver.hash }}">{{ ver.hash }}</a></dd>

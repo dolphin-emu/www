@@ -1,13 +1,14 @@
 {% load i18n %}
 
-<ul class="download-links">
+<div class="download-links-div">
+    <span class="download-for">{% trans "Download for:" %}</span>
     {% if ver.win64_url %}
-    <li class="x64"><a href="{{ ver.win64_url }}">Windows x64</a></li>
+    <a class="btn btn-primary x64" href="{{ ver.win64_url }}">Windows x64</a>
     {% endif %}
     {% if ver.win32_url %}
-    <li class="x86"><a href="{{ ver.win32_url }}">Windows x86</a></li>
+    <a class="btn btn-primary x86" href="{{ ver.win32_url }}">Windows x86</a>
     {% endif %}
     {% if ver.osx_url %}
-    <li class="osx"><a href="{{ ver.osx_url }}">Mac OS X</a></li>
+    <a class="btn btn-primary osx" href="{{ ver.osx_url }}">Mac OS X</a>
     {% endif %}
-</ul>
+</div>
