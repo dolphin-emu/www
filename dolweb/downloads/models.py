@@ -37,16 +37,15 @@ class DevVersion(DownloadableVersion):
     description_abbrev = models.CharField(max_length=256)
 
     def __unicode__(self):
+        return _("Dolphin %s") % self.revbranch
+
+    @property
+    def revbranch(self):
         if self.branch == "master":
             version = self.shortrev
         else:
             version = u"%s-%s" % (self.branch, self.shortrev)
-
-        return _("Dolphin %s") % version
-
-    @property
-    def revbranch(self):
-        return u"%s-%s" % (self.shortrev, self.branch)
+        return version
 
     @models.permalink
     def get_absolute_url(self):
