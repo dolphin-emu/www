@@ -5,4 +5,5 @@ def website_urls(request):
         "FORUM_URL": settings.FORUM_URL,
         "WIKI_URL": settings.WIKI_URL,
         "GCODE_URL": settings.GCODE_URL,
+        "GOOGLE_ANALYTICS_ACCOUNT": settings.GOOGLE_ANALYTICS_ACCOUNT,
     }
