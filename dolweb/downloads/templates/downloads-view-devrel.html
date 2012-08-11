@@ -10,26 +10,34 @@
     <h1>{% blocktrans with br=ver.revbranch %}Informations for {{ br }}{% endblocktrans %}</h1>
 </div>
 
-<dl>
-    <dt>{% trans "Version" %}
-    <dd>{{ ver.shortrev }}
+<div class="row-fluid">
+    <div class="span4">
+        <dl>
+            <dt>{% trans "Version" %}
+            <dd>{{ ver.shortrev }}
 
-    <dt>{% trans "Branch" %}
-    <dd>{{ ver.branch }}
+            <dt>{% trans "Branch" %}
+            <dd>{{ ver.branch }}
 
-    <dt>{% trans "Commit" %}
-    <dd><a href="{{ GCODE_URL }}source/detail?r={{ ver.hash }}">{{ ver.hash }}</a></dd>
+            <dt>{% trans "Date" %}
+            <dd>{{ ver.date|naturaltime }}
 
-    <dt>{% trans "Date" %}
-    <dd>{{ ver.date|naturaltime }}
+        </dl>
 
-    <dt>{% trans "Change author" %}
-    <dd>{{ ver.author }}
+        {% include "downloads-links.html" %}
+    </div>
+    <div class="span8">
+        <dl>
+            <dt>{% trans "Commit" %}
+            <dd class="commithash"><a href="{{ GCODE_URL }}source/detail?r={{ ver.hash }}">{{ ver.hash }}</a></dd>
 
-    <dt>{% trans "Change description" %}
-    <dd>{{ ver.description }}
-</dl>
+            <dt>{% trans "Change author" %}
+            <dd>{{ ver.author }}
 
-{% include "downloads-links.html" %}
+            <dt>{% trans "Change description" %}
+            <dd>{{ ver.description }}
+        </dl>
+    </div>
+</div>
 
 {% endblock %}
