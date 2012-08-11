@@ -15,7 +15,7 @@ class ReleaseVersionAdmin(admin.ModelAdmin):
 admin.site.register(ReleaseVersion, ReleaseVersionAdmin)
 
 class DevVersionAdmin(admin.ModelAdmin):
-    list_display = ('branch', 'shortrev', 'hash', 'date', 'author')
+    list_display = ('revbranch', 'hash', 'date', 'author')
     ordering = ('-date',)
     fieldsets = (
         ('Revision infos', {

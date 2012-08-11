@@ -1,0 +1,35 @@
+{% extends "_base.html" %}
+
+{% load humanize %}
+{% load i18n %}
+
+{% block "title" %}{% blocktrans with br=ver.revbranch %}Informations on {{ br }}{% endblocktrans %}{% endblock %}
+
+{% block "body" %}
+<div class="page-header">
+    <h1>{% blocktrans with br=ver.revbranch %}Informations for {{ br }}{% endblocktrans %}</h1>
+</div>
+
+<dl>
+    <dt>{% trans "Version" %}
+    <dd>{{ ver.shortrev }}
+
+    <dt>{% trans "Branch" %}
+    <dd>{{ ver.branch }}
+
+    <dt>{% trans "Commit" %}
+    <dd><a href="{{ GCODE_URL }}source/detail?r={{ ver.hash }}">{{ ver.hash }}</a></dd>
+
+    <dt>{% trans "Date" %}
+    <dd>{{ ver.date|naturaltime }}
+
+    <dt>{% trans "Change author" %}
+    <dd>{{ ver.author }}
+
+    <dt>{% trans "Change description" %}
+    <dd>{{ ver.description }}
+</dl>
+
+{% include "downloads-links.html" %}
+
+{% endblock %}

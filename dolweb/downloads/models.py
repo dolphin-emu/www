@@ -44,6 +44,10 @@ class DevVersion(DownloadableVersion):
 
         return _("Dolphin %s") % version
 
+    @property
+    def revbranch(self):
+        return u"%s-%s" % (self.shortrev, self.branch)
+
     @models.permalink
     def get_absolute_url(self):
-        return ('downloads-view-dev', [self.hash])
+        return ('downloads-view-devrel', (), { 'hash': self.hash })

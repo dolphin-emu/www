@@ -6,9 +6,11 @@
 {% block "title" %}{% trans "Download" %}{% endblock %}
 
 {% block "body" %}
-<h1>{% trans "Download" %}</h1>
+<div class="page-header">
+    <h1>{% trans "Download" %}</h1>
+</div>
 
-<h2>{% trans "Stable versions" %}</h2>
+<h1>{% trans "Stable versions" %}</h2>
 
 <p>{% blocktrans %}
     Stable versions are released after a lot of testing to ensure emulation
@@ -32,12 +34,12 @@
 {% endfor %}
 </ul>
 
-<h2>{% trans "Development versions" %}</h2>
+<h1>{% trans "Development versions" %}</h1>
 
 <p>{% blocktrans %}
     Development versions are released every time a developer makes a change to
     Dolphin. Using development versions enables you to use the greatest and
-    latest improvements to the project, at the cost of a decreased stability.
+    latest improvements to the project, at the cost of decreased stability.
 {% endblocktrans %}</p>
 
 <p>{% trans "Only displaying the <tt>master</tt> branch versions." %}
@@ -47,7 +49,7 @@
 <ul>
 {% for ver in master_builds %}
     <li>
-    <span class="version">{{ ver.shortrev }}</span>
+    <span class="version"><a href="{{ ver.get_absolute_url }}">{{ ver.shortrev }}</a></span>
     <span class="reldate">
         {% blocktrans with reldate=ver.date|naturaltime %}
         Released {{ reldate }}
@@ -57,10 +59,10 @@
     {% include "downloads-links.html" %}
     </li>
 {% empty %}
-    <li><em>{% trans "No stable release yet" %}</em></li>
+    <li><em>{% trans "No development release yet" %}</em></li>
 {% endfor %}
 </ul>
 
-<p><a href="">{% trans "View older versions" %}</a></p>
+<p><a class="btn" href="">{% trans "View older versions »" %}</a></p>
 
 {% endblock %}

@@ -1,6 +1,7 @@
 from annoying.decorators import render_to
 from django.conf import settings
 from django.http import Http404, HttpResponse
+from django.shortcuts import get_object_or_404
 from django.views.decorators.csrf import csrf_exempt
 from dolweb.downloads.models import DevVersion, ReleaseVersion
 
@@ -18,6 +19,12 @@ def index(request):
 
 def branches(request):
     raise NotImplemented
+
+@render_to('downloads-view-devrel.html')
+def view_dev_release(request, hash):
+    release = get_object_or_404(DevVersion, hash=hash)
+
+    return { 'ver': release }
 
 @csrf_exempt
 def new(request):
