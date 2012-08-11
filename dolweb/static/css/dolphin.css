@@ -63,3 +63,13 @@ ul.versions-list li {
     padding-top: 0.6em;
     padding-bottom: 0.6em;
 }
+
+ul.versions-list li span.version {
+    display: inline-block;
+    width: 4em;
+}
+
+ul.versions-list li span.reldate {
+    display: inline-block;
+    width: 16em;
+}
