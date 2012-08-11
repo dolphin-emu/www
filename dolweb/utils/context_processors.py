@@ -7,3 +7,15 @@ def website_urls(request):
         "GCODE_URL": settings.GCODE_URL,
         "GOOGLE_ANALYTICS_ACCOUNT": settings.GOOGLE_ANALYTICS_ACCOUNT,
     }
+
+def guess_system_from_ua(request):
+    ua = request.META.get('HTTP_USER_AGENT', None)
+    if ua is None:
+        return { "USER_OS": "unknown" }
+
+    if "Windows" in ua:
+        return { "USER_OS": "win" }
+    elif "Macintosh" in ua:
+        return { "USER_OS": "osx" }
+    else:
+        return { "USER_OS": "unknown" }

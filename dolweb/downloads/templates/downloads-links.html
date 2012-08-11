@@ -3,12 +3,12 @@
 <div class="download-links-div">
     <span class="download-for">{% trans "Download for:" %}</span>
     {% if ver.win64_url %}
-    <a class="btn btn-primary x64" href="{{ ver.win64_url }}">Windows x64</a>
+    <a class="btn {% if USER_OS == "unknown" or USER_OS == "win" %}btn-primary{% endif %} x64" href="{{ ver.win64_url }}">Windows x64</a>
     {% endif %}
     {% if ver.win32_url %}
-    <a class="btn btn-primary x86" href="{{ ver.win32_url }}">Windows x86</a>
+    <a class="btn {% if USER_OS == "unknown" or USER_OS == "win" %}btn-primary{% endif %} x86" href="{{ ver.win32_url }}">Windows x86</a>
     {% endif %}
     {% if ver.osx_url %}
-    <a class="btn btn-primary osx" href="{{ ver.osx_url }}">Mac OS X</a>
+    <a class="btn {% if USER_OS == "unknown" or USER_OS == "osx" %}btn-primary{% endif %} osx" href="{{ ver.osx_url }}">Mac OS X</a>
     {% endif %}
 </div>

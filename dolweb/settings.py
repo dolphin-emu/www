@@ -112,6 +112,7 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     "django.core.context_processors.tz",
     "django.contrib.messages.context_processors.messages",
     'dolweb.utils.context_processors.website_urls',
+    'dolweb.utils.context_processors.guess_system_from_ua',
 )
 
 ROOT_URLCONF = 'dolweb.urls'
