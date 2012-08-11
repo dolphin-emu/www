@@ -69,4 +69,21 @@
 <p><a class="btn" href="">{% trans "View older versions »" %}</a></p>
 </div>
 
+<div id="download-source">
+    <h1>{% trans "Source code" %}</h1>
+
+    <p>{% blocktrans %}
+    The latest version of the Dolphin source code can be downloaded from the
+    project Git repository.
+    {% endblocktrans %}</p>
+
+    <pre>
+    $ git clone https://code.google.com/p/dolphin-emu/</pre>
+
+    <p>{% blocktrans %}
+    You can also <a href="http://code.google.com/p/dolphin-emu/source/browse/">browse
+        the current version of the source code</a>.
+    {% endblocktrans %}</p>
+</div>
+
 {% endblock %}

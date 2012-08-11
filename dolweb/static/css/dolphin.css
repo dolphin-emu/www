@@ -41,11 +41,11 @@ ul.dev-versions span.description {
     font-style: italic;
 }
 
-div#download-stable {
+div#download-stable, div#download-dev {
     margin-bottom: 3em;
 }
 
-div#download-stable h1, div#download-dev h1 {
+div#download-stable h1, div#download-dev h1, div#download-source h1 {
     margin-bottom: 0.5em;
 }
 
