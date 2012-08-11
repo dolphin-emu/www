@@ -32,10 +32,6 @@ ul.versions-list span.version {
     font-weight: bold;
 }
 
-ul.versions-list span.reldate {
-    font-size: 85%;
-}
-
 ul.dev-versions span.description {
     padding-left: 2em;
     font-style: italic;
@@ -66,10 +62,10 @@ ul.versions-list li {
 
 ul.versions-list li span.version {
     display: inline-block;
-    width: 4em;
+    width: 8em;
 }
 
 ul.versions-list li span.reldate {
     display: inline-block;
-    width: 16em;
+    width: 14em;
 }

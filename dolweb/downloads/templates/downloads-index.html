@@ -23,11 +23,7 @@
 {% for ver in releases %}
     <li>
     <span class="version">Dolphin {{ ver.version }}</span>
-    <span class="reldate">
-        {% blocktrans with reldate=ver.date|naturaltime %}
-        (released {{ reldate }})
-        {% endblocktrans %}
-    </span>
+    <span class="reldate">{{ ver.date|naturaltime }}</span>
     {% include "downloads-links.html" %}
     </li>
 {% empty %}
@@ -53,11 +49,7 @@
 {% for ver in master_builds %}
     <li>
     <span class="version"><a href="{{ ver.get_absolute_url }}">{{ ver.shortrev }}</a></span>
-    <span class="reldate">
-        {% blocktrans with reldate=ver.date|naturaltime %}
-        (released {{ reldate }})
-        {% endblocktrans %}
-    </span>
+    <span class="reldate">{{ ver.date|naturaltime }}</span>
     <span class="description">{{ ver.description_abbrev }}</span>
     {% include "downloads-links.html" %}
     </li>
