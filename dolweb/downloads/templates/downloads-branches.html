@@ -9,13 +9,29 @@
     <h1>{% trans "Download development builds" %}</h1>
 </div>
 
-{% for branch, builds in branches %}
-    <div id="download-dev">
-    <h1>{% blocktrans %}<tt>{{ branch }}</tt> branch{% endblocktrans %}</h1>
-    {% include "downloads-devrel.html" %}
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="span9">
+            {% for branch, builds in branches %}
+                <div id="download-dev">
+                <h1>{% blocktrans %}<tt>{{ branch }}</tt> branch{% endblocktrans %}</h1>
+                {% include "downloads-devrel.html" %}
 
-    <p><a class="btn" href="">{% trans "View older versions »" %}</a></p>
+                <p><a class="btn" href="">{% trans "View older versions »" %}</a></p>
+                </div>
+            {% endfor %}
+        </div>
+        <div class="span3">
+            <div class="well sidebar-nav">
+                <ul class="nav nav-list">
+                    <li class="nav-header">{% trans "Branch list" %}</li>
+                    {% for branch, builds in branches %}
+                    <li><a href="#{{ branch }}">{{ branch }}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
     </div>
-{% endfor %}
+</div>
 
 {% endblock %}
