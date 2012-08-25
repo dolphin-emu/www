@@ -1,5 +1,6 @@
 from annoying.decorators import render_to
 from django.conf import settings
+from django.core.paginator import Paginator, EmptyPage
 from django.http import Http404, HttpResponse
 from django.shortcuts import get_object_or_404
 from django.views.decorators.csrf import csrf_exempt
@@ -40,6 +41,22 @@ def view_dev_release(request, hash):
     release = get_object_or_404(DevVersion, hash=hash)
 
     return { 'ver': release }
+
+@render_to('downloads-list.html')
+def list(request, branch, page):
+    if branch != 'master':
+        get_object_or_404(BranchInfo, name=branch)
+
+    builds = DevVersion.objects.filter(branch=branch).order_by('-date')
+    pagi = Paginator(builds, 20)
+
+    try:
+        page_obj = pagi.page(page)
+    except EmptyPage:
+        raise Http404
+
+    return { 'branch': branch, 'page': page, 'page_obj': page_obj,
+             'pagi': pagi }
 
 @csrf_exempt
 def new(request):

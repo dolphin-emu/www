@@ -56,7 +56,7 @@
 
 {% include "downloads-devrel.html" with builds=master_builds %}
 
-<p><a class="btn" href="">{% trans "View older versions »" %}</a></p>
+<p><a class="btn" href="{% url downloads-list "master" 1 %}">{% trans "View older versions »" %}</a></p>
 </div>
 
 <div id="download-source">

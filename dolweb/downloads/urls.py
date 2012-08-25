@@ -5,6 +5,8 @@ urlpatterns = patterns('dolweb.downloads.views',
     url(r'^branches/$', 'branches', name='downloads-branches'),
     url(r'^new/$', 'new', name='downloads-new'),
 
+    url(r'list/(?P<branch>[a-zA-Z0-9_-]+)/(?P<page>\d+)/$', 'list', name='downloads-list'),
+
     url(r'^dev/(?P<hash>[0-9a-f]{40})/$', 'view_dev_release',
         name='downloads-view-devrel'),
 )
