@@ -3,7 +3,7 @@ from django.conf import settings
 from django.http import Http404, HttpResponse
 from django.shortcuts import get_object_or_404
 from django.views.decorators.csrf import csrf_exempt
-from dolweb.downloads.models import DevVersion, ReleaseVersion
+from dolweb.downloads.models import BranchInfo, DevVersion, ReleaseVersion
 
 import hashlib
 import hmac
@@ -13,12 +13,24 @@ def index(request):
     """Displays the downloads index"""
 
     releases = ReleaseVersion.objects.order_by('-date')
-    master_builds = DevVersion.objects.filter(branch='master').order_by('-date')[:20]
+    master_builds = DevVersion.objects.filter(branch='master').order_by('-date')[:10]
 
     return { 'releases': releases, 'master_builds': master_builds }
 
+@render_to('downloads-branches.html')
 def branches(request):
-    raise NotImplemented
+    """Displays all the visible branches"""
+
+    infos = BranchInfo.objects.filter(visible=True).order_by('name')
+    branches = []
+
+    for info in infos:
+        branches.append((
+            info.name,
+            DevVersion.objects.filter(branch=info.name).order_by('-date')[:5]
+        ))
+
+    return { 'branches': branches }
 
 @render_to('downloads-view-devrel.html')
 def view_dev_release(request, hash):

@@ -1,6 +1,15 @@
 from django.db import models
 from django.utils.translation import ugettext as _
 
+class BranchInfo(models.Model):
+    """Used to add metadata to Dolphin Git branches (mostly visible or not)"""
+
+    name = models.CharField(max_length=64, db_index=True)
+    visible = models.BooleanField(default=True)
+
+    def __unicode__(self):
+        return self.name
+
 class DownloadableVersion(models.Model):
     """Abstract model definining the download links for a downloadable version
     of Dolphin."""
@@ -28,7 +37,7 @@ class ReleaseVersion(DownloadableVersion):
 class DevVersion(DownloadableVersion):
     """Download infos for a developement/nightly release"""
 
-    branch = models.CharField(max_length=64)
+    branch = models.CharField(max_length=64, db_index=True)
     shortrev = models.CharField(max_length=64)
     hash = models.CharField(max_length=64, db_index=True)
     date = models.DateTimeField(auto_now_add=True)

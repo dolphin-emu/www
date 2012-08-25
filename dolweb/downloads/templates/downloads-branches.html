@@ -1,0 +1,33 @@
+{% extends "_base.html" %}
+
+{% load humanize %}
+{% load i18n %}
+
+{% block "title" %}{% trans "Download development builds" %}{% endblock %}
+
+{% block "body" %}
+<div class="page-header">
+    <h1>{% trans "Download development builds" %}</h1>
+</div>
+
+{% for branch, builds in branches %}
+    <div id="download-dev">
+    <h1><tt>{{ branch }}</tt> branch</h1>
+    <ul class="versions-list dev-versions">
+    {% for ver in builds %}
+        <li>
+        <span class="version"><a href="{{ ver.get_absolute_url }}">{{ ver.shortrev }}</a></span>
+        <span class="reldate">{{ ver.date|naturaltime }}</span>
+        <span class="description">{{ ver.description_abbrev }}</span>
+        {% include "downloads-links.html" %}
+        </li>
+    {% empty %}
+        <li><em>{% trans "No development release yet" %}</em></li>
+    {% endfor %}
+    </ul>
+
+    <p><a class="btn" href="">{% trans "View older versions »" %}</a></p>
+    </div>
+{% endfor %}
+
+{% endblock %}

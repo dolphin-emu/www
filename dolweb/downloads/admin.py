@@ -1,5 +1,10 @@
 from django.contrib import admin
-from dolweb.downloads.models import ReleaseVersion, DevVersion
+from dolweb.downloads.models import BranchInfo, ReleaseVersion, DevVersion
+
+class BranchInfoAdmin(admin.ModelAdmin):
+    list_display = ('name', 'visible')
+    ordering = ('-visible', 'name')
+admin.site.register(BranchInfo, BranchInfoAdmin)
 
 class ReleaseVersionAdmin(admin.ModelAdmin):
     list_display = ('version', 'date')
