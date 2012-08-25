@@ -7,6 +7,9 @@ from dolweb.downloads.models import BranchInfo, DevVersion, ReleaseVersion
 
 import hashlib
 import hmac
+import multiprocessing
+
+_addbuild_lock = multiprocessing.Lock()
 
 @render_to('downloads-index.html')
 def index(request):
@@ -63,32 +66,37 @@ def new(request):
     if hm.hexdigest() != request.POST['hmac']:
         return HttpResponse('Invalid HMAC', status=403)
 
-    # Check if we already have a commit with the same hash
+    # Lock to avoid race conditions
     try:
-        build_obj = DevVersion.objects.get(hash=hash)
-    except DevVersion.DoesNotExist:
-        build_obj = DevVersion()
-        build_obj.branch = branch
-        build_obj.shortrev = shortrev
-        build_obj.hash = hash
-        build_obj.author = author
-        build_obj.description = description
+        _addbuild_lock.acquire()
+        # Check if we already have a commit with the same hash
+        try:
+            build_obj = DevVersion.objects.get(hash=hash)
+        except DevVersion.DoesNotExist:
+            build_obj = DevVersion()
+            build_obj.branch = branch
+            build_obj.shortrev = shortrev
+            build_obj.hash = hash
+            build_obj.author = author
+            build_obj.description = description
 
-        # Shorten the description by taking only the first line, truncating it to
-        # 250 chars and adding an ellipsis if truncated
-        descr_abbrev = description.split('\n')[0]
-        if len(descr_abbrev) >= 250:
-            descr_abbrev = descr_abbrev[:250] + "..."
-        build_obj.description_abbrev = descr_abbrev
+            # Shorten the description by taking only the first line, truncating it to
+            # 250 chars and adding an ellipsis if truncated
+            descr_abbrev = description.split('\n')[0]
+            if len(descr_abbrev) >= 250:
+                descr_abbrev = descr_abbrev[:250] + "..."
+            build_obj.description_abbrev = descr_abbrev
 
-    if build_type == 'win32':
-        build_obj.win32_url = build_url
-    elif build_type == 'win64':
-        build_obj.win64_url = build_url
-    elif build_type == 'osx':
-        build_obj.osx_url = build_url
-    else:
-        return HttpResponse('Wrong build type', status=400)
+        if build_type == 'win32':
+            build_obj.win32_url = build_url
+        elif build_type == 'win64':
+            build_obj.win64_url = build_url
+        elif build_type == 'osx':
+            build_obj.osx_url = build_url
+        else:
+            return HttpResponse('Wrong build type', status=400)
 
-    build_obj.save()
-    return HttpResponse('OK')
+        build_obj.save()
+        return HttpResponse('OK')
+    finally:
+        _addbuild_lock.release()
