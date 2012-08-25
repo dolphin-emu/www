@@ -13,11 +13,11 @@
 <div id="download-stable">
 <h1>{% trans "Stable versions" %}</h2>
 
-<p>{% blocktrans %}
+<div class="alert alert-info">{% blocktrans %}
     Stable versions are released after a lot of testing to ensure emulation
-    performance and stability. If you do not know what version of Dolphin you
-    should use, the latest stable version is generally the best.
-{% endblocktrans %}</p>
+    performance and stability. <strong>If you do not know what version of Dolphin you
+        should use, the latest stable version is generally the best.</strong>
+{% endblocktrans %}</div>
 
 <table class="versions-list stable-versions">
     <tbody>
@@ -44,17 +44,18 @@
 <div id="download-dev">
 <h1>{% trans "Development versions" %}</h1>
 
-<p>{% blocktrans %}
-    Development versions are released every time a developer makes a change to
-    Dolphin. Using development versions enables you to use the greatest and
-    latest improvements to the project, at the cost of decreased stability.
-{% endblocktrans %}</p>
+<div class="alert">{% blocktrans %}
+    <strong>Warning!</strong> Development versions are released every time a
+    developer makes a change to Dolphin. Using development versions enables you
+    to use the greatest and latest improvements to the project, at the cost of
+    decreased stability.
+{% endblocktrans %}</div>
 
 <p>{% trans "Only displaying the <tt>master</tt> branch versions." %}
 <a class="all-branches" href="{% url downloads-branches %}">{% trans "Show all available branches" %}</a>.
 </p>
 
-{% include "downloads-devrel.html" with builds=master_builds %}
+{% include "downloads-devrel.html" with builds=master_builds primclass='btn-info' %}
 
 <p><a class="btn" href="{% url downloads-list "master" 1 %}">{% trans "View older versions »" %}</a></p>
 </div>
