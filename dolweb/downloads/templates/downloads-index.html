@@ -51,7 +51,7 @@
 {% endblocktrans %}</p>
 
 <p>{% trans "Only displaying the <tt>master</tt> branch versions." %}
-<a href="{% url downloads-branches %}">{% trans "Show all available branches" %}</a>.
+<a class="all-branches" href="{% url downloads-branches %}">{% trans "Show all available branches" %}</a>.
 </p>
 
 {% include "downloads-devrel.html" with builds=master_builds %}

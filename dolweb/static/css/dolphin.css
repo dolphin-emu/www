@@ -20,6 +20,10 @@ h1:hover a.anchor, h2:hover a.anchor {
     padding: 4px;
 }
 
+#download-dev a.all-branches {
+    font-weight: bold;
+}
+
 .commithash {
     font-family: monospace;
 }
