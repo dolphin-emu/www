@@ -19,17 +19,26 @@
     should use, the latest stable version is generally the best.
 {% endblocktrans %}</p>
 
-<ul class="versions-list stable-versions">
-{% for ver in releases %}
-    <li>
-    <span class="version">Dolphin {{ ver.version }}</span>
-    <span class="reldate">{{ ver.date|naturaltime }}</span>
-    {% include "downloads-links.html" %}
-    </li>
-{% empty %}
-    <li><em>{% trans "No stable release yet" %}</em></li>
-{% endfor %}
-</ul>
+<table class="versions-list stable-versions">
+    <tbody>
+    {% for ver in releases %}
+        <tr class="infos">
+            <td class="version">Dolphin {{ ver.version }}</td>
+            <td class="reldate">{{ ver.date|naturaltime }}</td>
+            <td class="description"></td>
+        </tr>
+        <tr class="download">
+            <td></td>
+            <td class="download-links" colspan="2">
+                {% include "downloads-links.html" %}
+            </td>
+        </tr>
+        </li>
+    {% empty %}
+        <tr><td colspan="2"><em>{% trans "No stable release yet" %}</em></td></tr>
+    {% endfor %}
+    </tbody>
+</table>
 </div>
 
 <div id="download-dev">
@@ -45,18 +54,7 @@
 <a href="{% url downloads-branches %}">{% trans "Show all available branches" %}</a>.
 </p>
 
-<ul class="versions-list dev-versions">
-{% for ver in master_builds %}
-    <li>
-    <span class="version"><a href="{{ ver.get_absolute_url }}">{{ ver.shortrev }}</a></span>
-    <span class="reldate">{{ ver.date|naturaltime }}</span>
-    <span class="description">{{ ver.description_abbrev }}</span>
-    {% include "downloads-links.html" %}
-    </li>
-{% empty %}
-    <li><em>{% trans "No development release yet" %}</em></li>
-{% endfor %}
-</ul>
+{% include "downloads-devrel.html" with builds=master_builds %}
 
 <p><a class="btn" href="">{% trans "View older versions »" %}</a></p>
 </div>

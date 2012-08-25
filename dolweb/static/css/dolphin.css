@@ -24,17 +24,29 @@ h1:hover a.anchor, h2:hover a.anchor {
     font-family: monospace;
 }
 
-ul.versions-list {
-    list-style-type: none;
+.versions-list {
+    width: 100%;
+    margin-bottom: 1em;
 }
 
-ul.versions-list span.version {
+.versions-list td.version {
     font-weight: bold;
+    text-align: center;
+    width: 10%;
 }
 
-ul.dev-versions span.description {
-    padding-left: 2em;
+.versions-list td.reldate {
+    text-align: center;
+    width: 15%;
+}
+
+.versions-list td.description {
+    width: 65%;
     font-style: italic;
+}
+
+.versions-list tr.infos td {
+    padding-bottom: 0.5em;
 }
 
 div#download-stable, div#download-dev {
@@ -45,27 +57,28 @@ div#download-stable h1, div#download-dev h1, div#download-source h1 {
     margin-bottom: 0.5em;
 }
 
-ul.versions-list div.download-links-div {
-    margin-left: 1.5em;
-    margin-top: 0.2em;
-}
-
-ul.versions-list li:first-child {
+.versions-list tr:first-child {
     border-top: 1px solid #CCC;
 }
 
-ul.versions-list li {
-    border-bottom: 1px solid #CCC;
+.versions-list tr.infos td {
     padding-top: 0.6em;
+}
+
+.versions-list tr.download {
+    border-bottom: 1px solid #CCC;
+}
+
+.versions-list tr.download td {
     padding-bottom: 0.6em;
 }
 
-ul.versions-list li span.version {
+.versions-list li span.version {
     display: inline-block;
     width: 8em;
 }
 
-ul.versions-list li span.reldate {
+.versions-list li span.reldate {
     display: inline-block;
     width: 14em;
 }

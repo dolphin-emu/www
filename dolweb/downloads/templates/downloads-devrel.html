@@ -1,0 +1,22 @@
+{% load humanize %}
+{% load i18n %}
+
+<table class="versions-list dev-versions">
+    <tbody>
+    {% for ver in builds %}
+        <tr class="infos">
+            <td class="version"><a href="{{ ver.get_absolute_url }}">{{ ver.shortrev }}</a></td>
+            <td class="reldate">{{ ver.date|naturaltime }}</td>
+            <td class="description">{{ ver.description_abbrev }}</td>
+        </tr>
+        <tr class="download">
+            <td></td>
+            <td class="download-links" colspan="2">
+                {% include "downloads-links.html" %}
+            </td>
+        </tr>
+    {% empty %}
+    <tr><td colspan="3"><em>{% trans "No development release yet" %}</em></td></tr>
+    {% endfor %}
+    </tbody>
+</table>

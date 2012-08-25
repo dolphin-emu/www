@@ -1,13 +1,9 @@
-{% load i18n %}
-
-<div class="download-links-div">
-    {% if ver.win64_url %}
-    <a class="btn {% if USER_OS == "unknown" or USER_OS == "win" %}btn-primary{% endif %} x64" href="{{ ver.win64_url }}"><i class="icon-download-alt {% if USER_OS != "osx" %}icon-white{% endif %}"></i> Windows x64</a>
-    {% endif %}
-    {% if ver.win32_url %}
-    <a class="btn {% if USER_OS == "unknown" or USER_OS == "win" %}btn-primary{% endif %} x86" href="{{ ver.win32_url }}"><i class="icon-download-alt {% if USER_OS != "osx" %}icon-white{% endif %}"></i> Windows x86</a>
-    {% endif %}
-    {% if ver.osx_url %}
-    <a class="btn {% if USER_OS == "unknown" or USER_OS == "osx" %}btn-primary{% endif %} osx" href="{{ ver.osx_url }}"><i class="icon-download-alt {% if USER_OS != "win" %}icon-white{% endif %}"></i> Mac OS X</a>
-    {% endif %}
-</div>
+{% if ver.win64_url %}
+<a class="btn {% if USER_OS == "unknown" or USER_OS == "win" %}btn-primary{% endif %} x64" href="{{ ver.win64_url }}"><i class="icon-download-alt {% if USER_OS != "osx" %}icon-white{% endif %}"></i> Windows x64</a>
+{% endif %}
+{% if ver.win32_url %}
+<a class="btn {% if USER_OS == "unknown" or USER_OS == "win" %}btn-primary{% endif %} x86" href="{{ ver.win32_url }}"><i class="icon-download-alt {% if USER_OS != "osx" %}icon-white{% endif %}"></i> Windows x86</a>
+{% endif %}
+{% if ver.osx_url %}
+<a class="btn {% if USER_OS == "unknown" or USER_OS == "osx" %}btn-primary{% endif %} osx" href="{{ ver.osx_url }}"><i class="icon-download-alt {% if USER_OS != "win" %}icon-white{% endif %}"></i> Mac OS X</a>
+{% endif %}
