@@ -88,9 +88,15 @@ div#download-stable h1, div#download-dev h1, div#download-source h1 {
 }
 
 .download-btn {
-    margin-top: 2em;
+    margin-top: 4.5em;
 }
 
 #sshot-carousel {
     box-shadow: 0 0 6px #222222;
+    margin-bottom: 0;
+}
+
+.hero-unit .requirements {
+    font-size: 0.9em;
+    line-height: 1.4em;
 }
