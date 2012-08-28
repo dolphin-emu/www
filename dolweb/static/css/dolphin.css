@@ -86,3 +86,7 @@ div#download-stable h1, div#download-dev h1, div#download-source h1 {
     display: inline-block;
     width: 14em;
 }
+
+.download-btn {
+    margin-top: 2em;
+}

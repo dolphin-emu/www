@@ -1,17 +1,43 @@
 {% extends "_base.html" %}
 
 {% load i18n %}
+{% load thumbnail %}
 
 {% block "title" %}{% trans "Homepage" %}{% endblock %}
 
 {% block "body" %}
 <div class="hero-unit">
-    <h1>{% trans "Dolphin Emulator" %}</h1>
-    <p>
-    {% trans "Play your Gamecube and Wii games in HD resolution on your PC." %}
-    </p>
+    <div class="container">
+        <div class="row">
+            <div class="span6">
+                <h1>{% trans "Dolphin Emulator" %}</h1>
+                <p>
+                {% trans "Play Gamecube and Wii games in HD resolution on your PC." %}
+                </p>
 
-    <p><a class="btn btn-primary btn-large" href="{% url downloads-index %}">{% trans "Download now for Windows, Mac and Linux" %}</a></p>
+                <p class="download-btn"><a class="btn btn-primary btn-large" href="{% url downloads-index %}">{% trans "Download now for Windows, Mac and Linux »" %}</a></p>
+            </div>
+            <div class="span5">
+                <div id="sshot-carousel" class="carousel slide">
+                    <div class="carousel-inner">
+                        {% for image in featured_images %}
+                        <div class="{% if forloop.first %}active {% endif %}item">
+                            {% thumbnail image.image "640x360" crop="center" format="JPEG" quality=80 as big %}
+                            <img src="{{ big.url }}" alt="{{ image.game_name }}">
+                            <div class="carousel-caption">
+                                <h4>{{ image.game_name }}</h4>
+                            </div>
+                            {% endthumbnail %}
+                        </div>
+                        {% endfor %}
+                    </div>
+
+                    <a class="carousel-control left" href="#sshot-carousel" data-slide="prev">&lsaquo;</a>
+                    <a class="carousel-control right" href="#sshot-carousel" data-slide="next">&rsaquo;</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 <div class="row-fluid">
@@ -53,4 +79,12 @@
     </div>
 </div>
 
+{% endblock %}
+
+{% block "extrajs" %}
+<script>
+    $('.carousel').carousel({
+        interval: 10000
+    });
+</script>
 {% endblock %}
