@@ -15,7 +15,7 @@
                 {% trans "Play Gamecube and Wii games in HD resolution on your PC." %}
                 </p>
 
-                <p class="download-btn"><a class="btn btn-primary btn-large" href="{% url downloads-index %}">{% trans "Download Dolphin 4.0 now for Windows, Mac and Linux »" %}</a></p>
+                <p class="download-btn"><a class="btn btn-primary btn-large" href="{% url downloads-index %}">{% blocktrans %}Download {{ last_release }} now for Windows, Mac and Linux »{% endblocktrans %}</a></p>
 
                 <p class="requirements">
                 <strong>Minimal requirements</strong>: SSE2 compatible CPU, Shader Model 3.0 GPU, 2GB of RAM, 50MB of disk space
@@ -74,6 +74,23 @@
     </div>
 
     <div class="span4">
+        <h2>{% trans "Recent Dolphin news" %}</h2>
+        <p>
+        <ul>
+            <li>TODO</li>
+            <li>TODO</li>
+            <li>TODO</li>
+            <li>TODO</li>
+        </ul>
+        </p>
+    </div>
+</div>
+
+<div class="row-fluid">
+</div>
+
+<div class="row-fluid">
+    <div class="span4">
         <h2>{% trans "Great compatibility" %}</h2>
         <p>
         {% blocktrans %}
@@ -81,6 +98,32 @@
         without issues. New Wii releases often work on Dolphin from day one.
         Wiiware and Virtual Console games are also supported. Check out
         the <a href="{{ WIKI_URL }}">Dolphin compatibility wiki</a>.
+        {% endblocktrans %}
+        </p>
+    </div>
+
+    <div class="span4">
+        <h2>{% trans "Helpful community" %}</h2>
+        <p>
+        {% url docs-faq as FAQ_URL %}
+        {% blocktrans %}
+        Installation issues? Trying to figure out the best settings for a
+        game? Or just interested in discussion about Gamecube and Wii games
+        you like? If the <a href="{{ FAQ_URL }}">Frequently Asked Questions</a>
+        can't help you, other Dolphin users may be willing to help you over at the
+        <a href="{{ FORUM_URL }}">official discussion forums</a>.
+        {% endblocktrans %}
+        </p>
+    </div>
+
+    <div class="span4">
+        <h2>{% trans "Free and Open Source" %}</h2>
+        <p>
+        {% blocktrans %}
+        The Dolphin Emulator is developed by volunteers from all around the
+        world and distributed free of charge. Want to help the project improve?
+        Grab the emulator source code from <a href="{{ GCODE_URL }}">Google
+        Code</a> and start hacking!
         {% endblocktrans %}
         </p>
     </div>
