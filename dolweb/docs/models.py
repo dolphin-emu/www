@@ -9,7 +9,7 @@ class FAQCategory(models.Model):
     display_order = models.IntegerField()
 
     def sorted_questions(self):
-        return self.questions.order_by('title')
+        return self.questions.order_by('display_order')
 
     def __unicode__(self):
         return self.title
@@ -29,6 +29,7 @@ class FAQ(models.Model):
     slug = models.SlugField()
     last_updated = models.DateTimeField(auto_now=True, auto_now_add=True)
     text = models.TextField()
+    display_order = models.IntegerField()
 
     def __unicode__(self):
         return self.title
