@@ -108,3 +108,14 @@ section.faq-section div.faq-answer {
 section.faq-section {
     margin-bottom: 3em;
 }
+
+footer {
+    margin-top: 0.5em;
+    border-top: 1px solid #ddd;
+    padding-top: 0.5em;
+}
+
+footer p.footer-text {
+    text-align: center;
+    color: #888;
+}
