@@ -101,7 +101,7 @@ div#download-stable h1, div#download-dev h1, div#download-source h1 {
     line-height: 1.4em;
 }
 
-section.faq-section p {
+section.faq-section div.faq-answer {
     margin-bottom: 1.5em;
 }
 

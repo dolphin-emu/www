@@ -31,7 +31,9 @@
             <h3 id="{{ question.slug }}">{{ question.title }}
                 <a class="anchor" href="#{{ question.slug }}">¶</a></h3>
 
+            <div class="faq-answer">
             {{ question.text|markdown:"safe" }}
+            </div>
             {% endfor %}
             </section>
         {% endfor %}
