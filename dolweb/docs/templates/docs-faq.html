@@ -22,14 +22,14 @@
         </div>
         <div class="span9">
         {% for category in categories %}
-            <section id="{{ category.slug }}">
+            <section id="{{ category.slug }}" class="faq-section">
             <div class="page-header">
                 <h1>{{ category.title }}</h1>
             </div>
 
             {% for question in category.sorted_questions %}
-            <h2 id="{{ question.slug }}">{{ question.title }}
-                <a class="anchor" href="#{{ question.slug }}">¶</a></h2>
+            <h3 id="{{ question.slug }}">{{ question.title }}
+                <a class="anchor" href="#{{ question.slug }}">¶</a></h3>
 
             {{ question.text|markdown:"safe" }}
             {% endfor %}

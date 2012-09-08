@@ -1,11 +1,11 @@
 .navbar-inner { border-radius: 0; }
 
-h1 a.anchor, h2 a.anchor {
+h1 a.anchor, h3 a.anchor {
     font-size: 60%;
     visibility: hidden;
 }
 
-h1:hover a.anchor, h2:hover a.anchor {
+h1:hover a.anchor, h3:hover a.anchor {
     visibility: visible;
 }
 
@@ -99,4 +99,12 @@ div#download-stable h1, div#download-dev h1, div#download-source h1 {
 .hero-unit .requirements {
     font-size: 0.9em;
     line-height: 1.4em;
+}
+
+section.faq-section p {
+    margin-bottom: 1.5em;
+}
+
+section.faq-section {
+    margin-bottom: 3em;
 }
