@@ -87,8 +87,12 @@ div#download-stable h1, div#download-dev h1, div#download-source h1 {
     width: 14em;
 }
 
+.hero-unit h1 {
+    margin-top: 0.5em;
+}
+
 .download-btn {
-    margin-top: 4.5em;
+    margin-top: 3.0em;
 }
 
 #sshot-carousel {
