@@ -1,6 +1,7 @@
 {% extends "_base.html" %}
 
 {% load i18n %}
+{% load humanize %}
 {% load thumbnail %}
 
 {% block "title" %}{% trans "Homepage" %}{% endblock %}
@@ -77,10 +78,10 @@
         <h2>{% trans "Recent Dolphin news" %}</h2>
         <p>
         <ul>
-            <li>TODO</li>
-            <li>TODO</li>
-            <li>TODO</li>
-            <li>TODO</li>
+            {% for news in latest_news %}
+            <li><a href="{{ news.forum_url }}">{{ news.title }}</a>
+                ({% trans "by" %} {{ news.author }}, {{ news.posted_on|naturaltime }})</li>
+            {% endfor %}
         </ul>
         </p>
     </div>

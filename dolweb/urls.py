@@ -9,8 +9,6 @@ admin.autodiscover()
 urlpatterns = patterns('',
     # Homepage
     url(r'^$', 'dolweb.homepage.views.home', name='home'),
-    url(r'^news/(?P<slug>[\w-]+)/$', 'dolweb.homepage.views.news_article',
-        name='news-article'),
 
     # Media (image gallery, link to videos)
     url(r'^media/', include('dolweb.media.urls')),
