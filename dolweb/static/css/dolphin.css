@@ -1,5 +1,13 @@
 .navbar-inner { border-radius: 0; }
 
+.navbar .brand {
+    background-image: url("../img/logo.png");
+    background-size: 42px 25px;
+    background-position: 14px center;
+    background-repeat: no-repeat;
+    padding-left: 70px;
+}
+
 h1 a.anchor, h3 a.anchor {
     font-size: 60%;
     visibility: hidden;
