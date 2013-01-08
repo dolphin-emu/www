@@ -110,6 +110,8 @@ def new(request):
             build_obj.win64_url = build_url
         elif build_type == 'osx':
             build_obj.osx_url = build_url
+        elif build_type == 'ubu':
+            build_obj.ubu_url = build_url
         else:
             return HttpResponse('Wrong build type', status=400)
 

@@ -17,6 +17,7 @@ class DownloadableVersion(models.Model):
     win32_url = models.URLField(null=True)
     win64_url = models.URLField(null=True)
     osx_url = models.URLField(null=True)
+    ubu_url = models.URLField(null=True)
 
     class Meta:
         abstract = True

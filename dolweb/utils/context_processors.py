@@ -17,5 +17,7 @@ def guess_system_from_ua(request):
         return { "USER_OS": "win" }
     elif "Macintosh" in ua:
         return { "USER_OS": "osx" }
+    elif "Ubuntu" in ua:
+        return { "USER_OS": "ubu" }
     else:
         return { "USER_OS": "unknown" }
