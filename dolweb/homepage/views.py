@@ -6,7 +6,7 @@ from dolweb.media.models import Screenshot
 @render_to('homepage-home.html')
 def home(request):
     featured = Screenshot.objects.filter(promoted=True).order_by('game_name')
-    news = NewsArticle.objects.filter(published=True).order_by('-posted_on')[:5]
+    news = NewsArticle.objects.filter(published=True).order_by('-posted_on')[:4]
     try:
         last_release = ReleaseVersion.objects.order_by('-date')[0]
     except IndexError:
