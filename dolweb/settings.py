@@ -1,4 +1,5 @@
 # Django settings for dolweb project.
+# -*- encoding: utf-8 -*-
 
 import os.path
 
@@ -37,6 +38,11 @@ TIME_ZONE = 'Europe/Paris'
 # Language code for this installation. All choices can be found here:
 # http://www.i18nguy.com/unicode/language-identifiers.html
 LANGUAGE_CODE = 'en-us'
+
+LANGUAGES = (
+    ('en', u'English'),
+    ('fr', u'Français'),
+)
 
 SITE_ID = 1
 
@@ -100,6 +106,7 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
     # Uncomment the next line for simple clickjacking protection:
 )
 
