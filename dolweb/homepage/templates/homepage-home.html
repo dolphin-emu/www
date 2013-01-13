@@ -19,10 +19,12 @@
                 <p class="download-btn"><a class="btn btn-primary btn-large" href="{% url downloads-index %}?ref=btn">{% blocktrans %}Download {{ last_release }} now for Windows, Mac and Linux »{% endblocktrans %}</a></p>
 
                 <p class="requirements">
+                {% blocktrans %}
                 <strong>Minimal requirements</strong>: SSE2 compatible CPU, Shader Model 3.0 GPU, 2GB of RAM, 50MB of disk space
+                {% endblocktrans %}
                 </p>
                 <p class="requirements">
-                    <a href="{% url docs-faq %}#hardware-system-requirements">More information about hardware requirements</a>
+                    <a href="{% url docs-faq %}#hardware-system-requirements">{% trans "More information about hardware requirements" %}</a>
                 </p>
             </div>
             <div class="span5">
