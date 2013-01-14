@@ -1,4 +1,5 @@
 {% load i18n %}
+{% load language %}
 
 <!DOCTYPE html>
 
@@ -41,7 +42,7 @@
                     </a>
                     <a class="brand" href="{% url home %}">Dolphin Emulator</a>
                     <div class="nav-collapse">
-                        <ul class="nav">
+                        <ul class="nav pull-left">
                             <li><a href="{% url home %}">{% trans "Home" %}</a></li>
                             <li><a href="{% url media-all %}">{% trans "Media" %}</a></li>
                             <li><a href="{% url downloads-index %}">{% trans "Download" %}</a></li>
@@ -50,6 +51,18 @@
                             <li><a href="{{ FORUM_URL }}">{% trans "Forum" %}</a></li>
                             <li><a href="{{ WIKI_URL }}">{% trans "Wiki" %}</a></li>
                             <li><a href="{{ GCODE_URL }}">{% trans "Development" %}</a></li>
+                        </ul>
+                        <ul class="nav pull-right">
+                            <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img class="curr-flag" src="{{ STATIC_URL }}img/flags/{{ LANGUAGE_CODE|short }}.png" alt="{{ LANGUAGE_CODE|short }}"> {{ LANGUAGE_CODE|langname }} <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                {% for langcode, langname in LANGUAGES %}
+                                    {% if langcode != LANGUAGE_CODE|short %}
+                                    <li><a href="http://{{ langcode|to_subdomain }}{{ request.get_full_path }}"><img class="flag" src="{{ STATIC_URL }}img/flags/{{ langcode }}.png" alt="{{ langcode }}"> {{ langname }}</a></li>
+                                    {% endif %}
+                                {% endfor %}
+                                </ul>
+                            </li>
                         </ul>
                     </div>
                 </div>

@@ -131,3 +131,13 @@ footer p.footer-text {
     text-align: center;
     color: #888;
 }
+
+.nav img.curr-flag {
+    margin-right: 0.7em;
+    margin-top: -2px;
+}
+
+.nav img.flag {
+    margin-right: 0.7em;
+    margin-top: -2px;
+}
