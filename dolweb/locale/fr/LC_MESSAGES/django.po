@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-01-13 22:02+0100\n"
+"POT-Creation-Date: 2013-01-16 08:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,7 +23,7 @@ msgid "Frequently Asked Questions"
 msgstr "Foire aux Questions"
 
 #: docs/templates/docs-guides-index.html:5
-#: docs/templates/docs-guides-index.html:9 templates/_base.html:49
+#: docs/templates/docs-guides-index.html:9 templates/_base.html:52
 msgid "Guides"
 msgstr "Guides"
 
@@ -65,7 +65,7 @@ msgid "No development release yet"
 msgstr "Pas de version en développement disponible"
 
 #: downloads/templates/downloads-index.html:6
-#: downloads/templates/downloads-index.html:25 templates/_base.html:47
+#: downloads/templates/downloads-index.html:25 templates/_base.html:50
 msgid "Download"
 msgstr "Télécharger"
 
@@ -160,7 +160,7 @@ msgstr "branche %(branch)s, page %(page)s"
 #: downloads/templates/downloads-list.html:9
 #, python-format
 msgid "<tt>%(branch)s</tt> branch - page %(page)s"
-msgstr "branche <tt>%(branch)s</tt>, page %(page)s"
+msgstr "Branche <tt>%(branch)s</tt>, page %(page)s"
 
 #: downloads/templates/downloads-view-devrel.html:6
 #, python-format
@@ -200,7 +200,8 @@ msgstr "Description"
 msgid "Gamecube/Wii games on PC"
 msgstr "jouez à la Gamecube/Wii sur PC"
 
-#: homepage/templates/homepage-home.html:14
+#: homepage/templates/homepage-home.html:14 templates/_base.html:9
+#: templates/_base.html.py:45
 msgid "Dolphin Emulator"
 msgstr "Émulateur Dolphin"
 
@@ -221,8 +222,8 @@ msgid ""
 "                "
 msgstr ""
 "\n"
-"                <strong>Configuration minimale</strong>: CPU compatible SSE2, "
-"carte graphique Shader Model 3.0, 2 Go de RAM, 50 Mo d'espace disque\n"
+"                <strong>Configuration minimale</strong>: CPU compatible "
+"SSE2, carte graphique Shader Model 3.0, 2 Go de RAM, 50 Mo d'espace disque\n"
 "                "
 
 #: homepage/templates/homepage-home.html:27
@@ -378,31 +379,31 @@ msgstr "Précédent"
 msgid "Next"
 msgstr "Suivant"
 
-#: templates/_base.html:45
+#: templates/_base.html:48
 msgid "Home"
 msgstr "Accueil"
 
-#: templates/_base.html:46
+#: templates/_base.html:49
 msgid "Media"
 msgstr "Gallerie"
 
-#: templates/_base.html:48
+#: templates/_base.html:51
 msgid "FAQ"
 msgstr "FAQ"
 
-#: templates/_base.html:50
+#: templates/_base.html:53
 msgid "Forum"
 msgstr "Forum"
 
-#: templates/_base.html:51
+#: templates/_base.html:54
 msgid "Wiki"
 msgstr "Wiki"
 
-#: templates/_base.html:52
+#: templates/_base.html:55
 msgid "Development"
 msgstr "Développement"
 
-#: templates/_base.html:69
+#: templates/_base.html:84
 msgid ""
 "\n"
 "            &copy; 2012 Dolphin Emulator Project -\n"
