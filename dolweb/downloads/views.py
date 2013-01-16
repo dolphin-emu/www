@@ -44,10 +44,9 @@ def view_dev_release(request, hash):
 
 @render_to('downloads-list.html')
 def list(request, branch, page):
-    if branch != 'master':
-        get_object_or_404(BranchInfo, name=branch)
-
     builds = DevVersion.objects.filter(branch=branch).order_by('-date')
+    if len(builds) == 0 and branch != 'master':
+        get_object_or_404(BranchInfo, name=branch)
     pagi = Paginator(builds, 20)
 
     try:
