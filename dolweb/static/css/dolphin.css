@@ -141,3 +141,7 @@ footer p.footer-text {
     margin-right: 0.7em;
     margin-top: -2px;
 }
+
+.home-section {
+    text-align: justify;
+}
