@@ -3,17 +3,25 @@ from django.conf import settings
 
 register = template.Library()
 
+EXCEPTIONS = {
+    'pt': ['br'],
+}
+
+@register.filter
+def short(lang_code):
+    parts = lang_code.split('-')
+    code = parts[0]
+    if code in EXCEPTIONS and len(parts) > 1 and parts[1] in EXCEPTIONS[code]:
+        code = parts[1]
+    return code
+
 @register.filter
 def langname(lang_code):
-    code = lang_code.split('-')[0]
+    code = short(lang_code)
     langs = {}
     for c, n in settings.LANGUAGES:
         langs[c] = n
     return langs.get(code, code)
-
-@register.filter
-def short(lang_code):
-    return lang_code.split('-')[0]
 
 @register.filter
 def to_subdomain(lang_code):

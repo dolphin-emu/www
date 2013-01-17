@@ -1,6 +1,10 @@
 from django.utils.translation.trans_real import *
 from django.utils.translation import trans_real
 
+TO_FULL = {
+    'br': 'pt_BR',
+}
+
 _accepted = {}
 def get_language_from_request(request, check_path=False):
     """
@@ -18,8 +22,9 @@ def get_language_from_request(request, check_path=False):
 
     lang_code = request.META.get('HTTP_HOST', 'dolphin-emu.org').split('.')[0]
 
-    if lang_code and lang_code in supported and check_for_language(lang_code):
-        return lang_code
+    full_lang_code = TO_FULL.get(lang_code, lang_code)
+    if lang_code and lang_code in supported and check_for_language(full_lang_code):
+        return full_lang_code
 
     return settings.LANGUAGE_CODE
 

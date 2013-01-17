@@ -42,6 +42,7 @@ LANGUAGE_CODE = 'en-us'
 LANGUAGES = (
     ('en', u'English'),
     ('fr', u'Français'),
+    ('br', u'Português (Brasil)'),
 )
 
 SITE_ID = 1
