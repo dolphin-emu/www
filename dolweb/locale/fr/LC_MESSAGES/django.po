@@ -365,7 +365,7 @@ msgstr ""
 
 #: media/templates/media-all.html:6 media/templates/media-all.html.py:19
 msgid "Media gallery"
-msgstr "Gallerie"
+msgstr "Galerie"
 
 #: media/templates/media-all.html:43
 msgid "Full size"
@@ -385,7 +385,7 @@ msgstr "Accueil"
 
 #: templates/_base.html:49
 msgid "Media"
-msgstr "Gallerie"
+msgstr "Galerie"
 
 #: templates/_base.html:51
 msgid "FAQ"
