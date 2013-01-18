@@ -40,6 +40,7 @@ TIME_ZONE = 'Europe/Paris'
 LANGUAGE_CODE = 'en-us'
 
 LANGUAGES = (
+    ('de', u'Deutsch'),
     ('en', u'English'),
     ('fr', u'Français'),
     ('br', u'Português (Brasil)'),

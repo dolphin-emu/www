@@ -1,0 +1,414 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2012 neobrain
+# This file is distributed under the same license as the dolphin-emu package.
+# neobrain <neobrainx@gmail.com>, 2012.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-01-18 01:16+0100\n"
+"PO-Revision-Date: 2013-01-17 16:19+0100\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 1.5.4\n"
+
+#: docs/templates/docs-faq.html:6
+msgid "Frequently Asked Questions"
+msgstr "Häufig gestellte Fragen"
+
+#: docs/templates/docs-guides-index.html:5
+#: docs/templates/docs-guides-index.html:9 templates/_base.html:52
+msgid "Guides"
+msgstr "Anleitungen"
+
+#: docs/templates/docs-guides-index.html:15
+#, python-format
+msgid "(by %(author)s)"
+msgstr "(von %(author)s)"
+
+#: docs/templates/docs-guides-index.html:17
+msgid "No published guide available"
+msgstr "Keine veröffentlichte Anleitung verfügbar"
+
+#: downloads/models.py:32 downloads/models.py:50
+#, python-format
+msgid "Dolphin %s"
+msgstr "Dolphin %s"
+
+#: downloads/templates/downloads-branches.html:5
+#: downloads/templates/downloads-branches.html:9
+msgid "Download development builds"
+msgstr "Entwicklerversionen"
+
+#: downloads/templates/downloads-branches.html:17
+#, python-format
+msgid "<tt>%(branch)s</tt> branch"
+msgstr "Entwicklungszweig <tt>%(branch)s</tt>"
+
+#: downloads/templates/downloads-branches.html:20
+#: downloads/templates/downloads-index.html:89
+msgid "View older versions »"
+msgstr "Ältere Versionen »"
+
+#: downloads/templates/downloads-branches.html:27
+msgid "Branch list"
+msgstr "Liste von Entwicklungszweigen"
+
+#: downloads/templates/downloads-devrel.html:19
+msgid "No development release yet"
+msgstr "Noch keine Entwicklerversion verfügbar"
+
+#: downloads/templates/downloads-index.html:6
+#: downloads/templates/downloads-index.html:25 templates/_base.html:50
+msgid "Download"
+msgstr "Downloads"
+
+#: downloads/templates/downloads-index.html:29
+msgid "Stable versions"
+msgstr "Stabile Versionen"
+
+#: downloads/templates/downloads-index.html:31
+msgid ""
+"\n"
+"    Stable versions are released after a lot of testing to ensure emulation\n"
+"    performance and stability. <strong>If you do not know what version of\n"
+"    Dolphin you should use, the latest stable version is generally the best."
+"</strong>\n"
+msgstr ""
+"\n"
+"    Stabile Versionen werden nach langen Testphasen veröffentlicht, um eine\n"
+"    hohe Qualität sowie Stabilität der Emulation zu gewährleisten.\n"
+"   <strong>Wer nicht weiß, welche Dolphin-Version er benutzen sollte,ist\n"
+"    mit der neuesten stabilen Version am besten beraten.</strong>\n"
+
+#: downloads/templates/downloads-index.html:53
+msgid "No stable release yet"
+msgstr "Noch keine stabile Version verfügbar"
+
+#: downloads/templates/downloads-index.html:74
+msgid "Development versions"
+msgstr "Entwicklerversionen"
+
+#: downloads/templates/downloads-index.html:76
+msgid ""
+"\n"
+"    <strong>Warning!</strong> Development versions are released every time "
+"a\n"
+"    developer makes a change to Dolphin. Using development versions enables "
+"you\n"
+"    to use the latest and greatest improvements to the project, at the cost "
+"of\n"
+"    decreased stability.\n"
+msgstr ""
+"\n"
+"    <strong>Achtung!</strong> Entwicklerversionen werden nach jeder Änderung "
+"an Dolphin veröffentlicht. Die Entwicklerversionen stellen die neuesten "
+"Verbesserungen zur Verfügung, bringen aber unter Umständen verringerte "
+"Stabililtät mit sich.\n"
+
+#: downloads/templates/downloads-index.html:83
+msgid "Only displaying the <tt>master</tt> branch versions."
+msgstr ""
+"Es werden nur Versionen aus dem Entwicklungszweig <tt>master</tt> angezeigt."
+
+#: downloads/templates/downloads-index.html:84
+msgid "Show all available branches"
+msgstr "Alle verfügbaren Entwicklungszweige anzeigen"
+
+#: downloads/templates/downloads-index.html:93
+msgid "Source code"
+msgstr "Quelltext"
+
+#: downloads/templates/downloads-index.html:95
+msgid ""
+"\n"
+"    The latest version of the Dolphin source code can be downloaded from "
+"the\n"
+"    project Git repository.\n"
+"    "
+msgstr ""
+"\n"
+"    Die neueste Version des Quelltextes von Dolphin kann von unserem Git-"
+"Projektarchiv heruntergeladen werden.\n"
+"    "
+
+#: downloads/templates/downloads-index.html:103
+msgid ""
+"\n"
+"    You can also <a href=\"http://code.google.com/p/dolphin-emu/source/"
+"browse/\">browse\n"
+"        the current version of the source code</a>.\n"
+"    "
+msgstr ""
+"\n"
+"    Du kannst dich auch in der <a href=\"http://code.google.com/p/dolphin-"
+"emu/source/browse/\">aktuellen Version des Quelltextes umsehen</a>\n"
+"    "
+
+#: downloads/templates/downloads-list.html:5
+#, python-format
+msgid "%(branch)s branch - page %(page)s"
+msgstr "Entwicklungszweig %(branch)s - Seite %(page)s"
+
+#: downloads/templates/downloads-list.html:9
+#, python-format
+msgid "<tt>%(branch)s</tt> branch - page %(page)s"
+msgstr ""
+
+#: downloads/templates/downloads-view-devrel.html:6
+#, python-format
+msgid "Information on %(br)s"
+msgstr "Über %(br)s"
+
+#: downloads/templates/downloads-view-devrel.html:10
+#, python-format
+msgid "Information for %(br)s"
+msgstr "Über %(br)s"
+
+#: downloads/templates/downloads-view-devrel.html:16
+msgid "Version"
+msgstr "Version"
+
+#: downloads/templates/downloads-view-devrel.html:19
+msgid "Branch"
+msgstr "Entwicklungszweig"
+
+#: downloads/templates/downloads-view-devrel.html:22
+msgid "Date"
+msgstr "Zeitpunkt"
+
+#: downloads/templates/downloads-view-devrel.html:31
+msgid "Commit"
+msgstr "Commit"
+
+#: downloads/templates/downloads-view-devrel.html:34
+msgid "Change author"
+msgstr "Author der Änderung"
+
+#: downloads/templates/downloads-view-devrel.html:37
+msgid "Change description"
+msgstr "Beschreibung der Änderung"
+
+#: homepage/templates/homepage-home.html:7
+msgid "Gamecube/Wii games on PC"
+msgstr "Gamecube/Wii-Spiele auf dem PC"
+
+#: homepage/templates/homepage-home.html:14 templates/_base.html:9
+#: templates/_base.html.py:45
+msgid "Dolphin Emulator"
+msgstr "Dolphin Emulator"
+
+#: homepage/templates/homepage-home.html:16
+msgid "Play Gamecube and Wii games in HD resolution on your PC."
+msgstr "Spiele Gamecube- und Wii-Spiele in HD auf deinem PC."
+
+#: homepage/templates/homepage-home.html:19
+#, python-format
+msgid "Download %(last_release)s now for Windows, Mac and Linux »"
+msgstr "Jetzt %(last_release)s für Windows, Mac und Linux herunterladen »"
+
+#: homepage/templates/homepage-home.html:22
+msgid ""
+"\n"
+"                <strong>Minimal requirements</strong>: SSE2 compatible CPU, "
+"Shader Model 3.0 GPU, 2GB of RAM, 50MB of disk space\n"
+"                "
+msgstr ""
+"\n"
+"                <strong>Mindestanforderungen</strong>: SSE2 kompatible CPU, "
+"Shader Model 3.0 GPU, 2GB RAM, 50MB Speicherplatz\n"
+"                "
+
+#: homepage/templates/homepage-home.html:27
+msgid "More information about hardware requirements"
+msgstr "Über die Hardwareanforderungen"
+
+#: homepage/templates/homepage-home.html:55
+msgid "Improved graphics"
+msgstr "Verbesserte Grafik"
+
+#: homepage/templates/homepage-home.html:58
+#, python-format
+msgid ""
+"\n"
+"        The Wii only renders games at a 480p resolution. Dolphin supports\n"
+"        720p, 1080p and even higher definitions for all of your\n"
+"        Gamecube and Wii games. <a href=\"%(MEDIA_PAGE_URL)s\">View "
+"screenshots\n"
+"        of games played on Dolphin</a>.\n"
+"        "
+msgstr ""
+"\n"
+"        Auf der Wii laufen Spiele nur mit einer Auflösung von 480p. Dolphin\n"
+"        unterstützt 720p, 1080p und sogar höhere Auflösungen in fast allen\n"
+"        Gamecube- und Wii-Spielen. <a href=\"%(MEDIA_PAGE_URL)s"
+"\">Screenshots\n"
+"        von Spielen mit Dolphin anzeigen</a>.\n"
+"        "
+
+#: homepage/templates/homepage-home.html:68
+msgid "Use your favorite controller"
+msgstr "Spiele mit deinem Gamepad"
+
+#: homepage/templates/homepage-home.html:70
+msgid ""
+"\n"
+"        Not a big fan of the Gamecube controller and the Wiimote? You can\n"
+"        play games with your favorite PC controller, or even with keyboard\n"
+"        and mouse! Wiimotes are still supported, including Wii Motion Plus\n"
+"        for games that require it.\n"
+"        "
+msgstr ""
+"\n"
+"        Du hast keine Lust, den Gamecube-Controller und die Wiimote zu "
+"benutzen? Du kannst\n"
+"        Spiele mit einem Gamepad deiner Wahl oder sogar mit deiner Tastatur "
+"und Maus\n"
+"        spielen! Wiimotes können auch benutzt werden, sogar die MotionPlus-"
+"Erweiterung,\n"
+"        für Spiele, die diese benötigen.\n"
+"        "
+
+#: homepage/templates/homepage-home.html:80
+msgid "Recent Dolphin news"
+msgstr "Neueste Nachrichten zu Dolphin"
+
+#: homepage/templates/homepage-home.html:85
+msgid "by"
+msgstr "von"
+
+#: homepage/templates/homepage-home.html:97
+msgid "Great compatibility"
+msgstr "Hohe Kompatibilität"
+
+#: homepage/templates/homepage-home.html:99
+#, python-format
+msgid ""
+"\n"
+"        Dolphin can play most of the Gamecube and Wii games collection\n"
+"        without issues. New Wii releases often work on Dolphin from day "
+"one.\n"
+"        Wiiware and Virtual Console games are also supported. Check out\n"
+"        the <a href=\"%(WIKI_URL)s\">Dolphin compatibility wiki</a>.\n"
+"        "
+msgstr ""
+"\n"
+"        Dolphin kann die meisten Gamecube- und Wii-Spiele ohne Probleme\n"
+"        ausführen. Neue Wii-Spiele funktionieren mit Dolphin oft schon am "
+"Erscheinungstag.\n"
+"        Wiiware-Spiele und VirtualConsole-Spiele werden auch unterstützt. "
+"Schau dir\n"
+"        <a href=\"%(WIKI_URL)s\">Dolphins Kompatibilitäts-Wiki</a> an.\n"
+"        "
+
+#: homepage/templates/homepage-home.html:109
+msgid "Helpful community"
+msgstr "Hilfsbereite Community"
+
+#: homepage/templates/homepage-home.html:112
+#, python-format
+msgid ""
+"\n"
+"        Installation issues? Trying to figure out the best settings for a\n"
+"        game? Or just interested in discussion about Gamecube and Wii games\n"
+"        you like? If the <a href=\"%(FAQ_URL)s\">Frequently Asked Questions</"
+"a>\n"
+"        can't help you, other Dolphin users may be willing to help you over "
+"at the\n"
+"        <a href=\"%(FORUM_URL)s\">official discussion forums</a>.\n"
+"        "
+msgstr ""
+"\n"
+"        Du hast Installationsprobleme? Du willst die besten Einstellungen "
+"für\n"
+"        ein Spiel finden? Oder bist du einfach an Diskussionen über deine\n"
+"        Lieblingsspiele interessiert? Wenn die <a href=\"%(FAQ_URL)s"
+"\">häufig gestellten Fragen</a>\n"
+"        dir nicht helfen, könnten dich andere Dolphin-Benutzer auf den\n"
+"        <a href=\"%(FORUM_URL)s\">offiziellen Diskussionsforen</a> "
+"unterstützen.\n"
+"        "
+
+#: homepage/templates/homepage-home.html:123
+msgid "Free and Open Source"
+msgstr "Unabhängig und Open-Source"
+
+#: homepage/templates/homepage-home.html:125
+#, python-format
+msgid ""
+"\n"
+"        The Dolphin Emulator is developed by volunteers from all around the\n"
+"        world and distributed free of charge. Want to help the project "
+"improve?\n"
+"        Grab the emulator source code from <a href=\"%(GCODE_URL)s\">Google\n"
+"        Code</a> and start hacking!\n"
+"        "
+msgstr ""
+"\n"
+"        Der Emulator Dolphin wird von Freiwilligen aus der ganzen Welt "
+"entwickelt und\n"
+"        kostenlos zur Verfügung gestellt. Du willst dem Projekt helfen?\n"
+"        Hol dir den Emulatorquelltext unter <a href=\"%(GCODE_URL)s"
+"\">Google\n"
+"        Code</a> und fang an!\n"
+"        "
+
+#: media/templates/media-all.html:6 media/templates/media-all.html.py:19
+msgid "Media gallery"
+msgstr "Bildergallerie"
+
+#: media/templates/media-all.html:43
+msgid "Full size"
+msgstr "Originalgröße"
+
+#: media/templates/media-all.html:44
+msgid "Previous"
+msgstr "Vorheriges"
+
+#: media/templates/media-all.html:45
+msgid "Next"
+msgstr "Nächstes"
+
+#: templates/_base.html:48
+msgid "Home"
+msgstr "Hauptseite"
+
+#: templates/_base.html:49
+msgid "Media"
+msgstr "Bilder"
+
+#: templates/_base.html:51
+msgid "FAQ"
+msgstr "FAQ"
+
+#: templates/_base.html:53
+msgid "Forum"
+msgstr "Forum"
+
+#: templates/_base.html:54
+msgid "Wiki"
+msgstr "Wiki"
+
+#: templates/_base.html:55
+msgid "Development"
+msgstr "Entwicklung"
+
+#: templates/_base.html:84
+msgid ""
+"\n"
+"            &copy; 2012 Dolphin Emulator Project -\n"
+"            <a href=\"https://bitbucket.org/delroth/dolphin-web/\">Website "
+"source code</a>\n"
+"            "
+msgstr ""
+"\n"
+"            &copy; 2012 Dolphin Emulator Project -\n"
+"            <a href=\"https://bitbucket.org/delroth/dolphin-web/\">Quelltext "
+"der Website</a>\n"
+"            "
