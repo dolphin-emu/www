@@ -84,7 +84,7 @@ msgstr ""
 "\n"
 "    Stabile Versionen werden nach langen Testphasen veröffentlicht, um eine\n"
 "    hohe Qualität sowie Stabilität der Emulation zu gewährleisten.\n"
-"   <strong>Wer nicht weiß, welche Dolphin-Version er benutzen sollte,ist\n"
+"   <strong>Wer nicht weiß, welche Dolphin-Version er benutzen sollte, ist\n"
 "    mit der neuesten stabilen Version am besten beraten.</strong>\n"
 
 #: downloads/templates/downloads-index.html:53
