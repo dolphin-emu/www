@@ -42,6 +42,7 @@ LANGUAGE_CODE = 'en-us'
 LANGUAGES = (
     ('de', u'Deutsch'),
     ('en', u'English'),
+    ('es', u'Español'),
     ('fr', u'Français'),
     ('br', u'Português (Brasil)'),
 )
