@@ -140,6 +140,7 @@ footer p.footer-text {
 .nav img.flag {
     margin-right: 0.7em;
     margin-top: -2px;
+    border: 1px solid black;
 }
 
 .home-section {
