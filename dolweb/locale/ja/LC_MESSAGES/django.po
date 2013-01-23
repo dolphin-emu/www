@@ -5,28 +5,26 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Dolphin WEB\n"
+"Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-01-23 06:09+0100\n"
-"PO-Revision-Date: 2013-01-23 00:45+0100\n"
-"Last-Translator: Petiso Carambanal <diegoae@gmail.com>\n"
-"Language-Team: Spanish <LL@li.org>\n"
-"Language: Spanish\n"
+"POT-Creation-Date: 2013-01-23 06:08+0100\n"
+"PO-Revision-Date: 2013-01-23 09:58+0900\n"
+"Last-Translator: \n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.5.4\n"
-"X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
 #: docs/templates/docs-faq.html:6
 msgid "Frequently Asked Questions"
-msgstr "Preguntas más frecuentes"
+msgstr "よくある質問"
 
 #: docs/templates/docs-guides-index.html:5
 #: docs/templates/docs-guides-index.html:9 templates/_base.html:52
 msgid "Guides"
-msgstr "Guías"
+msgstr "利用ガイド"
 
 #: docs/templates/docs-guides-index.html:15
 #, python-format
@@ -35,7 +33,7 @@ msgstr "(by %(author)s)"
 
 #: docs/templates/docs-guides-index.html:17
 msgid "No published guide available"
-msgstr "No hay guías disponibles"
+msgstr "利用ガイドはありません。"
 
 #: downloads/models.py:32 downloads/models.py:50
 #, python-format
@@ -45,34 +43,34 @@ msgstr "Dolphin %s"
 #: downloads/templates/downloads-branches.html:5
 #: downloads/templates/downloads-branches.html:9
 msgid "Download development builds"
-msgstr "Descargar versiones de desarrollo"
+msgstr "開発版のダウンロード"
 
 #: downloads/templates/downloads-branches.html:17
 #, python-format
 msgid "<tt>%(branch)s</tt> branch"
-msgstr "Rama <tt>%(branch)s</tt>"
+msgstr "<tt>%(branch)s</tt> branch"
 
 #: downloads/templates/downloads-branches.html:20
 #: downloads/templates/downloads-index.html:89
 msgid "View older versions »"
-msgstr "Ver versiones antiguas »"
+msgstr "過去のバージョンを入手 »"
 
 #: downloads/templates/downloads-branches.html:27
 msgid "Branch list"
-msgstr "Lista de ramas"
+msgstr "Branch リスト"
 
 #: downloads/templates/downloads-devrel.html:19
 msgid "No development release yet"
-msgstr "No hay versiones de desarrollo disponibles"
+msgstr "現在、開発版のリリースはありません。"
 
 #: downloads/templates/downloads-index.html:6
 #: downloads/templates/downloads-index.html:25 templates/_base.html:50
 msgid "Download"
-msgstr "Descargar"
+msgstr "ダウンロード"
 
 #: downloads/templates/downloads-index.html:29
 msgid "Stable versions"
-msgstr "Versiones estables"
+msgstr "安定版"
 
 #: downloads/templates/downloads-index.html:31
 msgid ""
@@ -83,20 +81,18 @@ msgid ""
 "</strong>\n"
 msgstr ""
 "\n"
-"    Las versiones estables son lanzadas después de muchas pruebas para "
-"asegurar\n"
-"    el rendimiento de la emulación y la estabilidad. <strong>Si no sabes que "
-"versión de\n"
-"    Dolphin debes usar, la última versión estable es normalmente la mejor.</"
-"strong>\n"
+"    安定版はパフォーマンスと安定した動作のテストを繰り返した後にリリースされ"
+"るものです。\n"
+"    <strong>もし、どのバージョンを使うべきかでお悩みなら、\n"
+"    まず最新の安定版を選択することを推奨します。</strong>\n"
 
 #: downloads/templates/downloads-index.html:53
 msgid "No stable release yet"
-msgstr "No hay versiones estables"
+msgstr "現在、安定版のリリースはありません。"
 
 #: downloads/templates/downloads-index.html:74
 msgid "Development versions"
-msgstr "Versiones de desarrollo"
+msgstr "開発版"
 
 #: downloads/templates/downloads-index.html:76
 msgid ""
@@ -110,24 +106,22 @@ msgid ""
 "    decreased stability.\n"
 msgstr ""
 "\n"
-"    <strong>¡Advertencia!</strong> Las versiones de desarrollo son "
-"publicadas cada vez que\n"
-"    un desarrollador hace un cambio a Dolphin. Utilizar versiones de "
-"desarollo te permite\n"
-"    ver los últimos y mejores cambios del proyecto, a costa de\n"
-"    menor estabilidad.\n"
+"    <strong>注意！</strong>　開発版は Dolphin に変更を加えられると\n"
+"    自動的にリリースされるものです。安定性は落ちますが、その時点のプロジェク"
+"トの\n"
+"    最新かつ最大の改善点を試すことが可能です。\n"
 
 #: downloads/templates/downloads-index.html:83
 msgid "Only displaying the <tt>master</tt> branch versions."
-msgstr "Mostrando solo las versiones de la rama <tt>master</tt>."
+msgstr "ここには <tt>master</tt> branchのみが表示されています。"
 
 #: downloads/templates/downloads-index.html:84
 msgid "Show all available branches"
-msgstr "Mostrar todas las ramas disponibles"
+msgstr "現在入手可能な branch のリストを確認"
 
 #: downloads/templates/downloads-index.html:93
 msgid "Source code"
-msgstr "Código fuente"
+msgstr "ソースコードの入手"
 
 #: downloads/templates/downloads-index.html:95
 msgid ""
@@ -138,9 +132,7 @@ msgid ""
 "    "
 msgstr ""
 "\n"
-"    La última versión del código fuente de Dolphin puede ser descargado en "
-"el\n"
-"    proyecto repositorio Git.\n"
+"    最新のソースコードは、Git リポジトリより入手することができます。\n"
 "    "
 
 #: downloads/templates/downloads-index.html:103
@@ -152,72 +144,72 @@ msgid ""
 "    "
 msgstr ""
 "\n"
-"    También puedes <a href=\"http://code.google.com/p/dolphin-emu/source/"
-"browse/\">ver\n"
-"        la versión actual del código fuente</a>.\n"
+"    また、 <a href=\"http://code.google.com/p/dolphin-emu/source/browse/\">こ"
+"ちらのリンクより\n"
+"    現在のソースコードをブラウズ</a> することも可能です。\n"
 "    "
 
 #: downloads/templates/downloads-list.html:5
 #, python-format
 msgid "%(branch)s branch - page %(page)s"
-msgstr "%(branch)s rama - página %(page)s"
+msgstr "%(branch)s branch - %(page)s ページ"
 
 #: downloads/templates/downloads-list.html:9
 #, python-format
 msgid "<tt>%(branch)s</tt> branch - page %(page)s"
-msgstr "Rama <tt>%(branch)s</tt> - página %(page)s"
+msgstr "<tt>%(branch)s</tt> branch - %(page)s ページ"
 
 #: downloads/templates/downloads-view-devrel.html:6
 #, python-format
 msgid "Information on %(br)s"
-msgstr "Información sobre %(br)s"
+msgstr "Information on %(br)s"
 
 #: downloads/templates/downloads-view-devrel.html:10
 #, python-format
 msgid "Information for %(br)s"
-msgstr "Información para %(br)s"
+msgstr "%(br)s に関する情報"
 
 #: downloads/templates/downloads-view-devrel.html:16
 msgid "Version"
-msgstr "Versión"
+msgstr "バージョン"
 
 #: downloads/templates/downloads-view-devrel.html:19
 msgid "Branch"
-msgstr "Rama"
+msgstr "Branch"
 
 #: downloads/templates/downloads-view-devrel.html:22
 msgid "Date"
-msgstr "Fecha"
+msgstr "投稿日時"
 
 #: downloads/templates/downloads-view-devrel.html:31
 msgid "Commit"
-msgstr "Contribución"
+msgstr "Commit"
 
 #: downloads/templates/downloads-view-devrel.html:34
 msgid "Change author"
-msgstr "Cambiar autor"
+msgstr "編集者"
 
 #: downloads/templates/downloads-view-devrel.html:37
 msgid "Change description"
-msgstr "Cambiar descripción"
+msgstr "変更点"
 
 #: homepage/templates/homepage-home.html:7
 msgid "Gamecube/Wii games on PC"
-msgstr "Juegos de Gamecube/wii en PC"
+msgstr "Gamecube/Wii games on PC"
 
 #: homepage/templates/homepage-home.html:14 templates/_base.html:9
 #: templates/_base.html.py:45
 msgid "Dolphin Emulator"
-msgstr "Emulador Dolphin"
+msgstr "Dolphin Emulator"
 
 #: homepage/templates/homepage-home.html:16
 msgid "Play Gamecube and Wii games in HD resolution on your PC."
-msgstr "Juega los juegos de Gamecube y Wii en resoluciones HD en tu PC."
+msgstr "ゲームキューブとWiiのゲームをHD画質で。"
 
 #: homepage/templates/homepage-home.html:19
 #, python-format
 msgid "Download %(last_release)s now for Windows, Mac and Linux »"
-msgstr "Descargar ahora %(last_release)s para Windows, Mac y Linux »"
+msgstr "今すぐ Windows, Mac および Linux用の %(last_release)s を入手 »"
 
 #: homepage/templates/homepage-home.html:22
 msgid ""
@@ -227,17 +219,17 @@ msgid ""
 "                "
 msgstr ""
 "\n"
-"                <strong>Requisitos mínimos</strong>: CPU compatible con "
-"SSE2, GPU con Shader Model 3.0, 2GB de RAM, 50MB de espacio en disco\n"
+"                <strong>必須動作環境</strong>: SSE2互換CPU, Shader Model 3.0 "
+"対応GPU, 2GB RAM, 50MBのディスクスペース\n"
 "                "
 
 #: homepage/templates/homepage-home.html:27
 msgid "More information about hardware requirements"
-msgstr "Más información acerca de los requisitos de hardware"
+msgstr "動作環境について、さらに詳しく"
 
 #: homepage/templates/homepage-home.html:55
 msgid "Improved graphics"
-msgstr "Gráficos mejorados"
+msgstr "高精細なグラフィックス"
 
 #: homepage/templates/homepage-home.html:58
 #, python-format
@@ -251,17 +243,15 @@ msgid ""
 "        "
 msgstr ""
 "\n"
-"        Wii solo renderiza los juegos en una resolución de 480p. Dolphin "
-"soporta\n"
-"        720p, 1080p y resoluciones superiores para todos tus\n"
-"        juegos de Gamecube y Wii. <a href=\"%(MEDIA_PAGE_URL)s\">Ver "
-"capturas\n"
-"        de juegos jugados en Dolphin</a>.\n"
+"        Wii実機の最大解像度は480pに留まります。\n"
+"        Dolphinを使えば、ゲームキューブ、Wiiのゲーム共にフルHD解像度以上の表"
+"示が可能に。\n"
+"        <a href=\"%(MEDIA_PAGE_URL)s\">メディアギャラリーを見る。</a>.\n"
 "        "
 
 #: homepage/templates/homepage-home.html:68
 msgid "Use your favorite controller"
-msgstr "Usa tu mando favorito"
+msgstr "お気に入りのコントローラーで"
 
 #: homepage/templates/homepage-home.html:70
 msgid ""
@@ -273,25 +263,23 @@ msgid ""
 "        "
 msgstr ""
 "\n"
-"        ¿No te gusta el mando de Gamecube o el  Wiimote? Puedes\n"
-"        jugar a los juegos con tu mando favorito de PC o ¡incluso con "
-"teclado\n"
-"        y ratón! Los Wiimotes tambien están soportados, incluyendo Wii "
-"Motion Plus\n"
-"        para los juegos que lo necesiten.\n"
+"        ゲームキューブコントローラーやWiiリモコンは扱いにくい？\n"
+"        Dolphinはキーボードやマウス、お好きなPCコントローラでの操作が可能。\n"
+"        モーションプラスを含めた、実機のWiiリモコンの接続にも対応していま"
+"す。\n"
 "        "
 
 #: homepage/templates/homepage-home.html:80
 msgid "Recent Dolphin news"
-msgstr "Noticias recientes de Dolphin"
+msgstr "最新情報"
 
 #: homepage/templates/homepage-home.html:85
 msgid "by"
-msgstr "por"
+msgstr "by"
 
 #: homepage/templates/homepage-home.html:97
 msgid "Great compatibility"
-msgstr "Gran compatibilidad"
+msgstr "優れた互換性"
 
 #: homepage/templates/homepage-home.html:99
 #, python-format
@@ -305,17 +293,16 @@ msgid ""
 "        "
 msgstr ""
 "\n"
-"        Dolphin puede jugar la mayoría de juegos de la colección Gamecube y "
-"Wii\n"
-"       sin problemas. Algunos juegos nuevos de Wii funcionan desde el primer "
-"día.\n"
-"       Wiiware y juegos Virtual Console también son soportados. Mira\n"
-"       la <a href=\"%(WIKI_URL)s\">wiki de compatibilidad Dolphin</a>.\n"
+"        多くのゲームキューブやWiiのゲームタイトルは、Dolphin 上で問題なく\n"
+"        動作します。新しいタイトルに対しても、発売直後から対応を開始。\n"
+"        Wiiウェアやバーチャルコンソールも例外ではありません。\n"
+"        詳しくは <a href=\"%(WIKI_URL)s\">Dolphin compatibility wiki</a> を参"
+"照してください。\n"
 "        "
 
 #: homepage/templates/homepage-home.html:109
 msgid "Helpful community"
-msgstr "Comunidad dispuesta a ayudar"
+msgstr "有用なコミュニティ"
 
 #: homepage/templates/homepage-home.html:112
 #, python-format
@@ -331,20 +318,18 @@ msgid ""
 "        "
 msgstr ""
 "\n"
-"        Problemas de instalación? Intentando encontrar las mejores "
-"configuraciones para un\n"
-"        juego? O solo interesado en los debates sobre juegos de Gamecube y "
-"Wii\n"
-"        que te gustan? Si las <a href=\"%(FAQ_URL)s\">Preguntas más "
-"frecuentes</a>\n"
-"        no te pueden ayudar, otros usuarios Dolphin puede que quieran "
-"ayudarte en los\n"
-"        <a href=\"%(FORUM_URL)s\">foros oficiales de debates</a>.\n"
+"        インストールでお困りですか？タイトル別の最適な設定が知りたい？\n"
+"        それとも、ゲームキューブやWiiのゲームについて意見を交わすことがお望"
+"み？\n"
+"        もしも <a href=\"%(FAQ_URL)s\">よくある質問(FAQ)</a> がお役に立たない"
+"ようなら、\n"
+"        <a href=\"%(FORUM_URL)s\">公式フォーラム</a> を参照して、他のユーザー"
+"と交流を始めましょう。\n"
 "        "
 
 #: homepage/templates/homepage-home.html:123
 msgid "Free and Open Source"
-msgstr "Gratuito y de código abierto"
+msgstr "無償かつオープンソース"
 
 #: homepage/templates/homepage-home.html:125
 #, python-format
@@ -358,37 +343,36 @@ msgid ""
 "        "
 msgstr ""
 "\n"
-"        El emulador Dolphin es desarrollado por voluntarios de  todo el "
-"mundo\n"
-"        y distribuido sin coste. ¿Quieres ayudar a que el proyecto mejore?\n"
-"        Descarga el código fuente del emulador de <a href=\"%(GCODE_URL)s"
-"\">Google\n"
-"        Code</a> y ¡empieza a hackear!\n"
+"        Dolphin は世界中のボランティアによって開発され、無償で配布されている"
+"ソフトウェアです。\n"
+"        開発に参加してみたいですか？ <a href=\"%(GCODE_URL)s\">Google Code</"
+"a> からソースコードを入手して、\n"
+"        挑戦を始めましょう！\n"
 "        "
 
 #: media/templates/media-all.html:6 media/templates/media-all.html.py:19
 msgid "Media gallery"
-msgstr "Galería de medios"
+msgstr "メディアギャラリー"
 
 #: media/templates/media-all.html:43
 msgid "Full size"
-msgstr "Tamaño completo"
+msgstr "大きな画像を見る"
 
 #: media/templates/media-all.html:44
 msgid "Previous"
-msgstr "Anterior"
+msgstr "前へ"
 
 #: media/templates/media-all.html:45
 msgid "Next"
-msgstr "Siguiente"
+msgstr "次へ"
 
 #: templates/_base.html:48
 msgid "Home"
-msgstr "Inicio"
+msgstr "ホーム"
 
 #: templates/_base.html:49
 msgid "Media"
-msgstr "Medios"
+msgstr "ギャラリー"
 
 #: templates/_base.html:51
 msgid "FAQ"
@@ -396,7 +380,7 @@ msgstr "FAQ"
 
 #: templates/_base.html:53
 msgid "Forum"
-msgstr "Foro"
+msgstr "フォーラム"
 
 #: templates/_base.html:54
 msgid "Wiki"
@@ -404,7 +388,7 @@ msgstr "Wiki"
 
 #: templates/_base.html:55
 msgid "Development"
-msgstr "Desarrollo"
+msgstr "開発"
 
 #: templates/_base.html:84
 msgid ""
@@ -416,6 +400,6 @@ msgid ""
 msgstr ""
 "\n"
 "            &copy; 2012 Dolphin Emulator Project -\n"
-"            <a href=\"https://bitbucket.org/delroth/dolphin-web/\">Código "
-"fuente de la web</a>\n"
+"            <a href=\"https://bitbucket.org/delroth/dolphin-web/\">Website "
+"source code</a>\n"
 "            "

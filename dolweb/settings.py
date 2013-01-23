@@ -45,6 +45,7 @@ LANGUAGES = (
     ('es', u'Español'),
     ('fr', u'Français'),
     ('br', u'Português (Brasil)'),
+    ('ja', u'日本語'),
 )
 
 SITE_ID = 1
