@@ -111,6 +111,7 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'django.middleware.locale.LocaleMiddleware',
+    'dolweb.utils.country_redirect.CountryRedirectMiddleware',
     # Uncomment the next line for simple clickjacking protection:
 )
 
@@ -125,6 +126,7 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     "django.contrib.messages.context_processors.messages",
     'dolweb.utils.context_processors.website_urls',
     'dolweb.utils.context_processors.guess_system_from_ua',
+    'dolweb.utils.context_processors.check_country_redirect',
 )
 
 ROOT_URLCONF = 'dolweb.urls'
@@ -191,6 +193,8 @@ LOGGING = {
 FORUM_URL = "http://forums.dolphin-emu.org/"
 WIKI_URL = "http://wiki.dolphin-emu.org/"
 GCODE_URL = "http://code.google.com/p/dolphin-emu/"
+
+DEFAULT_HOST = "dolphin-emu.org"
 
 try:
     from local_settings import *

@@ -26,6 +26,6 @@ def langname(lang_code):
 @register.filter
 def to_subdomain(lang_code):
     if lang_code == settings.LANGUAGE_CODE.split('-')[0]:
-        return 'dolphin-emu.org'
+        return settings.DEFAULT_HOST
     else:
-        return '%s.dolphin-emu.org' % lang_code
+        return '%s.%s' % (lang_code, settings.DEFAULT_HOST)
