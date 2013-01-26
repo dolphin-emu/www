@@ -118,3 +118,12 @@ def new(request):
         return HttpResponse('OK')
     finally:
         _addbuild_lock.release()
+
+def get_latest(request, branch):
+    """Callback used by the emulator to get the latest version on a branch."""
+
+    build = DevVersion.objects.filter(branch=branch).order_by('-date')
+    if len(build) == 0:
+        raise Http404
+
+    return HttpResponse(build[0].hash)
