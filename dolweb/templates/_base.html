@@ -60,7 +60,7 @@
                                 <ul class="dropdown-menu">
                                 {% for langcode, langname in LANGUAGES %}
                                     {% if langcode != LANGUAGE_CODE|short %}
-                                    <li><a href="http://{{ langcode|to_subdomain }}{{ request.get_full_path }}"><img class="flag" src="{{ STATIC_URL }}img/flags/{{ langcode }}.png" alt="{{ langcode }}"> {{ langname }}</a></li>
+                                    <li><a href="http://{{ langcode|to_subdomain }}{{ request.path }}?nocr=true"><img class="flag" src="{{ STATIC_URL }}img/flags/{{ langcode }}.png" alt="{{ langcode }}"> {{ langname }}</a></li>
                                     {% endif %}
                                 {% endfor %}
                                 </ul>
