@@ -100,7 +100,18 @@ div#download-stable h1, div#download-dev h1, div#download-source h1 {
 }
 
 .download-btn {
-    margin-top: 3.0em;
+    margin-top: 2.0em;
+}
+
+.fb-like {
+    height: 20px;
+    display: inline-block;
+    margin-right: 1em;
+}
+
+.g-plusone {
+    height: 20px;
+    display: inline-block;
 }
 
 #sshot-carousel {
