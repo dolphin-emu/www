@@ -22,7 +22,7 @@
         <td>{{ game.title }}</td>
         <td><img src="{{ STATIC_URL }}img/stars/{{ game.latest.text.data }}.png" alt="{{ game.latest.text.data }} out of 5"></td>
         <td>{{ game.latest.timestamp|naturaltime }}</td>
-        <td><a href="{{ game.wiki_url|iriencode }}">Wiki</a></td>
+        <td><a href="{{ game.wiki_url }}">Wiki</a></td>
     </tr>
     {% endfor %}
 </table>

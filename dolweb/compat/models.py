@@ -3,6 +3,8 @@ from django.conf import settings
 from django.core.cache import cache
 from django.db import models
 
+import urllib
+
 class Namespace(object):
     MAIN = 0
     TALK = 1
@@ -70,7 +72,7 @@ class Page(models.Model):
         u = self.title_url
         if u.startswith('Ratings/'):
             u = u[len('Ratings/'):]
-        return settings.WIKI_URL + 'index.php?title=%s' % u
+        return settings.WIKI_URL + 'index.php?title=%s' % urllib.quote(u)
 
     @property
     def title(self):
