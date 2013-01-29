@@ -157,3 +157,42 @@ footer p.footer-text {
 .home-section {
     text-align: justify;
 }
+
+.compat-list {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.compat-list tbody tr {
+    line-height: 2.0em;
+    vertical-align: center;
+}
+
+.compat-list tbody tr:nth-child(2n) {
+    background-color: #eee;
+}
+
+.compat-list tbody tr:nth-child(2n+1) {
+    background-color: #fff;
+}
+
+.compat-list th.title, .compat-list td.title {
+    width: 55%;
+}
+
+.compat-list td.title {
+    text-align: left;
+}
+
+.compat-list th.rating, .compat-list td.rating {
+    width: 15%;
+}
+
+.compat-list th.update, .compat-list td.update {
+    width: 15%;
+}
+
+.compat-list th.details, .compat-list td.details {
+    width: 15%;
+}
