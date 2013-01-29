@@ -150,6 +150,13 @@ TEMPLATE_DIRS = (
     os.path.join(PROJECT_ROOT, 'dolweb', 'templates'),
 )
 
+CACHES = {
+    'default': {
+        'BACKEND': 'django.core.cache.backends.locmem.LocMemCache',
+        'LOCATION': 'dolphin-emu-www',
+    },
+}
+
 INSTALLED_APPS = (
     'django.contrib.auth',
     'django.contrib.contenttypes',

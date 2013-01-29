@@ -1,8 +1,10 @@
 from annoying.decorators import render_to
+from django.views.decorators.cache import cache_page
 from dolweb.compat.models import Page, Namespace
 
 import string
 
+@cache_page(60 * 5)
 @render_to('compat-list.html')
 def list_compat(request, first_char='#'):
     start = 'Ratings/'
