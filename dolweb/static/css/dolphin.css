@@ -211,3 +211,12 @@ footer p.footer-text {
 .compat-list th.details, .compat-list td.details {
     width: 15%;
 }
+
+.pagination-small {
+    height: 24px;
+}
+
+.pagination-small a {
+    padding: 0 7px;
+    line-height: 24px;
+}

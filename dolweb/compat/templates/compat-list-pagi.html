@@ -1,23 +1,11 @@
-<div class="pagination pagination-centered">
-  <ul>
-    {% if page_obj.has_previous %}
-    <li><a href="{% url compat-list page_obj.previous_page_number %}">&larr;</a></li>
-    {% else %}
-    <li class="disabled"><a href="#">&larr;</a></li>
-    {% endif %}
-
-    {% for page in pagi.page_range %}
-    {% if page == page_obj.number %}
-    <li class="active"><a href="#">{{ page }}</a></li>
-    {% else %}
-    <li><a href="{% url compat-list page %}">{{ page }}</a></li>
-    {% endif %}
+<div class="pagination pagination-centered pagination-small">
+    <ul>
+    {% for p in pages %}
+        {% if p == page %}
+        <li class="active"><a href="#">{{ p }}</a></li>
+        {% else %}
+        <li><a href="{% url compat-list p %}">{{ p }}</a></li>
+        {% endif %}
     {% endfor %}
-
-    {% if page_obj.has_next %}
-    <li><a href="{% url compat-list page_obj.next_page_number %}">&rarr;</a></li>
-    {% else %}
-    <li class="disabled"><a href="#">&rarr;</a></li>
-    {% endif %}
-  </ul>
+    </ul>
 </div>

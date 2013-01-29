@@ -32,7 +32,7 @@
     </thead>
 
     <tbody>
-        {% for game in page_obj.object_list %}
+        {% for game in games %}
         <tr>
             <td class="title">{{ game.title }}</td>
             <td class="rating"><img src="{{ STATIC_URL }}img/stars/{{ game.latest.text.data }}.png" alt="{{ game.latest.text.data }} out of 5"></td>
