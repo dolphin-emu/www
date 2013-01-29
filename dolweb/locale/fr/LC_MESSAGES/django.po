@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-01-16 08:35+0100\n"
+"POT-Creation-Date: 2013-01-29 13:28+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,7 +23,7 @@ msgid "Frequently Asked Questions"
 msgstr "Foire aux Questions"
 
 #: docs/templates/docs-guides-index.html:5
-#: docs/templates/docs-guides-index.html:9 templates/_base.html:52
+#: docs/templates/docs-guides-index.html:9 templates/_base.html:61
 msgid "Guides"
 msgstr "Guides"
 
@@ -65,7 +65,7 @@ msgid "No development release yet"
 msgstr "Pas de version en développement disponible"
 
 #: downloads/templates/downloads-index.html:6
-#: downloads/templates/downloads-index.html:25 templates/_base.html:50
+#: downloads/templates/downloads-index.html:25 templates/_base.html:59
 msgid "Download"
 msgstr "Télécharger"
 
@@ -200,21 +200,22 @@ msgstr "Description"
 msgid "Gamecube/Wii games on PC"
 msgstr "jouez à la Gamecube/Wii sur PC"
 
-#: homepage/templates/homepage-home.html:14 templates/_base.html:9
-#: templates/_base.html.py:45
+#: homepage/templates/homepage-home.html:25 templates/_base.html:9
+#: templates/_base.html.py:54
 msgid "Dolphin Emulator"
 msgstr "Émulateur Dolphin"
 
-#: homepage/templates/homepage-home.html:16
-msgid "Play Gamecube and Wii games in HD resolution on your PC."
+#: homepage/templates/homepage-home.html:27
+#, fuzzy
+msgid "Play Gamecube and Wii games in 1080p on your PC."
 msgstr "Jouez aux jeux de Gamecube et Wii en HD sur votre PC."
 
-#: homepage/templates/homepage-home.html:19
+#: homepage/templates/homepage-home.html:30
 #, python-format
 msgid "Download %(last_release)s now for Windows, Mac and Linux »"
 msgstr "Télécharger %(last_release)s pour Windows, Mac et Linux »"
 
-#: homepage/templates/homepage-home.html:22
+#: homepage/templates/homepage-home.html:33
 msgid ""
 "\n"
 "                <strong>Minimal requirements</strong>: SSE2 compatible CPU, "
@@ -226,15 +227,15 @@ msgstr ""
 "SSE2, carte graphique Shader Model 3.0, 2 Go de RAM, 50 Mo d'espace disque\n"
 "                "
 
-#: homepage/templates/homepage-home.html:27
+#: homepage/templates/homepage-home.html:38
 msgid "More information about hardware requirements"
 msgstr "Plus d'information sur la configuration nécessaire"
 
-#: homepage/templates/homepage-home.html:55
+#: homepage/templates/homepage-home.html:68
 msgid "Improved graphics"
 msgstr "Graphismes améliorés"
 
-#: homepage/templates/homepage-home.html:58
+#: homepage/templates/homepage-home.html:71
 #, python-format
 msgid ""
 "\n"
@@ -254,11 +255,11 @@ msgstr ""
 "        des captures d'écran de jeux tournant avec Dolphin</a>.\n"
 "        "
 
-#: homepage/templates/homepage-home.html:68
+#: homepage/templates/homepage-home.html:81
 msgid "Use your favorite controller"
 msgstr "Utilisez votre manette préférée"
 
-#: homepage/templates/homepage-home.html:70
+#: homepage/templates/homepage-home.html:83
 msgid ""
 "\n"
 "        Not a big fan of the Gamecube controller and the Wiimote? You can\n"
@@ -275,19 +276,19 @@ msgstr ""
 "nécessitant.\n"
 "        "
 
-#: homepage/templates/homepage-home.html:80
+#: homepage/templates/homepage-home.html:93
 msgid "Recent Dolphin news"
 msgstr "Dernières news de Dolphin"
 
-#: homepage/templates/homepage-home.html:85
+#: homepage/templates/homepage-home.html:98
 msgid "by"
 msgstr "de"
 
-#: homepage/templates/homepage-home.html:97
+#: homepage/templates/homepage-home.html:110
 msgid "Great compatibility"
 msgstr "Excellente compatibilité"
 
-#: homepage/templates/homepage-home.html:99
+#: homepage/templates/homepage-home.html:112
 #, python-format
 msgid ""
 "\n"
@@ -308,11 +309,11 @@ msgstr ""
 "        Dolphin</a> liste la compatibilité de la plupart des jeux.\n"
 "        "
 
-#: homepage/templates/homepage-home.html:109
+#: homepage/templates/homepage-home.html:122
 msgid "Helpful community"
 msgstr "Forte communauté"
 
-#: homepage/templates/homepage-home.html:112
+#: homepage/templates/homepage-home.html:125
 #, python-format
 msgid ""
 "\n"
@@ -339,11 +340,11 @@ msgstr ""
 "        forums de discussion officiels (anglais)</a>.\n"
 "        "
 
-#: homepage/templates/homepage-home.html:123
+#: homepage/templates/homepage-home.html:136
 msgid "Free and Open Source"
 msgstr "Libre et Open Source"
 
-#: homepage/templates/homepage-home.html:125
+#: homepage/templates/homepage-home.html:138
 #, python-format
 msgid ""
 "\n"
@@ -379,31 +380,31 @@ msgstr "Précédent"
 msgid "Next"
 msgstr "Suivant"
 
-#: templates/_base.html:48
+#: templates/_base.html:57
 msgid "Home"
 msgstr "Accueil"
 
-#: templates/_base.html:49
+#: templates/_base.html:58
 msgid "Media"
 msgstr "Galerie"
 
-#: templates/_base.html:51
+#: templates/_base.html:60
 msgid "FAQ"
 msgstr "FAQ"
 
-#: templates/_base.html:53
+#: templates/_base.html:62
 msgid "Forum"
 msgstr "Forum"
 
-#: templates/_base.html:54
+#: templates/_base.html:63
 msgid "Wiki"
 msgstr "Wiki"
 
-#: templates/_base.html:55
+#: templates/_base.html:64
 msgid "Development"
 msgstr "Développement"
 
-#: templates/_base.html:84
+#: templates/_base.html:102
 msgid ""
 "\n"
 "            &copy; 2012 Dolphin Emulator Project -\n"

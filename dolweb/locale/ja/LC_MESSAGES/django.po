@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-01-23 06:08+0100\n"
+"POT-Creation-Date: 2013-01-29 13:28+0100\n"
 "PO-Revision-Date: 2013-01-23 09:58+0900\n"
 "Last-Translator: \n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,7 +22,7 @@ msgid "Frequently Asked Questions"
 msgstr "よくある質問"
 
 #: docs/templates/docs-guides-index.html:5
-#: docs/templates/docs-guides-index.html:9 templates/_base.html:52
+#: docs/templates/docs-guides-index.html:9 templates/_base.html:61
 msgid "Guides"
 msgstr "利用ガイド"
 
@@ -64,7 +64,7 @@ msgid "No development release yet"
 msgstr "現在、開発版のリリースはありません。"
 
 #: downloads/templates/downloads-index.html:6
-#: downloads/templates/downloads-index.html:25 templates/_base.html:50
+#: downloads/templates/downloads-index.html:25 templates/_base.html:59
 msgid "Download"
 msgstr "ダウンロード"
 
@@ -197,21 +197,22 @@ msgstr "変更点"
 msgid "Gamecube/Wii games on PC"
 msgstr "Gamecube/Wii games on PC"
 
-#: homepage/templates/homepage-home.html:14 templates/_base.html:9
-#: templates/_base.html.py:45
+#: homepage/templates/homepage-home.html:25 templates/_base.html:9
+#: templates/_base.html.py:54
 msgid "Dolphin Emulator"
 msgstr "Dolphin Emulator"
 
-#: homepage/templates/homepage-home.html:16
-msgid "Play Gamecube and Wii games in HD resolution on your PC."
+#: homepage/templates/homepage-home.html:27
+#, fuzzy
+msgid "Play Gamecube and Wii games in 1080p on your PC."
 msgstr "ゲームキューブとWiiのゲームをHD画質で。"
 
-#: homepage/templates/homepage-home.html:19
+#: homepage/templates/homepage-home.html:30
 #, python-format
 msgid "Download %(last_release)s now for Windows, Mac and Linux »"
 msgstr "今すぐ Windows, Mac および Linux用の %(last_release)s を入手 »"
 
-#: homepage/templates/homepage-home.html:22
+#: homepage/templates/homepage-home.html:33
 msgid ""
 "\n"
 "                <strong>Minimal requirements</strong>: SSE2 compatible CPU, "
@@ -223,15 +224,15 @@ msgstr ""
 "対応GPU, 2GB RAM, 50MBのディスクスペース\n"
 "                "
 
-#: homepage/templates/homepage-home.html:27
+#: homepage/templates/homepage-home.html:38
 msgid "More information about hardware requirements"
 msgstr "動作環境について、さらに詳しく"
 
-#: homepage/templates/homepage-home.html:55
+#: homepage/templates/homepage-home.html:68
 msgid "Improved graphics"
 msgstr "高精細なグラフィックス"
 
-#: homepage/templates/homepage-home.html:58
+#: homepage/templates/homepage-home.html:71
 #, python-format
 msgid ""
 "\n"
@@ -249,11 +250,11 @@ msgstr ""
 "        <a href=\"%(MEDIA_PAGE_URL)s\">メディアギャラリーを見る。</a>.\n"
 "        "
 
-#: homepage/templates/homepage-home.html:68
+#: homepage/templates/homepage-home.html:81
 msgid "Use your favorite controller"
 msgstr "お気に入りのコントローラーで"
 
-#: homepage/templates/homepage-home.html:70
+#: homepage/templates/homepage-home.html:83
 msgid ""
 "\n"
 "        Not a big fan of the Gamecube controller and the Wiimote? You can\n"
@@ -269,19 +270,19 @@ msgstr ""
 "す。\n"
 "        "
 
-#: homepage/templates/homepage-home.html:80
+#: homepage/templates/homepage-home.html:93
 msgid "Recent Dolphin news"
 msgstr "最新情報"
 
-#: homepage/templates/homepage-home.html:85
+#: homepage/templates/homepage-home.html:98
 msgid "by"
 msgstr "by"
 
-#: homepage/templates/homepage-home.html:97
+#: homepage/templates/homepage-home.html:110
 msgid "Great compatibility"
 msgstr "優れた互換性"
 
-#: homepage/templates/homepage-home.html:99
+#: homepage/templates/homepage-home.html:112
 #, python-format
 msgid ""
 "\n"
@@ -300,11 +301,11 @@ msgstr ""
 "照してください。\n"
 "        "
 
-#: homepage/templates/homepage-home.html:109
+#: homepage/templates/homepage-home.html:122
 msgid "Helpful community"
 msgstr "有用なコミュニティ"
 
-#: homepage/templates/homepage-home.html:112
+#: homepage/templates/homepage-home.html:125
 #, python-format
 msgid ""
 "\n"
@@ -327,11 +328,11 @@ msgstr ""
 "と交流を始めましょう。\n"
 "        "
 
-#: homepage/templates/homepage-home.html:123
+#: homepage/templates/homepage-home.html:136
 msgid "Free and Open Source"
 msgstr "無償かつオープンソース"
 
-#: homepage/templates/homepage-home.html:125
+#: homepage/templates/homepage-home.html:138
 #, python-format
 msgid ""
 "\n"
@@ -366,31 +367,31 @@ msgstr "前へ"
 msgid "Next"
 msgstr "次へ"
 
-#: templates/_base.html:48
+#: templates/_base.html:57
 msgid "Home"
 msgstr "ホーム"
 
-#: templates/_base.html:49
+#: templates/_base.html:58
 msgid "Media"
 msgstr "ギャラリー"
 
-#: templates/_base.html:51
+#: templates/_base.html:60
 msgid "FAQ"
 msgstr "FAQ"
 
-#: templates/_base.html:53
+#: templates/_base.html:62
 msgid "Forum"
 msgstr "フォーラム"
 
-#: templates/_base.html:54
+#: templates/_base.html:63
 msgid "Wiki"
 msgstr "Wiki"
 
-#: templates/_base.html:55
+#: templates/_base.html:64
 msgid "Development"
 msgstr "開発"
 
-#: templates/_base.html:84
+#: templates/_base.html:102
 msgid ""
 "\n"
 "            &copy; 2012 Dolphin Emulator Project -\n"
