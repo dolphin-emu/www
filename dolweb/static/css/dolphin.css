@@ -183,6 +183,7 @@ footer p.footer-text {
 
 .compat-list td.title {
     text-align: left;
+    padding-left: 0.5em;
 }
 
 .compat-list th.rating, .compat-list td.rating {
