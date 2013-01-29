@@ -67,7 +67,10 @@ class Page(models.Model):
 
     @property
     def wiki_url(self):
-        return settings.FORUM_URL + 'index.php?title=%s' % self.title_url
+        u = self.title_url
+        if u.startswith('Ratings/'):
+            u = u[len('Ratings/'):]
+        return settings.WIKI_URL + 'index.php?title=%s' % u
 
     @property
     def title(self):
