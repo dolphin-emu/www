@@ -207,7 +207,6 @@ msgid "Dolphin Emulator"
 msgstr "Dolphin Emulator"
 
 #: homepage/templates/homepage-home.html:27
-#, fuzzy
 msgid "Play Gamecube and Wii games in 1080p on your PC."
 msgstr "Jogue jogos de Gamecube e Wii em HD no seu PC."
 
