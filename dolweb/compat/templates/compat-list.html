@@ -1,0 +1,32 @@
+{% extends "_base.html" %}
+
+{% load humanize %}
+{% load i18n %}
+
+{% block "title" %}{% blocktrans %}Compatibility List - page {{ page }}{% endblocktrans %}{% endblock %}
+
+{% block "body" %}
+
+{% include "compat-list-pagi.html" %}
+
+<table>
+    <tr>
+        <th>Game title</th>
+        <th>Rating</th>
+        <th>Last updated</th>
+        <th>Details</th>
+    </tr>
+
+    {% for game in page_obj.object_list %}
+    <tr>
+        <td>{{ game.title }}</td>
+        <td><img src="{{ STATIC_URL }}img/stars/{{ game.latest.text.data }}.png" alt="{{ game.latest.text.data }} out of 5"></td>
+        <td>{{ game.latest.timestamp|naturaltime }}</td>
+        <td><a href="{{ game.wiki_url|iriencode }}">Wiki</a></td>
+    </tr>
+    {% endfor %}
+</table>
+
+{% include "compat-list-pagi.html" %}
+
+{% endblock %}

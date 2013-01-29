@@ -22,6 +22,9 @@ urlpatterns = patterns('',
     # Downloads
     url(r'^download/', include('dolweb.downloads.urls')),
 
+    # Compatibility list
+    url(r'^compat/', include('dolweb.compat.urls')),
+
     # Django administration
     url(r'^admin/', include(admin.site.urls)),
 )
