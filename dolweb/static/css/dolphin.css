@@ -158,8 +158,22 @@ footer p.footer-text {
     text-align: justify;
 }
 
+.ratings-expl ul {
+    list-style: none;
+    margin-top: 1em;
+}
+
+.ratings-expl li {
+    margin-bottom: 0.6em;
+}
+
+.ratings-expl li img {
+    margin-right: 0.5em;
+    margin-top: -0.5em;
+}
+
 .compat-list {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     text-align: center;
 }
