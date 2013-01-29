@@ -90,6 +90,33 @@ class Page(models.Model):
         verbose_name = u'MediaWiki Page'
         verbose_name_plural = u'MediaWiki Pages'
 
+class Category(models.Model):
+    id = models.IntegerField(db_column='cat_id', primary_key=True)
+    title = models.CharField(db_column='cat_title', max_length=255)
+
+    def __unicode__(self):
+        return self.title.decode('utf-8')
+
+    class Meta:
+        db_table = 'mw_category'
+        ordering = ['title']
+        verbose_name = u'MediaWiki Category'
+        verbose_name_plural = u'MediaWiki Categories'
+
+class CategoryLink(models.Model):
+    id = models.IntegerField(primary_key=True, db_column='cl_sortkey') ## UGLY, not PK in DB
+    page = models.ForeignKey('Page', db_column='cl_from', related_name='+')
+    cat = models.CharField(db_column='cl_to', max_length=255)
+
+    def __unicode__(self):
+        return u'Link from %s to %s' % (self.page, self.cat)
+
+    class Meta:
+        db_table = 'mw_categorylinks'
+        ordering = ['cat', 'page']
+        verbose_name = u'MediaWiki Category Link'
+        verbose_name_plural = u'MediaWiki Category Links'
+
 def get_rating_count(n):
     if n < 1 or n > 5:
         return 0
@@ -102,3 +129,14 @@ def get_rating_count(n):
         cache.set('rating_count_%d' % n, count, 300)
 
     return count
+
+def get_category_id(name):
+    id = cache.get('category_name_%s' % name)
+    if id is None:
+        try:
+            id = Category.objects.get(title=name)
+        except Category.DoesNotExist:
+            return 0
+        cache.set('category_name_%s' % name, id)
+
+    return id
