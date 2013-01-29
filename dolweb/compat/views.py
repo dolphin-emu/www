@@ -21,5 +21,9 @@ def list_compat(request, first_char='#'):
 
     vers = vers.select_related('latest__text__data_raw', 'latest__timestamp_raw').order_by('title_url')
 
+    # Re-sort, this time without case taken into account
+    vers = list(vers)
+    vers.sort(key=lambda v: v.title_url.lower())
+
     return { 'games': vers, 'pages': ['#'] + list(string.uppercase),
              'page': first_char }
