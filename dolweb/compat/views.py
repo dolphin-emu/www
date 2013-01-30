@@ -6,11 +6,11 @@ from dolweb.compat.models import Page, Namespace, get_category_id, \
 import string
 
 CATEGORIES = {
-    'GameCube_games': 'gc',
+    'GameCube_games': 'gamecube',
     'Wii_games': 'wii',
     'WiiWare_games': 'wiiware',
     'Wii_Channels': 'channel',
-    'Virtual_Console_games': 'vc',
+    'Virtual_Console_games': 'virtual-console',
 }
 
 @cache_page(60 * 5)

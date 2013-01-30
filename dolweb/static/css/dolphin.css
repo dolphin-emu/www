@@ -179,7 +179,6 @@ footer p.footer-text {
 }
 
 .compat-list tbody tr {
-    line-height: 2.0em;
     vertical-align: center;
 }
 
@@ -191,8 +190,16 @@ footer p.footer-text {
     background-color: #fff;
 }
 
+.compat-list th.category, .compat-list td.category {
+    width: 5%;
+}
+
+.compat-list td.category img {
+    margin-bottom: 2px;
+}
+
 .compat-list th.title, .compat-list td.title {
-    width: 55%;
+    width: 65%;
 }
 
 .compat-list td.title {
@@ -205,10 +212,6 @@ footer p.footer-text {
 }
 
 .compat-list th.update, .compat-list td.update {
-    width: 15%;
-}
-
-.compat-list th.details, .compat-list td.category {
     width: 15%;
 }
 

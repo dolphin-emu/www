@@ -24,8 +24,8 @@
 <table class="compat-list">
     <thead>
         <tr>
+            <th class="category"></th>
             <th class="title">{% trans "Game title (click for details)" %}</th>
-            <th class="category">{% trans "Category" %}</th>
             <th class="rating">{% trans "Rating" %}</th>
             <th class="update">{% trans "Last updated" %}</th>
         </tr>
@@ -34,8 +34,8 @@
     <tbody>
         {% for game, cat in games %}
         <tr>
+            <td class="category"><img src="{{ STATIC_URL }}img/platforms/{{ cat }}.png" width="32" height="32" alt="{{ cat|capfirst }}" title="{{ cat|capfirst }}"></td>
             <td class="title"><a href="{{ game.wiki_url }}">{{ game.title }}</a></td>
-            <td class="category">{{ cat }}</td>
             <td class="rating"><img src="{{ STATIC_URL }}img/stars/{{ game.latest.text.data }}.png" alt="{{ game.latest.text.data }} out of 5"></td>
             <td class="update">{{ game.latest.timestamp|naturaltime }}</td>
         </tr>
