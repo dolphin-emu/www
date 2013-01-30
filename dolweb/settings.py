@@ -217,6 +217,6 @@ GCODE_URL = "http://code.google.com/p/dolphin-emu/"
 DEFAULT_HOST = "dolphin-emu.org"
 
 try:
-    from local_settings import *
+    execfile(os.path.join(PROJECT_ROOT, 'dolweb', 'local_settings.py'), globals(), locals())
 except ImportError:
     pass
