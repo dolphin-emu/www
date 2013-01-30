@@ -1,9 +1,10 @@
 Django==1.4
 Markdown==2.2.0
+MySQL-python==1.2.4
 PIL==1.1.7
-distribute==0.6.24
+distribute==0.6.34
+django-annoying==0.7.6
 django-bootstrap-form==2.0.3
 django-debug-toolbar==0.9.4
-wsgiref==0.1.2
-django-annoying==0.7.6
 sorl-thumbnail==11.12
+wsgiref==0.1.2
