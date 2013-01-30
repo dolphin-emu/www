@@ -43,7 +43,7 @@ def list_compat(request, first_char='#'):
                                              page__title_url__istartswith=gpages_start)
     if first_char == '#':
         categories = categories.filter(page__title_url__iregex=r'^[^a-zA-Z].*$')
-    categories = categories.select_related('page__title_url')
+    categories = categories.select_related('page__title_url', 'page__latest__timestamp_raw')
 
     # Make a categories dict using the titles
     cat_dict = {}
@@ -55,7 +55,8 @@ def list_compat(request, first_char='#'):
     for rating in ratings:
         title = rating.title_url[len('Ratings/'):]
         if title in cat_dict:
-            games.append((rating, CATEGORIES[cat_dict[title].cat]))
+            ts = max(rating.latest.timestamp, cat_dict[title].page.latest.timestamp)
+            games.append((rating, CATEGORIES[cat_dict[title].cat], ts))
 
     return { 'games': games, 'pages': ['#'] + list(string.uppercase),
              'page': first_char }
