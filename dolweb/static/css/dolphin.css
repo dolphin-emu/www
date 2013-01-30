@@ -195,7 +195,8 @@ footer p.footer-text {
 }
 
 .compat-list td.category img {
-    margin-bottom: 2px;
+    margin-top: 1px;
+    margin-bottom: 1px;
 }
 
 .compat-list th.title, .compat-list td.title {
