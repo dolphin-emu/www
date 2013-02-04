@@ -89,8 +89,7 @@
                 <button type="button" class="close" data-dismiss="alert">&times;</button>
                 You have been redirected to the <strong>{{ LANGUAGE_CODE|langname }}</strong>
                 version of the website based on your browser language preferences.
-                <a href="http://{{ DEFAULT_HOST }}{{ request.path }}?nocr=true">Go
-                back to the english version.</a>
+                If you prefer the english version, <a href="http://{{ DEFAULT_HOST }}{{ request.path }}?nocr=true">click here to go back</a>.
             </div>
             {% endif %}
             {% block "body" %}
