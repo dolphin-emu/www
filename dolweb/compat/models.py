@@ -66,6 +66,7 @@ class Page(models.Model):
     title_url = models.CharField(db_column='page_title', max_length=255)
     len = models.IntegerField(db_column='page_len')
     latest = models.ForeignKey('Revision', db_column='page_latest', related_name='+')
+    is_redirect = models.BooleanField(db_column='page_is_redirect')
 
     @property
     def wiki_url(self):

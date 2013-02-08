@@ -218,6 +218,11 @@ GCODE_URL = "http://code.google.com/p/dolphin-emu/"
 
 DEFAULT_HOST = "dolphin-emu.org"
 
+BNR_MONGO_HOST = ''
+BNR_MONGO_DBNAME = ''
+BNR_MONGO_USER = ''
+BNR_MONGO_PASSWORD = ''
+
 try:
     execfile(os.path.join(PROJECT_ROOT, 'dolweb', 'local_settings.py'), globals(), locals())
 except ImportError:
