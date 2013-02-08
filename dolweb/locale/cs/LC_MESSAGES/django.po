@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-01-29 13:28+0100\n"
-"PO-Revision-Date: 2013-02-03 17:37+0000\n"
+"PO-Revision-Date: 2013-02-05 14:15+0000\n"
 "Last-Translator: Zbyněk Schwarz <zbynek.schwarz@gmail.com>\n"
 "Language-Team: Czech (http://www.transifex.com/projects/p/dolphin-emu/language/cs/)\n"
 "MIME-Version: 1.0\n"
@@ -79,11 +79,11 @@ msgid ""
 "    Stable versions are released after a lot of testing to ensure emulation\n"
 "    performance and stability. <strong>If you do not know what version of\n"
 "    Dolphin you should use, the latest stable version is generally the best.</strong>\n"
-msgstr ""
+msgstr "\n    Stabilní verze jsou vydávány po spoustě testů zajišťující stabilitu a výkon emulace.\n <strong>pokud nevíte kterou verzi\n    Dolphin byste měli použít, je nejlepší zvolit poslední stabilní verzi.</strong>\n"
 
 #: downloads/templates/downloads-index.html:53
 msgid "No stable release yet"
-msgstr ""
+msgstr "Zatím žádná stabilní verze"
 
 #: downloads/templates/downloads-index.html:74
 msgid "Development versions"
@@ -100,7 +100,7 @@ msgstr ""
 
 #: downloads/templates/downloads-index.html:83
 msgid "Only displaying the <tt>master</tt> branch versions."
-msgstr ""
+msgstr "Zobrazovány pouze verze z větve <tt>master</tt>."
 
 #: downloads/templates/downloads-index.html:84
 msgid "Show all available branches"
@@ -116,7 +116,7 @@ msgid ""
 "    The latest version of the Dolphin source code can be downloaded from the\n"
 "    project Git repository.\n"
 "    "
-msgstr ""
+msgstr "\n    Nejnovější verze zdrojového kódu Dolphin může být stažena z úložiště\n    projektu Git.\n    "
 
 #: downloads/templates/downloads-index.html:103
 msgid ""
@@ -181,7 +181,7 @@ msgstr "Emulátor Dolphin"
 
 #: homepage/templates/homepage-home.html:27
 msgid "Play Gamecube and Wii games in 1080p on your PC."
-msgstr ""
+msgstr "Hrajte hry Gamecube a Wii na vašem PC v režimu 1080p."
 
 #: homepage/templates/homepage-home.html:30
 #, python-format
