@@ -105,7 +105,7 @@ def download_all_banners(gameids):
 def generate_coords(gameids):
     # Start at (0, 32) to leave space for a transparent (empty) banner
     cx, cy = 0, 32
-    w, h = 0, 32
+    w, h = 96, 32
     coords = {}
     for gid in gameids:
         w = max(cx + BANNER_WIDTH, w)
@@ -120,8 +120,9 @@ def generate_coords(gameids):
 
     return (w, h), coords
 
-def generate_css(coords, gameids):
-    chunks = []
+def generate_css(ident, coords, gameids):
+    start = 'td.banner div.bnr{background-image:url("%sbnr/atlas-%s.png")}' % (settings.MEDIA_URL, ident.replace('#', '%23'))
+    chunks = [start]
     for gid in gameids:
         hash = gameids[gid]
         s = '.bnr-%(hash)s{background-position:%(x)dpx %(y)dpx}'
@@ -171,7 +172,7 @@ def update_atlas(ident, img, css):
 
 def generate_atlas(ident, gameids):
     size, coords = generate_coords(gameids)
-    css = generate_css(coords, gameids)
+    css = generate_css(ident, coords, gameids)
     if needs_update(ident, css):
         img = generate_image_map(size, coords)
         update_atlas(ident, img, css)

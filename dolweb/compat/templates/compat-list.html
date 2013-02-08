@@ -5,6 +5,10 @@
 
 {% block "title" %}{% blocktrans %}Compatibility List - page {{ page }}{% endblocktrans %}{% endblock %}
 
+{% block "extracss" %}
+<link href="{{ MEDIA_URL }}bnr/atlas-{{ page_css }}.css" rel="stylesheet">
+{% endblock %}
+
 {% block "body" %}
 
 <div class="well ratings-expl">
@@ -25,6 +29,7 @@
     <thead>
         <tr>
             <th class="category"></th>
+            <th class="banner"></th>
             <th class="title">{% trans "Game title (click for details)" %}</th>
             <th class="rating">{% trans "Rating" %}</th>
             <th class="update">{% trans "Last updated" %}</th>
@@ -32,9 +37,10 @@
     </thead>
 
     <tbody>
-        {% for game, cat, ts in games %}
+        {% for game, cat, ts, hash in games %}
         <tr>
             <td class="category"><img src="{{ STATIC_URL }}img/platforms/{{ cat }}.png" width="32" height="32" alt="{{ cat|capfirst }}" title="{{ cat|capfirst }}"></td>
+            <td class="banner"><div class="bnr bnr-{{ hash }}"></div></td>
             <td class="title"><a href="{{ game.wiki_url }}">{{ game.title }}</a></td>
             <td class="rating"><img src="{{ STATIC_URL }}img/stars/{{ game.latest.text.data }}.png" alt="{{ game.latest.text.data }} out of 5"></td>
             <td class="update">{{ ts|naturaltime }}</td>

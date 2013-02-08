@@ -194,13 +194,25 @@ footer p.footer-text {
     width: 5%;
 }
 
+.compat-list th.banner, .compat-list td.banner {
+    width: 10%;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+.compat-list td.banner div.bnr {
+    width: 96px;
+    height: 32px;
+    margin: 0 auto;
+}
+
 .compat-list td.category img {
     margin-top: 1px;
     margin-bottom: 1px;
 }
 
 .compat-list th.title, .compat-list td.title {
-    width: 65%;
+    width: 60%;
 }
 
 .compat-list td.title {
@@ -209,11 +221,11 @@ footer p.footer-text {
 }
 
 .compat-list th.rating, .compat-list td.rating {
-    width: 15%;
+    width: 12%;
 }
 
 .compat-list th.update, .compat-list td.update {
-    width: 15%;
+    width: 13%;
 }
 
 .pagination-small {
