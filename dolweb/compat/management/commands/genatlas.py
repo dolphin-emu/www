@@ -2,6 +2,7 @@ from django.conf import settings
 from django.core.management.base import BaseCommand, CommandError
 from dolweb.compat.models import Page
 from PIL import Image
+from StringIO import StringIO
 
 import collections
 import hashlib
@@ -13,6 +14,16 @@ import string
 BANNER_WIDTH = 96
 BANNER_HEIGHT = 32
 MAX_ATLAS_HEIGHT = 32 * 50
+
+PLACEHOLDER = '''
+iVBORw0KGgoAAAANSUhEUgAAAGAAAAAgCAIAAABiouoDAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ
+bWFnZVJlYWR5ccllPAAAARlJREFUeNrU2U0KhDAMBWAn1I0w4MrzemRhQNBuJugF+pPkvb51KM1H
+FyH97Ps+GeU4jvM8Syq/T2rP/z0pqVyWZV1Xk6ZksoveSW9m2ypWxxjIzwilYw/kYQTUcQGyNcLq
+eAFZGcF1HIH6jRh0fIF6jEh03IHajHh0NGnyz9tDyQypLvd9X9dFohPxgmrfEZVOHFCVEY9OKJCV
+UaRONFC/UbAOAKjHKF4HA9RmBNGBAb1G8zwXFmslRAcJpCNPzrmwWCtr90djA7kuzIYHam4VYiSj
+6KCMZCAdiJGMpRNvJGw6KSUqI6HS0Wlw2za/vyNGoIbtl+v/GhdQ826Qx0gIdaiMhFOHx0hodUiM
+hFmHwUjIdeBGfwEGADC2MM78PI3uAAAAAElFTkSuQmCC
+'''
 
 mongo = pymongo.MongoClient(settings.BNR_MONGO_HOST)
 db = mongo[settings.BNR_MONGO_DBNAME]
@@ -146,13 +157,18 @@ def generate_image_map(size, coords):
     gameids = coords.keys()
     banners = download_all_banners(gameids)
 
+    sio = StringIO(PLACEHOLDER.decode('base64'))
+    sio.seek(0)
+    placeholder = Image.open(sio)
+    im.paste(placeholder, (0, 0, 96, 32))
+
     pix = im.load()
 
     for gid, (ox, oy) in coords.iteritems():
         data = iter(map(ord, banners[gid]))
         for y in xrange(32):
             for x in xrange(96):
-                pix[x + ox, y + oy] = (next(data), next(data), next(data), 256)
+                pix[x + ox, y + oy] = (next(data), next(data), next(data), 255)
 
     return im
 
