@@ -60,6 +60,7 @@ LANGUAGES = (
     ('br', u'Português (Brasil)'),
     ('sv', u'Svenska'),
     ('ja', u'日本語'),
+    ('ko', u'한국어'),
 )
 
 SITE_ID = 1
