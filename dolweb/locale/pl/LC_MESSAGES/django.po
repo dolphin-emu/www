@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-01-29 13:28+0100\n"
-"PO-Revision-Date: 2013-02-06 12:49+0000\n"
+"PO-Revision-Date: 2013-02-10 14:42+0000\n"
 "Last-Translator: Robert202 <Robert@10g.pl>\n"
 "Language-Team: Polish (http://www.transifex.com/projects/p/dolphin-emu/language/pl/)\n"
 "MIME-Version: 1.0\n"
@@ -49,7 +49,7 @@ msgstr "Pobierz buildy rozwojowe"
 #: downloads/templates/downloads-branches.html:17
 #, python-format
 msgid "<tt>%(branch)s</tt> branch"
-msgstr ""
+msgstr "<tt>%(branch)s</tt> branch"
 
 #: downloads/templates/downloads-branches.html:20
 #: downloads/templates/downloads-index.html:89
@@ -58,7 +58,7 @@ msgstr "Wyświetl starsze wersje"
 
 #: downloads/templates/downloads-branches.html:27
 msgid "Branch list"
-msgstr ""
+msgstr "Lista Branch"
 
 #: downloads/templates/downloads-devrel.html:19
 msgid "No development release yet"
@@ -104,7 +104,7 @@ msgstr "Wyświetlam tylko <tt>główne<tt> wersje."
 
 #: downloads/templates/downloads-index.html:84
 msgid "Show all available branches"
-msgstr ""
+msgstr "Pokaz wszystkie dostępne Branch"
 
 #: downloads/templates/downloads-index.html:93
 msgid "Source code"
@@ -129,12 +129,12 @@ msgstr "\nMożesz również <a href=\"http://code.google.com/p/dolphin-emu/sourc
 #: downloads/templates/downloads-list.html:5
 #, python-format
 msgid "%(branch)s branch - page %(page)s"
-msgstr ""
+msgstr "%(branch)s strona Branch %(page)s"
 
 #: downloads/templates/downloads-list.html:9
 #, python-format
 msgid "<tt>%(branch)s</tt> branch - page %(page)s"
-msgstr ""
+msgstr "<tt>%(branch)s</tt> strona Branch %(page)s"
 
 #: downloads/templates/downloads-view-devrel.html:6
 #, python-format
@@ -152,7 +152,7 @@ msgstr "Wersja"
 
 #: downloads/templates/downloads-view-devrel.html:19
 msgid "Branch"
-msgstr ""
+msgstr "Branch"
 
 #: downloads/templates/downloads-view-devrel.html:22
 msgid "Date"
@@ -160,7 +160,7 @@ msgstr "Data"
 
 #: downloads/templates/downloads-view-devrel.html:31
 msgid "Commit"
-msgstr ""
+msgstr "Pomóż"
 
 #: downloads/templates/downloads-view-devrel.html:34
 msgid "Change author"
