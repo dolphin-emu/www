@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-01-29 13:28+0100\n"
-"PO-Revision-Date: 2013-02-08 01:40+0000\n"
+"PO-Revision-Date: 2013-02-11 13:47+0000\n"
 "Last-Translator: N69 <69@no-spam.ws>\n"
 "Language-Team: Russian (http://www.transifex.com/projects/p/dolphin-emu/language/ru/)\n"
 "MIME-Version: 1.0\n"
@@ -30,7 +30,7 @@ msgstr "Инструкции"
 #: docs/templates/docs-guides-index.html:15
 #, python-format
 msgid "(by %(author)s)"
-msgstr "(by %(author)s)"
+msgstr "(от %(author)s)"
 
 #: docs/templates/docs-guides-index.html:17
 msgid "No published guide available"
@@ -96,7 +96,7 @@ msgid ""
 "    developer makes a change to Dolphin. Using development versions enables you\n"
 "    to use the latest and greatest improvements to the project, at the cost of\n"
 "    decreased stability.\n"
-msgstr "\n <strong> Внимание! </ STRONG> Разрабатываемые версии выпускаются каждый раз, когда \n разработчики вносят изменения в Dolphin. Использование разрабатываемых версий позволяет \n использовать последние и самые большие улучшения в проекте, за счет \n ухудшенной стабильности. \n"
+msgstr "\n <strong> Внимание! </ STRONG> Разрабатываемые версии выпускаются каждый раз, когда \nразработчики вносят изменения в Dolphin. Использование разрабатываемых версий позволяет \nиспользовать последние и самые большие улучшения в проекте, за счет ухудшенной стабильности. \n"
 
 #: downloads/templates/downloads-index.html:83
 msgid "Only displaying the <tt>master</tt> branch versions."
@@ -116,7 +116,7 @@ msgid ""
 "    The latest version of the Dolphin source code can be downloaded from the\n"
 "    project Git repository.\n"
 "    "
-msgstr "\n Последнюю версию исходного кода Dolphin, вы можете загрузить с\n Git repository."
+msgstr "\n Последнюю версию исходного кода Dolphin, вы можете  загрузить с\n Git repository."
 
 #: downloads/templates/downloads-index.html:103
 msgid ""
@@ -124,7 +124,7 @@ msgid ""
 "    You can also <a href=\"http://code.google.com/p/dolphin-emu/source/browse/\">browse\n"
 "        the current version of the source code</a>.\n"
 "    "
-msgstr "\n Вы также можете <a href=\"http://code.google.com/p/dolphin-emu/source/browse/\">просмотреть\n текущею версию исходного кода</a>.\n "
+msgstr "\nВы также можете <a href=\"http://code.google.com/p/dolphin-emu/source/browse/\">просмотреть\nтекущею версию исходного кода</a>.\n "
 
 #: downloads/templates/downloads-list.html:5
 #, python-format
@@ -172,7 +172,7 @@ msgstr "Изменить описание"
 
 #: homepage/templates/homepage-home.html:7
 msgid "Gamecube/Wii games on PC"
-msgstr "Игры от Gamecube/Wii на вашем ПК"
+msgstr "Игры от Gamecube/Wii на ПК"
 
 #: homepage/templates/homepage-home.html:25 templates/_base.html:9
 #: templates/_base.html.py:54
@@ -212,7 +212,7 @@ msgid ""
 "        Gamecube and Wii games. <a href=\"%(MEDIA_PAGE_URL)s\">View screenshots\n"
 "        of games played on Dolphin</a>.\n"
 "        "
-msgstr "\n     Wii может отображать графику, только в 480p. Dolphin поддерживает\n 720p, 1080p и более высокие разрешения, для ваших\n   Gamecube и Wii игр. <a href=\"%(MEDIA_PAGE_URL)s\">Посмотреть скриншоты\n игр запущенных на Dolphin</a>."
+msgstr "\n     Wii может отображать графику, только в 480p. Dolphin\n поддерживает 720p, 1080p и более высокие разрешения, для\n ваших Gamecube и Wii игр. \n <a href=\"%(MEDIA_PAGE_URL)s\">Посмотреть\n скриншоты игр запущенных на Dolphin</a>."
 
 #: homepage/templates/homepage-home.html:81
 msgid "Use your favorite controller"
@@ -226,7 +226,7 @@ msgid ""
 "        and mouse! Wiimotes are still supported, including Wii Motion Plus\n"
 "        for games that require it.\n"
 "        "
-msgstr "\n      Не являетесь фанатом джойстика от Gamecube и Wiimote? Вы можете\nиграть в игры на вашем любимом ПК джойстике, или на клавиатуре\n с мышкой! Wiimotes также поддерживаются, включая Wii Motion Plus\n    для игр которые его требуют."
+msgstr "\n      Не являетесь фанатом джойстика от Gamecube и Wiimote? Вы\n можете играть в игры на вашем любимом ПК джойстике, или на\n клавиатуре с мышкой! Wiimote также поддерживаются, включая\n Wii Motion Plus для игр которые его требуют."
 
 #: homepage/templates/homepage-home.html:93
 msgid "Recent Dolphin news"
@@ -249,7 +249,7 @@ msgid ""
 "        Wiiware and Virtual Console games are also supported. Check out\n"
 "        the <a href=\"%(WIKI_URL)s\">Dolphin compatibility wiki</a>.\n"
 "        "
-msgstr "\n   Dolphin позволяет играть в большинство Gamecube и Wii игр,\nбез каких-либо проблем. Новые Wii игры, запускаются в день релиза.\nИгры для Wiiware и Virtual Console также поддерживаются. Проверьте\n      <a href=\"%(WIKI_URL)s\">Таблицу совместимости Dolphin</a>."
+msgstr "\n   Dolphin позволяет играть в большинство Gamecube и Wii игр,\n без каких-либо проблем. Новые Wii игры, обычно запускаются в\n день релиза.\n Игры для Wiiware и Virtual Console также поддерживаются.\n Проверьте\n      <a href=\"%(WIKI_URL)s\">Таблицу совместимости Dolphin</a>."
 
 #: homepage/templates/homepage-home.html:122
 msgid "Helpful community"
@@ -265,7 +265,7 @@ msgid ""
 "        can't help you, other Dolphin users may be willing to help you over at the\n"
 "        <a href=\"%(FORUM_URL)s\">official discussion forums</a>.\n"
 "        "
-msgstr "\n      Проблемы с установкой? Не можете подобрать лучшие настройки для\nигры? Или просто интересно поговорить насчет Gamecube и Wii игр?\nЕсли <a href=\"%(FAQ_URL)s\">ЧАВО</a>\nвам не поможет , другие пользователи Dolphin помогут вам\nна нашем <a href=\"%(FORUM_URL)s\">форуме</a>."
+msgstr "\n      Проблемы с установкой? Не можете подобрать лучшие настройки для\nигры? Или просто интересно поговорить насчет Gamecube и Wii игр?\nЕсли <a href=\"%(FAQ_URL)s\">ЧАВО</a>\nвам не поможет, другие пользователи Dolphin помогут вам\nна нашем <a href=\"%(FORUM_URL)s\">форуме</a>."
 
 #: homepage/templates/homepage-home.html:136
 msgid "Free and Open Source"
@@ -280,7 +280,7 @@ msgid ""
 "        Grab the emulator source code from <a href=\"%(GCODE_URL)s\">Google\n"
 "        Code</a> and start hacking!\n"
 "        "
-msgstr "\n  Dolphin Emulator разрабатывается волонтерами со всего\n      света и распространяется абсолютно свободно. Хотите улучшить проект?\n      Зайдите на сайт с исходным кодом <a href=\"%(GCODE_URL)s\">Google\n    Code</a> и начинайте ломать!"
+msgstr "\n  Dolphin Emulator разрабатывается волонтерами со всего\n  света и распространяется абсолютно свободно. Хотите улучшить\n  проект?\n  Зайдите на сайт с исходным кодом <a href=\"%(GCODE_URL)s\">Google\n    Code</a> и начните ломать!"
 
 #: media/templates/media-all.html:6 media/templates/media-all.html.py:19
 msgid "Media gallery"
@@ -328,4 +328,4 @@ msgid ""
 "            &copy; 2012 Dolphin Emulator Project -\n"
 "            <a href=\"https://bitbucket.org/delroth/dolphin-web/\">Website source code</a>\n"
 "            "
-msgstr "\n &copy; 2012 Dolphin Emulator Project -\n <a href=\"https://bitbucket.org/delroth/dolphin-web/\">Website source code</a>\n "
+msgstr "\n &copy; 2012 Dolphin Emulator Project -\n <a href=\"https://bitbucket.org/delroth/dolphin-web/\">Исходный код сайта</a>\n "
