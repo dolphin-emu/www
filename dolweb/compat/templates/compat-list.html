@@ -3,6 +3,7 @@
 {% load compat %}
 {% load humanize %}
 {% load i18n %}
+{% load l10n %}
 
 {% block "title" %}{% blocktrans %}Compatibility List - page {{ page }}{% endblocktrans %}{% endblock %}
 
@@ -35,7 +36,7 @@
         <dl>
         {% for rating in all_ratings %}
         <dt>{{ rating|compat_text }}: {{ rating|rating_pct|floatformat }}%</dt>
-        <dd><div class="progress progress-{{ rating|rating_class }}"><div class="bar" style="width: {{ rating|rating_pct }}%"></div></div></dd>
+        <dd><div class="progress progress-{{ rating|rating_class }}"><div class="bar" style="width: {{ rating|rating_pct|unlocalize }}%"></div></div></dd>
         {% endfor %}
         </dl>
         </div>
