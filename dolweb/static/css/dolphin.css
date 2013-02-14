@@ -1,13 +1,5 @@
 .navbar-inner { border-radius: 0; }
 
-.iinavbar .brand {
-    background-image: url("../img/nav/logo-small.png");
-    background-size: 42px 25px;
-    background-position: 14px center;
-    background-repeat: no-repeat;
-    padding-left: 70px;
-}
-
 .navbar .brand i.logo {
     display: inline-block;
     margin-bottom: -5px;
