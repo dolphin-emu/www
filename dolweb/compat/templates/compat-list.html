@@ -1,5 +1,6 @@
 {% extends "_base.html" %}
 
+{% load compat %}
 {% load humanize %}
 {% load i18n %}
 
@@ -42,7 +43,7 @@
             <td class="category"><img src="{{ STATIC_URL }}img/platforms/{{ cat }}.png" width="32" height="32" alt="{{ cat|capfirst }}" title="{{ cat|capfirst }}"></td>
             <td class="banner"><div class="bnr bnr-{{ hash }}"></div></td>
             <td class="title"><a href="{{ game.wiki_url }}">{{ game.title }}</a></td>
-            <td class="rating"><img src="{{ STATIC_URL }}img/stars/{{ game.latest.text.data }}.png" alt="{{ game.latest.text.data }} out of 5"></td>
+            <td class="rating"><img src="{{ STATIC_URL }}img/stars/{{ game.latest.text.data }}.png" alt="{{ game.latest.text.data|compat_text }}" title="{{ game.latest.text.data|compat_text }}"></td>
             <td class="update">{{ ts|naturaltime }}</td>
         </tr>
         {% endfor %}
