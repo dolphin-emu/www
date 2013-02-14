@@ -185,6 +185,7 @@ INSTALLED_APPS = (
     'dolweb.docs',
     'dolweb.media',
     'dolweb.compat',
+    'dolweb.localefixes',
 )
 
 # A sample logging configuration. The only tangible logging
