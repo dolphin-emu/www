@@ -1,11 +1,19 @@
 .navbar-inner { border-radius: 0; }
 
-.navbar .brand {
+.iinavbar .brand {
     background-image: url("../img/nav/logo-small.png");
     background-size: 42px 25px;
     background-position: 14px center;
     background-repeat: no-repeat;
     padding-left: 70px;
+}
+
+.navbar .brand i.logo {
+    display: inline-block;
+    margin-bottom: -5px;
+    margin-top: -5px;
+    margin-left: -10px;
+    margin-right: 10px;
 }
 
 h1 a.anchor, h3 a.anchor {
@@ -143,15 +151,16 @@ footer p.footer-text {
     color: #888;
 }
 
-.nav img.curr-flag {
+.nav .flag {
     margin-right: 0.7em;
-    margin-top: -2px;
+    margin-bottom: -5px;
+    border: 1px solid black;
+    display: inline-block;
+    vertical-align: center;
 }
 
-.nav img.flag {
-    margin-right: 0.7em;
-    margin-top: -2px;
-    border: 1px solid black;
+.nav .curr-flag {
+    border: 0;
 }
 
 .home-section {

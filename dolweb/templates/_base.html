@@ -19,6 +19,7 @@
 
         <link href="{{ STATIC_URL }}css/bootstrap.min.css" rel="stylesheet">
         <link href="{{ STATIC_URL }}css/dolphin.css" rel="stylesheet">
+        <link href="{{ STATIC_URL }}sprites/nav.css" rel="stylesheet">
         {% block "extracss" %}
         {% endblock %}
 
@@ -51,7 +52,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </a>
-                    <a class="brand" href="{% url home %}">{% trans "Dolphin Emulator" %}</a>
+                    <a class="brand" href="{% url home %}"><i class="logo sprite-nav-logo-small"></i>{% trans "Dolphin Emulator" %}</a>
                     <div class="nav-collapse">
                         <ul class="nav pull-left">
                             <li><a href="{% url home %}">{% trans "Home" %}</a></li>
@@ -66,11 +67,11 @@
                         </ul>
                         <ul class="nav pull-right">
                             <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img class="curr-flag" src="{{ STATIC_URL }}img/nav/{{ LANGUAGE_CODE|short }}.png" alt="{{ LANGUAGE_CODE|short }}"> {{ LANGUAGE_CODE|langname }} <b class="caret"></b></a>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><div class="flag curr-flag sprite-nav-{{ LANGUAGE_CODE|short }}"></div> {{ LANGUAGE_CODE|langname }} <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                 {% for langcode, langname in LANGUAGES %}
                                     {% if langcode != LANGUAGE_CODE|short %}
-                                    <li><a href="http://{{ langcode|to_subdomain }}{{ request.path }}?nocr=true"><img class="flag" src="{{ STATIC_URL }}img/flags/{{ langcode }}.png" alt="{{ langcode }}"> {{ langname }}</a></li>
+                                    <li><a href="http://{{ langcode|to_subdomain }}{{ request.path }}?nocr=true"><div class="flag sprite-nav-{{ langcode }}"></div>{{ langname }}</a></li>
                                     {% endif %}
                                 {% endfor %}
                                 </ul>
