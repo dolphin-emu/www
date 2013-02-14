@@ -66,7 +66,7 @@
                         </ul>
                         <ul class="nav pull-right">
                             <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img class="curr-flag" src="{{ STATIC_URL }}img/flags/{{ LANGUAGE_CODE|short }}.png" alt="{{ LANGUAGE_CODE|short }}"> {{ LANGUAGE_CODE|langname }} <b class="caret"></b></a>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img class="curr-flag" src="{{ STATIC_URL }}img/nav/{{ LANGUAGE_CODE|short }}.png" alt="{{ LANGUAGE_CODE|short }}"> {{ LANGUAGE_CODE|langname }} <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                 {% for langcode, langname in LANGUAGES %}
                                     {% if langcode != LANGUAGE_CODE|short %}

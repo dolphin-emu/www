@@ -1,7 +1,7 @@
 .navbar-inner { border-radius: 0; }
 
 .navbar .brand {
-    background-image: url("../img/logo-small.png");
+    background-image: url("../img/nav/logo-small.png");
     background-size: 42px 25px;
     background-position: 14px center;
     background-repeat: no-repeat;
