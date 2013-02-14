@@ -62,6 +62,7 @@ LANGUAGES = (
     ('br', u'Português (Brasil)'),
     ('ru', u'Русский'),
     ('sv', u'Svenska'),
+    ('tr', u'Türkçe'),
     ('ja', u'日本語'),
     ('ko', u'한국어'),
 )
