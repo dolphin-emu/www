@@ -62,6 +62,7 @@ LANGUAGES = (
     ('br', u'Português (Brasil)'),
     ('ru', u'Русский'),
     ('sv', u'Svenska'),
+    ('tr', u'Türkçe'),
     ('ja', u'日本語'),
     ('ko', u'한국어'),
 )
@@ -185,6 +186,7 @@ INSTALLED_APPS = (
     'dolweb.docs',
     'dolweb.media',
     'dolweb.compat',
+    'dolweb.localefixes',
 )
 
 # A sample logging configuration. The only tangible logging

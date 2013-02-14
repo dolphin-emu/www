@@ -1,0 +1,64 @@
+# Fixes for the django.contrib.humanize Korean translation.
+
+msgid ""
+msgstr ""
+"Project-Id-Version: Django\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-03-23 02:41+0100\n"
+"PO-Revision-Date: 2012-02-14 13:08+0000\n"
+"Last-Translator: Jannis Leidel <jannis@leidel.info>\n"
+"Language-Team: Korean (http://www.transifex.net/projects/p/django/language/"
+"ko/)\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#: templatetags/humanize.py:185
+#, python-format
+msgctxt "naturaltime"
+msgid "%(delta)s ago"
+msgstr "%(delta)s 전"
+
+#: templatetags/humanize.py:191
+#, python-format
+msgid "a second ago"
+msgid_plural "%(count)s seconds ago"
+msgstr[0] "%(count)s 초 전"
+
+#: templatetags/humanize.py:196
+#, python-format
+msgid "a minute ago"
+msgid_plural "%(count)s minutes ago"
+msgstr[0] "%(count)s 분 전"
+
+#: templatetags/humanize.py:201
+#, python-format
+msgid "an hour ago"
+msgid_plural "%(count)s hours ago"
+msgstr[0] "%(count)s 시간 전"
+
+#: templatetags/humanize.py:207
+#, python-format
+msgctxt "naturaltime"
+msgid "%(delta)s from now"
+msgstr "현재로부터 %(delta)s"
+
+#: templatetags/humanize.py:213
+#, python-format
+msgid "a second from now"
+msgid_plural "%(count)s seconds from now"
+msgstr[0] "현재로부터 %(count)s 초"
+
+#: templatetags/humanize.py:218
+#, python-format
+msgid "a minute from now"
+msgid_plural "%(count)s minutes from now"
+msgstr[0] "현재로부터 %(count)s 분"
+
+#: templatetags/humanize.py:223
+#, python-format
+msgid "an hour from now"
+msgid_plural "%(count)s hours from now"
+msgstr[0] "현재로부터 %(count)s"
