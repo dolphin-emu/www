@@ -3,10 +3,12 @@ Fabric==1.5.3
 Markdown==2.2.0
 MySQL-python==1.2.4
 PIL==1.1.7
+Pillow==1.7.8
 distribute==0.6.34
 django-annoying==0.7.6
 django-bootstrap-form==2.0.3
 django-debug-toolbar==0.9.4
+glue==0.3
 paramiko==1.9.0
 pycrypto==2.6
 pymongo==2.4.2

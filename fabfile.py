@@ -8,11 +8,12 @@ def deploy(root, branch):
     with cd(root):
         run("git pull")
         run("git checkout %s" % branch)
+        run(activate + " && pip install -r requirements.txt")
         run(activate + " && python manage.py collectstatic --noinput")
         with cd("dolweb"):
             run("msgfmt localefixes/locale/ko/LC_MESSAGES/django.po -o "
                        "localefixes/locale/ko/LC_MESSAGES/django.mo")
-            run(activate + "&& django-admin.py compilemessages")
+            run(activate + " && django-admin.py compilemessages")
 
 def deploy_stable():
     deploy("/home/dolphin-emu/apps/www", "stable")
