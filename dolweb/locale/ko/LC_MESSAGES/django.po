@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-01-29 13:28+0100\n"
-"PO-Revision-Date: 2013-02-06 20:04+0000\n"
+"PO-Revision-Date: 2013-02-11 23:16+0000\n"
 "Last-Translator: Siegfried <iori3000@hanafos.com>\n"
 "Language-Team: Korean (http://www.transifex.com/projects/p/dolphin-emu/language/ko/)\n"
 "MIME-Version: 1.0\n"
@@ -58,7 +58,7 @@ msgstr "예전 버전들 보기"
 
 #: downloads/templates/downloads-branches.html:27
 msgid "Branch list"
-msgstr "브랜치 목록"
+msgstr "분기 목록"
 
 #: downloads/templates/downloads-devrel.html:19
 msgid "No development release yet"
@@ -152,7 +152,7 @@ msgstr "버전"
 
 #: downloads/templates/downloads-view-devrel.html:19
 msgid "Branch"
-msgstr "브랜치"
+msgstr "분기"
 
 #: downloads/templates/downloads-view-devrel.html:22
 msgid "Date"
@@ -216,7 +216,7 @@ msgstr "\n        Wii 는 480p 해상도에서만 게임들을 렌더링합니�
 
 #: homepage/templates/homepage-home.html:81
 msgid "Use your favorite controller"
-msgstr "좋아하는 컨트롤러를 사용하세요"
+msgstr "좋아하는 컨트롤러 사용"
 
 #: homepage/templates/homepage-home.html:83
 msgid ""
@@ -230,15 +230,15 @@ msgstr "\n        게임큐브 컨트롤러와 위모트의 빅 팬이 아니십
 
 #: homepage/templates/homepage-home.html:93
 msgid "Recent Dolphin news"
-msgstr "최근 돌핀 뉴스"
+msgstr "  최근 돌핀 뉴스"
 
 #: homepage/templates/homepage-home.html:98
 msgid "by"
-msgstr "에 의해"
+msgstr "by"
 
 #: homepage/templates/homepage-home.html:110
 msgid "Great compatibility"
-msgstr "훌륭한 호환성"
+msgstr "뛰어난 호환성"
 
 #: homepage/templates/homepage-home.html:112
 #, python-format
@@ -300,7 +300,7 @@ msgstr "다음"
 
 #: templates/_base.html:57
 msgid "Home"
-msgstr "처음으로"
+msgstr "홈"
 
 #: templates/_base.html:58
 msgid "Media"
@@ -308,11 +308,11 @@ msgstr "미디어"
 
 #: templates/_base.html:60
 msgid "FAQ"
-msgstr "자즌질문"
+msgstr "FAQ"
 
 #: templates/_base.html:62
 msgid "Forum"
-msgstr "토론회"
+msgstr "포럼"
 
 #: templates/_base.html:63
 msgid "Wiki"

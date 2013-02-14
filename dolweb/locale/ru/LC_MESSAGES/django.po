@@ -4,13 +4,14 @@
 # 
 # Translators:
 # dffggff <69@no-spam.ws>, 2013.
+# Pierre Bourdon <delroth@gmail.com>, 2013.
 msgid ""
 msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-01-29 13:28+0100\n"
-"PO-Revision-Date: 2013-02-08 14:47+0000\n"
-"Last-Translator: N69 <69@no-spam.ws>\n"
+"PO-Revision-Date: 2013-02-11 18:35+0000\n"
+"Last-Translator: delroth <delroth@gmail.com>\n"
 "Language-Team: Russian (http://www.transifex.com/projects/p/dolphin-emu/language/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -30,7 +31,7 @@ msgstr "Инструкции"
 #: docs/templates/docs-guides-index.html:15
 #, python-format
 msgid "(by %(author)s)"
-msgstr "(by %(author)s)"
+msgstr "(от %(author)s)"
 
 #: docs/templates/docs-guides-index.html:17
 msgid "No published guide available"
@@ -79,7 +80,7 @@ msgid ""
 "    Stable versions are released after a lot of testing to ensure emulation\n"
 "    performance and stability. <strong>If you do not know what version of\n"
 "    Dolphin you should use, the latest stable version is generally the best.</strong>\n"
-msgstr "\n Стабильные версии выпускаются после долгого тестирования, для обеспечения качественной эмуляции, производительности и стабильности. <strong> Если вы не знаете, какую версию Dolphin \nвы хотите использовать, последняя стабильная версия, как правило, лучший выбор. </ STRONG> \n"
+msgstr "\n Стабильные версии выпускаются после долгого тестирования, для обеспечения качественной эмуляции, производительности и стабильности. <strong> Если вы не знаете, какую версию Dolphin \nвы хотите использовать, последняя стабильная версия, как правило, лучший выбор. </strong> \n"
 
 #: downloads/templates/downloads-index.html:53
 msgid "No stable release yet"
@@ -96,7 +97,7 @@ msgid ""
 "    developer makes a change to Dolphin. Using development versions enables you\n"
 "    to use the latest and greatest improvements to the project, at the cost of\n"
 "    decreased stability.\n"
-msgstr "\n <strong> Внимание! </ STRONG> Разрабатываемые версии выпускаются каждый раз, когда \nразработчики вносят изменения в Dolphin. Использование разрабатываемых версий позволяет \nиспользовать последние и самые большие улучшения в проекте, за счет ухудшенной стабильности. \n"
+msgstr "\n <strong> Внимание! </strong> Разрабатываемые версии выпускаются каждый раз, когда \nразработчики вносят изменения в Dolphin. Использование разрабатываемых версий позволяет \nиспользовать последние и самые большие улучшения в проекте, за счет ухудшенной стабильности. \n"
 
 #: downloads/templates/downloads-index.html:83
 msgid "Only displaying the <tt>master</tt> branch versions."
@@ -172,7 +173,7 @@ msgstr "Изменить описание"
 
 #: homepage/templates/homepage-home.html:7
 msgid "Gamecube/Wii games on PC"
-msgstr "Игры от Gamecube/Wii на вашем ПК"
+msgstr "Игры от Gamecube/Wii на ПК"
 
 #: homepage/templates/homepage-home.html:25 templates/_base.html:9
 #: templates/_base.html.py:54
@@ -226,7 +227,7 @@ msgid ""
 "        and mouse! Wiimotes are still supported, including Wii Motion Plus\n"
 "        for games that require it.\n"
 "        "
-msgstr "\n      Не являетесь фанатом джойстика от Gamecube и Wiimote? Вы\n можете играть в игры на вашем любимом ПК джойстике, или на\n клавиатуре с мышкой! Wiimotes также поддерживаются, включая\n Wii Motion Plus для игр которые его требуют."
+msgstr "\n      Не являетесь фанатом джойстика от Gamecube и Wiimote? Вы\n можете играть в игры на вашем любимом ПК джойстике, или на\n клавиатуре с мышкой! Wiimote также поддерживаются, включая\n Wii Motion Plus для игр которые его требуют."
 
 #: homepage/templates/homepage-home.html:93
 msgid "Recent Dolphin news"
@@ -280,7 +281,7 @@ msgid ""
 "        Grab the emulator source code from <a href=\"%(GCODE_URL)s\">Google\n"
 "        Code</a> and start hacking!\n"
 "        "
-msgstr "\n  Dolphin Emulator разрабатывается волонтерами со всего\n  света и распространяется абсолютно свободно. Хотите улучшить\n  проект?\n  Зайдите на сайт с исходным кодом <a href=\"%(GCODE_URL)s\">Google\n    Code</a> и начинайте ломать!"
+msgstr "\n  Dolphin Emulator разрабатывается волонтерами со всего\n  света и распространяется абсолютно свободно. Хотите улучшить\n  проект?\n  Зайдите на сайт с исходным кодом <a href=\"%(GCODE_URL)s\">Google\n    Code</a> и начните ломать!"
 
 #: media/templates/media-all.html:6 media/templates/media-all.html.py:19
 msgid "Media gallery"
@@ -328,4 +329,4 @@ msgid ""
 "            &copy; 2012 Dolphin Emulator Project -\n"
 "            <a href=\"https://bitbucket.org/delroth/dolphin-web/\">Website source code</a>\n"
 "            "
-msgstr "\n &copy; 2012 Dolphin Emulator Project -\n <a href=\"https://bitbucket.org/delroth/dolphin-web/\">Website source code</a>\n "
+msgstr "\n &copy; 2012 Dolphin Emulator Project -\n <a href=\"https://bitbucket.org/delroth/dolphin-web/\">Исходный код сайта</a>\n "
