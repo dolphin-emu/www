@@ -118,15 +118,22 @@ class CategoryLink(models.Model):
         verbose_name = u'MediaWiki Category Link'
         verbose_name_plural = u'MediaWiki Category Links'
 
+def get_rated_games():
+    count = cache.get('rating_count')
+    if count is None:
+        count = Page.objects.filter(namespace=Namespace.TEMPLATE, title_url__startswith='Ratings/',
+                                    latest__text__data_raw__in=('1', '2', '3', '4', '5')).count()
+        cache.set('rating_count', count, 300)
+    return count
+
 def get_rating_count(n):
     if n < 1 or n > 5:
         return 0
 
     count = cache.get('rating_count_%d' % n)
     if count is None:
-        qs = Page.objects.filter(namespace=Namespace.TEMPLATE, title_url__startswith='Ratings/',
-                                 latest__text__data=str(n))
-        count = len(qs)
+        count = Page.objects.filter(namespace=Namespace.TEMPLATE, title_url__startswith='Ratings/',
+                                    latest__text__data_raw=str(n)).count()
         cache.set('rating_count_%d' % n, count, 300)
 
     return count

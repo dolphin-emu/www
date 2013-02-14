@@ -172,6 +172,15 @@ footer p.footer-text {
     margin-top: -0.5em;
 }
 
+.ratings-stats ul {
+    list-style: none;
+    margin-top: 1em;
+}
+
+.ratings-stats li {
+    margin-bottom: 0.6em;
+}
+
 .compat-list {
     width: 100%;
     margin: 0 auto;
@@ -235,4 +244,20 @@ footer p.footer-text {
 .pagination-small a {
     padding: 0 7px;
     line-height: 24px;
+}
+
+.col-row {
+    overflow: hidden;
+}
+
+.col-row .col {
+    margin-bottom: -99999px;
+    padding-bottom: 99999px;
+    background-color:#f5f5f5;
+    border: 0;
+    border-radius: 0;
+}
+
+.ratings-expl, .ratings-stats {
+    margin-bottom: 20px;
 }

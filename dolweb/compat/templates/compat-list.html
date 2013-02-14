@@ -12,16 +12,34 @@
 
 {% block "body" %}
 
-<div class="well ratings-expl">
-    <h3>{% trans "How to read the ratings" %}</h3>
+<div class="col-row">
+<div class="row-fluid">
+    <div class="span9 well col">
+        <div class="ratings-expl">
+        <h3>{% trans "How to read the ratings" %}</h3>
 
-    <ul>
-        <li><img src="{{ STATIC_URL }}img/stars/5.png" alt="{% trans "5 out of 5" %}"> {% trans "<strong>Perfect</strong>: No issues at all!" %}</li>
-        <li><img src="{{ STATIC_URL }}img/stars/4.png" alt="{% trans "4 out of 5" %}"> {% trans "<strong>Playable</strong>: Runs well, only minor graphical or audio glitches. Games can be played all the way through." %}</li>
-        <li><img src="{{ STATIC_URL }}img/stars/3.png" alt="{% trans "3 out of 5" %}"> {% trans "<strong>Starts</strong>: Starts, maybe even plays well, but crashes or major graphical/audio glitches." %}</li>
-        <li><img src="{{ STATIC_URL }}img/stars/2.png" alt="{% trans "2 out of 5" %}"> {% trans "<strong>Intro/Menu</strong>: Hangs/crashes somewhere between booting and starting." %}</li>
-        <li><img src="{{ STATIC_URL }}img/stars/1.png" alt="{% trans "1 out of 5" %}"> {% trans "<strong>Broken</strong>: Crashes when booting." %}</li>
-    </ul>
+        <ul>
+            <li><img src="{{ STATIC_URL }}img/stars/5.png" alt="{% trans "5 out of 5" %}"> {% trans "<strong>Perfect</strong>: No issues at all!" %}</li>
+            <li><img src="{{ STATIC_URL }}img/stars/4.png" alt="{% trans "4 out of 5" %}"> {% trans "<strong>Playable</strong>: Runs well, only minor graphical or audio glitches. Games can be played all the way through." %}</li>
+            <li><img src="{{ STATIC_URL }}img/stars/3.png" alt="{% trans "3 out of 5" %}"> {% trans "<strong>Starts</strong>: Starts, maybe even plays well, but crashes or major graphical/audio glitches." %}</li>
+            <li><img src="{{ STATIC_URL }}img/stars/2.png" alt="{% trans "2 out of 5" %}"> {% trans "<strong>Intro/Menu</strong>: Hangs/crashes somewhere between booting and starting." %}</li>
+            <li><img src="{{ STATIC_URL }}img/stars/1.png" alt="{% trans "1 out of 5" %}"> {% trans "<strong>Broken</strong>: Crashes when booting." %}</li>
+        </ul>
+        </div>
+    </div>
+
+    <div class="span3 well col">
+        <div class="ratings-stats">
+        <h3>Statistics</h3>
+
+        <ul class="unstyled">
+        {% for rating in all_ratings %}
+        <li><strong>{{ rating|compat_text }}</strong>: {{ rating|rating_pct|floatformat }}%</li>
+        {% endfor %}
+        </ul>
+        </div>
+    </div>
+</div>
 </div>
 
 {% include "compat-list-pagi.html" %}
