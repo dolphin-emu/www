@@ -10,6 +10,8 @@ def deploy(root, branch):
         run("git checkout %s" % branch)
         run(activate + " && python manage.py collectstatic --noinput")
         with cd("dolweb"):
+            run("msgfmt localefixes/locale/ko/LC_MESSAGES/django.po -o "
+                       "localefixes/locale/ko/LC_MESSAGES/django.mo")
             run(activate + "&& django-admin.py compilemessages")
 
 def deploy_stable():
