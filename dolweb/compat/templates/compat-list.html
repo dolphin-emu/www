@@ -32,11 +32,12 @@
         <div class="ratings-stats">
         <h3>Statistics</h3>
 
-        <ul class="unstyled">
+        <dl>
         {% for rating in all_ratings %}
-        <li><strong>{{ rating|compat_text }}</strong>: {{ rating|rating_pct|floatformat }}%</li>
+        <dt>{{ rating|compat_text }}: {{ rating|rating_pct|floatformat }}%</dt>
+        <dd><div class="progress progress-{{ rating|rating_class }}"><div class="bar" style="width: {{ rating|rating_pct }}%"></div></div></dd>
         {% endfor %}
-        </ul>
+        </dl>
         </div>
     </div>
 </div>

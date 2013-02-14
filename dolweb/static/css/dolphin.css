@@ -160,11 +160,11 @@ footer p.footer-text {
 
 .ratings-expl ul {
     list-style: none;
-    margin-top: 1em;
+    margin-top: 1.6em;
 }
 
 .ratings-expl li {
-    margin-bottom: 0.6em;
+    margin-bottom: 1.1em;
 }
 
 .ratings-expl li img {
@@ -172,13 +172,18 @@ footer p.footer-text {
     margin-top: -0.5em;
 }
 
-.ratings-stats ul {
-    list-style: none;
-    margin-top: 1em;
+.ratings-stats dl {
+    margin-right: 1em;
+    font-size: 0.85em;
 }
 
-.ratings-stats li {
-    margin-bottom: 0.6em;
+.ratings-stats .progress .bar {
+    height: 12px;
+}
+
+.ratings-stats .progress {
+    height: 12px;
+    margin-bottom: 6px;
 }
 
 .compat-list {

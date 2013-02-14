@@ -28,3 +28,14 @@ def rating_pct(compat):
     count = get_rating_count(compat)
     count_all = get_rated_games()
     return (float(count) * 100) / count_all
+
+@register.filter
+def rating_class(compat):
+    return {
+        0: 'danger',
+        1: 'danger',
+        2: 'danger',
+        3: 'warning',
+        4: 'success',
+        5: 'info',
+    }[int(compat)]
