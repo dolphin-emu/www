@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-01-29 13:28+0100\n"
-"PO-Revision-Date: 2013-02-12 09:08+0000\n"
+"POT-Creation-Date: 2013-02-14 06:21+0100\n"
+"PO-Revision-Date: 2013-02-14 11:37+0000\n"
 "Last-Translator: Puniasterus <roger---92@hotmail.com>\n"
 "Language-Team: Spanish (http://www.transifex.com/projects/p/dolphin-emu/language/es/)\n"
 "MIME-Version: 1.0\n"
@@ -17,6 +17,101 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: es\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: compat/templates/compat-list.html:7
+#, python-format
+msgid "Compatibility List - page %(page)s"
+msgstr "Lista de compatibilidad - página %(page)s"
+
+#: compat/templates/compat-list.html:19
+msgid "How to read the ratings"
+msgstr "Como leer las calificaciones"
+
+#: compat/templates/compat-list.html:22
+msgid "5 out of 5"
+msgstr "5 de 5"
+
+#: compat/templates/compat-list.html:22
+msgid "<strong>Perfect</strong>: No issues at all!"
+msgstr "<strong>Perfecto</strong>: Ningún problema en absoluto!"
+
+#: compat/templates/compat-list.html:23
+msgid "4 out of 5"
+msgstr "4 de 5"
+
+#: compat/templates/compat-list.html:23
+msgid ""
+"<strong>Playable</strong>: Runs well, only minor graphical or audio "
+"glitches. Games can be played all the way through."
+msgstr "<strong>Jugable</strong>: Funciona bien, solo errores menos gráficos o de sonido. Los juegos pueden ser jugados hasta el final."
+
+#: compat/templates/compat-list.html:24
+msgid "3 out of 5"
+msgstr "3 de 5"
+
+#: compat/templates/compat-list.html:24
+msgid ""
+"<strong>Starts</strong>: Starts, maybe even plays well, but crashes or major"
+" graphical/audio glitches."
+msgstr "<strong>Inicia</strong>: Inicia, tal vez funcione bien, pero puede bloquearse o  tener grandes errores gráficos/sonido."
+
+#: compat/templates/compat-list.html:25
+msgid "2 out of 5"
+msgstr "2 de 5"
+
+#: compat/templates/compat-list.html:25
+msgid ""
+"<strong>Intro/Menu</strong>: Hangs/crashes somewhere between booting and "
+"starting."
+msgstr "<strong>Intro/Menú</strong>: Se bloquea en algún lugar entre el arranque y el inicio."
+
+#: compat/templates/compat-list.html:26
+msgid "1 out of 5"
+msgstr "1 de 5"
+
+#: compat/templates/compat-list.html:26
+msgid "<strong>Broken</strong>: Crashes when booting."
+msgstr "<strong>Roto</strong>: Se bloquea durante el arranque."
+
+#: compat/templates/compat-list.html:33
+msgid "Statistics"
+msgstr "Estadísticas"
+
+#: compat/templates/compat-list.html:53
+msgid "Game title (click for details)"
+msgstr "Nombre del juego (click para detalles)"
+
+#: compat/templates/compat-list.html:54 templates/_base.html:62
+msgid "Compatibility"
+msgstr "Compatibilidad"
+
+#: compat/templates/compat-list.html:55
+msgid "Last updated"
+msgstr "Última actualización"
+
+#: compat/templatetags/compat.py:7
+msgid "Unknown"
+msgstr "Desconocido"
+
+#: compat/templatetags/compat.py:8
+msgid "Broken"
+msgstr "Roto"
+
+#: compat/templatetags/compat.py:9
+msgid "Intro/Menu"
+msgstr "Intro/Menú"
+
+#: compat/templatetags/compat.py:10
+msgid "Starts"
+msgstr "Inicia"
+
+#: compat/templatetags/compat.py:11
+msgid "Playable"
+msgstr "Jugable"
+
+#: compat/templatetags/compat.py:12
+msgid "Perfect"
+msgstr "Perfecto"
 
 #: docs/templates/docs-faq.html:6
 msgid "Frequently Asked Questions"
@@ -240,22 +335,23 @@ msgstr "por"
 msgid "Great compatibility"
 msgstr "Gran compatibilidad"
 
-#: homepage/templates/homepage-home.html:112
+#: homepage/templates/homepage-home.html:113
 #, python-format
 msgid ""
 "\n"
 "        Dolphin can play most of the Gamecube and Wii games collection\n"
 "        without issues. New Wii releases often work on Dolphin from day one.\n"
 "        Wiiware and Virtual Console games are also supported. Check out\n"
-"        the <a href=\"%(WIKI_URL)s\">Dolphin compatibility wiki</a>.\n"
+"        the <a href=\"%(COMPAT_URL)s\">Dolphin compatibility list</a>\n"
+"        or the <a href=\"%(WIKI_URL)s\">Dolphin wiki</a> for more details.\n"
 "        "
-msgstr "\n        Dolphin puede jugar la mayoría de juegos de la colección Gamecube y Wii\n       sin problemas. Algunos juegos nuevos de Wii funcionan desde el primer día.\n       Wiiware y juegos Virtual Console también son soportados. Mira\n       la <a href=\"%(WIKI_URL)s\">wiki de compatibilidad Dolphin</a>.\n        "
+msgstr "\n        Dolphin puede jugar la mayoría de juegos de la colección\nGamecube y Wii sin problemas. Algunos juegos nuevos de Wii funcionan desde el primer día.\nWiiware y juegos Virtual Console también son soportados. Mira la\n<a href=\"%(COMPAT_URL)s\">Lista de compatibilidad de Dolphin </a>⏎ o la <a href=\"%(WIKI_URL)s\">Wiki de Dolphin</a> para más detalles."
 
-#: homepage/templates/homepage-home.html:122
+#: homepage/templates/homepage-home.html:124
 msgid "Helpful community"
 msgstr "Comunidad dispuesta a ayudar"
 
-#: homepage/templates/homepage-home.html:125
+#: homepage/templates/homepage-home.html:127
 #, python-format
 msgid ""
 "\n"
@@ -267,11 +363,11 @@ msgid ""
 "        "
 msgstr "\n        Problemas de instalación? Intentando encontrar las mejores configuraciones para un\n        juego? O solo interesado en las discusiones sobre juegos de Gamecube y Wii\n        que te gustan? Si las <a href=\"%(FAQ_URL)s\">Preguntas más frecuentes</a>\n        no te pueden ayudar, otros usuarios Dolphin puede que quieran ayudarte en los\n        <a href=\"%(FORUM_URL)s\">foros odiciales de discusiones</a>.\n        "
 
-#: homepage/templates/homepage-home.html:136
+#: homepage/templates/homepage-home.html:138
 msgid "Free and Open Source"
 msgstr "Gratuito y de código abierto"
 
-#: homepage/templates/homepage-home.html:138
+#: homepage/templates/homepage-home.html:140
 #, python-format
 msgid ""
 "\n"
@@ -310,15 +406,15 @@ msgstr "Medios"
 msgid "FAQ"
 msgstr "FAQ"
 
-#: templates/_base.html:62
+#: templates/_base.html:63
 msgid "Forum"
 msgstr "Foro"
 
-#: templates/_base.html:63
+#: templates/_base.html:64
 msgid "Wiki"
 msgstr "Wiki"
 
-#: templates/_base.html:64
+#: templates/_base.html:65
 msgid "Development"
 msgstr "Desarrollo"
 
