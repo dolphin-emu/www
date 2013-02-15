@@ -10,8 +10,8 @@ msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-02-14 06:21+0100\n"
-"PO-Revision-Date: 2013-02-14 05:23+0000\n"
-"Last-Translator: delroth <delroth@gmail.com>\n"
+"PO-Revision-Date: 2013-02-15 12:37+0000\n"
+"Last-Translator: N69 <69@no-spam.ws>\n"
 "Language-Team: Russian (http://www.transifex.com/projects/p/dolphin-emu/language/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -22,97 +22,97 @@ msgstr ""
 #: compat/templates/compat-list.html:7
 #, python-format
 msgid "Compatibility List - page %(page)s"
-msgstr ""
+msgstr "Лист совместимости - страница %(page)s"
 
 #: compat/templates/compat-list.html:19
 msgid "How to read the ratings"
-msgstr ""
+msgstr "Что означают рейтинги"
 
 #: compat/templates/compat-list.html:22
 msgid "5 out of 5"
-msgstr ""
+msgstr "5 из 5"
 
 #: compat/templates/compat-list.html:22
 msgid "<strong>Perfect</strong>: No issues at all!"
-msgstr ""
+msgstr "<strong>Отлично</strong>: Никаких проблем в эмуляции!"
 
 #: compat/templates/compat-list.html:23
 msgid "4 out of 5"
-msgstr ""
+msgstr "4 из 5"
 
 #: compat/templates/compat-list.html:23
 msgid ""
 "<strong>Playable</strong>: Runs well, only minor graphical or audio "
 "glitches. Games can be played all the way through."
-msgstr ""
+msgstr "<strong>Играбельно</strong>: Игра работает, но могут быть графические или аудио глюки. В такие игры можно поиграть, и даже пройти."
 
 #: compat/templates/compat-list.html:24
 msgid "3 out of 5"
-msgstr ""
+msgstr "3 из 5"
 
 #: compat/templates/compat-list.html:24
 msgid ""
 "<strong>Starts</strong>: Starts, maybe even plays well, but crashes or major"
 " graphical/audio glitches."
-msgstr ""
+msgstr "<strong>Запускается</strong>: Запускается, доходя до игрового процесса, однако происходит вылет, или имеются серьезные графические/аудио глюки."
 
 #: compat/templates/compat-list.html:25
 msgid "2 out of 5"
-msgstr ""
+msgstr "2 из 5"
 
 #: compat/templates/compat-list.html:25
 msgid ""
 "<strong>Intro/Menu</strong>: Hangs/crashes somewhere between booting and "
 "starting."
-msgstr ""
+msgstr "<strong>Ролики/меню</strong>: Зависает/вылетает обычно после загрузки."
 
 #: compat/templates/compat-list.html:26
 msgid "1 out of 5"
-msgstr ""
+msgstr "1 из 5"
 
 #: compat/templates/compat-list.html:26
 msgid "<strong>Broken</strong>: Crashes when booting."
-msgstr ""
+msgstr "<strong>Ничего</strong>: Не запускается"
 
 #: compat/templates/compat-list.html:33
 msgid "Statistics"
-msgstr ""
+msgstr "Статистика"
 
 #: compat/templates/compat-list.html:53
 msgid "Game title (click for details)"
-msgstr ""
+msgstr "Название игры (кликните для подробностей)"
 
 #: compat/templates/compat-list.html:54 templates/_base.html:62
 msgid "Compatibility"
-msgstr ""
+msgstr "Совместимость"
 
 #: compat/templates/compat-list.html:55
 msgid "Last updated"
-msgstr ""
+msgstr "Последние обновление"
 
 #: compat/templatetags/compat.py:7
 msgid "Unknown"
-msgstr ""
+msgstr "Неизвестно"
 
 #: compat/templatetags/compat.py:8
 msgid "Broken"
-msgstr ""
+msgstr "Ничего"
 
 #: compat/templatetags/compat.py:9
 msgid "Intro/Menu"
-msgstr ""
+msgstr "Ролики/меню"
 
 #: compat/templatetags/compat.py:10
 msgid "Starts"
-msgstr ""
+msgstr "Запускается"
 
 #: compat/templatetags/compat.py:11
 msgid "Playable"
-msgstr ""
+msgstr "Играбельно"
 
 #: compat/templatetags/compat.py:12
 msgid "Perfect"
-msgstr ""
+msgstr "Отлично"
 
 #: docs/templates/docs-faq.html:6
 msgid "Frequently Asked Questions"
@@ -346,7 +346,7 @@ msgid ""
 "        the <a href=\"%(COMPAT_URL)s\">Dolphin compatibility list</a>\n"
 "        or the <a href=\"%(WIKI_URL)s\">Dolphin wiki</a> for more details.\n"
 "        "
-msgstr ""
+msgstr "\nDolphin позволяет играть в большинство Gamecube и Wii игр, без каких-либо проблем. Новые Wii игры, обычно запускаются в день релиза. Игры для Wiiware и Virtual Console также поддерживаются. Проверьте <a href=\"%(COMPAT_URL)s\">Таблицу совместимости Dolphin. </a> или <a href=\"%(WIKI_URL)s\">Энциклопедию Dolphin</a>, для подробностей"
 
 #: homepage/templates/homepage-home.html:124
 msgid "Helpful community"
