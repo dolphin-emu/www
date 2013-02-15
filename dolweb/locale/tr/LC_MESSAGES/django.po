@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-01-29 13:28+0100\n"
-"PO-Revision-Date: 2013-02-13 14:54+0000\n"
+"POT-Creation-Date: 2013-02-14 06:21+0100\n"
+"PO-Revision-Date: 2013-02-14 09:26+0000\n"
 "Last-Translator: mustafacan <m.can.elmaci@gmail.com>\n"
 "Language-Team: Turkish (http://www.transifex.com/projects/p/dolphin-emu/language/tr/)\n"
 "MIME-Version: 1.0\n"
@@ -17,6 +17,101 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: tr\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+
+#: compat/templates/compat-list.html:7
+#, python-format
+msgid "Compatibility List - page %(page)s"
+msgstr "Uyumluluk listesi - sayfa %(page)s"
+
+#: compat/templates/compat-list.html:19
+msgid "How to read the ratings"
+msgstr ""
+
+#: compat/templates/compat-list.html:22
+msgid "5 out of 5"
+msgstr "5 üzerinden 5"
+
+#: compat/templates/compat-list.html:22
+msgid "<strong>Perfect</strong>: No issues at all!"
+msgstr "<strong>Mükemmel</strong>: Hiçbir sorun yok!"
+
+#: compat/templates/compat-list.html:23
+msgid "4 out of 5"
+msgstr "5 üzerinden 4"
+
+#: compat/templates/compat-list.html:23
+msgid ""
+"<strong>Playable</strong>: Runs well, only minor graphical or audio "
+"glitches. Games can be played all the way through."
+msgstr "<strong>Oynanabilir</strong>: Çalışıyor, sadece küçük grafik ve ses sorunları var. Oyun sonuna kadar oynanabiliyor."
+
+#: compat/templates/compat-list.html:24
+msgid "3 out of 5"
+msgstr "5 üzerinden 3"
+
+#: compat/templates/compat-list.html:24
+msgid ""
+"<strong>Starts</strong>: Starts, maybe even plays well, but crashes or major"
+" graphical/audio glitches."
+msgstr "<strong>Oyuna giriyor</strong>: Oyuna giriyor, oynanabiliyor, ama ileriki bölümlerde çöküyor veya büyük grafik ve ses sorunları var."
+
+#: compat/templates/compat-list.html:25
+msgid "2 out of 5"
+msgstr "5 üzerinden 2"
+
+#: compat/templates/compat-list.html:25
+msgid ""
+"<strong>Intro/Menu</strong>: Hangs/crashes somewhere between booting and "
+"starting."
+msgstr "<strong>Açılıyor</strong>: Oyuna girerken bir yerde donuyor veya çöküyor."
+
+#: compat/templates/compat-list.html:26
+msgid "1 out of 5"
+msgstr "5 üzerinden 1"
+
+#: compat/templates/compat-list.html:26
+msgid "<strong>Broken</strong>: Crashes when booting."
+msgstr "<strong>Bozuk</strong>: Oyunu açarken çöküyor."
+
+#: compat/templates/compat-list.html:33
+msgid "Statistics"
+msgstr "İstatistikler"
+
+#: compat/templates/compat-list.html:53
+msgid "Game title (click for details)"
+msgstr "Oyunun adı (ayrıntılar için tıklayın)"
+
+#: compat/templates/compat-list.html:54 templates/_base.html:62
+msgid "Compatibility"
+msgstr "Uyumluluk"
+
+#: compat/templates/compat-list.html:55
+msgid "Last updated"
+msgstr "Son güncelleme"
+
+#: compat/templatetags/compat.py:7
+msgid "Unknown"
+msgstr "Bilinmiyor"
+
+#: compat/templatetags/compat.py:8
+msgid "Broken"
+msgstr "Bozuk"
+
+#: compat/templatetags/compat.py:9
+msgid "Intro/Menu"
+msgstr "Açılıyor"
+
+#: compat/templatetags/compat.py:10
+msgid "Starts"
+msgstr "Oyuna giriyor"
+
+#: compat/templatetags/compat.py:11
+msgid "Playable"
+msgstr "Oynanabilir"
+
+#: compat/templatetags/compat.py:12
+msgid "Perfect"
+msgstr "Mükemmel"
 
 #: docs/templates/docs-faq.html:6
 msgid "Frequently Asked Questions"
@@ -240,22 +335,23 @@ msgstr "tarafından"
 msgid "Great compatibility"
 msgstr "Mükemmel Uyumluluk"
 
-#: homepage/templates/homepage-home.html:112
+#: homepage/templates/homepage-home.html:113
 #, python-format
 msgid ""
 "\n"
 "        Dolphin can play most of the Gamecube and Wii games collection\n"
 "        without issues. New Wii releases often work on Dolphin from day one.\n"
 "        Wiiware and Virtual Console games are also supported. Check out\n"
-"        the <a href=\"%(WIKI_URL)s\">Dolphin compatibility wiki</a>.\n"
+"        the <a href=\"%(COMPAT_URL)s\">Dolphin compatibility list</a>\n"
+"        or the <a href=\"%(WIKI_URL)s\">Dolphin wiki</a> for more details.\n"
 "        "
-msgstr "\n        Dolphin çoğu Gamecube ve Wii oyununu sorunsuz çalıştırabilir.\n        Yeni Wii oyunları genellikle ilk günden Dolphin'le çalıştırılabilir.\n        Wiiware ve Virtual Console oyunları ayrıca desteklenir. \n        <a href=\"%(WIKI_URL)s\">Dolphin'in wikisine gözatın.</a>.\n        "
+msgstr "\n        Dolphin çoğu Gamecube ve Wii oyununu sorunsuz çalıştırabilir.\n        Yeni Wii oyunları genellikle ilk günden Dolphin'le çalıştırılabilir.\n        Wiiware ve Virtual Console oyunları ayrıca desteklenir. \n        Daha fazla bilgi için <a href=\"%(COMPAT_URL)s\">Uyumluluk listesi</a> ve <a href=\"%(WIKI_URL)s\">wiki'ye</a> gözatın.\n        "
 
-#: homepage/templates/homepage-home.html:122
+#: homepage/templates/homepage-home.html:124
 msgid "Helpful community"
 msgstr "Yardımsever topluluk"
 
-#: homepage/templates/homepage-home.html:125
+#: homepage/templates/homepage-home.html:127
 #, python-format
 msgid ""
 "\n"
@@ -267,11 +363,11 @@ msgid ""
 "        "
 msgstr "\n        Dolphin'i yüklerken bir sorunla mı karşılaştinız? Bir oyunun en iyi hangi\n        ayarlarda çalıştığını mı bulmaya çalışıyorsunuz? Yada sadece Gamecube ve Wii\n        hakkında konuşmak mı istiyorsunuz? Eğer <a href=\"%(FAQ_URL)s\">Sıkça Sorulan Sorular</a>\n        da aradığınızı bulamadıysanız <a href=\"%(FORUM_URL)s\">Dolphin forumlarında</a>\n        diğer Dolphin kullanıcılarından yardım isteyebilirsiniz.\n        "
 
-#: homepage/templates/homepage-home.html:136
+#: homepage/templates/homepage-home.html:138
 msgid "Free and Open Source"
 msgstr "Bedava ve Açık Kaynak"
 
-#: homepage/templates/homepage-home.html:138
+#: homepage/templates/homepage-home.html:140
 #, python-format
 msgid ""
 "\n"
@@ -310,15 +406,15 @@ msgstr "Medya"
 msgid "FAQ"
 msgstr "SSS"
 
-#: templates/_base.html:62
+#: templates/_base.html:63
 msgid "Forum"
 msgstr "Forum"
 
-#: templates/_base.html:63
+#: templates/_base.html:64
 msgid "Wiki"
 msgstr "Wiki"
 
-#: templates/_base.html:64
+#: templates/_base.html:65
 msgid "Development"
 msgstr "Geliştirme"
 

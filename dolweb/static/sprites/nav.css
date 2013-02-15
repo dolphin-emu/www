@@ -1,0 +1,29 @@
+/* glue: 0.3 hash: b01b1c10f3 */
+.sprite-nav-logo-small,
+.sprite-nav-tr,
+.sprite-nav-sv,
+.sprite-nav-ru,
+.sprite-nav-pl,
+.sprite-nav-nl,
+.sprite-nav-ko,
+.sprite-nav-ja,
+.sprite-nav-fr,
+.sprite-nav-es,
+.sprite-nav-en,
+.sprite-nav-de,
+.sprite-nav-cs,
+.sprite-nav-br{background-image:url('nav.png');background-repeat:no-repeat}
+.sprite-nav-logo-small{background-position:0px 0px;width:42px;height:25px;}
+.sprite-nav-tr{background-position:-42px 0px;width:30px;height:20px;}
+.sprite-nav-sv{background-position:0px -25px;width:30px;height:20px;}
+.sprite-nav-ru{background-position:-30px -25px;width:30px;height:20px;}
+.sprite-nav-pl{background-position:0px -45px;width:30px;height:20px;}
+.sprite-nav-nl{background-position:-30px -45px;width:30px;height:20px;}
+.sprite-nav-ko{background-position:-72px 0px;width:30px;height:20px;}
+.sprite-nav-ja{background-position:-72px -20px;width:30px;height:20px;}
+.sprite-nav-fr{background-position:-72px -40px;width:30px;height:20px;}
+.sprite-nav-es{background-position:0px -65px;width:30px;height:20px;}
+.sprite-nav-en{background-position:-30px -65px;width:30px;height:20px;}
+.sprite-nav-de{background-position:-60px -65px;width:30px;height:20px;}
+.sprite-nav-cs{background-position:-102px 0px;width:30px;height:20px;}
+.sprite-nav-br{background-position:-102px -20px;width:30px;height:20px;}

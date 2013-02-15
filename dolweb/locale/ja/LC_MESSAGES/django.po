@@ -8,15 +8,110 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-01-29 13:28+0100\n"
-"PO-Revision-Date: 2013-02-03 06:00+0000\n"
-"Last-Translator: DanbSky <smariojp@gmail.com>\n"
+"POT-Creation-Date: 2013-02-14 06:21+0100\n"
+"PO-Revision-Date: 2013-02-14 05:23+0000\n"
+"Last-Translator: delroth <delroth@gmail.com>\n"
 "Language-Team: Japanese (http://www.transifex.com/projects/p/dolphin-emu/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+
+#: compat/templates/compat-list.html:7
+#, python-format
+msgid "Compatibility List - page %(page)s"
+msgstr ""
+
+#: compat/templates/compat-list.html:19
+msgid "How to read the ratings"
+msgstr ""
+
+#: compat/templates/compat-list.html:22
+msgid "5 out of 5"
+msgstr ""
+
+#: compat/templates/compat-list.html:22
+msgid "<strong>Perfect</strong>: No issues at all!"
+msgstr ""
+
+#: compat/templates/compat-list.html:23
+msgid "4 out of 5"
+msgstr ""
+
+#: compat/templates/compat-list.html:23
+msgid ""
+"<strong>Playable</strong>: Runs well, only minor graphical or audio "
+"glitches. Games can be played all the way through."
+msgstr ""
+
+#: compat/templates/compat-list.html:24
+msgid "3 out of 5"
+msgstr ""
+
+#: compat/templates/compat-list.html:24
+msgid ""
+"<strong>Starts</strong>: Starts, maybe even plays well, but crashes or major"
+" graphical/audio glitches."
+msgstr ""
+
+#: compat/templates/compat-list.html:25
+msgid "2 out of 5"
+msgstr ""
+
+#: compat/templates/compat-list.html:25
+msgid ""
+"<strong>Intro/Menu</strong>: Hangs/crashes somewhere between booting and "
+"starting."
+msgstr ""
+
+#: compat/templates/compat-list.html:26
+msgid "1 out of 5"
+msgstr ""
+
+#: compat/templates/compat-list.html:26
+msgid "<strong>Broken</strong>: Crashes when booting."
+msgstr ""
+
+#: compat/templates/compat-list.html:33
+msgid "Statistics"
+msgstr ""
+
+#: compat/templates/compat-list.html:53
+msgid "Game title (click for details)"
+msgstr ""
+
+#: compat/templates/compat-list.html:54 templates/_base.html:62
+msgid "Compatibility"
+msgstr ""
+
+#: compat/templates/compat-list.html:55
+msgid "Last updated"
+msgstr ""
+
+#: compat/templatetags/compat.py:7
+msgid "Unknown"
+msgstr ""
+
+#: compat/templatetags/compat.py:8
+msgid "Broken"
+msgstr ""
+
+#: compat/templatetags/compat.py:9
+msgid "Intro/Menu"
+msgstr ""
+
+#: compat/templatetags/compat.py:10
+msgid "Starts"
+msgstr ""
+
+#: compat/templatetags/compat.py:11
+msgid "Playable"
+msgstr ""
+
+#: compat/templatetags/compat.py:12
+msgid "Perfect"
+msgstr ""
 
 #: docs/templates/docs-faq.html:6
 msgid "Frequently Asked Questions"
@@ -240,22 +335,23 @@ msgstr "by"
 msgid "Great compatibility"
 msgstr "優れた互換性"
 
-#: homepage/templates/homepage-home.html:112
+#: homepage/templates/homepage-home.html:113
 #, python-format
 msgid ""
 "\n"
 "        Dolphin can play most of the Gamecube and Wii games collection\n"
 "        without issues. New Wii releases often work on Dolphin from day one.\n"
 "        Wiiware and Virtual Console games are also supported. Check out\n"
-"        the <a href=\"%(WIKI_URL)s\">Dolphin compatibility wiki</a>.\n"
+"        the <a href=\"%(COMPAT_URL)s\">Dolphin compatibility list</a>\n"
+"        or the <a href=\"%(WIKI_URL)s\">Dolphin wiki</a> for more details.\n"
 "        "
-msgstr "\n        多くのゲームキューブやWiiのゲームタイトルは、Dolphin 上で問題なく\n        動作します。新しいタイトルに対しても、発売直後から対応を開始。\n        Wiiウェアやバーチャルコンソールも例外ではありません。\n        詳しくは <a href=\"%(WIKI_URL)s\">Dolphin compatibility wiki</a> を参照してください。\n        "
+msgstr ""
 
-#: homepage/templates/homepage-home.html:122
+#: homepage/templates/homepage-home.html:124
 msgid "Helpful community"
 msgstr "有用なコミュニティ"
 
-#: homepage/templates/homepage-home.html:125
+#: homepage/templates/homepage-home.html:127
 #, python-format
 msgid ""
 "\n"
@@ -267,11 +363,11 @@ msgid ""
 "        "
 msgstr "\n        インストールでお困りですか？タイトル別の最適な設定が知りたい？\n        それとも、ゲームキューブやWiiのゲームについて意見を交わすことがお望み？\n        もしも <a href=\"%(FAQ_URL)s\">よくある質問(FAQ)</a> がお役に立たないようなら、\n        <a href=\"%(FORUM_URL)s\">公式フォーラム</a> を参照して、他のユーザーと交流を始めましょう。\n        "
 
-#: homepage/templates/homepage-home.html:136
+#: homepage/templates/homepage-home.html:138
 msgid "Free and Open Source"
 msgstr "無償かつオープンソース"
 
-#: homepage/templates/homepage-home.html:138
+#: homepage/templates/homepage-home.html:140
 #, python-format
 msgid ""
 "\n"
@@ -310,15 +406,15 @@ msgstr "ギャラリー"
 msgid "FAQ"
 msgstr "FAQ"
 
-#: templates/_base.html:62
+#: templates/_base.html:63
 msgid "Forum"
 msgstr "フォーラム"
 
-#: templates/_base.html:63
+#: templates/_base.html:64
 msgid "Wiki"
 msgstr "Wiki"
 
-#: templates/_base.html:64
+#: templates/_base.html:65
 msgid "Development"
 msgstr "開発"
 

@@ -1,11 +1,11 @@
 .navbar-inner { border-radius: 0; }
 
-.navbar .brand {
-    background-image: url("../img/logo-small.png");
-    background-size: 42px 25px;
-    background-position: 14px center;
-    background-repeat: no-repeat;
-    padding-left: 70px;
+.navbar .brand i.logo {
+    display: inline-block;
+    margin-bottom: -5px;
+    margin-top: -5px;
+    margin-left: -10px;
+    margin-right: 10px;
 }
 
 h1 a.anchor, h3 a.anchor {
@@ -143,15 +143,16 @@ footer p.footer-text {
     color: #888;
 }
 
-.nav img.curr-flag {
+.nav .flag {
     margin-right: 0.7em;
-    margin-top: -2px;
+    margin-bottom: -5px;
+    border: 1px solid black;
+    display: inline-block;
+    vertical-align: center;
 }
 
-.nav img.flag {
-    margin-right: 0.7em;
-    margin-top: -2px;
-    border: 1px solid black;
+.nav .curr-flag {
+    border: 0;
 }
 
 .home-section {
@@ -160,16 +161,30 @@ footer p.footer-text {
 
 .ratings-expl ul {
     list-style: none;
-    margin-top: 1em;
+    margin-top: 1.6em;
 }
 
 .ratings-expl li {
-    margin-bottom: 0.6em;
+    margin-bottom: 1.1em;
 }
 
 .ratings-expl li img {
     margin-right: 0.5em;
     margin-top: -0.5em;
+}
+
+.ratings-stats dl {
+    margin-right: 1em;
+    font-size: 0.85em;
+}
+
+.ratings-stats .progress .bar {
+    height: 12px;
+}
+
+.ratings-stats .progress {
+    height: 12px;
+    margin-bottom: 6px;
 }
 
 .compat-list {
@@ -235,4 +250,20 @@ footer p.footer-text {
 .pagination-small a {
     padding: 0 7px;
     line-height: 24px;
+}
+
+.col-row {
+    overflow: hidden;
+}
+
+.col-row .col {
+    margin-bottom: -99999px;
+    padding-bottom: 99999px;
+    background-color:#f5f5f5;
+    border: 0;
+    border-radius: 0;
+}
+
+.ratings-expl, .ratings-stats {
+    margin-bottom: 20px;
 }

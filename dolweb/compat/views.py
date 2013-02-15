@@ -61,4 +61,5 @@ def list_compat(request, first_char='#'):
             games.append((rating, CATEGORIES[cat_dict[title].cat], ts, hash))
 
     return { 'games': games, 'pages': ['#'] + list(string.uppercase),
-            'page': first_char, 'page_css': first_char.replace('#', '%23') }
+            'page': first_char, 'page_css': first_char.replace('#', '%23'),
+            'all_ratings': (5, 4, 3, 2, 1) }

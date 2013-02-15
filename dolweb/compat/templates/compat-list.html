@@ -1,7 +1,9 @@
 {% extends "_base.html" %}
 
+{% load compat %}
 {% load humanize %}
 {% load i18n %}
+{% load l10n %}
 
 {% block "title" %}{% blocktrans %}Compatibility List - page {{ page }}{% endblocktrans %}{% endblock %}
 
@@ -11,16 +13,35 @@
 
 {% block "body" %}
 
-<div class="well ratings-expl">
-    <h3>{% trans "How to read the ratings" %}</h3>
+<div class="col-row">
+<div class="row-fluid">
+    <div class="span9 well col">
+        <div class="ratings-expl">
+        <h3>{% trans "How to read the ratings" %}</h3>
 
-    <ul>
-        <li><img src="{{ STATIC_URL }}img/stars/5.png" alt="{% trans "5 out of 5" %}"> {% trans "<strong>Perfect</strong>: No issues at all!" %}</li>
-        <li><img src="{{ STATIC_URL }}img/stars/4.png" alt="{% trans "4 out of 5" %}"> {% trans "<strong>Playable</strong>: Runs well, only minor graphical or audio glitches. Games can be played all the way through." %}</li>
-        <li><img src="{{ STATIC_URL }}img/stars/3.png" alt="{% trans "3 out of 5" %}"> {% trans "<strong>Starts</strong>: Starts, maybe even plays well, but crashes or major graphical/audio glitches." %}</li>
-        <li><img src="{{ STATIC_URL }}img/stars/2.png" alt="{% trans "2 out of 5" %}"> {% trans "<strong>Intro/Menu</strong>: Hangs/crashes somewhere between booting and starting." %}</li>
-        <li><img src="{{ STATIC_URL }}img/stars/1.png" alt="{% trans "1 out of 5" %}"> {% trans "<strong>Broken</strong>: Crashes when booting." %}</li>
-    </ul>
+        <ul>
+            <li><img src="{{ STATIC_URL }}img/stars/5.png" alt="{% trans "5 out of 5" %}"> {% trans "<strong>Perfect</strong>: No issues at all!" %}</li>
+            <li><img src="{{ STATIC_URL }}img/stars/4.png" alt="{% trans "4 out of 5" %}"> {% trans "<strong>Playable</strong>: Runs well, only minor graphical or audio glitches. Games can be played all the way through." %}</li>
+            <li><img src="{{ STATIC_URL }}img/stars/3.png" alt="{% trans "3 out of 5" %}"> {% trans "<strong>Starts</strong>: Starts, maybe even plays well, but crashes or major graphical/audio glitches." %}</li>
+            <li><img src="{{ STATIC_URL }}img/stars/2.png" alt="{% trans "2 out of 5" %}"> {% trans "<strong>Intro/Menu</strong>: Hangs/crashes somewhere between booting and starting." %}</li>
+            <li><img src="{{ STATIC_URL }}img/stars/1.png" alt="{% trans "1 out of 5" %}"> {% trans "<strong>Broken</strong>: Crashes when booting." %}</li>
+        </ul>
+        </div>
+    </div>
+
+    <div class="span3 well col">
+        <div class="ratings-stats">
+        <h3>{% trans "Statistics" %}</h3>
+
+        <dl>
+        {% for rating in all_ratings %}
+        <dt>{{ rating|compat_text }}: {{ rating|rating_pct|floatformat }}%</dt>
+        <dd><div class="progress progress-{{ rating|rating_class }}"><div class="bar" style="width: {{ rating|rating_pct|unlocalize }}%"></div></div></dd>
+        {% endfor %}
+        </dl>
+        </div>
+    </div>
+</div>
 </div>
 
 {% include "compat-list-pagi.html" %}
@@ -31,7 +52,7 @@
             <th class="category"></th>
             <th class="banner"></th>
             <th class="title">{% trans "Game title (click for details)" %}</th>
-            <th class="rating">{% trans "Rating" %}</th>
+            <th class="rating">{% trans "Compatibility" %}</th>
             <th class="update">{% trans "Last updated" %}</th>
         </tr>
     </thead>
@@ -42,7 +63,7 @@
             <td class="category"><img src="{{ STATIC_URL }}img/platforms/{{ cat }}.png" width="32" height="32" alt="{{ cat|capfirst }}" title="{{ cat|capfirst }}"></td>
             <td class="banner"><div class="bnr bnr-{{ hash }}"></div></td>
             <td class="title"><a href="{{ game.wiki_url }}">{{ game.title }}</a></td>
-            <td class="rating"><img src="{{ STATIC_URL }}img/stars/{{ game.latest.text.data }}.png" alt="{{ game.latest.text.data }} out of 5"></td>
+            <td class="rating"><img src="{{ STATIC_URL }}img/stars/{{ game.latest.text.data }}.png" alt="{{ game.latest.text.data|compat_text }}" title="{{ game.latest.text.data|compat_text }}"></td>
             <td class="update">{{ ts|naturaltime }}</td>
         </tr>
         {% endfor %}

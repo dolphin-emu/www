@@ -9,15 +9,110 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-01-29 13:28+0100\n"
-"PO-Revision-Date: 2013-02-11 18:35+0000\n"
-"Last-Translator: delroth <delroth@gmail.com>\n"
+"POT-Creation-Date: 2013-02-14 06:21+0100\n"
+"PO-Revision-Date: 2013-02-15 12:37+0000\n"
+"Last-Translator: N69 <69@no-spam.ws>\n"
 "Language-Team: Russian (http://www.transifex.com/projects/p/dolphin-emu/language/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: ru\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#: compat/templates/compat-list.html:7
+#, python-format
+msgid "Compatibility List - page %(page)s"
+msgstr "Лист совместимости - страница %(page)s"
+
+#: compat/templates/compat-list.html:19
+msgid "How to read the ratings"
+msgstr "Что означают рейтинги"
+
+#: compat/templates/compat-list.html:22
+msgid "5 out of 5"
+msgstr "5 из 5"
+
+#: compat/templates/compat-list.html:22
+msgid "<strong>Perfect</strong>: No issues at all!"
+msgstr "<strong>Отлично</strong>: Никаких проблем в эмуляции!"
+
+#: compat/templates/compat-list.html:23
+msgid "4 out of 5"
+msgstr "4 из 5"
+
+#: compat/templates/compat-list.html:23
+msgid ""
+"<strong>Playable</strong>: Runs well, only minor graphical or audio "
+"glitches. Games can be played all the way through."
+msgstr "<strong>Играбельно</strong>: Игра работает, но могут быть графические или аудио глюки. В такие игры можно поиграть, и даже пройти."
+
+#: compat/templates/compat-list.html:24
+msgid "3 out of 5"
+msgstr "3 из 5"
+
+#: compat/templates/compat-list.html:24
+msgid ""
+"<strong>Starts</strong>: Starts, maybe even plays well, but crashes or major"
+" graphical/audio glitches."
+msgstr "<strong>Запускается</strong>: Запускается, доходя до игрового процесса, однако происходит вылет, или имеются серьезные графические/аудио глюки."
+
+#: compat/templates/compat-list.html:25
+msgid "2 out of 5"
+msgstr "2 из 5"
+
+#: compat/templates/compat-list.html:25
+msgid ""
+"<strong>Intro/Menu</strong>: Hangs/crashes somewhere between booting and "
+"starting."
+msgstr "<strong>Ролики/меню</strong>: Зависает/вылетает обычно после загрузки."
+
+#: compat/templates/compat-list.html:26
+msgid "1 out of 5"
+msgstr "1 из 5"
+
+#: compat/templates/compat-list.html:26
+msgid "<strong>Broken</strong>: Crashes when booting."
+msgstr "<strong>Ничего</strong>: Не запускается"
+
+#: compat/templates/compat-list.html:33
+msgid "Statistics"
+msgstr "Статистика"
+
+#: compat/templates/compat-list.html:53
+msgid "Game title (click for details)"
+msgstr "Название игры (кликните для подробностей)"
+
+#: compat/templates/compat-list.html:54 templates/_base.html:62
+msgid "Compatibility"
+msgstr "Совместимость"
+
+#: compat/templates/compat-list.html:55
+msgid "Last updated"
+msgstr "Последние обновление"
+
+#: compat/templatetags/compat.py:7
+msgid "Unknown"
+msgstr "Неизвестно"
+
+#: compat/templatetags/compat.py:8
+msgid "Broken"
+msgstr "Ничего"
+
+#: compat/templatetags/compat.py:9
+msgid "Intro/Menu"
+msgstr "Ролики/меню"
+
+#: compat/templatetags/compat.py:10
+msgid "Starts"
+msgstr "Запускается"
+
+#: compat/templatetags/compat.py:11
+msgid "Playable"
+msgstr "Играбельно"
+
+#: compat/templatetags/compat.py:12
+msgid "Perfect"
+msgstr "Отлично"
 
 #: docs/templates/docs-faq.html:6
 msgid "Frequently Asked Questions"
@@ -241,22 +336,23 @@ msgstr "от"
 msgid "Great compatibility"
 msgstr "Отличная совместимость"
 
-#: homepage/templates/homepage-home.html:112
+#: homepage/templates/homepage-home.html:113
 #, python-format
 msgid ""
 "\n"
 "        Dolphin can play most of the Gamecube and Wii games collection\n"
 "        without issues. New Wii releases often work on Dolphin from day one.\n"
 "        Wiiware and Virtual Console games are also supported. Check out\n"
-"        the <a href=\"%(WIKI_URL)s\">Dolphin compatibility wiki</a>.\n"
+"        the <a href=\"%(COMPAT_URL)s\">Dolphin compatibility list</a>\n"
+"        or the <a href=\"%(WIKI_URL)s\">Dolphin wiki</a> for more details.\n"
 "        "
-msgstr "\n   Dolphin позволяет играть в большинство Gamecube и Wii игр,\n без каких-либо проблем. Новые Wii игры, обычно запускаются в\n день релиза.\n Игры для Wiiware и Virtual Console также поддерживаются.\n Проверьте\n      <a href=\"%(WIKI_URL)s\">Таблицу совместимости Dolphin</a>."
+msgstr "\nDolphin позволяет играть в большинство Gamecube и Wii игр, без каких-либо проблем. Новые Wii игры, обычно запускаются в день релиза. Игры для Wiiware и Virtual Console также поддерживаются. Проверьте <a href=\"%(COMPAT_URL)s\">Таблицу совместимости Dolphin. </a> или <a href=\"%(WIKI_URL)s\">Энциклопедию Dolphin</a>, для подробностей"
 
-#: homepage/templates/homepage-home.html:122
+#: homepage/templates/homepage-home.html:124
 msgid "Helpful community"
 msgstr "Помощь сообщества"
 
-#: homepage/templates/homepage-home.html:125
+#: homepage/templates/homepage-home.html:127
 #, python-format
 msgid ""
 "\n"
@@ -268,11 +364,11 @@ msgid ""
 "        "
 msgstr "\n      Проблемы с установкой? Не можете подобрать лучшие настройки для\nигры? Или просто интересно поговорить насчет Gamecube и Wii игр?\nЕсли <a href=\"%(FAQ_URL)s\">ЧАВО</a>\nвам не поможет, другие пользователи Dolphin помогут вам\nна нашем <a href=\"%(FORUM_URL)s\">форуме</a>."
 
-#: homepage/templates/homepage-home.html:136
+#: homepage/templates/homepage-home.html:138
 msgid "Free and Open Source"
 msgstr "Открыт для всех"
 
-#: homepage/templates/homepage-home.html:138
+#: homepage/templates/homepage-home.html:140
 #, python-format
 msgid ""
 "\n"
@@ -311,15 +407,15 @@ msgstr "Медиатека"
 msgid "FAQ"
 msgstr "ЧАВО"
 
-#: templates/_base.html:62
+#: templates/_base.html:63
 msgid "Forum"
 msgstr "Форум"
 
-#: templates/_base.html:63
+#: templates/_base.html:64
 msgid "Wiki"
 msgstr "Энциклопедия"
 
-#: templates/_base.html:64
+#: templates/_base.html:65
 msgid "Development"
 msgstr "Разработка"
 
