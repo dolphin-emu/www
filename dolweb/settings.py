@@ -63,7 +63,7 @@ LANGUAGES = (
     ('ru', u'Русский'),
     ('sv', u'Svenska'),
     ('tr', u'Türkçe'),
-    ('cn', u'Chinese (beta)'),
+    ('cn', u'中文(中国)'),
     ('ja', u'日本語'),
     ('ko', u'한국어'),
 )
