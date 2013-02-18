@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-02-14 06:21+0100\n"
-"PO-Revision-Date: 2013-02-14 05:23+0000\n"
-"Last-Translator: delroth <delroth@gmail.com>\n"
+"PO-Revision-Date: 2013-02-16 23:21+0000\n"
+"Last-Translator: DolphinPhoenix <anton_r_3@hotmail.com>\n"
 "Language-Team: Swedish (http://www.transifex.com/projects/p/dolphin-emu/language/sv/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -21,97 +21,97 @@ msgstr ""
 #: compat/templates/compat-list.html:7
 #, python-format
 msgid "Compatibility List - page %(page)s"
-msgstr ""
+msgstr "Kompatibilitetslista - sida %(page)s"
 
 #: compat/templates/compat-list.html:19
 msgid "How to read the ratings"
-msgstr ""
+msgstr "Hur man ska läsa betygen"
 
 #: compat/templates/compat-list.html:22
 msgid "5 out of 5"
-msgstr ""
+msgstr "5 av 5"
 
 #: compat/templates/compat-list.html:22
 msgid "<strong>Perfect</strong>: No issues at all!"
-msgstr ""
+msgstr "<strong>Perfekt</strong>: Inga fel alls!"
 
 #: compat/templates/compat-list.html:23
 msgid "4 out of 5"
-msgstr ""
+msgstr "4 av 5"
 
 #: compat/templates/compat-list.html:23
 msgid ""
 "<strong>Playable</strong>: Runs well, only minor graphical or audio "
 "glitches. Games can be played all the way through."
-msgstr ""
+msgstr "<strong>Spelbar</strong>: Körs ganska bra med endast några mindre grafik- eller ljudbuggar. Man kan spela igenom spelet helt och hållet."
 
 #: compat/templates/compat-list.html:24
 msgid "3 out of 5"
-msgstr ""
+msgstr "3 av 5"
 
 #: compat/templates/compat-list.html:24
 msgid ""
 "<strong>Starts</strong>: Starts, maybe even plays well, but crashes or major"
 " graphical/audio glitches."
-msgstr ""
+msgstr "<strong>Startar</strong>: Startar, kanske t.o.m. fungerar bra, men kraschar eller har stora grafik-/ljudbuggar."
 
 #: compat/templates/compat-list.html:25
 msgid "2 out of 5"
-msgstr ""
+msgstr "2 av 5"
 
 #: compat/templates/compat-list.html:25
 msgid ""
 "<strong>Intro/Menu</strong>: Hangs/crashes somewhere between booting and "
 "starting."
-msgstr ""
+msgstr "<strong>Intro/Meny</strong>: Hänger sig/kraschar någonstans mellan uppstart och när spelet börjar."
 
 #: compat/templates/compat-list.html:26
 msgid "1 out of 5"
-msgstr ""
+msgstr "1 av 5"
 
 #: compat/templates/compat-list.html:26
 msgid "<strong>Broken</strong>: Crashes when booting."
-msgstr ""
+msgstr "<strong>Trasig</strong>: Kraschar vid uppstart."
 
 #: compat/templates/compat-list.html:33
 msgid "Statistics"
-msgstr ""
+msgstr "Statistik"
 
 #: compat/templates/compat-list.html:53
 msgid "Game title (click for details)"
-msgstr ""
+msgstr "Speltitel (klicka för detaljer)"
 
 #: compat/templates/compat-list.html:54 templates/_base.html:62
 msgid "Compatibility"
-msgstr ""
+msgstr "Kompatibilitet"
 
 #: compat/templates/compat-list.html:55
 msgid "Last updated"
-msgstr ""
+msgstr "Senast uppdaterad"
 
 #: compat/templatetags/compat.py:7
 msgid "Unknown"
-msgstr ""
+msgstr "Okänd"
 
 #: compat/templatetags/compat.py:8
 msgid "Broken"
-msgstr ""
+msgstr "Trasig"
 
 #: compat/templatetags/compat.py:9
 msgid "Intro/Menu"
-msgstr ""
+msgstr "Intro/Meny"
 
 #: compat/templatetags/compat.py:10
 msgid "Starts"
-msgstr ""
+msgstr "Startar"
 
 #: compat/templatetags/compat.py:11
 msgid "Playable"
-msgstr ""
+msgstr "Spelbar"
 
 #: compat/templatetags/compat.py:12
 msgid "Perfect"
-msgstr ""
+msgstr "Perfekt"
 
 #: docs/templates/docs-faq.html:6
 msgid "Frequently Asked Questions"
@@ -272,7 +272,7 @@ msgstr "Gamecube-/Wii-spel på PC"
 #: homepage/templates/homepage-home.html:25 templates/_base.html:9
 #: templates/_base.html.py:54
 msgid "Dolphin Emulator"
-msgstr "Emulatorn Dolphin"
+msgstr "Dolphin Emulatorn"
 
 #: homepage/templates/homepage-home.html:27
 msgid "Play Gamecube and Wii games in 1080p on your PC."
@@ -345,7 +345,7 @@ msgid ""
 "        the <a href=\"%(COMPAT_URL)s\">Dolphin compatibility list</a>\n"
 "        or the <a href=\"%(WIKI_URL)s\">Dolphin wiki</a> for more details.\n"
 "        "
-msgstr ""
+msgstr "\n Dolphin kan spela de flesta spelen till Gamecube and Wii\n utan problem. Nya Wii-utgåvor fungerar ofta från den första dagen.\n Spel från Wiiware och Virtual Console stöds också. Kolla\n <a href=\"%(COMPAT_URL)s\">Dolphins kompatibilitetslista</a>\n eller <a href=\"%(WIKI_URL)s\">Dolphin wiki</a> för fler detaljer.\n "
 
 #: homepage/templates/homepage-home.html:124
 msgid "Helpful community"

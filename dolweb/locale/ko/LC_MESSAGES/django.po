@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-02-14 06:21+0100\n"
-"PO-Revision-Date: 2013-02-14 23:46+0000\n"
+"PO-Revision-Date: 2013-02-15 18:07+0000\n"
 "Last-Translator: Siegfried <iori3000@hanafos.com>\n"
 "Language-Team: Korean (http://www.transifex.com/projects/p/dolphin-emu/language/ko/)\n"
 "MIME-Version: 1.0\n"
@@ -43,7 +43,7 @@ msgstr "5 중에 4"
 msgid ""
 "<strong>Playable</strong>: Runs well, only minor graphical or audio "
 "glitches. Games can be played all the way through."
-msgstr "<strong>플레이가능한</strong>: 잘 구동됨, 단지 그래픽이나 오디오의 작은 문제들. 게임을 쭉 플레이해볼 수 있다."
+msgstr "<strong>플레이가능</strong>: 잘 구동됨, 단지 그래픽이나 오디오의 작은 문제들. 게임을 쭉 플레이 가능."
 
 #: compat/templates/compat-list.html:24
 msgid "3 out of 5"
@@ -53,7 +53,7 @@ msgstr "5 중에 3"
 msgid ""
 "<strong>Starts</strong>: Starts, maybe even plays well, but crashes or major"
 " graphical/audio glitches."
-msgstr "<strong>시작단계</strong>: 시작단계, 플레이가 잘 될 지도 모른다, 하지만 고장나거나 주요 그래픽/오디오 문제들."
+msgstr "<strong>시작</strong>: 시작, 심지어 플레이가 잘 될 지도 모른다, 깨지거나 주요 그래픽/오디오 문제들 외에."
 
 #: compat/templates/compat-list.html:25
 msgid "2 out of 5"
@@ -103,7 +103,7 @@ msgstr "도입부/메뉴"
 
 #: compat/templatetags/compat.py:10
 msgid "Starts"
-msgstr "시작단계"
+msgstr "시작"
 
 #: compat/templatetags/compat.py:11
 msgid "Playable"

@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-02-14 06:21+0100\n"
-"PO-Revision-Date: 2013-02-15 15:20+0000\n"
+"PO-Revision-Date: 2013-02-18 08:11+0000\n"
 "Last-Translator: Sentret_C <sentret_c@sina.cn>\n"
 "Language-Team: Chinese (China) (http://www.transifex.com/projects/p/dolphin-emu/language/zh_CN/)\n"
 "MIME-Version: 1.0\n"
@@ -21,115 +21,115 @@ msgstr ""
 #: compat/templates/compat-list.html:7
 #, python-format
 msgid "Compatibility List - page %(page)s"
-msgstr ""
+msgstr "兼容性列表 - 第 %(page)s 页"
 
 #: compat/templates/compat-list.html:19
 msgid "How to read the ratings"
-msgstr ""
+msgstr "评分标准"
 
 #: compat/templates/compat-list.html:22
 msgid "5 out of 5"
-msgstr ""
+msgstr "5星(满分)"
 
 #: compat/templates/compat-list.html:22
 msgid "<strong>Perfect</strong>: No issues at all!"
-msgstr ""
+msgstr "<strong>完美</strong>: 没有任何问题！"
 
 #: compat/templates/compat-list.html:23
 msgid "4 out of 5"
-msgstr ""
+msgstr "4星"
 
 #: compat/templates/compat-list.html:23
 msgid ""
 "<strong>Playable</strong>: Runs well, only minor graphical or audio "
 "glitches. Games can be played all the way through."
-msgstr ""
+msgstr "<strong>运行</strong>: 运行得很好，只有一些图像或声音上的小瑕疵。可完成游戏全过程。"
 
 #: compat/templates/compat-list.html:24
 msgid "3 out of 5"
-msgstr ""
+msgstr "3星"
 
 #: compat/templates/compat-list.html:24
 msgid ""
 "<strong>Starts</strong>: Starts, maybe even plays well, but crashes or major"
 " graphical/audio glitches."
-msgstr ""
+msgstr "<strong>开始</strong>: 游戏能够开始，甚至可能玩的不错，但会发生崩溃，或者图像声音有重大错误。"
 
 #: compat/templates/compat-list.html:25
 msgid "2 out of 5"
-msgstr ""
+msgstr "2星"
 
 #: compat/templates/compat-list.html:25
 msgid ""
 "<strong>Intro/Menu</strong>: Hangs/crashes somewhere between booting and "
 "starting."
-msgstr ""
+msgstr "<strong>开场/菜单</strong>: 在游戏启动与正式开始之间崩溃或卡住。"
 
 #: compat/templates/compat-list.html:26
 msgid "1 out of 5"
-msgstr ""
+msgstr "1星"
 
 #: compat/templates/compat-list.html:26
 msgid "<strong>Broken</strong>: Crashes when booting."
-msgstr ""
+msgstr "<strong>失败</strong>: 游戏在启动时崩溃。"
 
 #: compat/templates/compat-list.html:33
 msgid "Statistics"
-msgstr ""
+msgstr "统计"
 
 #: compat/templates/compat-list.html:53
 msgid "Game title (click for details)"
-msgstr ""
+msgstr "游戏标题 (点击查看详情)"
 
 #: compat/templates/compat-list.html:54 templates/_base.html:62
 msgid "Compatibility"
-msgstr ""
+msgstr "兼容列表"
 
 #: compat/templates/compat-list.html:55
 msgid "Last updated"
-msgstr ""
+msgstr "最后更新于"
 
 #: compat/templatetags/compat.py:7
 msgid "Unknown"
-msgstr ""
+msgstr "未知"
 
 #: compat/templatetags/compat.py:8
 msgid "Broken"
-msgstr ""
+msgstr "失败"
 
 #: compat/templatetags/compat.py:9
 msgid "Intro/Menu"
-msgstr ""
+msgstr "开场/菜单"
 
 #: compat/templatetags/compat.py:10
 msgid "Starts"
-msgstr ""
+msgstr "开始"
 
 #: compat/templatetags/compat.py:11
 msgid "Playable"
-msgstr ""
+msgstr "运行"
 
 #: compat/templatetags/compat.py:12
 msgid "Perfect"
-msgstr ""
+msgstr "完美"
 
 #: docs/templates/docs-faq.html:6
 msgid "Frequently Asked Questions"
-msgstr "常见问题"
+msgstr "常见问题解答"
 
 #: docs/templates/docs-guides-index.html:5
 #: docs/templates/docs-guides-index.html:9 templates/_base.html:61
 msgid "Guides"
-msgstr "操作指南"
+msgstr "用户指南"
 
 #: docs/templates/docs-guides-index.html:15
 #, python-format
 msgid "(by %(author)s)"
-msgstr "(by %(author)s)"
+msgstr "(由 %(author)s 创建)"
 
 #: docs/templates/docs-guides-index.html:17
 msgid "No published guide available"
-msgstr "没有可用的已发布指南"
+msgstr "尚无已发布指南"
 
 #: downloads/models.py:32 downloads/models.py:50
 #, python-format
@@ -144,7 +144,7 @@ msgstr "下载开发版本"
 #: downloads/templates/downloads-branches.html:17
 #, python-format
 msgid "<tt>%(branch)s</tt> branch"
-msgstr "<tt>%(branch)s</tt>分支"
+msgstr "<tt>%(branch)s</tt> 分支"
 
 #: downloads/templates/downloads-branches.html:20
 #: downloads/templates/downloads-index.html:89
@@ -157,7 +157,7 @@ msgstr "分支列表"
 
 #: downloads/templates/downloads-devrel.html:19
 msgid "No development release yet"
-msgstr "尚无开发版本"
+msgstr "尚无可用的开发版本"
 
 #: downloads/templates/downloads-index.html:6
 #: downloads/templates/downloads-index.html:25 templates/_base.html:59
@@ -174,11 +174,11 @@ msgid ""
 "    Stable versions are released after a lot of testing to ensure emulation\n"
 "    performance and stability. <strong>If you do not know what version of\n"
 "    Dolphin you should use, the latest stable version is generally the best.</strong>\n"
-msgstr "\n    稳定版本在发布前经过许多测试以保证模拟性能与稳定性。<strong>如果您不知道您应该使用哪个版本的Dolphin，最新的稳定版本通常是最佳选择。</strong>\n"
+msgstr "\n    稳定版本在发布前经过许多测试以保证模拟性能与稳定性。<strong>\n    如果您不知道您应该使用哪个版本的Dolphin，最新的稳定版本通常是\n    最佳选择。</strong>\n"
 
 #: downloads/templates/downloads-index.html:53
 msgid "No stable release yet"
-msgstr "尚无稳定版本"
+msgstr "尚无可用的稳定版本"
 
 #: downloads/templates/downloads-index.html:74
 msgid "Development versions"
@@ -191,11 +191,11 @@ msgid ""
 "    developer makes a change to Dolphin. Using development versions enables you\n"
 "    to use the latest and greatest improvements to the project, at the cost of\n"
 "    decreased stability.\n"
-msgstr "\n    <strong>警告！</strong> 每当一位开发者对Dolphin做出改动，都将发布开发版本。使用开发版本使您能够使用到最新最大的改进，但以降低稳定性作为代价。\n"
+msgstr "\n    <strong>注意！</strong> 每当一位开发者对Dolphin做出改动，都将有\n    开发版本发布。使用开发版本将使您能够体验到最新最大的改进，但以\n    降低稳定性作为代价。\n"
 
 #: downloads/templates/downloads-index.html:83
 msgid "Only displaying the <tt>master</tt> branch versions."
-msgstr "当前仅显示<tt>master</tt>分支的版本。"
+msgstr "当前仅显示 <tt>master</tt> 分支的版本。"
 
 #: downloads/templates/downloads-index.html:84
 msgid "Show all available branches"
@@ -211,7 +211,7 @@ msgid ""
 "    The latest version of the Dolphin source code can be downloaded from the\n"
 "    project Git repository.\n"
 "    "
-msgstr "\n    最新版本的Dolphin源代码可从项目Git库中下载\n    "
+msgstr "\n    最新版本的Dolphin源代码可从本项目Git库中下载\n    "
 
 #: downloads/templates/downloads-index.html:103
 msgid ""
@@ -224,12 +224,12 @@ msgstr "\n    您也可以<a href=\"http://code.google.com/p/dolphin-emu/source/
 #: downloads/templates/downloads-list.html:5
 #, python-format
 msgid "%(branch)s branch - page %(page)s"
-msgstr "%(branch)s分支 - 第%(page)s页"
+msgstr "%(branch)s 分支 - 第 %(page)s 页"
 
 #: downloads/templates/downloads-list.html:9
 #, python-format
 msgid "<tt>%(branch)s</tt> branch - page %(page)s"
-msgstr "<tt>%(branch)s</tt>分支 - 第%(page)s页"
+msgstr "<tt>%(branch)s</tt> 分支 - 第 %(page)s 页"
 
 #: downloads/templates/downloads-view-devrel.html:6
 #, python-format
@@ -267,7 +267,7 @@ msgstr ""
 
 #: homepage/templates/homepage-home.html:7
 msgid "Gamecube/Wii games on PC"
-msgstr "在PC上玩Gamecube/Wii游戏"
+msgstr "在PC上运行Gamecube/Wii游戏"
 
 #: homepage/templates/homepage-home.html:25 templates/_base.html:9
 #: templates/_base.html.py:54
@@ -276,23 +276,23 @@ msgstr "Dolphin模拟器"
 
 #: homepage/templates/homepage-home.html:27
 msgid "Play Gamecube and Wii games in 1080p on your PC."
-msgstr ""
+msgstr "在您的PC上以1080p运行Gamecube和Wii游戏。"
 
 #: homepage/templates/homepage-home.html:30
 #, python-format
 msgid "Download %(last_release)s now for Windows, Mac and Linux »"
-msgstr "现在下载%(last_release)s (支持Windows，Mac及Linux) »"
+msgstr "现在下载 %(last_release)s (支持Windows, Mac及Linux) »"
 
 #: homepage/templates/homepage-home.html:33
 msgid ""
 "\n"
 "                <strong>Minimal requirements</strong>: SSE2 compatible CPU, Shader Model 3.0 GPU, 2GB of RAM, 50MB of disk space\n"
 "                "
-msgstr "\n                <strong>最低系统要求</strong>: 支持SSE2处理器，Shader Model 3.0 图形处理器，2GB内存，50MB可用硬盘空间\n                "
+msgstr "\n                <strong>最低系统要求</strong>: 使用SSE2指令集的CPU，支持Shader Model 3.0的GPU，2GB RAM，50MB可用硬盘空间\n                "
 
 #: homepage/templates/homepage-home.html:38
 msgid "More information about hardware requirements"
-msgstr "关于硬件需求的更多信息"
+msgstr "查看有关系统要求的更多信息"
 
 #: homepage/templates/homepage-home.html:68
 msgid "Improved graphics"
@@ -307,7 +307,7 @@ msgid ""
 "        Gamecube and Wii games. <a href=\"%(MEDIA_PAGE_URL)s\">View screenshots\n"
 "        of games played on Dolphin</a>.\n"
 "        "
-msgstr "\n        Wii仅在480p分辨率下渲染游戏。Dolphin可在720p，1080p甚至更高分辨率下运行您所有的Gamecube和Wii游戏。<a href=\"%(MEDIA_PAGE_URL)s\">查看在Dolphin中运行的游戏截图</a>。\n        "
+msgstr "\n        Wii仅在480p分辨率下渲染游戏。Dolphin支持在720p、1080p甚至\n        更高分辨率下运行您所有的Gamecube和Wii游戏。<a href=\"%(MEDIA_PAGE_URL)s\">查看Dolphin中\n        所运行游戏的截图</a>。\n        "
 
 #: homepage/templates/homepage-home.html:81
 msgid "Use your favorite controller"
@@ -321,11 +321,11 @@ msgid ""
 "        and mouse! Wiimotes are still supported, including Wii Motion Plus\n"
 "        for games that require it.\n"
 "        "
-msgstr ""
+msgstr "\n        不是那么喜欢Gamecube控制器和Wii遥控器？你可以使用你最喜爱的\n        游戏控制器，或者甚至是键盘和鼠标来玩游戏！Wii遥控器和Wii动感\n        强化器仍然受到支持，以便运行需要它们的游戏。\n        "
 
 #: homepage/templates/homepage-home.html:93
 msgid "Recent Dolphin news"
-msgstr ""
+msgstr "最新动态"
 
 #: homepage/templates/homepage-home.html:98
 msgid "by"
@@ -345,11 +345,11 @@ msgid ""
 "        the <a href=\"%(COMPAT_URL)s\">Dolphin compatibility list</a>\n"
 "        or the <a href=\"%(WIKI_URL)s\">Dolphin wiki</a> for more details.\n"
 "        "
-msgstr ""
+msgstr "\n        Dolphin可以正确运行大多数Gamecube和Wii游戏。新发布的Wii游戏\n        通常发售当天就能在Dolphin上运行。Wiiware和Virtual Console游戏也\n        受支持。访问<a href=\"%(COMPAT_URL)s\">Dolphin兼容列表</a>或\n        <a href=\"%(WIKI_URL)s\">Dolphin wiki</a>以获取更多信息。\n        "
 
 #: homepage/templates/homepage-home.html:124
 msgid "Helpful community"
-msgstr ""
+msgstr "乐于助人的社区"
 
 #: homepage/templates/homepage-home.html:127
 #, python-format
@@ -361,11 +361,11 @@ msgid ""
 "        can't help you, other Dolphin users may be willing to help you over at the\n"
 "        <a href=\"%(FORUM_URL)s\">official discussion forums</a>.\n"
 "        "
-msgstr ""
+msgstr "\n        安装遇到问题？想找出适用于某个游戏的最佳配置？或者只是想讨论\n        喜欢的Gamecube和Wii游戏？如果<a href=\"%(FAQ_URL)s\">常见问题解答</a>没能对你有所帮助，\n        就来我们的<a href=\"%(FORUM_URL)s\">官方论坛</a>吧，其他Dolphin用户将随时伸出援手。\n        "
 
 #: homepage/templates/homepage-home.html:138
 msgid "Free and Open Source"
-msgstr ""
+msgstr "自由及开放源代码"
 
 #: homepage/templates/homepage-home.html:140
 #, python-format
@@ -376,11 +376,11 @@ msgid ""
 "        Grab the emulator source code from <a href=\"%(GCODE_URL)s\">Google\n"
 "        Code</a> and start hacking!\n"
 "        "
-msgstr ""
+msgstr "\n        Dolphin模拟器由世界各地的志愿者们开发并免费发布。想帮助改进\n        本项目？从<a href=\"%(GCODE_URL)s\">Google代码</a>获取模拟器的源代码开始分析吧！\n        "
 
 #: media/templates/media-all.html:6 media/templates/media-all.html.py:19
 msgid "Media gallery"
-msgstr ""
+msgstr "截图相册"
 
 #: media/templates/media-all.html:43
 msgid "Full size"
@@ -396,11 +396,11 @@ msgstr "下一张"
 
 #: templates/_base.html:57
 msgid "Home"
-msgstr "主页"
+msgstr "首页"
 
 #: templates/_base.html:58
 msgid "Media"
-msgstr ""
+msgstr "相册"
 
 #: templates/_base.html:60
 msgid "FAQ"
@@ -416,7 +416,7 @@ msgstr "Wiki"
 
 #: templates/_base.html:65
 msgid "Development"
-msgstr ""
+msgstr "开发"
 
 #: templates/_base.html:102
 msgid ""
@@ -424,4 +424,4 @@ msgid ""
 "            &copy; 2012 Dolphin Emulator Project -\n"
 "            <a href=\"https://bitbucket.org/delroth/dolphin-web/\">Website source code</a>\n"
 "            "
-msgstr ""
+msgstr "\n            &copy; 2012 Dolphin Emulator Project -\n            <a href=\"https://bitbucket.org/delroth/dolphin-web/\">Website source code</a>\n            "
