@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-02-14 06:21+0100\n"
-"PO-Revision-Date: 2013-02-14 05:23+0000\n"
-"Last-Translator: delroth <delroth@gmail.com>\n"
+"PO-Revision-Date: 2013-02-19 03:03+0000\n"
+"Last-Translator: DanbSky <smariojp@gmail.com>\n"
 "Language-Team: Japanese (http://www.transifex.com/projects/p/dolphin-emu/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -21,97 +21,97 @@ msgstr ""
 #: compat/templates/compat-list.html:7
 #, python-format
 msgid "Compatibility List - page %(page)s"
-msgstr ""
+msgstr "互換性リスト - %(page)s ページ"
 
 #: compat/templates/compat-list.html:19
 msgid "How to read the ratings"
-msgstr ""
+msgstr "レーティングについて"
 
 #: compat/templates/compat-list.html:22
 msgid "5 out of 5"
-msgstr ""
+msgstr "五つ星"
 
 #: compat/templates/compat-list.html:22
 msgid "<strong>Perfect</strong>: No issues at all!"
-msgstr ""
+msgstr "<strong>カンペキ</strong>: 全てにおいて問題なく動作します！"
 
 #: compat/templates/compat-list.html:23
 msgid "4 out of 5"
-msgstr ""
+msgstr "四つ星"
 
 #: compat/templates/compat-list.html:23
 msgid ""
 "<strong>Playable</strong>: Runs well, only minor graphical or audio "
 "glitches. Games can be played all the way through."
-msgstr ""
+msgstr "<strong>サクサク</strong>: 上手く動作しますが、画面や音に不具合が出ることも。始めから終わりまでプレイすることが可能です。"
 
 #: compat/templates/compat-list.html:24
 msgid "3 out of 5"
-msgstr ""
+msgstr "三つ星"
 
 #: compat/templates/compat-list.html:24
 msgid ""
 "<strong>Starts</strong>: Starts, maybe even plays well, but crashes or major"
 " graphical/audio glitches."
-msgstr ""
+msgstr "<strong>ソコソコ</strong>: 開始後しばらくは問題なくプレイできますが、クラッシュやプレイに支障のある画面や音の問題を含んでいます。"
 
 #: compat/templates/compat-list.html:25
 msgid "2 out of 5"
-msgstr ""
+msgstr "二つ星"
 
 #: compat/templates/compat-list.html:25
 msgid ""
 "<strong>Intro/Menu</strong>: Hangs/crashes somewhere between booting and "
 "starting."
-msgstr ""
+msgstr "<strong>イントロ</strong>: 起動時、もしくはゲーム開始時にクラッシュするためｍそれ以上は先に進めません。"
 
 #: compat/templates/compat-list.html:26
 msgid "1 out of 5"
-msgstr ""
+msgstr "一つ星"
 
 #: compat/templates/compat-list.html:26
 msgid "<strong>Broken</strong>: Crashes when booting."
-msgstr ""
+msgstr "<strong>ダメダメ</strong>: 起動時にクラッシュします。"
 
 #: compat/templates/compat-list.html:33
 msgid "Statistics"
-msgstr ""
+msgstr "統計"
 
 #: compat/templates/compat-list.html:53
 msgid "Game title (click for details)"
-msgstr ""
+msgstr "ゲームタイトル（クリックで詳細な情報へ）"
 
 #: compat/templates/compat-list.html:54 templates/_base.html:62
 msgid "Compatibility"
-msgstr ""
+msgstr "互換性"
 
 #: compat/templates/compat-list.html:55
 msgid "Last updated"
-msgstr ""
+msgstr "情報更新日"
 
 #: compat/templatetags/compat.py:7
 msgid "Unknown"
-msgstr ""
+msgstr "未確認"
 
 #: compat/templatetags/compat.py:8
 msgid "Broken"
-msgstr ""
+msgstr "ダメダメ"
 
 #: compat/templatetags/compat.py:9
 msgid "Intro/Menu"
-msgstr ""
+msgstr "イントロ"
 
 #: compat/templatetags/compat.py:10
 msgid "Starts"
-msgstr ""
+msgstr "ソコソコ"
 
 #: compat/templatetags/compat.py:11
 msgid "Playable"
-msgstr ""
+msgstr "サクサク"
 
 #: compat/templatetags/compat.py:12
 msgid "Perfect"
-msgstr ""
+msgstr "カンペキ"
 
 #: docs/templates/docs-faq.html:6
 msgid "Frequently Asked Questions"
@@ -307,7 +307,7 @@ msgid ""
 "        Gamecube and Wii games. <a href=\"%(MEDIA_PAGE_URL)s\">View screenshots\n"
 "        of games played on Dolphin</a>.\n"
 "        "
-msgstr "\n        Wii実機の最大レンダリング解像度は480pに留まります。\n        Dolphinを使えば、ゲームキューブ、Wiiのゲーム共にフルHD解像度以上の表示が可能に。\n        <a href=\"%(MEDIA_PAGE_URL)s\">メディアギャラリーを見る。</a>.\n        "
+msgstr "\n        Wii実機の最大レンダリング解像度は480pに留まります。\n        Dolphinを使えば、ゲームキューブ、Wiiのゲーム共にフルHD解像度以上の表示が可能に。\n        <a href=\"%(MEDIA_PAGE_URL)s\">メディアギャラリーを見る。</a>\n        "
 
 #: homepage/templates/homepage-home.html:81
 msgid "Use your favorite controller"
@@ -345,7 +345,7 @@ msgid ""
 "        the <a href=\"%(COMPAT_URL)s\">Dolphin compatibility list</a>\n"
 "        or the <a href=\"%(WIKI_URL)s\">Dolphin wiki</a> for more details.\n"
 "        "
-msgstr ""
+msgstr "\n        多くのゲームキューブやWiiのゲームタイトルは、Dolphin 上で問題なく動作します。\n        新しいタイトルに対しても、発売直後から対応を開始。\n        Wiiウェアやバーチャルコンソールも例外ではありません。\n        詳しくは <a href=\"%(COMPAT_URL)s\">互換性リスト</a>\n        もしくは <a href=\"%(WIKI_URL)s\">Dolphin wiki</a> を参照してください。\n        "
 
 #: homepage/templates/homepage-home.html:124
 msgid "Helpful community"

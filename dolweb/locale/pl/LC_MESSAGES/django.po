@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-02-14 06:21+0100\n"
-"PO-Revision-Date: 2013-02-16 18:10+0000\n"
+"PO-Revision-Date: 2013-02-18 13:18+0000\n"
 "Last-Translator: Robert202 <Robert@10g.pl>\n"
 "Language-Team: Polish (http://www.transifex.com/projects/p/dolphin-emu/language/pl/)\n"
 "MIME-Version: 1.0\n"
@@ -34,7 +34,7 @@ msgstr "5 out of 5"
 
 #: compat/templates/compat-list.html:22
 msgid "<strong>Perfect</strong>: No issues at all!"
-msgstr ""
+msgstr "<strong>Perfekcyjne</strong>: Brak jakichkolwiek problemów!"
 
 #: compat/templates/compat-list.html:23
 msgid "4 out of 5"
@@ -44,75 +44,75 @@ msgstr "4 out of 5"
 msgid ""
 "<strong>Playable</strong>: Runs well, only minor graphical or audio "
 "glitches. Games can be played all the way through."
-msgstr ""
+msgstr "<strong>Grywalne</strong>: Gra chodzi bardzo dobrze, występuje jedynie kilka drobnych problemów graficznych lub dźwiękowych. Jednak gra chodzi od początku aż do samego końca."
 
 #: compat/templates/compat-list.html:24
 msgid "3 out of 5"
-msgstr ""
+msgstr "3 out of 5"
 
 #: compat/templates/compat-list.html:24
 msgid ""
 "<strong>Starts</strong>: Starts, maybe even plays well, but crashes or major"
 " graphical/audio glitches."
-msgstr ""
+msgstr "<strong>Uruchamia się</strong>: Uruchamia się, jest nawet momentami grywalna jednak zawiesza się lub występują błędy graficzne/dźwiękowe uniemożliwiające normalną grę."
 
 #: compat/templates/compat-list.html:25
 msgid "2 out of 5"
-msgstr ""
+msgstr "2 out of 5"
 
 #: compat/templates/compat-list.html:25
 msgid ""
 "<strong>Intro/Menu</strong>: Hangs/crashes somewhere between booting and "
 "starting."
-msgstr ""
+msgstr "<strong>Intro/Menu</strong>: Gra zawiesza się chwilę po uruchomieniu gry"
 
 #: compat/templates/compat-list.html:26
 msgid "1 out of 5"
-msgstr ""
+msgstr "1 out of 5"
 
 #: compat/templates/compat-list.html:26
 msgid "<strong>Broken</strong>: Crashes when booting."
-msgstr ""
+msgstr "<strong>Nie działa</strong>: Zawiesza się przy próbie uruchomienia"
 
 #: compat/templates/compat-list.html:33
 msgid "Statistics"
-msgstr ""
+msgstr "Statystyki"
 
 #: compat/templates/compat-list.html:53
 msgid "Game title (click for details)"
-msgstr ""
+msgstr "Tytuł gry (Naciśnij aby zobaczyć szczegóły)"
 
 #: compat/templates/compat-list.html:54 templates/_base.html:62
 msgid "Compatibility"
-msgstr ""
+msgstr "Kompatybilność"
 
 #: compat/templates/compat-list.html:55
 msgid "Last updated"
-msgstr ""
+msgstr "Ostatnia aktualizacja"
 
 #: compat/templatetags/compat.py:7
 msgid "Unknown"
-msgstr ""
+msgstr "Nieznane"
 
 #: compat/templatetags/compat.py:8
 msgid "Broken"
-msgstr ""
+msgstr "Nie działa"
 
 #: compat/templatetags/compat.py:9
 msgid "Intro/Menu"
-msgstr ""
+msgstr "Intro/Menu"
 
 #: compat/templatetags/compat.py:10
 msgid "Starts"
-msgstr ""
+msgstr "Uruchamia się"
 
 #: compat/templatetags/compat.py:11
 msgid "Playable"
-msgstr ""
+msgstr "Grywalne"
 
 #: compat/templatetags/compat.py:12
 msgid "Perfect"
-msgstr ""
+msgstr "Perfekcyjne"
 
 #: docs/templates/docs-faq.html:6
 msgid "Frequently Asked Questions"
@@ -154,7 +154,7 @@ msgstr "Wyświetl starsze wersje"
 
 #: downloads/templates/downloads-branches.html:27
 msgid "Branch list"
-msgstr "Lista Branch"
+msgstr "Lista Branchy"
 
 #: downloads/templates/downloads-devrel.html:19
 msgid "No development release yet"
@@ -308,7 +308,7 @@ msgid ""
 "        Gamecube and Wii games. <a href=\"%(MEDIA_PAGE_URL)s\">View screenshots\n"
 "        of games played on Dolphin</a>.\n"
 "        "
-msgstr "\nKonsola Wii wyświetla gry jedynie w rozdzielczości 480p. Emulator Dolphin wspiera\n720p, 1080p a nawet wyższe rozdielczości dla wszystkich\n Gier wydanych na Gamecube i Wii. <a href=\"%(MEDIA_PAGE_URL)s\">Zobacz zrzuty ekranu\ngier uruchomionych na emulatorze Dolphin</a>."
+msgstr "\nKonsola Wii wyświetla gry jedynie w rozdzielczości 480p. Emulator Dolphin wspiera\n720p, 1080p a nawet wyższe rozdzielczości dla wszystkich\n Gier wydanych na Gamecube i Wii. <a href=\"%(MEDIA_PAGE_URL)s\">Zobacz zrzuty ekranu\ngier uruchomionych na emulatorze Dolphin</a>."
 
 #: homepage/templates/homepage-home.html:81
 msgid "Use your favorite controller"
@@ -322,7 +322,7 @@ msgid ""
 "        and mouse! Wiimotes are still supported, including Wii Motion Plus\n"
 "        for games that require it.\n"
 "        "
-msgstr "\nNie przepadasz za kontrolerem dostępnym z Gamecube i Wiimotem? Teraz możesz\ngrać gry używając swojego ulubionego kontrolera, a nawet klawiatury\n i myszki! Wiimote wraz z doadtkiem Motion Plus jest również wspierany\n dla gier którego tego wymagają."
+msgstr "\nNie przepadasz za kontrolerem dostępnym z Gamecube i Wiimotem? Teraz możesz\ngrać w gry używając swojego ulubionego kontrolera, a nawet klawiatury\n i myszki! Wiimote wraz z dodatkiem Motion Plus jest również wspierany\n dla gier którego tego wymagają."
 
 #: homepage/templates/homepage-home.html:93
 msgid "Recent Dolphin news"
@@ -346,7 +346,7 @@ msgid ""
 "        the <a href=\"%(COMPAT_URL)s\">Dolphin compatibility list</a>\n"
 "        or the <a href=\"%(WIKI_URL)s\">Dolphin wiki</a> for more details.\n"
 "        "
-msgstr ""
+msgstr "\nEmulator Dolphin jest w stanie uruchomić większość gier wydanych na konsole Gamecube i Wii\nbez żadnych problemów. Nowo powstałe gry często działają od razu po ich wydaniu\nAplikacje Wiiware i Wirtualna Konsola jest również wspierana. Zobacz\n<a href=\"%(COMPAT_URL)s\">Listę kompatybilnych gier</a>\n lub <a href=\"%(WIKI_URL)s\">Dolphin wiki</a> aby dowiedzieć się więcej."
 
 #: homepage/templates/homepage-home.html:124
 msgid "Helpful community"
@@ -362,7 +362,7 @@ msgid ""
 "        can't help you, other Dolphin users may be willing to help you over at the\n"
 "        <a href=\"%(FORUM_URL)s\">official discussion forums</a>.\n"
 "        "
-msgstr "\nProblemy z instalacją? Próbujesz znaleźć najlepsze ustawienia dla\nkonkretnej gry? A może jesteś zainteresowany dyskusją na temat ulubionych gier na Gamecube i Wii? Jeśli <a href=\"%(FAQ_URL)s\">Często Zadawane Pytania</a>\nnie wystarczają, może inni użytkownicy bedą chcieli Ci pomóć na \n<a href=\"%(FORUM_URL)s\">oficjalnym forum dyskusyjnym</a>."
+msgstr "\nProblemy z instalacją? Próbujesz znaleźć najlepsze ustawienia dla\nkonkretnej gry? A może jesteś zainteresowany dyskusją na temat ulubionych gier na Gamecube i Wii? Jeśli <a href=\"%(FAQ_URL)s\">Często Zadawane Pytania</a>\nnie wystarczają, może inni użytkownicy będą chcieli Ci pomóc na \n<a href=\"%(FORUM_URL)s\">oficjalnym forum dyskusyjnym</a>."
 
 #: homepage/templates/homepage-home.html:138
 msgid "Free and Open Source"
@@ -377,7 +377,7 @@ msgid ""
 "        Grab the emulator source code from <a href=\"%(GCODE_URL)s\">Google\n"
 "        Code</a> and start hacking!\n"
 "        "
-msgstr "\nEmulator Dolphin jest rozwijany przez grupę ochotników z \ncałego świata i udostępniany bez żadnych opłat. Chcesz pomóc usprawnić program?\nPobierz kod źrodłowy programu ze strony <a href=\"%(GCODE_URL)s\">Kod Google</a> i rozpcznij hackowanie!"
+msgstr "\nEmulator Dolphin jest rozwijany przez grupę ochotników z \ncałego świata i udostępniany bez żadnych opłat. Chcesz pomóc usprawnić program?\nPobierz kod źródłowy programu ze strony <a href=\"%(GCODE_URL)s\">Kod Google</a> i rozpocznij hackowanie!"
 
 #: media/templates/media-all.html:6 media/templates/media-all.html.py:19
 msgid "Media gallery"
@@ -397,7 +397,7 @@ msgstr "Następne"
 
 #: templates/_base.html:57
 msgid "Home"
-msgstr "Początek"
+msgstr "Strona Główna"
 
 #: templates/_base.html:58
 msgid "Media"
