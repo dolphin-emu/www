@@ -6,7 +6,7 @@ import os.path
 import polib
 import time
 
-UPDATE_EVERY = 600
+UPDATE_EVERY = 300
 
 _DOMAINS = {}
 
