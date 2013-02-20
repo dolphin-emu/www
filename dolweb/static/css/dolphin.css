@@ -131,6 +131,7 @@ li.faq-title {
 
 section.faq-section div.faq-answer {
     margin-bottom: 1.5em;
+    text-align: justify;
 }
 
 section.faq-section {
@@ -160,7 +161,7 @@ footer p.footer-text {
     border: 0;
 }
 
-.home-section {
+.home-section p {
     text-align: justify;
 }
 
