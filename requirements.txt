@@ -10,7 +10,9 @@ django-bootstrap-form==2.0.3
 django-debug-toolbar==0.9.4
 glue==0.3
 paramiko==1.9.0
+polib==1.0.3
 pycrypto==2.6
 pymongo==2.4.2
+requests==1.1.0
 sorl-thumbnail==11.12
 wsgiref==0.1.2
