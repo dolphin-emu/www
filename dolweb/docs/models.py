@@ -26,6 +26,7 @@ class FAQ(models.Model):
 
     category = models.ForeignKey(FAQCategory, related_name='questions')
     title = models.CharField(max_length=128)
+    short_title = models.CharField(max_length=64)
     slug = models.SlugField()
     last_updated = models.DateTimeField(auto_now=True, auto_now_add=True)
     text = models.TextField()
