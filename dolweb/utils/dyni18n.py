@@ -36,6 +36,9 @@ class DynI18NDomain(object):
         self.last_update = time.time()
 
     def language_to_key(self, lang):
+        if '-' in lang:
+            l1, l2 = lang.split('-', 1)
+            lang = l1 + '_' + l2.upper()
         if lang in self.strings:
             return lang
         elif lang.split('_')[0] in self.strings:
