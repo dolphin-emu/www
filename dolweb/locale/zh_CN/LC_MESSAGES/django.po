@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-02-14 06:21+0100\n"
-"PO-Revision-Date: 2013-02-18 17:02+0000\n"
+"PO-Revision-Date: 2013-02-20 09:30+0000\n"
 "Last-Translator: Sentret_C <sentret_c@sina.cn>\n"
 "Language-Team: Chinese (China) (http://www.transifex.com/projects/p/dolphin-emu/language/zh_CN/)\n"
 "MIME-Version: 1.0\n"
@@ -43,7 +43,7 @@ msgstr "4星"
 msgid ""
 "<strong>Playable</strong>: Runs well, only minor graphical or audio "
 "glitches. Games can be played all the way through."
-msgstr "<strong>运行</strong>: 运行得很好，只有一些图像或声音上的小瑕疵。可完成游戏全过程。"
+msgstr "<strong>运行</strong>: 运行良好，只有一些图像或声音上的小瑕疵。可完成游戏全过程。"
 
 #: compat/templates/compat-list.html:24
 msgid "3 out of 5"
@@ -83,7 +83,7 @@ msgstr "游戏标题 (点击查看详情)"
 
 #: compat/templates/compat-list.html:54 templates/_base.html:62
 msgid "Compatibility"
-msgstr "兼容列表"
+msgstr "兼容"
 
 #: compat/templates/compat-list.html:55
 msgid "Last updated"
@@ -120,7 +120,7 @@ msgstr "常见问题解答"
 #: docs/templates/docs-guides-index.html:5
 #: docs/templates/docs-guides-index.html:9 templates/_base.html:61
 msgid "Guides"
-msgstr "用户指南"
+msgstr "指南"
 
 #: docs/templates/docs-guides-index.html:15
 #, python-format
@@ -129,7 +129,7 @@ msgstr "(由 %(author)s 创建)"
 
 #: docs/templates/docs-guides-index.html:17
 msgid "No published guide available"
-msgstr "尚无已发布指南"
+msgstr "尚无用户指南"
 
 #: downloads/models.py:32 downloads/models.py:50
 #, python-format
@@ -157,7 +157,7 @@ msgstr "分支列表"
 
 #: downloads/templates/downloads-devrel.html:19
 msgid "No development release yet"
-msgstr "尚无可用的开发版本"
+msgstr "尚无开发版本"
 
 #: downloads/templates/downloads-index.html:6
 #: downloads/templates/downloads-index.html:25 templates/_base.html:59
@@ -178,7 +178,7 @@ msgstr "\n    稳定版本在发布前经过许多测试以保证模拟性能与
 
 #: downloads/templates/downloads-index.html:53
 msgid "No stable release yet"
-msgstr "尚无可用的稳定版本"
+msgstr "尚无稳定版本"
 
 #: downloads/templates/downloads-index.html:74
 msgid "Development versions"
@@ -191,7 +191,7 @@ msgid ""
 "    developer makes a change to Dolphin. Using development versions enables you\n"
 "    to use the latest and greatest improvements to the project, at the cost of\n"
 "    decreased stability.\n"
-msgstr "\n    <strong>注意！</strong> 每当一位开发者对Dolphin做出改动，都将有开发版本发布。使用开发版本将使您能够体验到最新最大的改进，但将带来稳定性风险。\n"
+msgstr "\n    <strong>注意！</strong> 每当一位开发者对Dolphin做出改动，都将有开发版本发布。使用开发版本将使您能够体验到最新最大的改进，但是其稳定性相对较低。\n"
 
 #: downloads/templates/downloads-index.html:83
 msgid "Only displaying the <tt>master</tt> branch versions."
@@ -307,11 +307,11 @@ msgid ""
 "        Gamecube and Wii games. <a href=\"%(MEDIA_PAGE_URL)s\">View screenshots\n"
 "        of games played on Dolphin</a>.\n"
 "        "
-msgstr "\n        Wii仅在480p分辨率下渲染游戏。Dolphin支持在720p、1080p甚至\n        更高分辨率下运行您所有的Gamecube和Wii游戏。<a href=\"%(MEDIA_PAGE_URL)s\">查看Dolphin中\n        所运行游戏的截图</a>。\n        "
+msgstr "\n        Wii仅在480p分辨率下渲染游戏，而Dolphin支持在720p、1080p甚至更高分辨率下运行你所有的Gamecube和Wii游戏。<a href=\"%(MEDIA_PAGE_URL)s\">查看Dolphin中所运行游戏的截图</a>。\n        "
 
 #: homepage/templates/homepage-home.html:81
 msgid "Use your favorite controller"
-msgstr "使用您最喜爱的控制器"
+msgstr "使用你最爱的控制器"
 
 #: homepage/templates/homepage-home.html:83
 msgid ""
@@ -321,7 +321,7 @@ msgid ""
 "        and mouse! Wiimotes are still supported, including Wii Motion Plus\n"
 "        for games that require it.\n"
 "        "
-msgstr "\n        不是那么喜欢Gamecube控制器和Wii遥控器？你可以使用你最喜爱的\n        游戏控制器，或者甚至是键盘和鼠标来玩游戏！Wii遥控器和Wii动感\n        强化器仍然受到支持，以便运行需要它们的游戏。\n        "
+msgstr "\n        不是那么喜欢Gamecube控制器和Wii遥控器？你可以使用你最喜爱的游戏控制器，甚至是键盘和鼠标来玩游戏！Wii遥控器和Wii动感强化器仍受支持，以便运行需要它们的游戏。\n        "
 
 #: homepage/templates/homepage-home.html:93
 msgid "Recent Dolphin news"
@@ -345,7 +345,7 @@ msgid ""
 "        the <a href=\"%(COMPAT_URL)s\">Dolphin compatibility list</a>\n"
 "        or the <a href=\"%(WIKI_URL)s\">Dolphin wiki</a> for more details.\n"
 "        "
-msgstr "\n        Dolphin可以正确运行大多数Gamecube和Wii游戏。新发布的Wii游戏\n        通常发售当天就能在Dolphin上运行。Wiiware和Virtual Console游戏也\n        受支持。访问<a href=\"%(COMPAT_URL)s\">Dolphin兼容列表</a>或\n        <a href=\"%(WIKI_URL)s\">Dolphin wiki</a>以获取更多信息。\n        "
+msgstr "\n        Dolphin可以正确运行大多数Gamecube和Wii游戏。新发布的Wii游戏通常发售当天就能在Dolphin上运行。Wiiware和Virtual Console游戏也受支持。访问<a href=\"%(COMPAT_URL)s\">Dolphin兼容列表</a>或<a href=\"%(WIKI_URL)s\">Dolphin wiki</a>以获取更多信息。\n        "
 
 #: homepage/templates/homepage-home.html:124
 msgid "Helpful community"
@@ -365,7 +365,7 @@ msgstr "\n        安装遇到问题？想找出适用于某个游戏的最佳�
 
 #: homepage/templates/homepage-home.html:138
 msgid "Free and Open Source"
-msgstr "自由及开放源代码"
+msgstr "自由且开源"
 
 #: homepage/templates/homepage-home.html:140
 #, python-format
@@ -404,7 +404,7 @@ msgstr "相册"
 
 #: templates/_base.html:60
 msgid "FAQ"
-msgstr "常见问题"
+msgstr "FAQ"
 
 #: templates/_base.html:63
 msgid "Forum"
