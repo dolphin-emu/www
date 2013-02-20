@@ -124,8 +124,14 @@ div#download-stable h1, div#download-dev h1, div#download-source h1 {
     line-height: 1.4em;
 }
 
+li.faq-title {
+    font-size: 0.9em;
+    line-height: 1.1em;
+}
+
 section.faq-section div.faq-answer {
     margin-bottom: 1.5em;
+    text-align: justify;
 }
 
 section.faq-section {
@@ -155,7 +161,7 @@ footer p.footer-text {
     border: 0;
 }
 
-.home-section {
+.home-section p {
     text-align: justify;
 }
 

@@ -5,6 +5,7 @@ register = template.Library()
 
 EXCEPTIONS = {
     'pt': ['br'],
+    'zh': ['cn'],
 }
 
 @register.filter

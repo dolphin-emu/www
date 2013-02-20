@@ -14,7 +14,7 @@
                     {% for category in categories %}
                     <li class="nav-header">{{ category.title }}</li>
                     {% for question in category.sorted_questions %}
-                    <li><a href="#{{ question.slug }}">{{ question.title }}</a></li>
+                    <li class="faq-title"><a href="#{{ question.slug }}">{{ question.short_title }}</a></li>
                     {% endfor %}
                     {% endfor %}
                 </ul>
