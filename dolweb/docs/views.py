@@ -24,6 +24,14 @@ def guide(request, slug):
 
 def faq_dyni18n_po(request):
     po = polib.POFile()
+    po.metadata = {
+        'Project-Id-Version': '1.0',
+        'Report-Msgid-Bugs-To': 'contact@dolphin-emu.org',
+        'MIME-Version': '1.0',
+        'Content-Type': 'text/plain; charset=utf-8',
+        'Content-Transfer-Encoding': '8bit',
+    }
+
     for cat in FAQCategory.objects.order_by('display_order'):
         po.append(polib.POEntry(msgid=cat.title, msgstr=u'', msgctxt=u'Category title'))
         for q in cat.sorted_questions():
