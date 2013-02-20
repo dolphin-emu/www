@@ -44,6 +44,7 @@ class DynI18NDomain(object):
             return lang
 
     def translate(self, string):
+        self.update()
         lang = self.language_to_key(get_language())
         if lang not in self.strings:
             return string
