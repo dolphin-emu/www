@@ -21,7 +21,7 @@ class DynI18NDomain(object):
         if not force and time.time() - self.last_update < UPDATE_EVERY:
             return
 
-        pattern = os.path.join(settings.DYNI18N_PATH, '%s.*.po')
+        pattern = os.path.join(settings.DYNI18N_PATH, '%s.*.po' % self.name)
         files = glob.glob(pattern)
 
         self.strings = {}
@@ -30,7 +30,7 @@ class DynI18NDomain(object):
             self.strings[lang] = {}
 
             po = polib.pofile(file)
-            for entry in po.translated_entries:
+            for entry in po.translated_entries():
                 self.strings[lang][entry.msgid] = entry.msgstr
 
         self.last_update = time.time()
