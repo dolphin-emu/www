@@ -1,5 +1,6 @@
 {% extends "_base.html" %}
 
+{% load docs %}
 {% load i18n %}
 {% load markup %}
 
@@ -12,9 +13,9 @@
             <div class="well sidebar-nav">
                 <ul class="nav nav-list">
                     {% for category in categories %}
-                    <li class="nav-header">{{ category.title }}</li>
+                    <li class="nav-header">{{ category.title|faq_translate }}</li>
                     {% for question in category.sorted_questions %}
-                    <li class="faq-title"><a href="#{{ question.slug }}">{{ question.short_title }}</a></li>
+                    <li class="faq-title"><a href="#{{ question.slug }}">{{ question.short_title|faq_translate }}</a></li>
                     {% endfor %}
                     {% endfor %}
                 </ul>
@@ -37,15 +38,15 @@
         {% for category in categories %}
             <section id="{{ category.slug }}" class="faq-section">
             <div class="page-header">
-                <h1>{{ category.title }}</h1>
+                <h1>{{ category.title|faq_translate }}</h1>
             </div>
 
             {% for question in category.sorted_questions %}
-            <h3 id="{{ question.slug }}">{{ question.title }}
+            <h3 id="{{ question.slug }}">{{ question.title|faq_translate }}
                 <a class="anchor" href="#{{ question.slug }}">¶</a></h3>
 
             <div class="faq-answer">
-            {{ question.text|markdown:"safe" }}
+            {{ question.text|faq_translate|markdown:"safe" }}
             </div>
             {% endfor %}
             </section>

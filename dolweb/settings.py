@@ -230,6 +230,15 @@ BNR_MONGO_DBNAME = ''
 BNR_MONGO_USER = ''
 BNR_MONGO_PASSWORD = ''
 
+# Path used to load and update dynamic i18n PO files
+DYNI18N_PATH = os.path.join(PROJECT_ROOT, 'dyni18n')
+
+# Transifex informations for automatic dyni18n pull
+TRANSIFEX_USER = ''
+TRANSIFEX_PASSWORD = ''
+TRANSIFEX_PROJECT = ''
+TRANSIFEX_FAQ_RESOURCE = ''
+
 try:
     execfile(os.path.join(PROJECT_ROOT, 'dolweb', 'local_settings.py'), globals(), locals())
 except ImportError:
