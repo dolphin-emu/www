@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-02-14 06:21+0100\n"
-"PO-Revision-Date: 2013-02-18 08:11+0000\n"
+"PO-Revision-Date: 2013-02-18 17:02+0000\n"
 "Last-Translator: Sentret_C <sentret_c@sina.cn>\n"
 "Language-Team: Chinese (China) (http://www.transifex.com/projects/p/dolphin-emu/language/zh_CN/)\n"
 "MIME-Version: 1.0\n"
@@ -174,7 +174,7 @@ msgid ""
 "    Stable versions are released after a lot of testing to ensure emulation\n"
 "    performance and stability. <strong>If you do not know what version of\n"
 "    Dolphin you should use, the latest stable version is generally the best.</strong>\n"
-msgstr "\n    稳定版本在发布前经过许多测试以保证模拟性能与稳定性。<strong>\n    如果您不知道您应该使用哪个版本的Dolphin，最新的稳定版本通常是\n    最佳选择。</strong>\n"
+msgstr "\n    稳定版本在发布前经过许多测试以保证模拟性能与稳定性。<strong>如果您不知道您应该使用哪个版本的Dolphin，最新的稳定版本通常是最佳选择。</strong>\n"
 
 #: downloads/templates/downloads-index.html:53
 msgid "No stable release yet"
@@ -191,7 +191,7 @@ msgid ""
 "    developer makes a change to Dolphin. Using development versions enables you\n"
 "    to use the latest and greatest improvements to the project, at the cost of\n"
 "    decreased stability.\n"
-msgstr "\n    <strong>注意！</strong> 每当一位开发者对Dolphin做出改动，都将有\n    开发版本发布。使用开发版本将使您能够体验到最新最大的改进，但以\n    降低稳定性作为代价。\n"
+msgstr "\n    <strong>注意！</strong> 每当一位开发者对Dolphin做出改动，都将有开发版本发布。使用开发版本将使您能够体验到最新最大的改进，但将带来稳定性风险。\n"
 
 #: downloads/templates/downloads-index.html:83
 msgid "Only displaying the <tt>master</tt> branch versions."
@@ -234,12 +234,12 @@ msgstr "<tt>%(branch)s</tt> 分支 - 第 %(page)s 页"
 #: downloads/templates/downloads-view-devrel.html:6
 #, python-format
 msgid "Information on %(br)s"
-msgstr ""
+msgstr "%(br)s 版本信息"
 
 #: downloads/templates/downloads-view-devrel.html:10
 #, python-format
 msgid "Information for %(br)s"
-msgstr ""
+msgstr "%(br)s 版本信息"
 
 #: downloads/templates/downloads-view-devrel.html:16
 msgid "Version"
@@ -251,19 +251,19 @@ msgstr "分支"
 
 #: downloads/templates/downloads-view-devrel.html:22
 msgid "Date"
-msgstr "日期"
+msgstr "发布于"
 
 #: downloads/templates/downloads-view-devrel.html:31
 msgid "Commit"
-msgstr "提交"
+msgstr "提交码"
 
 #: downloads/templates/downloads-view-devrel.html:34
 msgid "Change author"
-msgstr ""
+msgstr "修改者"
 
 #: downloads/templates/downloads-view-devrel.html:37
 msgid "Change description"
-msgstr ""
+msgstr "修改说明"
 
 #: homepage/templates/homepage-home.html:7
 msgid "Gamecube/Wii games on PC"
@@ -272,7 +272,7 @@ msgstr "在PC上运行Gamecube/Wii游戏"
 #: homepage/templates/homepage-home.html:25 templates/_base.html:9
 #: templates/_base.html.py:54
 msgid "Dolphin Emulator"
-msgstr "Dolphin模拟器"
+msgstr "Dolphin Emulator"
 
 #: homepage/templates/homepage-home.html:27
 msgid "Play Gamecube and Wii games in 1080p on your PC."
@@ -329,7 +329,7 @@ msgstr "最新动态"
 
 #: homepage/templates/homepage-home.html:98
 msgid "by"
-msgstr ""
+msgstr "发布者"
 
 #: homepage/templates/homepage-home.html:110
 msgid "Great compatibility"
@@ -361,7 +361,7 @@ msgid ""
 "        can't help you, other Dolphin users may be willing to help you over at the\n"
 "        <a href=\"%(FORUM_URL)s\">official discussion forums</a>.\n"
 "        "
-msgstr "\n        安装遇到问题？想找出适用于某个游戏的最佳配置？或者只是想讨论\n        喜欢的Gamecube和Wii游戏？如果<a href=\"%(FAQ_URL)s\">常见问题解答</a>没能对你有所帮助，\n        就来我们的<a href=\"%(FORUM_URL)s\">官方论坛</a>吧，其他Dolphin用户将随时伸出援手。\n        "
+msgstr "\n        安装遇到问题？想找出适用于某个游戏的最佳配置？或者只是想讨论喜欢的Gamecube和Wii游戏？如果<a href=\"%(FAQ_URL)s\">常见问题解答</a>没能对你有所帮助，就来我们的<a href=\"%(FORUM_URL)s\">官方论坛</a>吧，其他Dolphin用户将随时伸出援手。\n        "
 
 #: homepage/templates/homepage-home.html:138
 msgid "Free and Open Source"
@@ -376,7 +376,7 @@ msgid ""
 "        Grab the emulator source code from <a href=\"%(GCODE_URL)s\">Google\n"
 "        Code</a> and start hacking!\n"
 "        "
-msgstr "\n        Dolphin模拟器由世界各地的志愿者们开发并免费发布。想帮助改进\n        本项目？从<a href=\"%(GCODE_URL)s\">Google代码</a>获取模拟器的源代码开始分析吧！\n        "
+msgstr "\n        Dolphin模拟器由世界各地的志愿者们开发并免费发布。想帮助改进本项目？从<a href=\"%(GCODE_URL)s\">Google代码</a>获取模拟器的源代码开始分析吧！\n        "
 
 #: media/templates/media-all.html:6 media/templates/media-all.html.py:19
 msgid "Media gallery"
