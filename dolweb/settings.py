@@ -51,6 +51,7 @@ TIME_ZONE = 'Europe/Paris'
 # http://www.i18nguy.com/unicode/language-identifiers.html
 LANGUAGE_CODE = 'en-us'
 
+# List of supported languages: ('langcode', 'Name of the language')
 LANGUAGES = (
     ('cs', u'Česky'),
     ('de', u'Deutsch'),
@@ -67,6 +68,11 @@ LANGUAGES = (
     ('ja', u'日本語'),
     ('ko', u'한국어'),
     ('fa', u'ﻑﺍﺮﺳی'),
+)
+
+# Languages that are read from right to left.
+RTL_LANGUAGES = (
+    'fa',
 )
 
 SITE_ID = 1

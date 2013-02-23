@@ -30,3 +30,11 @@ def to_subdomain(lang_code):
         return settings.DEFAULT_HOST
     else:
         return '%s.%s' % (lang_code, settings.DEFAULT_HOST)
+
+@register.filter
+def langdir(lang_code):
+    code = short(lang_code)
+    if code in settings.RTL_LANGUAGES:
+        return 'rtl'
+    else:
+        return 'ltr'
