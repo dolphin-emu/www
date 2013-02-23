@@ -55,6 +55,15 @@ class DynI18NDomain(object):
             return string
         return self.strings[lang][string]
 
+    def has_translation(self, string):
+        self.update()
+        lang = self.language_to_key(get_language())
+        if lang not in self.strings:
+            return False
+        if string not in self.strings[lang]:
+            return False
+        return True
+
 def get_or_create_domain(domain):
     if domain in _DOMAINS:
         return _DOMAINS[domain]
@@ -66,3 +75,7 @@ def get_or_create_domain(domain):
 def translate(domain, string):
     domain = get_or_create_domain(domain)
     return domain.translate(string)
+
+def has_translation(domain, string):
+    domain = get_or_create_domain(domain)
+    return domain.has_translation(string)

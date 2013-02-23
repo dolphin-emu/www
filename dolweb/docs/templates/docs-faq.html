@@ -38,14 +38,14 @@
         {% for category in categories %}
             <section id="{{ category.slug }}" class="faq-section">
             <div class="page-header">
-                <h1>{{ category.title|faq_translate }}</h1>
+                <h1 {% if not category.title|faq_can_translate %}dir="ltr"{% endif %}>{{ category.title|faq_translate }}</h1>
             </div>
 
             {% for question in category.sorted_questions %}
-            <h3 id="{{ question.slug }}">{{ question.title|faq_translate }}
+            <h3 id="{{ question.slug }}" {% if not question.title|faq_can_translate %}dir="ltr"{% endif %}>{{ question.title|faq_translate }}
                 <a class="anchor" href="#{{ question.slug }}">¶</a></h3>
 
-            <div class="faq-answer">
+            <div class="faq-answer {% if not question.text|faq_can_translate %}always-ltr{% endif %}">
             {{ question.text|faq_translate|markdown:"safe" }}
             </div>
             {% endfor %}
