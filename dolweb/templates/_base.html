@@ -71,7 +71,7 @@
                                 <ul class="dropdown-menu">
                                 {% for langcode, langname in LANGUAGES %}
                                     {% if langcode != LANGUAGE_CODE|short %}
-                                    <li><a href="http://{{ langcode|to_subdomain }}{{ request.path }}?nocr=true"><div class="flag sprite-nav-{{ langcode }}"></div>{{ langname }}</a></li>
+                                    <li><a href="http://{{ langcode|to_subdomain }}{{ request.path }}?nocr=true"><div class="flag sprite-nav-{{ langcode }}"></div><span dir="{{ langcode|langdir }}">{{ langname }}</span></a></li>
                                     {% endif %}
                                 {% endfor %}
                                 </ul>
@@ -87,7 +87,7 @@
 
         <div class="container">
             {% if COUNTRY_REDIRECT %}
-            <div class="alert alert-info">
+            <div class="always-ltr alert alert-info">
                 <button type="button" class="close" data-dismiss="alert">&times;</button>
                 You have been redirected to the <strong>{{ LANGUAGE_CODE|langname }}</strong>
                 version of the website based on your browser language preferences.

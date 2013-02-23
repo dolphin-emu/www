@@ -1,3 +1,52 @@
+/* LTR/RTL util classes */
+.always-ltr {
+    direction: ltr;
+}
+
+.always-rtl {
+    direction: rtl;
+}
+
+.default-dir {
+    direction: ltr;
+}
+
+html[dir="rtl"] .default-dir {
+    direction: rtl;
+}
+
+/* Align some table text cells to the right (always english ltr text) */
+html[dir="rtl"] table.versions-list td.description {
+    text-align: right;
+}
+
+html[dir="rtl"] table.compat-list td.title {
+    text-align: right;
+}
+
+/* Fix Bootstrap rows in RTL */
+html[dir="rtl"] [class*="span"] {
+    float: right;
+    margin-right: 30px;
+    margin-left: 0;
+}
+
+html[dir="rtl"] .row-fluid [class*="span"] {
+    float: right;
+    margin-right: 2.127659574%;
+    *margin-right: 2.0744680846382977%;
+    margin-left: 0;
+}
+
+html[dir="rtl"] .row-fluid [class*="span"]:first-child {
+    margin-right: 0;
+}
+
+html[dir="rtl"] ul, html[dir="rtl"] ol {
+    padding: 0 40px 0 0;
+    margin: 0 0 9px 0;
+}
+
 .navbar-inner { border-radius: 0; }
 
 .navbar .brand i.logo {
@@ -6,6 +55,11 @@
     margin-top: -5px;
     margin-left: -10px;
     margin-right: 10px;
+}
+
+html[dir="rtl"] .navbar .brand i.logo {
+    margin-left: 10px;
+    margin-right: 0px;
 }
 
 h1 a.anchor, h3 a.anchor {
@@ -155,6 +209,11 @@ footer p.footer-text {
     border: 1px solid black;
     display: inline-block;
     vertical-align: center;
+}
+
+html[dir="rtl"] .nav .flag {
+    margin-left: 0.7em;
+    margin-right: 0;
 }
 
 .nav .curr-flag {

@@ -41,7 +41,7 @@
                 <div class="g-plusone" data-size="small" data-href="http://dolphin-emu.org/"></div>
             </div>
             <div class="span5">
-                <div id="sshot-carousel" class="carousel slide">
+                <div id="sshot-carousel" class="always-ltr carousel slide">
                     <div class="carousel-inner">
                         {% for image in featured_images %}
                         <div class="{% if forloop.first %}active {% endif %}item">
@@ -94,7 +94,7 @@
         <p>
         <ul>
             {% for news in latest_news %}
-            <li><a href="{{ news.forum_url }}">{{ news.title }}</a>
+            <li><a class="always-ltr" href="{{ news.forum_url }}">{{ news.title }}</a>
                 ({% trans "by" %} {{ news.author }}, {{ news.posted_on|naturaltime }})</li>
             {% endfor %}
         </ul>

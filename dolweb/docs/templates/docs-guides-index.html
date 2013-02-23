@@ -11,7 +11,7 @@
 
 <ul>
 {% for guide in guides %}
-<li><a href="{{ guide.get_absolute_url }}">{{ guide.title }}</a>
+<li class="always-ltr"><a href="{{ guide.get_absolute_url }}">{{ guide.title }}</a>
     {% blocktrans with author=guide.author %}(by {{ author }}){% endblocktrans %}</li>
 {% empty %}
 <li><em>{% trans "No published guide available" %}</em></ul>

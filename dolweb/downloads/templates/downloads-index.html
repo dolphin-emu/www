@@ -38,7 +38,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
     <tbody>
     {% for ver in releases %}
         <tr class="infos">
-            <td class="version">Dolphin {{ ver.version }}</td>
+            <td class="version always-ltr">Dolphin {{ ver.version }}</td>
             <td class="reldate">{{ ver.date|naturaltime }}</td>
             <td class="description"></td>
         </tr>
@@ -97,7 +97,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
     project Git repository.
     {% endblocktrans %}</p>
 
-    <pre>
+    <pre class="always-ltr">
     $ git clone https://code.google.com/p/dolphin-emu/</pre>
 
     <p>{% blocktrans %}
