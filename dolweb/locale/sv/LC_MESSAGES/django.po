@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-02-14 06:21+0100\n"
-"PO-Revision-Date: 2013-02-16 23:21+0000\n"
+"PO-Revision-Date: 2013-02-20 20:20+0000\n"
 "Last-Translator: DolphinPhoenix <anton_r_3@hotmail.com>\n"
 "Language-Team: Swedish (http://www.transifex.com/projects/p/dolphin-emu/language/sv/)\n"
 "MIME-Version: 1.0\n"
@@ -195,7 +195,7 @@ msgstr "\n    <strong>Varning!</strong> Utvecklingsversioner släpps varje gång
 
 #: downloads/templates/downloads-index.html:83
 msgid "Only displaying the <tt>master</tt> branch versions."
-msgstr "Visar endast versionerna som är <tt>mästerförgreningar</tt>."
+msgstr "Visar endast versionerna som är <tt>masterförgreningar</tt>."
 
 #: downloads/templates/downloads-index.html:84
 msgid "Show all available branches"
@@ -272,7 +272,7 @@ msgstr "Gamecube-/Wii-spel på PC"
 #: homepage/templates/homepage-home.html:25 templates/_base.html:9
 #: templates/_base.html.py:54
 msgid "Dolphin Emulator"
-msgstr "Dolphin Emulatorn"
+msgstr "Emulatorn Dolphin"
 
 #: homepage/templates/homepage-home.html:27
 msgid "Play Gamecube and Wii games in 1080p on your PC."

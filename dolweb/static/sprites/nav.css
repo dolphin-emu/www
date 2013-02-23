@@ -1,4 +1,4 @@
-/* glue: 0.3 hash: 11462f3818 */
+/* glue: 0.3 hash: b709014e80 */
 .sprite-nav-logo-small,
 .sprite-nav-tr,
 .sprite-nav-sv,
@@ -8,6 +8,7 @@
 .sprite-nav-ko,
 .sprite-nav-ja,
 .sprite-nav-fr,
+.sprite-nav-fa,
 .sprite-nav-es,
 .sprite-nav-en,
 .sprite-nav-de,
@@ -23,9 +24,10 @@
 .sprite-nav-ko{background-position:-72px 0px;width:30px;height:20px;}
 .sprite-nav-ja{background-position:-72px -20px;width:30px;height:20px;}
 .sprite-nav-fr{background-position:-72px -40px;width:30px;height:20px;}
-.sprite-nav-es{background-position:0px -65px;width:30px;height:20px;}
-.sprite-nav-en{background-position:-30px -65px;width:30px;height:20px;}
-.sprite-nav-de{background-position:-60px -65px;width:30px;height:20px;}
-.sprite-nav-cs{background-position:-102px 0px;width:30px;height:20px;}
-.sprite-nav-cn{background-position:-102px -20px;width:30px;height:20px;}
-.sprite-nav-br{background-position:-102px -40px;width:30px;height:20px;}
+.sprite-nav-fa{background-position:0px -65px;width:30px;height:20px;}
+.sprite-nav-es{background-position:-30px -65px;width:30px;height:20px;}
+.sprite-nav-en{background-position:-60px -65px;width:30px;height:20px;}
+.sprite-nav-de{background-position:-102px 0px;width:30px;height:20px;}
+.sprite-nav-cs{background-position:-102px -20px;width:30px;height:20px;}
+.sprite-nav-cn{background-position:-102px -40px;width:30px;height:20px;}
+.sprite-nav-br{background-position:-102px -60px;width:30px;height:20px;}
