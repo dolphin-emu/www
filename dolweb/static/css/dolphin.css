@@ -27,7 +27,7 @@ html[dir="rtl"] table.compat-list td.title {
 /* Fix Bootstrap rows in RTL */
 html[dir="rtl"] [class*="span"] {
     float: right;
-    margin-right: 30px;
+    margin-right: 0;
     margin-left: 0;
 }
 
@@ -42,7 +42,7 @@ html[dir="rtl"] .row-fluid [class*="span"]:first-child {
     margin-right: 0;
 }
 
-html[dir="rtl"] ul, html[dir="rtl"] ol {
+html[dir="rtl"] ul.rtl-fixed, html[dir="rtl"] ol.rtl-fixed {
     padding: 0 40px 0 0;
     margin: 0 0 9px 0;
 }

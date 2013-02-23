@@ -92,7 +92,7 @@
     <div class="span4 home-section">
         <h2>{% trans "Recent Dolphin news" %}</h2>
         <p>
-        <ul>
+        <ul class="rtl-fixed">
             {% for news in latest_news %}
             <li><a class="always-ltr" href="{{ news.forum_url }}">{{ news.title }}</a>
                 ({% trans "by" %} {{ news.author }}, {{ news.posted_on|naturaltime }})</li>
