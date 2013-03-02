@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-02-14 06:21+0100\n"
-"PO-Revision-Date: 2013-02-15 20:56+0000\n"
+"PO-Revision-Date: 2013-02-26 09:20+0000\n"
 "Last-Translator: Delayline <hamed.khakbiz@gmail.com>\n"
 "Language-Team: Persian (http://www.transifex.com/projects/p/dolphin-emu/language/fa/)\n"
 "MIME-Version: 1.0\n"
@@ -275,7 +275,7 @@ msgstr "برابرساز دلفین"
 
 #: homepage/templates/homepage-home.html:27
 msgid "Play Gamecube and Wii games in 1080p on your PC."
-msgstr "بازی های گیم کیوب و وی را به صورت فول اچ دی (1080p) در کامپوتر خود بازی کنید."
+msgstr "بازی های گیم کیوب و وی را به صورت فول اچ دی در کامپوتر خود بازی کنید."
 
 #: homepage/templates/homepage-home.html:30
 #, python-format
@@ -287,7 +287,7 @@ msgid ""
 "\n"
 "                <strong>Minimal requirements</strong>: SSE2 compatible CPU, Shader Model 3.0 GPU, 2GB of RAM, 50MB of disk space\n"
 "                "
-msgstr "\n                <strong>حداقل سیستم مورد نیاز</strong>: پردازنده سازگار با SSE2، پردازنده گرافیک سازگار با Shader Model 3.0، ۲ گیگابایت حافظه رم، ۵۰ مگابایت فضای دیسک\n                "
+msgstr "\n                <strong>حداقل سیستم مورد نیاز</strong>: پردازنده سازگار با SSE2، پردازنده گرافیک سازگار با Shader Model 3.0، حافظه رم ۲ گیگابایت، ۵۰ مگابایت فضای دیسک\n                "
 
 #: homepage/templates/homepage-home.html:38
 msgid "More information about hardware requirements"
@@ -306,7 +306,7 @@ msgid ""
 "        Gamecube and Wii games. <a href=\"%(MEDIA_PAGE_URL)s\">View screenshots\n"
 "        of games played on Dolphin</a>.\n"
 "        "
-msgstr "\n        وی بازی ها را تنها با وضوح 480p نمایش می دهد. دلفین\n        از 1080p، 720p و حتی تفکیک پذیری های بالاتر برای تمام\n        بازی های گیم کیوب و وی پشتیبانی می کند. <a href=\"%(MEDIA_PAGE_URL)s\">عکس های فوری\n        از بازی های اجرا شده در دلفین را ببینید</a>.\n        "
+msgstr "\n        وی بازی ها را تنها با وضوح 480p نمایش می دهد. دلفین\n        از 720p، 1080p و حتی تفکیک پذیری های بالاتر برای تمام\n        بازی های گیم کیوب و وی پشتیبانی می کند. <a href=\"%(MEDIA_PAGE_URL)s\">عکس های فوری\n        از بازی های اجرا شده در دلفین را ببینید</a>.\n        "
 
 #: homepage/templates/homepage-home.html:81
 msgid "Use your favorite controller"
@@ -344,7 +344,7 @@ msgid ""
 "        the <a href=\"%(COMPAT_URL)s\">Dolphin compatibility list</a>\n"
 "        or the <a href=\"%(WIKI_URL)s\">Dolphin wiki</a> for more details.\n"
 "        "
-msgstr "\n        دلفین می تواند بیشتر بازی های گیم کیوب و وی را بدون مشکل اجرا کند.\n        بازی های منتشر شده جدید وی اغلب از روز اول در دلفین کار می کنند.\n        بازی های وی ویر و ویرچوال کنسول نیز پشتیبانی می شوند.\n        چک کنید <a href=\"%(COMPAT_URL)s\">Dolphin compatibility list</a>\n        یا <a href=\"%(WIKI_URL)s\">Dolphin wiki</a> برای اطلاعات بیشتر.\n        "
+msgstr "\n        دلفین می تواند بیشتر بازی های گیم کیوب و وی را بدون مشکل اجرا کند.\n        بازی های منتشر شده جدید وی اغلب از روز اول در دلفین کار می کنند.\n        بازی های وی ویر و ویرچوال کنسول نیز پشتیبانی می شوند.\n        برای اطلاعات بیشتر <a href=\"%(COMPAT_URL)s\">لیست سازگاری دلفین</a>\n        یا <a href=\"%(WIKI_URL)s\">ویکی دلفین</a> را چک کنید.\n        "
 
 #: homepage/templates/homepage-home.html:124
 msgid "Helpful community"

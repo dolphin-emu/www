@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-02-14 06:21+0100\n"
-"PO-Revision-Date: 2013-02-19 03:03+0000\n"
+"PO-Revision-Date: 2013-02-26 23:22+0000\n"
 "Last-Translator: DanbSky <smariojp@gmail.com>\n"
 "Language-Team: Japanese (http://www.transifex.com/projects/p/dolphin-emu/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -53,7 +53,7 @@ msgstr "三つ星"
 msgid ""
 "<strong>Starts</strong>: Starts, maybe even plays well, but crashes or major"
 " graphical/audio glitches."
-msgstr "<strong>ソコソコ</strong>: 開始後しばらくは問題なくプレイできますが、クラッシュやプレイに支障のある画面や音の問題を含んでいます。"
+msgstr "<strong>ソコソコ</strong>:上手く動作するように見えますが、クラッシュしたり、音や画面に大きな問題が発生します。"
 
 #: compat/templates/compat-list.html:25
 msgid "2 out of 5"
@@ -63,7 +63,7 @@ msgstr "二つ星"
 msgid ""
 "<strong>Intro/Menu</strong>: Hangs/crashes somewhere between booting and "
 "starting."
-msgstr "<strong>イントロ</strong>: 起動時、もしくはゲーム開始時にクラッシュするためｍそれ以上は先に進めません。"
+msgstr "<strong>イントロ</strong>: 起動時、もしくはゲーム開始時にクラッシュするため、それ以上は先に進めません。"
 
 #: compat/templates/compat-list.html:26
 msgid "1 out of 5"
@@ -281,7 +281,7 @@ msgstr "ゲームキューブとWiiのゲームをHD画質で。"
 #: homepage/templates/homepage-home.html:30
 #, python-format
 msgid "Download %(last_release)s now for Windows, Mac and Linux »"
-msgstr "今すぐ Windows, Mac および Linux用の %(last_release)s を入手 »"
+msgstr "今すぐ Windows, Mac および Linux 用の %(last_release)s を入手 »"
 
 #: homepage/templates/homepage-home.html:33
 msgid ""
@@ -321,7 +321,7 @@ msgid ""
 "        and mouse! Wiimotes are still supported, including Wii Motion Plus\n"
 "        for games that require it.\n"
 "        "
-msgstr "\n        ゲームキューブコントローラーやWiiリモコンは扱いにくい？\n        Dolphinはキーボードやマウス、お好きなPCコントローラでの操作が可能。\n        モーションプラスを含めた、実機のWiiリモコンの接続にも対応しています。\n        "
+msgstr "\n        ゲームキューブコントローラーやWiiリモコンは扱いにくい？\n        Dolphinはキーボードやマウス、お好きなPCコントローラでの操作が可能。\n        モーションプラスを含めた、実機のWiiリモコン接続にも対応しています。\n        "
 
 #: homepage/templates/homepage-home.html:93
 msgid "Recent Dolphin news"
