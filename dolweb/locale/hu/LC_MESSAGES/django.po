@@ -3,169 +3,170 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
+#  <delirious@freemail.hu>, 2013.
 msgid ""
 msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-02-14 06:21+0100\n"
-"PO-Revision-Date: 2013-03-02 17:15+0000\n"
-"Last-Translator: Delayline <hamed.khakbiz@gmail.com>\n"
-"Language-Team: Persian (http://www.transifex.com/projects/p/dolphin-emu/language/fa/)\n"
+"PO-Revision-Date: 2013-03-18 07:47+0000\n"
+"Last-Translator: Delirious <delirious@freemail.hu>\n"
+"Language-Team: Hungarian (http://www.transifex.com/projects/p/dolphin-emu/language/hu/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: fa\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Language: hu\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: compat/templates/compat-list.html:7
 #, python-format
 msgid "Compatibility List - page %(page)s"
-msgstr "لیست سازگاری - صفحه %(page)s"
+msgstr "Kompatibilitási lista - lap %(page)s"
 
 #: compat/templates/compat-list.html:19
 msgid "How to read the ratings"
-msgstr "چگونه خواندن رتبه ها"
+msgstr "Hogyan értelmezzük a minősítéseket?"
 
 #: compat/templates/compat-list.html:22
 msgid "5 out of 5"
-msgstr "۵ از ۵"
+msgstr "5 / 5"
 
 #: compat/templates/compat-list.html:22
 msgid "<strong>Perfect</strong>: No issues at all!"
-msgstr "<strong>کامل</strong>: هیچ مشکلی وجود ندارد!"
+msgstr "<strong>Tökéletes</strong>: Egyáltalán nincs hiba!"
 
 #: compat/templates/compat-list.html:23
 msgid "4 out of 5"
-msgstr "۴ از ۵"
+msgstr "4 / 5"
 
 #: compat/templates/compat-list.html:23
 msgid ""
 "<strong>Playable</strong>: Runs well, only minor graphical or audio "
 "glitches. Games can be played all the way through."
-msgstr "<strong>قابل بازی</strong>: به خوبی اجرا می شود، تنها خرابی های ناچیز گرافیکی یا صوتی. بازی ها قابل بازی کردن هستند."
+msgstr "<strong>Játszható</strong>: Jól működik, csak kisebb grafikai vagy hang hibák. A játék ettől végig játszható."
 
 #: compat/templates/compat-list.html:24
 msgid "3 out of 5"
-msgstr "۳ از ۵"
+msgstr "3 / 5"
 
 #: compat/templates/compat-list.html:24
 msgid ""
 "<strong>Starts</strong>: Starts, maybe even plays well, but crashes or major"
 " graphical/audio glitches."
-msgstr "<strong>شروع</strong>: شروع، حتی شاید به خوبی اجرا شود، اما به همراه خرابی های بزرگ گرافیکی و صوتی."
+msgstr "<strong>Elindul</strong>: Elindul, talán még jól is játszható, de kifagyások vagy grafikai/hang hibák lehetnek."
 
 #: compat/templates/compat-list.html:25
 msgid "2 out of 5"
-msgstr "۲ از ۵"
+msgstr "2 / 5"
 
 #: compat/templates/compat-list.html:25
 msgid ""
 "<strong>Intro/Menu</strong>: Hangs/crashes somewhere between booting and "
 "starting."
-msgstr "<strong>صفحه نخست/فهرست انتخاب</strong>: هنگ/خرابی جائی میان بوت و شروع بازی."
+msgstr "<strong>Bevezető/Menü</strong>: Megáll/kifagy valahol a betöltés és elindulás között."
 
 #: compat/templates/compat-list.html:26
 msgid "1 out of 5"
-msgstr "۱ از ۵"
+msgstr "1 / 5"
 
 #: compat/templates/compat-list.html:26
 msgid "<strong>Broken</strong>: Crashes when booting."
-msgstr "<strong>خراب</strong>: خراب شدن هنگام بوت."
+msgstr "<strong>Hibás</strong>: Kifagy betöltés közben."
 
 #: compat/templates/compat-list.html:33
 msgid "Statistics"
-msgstr "آمار"
+msgstr "Statisztika"
 
 #: compat/templates/compat-list.html:53
 msgid "Game title (click for details)"
-msgstr "عنوان بازی (کلیک برای نمایش جزئیات)"
+msgstr "Játék cím (kattintás a részletekért)"
 
 #: compat/templates/compat-list.html:54 templates/_base.html:62
 msgid "Compatibility"
-msgstr "سازگاری"
+msgstr "Kompatibilitás"
 
 #: compat/templates/compat-list.html:55
 msgid "Last updated"
-msgstr "آخرین آپدیت"
+msgstr "Utoljára frissítve"
 
 #: compat/templatetags/compat.py:7
 msgid "Unknown"
-msgstr "ناشناخته"
+msgstr "Ismeretlen"
 
 #: compat/templatetags/compat.py:8
 msgid "Broken"
-msgstr "خراب"
+msgstr "Hibás"
 
 #: compat/templatetags/compat.py:9
 msgid "Intro/Menu"
-msgstr "صفحه نخست/فهرست انتخاب"
+msgstr "Bevezető/Menü"
 
 #: compat/templatetags/compat.py:10
 msgid "Starts"
-msgstr "شروع"
+msgstr "Elindul"
 
 #: compat/templatetags/compat.py:11
 msgid "Playable"
-msgstr "قابل بازی"
+msgstr "Játszható"
 
 #: compat/templatetags/compat.py:12
 msgid "Perfect"
-msgstr "کامل"
+msgstr "Tökéletes"
 
 #: docs/templates/docs-faq.html:6
 msgid "Frequently Asked Questions"
-msgstr "پرسشگان"
+msgstr "Gyakran ismételt kérdések"
 
 #: docs/templates/docs-guides-index.html:5
 #: docs/templates/docs-guides-index.html:9 templates/_base.html:61
 msgid "Guides"
-msgstr "راهنما"
+msgstr "Útmutatók"
 
 #: docs/templates/docs-guides-index.html:15
 #, python-format
 msgid "(by %(author)s)"
-msgstr "(by %(author)s)"
+msgstr "(írta: %(author)s)"
 
 #: docs/templates/docs-guides-index.html:17
 msgid "No published guide available"
-msgstr "راهنمای منتشر شده ای وجود ندارد"
+msgstr "Nem jelent meg útmutató"
 
 #: downloads/models.py:32 downloads/models.py:50
 #, python-format
 msgid "Dolphin %s"
-msgstr "دلفین %s"
+msgstr "Dolphin %s"
 
 #: downloads/templates/downloads-branches.html:5
 #: downloads/templates/downloads-branches.html:9
 msgid "Download development builds"
-msgstr "دانلود بسته های توسعه یافته"
+msgstr "Fejlesztői változatok letöltése"
 
 #: downloads/templates/downloads-branches.html:17
 #, python-format
 msgid "<tt>%(branch)s</tt> branch"
-msgstr "<tt>%(branch)s</tt> انشعاب"
+msgstr "<tt>%(branch)s</tt> ág"
 
 #: downloads/templates/downloads-branches.html:20
 #: downloads/templates/downloads-index.html:89
 msgid "View older versions »"
-msgstr "نمایش نسخه های قدیمی تر »"
+msgstr "Régebbi változatok megtekintése"
 
 #: downloads/templates/downloads-branches.html:27
 msgid "Branch list"
-msgstr "لیست انشعاب"
+msgstr "Ág lista"
 
 #: downloads/templates/downloads-devrel.html:19
 msgid "No development release yet"
-msgstr "هنوز نسخه توسعه یافته ای وجود ندارد"
+msgstr "Nincs fejlesztői kiadás még"
 
 #: downloads/templates/downloads-index.html:6
 #: downloads/templates/downloads-index.html:25 templates/_base.html:59
 msgid "Download"
-msgstr "دانلود"
+msgstr "Letöltés"
 
 #: downloads/templates/downloads-index.html:29
 msgid "Stable versions"
-msgstr "نسخه های پایدار"
+msgstr "Stabil változat"
 
 #: downloads/templates/downloads-index.html:31
 msgid ""
@@ -173,15 +174,15 @@ msgid ""
 "    Stable versions are released after a lot of testing to ensure emulation\n"
 "    performance and stability. <strong>If you do not know what version of\n"
 "    Dolphin you should use, the latest stable version is generally the best.</strong>\n"
-msgstr "\n    نسخه های پایدار بعد از آزمایش های بسیار برای اطمینان از راندمان و پایداری برابرساز\n    منتشر می شود. <strong>اگر نمیدانید باید از کدام نسخه دلفین استفاده کنید،\n    آخرین نسخه پایدار عموما بهترین نسخه است.</strong>\n"
+msgstr "\n⏎ A stabil változatok hosszadalmas tesztelést követően jelennek meg⏎ a teljesítmény és stabilitás érdekében. <strong>Ha nem tudod eldönteni, hogy melyik⏎ Dolphin verziót használd, akkor többnyire a legutóbbi stabil változat a legjobb.</strong>⏎ \n"
 
 #: downloads/templates/downloads-index.html:53
 msgid "No stable release yet"
-msgstr "هنوز نسخه پایداری وجود ندارد"
+msgstr "Nincs stabil kiadás még"
 
 #: downloads/templates/downloads-index.html:74
 msgid "Development versions"
-msgstr "نسخه های توسعه یافته (ناپایدار)"
+msgstr "Fejlesztői változatok"
 
 #: downloads/templates/downloads-index.html:76
 msgid ""
@@ -190,19 +191,19 @@ msgid ""
 "    developer makes a change to Dolphin. Using development versions enables you\n"
 "    to use the latest and greatest improvements to the project, at the cost of\n"
 "    decreased stability.\n"
-msgstr "\n    <strong>اخطار!</strong> نسخه های توسعه یافته هر زمانی که توسعه دهنده تغییری را\n    بر روی دلفین اعمال می کند منتشر می شود. استفاده از نسخه های توسعه یافته شما را قادر می سازد\n    تا از آخرین و بزرگترین اصلاحات اعمال شده بر روی پروژه استفاده کنید، که هزینه آن کاهش پایداری است. \n"
+msgstr "\n    <strong>Figyelem!</strong> Fejlesztői változatok jelennek meg minden alkalommal, amikor egy fejlesztő változtatásokat eszközöl a Dolphin emulátoron. A fejlesztői változatok használatával elérhetővé válnak a legújabb és legnagyszerűbb módosítások a projektben, azonban ezek a stabilitás rovására válhatnak.\n"
 
 #: downloads/templates/downloads-index.html:83
 msgid "Only displaying the <tt>master</tt> branch versions."
-msgstr "فقط نسخه های انشعاب <tt>مستر</tt> نمایش داده شود."
+msgstr "Csak a <tt>fő</tt> ág verziók jelenjenek meg."
 
 #: downloads/templates/downloads-index.html:84
 msgid "Show all available branches"
-msgstr "نمایش تمام انشعاب های موجود"
+msgstr "Minden elérhető ág megjelenítése."
 
 #: downloads/templates/downloads-index.html:93
 msgid "Source code"
-msgstr "کد متن"
+msgstr "Forráskód"
 
 #: downloads/templates/downloads-index.html:95
 msgid ""
@@ -210,7 +211,7 @@ msgid ""
 "    The latest version of the Dolphin source code can be downloaded from the\n"
 "    project Git repository.\n"
 "    "
-msgstr "\n    آخرین نسخه کد متن دلفین می تواند از \n    مخزن پروژه Git دانلود شود.    "
+msgstr "\n    A Dolphin legújabb forráskódja letölthető a Git verziókezelő projektből.\n    "
 
 #: downloads/templates/downloads-index.html:103
 msgid ""
@@ -218,84 +219,84 @@ msgid ""
 "    You can also <a href=\"http://code.google.com/p/dolphin-emu/source/browse/\">browse\n"
 "        the current version of the source code</a>.\n"
 "    "
-msgstr "\n    شما همچنین می توانید <a href=\"http://code.google.com/p/dolphin-emu/source/browse/\">نسخه رایج کد متن\n        را مرور کنید</a>.\n    "
+msgstr "\nÁttekintheted <a href=\"http://code.google.com/p/dolphin-emu/source/browse/\">a forráskód jelenlegi verzióját</a>.\n    "
 
 #: downloads/templates/downloads-list.html:5
 #, python-format
 msgid "%(branch)s branch - page %(page)s"
-msgstr "%(branch)s انشعاب - صفحه %(page)s"
+msgstr "%(branch)s ág - lap %(page)s"
 
 #: downloads/templates/downloads-list.html:9
 #, python-format
 msgid "<tt>%(branch)s</tt> branch - page %(page)s"
-msgstr "<tt>%(branch)s</tt> انشعاب - صفحه %(page)s"
+msgstr "<tt>%(branch)s</tt> ág - oldal %(page)s"
 
 #: downloads/templates/downloads-view-devrel.html:6
 #, python-format
 msgid "Information on %(br)s"
-msgstr "اطلاعات در %(br)s"
+msgstr "Információk itt: %(br)s"
 
 #: downloads/templates/downloads-view-devrel.html:10
 #, python-format
 msgid "Information for %(br)s"
-msgstr "اطلاعات برای %(br)s"
+msgstr "Információk ehhez: %(br)s"
 
 #: downloads/templates/downloads-view-devrel.html:16
 msgid "Version"
-msgstr "نسخه"
+msgstr "Verzió"
 
 #: downloads/templates/downloads-view-devrel.html:19
 msgid "Branch"
-msgstr "انشعاب"
+msgstr "Ág"
 
 #: downloads/templates/downloads-view-devrel.html:22
 msgid "Date"
-msgstr "تاریخ"
+msgstr "Dátum"
 
 #: downloads/templates/downloads-view-devrel.html:31
 msgid "Commit"
-msgstr "سپردن"
+msgstr "Megjegyzés"
 
 #: downloads/templates/downloads-view-devrel.html:34
 msgid "Change author"
-msgstr "تغییر مولف"
+msgstr "Szerző módosítása"
 
 #: downloads/templates/downloads-view-devrel.html:37
 msgid "Change description"
-msgstr "تغییر تشریح"
+msgstr "Leírás módosítása"
 
 #: homepage/templates/homepage-home.html:7
 msgid "Gamecube/Wii games on PC"
-msgstr "بازی های گیم کیوب و وی بر روی کامپوتر شخصی"
+msgstr "Gamecube/Wii játékok számítógépen"
 
 #: homepage/templates/homepage-home.html:25 templates/_base.html:9
 #: templates/_base.html.py:54
 msgid "Dolphin Emulator"
-msgstr "برابرساز دلفین"
+msgstr "Dolphin emulátor"
 
 #: homepage/templates/homepage-home.html:27
 msgid "Play Gamecube and Wii games in 1080p on your PC."
-msgstr "بازی های گیم کیوب و وی را به صورت فول اچ دی در کامپوتر خود بازی کنید."
+msgstr "Játssz Gamecube és Wii játékokat 1080p felbontáson a számítógépeden! "
 
 #: homepage/templates/homepage-home.html:30
 #, python-format
 msgid "Download %(last_release)s now for Windows, Mac and Linux »"
-msgstr "دانلود %(last_release)s حالا برای ویندوز، مکینتاش و لینوکس »"
+msgstr "%(last_release)s letöltése most Windows, Mac és Linux rendszerekre »"
 
 #: homepage/templates/homepage-home.html:33
 msgid ""
 "\n"
 "                <strong>Minimal requirements</strong>: SSE2 compatible CPU, Shader Model 3.0 GPU, 2GB of RAM, 50MB of disk space\n"
 "                "
-msgstr "\n                <strong>حداقل سیستم مورد نیاز</strong>: پردازنده سازگار با SSE2، پردازنده گرافیک سازگار با Shader Model 3.0، حافظه رم ۲ گیگابایت، ۵۰ مگابایت فضای دیسک\n                "
+msgstr "\n<strong>Minimális rendszerkövetelmény</strong>: SSE2 kompatibilis processzor, Shader Model 3.0 VGA, 2 GB RAM, 50 MB szabad hely\n                "
 
 #: homepage/templates/homepage-home.html:38
 msgid "More information about hardware requirements"
-msgstr "اطلاعات بیشتر در مورد نیازمندیهای سخت افزاری"
+msgstr "További hardver követelmény információk"
 
 #: homepage/templates/homepage-home.html:68
 msgid "Improved graphics"
-msgstr "گرافیک بهبود یافته"
+msgstr "Fejlett grafika"
 
 #: homepage/templates/homepage-home.html:71
 #, python-format
@@ -306,11 +307,11 @@ msgid ""
 "        Gamecube and Wii games. <a href=\"%(MEDIA_PAGE_URL)s\">View screenshots\n"
 "        of games played on Dolphin</a>.\n"
 "        "
-msgstr "\n        وی بازی ها را تنها با وضوح 480p نمایش می دهد. دلفین\n        از 1080p، 720p و حتی تفکیک پذیری های بالاتر برای تمام\n        بازی های گیم کیوب و وی پشتیبانی می کند. <a href=\"%(MEDIA_PAGE_URL)s\">دیدن عکس بازی های\n        اجرا شده در دلفین</a>.\n        "
+msgstr "\nA Wii csak 480p felbontáson képes játékokat megjeleníteni. A Dolphin 720p, 1080p és még magasabb felbontásokat is támogat az összes Gamecube és Wii játékod esetén. <a href=\"%(MEDIA_PAGE_URL)s\">Tekintsd meg  a Dolphin emulátorról származó játékok pillanatképeit</a>.\n        "
 
 #: homepage/templates/homepage-home.html:81
 msgid "Use your favorite controller"
-msgstr "از کنترلر دلخواهتان استفاده کنید"
+msgstr "Használd a kedvenc játékirányítód"
 
 #: homepage/templates/homepage-home.html:83
 msgid ""
@@ -320,19 +321,19 @@ msgid ""
 "        and mouse! Wiimotes are still supported, including Wii Motion Plus\n"
 "        for games that require it.\n"
 "        "
-msgstr "\n        طرفدار کنترلر گیم کیوب و ویموت نیستید؟ شما میتوانید بازی ها را\n        با کنترلر مورد علاقه کامپوتر شخصی خود بازی کنید، یا حتی با کیبورد و ماس!\n        ویموت ها همچنان پشتیبانی می شوند در حالی که شامل وی موشن پلاس برای\n        بازی هایی اند که به آن نیاز دارند.\n        "
+msgstr "\nNem tartozik a kedvenceid köze a Gamecube irányító és a Wiimote? Játszhatsz a kedvenc számítógépes irányítóddal, még a billentyűzeteddel és egereddel is! Wiimote továbbra is támogatott, valamint a Wii Motion Plus is, azokhoz a játékokhoz, amelyek használják.\n        "
 
 #: homepage/templates/homepage-home.html:93
 msgid "Recent Dolphin news"
-msgstr "اخبار جدید دلفین"
+msgstr "Friss Dolphin hírek"
 
 #: homepage/templates/homepage-home.html:98
 msgid "by"
-msgstr "توسط"
+msgstr "írta:"
 
 #: homepage/templates/homepage-home.html:110
 msgid "Great compatibility"
-msgstr "سازگاری مطلوب"
+msgstr "Nagyszerű kompatibilitás"
 
 #: homepage/templates/homepage-home.html:113
 #, python-format
@@ -344,11 +345,11 @@ msgid ""
 "        the <a href=\"%(COMPAT_URL)s\">Dolphin compatibility list</a>\n"
 "        or the <a href=\"%(WIKI_URL)s\">Dolphin wiki</a> for more details.\n"
 "        "
-msgstr "\n        دلفین می تواند بیشتر بازی های گیم کیوب و وی را بدون مشکل اجرا کند.\n        بازی های منتشر شده جدید وی اغلب از روز اول در دلفین کار می کنند.\n        بازی های وی ویر و ویرچوال کنسول نیز پشتیبانی می شوند.\n        برای اطلاعات بیشتر <a href=\"%(COMPAT_URL)s\">لیست سازگاری دلفین</a>\n        یا <a href=\"%(WIKI_URL)s\">ویکی دلفین</a> را چک کنید.\n        "
+msgstr "\n⏎ A Dolphin emulátoron a legtöbb Gamecube és Wii játék⏎ hiba nélkül játszható. Az új Wii játékok gyakran már a megjelenésük napján működnek a Dolphin emulátoron.⏎ Wiiware és Virtual Console játékok is támogatottak. Tekintsd meg⏎ a <a href=\"%(COMPAT_URL)s\">Dolphin kompatibilitási listát</a>⏎ vagy a <a href=\"%(WIKI_URL)s\">Dolphin wikit</a> további részletekért.⏎ \n\n        "
 
 #: homepage/templates/homepage-home.html:124
 msgid "Helpful community"
-msgstr "انجمن مفید"
+msgstr "Segítőkész közösség"
 
 #: homepage/templates/homepage-home.html:127
 #, python-format
@@ -360,11 +361,11 @@ msgid ""
 "        can't help you, other Dolphin users may be willing to help you over at the\n"
 "        <a href=\"%(FORUM_URL)s\">official discussion forums</a>.\n"
 "        "
-msgstr "\n        برای نصب مشکلی دارید؟ سعی دارید بهترین تنظیمات را برای بازی\n        تعین کنید؟ یا فقط علاقه مندید به گفتگو درباره بازی های گیم کیوب و وی\n         که دوست دارید؟ اگر <a href=\"%(FAQ_URL)s\">پرسشگان</a>\n        نمی تواند به شما کمک کند، ممکن است کاربران دیگر دلفین مایل به کمک به شما در\n        <a href=\"%(FORUM_URL)s\">فرم های گفتگوی رسمی</a> باشند.\n        "
+msgstr "\n⏎ Telepítési problémák? Próbálod megtalálni a legjobb beállításokat egy ⏎ játékhoz? Vagy egyszerűen csak érdekelnek a Gamecube és Wii játékok⏎ amiket szeretsz? Ha a <a href=\"%(FAQ_URL)s\">Gyakran ismételt kérdések</a>⏎ nem segítenek, más Dolphin felhasználók talán szívesen segítenek a⏎ <a href=\"%(FORUM_URL)s\">hivatalos felhasználói fórumon</a>.⏎ "
 
 #: homepage/templates/homepage-home.html:138
 msgid "Free and Open Source"
-msgstr "متن باز و آزاد"
+msgstr "Ingyenes és nyílt forráskód"
 
 #: homepage/templates/homepage-home.html:140
 #, python-format
@@ -375,47 +376,47 @@ msgid ""
 "        Grab the emulator source code from <a href=\"%(GCODE_URL)s\">Google\n"
 "        Code</a> and start hacking!\n"
 "        "
-msgstr "\n        برابرساز دلفین از سوی داوطلبانی از سراسر دنیا توسعه یافته و\n        به صورت آزاد توزیع می شود. می خواهید به بهبود پروژه کمک کنید؟\n        کد متن دلفین را از <a href=\"%(GCODE_URL)s\">گوگل کد\n        </a> بگیرید و شروع به هک کردن کنید!\n        "
+msgstr "\n⏎ A Dolphin emulátort önkéntesek fejlesztik a világ minden részén⏎ és térítésmentesen terjesztik. Szeretnél résztvenni a fejlesztési folyamatban?⏎ Szerezd be az emulátor forráskódját a <a href=\"%(GCODE_URL)s\">Google⏎ Code</a> oldalról és kezdődhet hekkelés!⏎ "
 
 #: media/templates/media-all.html:6 media/templates/media-all.html.py:19
 msgid "Media gallery"
-msgstr "گالری رسانه ها"
+msgstr "Média galéria"
 
 #: media/templates/media-all.html:43
 msgid "Full size"
-msgstr "اندازه کامل"
+msgstr "Teljes nézet"
 
 #: media/templates/media-all.html:44
 msgid "Previous"
-msgstr "پیشین"
+msgstr "Előző"
 
 #: media/templates/media-all.html:45
 msgid "Next"
-msgstr "بعدی"
+msgstr "Következő"
 
 #: templates/_base.html:57
 msgid "Home"
-msgstr "خانه"
+msgstr "Kezdőlap"
 
 #: templates/_base.html:58
 msgid "Media"
-msgstr "رسانه ها"
+msgstr "Média"
 
 #: templates/_base.html:60
 msgid "FAQ"
-msgstr "پرسشگان"
+msgstr "GYIK"
 
 #: templates/_base.html:63
 msgid "Forum"
-msgstr "فرم"
+msgstr "Fórum"
 
 #: templates/_base.html:64
 msgid "Wiki"
-msgstr "ویکی"
+msgstr "Wiki"
 
 #: templates/_base.html:65
 msgid "Development"
-msgstr "توسعه"
+msgstr "Fejlesztés"
 
 #: templates/_base.html:102
 msgid ""
@@ -423,4 +424,4 @@ msgid ""
 "            &copy; 2012 Dolphin Emulator Project -\n"
 "            <a href=\"https://bitbucket.org/delroth/dolphin-web/\">Website source code</a>\n"
 "            "
-msgstr "\n            &copy; ۲.۱۲ پروژه برابرساز دلفین -\n            <a href=\"https://bitbucket.org/delroth/dolphin-web/\">کد متن وب سایت</a>\n            "
+msgstr "\n&copy; 2012 Dolphin emulátor projekt - <a href=\"https://bitbucket.org/delroth/dolphin-web/\">Weboldal forráskód</a>\n            "
