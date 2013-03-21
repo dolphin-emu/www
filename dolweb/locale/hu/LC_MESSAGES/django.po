@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-02-14 06:21+0100\n"
-"PO-Revision-Date: 2013-03-18 07:47+0000\n"
+"PO-Revision-Date: 2013-03-21 21:52+0000\n"
 "Last-Translator: Delirious <delirious@freemail.hu>\n"
 "Language-Team: Hungarian (http://www.transifex.com/projects/p/dolphin-emu/language/hu/)\n"
 "MIME-Version: 1.0\n"
@@ -149,7 +149,7 @@ msgstr "<tt>%(branch)s</tt> ág"
 #: downloads/templates/downloads-branches.html:20
 #: downloads/templates/downloads-index.html:89
 msgid "View older versions »"
-msgstr "Régebbi változatok megtekintése"
+msgstr "Régebbi változatok megtekintése »"
 
 #: downloads/templates/downloads-branches.html:27
 msgid "Branch list"
@@ -174,7 +174,7 @@ msgid ""
 "    Stable versions are released after a lot of testing to ensure emulation\n"
 "    performance and stability. <strong>If you do not know what version of\n"
 "    Dolphin you should use, the latest stable version is generally the best.</strong>\n"
-msgstr "\n⏎ A stabil változatok hosszadalmas tesztelést követően jelennek meg⏎ a teljesítmény és stabilitás érdekében. <strong>Ha nem tudod eldönteni, hogy melyik⏎ Dolphin verziót használd, akkor többnyire a legutóbbi stabil változat a legjobb.</strong>⏎ \n"
+msgstr "\nA stabil változatok hosszadalmas tesztelést követően jelennek meg a teljesítmény és stabilitás érdekében. <strong>Ha nem tudod eldönteni, hogy melyik Dolphin verziót használd, akkor többnyire a legutóbbi stabil változat a legjobb.</strong> \n"
 
 #: downloads/templates/downloads-index.html:53
 msgid "No stable release yet"
@@ -191,7 +191,7 @@ msgid ""
 "    developer makes a change to Dolphin. Using development versions enables you\n"
 "    to use the latest and greatest improvements to the project, at the cost of\n"
 "    decreased stability.\n"
-msgstr "\n    <strong>Figyelem!</strong> Fejlesztői változatok jelennek meg minden alkalommal, amikor egy fejlesztő változtatásokat eszközöl a Dolphin emulátoron. A fejlesztői változatok használatával elérhetővé válnak a legújabb és legnagyszerűbb módosítások a projektben, azonban ezek a stabilitás rovására válhatnak.\n"
+msgstr "\n<strong>Figyelem!</strong> Fejlesztői változatok jelennek meg minden alkalommal, amikor egy fejlesztő változtatásokat eszközöl a Dolphin emulátoron. A fejlesztői változatok használatával elérhetővé válnak a legújabb és legnagyszerűbb módosítások a projektben, azonban ezek a stabilitás rovására válhatnak.\n"
 
 #: downloads/templates/downloads-index.html:83
 msgid "Only displaying the <tt>master</tt> branch versions."
@@ -199,7 +199,7 @@ msgstr "Csak a <tt>fő</tt> ág verziók jelenjenek meg."
 
 #: downloads/templates/downloads-index.html:84
 msgid "Show all available branches"
-msgstr "Minden elérhető ág megjelenítése."
+msgstr "Minden elérhető ág megjelenítése"
 
 #: downloads/templates/downloads-index.html:93
 msgid "Source code"
@@ -211,7 +211,7 @@ msgid ""
 "    The latest version of the Dolphin source code can be downloaded from the\n"
 "    project Git repository.\n"
 "    "
-msgstr "\n    A Dolphin legújabb forráskódja letölthető a Git verziókezelő projektből.\n    "
+msgstr "\n   A Dolphin legújabb forráskódja letölthető a Git verziókezelő projektből.\n    "
 
 #: downloads/templates/downloads-index.html:103
 msgid ""
@@ -345,7 +345,7 @@ msgid ""
 "        the <a href=\"%(COMPAT_URL)s\">Dolphin compatibility list</a>\n"
 "        or the <a href=\"%(WIKI_URL)s\">Dolphin wiki</a> for more details.\n"
 "        "
-msgstr "\n⏎ A Dolphin emulátoron a legtöbb Gamecube és Wii játék⏎ hiba nélkül játszható. Az új Wii játékok gyakran már a megjelenésük napján működnek a Dolphin emulátoron.⏎ Wiiware és Virtual Console játékok is támogatottak. Tekintsd meg⏎ a <a href=\"%(COMPAT_URL)s\">Dolphin kompatibilitási listát</a>⏎ vagy a <a href=\"%(WIKI_URL)s\">Dolphin wikit</a> további részletekért.⏎ \n\n        "
+msgstr "\nA Dolphin emulátoron a legtöbb Gamecube és Wii játék hiba nélkül játszható. Az új Wii játékok gyakran már a megjelenésük napján működnek a Dolphin emulátoron. Wiiware és Virtual Console játékok is támogatottak. Tekintsd meg a <a href=\"%(COMPAT_URL)s\">Dolphin kompatibilitási listát</a>  vagy a <a href=\"%(WIKI_URL)s\">Dolphin wikit</a> további részletekért.\n\n        "
 
 #: homepage/templates/homepage-home.html:124
 msgid "Helpful community"
@@ -361,7 +361,7 @@ msgid ""
 "        can't help you, other Dolphin users may be willing to help you over at the\n"
 "        <a href=\"%(FORUM_URL)s\">official discussion forums</a>.\n"
 "        "
-msgstr "\n⏎ Telepítési problémák? Próbálod megtalálni a legjobb beállításokat egy ⏎ játékhoz? Vagy egyszerűen csak érdekelnek a Gamecube és Wii játékok⏎ amiket szeretsz? Ha a <a href=\"%(FAQ_URL)s\">Gyakran ismételt kérdések</a>⏎ nem segítenek, más Dolphin felhasználók talán szívesen segítenek a⏎ <a href=\"%(FORUM_URL)s\">hivatalos felhasználói fórumon</a>.⏎ "
+msgstr "\nTelepítési problémák? Próbálod megtalálni a legjobb beállításokat egy játékhoz? Vagy egyszerűen csak érdekelnek a Gamecube és Wii játékok amiket szeretsz? Ha a <a href=\"%(FAQ_URL)s\">Gyakran ismételt kérdések</a> nem segítenek, más Dolphin felhasználók talán szívesen segítenek a <a href=\"%(FORUM_URL)s\">hivatalos felhasználói fórumon</a>. "
 
 #: homepage/templates/homepage-home.html:138
 msgid "Free and Open Source"
@@ -376,7 +376,7 @@ msgid ""
 "        Grab the emulator source code from <a href=\"%(GCODE_URL)s\">Google\n"
 "        Code</a> and start hacking!\n"
 "        "
-msgstr "\n⏎ A Dolphin emulátort önkéntesek fejlesztik a világ minden részén⏎ és térítésmentesen terjesztik. Szeretnél résztvenni a fejlesztési folyamatban?⏎ Szerezd be az emulátor forráskódját a <a href=\"%(GCODE_URL)s\">Google⏎ Code</a> oldalról és kezdődhet hekkelés!⏎ "
+msgstr "\nA Dolphin emulátort önkéntesek fejlesztik a világ minden részén és térítésmentesen terjesztik. Szeretnél résztvenni a fejlesztési folyamatban? Szerezd be az emulátor forráskódját a <a href=\"%(GCODE_URL)s\">Google Code</a> oldalról és kezdődhet hekkelés! "
 
 #: media/templates/media-all.html:6 media/templates/media-all.html.py:19
 msgid "Media gallery"
