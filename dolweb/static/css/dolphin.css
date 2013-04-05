@@ -47,6 +47,13 @@ html[dir="rtl"] ul.rtl-fixed, html[dir="rtl"] ol.rtl-fixed {
     margin: 0 0 9px 0;
 }
 
+/* Fix .container in .hero-unit */
+@media (min-width: 1200px) {
+    .hero-unit .container {
+        width: 1100px !important;
+    }
+}
+
 .navbar-inner { border-radius: 0; }
 
 .navbar .brand i.logo {
