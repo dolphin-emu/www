@@ -47,10 +47,10 @@ class Guide(models.Model):
 
     title = models.CharField(max_length=128)
     slug = models.SlugField()
-    author = models.CharField(max_length=128)
-    last_updated = models.DateTimeField(auto_now=True, auto_now_add=True)
-    text = models.TextField()
-    published = models.BooleanField(default=False)
+    wiki_page = models.CharField(max_length=128)
+    authors = models.CharField(max_length=128)
+    description = models.TextField()
+    listed = models.BooleanField(default=False)
 
     def __unicode__(self):
         return self.title
@@ -58,3 +58,9 @@ class Guide(models.Model):
     @models.permalink
     def get_absolute_url(self):
         return ('docs-guide', [self.slug])
+
+    def get_wiki_url(self):
+        return 'http://wiki.dolphin-emu.org/index.php?title=%s&useskin=guideembed' % self.wiki_page
+
+    class Meta:
+        db_table = 'docs_guide2'

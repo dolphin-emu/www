@@ -14,8 +14,8 @@ class FAQAdmin(admin.ModelAdmin):
 admin.site.register(FAQ, FAQAdmin)
 
 class GuideAdmin(admin.ModelAdmin):
-    list_display = ('title', 'author', 'last_updated', 'published')
-    list_filter = ('published',)
-    ordering = ('-published', 'title')
+    list_display = ('title', 'wiki_page', 'authors', 'listed')
+    list_filter = ('listed',)
+    ordering = ('-listed', 'title')
     prepopulated_fields = { 'slug': ('title',) }
 admin.site.register(Guide, GuideAdmin)

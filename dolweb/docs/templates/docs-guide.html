@@ -1,15 +1,7 @@
 {% extends "_base.html" %}
 
-{% load markup %}
-
-{% block "title" %}{{ guide.title }}{% endblock %}
+{% block "title" %}{{ title }}{% endblock %}
 
 {% block "body" %}
-<div class="page-header">
-    <h1>{{ guide.title }}</h1>
-</div>
-
-<div class="always-ltr">
-{{ guide.text|markdown:"safe" }}
-</div>
+{{ guide|safe }}
 {% endblock %}
