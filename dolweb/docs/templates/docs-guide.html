@@ -1,6 +1,9 @@
 {% extends "_base.html" %}
 
 {% block "title" %}{{ title }}{% endblock %}
+{% block "extracss" %}
+<link href="{{ STATIC_URL }}css/wiki.css" rel="stylesheet">
+{% endblock %}
 
 {% block "body" %}
 {{ guide|safe }}
