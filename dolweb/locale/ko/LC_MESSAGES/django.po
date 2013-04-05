@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-02-14 06:21+0100\n"
-"PO-Revision-Date: 2013-02-15 18:07+0000\n"
+"PO-Revision-Date: 2013-04-02 02:03+0000\n"
 "Last-Translator: Siegfried <iori3000@hanafos.com>\n"
 "Language-Team: Korean (http://www.transifex.com/projects/p/dolphin-emu/language/ko/)\n"
 "MIME-Version: 1.0\n"
@@ -125,7 +125,7 @@ msgstr "가이드"
 #: docs/templates/docs-guides-index.html:15
 #, python-format
 msgid "(by %(author)s)"
-msgstr "(%(author)s 가 만듦)"
+msgstr "(만든이: %(author)s)"
 
 #: docs/templates/docs-guides-index.html:17
 msgid "No published guide available"
@@ -199,7 +199,7 @@ msgstr "<tt>마스터</tt> 분기 버전들만 보여줍니다."
 
 #: downloads/templates/downloads-index.html:84
 msgid "Show all available branches"
-msgstr "모든 유효한 가지들 보여주기"
+msgstr "모든 유효한 분기들 보여주기"
 
 #: downloads/templates/downloads-index.html:93
 msgid "Source code"
@@ -329,7 +329,7 @@ msgstr "  최근 돌핀 뉴스"
 
 #: homepage/templates/homepage-home.html:98
 msgid "by"
-msgstr "by"
+msgstr "에 의해:"
 
 #: homepage/templates/homepage-home.html:110
 msgid "Great compatibility"
@@ -361,7 +361,7 @@ msgid ""
 "        can't help you, other Dolphin users may be willing to help you over at the\n"
 "        <a href=\"%(FORUM_URL)s\">official discussion forums</a>.\n"
 "        "
-msgstr "\n        설치 문제? 게임 최적 세팅을 알아내기?\n       혹은 단지 좋아하는 게임큐브와 Wii 게임들에 대해 토론하는데에 관심있으세요?\n        <a href=\"%(FAQ_URL)s\">자주 묻는 질문들</a> 이 도움이 안된다면,\n        <a href=\"%(FORUM_URL)s\">공식 토론 포럼들</a>. 에서 다른 돌핀 유저들이 기꺼이 도와줄지도 모릅니다.\n        \n        "
+msgstr "\n        설치 문제? 게임 최적 세팅을 알아내기?\n       혹은 단지 좋아하는 게임큐브와 Wii 게임들에 대해 토론하는데에 관심있으세요?\n        <a href=\"%(FAQ_URL)s\">자주 묻는 질문들</a>이 도움이 안된다면,\n        <a href=\"%(FORUM_URL)s\">공식 토론 포럼들</a>. 에서 다른 돌핀 유저들이 기꺼이 도와줄지도 모릅니다.\n        \n        "
 
 #: homepage/templates/homepage-home.html:138
 msgid "Free and Open Source"
@@ -376,7 +376,7 @@ msgid ""
 "        Grab the emulator source code from <a href=\"%(GCODE_URL)s\">Google\n"
 "        Code</a> and start hacking!\n"
 "        "
-msgstr "\n        돌핀 에뮬레이터는 세계 곳곳의 자원 봉사자들에 의해 개발되고 무료로 제공됩니다.\n        프로젝트가 향상되는데 도움을 주고 싶으세요?\n        <a href=\"%(GCODE_URL)s\">구글 코드</a> 에서 에뮬레이터 소스 코드를 붙잡고 \n        해킹을 시작하세요!\n        "
+msgstr "\n        돌핀 에뮬레이터는 세계 곳곳의 자원 봉사자들에 의해 개발되고 무료로 제공됩니다.\n        프로젝트가 향상되는데 도움을 주고 싶으세요?\n        <a href=\"%(GCODE_URL)s\">구글 코드</a>에서 에뮬레이터 소스 코드를 붙잡고 \n        해킹을 시작하세요!\n        "
 
 #: media/templates/media-all.html:6 media/templates/media-all.html.py:19
 msgid "Media gallery"

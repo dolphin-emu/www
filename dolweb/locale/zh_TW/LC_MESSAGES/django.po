@@ -3,133 +3,133 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-#  <delirious@freemail.hu>, 2013.
+# Hydriz Scholz <admin@alphacorp.tk>, 2013.
 msgid ""
 msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-02-14 06:21+0100\n"
-"PO-Revision-Date: 2013-03-22 10:16+0000\n"
-"Last-Translator: Delirious <delirious@freemail.hu>\n"
-"Language-Team: Hungarian (http://www.transifex.com/projects/p/dolphin-emu/language/hu/)\n"
+"PO-Revision-Date: 2013-03-23 14:42+0000\n"
+"Last-Translator: Hydriz <admin@alphacorp.tk>\n"
+"Language-Team: Chinese (Taiwan) (http://www.transifex.com/projects/p/dolphin-emu/language/zh_TW/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: hu\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
 #: compat/templates/compat-list.html:7
 #, python-format
 msgid "Compatibility List - page %(page)s"
-msgstr "Kompatibilitási lista - lap %(page)s"
+msgstr ""
 
 #: compat/templates/compat-list.html:19
 msgid "How to read the ratings"
-msgstr "Hogyan értelmezzük a minősítéseket?"
+msgstr "如何閱讀評級"
 
 #: compat/templates/compat-list.html:22
 msgid "5 out of 5"
-msgstr "5 / 5"
+msgstr ""
 
 #: compat/templates/compat-list.html:22
 msgid "<strong>Perfect</strong>: No issues at all!"
-msgstr "<strong>Tökéletes</strong>: Egyáltalán nincs hiba!"
+msgstr "<strong>完美</strong>：沒問題！"
 
 #: compat/templates/compat-list.html:23
 msgid "4 out of 5"
-msgstr "4 / 5"
+msgstr ""
 
 #: compat/templates/compat-list.html:23
 msgid ""
 "<strong>Playable</strong>: Runs well, only minor graphical or audio "
 "glitches. Games can be played all the way through."
-msgstr "<strong>Játszható</strong>: Jól működik, csak kisebb grafikai vagy hang hibák. A játék ettől végig játszható."
+msgstr ""
 
 #: compat/templates/compat-list.html:24
 msgid "3 out of 5"
-msgstr "3 / 5"
+msgstr ""
 
 #: compat/templates/compat-list.html:24
 msgid ""
 "<strong>Starts</strong>: Starts, maybe even plays well, but crashes or major"
 " graphical/audio glitches."
-msgstr "<strong>Elindul</strong>: Elindul, talán még jól is játszható, de kifagyások vagy grafikai/hang hibák lehetnek."
+msgstr ""
 
 #: compat/templates/compat-list.html:25
 msgid "2 out of 5"
-msgstr "2 / 5"
+msgstr ""
 
 #: compat/templates/compat-list.html:25
 msgid ""
 "<strong>Intro/Menu</strong>: Hangs/crashes somewhere between booting and "
 "starting."
-msgstr "<strong>Bevezető/Menü</strong>: Megáll/kifagy valahol a betöltés és elindulás között."
+msgstr ""
 
 #: compat/templates/compat-list.html:26
 msgid "1 out of 5"
-msgstr "1 / 5"
+msgstr ""
 
 #: compat/templates/compat-list.html:26
 msgid "<strong>Broken</strong>: Crashes when booting."
-msgstr "<strong>Hibás</strong>: Kifagy betöltés közben."
+msgstr ""
 
 #: compat/templates/compat-list.html:33
 msgid "Statistics"
-msgstr "Statisztika"
+msgstr "統計"
 
 #: compat/templates/compat-list.html:53
 msgid "Game title (click for details)"
-msgstr "Játék cím (kattintás a részletekért)"
+msgstr "遊戲標題（點擊了解詳情）"
 
 #: compat/templates/compat-list.html:54 templates/_base.html:62
 msgid "Compatibility"
-msgstr "Kompatibilitás"
+msgstr ""
 
 #: compat/templates/compat-list.html:55
 msgid "Last updated"
-msgstr "Utoljára frissítve"
+msgstr "最後更新"
 
 #: compat/templatetags/compat.py:7
 msgid "Unknown"
-msgstr "Ismeretlen"
+msgstr "未知"
 
 #: compat/templatetags/compat.py:8
 msgid "Broken"
-msgstr "Hibás"
+msgstr ""
 
 #: compat/templatetags/compat.py:9
 msgid "Intro/Menu"
-msgstr "Bevezető/Menü"
+msgstr ""
 
 #: compat/templatetags/compat.py:10
 msgid "Starts"
-msgstr "Elindul"
+msgstr "能開始"
 
 #: compat/templatetags/compat.py:11
 msgid "Playable"
-msgstr "Játszható"
+msgstr "能玩"
 
 #: compat/templatetags/compat.py:12
 msgid "Perfect"
-msgstr "Tökéletes"
+msgstr "完美"
 
 #: docs/templates/docs-faq.html:6
 msgid "Frequently Asked Questions"
-msgstr "Gyakran ismételt kérdések"
+msgstr "常問問題"
 
 #: docs/templates/docs-guides-index.html:5
 #: docs/templates/docs-guides-index.html:9 templates/_base.html:61
 msgid "Guides"
-msgstr "Útmutatók"
+msgstr "指南書"
 
 #: docs/templates/docs-guides-index.html:15
 #, python-format
 msgid "(by %(author)s)"
-msgstr "(írta: %(author)s)"
+msgstr "(來自%(author)s)"
 
 #: docs/templates/docs-guides-index.html:17
 msgid "No published guide available"
-msgstr "Nem jelent meg útmutató"
+msgstr "沒有已發布的指南書可以用"
 
 #: downloads/models.py:32 downloads/models.py:50
 #, python-format
@@ -139,34 +139,34 @@ msgstr "Dolphin %s"
 #: downloads/templates/downloads-branches.html:5
 #: downloads/templates/downloads-branches.html:9
 msgid "Download development builds"
-msgstr "Fejlesztői változatok letöltése"
+msgstr ""
 
 #: downloads/templates/downloads-branches.html:17
 #, python-format
 msgid "<tt>%(branch)s</tt> branch"
-msgstr "<tt>%(branch)s</tt> ág"
+msgstr ""
 
 #: downloads/templates/downloads-branches.html:20
 #: downloads/templates/downloads-index.html:89
 msgid "View older versions »"
-msgstr "Régebbi változatok megtekintése »"
+msgstr "查閱舊式版本"
 
 #: downloads/templates/downloads-branches.html:27
 msgid "Branch list"
-msgstr "Ág lista"
+msgstr ""
 
 #: downloads/templates/downloads-devrel.html:19
 msgid "No development release yet"
-msgstr "Nincs fejlesztői kiadás még"
+msgstr "還未有發育中的發行"
 
 #: downloads/templates/downloads-index.html:6
 #: downloads/templates/downloads-index.html:25 templates/_base.html:59
 msgid "Download"
-msgstr "Letöltés"
+msgstr "下載"
 
 #: downloads/templates/downloads-index.html:29
 msgid "Stable versions"
-msgstr "Stabil változat"
+msgstr "穩定版本"
 
 #: downloads/templates/downloads-index.html:31
 msgid ""
@@ -174,15 +174,15 @@ msgid ""
 "    Stable versions are released after a lot of testing to ensure emulation\n"
 "    performance and stability. <strong>If you do not know what version of\n"
 "    Dolphin you should use, the latest stable version is generally the best.</strong>\n"
-msgstr "\nA stabil változatok hosszadalmas tesztelést követően jelennek meg a teljesítmény és stabilitás érdekében. <strong>Ha nem tudod eldönteni, hogy melyik Dolphin verziót használd, akkor többnyire a legutóbbi stabil változat a legjobb.</strong> \n"
+msgstr ""
 
 #: downloads/templates/downloads-index.html:53
 msgid "No stable release yet"
-msgstr "Nincs stabil kiadás még"
+msgstr "還未有穩定的版本"
 
 #: downloads/templates/downloads-index.html:74
 msgid "Development versions"
-msgstr "Fejlesztői változatok"
+msgstr "發育中的版本"
 
 #: downloads/templates/downloads-index.html:76
 msgid ""
@@ -191,19 +191,19 @@ msgid ""
 "    developer makes a change to Dolphin. Using development versions enables you\n"
 "    to use the latest and greatest improvements to the project, at the cost of\n"
 "    decreased stability.\n"
-msgstr "\n<strong>Figyelem!</strong> Fejlesztői változatok jelennek meg minden alkalommal, amikor egy fejlesztő változtatásokat eszközöl a Dolphin emulátoron. A fejlesztői változatok használatával elérhetővé válnak a legújabb és legnagyszerűbb módosítások a projektben, azonban ezek a stabilitás rovására válhatnak.\n"
+msgstr ""
 
 #: downloads/templates/downloads-index.html:83
 msgid "Only displaying the <tt>master</tt> branch versions."
-msgstr "Csak a <tt>fő</tt> ág verziók jelenjenek meg."
+msgstr ""
 
 #: downloads/templates/downloads-index.html:84
 msgid "Show all available branches"
-msgstr "Minden elérhető ág megjelenítése"
+msgstr ""
 
 #: downloads/templates/downloads-index.html:93
 msgid "Source code"
-msgstr "Forráskód"
+msgstr "源代碼"
 
 #: downloads/templates/downloads-index.html:95
 msgid ""
@@ -211,7 +211,7 @@ msgid ""
 "    The latest version of the Dolphin source code can be downloaded from the\n"
 "    project Git repository.\n"
 "    "
-msgstr "\nA Dolphin legújabb forráskódja letölthető a Git verziókezelő projektből.\n    "
+msgstr ""
 
 #: downloads/templates/downloads-index.html:103
 msgid ""
@@ -219,84 +219,84 @@ msgid ""
 "    You can also <a href=\"http://code.google.com/p/dolphin-emu/source/browse/\">browse\n"
 "        the current version of the source code</a>.\n"
 "    "
-msgstr "\nÁttekintheted <a href=\"http://code.google.com/p/dolphin-emu/source/browse/\">a forráskód jelenlegi verzióját</a>.\n    "
+msgstr ""
 
 #: downloads/templates/downloads-list.html:5
 #, python-format
 msgid "%(branch)s branch - page %(page)s"
-msgstr "%(branch)s ág - lap %(page)s"
+msgstr ""
 
 #: downloads/templates/downloads-list.html:9
 #, python-format
 msgid "<tt>%(branch)s</tt> branch - page %(page)s"
-msgstr "<tt>%(branch)s</tt> ág - oldal %(page)s"
+msgstr ""
 
 #: downloads/templates/downloads-view-devrel.html:6
 #, python-format
 msgid "Information on %(br)s"
-msgstr "Információk itt: %(br)s"
+msgstr "關於%(br)s的訊息"
 
 #: downloads/templates/downloads-view-devrel.html:10
 #, python-format
 msgid "Information for %(br)s"
-msgstr "Információk ehhez: %(br)s"
+msgstr "關於%(br)s的訊息"
 
 #: downloads/templates/downloads-view-devrel.html:16
 msgid "Version"
-msgstr "Verzió"
+msgstr "版本"
 
 #: downloads/templates/downloads-view-devrel.html:19
 msgid "Branch"
-msgstr "Ág"
+msgstr ""
 
 #: downloads/templates/downloads-view-devrel.html:22
 msgid "Date"
-msgstr "Dátum"
+msgstr "日期"
 
 #: downloads/templates/downloads-view-devrel.html:31
 msgid "Commit"
-msgstr "Megjegyzés"
+msgstr ""
 
 #: downloads/templates/downloads-view-devrel.html:34
 msgid "Change author"
-msgstr "Szerző módosítása"
+msgstr "編輯作者"
 
 #: downloads/templates/downloads-view-devrel.html:37
 msgid "Change description"
-msgstr "Leírás módosítása"
+msgstr ""
 
 #: homepage/templates/homepage-home.html:7
 msgid "Gamecube/Wii games on PC"
-msgstr "Gamecube/Wii játékok számítógépen"
+msgstr ""
 
 #: homepage/templates/homepage-home.html:25 templates/_base.html:9
 #: templates/_base.html.py:54
 msgid "Dolphin Emulator"
-msgstr "Dolphin emulátor"
+msgstr "Dolphin 仿真器"
 
 #: homepage/templates/homepage-home.html:27
 msgid "Play Gamecube and Wii games in 1080p on your PC."
-msgstr "Játssz Gamecube és Wii játékokat 1080p felbontáson a számítógépeden! "
+msgstr ""
 
 #: homepage/templates/homepage-home.html:30
 #, python-format
 msgid "Download %(last_release)s now for Windows, Mac and Linux »"
-msgstr "%(last_release)s letöltése most Windows, Mac és Linux rendszerekre »"
+msgstr ""
 
 #: homepage/templates/homepage-home.html:33
 msgid ""
 "\n"
 "                <strong>Minimal requirements</strong>: SSE2 compatible CPU, Shader Model 3.0 GPU, 2GB of RAM, 50MB of disk space\n"
 "                "
-msgstr "\n<strong>Minimális rendszerkövetelmény</strong>: SSE2 kompatibilis processzor, Shader Model 3.0 VGA, 2 GB RAM, 50 MB szabad hely\n                "
+msgstr ""
 
 #: homepage/templates/homepage-home.html:38
 msgid "More information about hardware requirements"
-msgstr "További hardver követelmény információk"
+msgstr ""
 
 #: homepage/templates/homepage-home.html:68
 msgid "Improved graphics"
-msgstr "Fejlett grafika"
+msgstr ""
 
 #: homepage/templates/homepage-home.html:71
 #, python-format
@@ -307,11 +307,11 @@ msgid ""
 "        Gamecube and Wii games. <a href=\"%(MEDIA_PAGE_URL)s\">View screenshots\n"
 "        of games played on Dolphin</a>.\n"
 "        "
-msgstr "\nA Wii csak 480p felbontáson képes játékokat megjeleníteni. A Dolphin 720p, 1080p és még magasabb felbontásokat is támogat az összes Gamecube és Wii játékod esetén. <a href=\"%(MEDIA_PAGE_URL)s\">Tekintsd meg  a Dolphin emulátorról származó játékok pillanatképeit</a>.\n        "
+msgstr ""
 
 #: homepage/templates/homepage-home.html:81
 msgid "Use your favorite controller"
-msgstr "Használd a kedvenc játékirányítód"
+msgstr ""
 
 #: homepage/templates/homepage-home.html:83
 msgid ""
@@ -321,19 +321,19 @@ msgid ""
 "        and mouse! Wiimotes are still supported, including Wii Motion Plus\n"
 "        for games that require it.\n"
 "        "
-msgstr "\nNem tartozik a kedvenceid köze a Gamecube irányító és a Wiimote? Játszhatsz a kedvenc számítógépes irányítóddal, még a billentyűzeteddel és egereddel is! Wiimote továbbra is támogatott, valamint a Wii Motion Plus is, azokhoz a játékokhoz, amelyek használják.\n        "
+msgstr ""
 
 #: homepage/templates/homepage-home.html:93
 msgid "Recent Dolphin news"
-msgstr "Friss Dolphin hírek"
+msgstr "最近 Dolphin 新聞"
 
 #: homepage/templates/homepage-home.html:98
 msgid "by"
-msgstr "írta:"
+msgstr "由"
 
 #: homepage/templates/homepage-home.html:110
 msgid "Great compatibility"
-msgstr "Nagyszerű kompatibilitás"
+msgstr ""
 
 #: homepage/templates/homepage-home.html:113
 #, python-format
@@ -345,11 +345,11 @@ msgid ""
 "        the <a href=\"%(COMPAT_URL)s\">Dolphin compatibility list</a>\n"
 "        or the <a href=\"%(WIKI_URL)s\">Dolphin wiki</a> for more details.\n"
 "        "
-msgstr "\nA Dolphin emulátoron a legtöbb Gamecube és Wii játék hiba nélkül játszható. Az új Wii játékok gyakran már a megjelenésük napján működnek az emulátoron. Wiiware és Virtual Console játékok is támogatottak. Tekintsd meg a <a href=\"%(COMPAT_URL)s\">Dolphin kompatibilitási listát</a>  vagy a <a href=\"%(WIKI_URL)s\">Dolphin wikit</a> további részletekért.\n\n        "
+msgstr ""
 
 #: homepage/templates/homepage-home.html:124
 msgid "Helpful community"
-msgstr "Segítőkész közösség"
+msgstr ""
 
 #: homepage/templates/homepage-home.html:127
 #, python-format
@@ -361,11 +361,11 @@ msgid ""
 "        can't help you, other Dolphin users may be willing to help you over at the\n"
 "        <a href=\"%(FORUM_URL)s\">official discussion forums</a>.\n"
 "        "
-msgstr "\nTelepítési problémák? Próbálod megtalálni a legjobb beállításokat egy játékhoz? Vagy egyszerűen csak érdekelnek a Gamecube és Wii játékok amiket szeretsz? Ha a <a href=\"%(FAQ_URL)s\">Gyakran ismételt kérdések</a> nem segítenek, más Dolphin felhasználók talán szívesen segítenek a <a href=\"%(FORUM_URL)s\">hivatalos felhasználói fórumon</a>. "
+msgstr ""
 
 #: homepage/templates/homepage-home.html:138
 msgid "Free and Open Source"
-msgstr "Ingyenes és nyílt forráskód"
+msgstr ""
 
 #: homepage/templates/homepage-home.html:140
 #, python-format
@@ -376,47 +376,47 @@ msgid ""
 "        Grab the emulator source code from <a href=\"%(GCODE_URL)s\">Google\n"
 "        Code</a> and start hacking!\n"
 "        "
-msgstr "\nA Dolphin emulátort önkéntesek fejlesztik a világ minden részén és térítésmentesen terjesztik. Szeretnél részt venni a fejlesztési folyamatban? Szerezd be az emulátor forráskódját a <a href=\"%(GCODE_URL)s\">Google Code</a> oldalról és kezdődhet hekkelés! "
+msgstr ""
 
 #: media/templates/media-all.html:6 media/templates/media-all.html.py:19
 msgid "Media gallery"
-msgstr "Média galéria"
+msgstr ""
 
 #: media/templates/media-all.html:43
 msgid "Full size"
-msgstr "Teljes nézet"
+msgstr ""
 
 #: media/templates/media-all.html:44
 msgid "Previous"
-msgstr "Előző"
+msgstr "上一頁"
 
 #: media/templates/media-all.html:45
 msgid "Next"
-msgstr "Következő"
+msgstr "下一頁"
 
 #: templates/_base.html:57
 msgid "Home"
-msgstr "Kezdőlap"
+msgstr "首頁"
 
 #: templates/_base.html:58
 msgid "Media"
-msgstr "Média"
+msgstr "媒體"
 
 #: templates/_base.html:60
 msgid "FAQ"
-msgstr "GYIK"
+msgstr "常問問題"
 
 #: templates/_base.html:63
 msgid "Forum"
-msgstr "Fórum"
+msgstr "論壇"
 
 #: templates/_base.html:64
 msgid "Wiki"
-msgstr "Wiki"
+msgstr "維基"
 
 #: templates/_base.html:65
 msgid "Development"
-msgstr "Fejlesztés"
+msgstr "發育中"
 
 #: templates/_base.html:102
 msgid ""
@@ -424,4 +424,4 @@ msgid ""
 "            &copy; 2012 Dolphin Emulator Project -\n"
 "            <a href=\"https://bitbucket.org/delroth/dolphin-web/\">Website source code</a>\n"
 "            "
-msgstr "\n&copy; 2012 Dolphin emulátor projekt - <a href=\"https://bitbucket.org/delroth/dolphin-web/\">Weboldal forráskód</a>\n            "
+msgstr ""

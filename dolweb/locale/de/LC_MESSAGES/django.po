@@ -5,6 +5,7 @@
 # Translators:
 # Danny Krug <Dan_krug@gmx.de>, 2013.
 #  <darkmodx@gmail.com>, 2013.
+# Gabriel <gabelk@web.de>, 2013.
 # Markus Wick <wickmarkus@web.de>, 2013.
 # neobrain <neobrainx@gmail.com>, 2012.
 #  <neobrainx@gmail.com>, 2013.
@@ -13,8 +14,8 @@ msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-02-14 06:21+0100\n"
-"PO-Revision-Date: 2013-02-15 16:15+0000\n"
-"Last-Translator: no_cluez <neobrainx@gmail.com>\n"
+"PO-Revision-Date: 2013-04-04 18:34+0000\n"
+"Last-Translator: Ghabry <gabelk@web.de>\n"
 "Language-Team: German (http://www.transifex.com/projects/p/dolphin-emu/language/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -25,11 +26,11 @@ msgstr ""
 #: compat/templates/compat-list.html:7
 #, python-format
 msgid "Compatibility List - page %(page)s"
-msgstr "Kompatibilitätstabelle - Seite %(page)s"
+msgstr "Kompatibilitätsliste - Seite %(page)s"
 
 #: compat/templates/compat-list.html:19
 msgid "How to read the ratings"
-msgstr "Bedeutung der Wertung"
+msgstr "Was die verschiedenen Bewertungen aussagen"
 
 #: compat/templates/compat-list.html:22
 msgid "5 out of 5"
@@ -83,7 +84,7 @@ msgstr "Verteilung"
 
 #: compat/templates/compat-list.html:53
 msgid "Game title (click for details)"
-msgstr "Spieltitel"
+msgstr "Spieltitel (für weitere Details anklicken)"
 
 #: compat/templates/compat-list.html:54 templates/_base.html:62
 msgid "Compatibility"
@@ -349,7 +350,7 @@ msgid ""
 "        the <a href=\"%(COMPAT_URL)s\">Dolphin compatibility list</a>\n"
 "        or the <a href=\"%(WIKI_URL)s\">Dolphin wiki</a> for more details.\n"
 "        "
-msgstr "\nDolphin kann die meisten Gamecube- und Wii-Spiele ohne Fehler ausführen. Neue Wii-Spiele funktionieren meistens von Anfang an. Wiiware und Virtual Console werden ebenfalls unterstützt. Siehe die <a href=\"%(COMPAT_URL)s\">Dolphin Kompatibilitätstabelle</a> und das <a href=\"%(WIKI_URL)s\">Dolphin Wiki</a> für weitere Informationen."
+msgstr "\nDolphin kann die meisten Gamecube- und Wii-Spiele fehlerfrei ausführen. Neue Wii-Spiele funktionieren meistens von Anfang an. Wiiware und Virtual Console werden ebenfalls unterstützt. Siehe die <a href=\"%(COMPAT_URL)s\">Dolphin Kompatibilitätstabelle</a> und das <a href=\"%(WIKI_URL)s\">Dolphin Wiki</a> für weitere Informationen."
 
 #: homepage/templates/homepage-home.html:124
 msgid "Helpful community"
