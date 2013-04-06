@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-02-14 06:21+0100\n"
-"PO-Revision-Date: 2013-04-05 10:51+0000\n"
+"PO-Revision-Date: 2013-04-05 19:41+0000\n"
 "Last-Translator: link_to_the_past <kostamarino@gmail.com>\n"
 "Language-Team: Greek (http://www.transifex.com/projects/p/dolphin-emu/language/el/)\n"
 "MIME-Version: 1.0\n"
@@ -25,7 +25,7 @@ msgstr "Λίστα Συμβατότητας - σελίδα %(page)s"
 
 #: compat/templates/compat-list.html:19
 msgid "How to read the ratings"
-msgstr "Πως να διαβάσετε τις διαβαθμίσεις"
+msgstr "Πώς να διαβάσετε τις διαβαθμίσεις"
 
 #: compat/templates/compat-list.html:22
 msgid "5 out of 5"
@@ -281,7 +281,7 @@ msgstr "Παίξτε Gamecube και Wii παιχνίδια σε 1080p στο PC
 #: homepage/templates/homepage-home.html:30
 #, python-format
 msgid "Download %(last_release)s now for Windows, Mac and Linux »"
-msgstr "Κατέβασε %(last_release)s τώρα για Windows, Mac και Linux »"
+msgstr "Κατέβασε το %(last_release)s τώρα για Windows, Mac και Linux »"
 
 #: homepage/templates/homepage-home.html:33
 msgid ""
@@ -307,7 +307,7 @@ msgid ""
 "        Gamecube and Wii games. <a href=\"%(MEDIA_PAGE_URL)s\">View screenshots\n"
 "        of games played on Dolphin</a>.\n"
 "        "
-msgstr "\n⏎ Το Wii μπορεί να απεικονίσει τα παιχνίδια μόνο σε ανάλυση 480p. Το Dolphin υποστηρίζει⏎ 720p, 1080p και ακόμη μεγαλύτερες αναλύσεις για όλα τα⏎ παιχνίδια Gamecube και Wii. <a href=\"%(MEDIA_PAGE_URL)s\">Δείτε στιγμιότυπα⏎ από παιχνίδια που παίχτηκαν στο Dolphin</a>.⏎ "
+msgstr "\nΤο Wii μπορεί να απεικονίσει τα παιχνίδια μόνο σε ανάλυση 480p. Το Dolphin υποστηρίζει 720p, 1080p και ακόμη μεγαλύτερες αναλύσεις για όλα τα παιχνίδια Gamecube και Wii. <a href=\"%(MEDIA_PAGE_URL)s\">Δείτε στιγμιότυπα από παιχνίδια που παίχτηκαν στο Dolphin</a>. "
 
 #: homepage/templates/homepage-home.html:81
 msgid "Use your favorite controller"
@@ -325,7 +325,7 @@ msgstr "\nΔεν είστε και μεγάλος θαυμαστής του χε
 
 #: homepage/templates/homepage-home.html:93
 msgid "Recent Dolphin news"
-msgstr "Πρόσφατα Dolphin νέα"
+msgstr "Πρόσφατα νέα του Dolphin"
 
 #: homepage/templates/homepage-home.html:98
 msgid "by"
