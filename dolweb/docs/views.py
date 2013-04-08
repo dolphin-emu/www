@@ -16,7 +16,7 @@ def faq(request):
 
 @render_to('docs-guides-index.html')
 def guides_index(request):
-    guides = Guide.objects.filter(listed=True).order_by('title')
+    guides = Guide.objects.filter(listed=True).order_by('display_order', 'title')
     return { 'guides': guides }
 
 @cache_page(60 * 5)

@@ -51,6 +51,7 @@ class Guide(models.Model):
     authors = models.CharField(max_length=128)
     description = models.TextField()
     listed = models.BooleanField(default=False)
+    display_order = models.IntegerField()
 
     def __unicode__(self):
         return self.title
