@@ -1,10 +1,13 @@
 {% extends "_base.html" %}
 
+{% load i18n %}
+
 {% block "title" %}{{ title }}{% endblock %}
 {% block "extracss" %}
 <link href="{{ STATIC_URL }}css/wiki.css" rel="stylesheet">
 {% endblock %}
 
 {% block "body" %}
+<p><a class="back-link" href="{% url docs-guides-index %}">« {% trans "Go back to the guides list" %}</a></p>
 {{ guide|safe }}
 {% endblock %}
