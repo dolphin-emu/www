@@ -59,6 +59,7 @@ LANGUAGES = (
     ('es', u'Español'),
     ('el', u'Ελληνικά'),
     ('fr', u'Français'),
+    ('it', u'Italiano'),
     ('hu', u'Magyar'),
     ('nl', u'Nederlands'),
     ('pl', u'Polski'),

@@ -3,133 +3,133 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-#  <kostamarino@gmail.com>, 2013.
+#  <mewster@libero.it>, 2013.
 msgid ""
 msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-02-14 06:21+0100\n"
-"PO-Revision-Date: 2013-04-05 19:41+0000\n"
-"Last-Translator: link_to_the_past <kostamarino@gmail.com>\n"
-"Language-Team: Greek (http://www.transifex.com/projects/p/dolphin-emu/language/el/)\n"
+"PO-Revision-Date: 2013-04-08 18:23+0000\n"
+"Last-Translator: Mewster <mewster@libero.it>\n"
+"Language-Team: Italian (http://www.transifex.com/projects/p/dolphin-emu/language/it/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: el\n"
+"Language: it\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: compat/templates/compat-list.html:7
 #, python-format
 msgid "Compatibility List - page %(page)s"
-msgstr "Λίστα Συμβατότητας - σελίδα %(page)s"
+msgstr "Lista di compatibilità - pagina %(page)s"
 
 #: compat/templates/compat-list.html:19
 msgid "How to read the ratings"
-msgstr "Πώς να διαβάσετε τις διαβαθμίσεις"
+msgstr "Come leggere i voti"
 
 #: compat/templates/compat-list.html:22
 msgid "5 out of 5"
-msgstr "5 από 5"
+msgstr "5 su 5"
 
 #: compat/templates/compat-list.html:22
 msgid "<strong>Perfect</strong>: No issues at all!"
-msgstr "<strong>Τέλειο</strong>: Κανένα πρόβλημα!"
+msgstr "<strong>Perfetto</strong>: Nessun problema!"
 
 #: compat/templates/compat-list.html:23
 msgid "4 out of 5"
-msgstr "4 από 5"
+msgstr "4 su 5"
 
 #: compat/templates/compat-list.html:23
 msgid ""
 "<strong>Playable</strong>: Runs well, only minor graphical or audio "
 "glitches. Games can be played all the way through."
-msgstr "<strong>Παίζεται</strong>: Τρέχει καλά, μόνο μικρά προβλήματα σε γραφικά και ήχο. Τα παιχνίδια μπορούν να παιχτούν μέχρι τέλους."
+msgstr "<strong>Giocabile</strong>: Funziona bene, a parte minori glitch audio o video. I giochi possono essere completati."
 
 #: compat/templates/compat-list.html:24
 msgid "3 out of 5"
-msgstr "3 από 5"
+msgstr "3 su 5"
 
 #: compat/templates/compat-list.html:24
 msgid ""
 "<strong>Starts</strong>: Starts, maybe even plays well, but crashes or major"
 " graphical/audio glitches."
-msgstr "<strong>Ξεκινάει</strong>: Ξεκινάει, ίσως και να παίζει και καλά, αλλά κρασάρει ή εμφανίζει μεγάλα προβλήματα γραφικών/ήχου."
+msgstr "<strong>Parte</strong>: Parte, forse è anche giocabile, ma crasha o ci sono maggiori glitch grafici o audio."
 
 #: compat/templates/compat-list.html:25
 msgid "2 out of 5"
-msgstr "2 από 5"
+msgstr "2 su 5"
 
 #: compat/templates/compat-list.html:25
 msgid ""
 "<strong>Intro/Menu</strong>: Hangs/crashes somewhere between booting and "
 "starting."
-msgstr "<strong>Εισαγωγή/Μενού</strong>: Κολλάει/κρασάρει κάπου μεταξύ φόρτωσης και εκίνησης από τα μενού."
+msgstr "<strong>Intro/Menu<strong>: Si blocca o crasha tra il boot e l'avvio del gioco."
 
 #: compat/templates/compat-list.html:26
 msgid "1 out of 5"
-msgstr "1 από 5"
+msgstr "1 su 5"
 
 #: compat/templates/compat-list.html:26
 msgid "<strong>Broken</strong>: Crashes when booting."
-msgstr "<strong>Χαλασμένο</strong>: Κρασάρει κατά την φόρτωση."
+msgstr "<strong>Ingiocabile<strong>: Crasha all'avvio."
 
 #: compat/templates/compat-list.html:33
 msgid "Statistics"
-msgstr "Στατιστικά"
+msgstr "Statistiche"
 
 #: compat/templates/compat-list.html:53
 msgid "Game title (click for details)"
-msgstr "Τίτλος παιχνιδιού (κάντε κλικ για λεπτομέρειες)"
+msgstr "Titolo del gioco (clicca per maggiori dettagli)"
 
 #: compat/templates/compat-list.html:54 templates/_base.html:62
 msgid "Compatibility"
-msgstr "Συμβατότητα"
+msgstr "Compatibilità"
 
 #: compat/templates/compat-list.html:55
 msgid "Last updated"
-msgstr "Τελευταία ενημέρωση"
+msgstr "Ultimo aggiornamento"
 
 #: compat/templatetags/compat.py:7
 msgid "Unknown"
-msgstr "Άγνωστο"
+msgstr "Sconosciuto"
 
 #: compat/templatetags/compat.py:8
 msgid "Broken"
-msgstr "Χαλασμένο"
+msgstr "Ingiocabile"
 
 #: compat/templatetags/compat.py:9
 msgid "Intro/Menu"
-msgstr "Εισαγωγή/Μενού"
+msgstr "Intro/Menu"
 
 #: compat/templatetags/compat.py:10
 msgid "Starts"
-msgstr "Ξεκινάει"
+msgstr "Parte"
 
 #: compat/templatetags/compat.py:11
 msgid "Playable"
-msgstr "Παίζεται"
+msgstr "Giocabile"
 
 #: compat/templatetags/compat.py:12
 msgid "Perfect"
-msgstr "Τέλειο"
+msgstr "Perfetto"
 
 #: docs/templates/docs-faq.html:6
 msgid "Frequently Asked Questions"
-msgstr "Συχνά Ασκούμενες Ερωτήσεις"
+msgstr "Domande Frequenti (FAQ)"
 
 #: docs/templates/docs-guides-index.html:5
 #: docs/templates/docs-guides-index.html:9 templates/_base.html:61
 msgid "Guides"
-msgstr "Οδηγοί"
+msgstr "Guide"
 
 #: docs/templates/docs-guides-index.html:15
 #, python-format
 msgid "(by %(author)s)"
-msgstr "(από %(author)s)"
+msgstr "(di %(author)s)"
 
 #: docs/templates/docs-guides-index.html:17
 msgid "No published guide available"
-msgstr "Δεν υπάρχουν διαθέσιμοι οδηγοί για δημοσίευση"
+msgstr "Non sono state pubblicate guide"
 
 #: downloads/models.py:32 downloads/models.py:50
 #, python-format
@@ -139,34 +139,34 @@ msgstr "Dolphin %s"
 #: downloads/templates/downloads-branches.html:5
 #: downloads/templates/downloads-branches.html:9
 msgid "Download development builds"
-msgstr "Κατεβάστε δοκιμαστικές εκδόσεις"
+msgstr "Scarica versioni in sviluppo"
 
 #: downloads/templates/downloads-branches.html:17
 #, python-format
 msgid "<tt>%(branch)s</tt> branch"
-msgstr "<tt>%(branch)s</tt> διακλάδωση"
+msgstr "Branch <tt>%(branch)s</tt>"
 
 #: downloads/templates/downloads-branches.html:20
 #: downloads/templates/downloads-index.html:89
 msgid "View older versions »"
-msgstr "Προβολή παλαιότερων εκδόσεων »"
+msgstr "Versioni precedenti »"
 
 #: downloads/templates/downloads-branches.html:27
 msgid "Branch list"
-msgstr "Λίστα διακλαδώσεων"
+msgstr "Lista dei branch"
 
 #: downloads/templates/downloads-devrel.html:19
 msgid "No development release yet"
-msgstr "Δεν έχει εκδοθεί δοκιμαστική έκδοση ακόμα"
+msgstr "Non sono disponibili versioni in sviluppo"
 
 #: downloads/templates/downloads-index.html:6
 #: downloads/templates/downloads-index.html:25 templates/_base.html:59
 msgid "Download"
-msgstr "Κατεβάστε"
+msgstr "Download"
 
 #: downloads/templates/downloads-index.html:29
 msgid "Stable versions"
-msgstr "Σταθερές εκδόσεις"
+msgstr "Versioni stabili"
 
 #: downloads/templates/downloads-index.html:31
 msgid ""
@@ -174,15 +174,15 @@ msgid ""
 "    Stable versions are released after a lot of testing to ensure emulation\n"
 "    performance and stability. <strong>If you do not know what version of\n"
 "    Dolphin you should use, the latest stable version is generally the best.</strong>\n"
-msgstr "\n Οι σταθερές εκδόσεις κυκλοφορούν μετά από πολλές δοκιμές για να διασφαλιστεί \nη ταχύτητα και η σταθερότητα της εξομοίωσης. <strong> Άμα δεν γνωρίζεται ποια έκδοση\nτου Dolphin να χρησιμοποιήσετε, η τελευταία σταθερή έκδοση είναι γενικώς η \nκαλύτερη επιλογή.</strong>\n"
+msgstr "\nLe versioni stabili vengono rilasciate dopo un lungo testing\nper assicurare performance di emulazione e stabilità.\n<strong>Se non sai quale versione di Dolphin usare, l'ultima versione\nstabile è generalmente la migliore.</strong>\n"
 
 #: downloads/templates/downloads-index.html:53
 msgid "No stable release yet"
-msgstr "Δεν έχει εκδοθεί σταθερή έκδοση ακόμα"
+msgstr "Non sono disponibili versioni stabili"
 
 #: downloads/templates/downloads-index.html:74
 msgid "Development versions"
-msgstr "Δοκιμαστικές εκδόσεις"
+msgstr "Versioni in sviluppo"
 
 #: downloads/templates/downloads-index.html:76
 msgid ""
@@ -191,19 +191,19 @@ msgid ""
 "    developer makes a change to Dolphin. Using development versions enables you\n"
 "    to use the latest and greatest improvements to the project, at the cost of\n"
 "    decreased stability.\n"
-msgstr "\n<strong>Προσοχή!</strong> Οι δοκιμαστικές εκδόσεις κυκλοφορούν κάθε φορά που ένας\nπρογραμματιστής κάνει μια αλλαγή στο Dolphin. Η χρησιμοποίηση των δοκιμαστικών εκδόσεων \nσας δίνει την δυνατότητα να χρησιμοποιήσετε τις τελευταίες και μεγαλύτερες βελτιώσεις στο project, με κόστος την σταθερότητα του προγράμματος.\n"
+msgstr "\n<strong>Attenzione!</strong> Le versioni in sviluppo vengono rilasciate\nogni qualvolta uno sviluppatore effettua una modifica al Dolphin.\nUsare le versioni in sviluppo ti permette di rimanere al passo\ncon gli ultimi aggiornamenti e miglioramenti al progetto, al costo\ndi una minore stabilità.\n"
 
 #: downloads/templates/downloads-index.html:83
 msgid "Only displaying the <tt>master</tt> branch versions."
-msgstr "Εμφανίζει μόνο τις <tt>master</tt> εκδόσεις διακλάδωσης."
+msgstr "In mostra soltanto le versioni branch <tt>master</tt>."
 
 #: downloads/templates/downloads-index.html:84
 msgid "Show all available branches"
-msgstr "Εμφάνιση όλων των διαθέσιμων διακλαδώσεων"
+msgstr "Mostra tutti i branches disponibili"
 
 #: downloads/templates/downloads-index.html:93
 msgid "Source code"
-msgstr "Πηγαίος κώδικας"
+msgstr "Codice sorgente"
 
 #: downloads/templates/downloads-index.html:95
 msgid ""
@@ -211,7 +211,7 @@ msgid ""
 "    The latest version of the Dolphin source code can be downloaded from the\n"
 "    project Git repository.\n"
 "    "
-msgstr "\nΗ τελευταία έκδοση του πηγαίου κώδικα του Dolphin μπορεί να κατεβεί από το \nproject Git repository.\n    "
+msgstr "\nLe ultime versioni del codice sorgente di Dolphin possono essere scaricate\ndalla repository Git del progetto."
 
 #: downloads/templates/downloads-index.html:103
 msgid ""
@@ -219,39 +219,39 @@ msgid ""
 "    You can also <a href=\"http://code.google.com/p/dolphin-emu/source/browse/\">browse\n"
 "        the current version of the source code</a>.\n"
 "    "
-msgstr "\nΜπορείτε επίσης <a href=\"http://code.google.com/p/dolphin-emu/source/browse/\"> να περιηγηθείτε στην τρέχουσα έκδοση του πηγαίου κώδικα</a>.\n\n    "
+msgstr "\nPuoi anche <a href=\"http://code.google.com/p/dolphin-emu/source/browse/\">sfogliare\nil codice sorgente della versione attuale</a>."
 
 #: downloads/templates/downloads-list.html:5
 #, python-format
 msgid "%(branch)s branch - page %(page)s"
-msgstr "%(branch)s διακλάδωση - σελίδα %(page)s"
+msgstr "Branch %(branch)s - pagina %(page)s"
 
 #: downloads/templates/downloads-list.html:9
 #, python-format
 msgid "<tt>%(branch)s</tt> branch - page %(page)s"
-msgstr "<tt>%(branch)s</tt> διακλάδωση - σελίδα %(page)s"
+msgstr "Branch <tt>%(branch)s</tt> - pagina %(page)s"
 
 #: downloads/templates/downloads-view-devrel.html:6
 #, python-format
 msgid "Information on %(br)s"
-msgstr "Πληροφορίες για %(br)s"
+msgstr "Informazioni su %(br)s"
 
 #: downloads/templates/downloads-view-devrel.html:10
 #, python-format
 msgid "Information for %(br)s"
-msgstr "Πληροφορίες για %(br)s"
+msgstr "Informazioni su %(br)s"
 
 #: downloads/templates/downloads-view-devrel.html:16
 msgid "Version"
-msgstr "Έκδοση"
+msgstr "Versione"
 
 #: downloads/templates/downloads-view-devrel.html:19
 msgid "Branch"
-msgstr "Διακλάδωση"
+msgstr "Branch"
 
 #: downloads/templates/downloads-view-devrel.html:22
 msgid "Date"
-msgstr "Ημερομηνία"
+msgstr "Data"
 
 #: downloads/templates/downloads-view-devrel.html:31
 msgid "Commit"
@@ -259,44 +259,44 @@ msgstr "Commit"
 
 #: downloads/templates/downloads-view-devrel.html:34
 msgid "Change author"
-msgstr "Αλλαγή συγγραφέα"
+msgstr "Autore"
 
 #: downloads/templates/downloads-view-devrel.html:37
 msgid "Change description"
-msgstr "Αλλαγή περιγραφής"
+msgstr "Descrizione"
 
 #: homepage/templates/homepage-home.html:7
 msgid "Gamecube/Wii games on PC"
-msgstr "Gamecube/Wii παιχνίδια στο PC"
+msgstr "Gioca al Gamecube/Wii sul PC"
 
 #: homepage/templates/homepage-home.html:25 templates/_base.html:9
 #: templates/_base.html.py:54
 msgid "Dolphin Emulator"
-msgstr "Dolphin Εξομοιωτής "
+msgstr "Emulatore Dolphin"
 
 #: homepage/templates/homepage-home.html:27
 msgid "Play Gamecube and Wii games in 1080p on your PC."
-msgstr "Παίξτε Gamecube και Wii παιχνίδια σε 1080p στο PC σας."
+msgstr "Gioca al Gamecube e al Wii a 1080p sul tuo PC"
 
 #: homepage/templates/homepage-home.html:30
 #, python-format
 msgid "Download %(last_release)s now for Windows, Mac and Linux »"
-msgstr "Κατέβασε το %(last_release)s τώρα για Windows, Mac και Linux »"
+msgstr "Scarica subito %(last_release)s per Windows, Mac e Linux »"
 
 #: homepage/templates/homepage-home.html:33
 msgid ""
 "\n"
 "                <strong>Minimal requirements</strong>: SSE2 compatible CPU, Shader Model 3.0 GPU, 2GB of RAM, 50MB of disk space\n"
 "                "
-msgstr "\n                <strong>Ελάχιστες απαιτήσεις</strong>: SSE2 συμβατή CPU, Shader Model 3.0 GPU, 2GB μνήμης RAM, 50MB ελεύθερο χώρο στον δίσκο.\n\n                "
+msgstr "\n<strong>Requisiti minimi</strong>: CPU con supporto SSE2, GPU con Shader Model 3.0, 2GB di RAM, 50MB di spazio su disco"
 
 #: homepage/templates/homepage-home.html:38
 msgid "More information about hardware requirements"
-msgstr "Περισσότερες πληροφορίες σχετικά με τις απαιτήσεις υλικού"
+msgstr "Maggiori informazioni sui requisiti hardware"
 
 #: homepage/templates/homepage-home.html:68
 msgid "Improved graphics"
-msgstr "Βελτιωμένα γραφικά"
+msgstr "Grafica migliorata"
 
 #: homepage/templates/homepage-home.html:71
 #, python-format
@@ -307,11 +307,11 @@ msgid ""
 "        Gamecube and Wii games. <a href=\"%(MEDIA_PAGE_URL)s\">View screenshots\n"
 "        of games played on Dolphin</a>.\n"
 "        "
-msgstr "\nΤο Wii μπορεί να απεικονίσει τα παιχνίδια μόνο σε ανάλυση 480p. Το Dolphin υποστηρίζει 720p, 1080p και ακόμη μεγαλύτερες αναλύσεις για όλα τα παιχνίδια Gamecube και Wii. <a href=\"%(MEDIA_PAGE_URL)s\">Δείτε στιγμιότυπα από παιχνίδια που παίχτηκαν στο Dolphin</a>. "
+msgstr "\nIl Wii renderizza i giochi soltanto a risoluzione 480p. Il Dolphin\nsupporta i 720p, 1080p e persino risoluzioni maggiori su tutti\ni giochi Gamecube e Wii. <a href=\"%(MEDIA_PAGE_URL)s\">Guarda gli screenshot dei giochi\navviati su Dolphin</a>."
 
 #: homepage/templates/homepage-home.html:81
 msgid "Use your favorite controller"
-msgstr "Χρησιμοποίησε το αγαπημένο σου χειριστήριο"
+msgstr "Usa il tuo controller preferito"
 
 #: homepage/templates/homepage-home.html:83
 msgid ""
@@ -321,19 +321,19 @@ msgid ""
 "        and mouse! Wiimotes are still supported, including Wii Motion Plus\n"
 "        for games that require it.\n"
 "        "
-msgstr "\nΔεν είστε και μεγάλος θαυμαστής του χειριστηρίου του Gamecube και του Wiimote;\nΜπορείτε να παίξετε τα παιχνίδια με το αγαπημένο σας PC χειριστήριο, ή ακόμα και \nμε το πληκτρολόγιο και το ποντίκι! Τα Wiimotes υποστηρίζονται επίσης, \nσυμπεριλαμβανομένου του Wii Motion Plus για τα παιχνίδια που το χρειάζονται.\n        "
+msgstr "\nNon vai d'accordo con il controller del Gamecube e con il\nWiimote? Puoi giocare anche con il tuo controller preferito,\no persino con il mouse e con la tastiera! I Wiimote sono\ncomunque supportati, incluso il Wii Motion Plus per i giochi che\nlo richiedono."
 
 #: homepage/templates/homepage-home.html:93
 msgid "Recent Dolphin news"
-msgstr "Πρόσφατα νέα του Dolphin"
+msgstr "News recenti su Dolphin"
 
 #: homepage/templates/homepage-home.html:98
 msgid "by"
-msgstr "από"
+msgstr "da"
 
 #: homepage/templates/homepage-home.html:110
 msgid "Great compatibility"
-msgstr "Μεγάλη συμβατότητα"
+msgstr "Eccezionale compatibilità"
 
 #: homepage/templates/homepage-home.html:113
 #, python-format
@@ -345,11 +345,11 @@ msgid ""
 "        the <a href=\"%(COMPAT_URL)s\">Dolphin compatibility list</a>\n"
 "        or the <a href=\"%(WIKI_URL)s\">Dolphin wiki</a> for more details.\n"
 "        "
-msgstr "\n Το Dolphin μπορεί να παίξει τα περισσότερα παιχνίδια από την συλλογή\nπαιχνιδιών του Gamecube και του Wii χωρίς προβλήματα. Οι νέες κυκλοφορίες\nγια Wii συχνά δουλεύουν στο Dolphin από την πρώτη μέρα κυκλοφορίας τους.\nΤα παιχνίδια Wiiware και για Virtual Console υποστηρίζονται επίσης. Δείτε την\n <a href=\"%(COMPAT_URL)s\">Λίστα συμβατότητας του Dolphin</a>\nή το <a href=\"%(WIKI_URL)s\">Dolphin wiki</a> για περισσότερες λεπτομέρειες.\n\n        "
+msgstr "\nDolphin può avviare la maggior parte dei giochi Gamecube e Wii\nsenza problemi. Molti giochi in uscita per Wii funzionano sin\nda subito. Sono supportati anche i Wiiware e i giochi Virtual\nConsole. Guarda la <a href=\"%(COMPAT_URL)s\">lista di compatibilità di Dolphin</a> o la\n<a href=\"%(WIKI_URL)s\">Dolphin wiki</a> per maggiori dettagli."
 
 #: homepage/templates/homepage-home.html:124
 msgid "Helpful community"
-msgstr "Κοινότητα υποστήριξης"
+msgstr "Community disponibile"
 
 #: homepage/templates/homepage-home.html:127
 #, python-format
@@ -361,11 +361,11 @@ msgid ""
 "        can't help you, other Dolphin users may be willing to help you over at the\n"
 "        <a href=\"%(FORUM_URL)s\">official discussion forums</a>.\n"
 "        "
-msgstr "\nΈχετε προβλήματα εγκατάστασης; Προσπαθείτε να βρείτε τις καλύτερες ρυθμίσεις για ένα\nπαιχνίδι; Ή απλά ενδιαφέρεστε για συζήτηση σχετικά με παιχνίδια που σας αρέσουν του \nGamecube και Wii; Άμα οι <a href=\"%(FAQ_URL)s\">Συχνά Ασκούμενες Ερωτήσεις</a>\nδεν μπορούν να σας βοηθήσουν, άλλοι χρήστες του Dolphin μπορεί να θελήσουν να βοηθήσουν\nστα <a href=\"%(FORUM_URL)s\">επίσημα forums συζητήσεων</a>.\n        "
+msgstr "\nHai problemi di installazione? Stai cercando la miglior\nconfigurazione per un gioco? O sei soltanto interessato nelle\ndiscussioni sui giochi Gamecube e Wii che preferisci? Se la\nsezione <a href=\"%(FAQ_URL)s\">Domande Frequenti (FAQ)</a> non ti soddisfa, gli altri utenti\ndi Dolphin possono aiutarti nelle <a href=\"%(FORUM_URL)s\">discussioni nel forum ufficiale</a>."
 
 #: homepage/templates/homepage-home.html:138
 msgid "Free and Open Source"
-msgstr "Δωρεάν και Ανοιχτού Κώδικα"
+msgstr "Gratis e Open Source"
 
 #: homepage/templates/homepage-home.html:140
 #, python-format
@@ -376,35 +376,35 @@ msgid ""
 "        Grab the emulator source code from <a href=\"%(GCODE_URL)s\">Google\n"
 "        Code</a> and start hacking!\n"
 "        "
-msgstr "\nΟ Εξομοιωτής Dolphin αναπτύσσεται από εθελοντές απ' όλο τον κόσμο\nκαι διανέμεται χωρίς χρέωση. Θέλετε να βοηθήσετε το project να βελτιωθεί;\nΑρπάξτε τον πηγαίο κώδικα του εξομοιωτή από το <a href=\"%(GCODE_URL)s\">Google \nCode</a> και ξεκινήστε το hacking!\n      "
+msgstr "\nL'emulatore Dolphin è sviluppato da volontari provenienti da tutto\nil mondo ed è distribuito gratuitamente. Vuoi dare una mano a\nmigliorare il progetto? Prendi il codice sorgente dell'emulatore\nda <a href=\"%(GCODE_URL)s\">Google Code</a> e comincia a scrivere!"
 
 #: media/templates/media-all.html:6 media/templates/media-all.html.py:19
 msgid "Media gallery"
-msgstr "Γκαλερί πολυμέσων"
+msgstr "Galleria"
 
 #: media/templates/media-all.html:43
 msgid "Full size"
-msgstr "Πλήρες μέγεθος"
+msgstr "Dimensioni originali"
 
 #: media/templates/media-all.html:44
 msgid "Previous"
-msgstr "Προηγούμενη"
+msgstr "Precedente"
 
 #: media/templates/media-all.html:45
 msgid "Next"
-msgstr "Επόμενη"
+msgstr "Successivo"
 
 #: templates/_base.html:57
 msgid "Home"
-msgstr "Αρχική"
+msgstr "Home"
 
 #: templates/_base.html:58
 msgid "Media"
-msgstr "Πολυμέσα"
+msgstr "Galleria"
 
 #: templates/_base.html:60
 msgid "FAQ"
-msgstr "Συχνές Ερωτήσεις"
+msgstr "FAQ"
 
 #: templates/_base.html:63
 msgid "Forum"
@@ -416,7 +416,7 @@ msgstr "Wiki"
 
 #: templates/_base.html:65
 msgid "Development"
-msgstr "Ανάπτυξη"
+msgstr "Sviluppo"
 
 #: templates/_base.html:102
 msgid ""
@@ -424,4 +424,4 @@ msgid ""
 "            &copy; 2012 Dolphin Emulator Project -\n"
 "            <a href=\"https://bitbucket.org/delroth/dolphin-web/\">Website source code</a>\n"
 "            "
-msgstr "\n &copy; 2012 Dolphin Emulator Project -\n <a href=\"https://bitbucket.org/delroth/dolphin-web/\">Πηγαίος κώδικας ιστοσελίδας</a>\n "
+msgstr "\n&copy; 2012 Dolphin Emulator Project -\n<a href=\"https://bitbucket.org/delroth/dolphin-web/\">Codice sorgente del sito</a>"
