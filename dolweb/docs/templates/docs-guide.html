@@ -1,15 +1,13 @@
 {% extends "_base.html" %}
 
-{% load markup %}
+{% load i18n %}
 
-{% block "title" %}{{ guide.title }}{% endblock %}
+{% block "title" %}{{ title }}{% endblock %}
+{% block "extracss" %}
+<link href="{{ STATIC_URL }}css/wiki.css" rel="stylesheet">
+{% endblock %}
 
 {% block "body" %}
-<div class="page-header">
-    <h1>{{ guide.title }}</h1>
-</div>
-
-<div class="always-ltr">
-{{ guide.text|markdown:"safe" }}
-</div>
+<p><a class="back-link" href="{% url docs-guides-index %}">« {% trans "Go back to the guides list" %}</a></p>
+{{ guide|safe }}
 {% endblock %}

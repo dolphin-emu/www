@@ -339,3 +339,7 @@ html[dir="rtl"] .nav .flag {
 .ratings-expl, .ratings-stats {
     margin-bottom: 20px;
 }
+
+.back-link {
+    font-weight: bold;
+}
