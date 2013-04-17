@@ -3,14 +3,15 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-#  <roger---92@hotmail.com>, 2013.
+# Puniasterus <puniasterus@gmail.com>, 2013
+# Puniasterus <puniasterus@gmail.com>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-02-14 06:21+0100\n"
-"PO-Revision-Date: 2013-02-14 11:37+0000\n"
-"Last-Translator: Puniasterus <roger---92@hotmail.com>\n"
+"PO-Revision-Date: 2013-04-17 18:33+0000\n"
+"Last-Translator: Puniasterus <puniasterus@gmail.com>\n"
 "Language-Team: Spanish (http://www.transifex.com/projects/p/dolphin-emu/language/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -33,7 +34,7 @@ msgstr "5 de 5"
 
 #: compat/templates/compat-list.html:22
 msgid "<strong>Perfect</strong>: No issues at all!"
-msgstr "<strong>Perfecto</strong>: Ningún problema en absoluto!"
+msgstr "<strong>Perfecto</strong>: ¡Ningún problema en absoluto!"
 
 #: compat/templates/compat-list.html:23
 msgid "4 out of 5"
@@ -43,7 +44,7 @@ msgstr "4 de 5"
 msgid ""
 "<strong>Playable</strong>: Runs well, only minor graphical or audio "
 "glitches. Games can be played all the way through."
-msgstr "<strong>Jugable</strong>: Funciona bien, solo errores menos gráficos o de sonido. Los juegos pueden ser jugados hasta el final."
+msgstr "<strong>Jugable</strong>: Funciona bien, solo pequeños errores gráficos o de sonido. Los juegos pueden ser jugados hasta el final."
 
 #: compat/templates/compat-list.html:24
 msgid "3 out of 5"
@@ -53,7 +54,7 @@ msgstr "3 de 5"
 msgid ""
 "<strong>Starts</strong>: Starts, maybe even plays well, but crashes or major"
 " graphical/audio glitches."
-msgstr "<strong>Inicia</strong>: Inicia, tal vez funcione bien, pero puede bloquearse o  tener grandes errores gráficos/sonido."
+msgstr "<strong>Inicia</strong>: Inicia, tal vez funcione bien, pero puede bloquearse o  tener importantes errores gráficos/sonido."
 
 #: compat/templates/compat-list.html:25
 msgid "2 out of 5"
@@ -191,7 +192,7 @@ msgid ""
 "    developer makes a change to Dolphin. Using development versions enables you\n"
 "    to use the latest and greatest improvements to the project, at the cost of\n"
 "    decreased stability.\n"
-msgstr "\n    <strong>¡Advertencia!</strong>  Las versiones de desarrollo son publicadas cada vez que\n    un desarrollador hace un cambio a Dolphin. Utilizar versiones de desarollo te permite\n    utilizar los últimos y mejores cambios del proyecto, a costa de\n    menor estabilidad.\n"
+msgstr "\n    <strong>¡Advertencia!</strong> Las versiones de desarrollo son publicadas cada vez que\n    un desarrollador hace un cambio a Dolphin. Utilizar versiones de desarollo te permite\n    utilizar los últimos y mejores cambios del proyecto, a costa de\n    menor estabilidad.\n"
 
 #: downloads/templates/downloads-index.html:83
 msgid "Only displaying the <tt>master</tt> branch versions."
@@ -219,7 +220,7 @@ msgid ""
 "    You can also <a href=\"http://code.google.com/p/dolphin-emu/source/browse/\">browse\n"
 "        the current version of the source code</a>.\n"
 "    "
-msgstr "\n    También puedes <a href=\"http://code.google.com/p/dolphin-emu/source/browse/\">ver\n        la versión actual del código fuente</a>.\n    "
+msgstr "\nTambién puedes <a href=\"http://code.google.com/p/dolphin-emu/source/browse/\">ver\nla versión actual del código fuente</a>.\n\n    "
 
 #: downloads/templates/downloads-list.html:5
 #, python-format
@@ -259,15 +260,15 @@ msgstr "Contribución"
 
 #: downloads/templates/downloads-view-devrel.html:34
 msgid "Change author"
-msgstr "Cambiar autor"
+msgstr "Autor del cambio"
 
 #: downloads/templates/downloads-view-devrel.html:37
 msgid "Change description"
-msgstr "Cambiar descripcion"
+msgstr "Descripción del cambio"
 
 #: homepage/templates/homepage-home.html:7
 msgid "Gamecube/Wii games on PC"
-msgstr "Juegos de Gamecube/wii en PC"
+msgstr "Juegos de Gamecube/ii en PC"
 
 #: homepage/templates/homepage-home.html:25 templates/_base.html:9
 #: templates/_base.html.py:54
@@ -307,7 +308,7 @@ msgid ""
 "        Gamecube and Wii games. <a href=\"%(MEDIA_PAGE_URL)s\">View screenshots\n"
 "        of games played on Dolphin</a>.\n"
 "        "
-msgstr "\n        Wii solo renderiza los juegos en una resolución de 480p. Dolphin soporta\n        720p, 1080p y resoluciones superiores para todos tus\n        juegos de Gamecube y Wii. <a href=\"%(MEDIA_PAGE_URL)s\">Ver capturas\n        de juegos jugados en Dolphin</a>.\n        "
+msgstr "\nWii solo renderiza los juegos en una resolución de 480p. Dolphin soporta\n720p, 1080p y resoluciones superiores para todos tus\njuegos de Gamecube y Wii. <a href=\"%(MEDIA_PAGE_URL)s\">Ver capturas\nde juegos jugados en Dolphin</a>."
 
 #: homepage/templates/homepage-home.html:81
 msgid "Use your favorite controller"
@@ -345,7 +346,7 @@ msgid ""
 "        the <a href=\"%(COMPAT_URL)s\">Dolphin compatibility list</a>\n"
 "        or the <a href=\"%(WIKI_URL)s\">Dolphin wiki</a> for more details.\n"
 "        "
-msgstr "\n        Dolphin puede jugar la mayoría de juegos de la colección\nGamecube y Wii sin problemas. Algunos juegos nuevos de Wii funcionan desde el primer día.\nWiiware y juegos Virtual Console también son soportados. Mira la\n<a href=\"%(COMPAT_URL)s\">Lista de compatibilidad de Dolphin </a>⏎ o la <a href=\"%(WIKI_URL)s\">Wiki de Dolphin</a> para más detalles."
+msgstr "\nDolphin puede jugar la mayoría de juegos de la colección\nGamecube y Wii sin problemas. Algunos juegos nuevos de Wii funcionan desde el primer día.\nWiiware y juegos Virtual Console también son soportados. Mira la\n<a href=\"%(COMPAT_URL)s\">Lista de compatibilidad de Dolphin </a> o la <a href=\"%(WIKI_URL)s\">Wiki de Dolphin</a> para más detalles."
 
 #: homepage/templates/homepage-home.html:124
 msgid "Helpful community"
