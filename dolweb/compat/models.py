@@ -43,14 +43,7 @@ class Revision(models.Model):
     id = models.IntegerField(db_column='rev_id', primary_key=True)
     page = models.ForeignKey('Page', db_column='rev_page', related_name='+')
     text = models.ForeignKey('Text', db_column='rev_text_id', related_name='+')
-    timestamp_raw = models.CharField(db_column='rev_timestamp', max_length=14)
-
-    @property
-    def timestamp(self):
-        t = self.timestamp_raw
-        year, month, day, hour, min, sec = map(int, (t[0:4], t[4:6], t[6:8], t[8:10], t[10:12], t[12:14]))
-        dt = datetime(year, month, day, hour, min, sec)
-        return dt
+    timestamp = models.CharField(db_column='rev_timestamp', max_length=14)
 
     def __unicode__(self):
         return u'%s for %s' % (self.timestamp_raw, self.page)
