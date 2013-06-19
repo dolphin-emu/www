@@ -35,7 +35,7 @@ class Text(models.Model):
         return u'Blob %d: %s' % (self.id, self.data[:100])
 
     class Meta:
-        db_table = 'mw_text'
+        db_table = 'pagecontent'
         verbose_name = u'MediaWiki Text Blob'
         verbose_name_plural = u'MediaWiki Text Blobs'
 
@@ -56,7 +56,7 @@ class Revision(models.Model):
         return u'%s for %s' % (self.timestamp_raw, self.page)
 
     class Meta:
-        db_table = 'mw_revision'
+        db_table = 'revision'
         verbose_name = u'MediaWiki Revision'
         verbose_name_plural = u'MediaWiki Revisions'
 
@@ -86,7 +86,7 @@ class Page(models.Model):
         return self.title
 
     class Meta:
-        db_table = 'mw_page'
+        db_table = 'page'
         ordering = ['namespace', 'title_url']
         verbose_name = u'MediaWiki Page'
         verbose_name_plural = u'MediaWiki Pages'
@@ -99,7 +99,7 @@ class Category(models.Model):
         return self.title.decode('utf-8')
 
     class Meta:
-        db_table = 'mw_category'
+        db_table = 'category'
         ordering = ['title']
         verbose_name = u'MediaWiki Category'
         verbose_name_plural = u'MediaWiki Categories'
@@ -113,7 +113,7 @@ class CategoryLink(models.Model):
         return u'Link from %s to %s' % (self.page, self.cat)
 
     class Meta:
-        db_table = 'mw_categorylinks'
+        db_table = 'categorylinks'
         ordering = ['cat', 'page']
         verbose_name = u'MediaWiki Category Link'
         verbose_name_plural = u'MediaWiki Category Links'
