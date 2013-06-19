@@ -3,13 +3,14 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
+# Puniasterus <puniasterus@gmail.com>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-02-14 06:21+0100\n"
-"PO-Revision-Date: 2013-02-14 05:23+0000\n"
-"Last-Translator: delroth <delroth@gmail.com>\n"
+"PO-Revision-Date: 2013-06-12 06:11+0000\n"
+"Last-Translator: Puniasterus <puniasterus@gmail.com>\n"
 "Language-Team: Catalan (http://www.transifex.com/projects/p/dolphin-emu/language/ca/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,43 +21,43 @@ msgstr ""
 #: compat/templates/compat-list.html:7
 #, python-format
 msgid "Compatibility List - page %(page)s"
-msgstr ""
+msgstr "Llista de compatibilitat - pàgina %(page)s"
 
 #: compat/templates/compat-list.html:19
 msgid "How to read the ratings"
-msgstr ""
+msgstr "Com llegir les qualificacions"
 
 #: compat/templates/compat-list.html:22
 msgid "5 out of 5"
-msgstr ""
+msgstr "5 de 5"
 
 #: compat/templates/compat-list.html:22
 msgid "<strong>Perfect</strong>: No issues at all!"
-msgstr ""
+msgstr "<strong>Perfecte</strong>: Cap problema en absolut!"
 
 #: compat/templates/compat-list.html:23
 msgid "4 out of 5"
-msgstr ""
+msgstr "4 de 5"
 
 #: compat/templates/compat-list.html:23
 msgid ""
 "<strong>Playable</strong>: Runs well, only minor graphical or audio "
 "glitches. Games can be played all the way through."
-msgstr ""
+msgstr "<strong>Jugable</strong>: Funciona bé, només petits errors gràfics o de so. Els jocs juegos poden ser jugats fins al final."
 
 #: compat/templates/compat-list.html:24
 msgid "3 out of 5"
-msgstr ""
+msgstr "3 de 5"
 
 #: compat/templates/compat-list.html:24
 msgid ""
 "<strong>Starts</strong>: Starts, maybe even plays well, but crashes or major"
 " graphical/audio glitches."
-msgstr ""
+msgstr "<strong>Inicia</strong>: Inicia, potser funcioni bé, però pot bloquejar-se o tenir importants errors gràfics/so."
 
 #: compat/templates/compat-list.html:25
 msgid "2 out of 5"
-msgstr ""
+msgstr "2 de 5"
 
 #: compat/templates/compat-list.html:25
 msgid ""
@@ -66,35 +67,35 @@ msgstr ""
 
 #: compat/templates/compat-list.html:26
 msgid "1 out of 5"
-msgstr ""
+msgstr "1 de 5"
 
 #: compat/templates/compat-list.html:26
 msgid "<strong>Broken</strong>: Crashes when booting."
-msgstr ""
+msgstr "<strong>Trencat</strong>: Es bloqueja durant l'arrencada."
 
 #: compat/templates/compat-list.html:33
 msgid "Statistics"
-msgstr ""
+msgstr "Estadístiques"
 
 #: compat/templates/compat-list.html:53
 msgid "Game title (click for details)"
-msgstr ""
+msgstr "Nom del joc (clic per detalls)"
 
 #: compat/templates/compat-list.html:54 templates/_base.html:62
 msgid "Compatibility"
-msgstr ""
+msgstr "Compatibilitat"
 
 #: compat/templates/compat-list.html:55
 msgid "Last updated"
-msgstr ""
+msgstr "Darrera actualització"
 
 #: compat/templatetags/compat.py:7
 msgid "Unknown"
-msgstr ""
+msgstr "Desconegut"
 
 #: compat/templatetags/compat.py:8
 msgid "Broken"
-msgstr ""
+msgstr "Trencat"
 
 #: compat/templatetags/compat.py:9
 msgid "Intro/Menu"
@@ -102,70 +103,70 @@ msgstr ""
 
 #: compat/templatetags/compat.py:10
 msgid "Starts"
-msgstr ""
+msgstr "Inicia"
 
 #: compat/templatetags/compat.py:11
 msgid "Playable"
-msgstr ""
+msgstr "Jugable"
 
 #: compat/templatetags/compat.py:12
 msgid "Perfect"
-msgstr ""
+msgstr "Perfecte"
 
 #: docs/templates/docs-faq.html:6
 msgid "Frequently Asked Questions"
-msgstr ""
+msgstr "Preguntes més freqüents"
 
 #: docs/templates/docs-guides-index.html:5
 #: docs/templates/docs-guides-index.html:9 templates/_base.html:61
 msgid "Guides"
-msgstr ""
+msgstr "Guies"
 
 #: docs/templates/docs-guides-index.html:15
 #, python-format
 msgid "(by %(author)s)"
-msgstr ""
+msgstr "(by %(author)s)"
 
 #: docs/templates/docs-guides-index.html:17
 msgid "No published guide available"
-msgstr ""
+msgstr "No hi ha guies disponibles"
 
 #: downloads/models.py:32 downloads/models.py:50
 #, python-format
 msgid "Dolphin %s"
-msgstr ""
+msgstr "Dolphin %s"
 
 #: downloads/templates/downloads-branches.html:5
 #: downloads/templates/downloads-branches.html:9
 msgid "Download development builds"
-msgstr ""
+msgstr "Descarregar versions de desenvolupament"
 
 #: downloads/templates/downloads-branches.html:17
 #, python-format
 msgid "<tt>%(branch)s</tt> branch"
-msgstr ""
+msgstr "Branca <tt>%(branch)s</tt>"
 
 #: downloads/templates/downloads-branches.html:20
 #: downloads/templates/downloads-index.html:89
 msgid "View older versions »"
-msgstr ""
+msgstr "Veure versions antigues »"
 
 #: downloads/templates/downloads-branches.html:27
 msgid "Branch list"
-msgstr ""
+msgstr "Llista de branques"
 
 #: downloads/templates/downloads-devrel.html:19
 msgid "No development release yet"
-msgstr ""
+msgstr "Encara no hi ha versions de desenvolupament disponibles"
 
 #: downloads/templates/downloads-index.html:6
 #: downloads/templates/downloads-index.html:25 templates/_base.html:59
 msgid "Download"
-msgstr ""
+msgstr "Descarregar"
 
 #: downloads/templates/downloads-index.html:29
 msgid "Stable versions"
-msgstr ""
+msgstr "Versions estables "
 
 #: downloads/templates/downloads-index.html:31
 msgid ""
@@ -177,11 +178,11 @@ msgstr ""
 
 #: downloads/templates/downloads-index.html:53
 msgid "No stable release yet"
-msgstr ""
+msgstr "Encara no hi ha versions estables"
 
 #: downloads/templates/downloads-index.html:74
 msgid "Development versions"
-msgstr ""
+msgstr "Versions de desenvolupament"
 
 #: downloads/templates/downloads-index.html:76
 msgid ""
@@ -194,15 +195,15 @@ msgstr ""
 
 #: downloads/templates/downloads-index.html:83
 msgid "Only displaying the <tt>master</tt> branch versions."
-msgstr ""
+msgstr "Mostrant només les versions de la branca <tt>master</ tt>."
 
 #: downloads/templates/downloads-index.html:84
 msgid "Show all available branches"
-msgstr ""
+msgstr "Mostrar totes les branques disponibles"
 
 #: downloads/templates/downloads-index.html:93
 msgid "Source code"
-msgstr ""
+msgstr "Codi font"
 
 #: downloads/templates/downloads-index.html:95
 msgid ""
@@ -210,7 +211,7 @@ msgid ""
 "    The latest version of the Dolphin source code can be downloaded from the\n"
 "    project Git repository.\n"
 "    "
-msgstr ""
+msgstr "\nLa darrera versió del codi font de Dolphin es pot descarregar en el\nprojecte repositori Git."
 
 #: downloads/templates/downloads-index.html:103
 msgid ""
@@ -223,79 +224,79 @@ msgstr ""
 #: downloads/templates/downloads-list.html:5
 #, python-format
 msgid "%(branch)s branch - page %(page)s"
-msgstr ""
+msgstr "%(branch)s branca - pàgina %(page)s"
 
 #: downloads/templates/downloads-list.html:9
 #, python-format
 msgid "<tt>%(branch)s</tt> branch - page %(page)s"
-msgstr ""
+msgstr "Branca <tt>%(branch)s</tt> - pàgina %(page)s"
 
 #: downloads/templates/downloads-view-devrel.html:6
 #, python-format
 msgid "Information on %(br)s"
-msgstr ""
+msgstr "Informació sobre %(br)s"
 
 #: downloads/templates/downloads-view-devrel.html:10
 #, python-format
 msgid "Information for %(br)s"
-msgstr ""
+msgstr "Informació per %(br)s"
 
 #: downloads/templates/downloads-view-devrel.html:16
 msgid "Version"
-msgstr ""
+msgstr "Versió"
 
 #: downloads/templates/downloads-view-devrel.html:19
 msgid "Branch"
-msgstr ""
+msgstr "Branca"
 
 #: downloads/templates/downloads-view-devrel.html:22
 msgid "Date"
-msgstr ""
+msgstr "Data"
 
 #: downloads/templates/downloads-view-devrel.html:31
 msgid "Commit"
-msgstr ""
+msgstr "Contribució"
 
 #: downloads/templates/downloads-view-devrel.html:34
 msgid "Change author"
-msgstr ""
+msgstr "Autor del canvi"
 
 #: downloads/templates/downloads-view-devrel.html:37
 msgid "Change description"
-msgstr ""
+msgstr "Descripció del canvi"
 
 #: homepage/templates/homepage-home.html:7
 msgid "Gamecube/Wii games on PC"
-msgstr ""
+msgstr "Jocs de Gamecube/Wii al PC"
 
 #: homepage/templates/homepage-home.html:25 templates/_base.html:9
 #: templates/_base.html.py:54
 msgid "Dolphin Emulator"
-msgstr ""
+msgstr "Emulador Dolphin"
 
 #: homepage/templates/homepage-home.html:27
 msgid "Play Gamecube and Wii games in 1080p on your PC."
-msgstr ""
+msgstr "Juga a jocs de Gamecube i Wii en 1080p al teu PC."
 
 #: homepage/templates/homepage-home.html:30
 #, python-format
 msgid "Download %(last_release)s now for Windows, Mac and Linux »"
-msgstr ""
+msgstr "Descarrega'l ara %(last_release)s per a Windows, Mac i Linux »"
 
 #: homepage/templates/homepage-home.html:33
 msgid ""
 "\n"
 "                <strong>Minimal requirements</strong>: SSE2 compatible CPU, Shader Model 3.0 GPU, 2GB of RAM, 50MB of disk space\n"
 "                "
-msgstr ""
+msgstr "\n<strong>Requisits mínims</strong>: CPU compatible amb SSE2, GPU amb Shader Model 3.0, 2GB de RAM, 50MB d'espai al disc"
 
 #: homepage/templates/homepage-home.html:38
 msgid "More information about hardware requirements"
-msgstr ""
+msgstr "Més informació sobre els requisits de maquinari"
 
 #: homepage/templates/homepage-home.html:68
 msgid "Improved graphics"
-msgstr ""
+msgstr "Gràfics millorats"
 
 #: homepage/templates/homepage-home.html:71
 #, python-format
@@ -310,7 +311,7 @@ msgstr ""
 
 #: homepage/templates/homepage-home.html:81
 msgid "Use your favorite controller"
-msgstr ""
+msgstr "Fes servir el teu comandament favorit"
 
 #: homepage/templates/homepage-home.html:83
 msgid ""
@@ -324,15 +325,15 @@ msgstr ""
 
 #: homepage/templates/homepage-home.html:93
 msgid "Recent Dolphin news"
-msgstr ""
+msgstr "Notícies recents de Dolphin"
 
 #: homepage/templates/homepage-home.html:98
 msgid "by"
-msgstr ""
+msgstr "per"
 
 #: homepage/templates/homepage-home.html:110
 msgid "Great compatibility"
-msgstr ""
+msgstr "Gran compatibilitat"
 
 #: homepage/templates/homepage-home.html:113
 #, python-format
@@ -348,7 +349,7 @@ msgstr ""
 
 #: homepage/templates/homepage-home.html:124
 msgid "Helpful community"
-msgstr ""
+msgstr "Comunitat disposada a ajudar"
 
 #: homepage/templates/homepage-home.html:127
 #, python-format
@@ -364,7 +365,7 @@ msgstr ""
 
 #: homepage/templates/homepage-home.html:138
 msgid "Free and Open Source"
-msgstr ""
+msgstr "Gratuït i de codi obert"
 
 #: homepage/templates/homepage-home.html:140
 #, python-format
@@ -379,43 +380,43 @@ msgstr ""
 
 #: media/templates/media-all.html:6 media/templates/media-all.html.py:19
 msgid "Media gallery"
-msgstr ""
+msgstr "Galeria multimèdia"
 
 #: media/templates/media-all.html:43
 msgid "Full size"
-msgstr ""
+msgstr "Tamany complet"
 
 #: media/templates/media-all.html:44
 msgid "Previous"
-msgstr ""
+msgstr "Anterior"
 
 #: media/templates/media-all.html:45
 msgid "Next"
-msgstr ""
+msgstr "Següent"
 
 #: templates/_base.html:57
 msgid "Home"
-msgstr ""
+msgstr "Inici"
 
 #: templates/_base.html:58
 msgid "Media"
-msgstr ""
+msgstr "Medis"
 
 #: templates/_base.html:60
 msgid "FAQ"
-msgstr ""
+msgstr "FAQ"
 
 #: templates/_base.html:63
 msgid "Forum"
-msgstr ""
+msgstr "Fòrum"
 
 #: templates/_base.html:64
 msgid "Wiki"
-msgstr ""
+msgstr "Wiki"
 
 #: templates/_base.html:65
 msgid "Development"
-msgstr ""
+msgstr "Desenvolupament"
 
 #: templates/_base.html:102
 msgid ""
@@ -423,4 +424,4 @@ msgid ""
 "            &copy; 2012 Dolphin Emulator Project -\n"
 "            <a href=\"https://bitbucket.org/delroth/dolphin-web/\">Website source code</a>\n"
 "            "
-msgstr ""
+msgstr "\n&copy; 2012 Dolphin Emulator Project -\n<a href=\"https://bitbucket.org/delroth/dolphin-web/\">Codi font de la web</a>"

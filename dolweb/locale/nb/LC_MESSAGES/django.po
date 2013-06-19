@@ -3,13 +3,14 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
+# KHRZ <e-k-nut@hotmail.com>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-02-14 06:21+0100\n"
-"PO-Revision-Date: 2013-01-23 05:00+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2013-04-29 08:45+0000\n"
+"Last-Translator: delroth <delroth@gmail.com>\n"
 "Language-Team: Norwegian Bokmål (http://www.transifex.com/projects/p/dolphin-emu/language/nb/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -114,58 +115,58 @@ msgstr ""
 
 #: docs/templates/docs-faq.html:6
 msgid "Frequently Asked Questions"
-msgstr ""
+msgstr "Ofte Stilte Spørsmål"
 
 #: docs/templates/docs-guides-index.html:5
 #: docs/templates/docs-guides-index.html:9 templates/_base.html:61
 msgid "Guides"
-msgstr ""
+msgstr "Guider"
 
 #: docs/templates/docs-guides-index.html:15
 #, python-format
 msgid "(by %(author)s)"
-msgstr ""
+msgstr "(av %(author)s)"
 
 #: docs/templates/docs-guides-index.html:17
 msgid "No published guide available"
-msgstr ""
+msgstr "Ingen publiserte guider tilgjengelige"
 
 #: downloads/models.py:32 downloads/models.py:50
 #, python-format
 msgid "Dolphin %s"
-msgstr ""
+msgstr "Dolphin %s"
 
 #: downloads/templates/downloads-branches.html:5
 #: downloads/templates/downloads-branches.html:9
 msgid "Download development builds"
-msgstr ""
+msgstr "Last ned utvikler-builds"
 
 #: downloads/templates/downloads-branches.html:17
 #, python-format
 msgid "<tt>%(branch)s</tt> branch"
-msgstr ""
+msgstr "<tt>%(branch)s</tt> grein"
 
 #: downloads/templates/downloads-branches.html:20
 #: downloads/templates/downloads-index.html:89
 msgid "View older versions »"
-msgstr ""
+msgstr "Vis eldre builds »"
 
 #: downloads/templates/downloads-branches.html:27
 msgid "Branch list"
-msgstr ""
+msgstr "Greinliste"
 
 #: downloads/templates/downloads-devrel.html:19
 msgid "No development release yet"
-msgstr ""
+msgstr "Ingen utviklings-release enda"
 
 #: downloads/templates/downloads-index.html:6
 #: downloads/templates/downloads-index.html:25 templates/_base.html:59
 msgid "Download"
-msgstr ""
+msgstr "Last ned"
 
 #: downloads/templates/downloads-index.html:29
 msgid "Stable versions"
-msgstr ""
+msgstr "Stabile versjoner"
 
 #: downloads/templates/downloads-index.html:31
 msgid ""
@@ -173,15 +174,15 @@ msgid ""
 "    Stable versions are released after a lot of testing to ensure emulation\n"
 "    performance and stability. <strong>If you do not know what version of\n"
 "    Dolphin you should use, the latest stable version is generally the best.</strong>\n"
-msgstr ""
+msgstr "\nStabile versjoner blir sluppet etter masse testing for å sikre emulasjons-\nytelse og stabilitet. <strong>Hvis du ikke hvilken versjon av\nDolphin du burde bruke, er som regel den siste stabile versjonen best.<strong>\n"
 
 #: downloads/templates/downloads-index.html:53
 msgid "No stable release yet"
-msgstr ""
+msgstr "Ingen stabile releaser enda"
 
 #: downloads/templates/downloads-index.html:74
 msgid "Development versions"
-msgstr ""
+msgstr "utviklingsversjoner"
 
 #: downloads/templates/downloads-index.html:76
 msgid ""
@@ -190,19 +191,19 @@ msgid ""
 "    developer makes a change to Dolphin. Using development versions enables you\n"
 "    to use the latest and greatest improvements to the project, at the cost of\n"
 "    decreased stability.\n"
-msgstr ""
+msgstr "\n<strong>Advarsel!<strong> utviklingsversjoner blir sluppet hver gang en\nutvikler gjør en endring i Dolphin.  Å bruke utviklingsversjoner tillater deg\nå bruke de siste i prosjektet, til prisen av senket stabilitet.\n"
 
 #: downloads/templates/downloads-index.html:83
 msgid "Only displaying the <tt>master</tt> branch versions."
-msgstr ""
+msgstr "Vis bare <tt>master</tt> branch-versjonene."
 
 #: downloads/templates/downloads-index.html:84
 msgid "Show all available branches"
-msgstr ""
+msgstr "Vil alle greiner"
 
 #: downloads/templates/downloads-index.html:93
 msgid "Source code"
-msgstr ""
+msgstr "Kildekode"
 
 #: downloads/templates/downloads-index.html:95
 msgid ""
@@ -210,7 +211,7 @@ msgid ""
 "    The latest version of the Dolphin source code can be downloaded from the\n"
 "    project Git repository.\n"
 "    "
-msgstr ""
+msgstr "\nDen siste versjonen av Dolphins kildekode kan lastes ned fra Git\nrepositoriet."
 
 #: downloads/templates/downloads-index.html:103
 msgid ""

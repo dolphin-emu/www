@@ -3,13 +3,13 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Anton <anton_r_3@hotmail.com>, 2013.
+# DolphinPhoenix <anton_r_3@hotmail.com>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-02-14 06:21+0100\n"
-"PO-Revision-Date: 2013-02-24 15:32+0000\n"
+"PO-Revision-Date: 2013-05-16 12:42+0000\n"
 "Last-Translator: DolphinPhoenix <anton_r_3@hotmail.com>\n"
 "Language-Team: Swedish (http://www.transifex.com/projects/p/dolphin-emu/language/sv/)\n"
 "MIME-Version: 1.0\n"
@@ -25,7 +25,7 @@ msgstr "Kompatibilitetslista - sida %(page)s"
 
 #: compat/templates/compat-list.html:19
 msgid "How to read the ratings"
-msgstr "Hur man ska läsa betygen"
+msgstr "Hur man läser betygen"
 
 #: compat/templates/compat-list.html:22
 msgid "5 out of 5"
@@ -43,7 +43,7 @@ msgstr "4 av 5"
 msgid ""
 "<strong>Playable</strong>: Runs well, only minor graphical or audio "
 "glitches. Games can be played all the way through."
-msgstr "<strong>Spelbar</strong>: Körs ganska bra med endast några mindre grafik- eller ljudbuggar. Man kan spela igenom spelet helt och hållet."
+msgstr "<strong>Spelbar</strong>: Fungerar bra, endast mindre grafik- eller ljudbuggar. Spelen kan spelas igenom helt och hållet."
 
 #: compat/templates/compat-list.html:24
 msgid "3 out of 5"
@@ -63,7 +63,7 @@ msgstr "2 av 5"
 msgid ""
 "<strong>Intro/Menu</strong>: Hangs/crashes somewhere between booting and "
 "starting."
-msgstr "<strong>Intro/Meny</strong>: Hänger sig/kraschar någonstans mellan uppstart och när spelet börjar."
+msgstr "<strong>Intro/Meny</strong>: Fryser/kraschar någonstans mellan spelets uppstart och början."
 
 #: compat/templates/compat-list.html:26
 msgid "1 out of 5"
@@ -157,7 +157,7 @@ msgstr "Förgreningslista"
 
 #: downloads/templates/downloads-devrel.html:19
 msgid "No development release yet"
-msgstr "Inga utvecklingsutgåvor ännu"
+msgstr "Ingen utvecklingsutgåva ännu"
 
 #: downloads/templates/downloads-index.html:6
 #: downloads/templates/downloads-index.html:25 templates/_base.html:59
@@ -191,7 +191,7 @@ msgid ""
 "    developer makes a change to Dolphin. Using development versions enables you\n"
 "    to use the latest and greatest improvements to the project, at the cost of\n"
 "    decreased stability.\n"
-msgstr "\n    <strong>Varning!</strong> Utvecklingsversioner släpps varje gång en\n    utvecklare gör en ändring i Dolphin. Genom att använda utvecklingsversioner\n    låter det dig använda det senaste och bästa förbättringarna i projektet, på\n    bekostnad av minskad stabilitet.\n"
+msgstr "\n    <strong>Varning!</strong> Utvecklingsversioner släpps varje gång en\n    utvecklare gör en ändring i Dolphin. Genom att använda utvecklingsversioner\n    kan du använda de senaste och bästa förbättringarna i projektet, på\n    bekostnad av minskad stabilitet.\n"
 
 #: downloads/templates/downloads-index.html:83
 msgid "Only displaying the <tt>master</tt> branch versions."
@@ -219,7 +219,7 @@ msgid ""
 "    You can also <a href=\"http://code.google.com/p/dolphin-emu/source/browse/\">browse\n"
 "        the current version of the source code</a>.\n"
 "    "
-msgstr "\n    Du kan även <a href=\"http://code.google.com/p/dolphin-emu/source/browse/\">bläddra igenom\n        källkoden för den aktuella versionen</a>.\n    "
+msgstr "\n    Du kan även <a href=\"http://code.google.com/p/dolphin-emu/source/browse/\">bläddra\n        igenom källkoden för den aktuella versionen</a>.\n    "
 
 #: downloads/templates/downloads-list.html:5
 #, python-format
@@ -321,7 +321,7 @@ msgid ""
 "        and mouse! Wiimotes are still supported, including Wii Motion Plus\n"
 "        for games that require it.\n"
 "        "
-msgstr "\n        Inget stort fan av Gamecube-kontrollen och Wiimote? Du kan\n        spela spel med din favoritkontroll till PC, eller t.o.m. tangentbordet\n        och datormusen! Wiimotes stöds fortfarande, inklusive Wii Motion Plus\n        till spel som kräver det.\n        "
+msgstr "\n        Inget stort fan av Gamecube-kontrollen och Wiimotes? Du kan\n        spela spel med din favoritkontroll till PC, eller t.o.m. tangentbordet\n        och datormusen! Wiimotes stöds fortfarande, inklusive Wii Motion Plus\n        till spelen som kräver det.\n        "
 
 #: homepage/templates/homepage-home.html:93
 msgid "Recent Dolphin news"
