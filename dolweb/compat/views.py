@@ -56,7 +56,7 @@ def list_compat(request, first_char='#'):
     for rating in ratings:
         title = rating.title_url[len('Ratings/'):]
         if title in cat_dict:
-            hash = hashlib.sha1(title).hexdigest()[:8]
+            hash = hashlib.sha1(title.encode('utf-8')).hexdigest()[:8]
             ts = max(rating.latest.timestamp, cat_dict[title].page.latest.timestamp)
             games.append((rating, CATEGORIES[cat_dict[title].cat], ts, hash))
 
