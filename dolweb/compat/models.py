@@ -29,7 +29,7 @@ class Text(models.Model):
 
     @property
     def data(self):
-        return self.data_raw.decode('utf-8')
+        return self.data_raw
 
     def __unicode__(self):
         return u'Blob %d: %s' % (self.id, self.data[:100])
@@ -63,14 +63,14 @@ class Page(models.Model):
 
     @property
     def wiki_url(self):
-        u = self.title_url
+        u = self.title_url.encode('utf-8')
         if u.startswith('Ratings/'):
             u = u[len('Ratings/'):]
         return settings.WIKI_URL + 'index.php?title=%s' % urllib.quote(u)
 
     @property
     def title(self):
-        s = self.title_url.decode('utf-8').replace('_', ' ')
+        s = self.title_url.replace('_', ' ')
         if s.startswith('Ratings/'):
             s = s[len('Ratings/'):]
         return s
@@ -89,7 +89,7 @@ class Category(models.Model):
     title = models.CharField(db_column='cat_title', max_length=255)
 
     def __unicode__(self):
-        return self.title.decode('utf-8')
+        return self.title
 
     class Meta:
         db_table = 'category'
