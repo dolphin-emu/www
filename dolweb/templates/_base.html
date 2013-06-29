@@ -55,15 +55,14 @@
                     <a class="brand" href="{% url home %}"><i class="logo sprite-nav-logo-small"></i>{% trans "Dolphin Emulator" %}</a>
                     <div class="nav-collapse">
                         <ul class="nav pull-left">
-                            <li><a href="{% url home %}">{% trans "Home" %}</a></li>
-                            <li><a href="{% url media-all %}">{% trans "Media" %}</a></li>
                             <li><a href="{% url downloads-index %}">{% trans "Download" %}</a></li>
+                            <li><a href="{% url media-all %}">{% trans "Screenshots" %}</a></li>
                             <li><a href="{% url docs-faq %}">{% trans "FAQ" %}</a></li>
                             <li><a href="{% url docs-guides-index %}">{% trans "Guides" %}</a></li>
                             <li><a href="{% url compat-index %}">{% trans "Compatibility" %}</a></li>
                             <li><a href="{{ FORUM_URL }}">{% trans "Forum" %}</a></li>
                             <li><a href="{{ WIKI_URL }}">{% trans "Wiki" %}</a></li>
-                            <li><a href="{{ GCODE_URL }}">{% trans "Development" %}</a></li>
+                            <li><a href="{{ GCODE_URL }}">{% trans "Code" %}</a></li>
                         </ul>
                         <ul class="nav pull-right">
                             <li class="dropdown">
