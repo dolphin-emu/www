@@ -8,6 +8,7 @@ distribute==0.6.34
 django-annoying==0.7.6
 django-bootstrap-form==2.0.3
 django-debug-toolbar==0.9.4
+django-sslify==0.2
 glue==0.3
 paramiko==1.9.0
 polib==1.0.3
