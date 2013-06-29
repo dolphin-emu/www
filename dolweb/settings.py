@@ -230,9 +230,9 @@ LOGGING = {
     }
 }
 
-FORUM_URL = "http://forums.dolphin-emu.org/"
-WIKI_URL = "http://wiki.dolphin-emu.org/"
-GCODE_URL = "http://code.google.com/p/dolphin-emu/"
+FORUM_URL = "https://forums.dolphin-emu.org/"
+WIKI_URL = "https://wiki.dolphin-emu.org/"
+GCODE_URL = "https://code.google.com/p/dolphin-emu/"
 
 DEFAULT_HOST = "dolphin-emu.org"
 
