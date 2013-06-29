@@ -23,7 +23,8 @@ def guides_index(request):
 @render_to('docs-guide.html')
 def guide(request, slug):
     guide = get_object_or_404(Guide, slug=slug)
-    html = requests.get(guide.get_wiki_url()).text
+    headers = { 'X-Forwarded-Proto': 'https' }  # cheat!
+    html = requests.get(guide.get_wiki_url(), headers=headers).text
 
     # Hack to rebase the URLs
     html = html.replace('src="/', 'src="//wiki.dolphin-emu.org/')

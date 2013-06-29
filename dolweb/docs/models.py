@@ -61,7 +61,7 @@ class Guide(models.Model):
         return ('docs-guide', [self.slug])
 
     def get_wiki_url(self):
-        return 'https://wiki.dolphin-emu.org/index.php?title=%s&useskin=guideembed' % self.wiki_page
+        return 'http://wiki.dolphin-emu.org/index.php?title=%s&useskin=guideembed' % self.wiki_page
 
     class Meta:
         db_table = 'docs_guide2'
