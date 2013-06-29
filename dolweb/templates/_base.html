@@ -12,8 +12,8 @@
 
         <meta property="og:title" content="Dolphin Emulator" />
         <meta property="og:type" content="product" />
-        <meta property="og:url" content="http://www.facebook.com/dolphin.emu" />
-        <meta property="og:image" content="http://sphotos-a.ak.fbcdn.net/hphotos-ak-prn1/73367_365599063538538_1010982140_n.png" />
+        <meta property="og:url" content="https://www.facebook.com/dolphin.emu" />
+        <meta property="og:image" content="https://sphotos-a.ak.fbcdn.net/hphotos-ak-prn1/73367_365599063538538_1010982140_n.png" />
         <meta property="og:site_name" content="Dolphin Emulator" />
         <meta property="fb:admins" content="1064682820" />
 
@@ -70,7 +70,7 @@
                                 <ul class="dropdown-menu">
                                 {% for langcode, langname in LANGUAGES %}
                                     {% if langcode != LANGUAGE_CODE|short %}
-                                    <li><a href="http://{{ langcode|to_subdomain }}{{ request.path }}?nocr=true"><div class="flag sprite-nav-{{ langcode }}"></div><span dir="{{ langcode|langdir }}">{{ langname }}</span></a></li>
+                                    <li><a href="//{{ langcode|to_subdomain }}{{ request.path }}?nocr=true"><div class="flag sprite-nav-{{ langcode }}"></div><span dir="{{ langcode|langdir }}">{{ langname }}</span></a></li>
                                     {% endif %}
                                 {% endfor %}
                                 </ul>
@@ -90,7 +90,7 @@
                 <button type="button" class="close" data-dismiss="alert">&times;</button>
                 You have been redirected to the <strong>{{ LANGUAGE_CODE|langname }}</strong>
                 version of the website based on your browser language preferences.
-                If you prefer the english version, <a href="http://{{ DEFAULT_HOST }}{{ request.path }}?nocr=true">click here to go back</a>.
+                If you prefer the english version, <a href="//{{ DEFAULT_HOST }}{{ request.path }}?nocr=true">click here to go back</a>.
             </div>
             {% endif %}
             {% block "body" %}
