@@ -26,8 +26,8 @@ def guide(request, slug):
     html = requests.get(guide.get_wiki_url()).text
 
     # Hack to rebase the URLs
-    html = html.replace('src="/', 'src="http://wiki.dolphin-emu.org/')
-    html = html.replace('href="/', 'href="http://wiki.dolphin-emu.org/')
+    html = html.replace('src="/', 'src="//wiki.dolphin-emu.org/')
+    html = html.replace('href="/', 'href="//wiki.dolphin-emu.org/')
 
     return { 'title': guide.title, 'guide': html }
 
