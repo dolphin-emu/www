@@ -40,7 +40,7 @@ class DevVersion(DownloadableVersion):
 
     branch = models.CharField(max_length=64, db_index=True)
     shortrev = models.CharField(max_length=64)
-    hash = models.CharField(max_length=64, db_index=True)
+    hash = models.CharField(max_length=64, unique=True, db_index=True)
     date = models.DateTimeField(auto_now_add=True)
     author = models.CharField(max_length=128)
     description = models.TextField()
