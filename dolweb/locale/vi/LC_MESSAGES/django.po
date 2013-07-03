@@ -3,135 +3,135 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Hydriz <admin@alphacorp.tk>, 2013
+# ppanhh <ppanhh@gmail.com>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-04-09 01:11+0200\n"
-"PO-Revision-Date: 2013-06-30 08:30+0000\n"
-"Last-Translator: delroth <delroth@gmail.com>\n"
-"Language-Team: Chinese (Taiwan) (http://www.transifex.com/projects/p/dolphin-emu/language/zh_TW/)\n"
+"PO-Revision-Date: 2013-06-30 09:01+0000\n"
+"Last-Translator: ppanhh <ppanhh@gmail.com>\n"
+"Language-Team: Vietnamese (http://www.transifex.com/projects/p/dolphin-emu/language/vi/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: zh_TW\n"
+"Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: compat/templates/compat-list.html:8
 #, python-format
 msgid "Compatibility List - page %(page)s"
-msgstr ""
+msgstr "Danh sách tương thích - trang %(page)s"
 
 #: compat/templates/compat-list.html:20
 msgid "How to read the ratings"
-msgstr "如何閱讀評級"
+msgstr "Đọc để biết cách xếp hạng"
 
 #: compat/templates/compat-list.html:23
 msgid "5 out of 5"
-msgstr ""
+msgstr "Đã hết phần 5 của 5"
 
 #: compat/templates/compat-list.html:23
 msgid "<strong>Perfect</strong>: No issues at all!"
-msgstr "<strong>完美</strong>：沒問題！"
+msgstr "<strong>Hoàn hảo</strong>: Hoàn toàn không lỗi!"
 
 #: compat/templates/compat-list.html:24
 msgid "4 out of 5"
-msgstr ""
+msgstr "Phần 4 của 5"
 
 #: compat/templates/compat-list.html:24
 msgid ""
 "<strong>Playable</strong>: Runs well, only minor graphical or audio "
 "glitches. Games can be played all the way through."
-msgstr ""
+msgstr "<strong>Có thể chơi được</strong>: Chạy tốt, chỉ gặp một số vấn đề nhỏ về đồ họa và âm thanh. Game có thể được chơi toàn bộ qua các màn."
 
 #: compat/templates/compat-list.html:25
 msgid "3 out of 5"
-msgstr ""
+msgstr "Phần 3 của 5"
 
 #: compat/templates/compat-list.html:25
 msgid ""
 "<strong>Starts</strong>: Starts, maybe even plays well, but crashes or major"
 " graphical/audio glitches."
-msgstr ""
+msgstr "<strong>Bắt đầu</strong>: Bắt đầu, mặc dù khi đã chơi một cách rất Phồng Tôm, nhưng lỗi và một số vấn đề về đồ họa/âm thanh vẫn hay xuất hiện."
 
 #: compat/templates/compat-list.html:26
 msgid "2 out of 5"
-msgstr ""
+msgstr "Phần 2 của 5"
 
 #: compat/templates/compat-list.html:26
 msgid ""
 "<strong>Intro/Menu</strong>: Hangs/crashes somewhere between booting and "
 "starting."
-msgstr ""
+msgstr "<strong>Giới thiệu/Menu</strong>: Bị treo/tắt đột ngột trong quá trình khởi động và chạy."
 
 #: compat/templates/compat-list.html:27
 msgid "1 out of 5"
-msgstr ""
+msgstr "Phần 1 của 5"
 
 #: compat/templates/compat-list.html:27
 msgid "<strong>Broken</strong>: Crashes when booting."
-msgstr ""
+msgstr "<strong>Bị lỗi</strong>: Thường tắt bất chợt khi tải game."
 
 #: compat/templates/compat-list.html:34
 msgid "Statistics"
-msgstr "統計"
+msgstr "Thống kê"
 
 #: compat/templates/compat-list.html:54
 msgid "Game title (click for details)"
-msgstr "遊戲標題（點擊了解詳情）"
+msgstr "Tựa đề game (click để biết thêm chi tiết)"
 
 #: compat/templates/compat-list.html:55 templates/_base.html:63
 msgid "Compatibility"
-msgstr ""
+msgstr "Khả năng tương thích"
 
 #: compat/templates/compat-list.html:56
 msgid "Last updated"
-msgstr "最後更新"
+msgstr "Lần cập trước"
 
 #: compat/templatetags/compat.py:7
 msgid "Unknown"
-msgstr "未知"
+msgstr "Chưa rõ"
 
 #: compat/templatetags/compat.py:8
 msgid "Broken"
-msgstr ""
+msgstr "Bị lỗi"
 
 #: compat/templatetags/compat.py:9
 msgid "Intro/Menu"
-msgstr ""
+msgstr "Giới thiệu/Menu"
 
 #: compat/templatetags/compat.py:10
 msgid "Starts"
-msgstr "能開始"
+msgstr "Bắt đầu"
 
 #: compat/templatetags/compat.py:11
 msgid "Playable"
-msgstr "能玩"
+msgstr "Chơi được"
 
 #: compat/templatetags/compat.py:12
 msgid "Perfect"
-msgstr "完美"
+msgstr "Hoàn hảo"
 
 #: docs/templates/docs-faq.html:7
 msgid "Frequently Asked Questions"
-msgstr "常問問題"
+msgstr "Các câu hỏi thường gặp"
 
 #: docs/templates/docs-guide.html:11
 msgid "Go back to the guides list"
-msgstr ""
+msgstr "Quay trở lại danh sách hướng dẫn"
 
 #: docs/templates/docs-guides-index.html:5 templates/_base.html:62
 msgid "Guides"
-msgstr "指南書"
+msgstr "Hướng dẫn"
 
 #: docs/templates/docs-guides-index.html:9
 msgid "Guides and documentation"
-msgstr ""
+msgstr "Tài liệu hướng dẫn sử dụng"
 
 #: docs/templates/docs-guides-index.html:17
 msgid "No published guide available"
-msgstr "沒有已發布的指南書可以用"
+msgstr "Hiện phần này đang được biên soạn"
 
 #: downloads/models.py:32 downloads/models.py:50
 #, python-format
@@ -141,34 +141,34 @@ msgstr "Dolphin %s"
 #: downloads/templates/downloads-branches.html:5
 #: downloads/templates/downloads-branches.html:9
 msgid "Download development builds"
-msgstr ""
+msgstr "Tải về các bản cài đặt phát triển"
 
 #: downloads/templates/downloads-branches.html:18
 #, python-format
 msgid "<tt>%(branch)s</tt> branch"
-msgstr ""
+msgstr "<tt>%(branch)s</tt> nhánh"
 
 #: downloads/templates/downloads-branches.html:21
 #: downloads/templates/downloads-index.html:89
 msgid "View older versions »"
-msgstr "查閱舊式版本"
+msgstr "Xem các phiên bản cũ hơn »"
 
 #: downloads/templates/downloads-branches.html:28
 msgid "Branch list"
-msgstr ""
+msgstr "Danh sách nhánh"
 
 #: downloads/templates/downloads-devrel.html:19
 msgid "No development release yet"
-msgstr "還未有發育中的發行"
+msgstr "Hiện vẫn chưa công bố phiên bản phát triển"
 
 #: downloads/templates/downloads-index.html:6
 #: downloads/templates/downloads-index.html:25 templates/_base.html:60
 msgid "Download"
-msgstr "下載"
+msgstr "Tải xuống"
 
 #: downloads/templates/downloads-index.html:29
 msgid "Stable versions"
-msgstr "穩定版本"
+msgstr "Phiên bản ổn định"
 
 #: downloads/templates/downloads-index.html:31
 msgid ""
@@ -176,15 +176,15 @@ msgid ""
 "    Stable versions are released after a lot of testing to ensure emulation\n"
 "    performance and stability. <strong>If you do not know what version of\n"
 "    Dolphin you should use, the latest stable version is generally the best.</strong>\n"
-msgstr ""
+msgstr "\nPhiên bản ổn định được phát hành sau nhiều quá trình thử nghiệm với trình giả lập\nnhằm đạt được chất lượng và độ tin cậy nhất. <strong>Nếu bạn không biết loại phiên bản\nDolphin mà bạn nên sử dụng, hãy sử dụng phiên bản ổn định.</strong>\n"
 
 #: downloads/templates/downloads-index.html:53
 msgid "No stable release yet"
-msgstr "還未有穩定的版本"
+msgstr "Hiện chưa phát hành phiên bản ổn định"
 
 #: downloads/templates/downloads-index.html:74
 msgid "Development versions"
-msgstr "發育中的版本"
+msgstr "Phiên bản phát triển"
 
 #: downloads/templates/downloads-index.html:76
 msgid ""
@@ -193,19 +193,19 @@ msgid ""
 "    developer makes a change to Dolphin. Using development versions enables you\n"
 "    to use the latest and greatest improvements to the project, at the cost of\n"
 "    decreased stability.\n"
-msgstr ""
+msgstr "\n    <strong>Cảnh báo!</strong> Phiên bản phát triển được ban hành mỗi\n    khi các nhà phát triển tiến hành các thay đổi trong Dolphin. Sử dụng phiên bản phát triển cho phép bạn\n   tiếp cận các tính năng mới nhất và tuyệt vời nhất từ dự án, tuy nhiên\n    độ ổn định của phiên bản loại này vẫn cần được cải thiện theo thời gian.\n"
 
 #: downloads/templates/downloads-index.html:83
 msgid "Only displaying the <tt>master</tt> branch versions."
-msgstr ""
+msgstr "Chỉ hiện thị <tt>phần chính</tt> đối với phiên bản nhánh."
 
 #: downloads/templates/downloads-index.html:84
 msgid "Show all available branches"
-msgstr ""
+msgstr "Hiển thị tất cả các nhánh hiện có"
 
 #: downloads/templates/downloads-index.html:93
 msgid "Source code"
-msgstr "源代碼"
+msgstr "Mã nguồn"
 
 #: downloads/templates/downloads-index.html:95
 msgid ""
@@ -213,7 +213,7 @@ msgid ""
 "    The latest version of the Dolphin source code can be downloaded from the\n"
 "    project Git repository.\n"
 "    "
-msgstr ""
+msgstr "\nPhiên bản mã nguồn mới nhất của Dolphin có thể được tải về từ\ntrang web Git."
 
 #: downloads/templates/downloads-index.html:103
 msgid ""
@@ -221,84 +221,84 @@ msgid ""
 "    You can also <a href=\"http://code.google.com/p/dolphin-emu/source/browse/\">browse\n"
 "        the current version of the source code</a>.\n"
 "    "
-msgstr ""
+msgstr "\n   Bạn có thể truy cập <a href=\"http://code.google.com/p/dolphin-emu/source/browse/\">để\n        có được phiên bản mã nguồn mới nhất</a>.\n    "
 
 #: downloads/templates/downloads-list.html:5
 #, python-format
 msgid "%(branch)s branch - page %(page)s"
-msgstr ""
+msgstr "%(branch)s nhánh - trang %(page)s"
 
 #: downloads/templates/downloads-list.html:9
 #, python-format
 msgid "<tt>%(branch)s</tt> branch - page %(page)s"
-msgstr ""
+msgstr "<tt>%(branch)s</tt> nhánh - trang %(page)s"
 
 #: downloads/templates/downloads-view-devrel.html:6
 #, python-format
 msgid "Information on %(br)s"
-msgstr "關於%(br)s的訊息"
+msgstr "Thông tin trên %(br)s"
 
 #: downloads/templates/downloads-view-devrel.html:10
 #, python-format
 msgid "Information for %(br)s"
-msgstr "關於%(br)s的訊息"
+msgstr "Thôn tin về %(br)s"
 
 #: downloads/templates/downloads-view-devrel.html:16
 msgid "Version"
-msgstr "版本"
+msgstr "Phiên bản"
 
 #: downloads/templates/downloads-view-devrel.html:19
 msgid "Branch"
-msgstr ""
+msgstr "Nhánh"
 
 #: downloads/templates/downloads-view-devrel.html:22
 msgid "Date"
-msgstr "日期"
+msgstr "Ngày"
 
 #: downloads/templates/downloads-view-devrel.html:31
 msgid "Commit"
-msgstr ""
+msgstr "Xác nhận"
 
 #: downloads/templates/downloads-view-devrel.html:34
 msgid "Change author"
-msgstr "編輯作者"
+msgstr "Thay đổi tác giả"
 
 #: downloads/templates/downloads-view-devrel.html:37
 msgid "Change description"
-msgstr ""
+msgstr "Thay đổi mô tả"
 
 #: homepage/templates/homepage-home.html:7
 msgid "Gamecube/Wii games on PC"
-msgstr ""
+msgstr "Gamecube/Wii games trên PC"
 
 #: homepage/templates/homepage-home.html:25 templates/_base.html:9
 #: templates/_base.html.py:55
 msgid "Dolphin Emulator"
-msgstr "Dolphin 仿真器"
+msgstr "Trình Giả Lập Dolphin"
 
 #: homepage/templates/homepage-home.html:27
 msgid "Play Gamecube and Wii games in 1080p on your PC."
-msgstr ""
+msgstr "Chơi Gamecube và Wii games với độ phân giải 1080 trên PC của bạn."
 
 #: homepage/templates/homepage-home.html:30
 #, python-format
 msgid "Download %(last_release)s now for Windows, Mac and Linux »"
-msgstr ""
+msgstr "Tải xuống %(last_release)s dành cho Windows, Mac and Linux »"
 
 #: homepage/templates/homepage-home.html:33
 msgid ""
 "\n"
 "                <strong>Minimal requirements</strong>: SSE2 compatible CPU, Shader Model 3.0 GPU, 2GB of RAM, 50MB of disk space\n"
 "                "
-msgstr ""
+msgstr "\n                <strong>Yêu cầu hệ thống tối thiểu</strong>: SSE2 compatible CPU, Shader Model 3.0 GPU, 2GB of RAM, 50MB of disk space\n                "
 
 #: homepage/templates/homepage-home.html:38
 msgid "More information about hardware requirements"
-msgstr ""
+msgstr "Thông tin chi tiết về yêu cầu phần cứng"
 
 #: homepage/templates/homepage-home.html:68
 msgid "Improved graphics"
-msgstr ""
+msgstr "Cải tiến card đồ họa"
 
 #: homepage/templates/homepage-home.html:71
 #, python-format
@@ -309,11 +309,11 @@ msgid ""
 "        Gamecube and Wii games. <a href=\"%(MEDIA_PAGE_URL)s\">View screenshots\n"
 "        of games played on Dolphin</a>.\n"
 "        "
-msgstr ""
+msgstr "\n        The Wii chỉ render games ở độ phân giải 480p. Dolphin hỗ trợ\n        720p, 1080p và thậm chí là các độ phân giải lớn hơn dành cho hệ thống\n        Gamecube và Wii games. <a href=\"%(MEDIA_PAGE_URL)s\">Xem hình ảnh sơ lược\n        của game được giả lập trên Dolphin</a>.\n        "
 
 #: homepage/templates/homepage-home.html:81
 msgid "Use your favorite controller"
-msgstr ""
+msgstr "Sử dụng điều khiển yêu thích"
 
 #: homepage/templates/homepage-home.html:83
 msgid ""
@@ -323,19 +323,19 @@ msgid ""
 "        and mouse! Wiimotes are still supported, including Wii Motion Plus\n"
 "        for games that require it.\n"
 "        "
-msgstr ""
+msgstr "\n        Không thích điều khiển Gamecube và Wiimote? Bạn có thể\n        chơi game bằng điều khiển của chính máy PC, hoặc thậm chí là với bàn phím\n        kèm theo chuột! Wiimotes hiện đang được hỗ trợ, bao gồm Wii Motion Plus\n        cho game nào yêu cầu.\n        "
 
 #: homepage/templates/homepage-home.html:93
 msgid "Recent Dolphin news"
-msgstr "最近 Dolphin 新聞"
+msgstr "Tin tức gần đây về Dolphin"
 
 #: homepage/templates/homepage-home.html:98
 msgid "by"
-msgstr "由"
+msgstr "bởi"
 
 #: homepage/templates/homepage-home.html:110
 msgid "Great compatibility"
-msgstr ""
+msgstr "Khả năng tương thích cao"
 
 #: homepage/templates/homepage-home.html:113
 #, python-format
@@ -347,11 +347,11 @@ msgid ""
 "        the <a href=\"%(COMPAT_URL)s\">Dolphin compatibility list</a>\n"
 "        or the <a href=\"%(WIKI_URL)s\">Dolphin wiki</a> for more details.\n"
 "        "
-msgstr ""
+msgstr "\n        Dolphin có thể chơi hầu hết các game trên Gamecube và Wii games\n        mà không gặp khó khăn. Phiên bản mới của Wii thường được cập nhật mỗi ngày.\n        Wiiware và Virtual Console game cũng được hỗ trợ. Truy\n        cập <a href=\"%(COMPAT_URL)s\">Danh sách tương thích với Dolphin</a>\n        hoặc <a href=\"%(WIKI_URL)s\">Dolphin wiki</a> để biết thêm chi tiết.\n        "
 
 #: homepage/templates/homepage-home.html:124
 msgid "Helpful community"
-msgstr ""
+msgstr "Cộng động đông đảo"
 
 #: homepage/templates/homepage-home.html:127
 #, python-format
@@ -363,11 +363,11 @@ msgid ""
 "        can't help you, other Dolphin users may be willing to help you over at the\n"
 "        <a href=\"%(FORUM_URL)s\">official discussion forums</a>.\n"
 "        "
-msgstr ""
+msgstr "\n        Có vấn đề khi cài đặt? Cố gắng thử các thiết lập tốt nhất cho\n        game? Hoặc đơn giản là thích thảo luận về Gamecube và Wii games\n        mà bạn thích? Nếu <a href=\"%(FAQ_URL)s\">Câu hỏi thường gặp</a>\n        không thể giúp bạn, cộng đồng những người sử dụng Dolphin sẽ có thể trợ giúp bạn tại\n        <a href=\"%(FORUM_URL)s\">diễn đàn thảo luận</a>.\n        "
 
 #: homepage/templates/homepage-home.html:138
 msgid "Free and Open Source"
-msgstr ""
+msgstr "Miễn phí và mã nguồn mở"
 
 #: homepage/templates/homepage-home.html:140
 #, python-format
@@ -378,47 +378,47 @@ msgid ""
 "        Grab the emulator source code from <a href=\"%(GCODE_URL)s\">Google\n"
 "        Code</a> and start hacking!\n"
 "        "
-msgstr ""
+msgstr "\n        Trình giả lập Dolphin được phát triển bởi các tình nguyện viên từ khắp nơi trên\n        thế giới và được phát hành miễn phí. Bạn muốn giúp đỡ dự án?\n        Hãy thử tải về mã nguồn của chương trình từ <a href=\"%(GCODE_URL)s\">Google\n        Code</a> và bắt đầu phồng tôm với mã nguồn nhé!\n        "
 
 #: media/templates/media-all.html:6 media/templates/media-all.html.py:19
 msgid "Media gallery"
-msgstr ""
+msgstr "Thư viện Media"
 
 #: media/templates/media-all.html:43
 msgid "Full size"
-msgstr ""
+msgstr "Kích thước đầy đủ"
 
 #: media/templates/media-all.html:44
 msgid "Previous"
-msgstr "上一頁"
+msgstr "Trước đó"
 
 #: media/templates/media-all.html:45
 msgid "Next"
-msgstr "下一頁"
+msgstr "Tiếp theo"
 
 #: templates/_base.html:58
 msgid "Home"
-msgstr "首頁"
+msgstr "Trang chủ"
 
 #: templates/_base.html:59
 msgid "Media"
-msgstr "媒體"
+msgstr "Media"
 
 #: templates/_base.html:61
 msgid "FAQ"
-msgstr "常問問題"
+msgstr "Các câu hỏi thường gặp"
 
 #: templates/_base.html:64
 msgid "Forum"
-msgstr "論壇"
+msgstr "Diễn đàn"
 
 #: templates/_base.html:65
 msgid "Wiki"
-msgstr "維基"
+msgstr "Wiki"
 
 #: templates/_base.html:66
 msgid "Development"
-msgstr "發育中"
+msgstr "Phát triển"
 
 #: templates/_base.html:103
 msgid ""
@@ -426,4 +426,4 @@ msgid ""
 "            &copy; 2012 Dolphin Emulator Project -\n"
 "            <a href=\"https://bitbucket.org/delroth/dolphin-web/\">Website source code</a>\n"
 "            "
-msgstr ""
+msgstr "\n            &copy; 2012 Dolphin Emulator Project -\n            <a href=\"https://bitbucket.org/delroth/dolphin-web/\">Website dành cho mã nguồn</a>\n            "

@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-02-14 06:21+0100\n"
-"PO-Revision-Date: 2013-04-29 08:45+0000\n"
+"POT-Creation-Date: 2013-04-09 01:11+0200\n"
+"PO-Revision-Date: 2013-06-30 08:30+0000\n"
 "Last-Translator: delroth <delroth@gmail.com>\n"
 "Language-Team: Japanese (http://www.transifex.com/projects/p/dolphin-emu/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -18,74 +18,74 @@ msgstr ""
 "Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: compat/templates/compat-list.html:7
+#: compat/templates/compat-list.html:8
 #, python-format
 msgid "Compatibility List - page %(page)s"
 msgstr "互換性リスト - %(page)s ページ"
 
-#: compat/templates/compat-list.html:19
+#: compat/templates/compat-list.html:20
 msgid "How to read the ratings"
 msgstr "レーティングについて"
 
-#: compat/templates/compat-list.html:22
+#: compat/templates/compat-list.html:23
 msgid "5 out of 5"
 msgstr "五つ星"
 
-#: compat/templates/compat-list.html:22
+#: compat/templates/compat-list.html:23
 msgid "<strong>Perfect</strong>: No issues at all!"
 msgstr "<strong>カンペキ</strong>: 全てにおいて問題なく動作します！"
 
-#: compat/templates/compat-list.html:23
+#: compat/templates/compat-list.html:24
 msgid "4 out of 5"
 msgstr "四つ星"
 
-#: compat/templates/compat-list.html:23
+#: compat/templates/compat-list.html:24
 msgid ""
 "<strong>Playable</strong>: Runs well, only minor graphical or audio "
 "glitches. Games can be played all the way through."
 msgstr "<strong>サクサク</strong>: 上手く動作しますが、画面や音に不具合が出ることも。始めから終わりまでプレイすることが可能です。"
 
-#: compat/templates/compat-list.html:24
+#: compat/templates/compat-list.html:25
 msgid "3 out of 5"
 msgstr "三つ星"
 
-#: compat/templates/compat-list.html:24
+#: compat/templates/compat-list.html:25
 msgid ""
 "<strong>Starts</strong>: Starts, maybe even plays well, but crashes or major"
 " graphical/audio glitches."
 msgstr "<strong>ソコソコ</strong>:上手く動作するように見えますが、クラッシュしたり、音や画面に大きな問題が発生します。"
 
-#: compat/templates/compat-list.html:25
+#: compat/templates/compat-list.html:26
 msgid "2 out of 5"
 msgstr "二つ星"
 
-#: compat/templates/compat-list.html:25
+#: compat/templates/compat-list.html:26
 msgid ""
 "<strong>Intro/Menu</strong>: Hangs/crashes somewhere between booting and "
 "starting."
 msgstr "<strong>イントロ</strong>: 起動時、もしくはゲーム開始時にクラッシュするため、それ以上は先に進めません。"
 
-#: compat/templates/compat-list.html:26
+#: compat/templates/compat-list.html:27
 msgid "1 out of 5"
 msgstr "一つ星"
 
-#: compat/templates/compat-list.html:26
+#: compat/templates/compat-list.html:27
 msgid "<strong>Broken</strong>: Crashes when booting."
 msgstr "<strong>ダメダメ</strong>: 起動時にクラッシュします。"
 
-#: compat/templates/compat-list.html:33
+#: compat/templates/compat-list.html:34
 msgid "Statistics"
 msgstr "統計"
 
-#: compat/templates/compat-list.html:53
+#: compat/templates/compat-list.html:54
 msgid "Game title (click for details)"
 msgstr "ゲームタイトル（クリックで詳細な情報へ）"
 
-#: compat/templates/compat-list.html:54 templates/_base.html:62
+#: compat/templates/compat-list.html:55 templates/_base.html:63
 msgid "Compatibility"
 msgstr "互換性"
 
-#: compat/templates/compat-list.html:55
+#: compat/templates/compat-list.html:56
 msgid "Last updated"
 msgstr "情報更新日"
 
@@ -113,19 +113,21 @@ msgstr "サクサク"
 msgid "Perfect"
 msgstr "カンペキ"
 
-#: docs/templates/docs-faq.html:6
+#: docs/templates/docs-faq.html:7
 msgid "Frequently Asked Questions"
 msgstr "よくある質問"
 
-#: docs/templates/docs-guides-index.html:5
-#: docs/templates/docs-guides-index.html:9 templates/_base.html:61
+#: docs/templates/docs-guide.html:11
+msgid "Go back to the guides list"
+msgstr ""
+
+#: docs/templates/docs-guides-index.html:5 templates/_base.html:62
 msgid "Guides"
 msgstr "利用ガイド"
 
-#: docs/templates/docs-guides-index.html:15
-#, python-format
-msgid "(by %(author)s)"
-msgstr "(by %(author)s)"
+#: docs/templates/docs-guides-index.html:9
+msgid "Guides and documentation"
+msgstr ""
 
 #: docs/templates/docs-guides-index.html:17
 msgid "No published guide available"
@@ -141,17 +143,17 @@ msgstr "Dolphin %s"
 msgid "Download development builds"
 msgstr "開発版のダウンロード"
 
-#: downloads/templates/downloads-branches.html:17
+#: downloads/templates/downloads-branches.html:18
 #, python-format
 msgid "<tt>%(branch)s</tt> branch"
 msgstr "<tt>%(branch)s</tt> branch"
 
-#: downloads/templates/downloads-branches.html:20
+#: downloads/templates/downloads-branches.html:21
 #: downloads/templates/downloads-index.html:89
 msgid "View older versions »"
 msgstr "過去のバージョンを入手 »"
 
-#: downloads/templates/downloads-branches.html:27
+#: downloads/templates/downloads-branches.html:28
 msgid "Branch list"
 msgstr "Branch リスト"
 
@@ -160,7 +162,7 @@ msgid "No development release yet"
 msgstr "現在、開発版のリリースはありません。"
 
 #: downloads/templates/downloads-index.html:6
-#: downloads/templates/downloads-index.html:25 templates/_base.html:59
+#: downloads/templates/downloads-index.html:25 templates/_base.html:60
 msgid "Download"
 msgstr "ダウンロード"
 
@@ -270,7 +272,7 @@ msgid "Gamecube/Wii games on PC"
 msgstr "Gamecube/Wii games on PC"
 
 #: homepage/templates/homepage-home.html:25 templates/_base.html:9
-#: templates/_base.html.py:54
+#: templates/_base.html.py:55
 msgid "Dolphin Emulator"
 msgstr "Dolphin Emulator"
 
@@ -394,31 +396,31 @@ msgstr "前へ"
 msgid "Next"
 msgstr "次へ"
 
-#: templates/_base.html:57
+#: templates/_base.html:58
 msgid "Home"
 msgstr "ホーム"
 
-#: templates/_base.html:58
+#: templates/_base.html:59
 msgid "Media"
 msgstr "ギャラリー"
 
-#: templates/_base.html:60
+#: templates/_base.html:61
 msgid "FAQ"
 msgstr "FAQ"
 
-#: templates/_base.html:63
+#: templates/_base.html:64
 msgid "Forum"
 msgstr "フォーラム"
 
-#: templates/_base.html:64
+#: templates/_base.html:65
 msgid "Wiki"
 msgstr "Wiki"
 
-#: templates/_base.html:65
+#: templates/_base.html:66
 msgid "Development"
 msgstr "開発"
 
-#: templates/_base.html:102
+#: templates/_base.html:103
 msgid ""
 "\n"
 "            &copy; 2012 Dolphin Emulator Project -\n"

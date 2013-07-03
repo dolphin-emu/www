@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-02-14 06:21+0100\n"
-"PO-Revision-Date: 2013-04-29 08:45+0000\n"
+"POT-Creation-Date: 2013-04-09 01:11+0200\n"
+"PO-Revision-Date: 2013-06-30 08:31+0000\n"
 "Last-Translator: delroth <delroth@gmail.com>\n"
 "Language-Team: Norwegian Bokmål (http://www.transifex.com/projects/p/dolphin-emu/language/nb/)\n"
 "MIME-Version: 1.0\n"
@@ -18,74 +18,74 @@ msgstr ""
 "Language: nb\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: compat/templates/compat-list.html:7
+#: compat/templates/compat-list.html:8
 #, python-format
 msgid "Compatibility List - page %(page)s"
 msgstr ""
 
-#: compat/templates/compat-list.html:19
+#: compat/templates/compat-list.html:20
 msgid "How to read the ratings"
 msgstr ""
 
-#: compat/templates/compat-list.html:22
+#: compat/templates/compat-list.html:23
 msgid "5 out of 5"
 msgstr ""
 
-#: compat/templates/compat-list.html:22
+#: compat/templates/compat-list.html:23
 msgid "<strong>Perfect</strong>: No issues at all!"
 msgstr ""
 
-#: compat/templates/compat-list.html:23
+#: compat/templates/compat-list.html:24
 msgid "4 out of 5"
 msgstr ""
 
-#: compat/templates/compat-list.html:23
+#: compat/templates/compat-list.html:24
 msgid ""
 "<strong>Playable</strong>: Runs well, only minor graphical or audio "
 "glitches. Games can be played all the way through."
 msgstr ""
 
-#: compat/templates/compat-list.html:24
+#: compat/templates/compat-list.html:25
 msgid "3 out of 5"
 msgstr ""
 
-#: compat/templates/compat-list.html:24
+#: compat/templates/compat-list.html:25
 msgid ""
 "<strong>Starts</strong>: Starts, maybe even plays well, but crashes or major"
 " graphical/audio glitches."
 msgstr ""
 
-#: compat/templates/compat-list.html:25
+#: compat/templates/compat-list.html:26
 msgid "2 out of 5"
 msgstr ""
 
-#: compat/templates/compat-list.html:25
+#: compat/templates/compat-list.html:26
 msgid ""
 "<strong>Intro/Menu</strong>: Hangs/crashes somewhere between booting and "
 "starting."
 msgstr ""
 
-#: compat/templates/compat-list.html:26
+#: compat/templates/compat-list.html:27
 msgid "1 out of 5"
 msgstr ""
 
-#: compat/templates/compat-list.html:26
+#: compat/templates/compat-list.html:27
 msgid "<strong>Broken</strong>: Crashes when booting."
 msgstr ""
 
-#: compat/templates/compat-list.html:33
+#: compat/templates/compat-list.html:34
 msgid "Statistics"
 msgstr ""
 
-#: compat/templates/compat-list.html:53
+#: compat/templates/compat-list.html:54
 msgid "Game title (click for details)"
 msgstr ""
 
-#: compat/templates/compat-list.html:54 templates/_base.html:62
+#: compat/templates/compat-list.html:55 templates/_base.html:63
 msgid "Compatibility"
 msgstr ""
 
-#: compat/templates/compat-list.html:55
+#: compat/templates/compat-list.html:56
 msgid "Last updated"
 msgstr ""
 
@@ -113,19 +113,21 @@ msgstr ""
 msgid "Perfect"
 msgstr ""
 
-#: docs/templates/docs-faq.html:6
+#: docs/templates/docs-faq.html:7
 msgid "Frequently Asked Questions"
 msgstr "Ofte Stilte Spørsmål"
 
-#: docs/templates/docs-guides-index.html:5
-#: docs/templates/docs-guides-index.html:9 templates/_base.html:61
+#: docs/templates/docs-guide.html:11
+msgid "Go back to the guides list"
+msgstr ""
+
+#: docs/templates/docs-guides-index.html:5 templates/_base.html:62
 msgid "Guides"
 msgstr "Guider"
 
-#: docs/templates/docs-guides-index.html:15
-#, python-format
-msgid "(by %(author)s)"
-msgstr "(av %(author)s)"
+#: docs/templates/docs-guides-index.html:9
+msgid "Guides and documentation"
+msgstr ""
 
 #: docs/templates/docs-guides-index.html:17
 msgid "No published guide available"
@@ -141,17 +143,17 @@ msgstr "Dolphin %s"
 msgid "Download development builds"
 msgstr "Last ned utvikler-builds"
 
-#: downloads/templates/downloads-branches.html:17
+#: downloads/templates/downloads-branches.html:18
 #, python-format
 msgid "<tt>%(branch)s</tt> branch"
 msgstr "<tt>%(branch)s</tt> grein"
 
-#: downloads/templates/downloads-branches.html:20
+#: downloads/templates/downloads-branches.html:21
 #: downloads/templates/downloads-index.html:89
 msgid "View older versions »"
 msgstr "Vis eldre builds »"
 
-#: downloads/templates/downloads-branches.html:27
+#: downloads/templates/downloads-branches.html:28
 msgid "Branch list"
 msgstr "Greinliste"
 
@@ -160,7 +162,7 @@ msgid "No development release yet"
 msgstr "Ingen utviklings-release enda"
 
 #: downloads/templates/downloads-index.html:6
-#: downloads/templates/downloads-index.html:25 templates/_base.html:59
+#: downloads/templates/downloads-index.html:25 templates/_base.html:60
 msgid "Download"
 msgstr "Last ned"
 
@@ -270,7 +272,7 @@ msgid "Gamecube/Wii games on PC"
 msgstr ""
 
 #: homepage/templates/homepage-home.html:25 templates/_base.html:9
-#: templates/_base.html.py:54
+#: templates/_base.html.py:55
 msgid "Dolphin Emulator"
 msgstr ""
 
@@ -394,31 +396,31 @@ msgstr ""
 msgid "Next"
 msgstr ""
 
-#: templates/_base.html:57
+#: templates/_base.html:58
 msgid "Home"
 msgstr ""
 
-#: templates/_base.html:58
+#: templates/_base.html:59
 msgid "Media"
 msgstr ""
 
-#: templates/_base.html:60
+#: templates/_base.html:61
 msgid "FAQ"
 msgstr ""
 
-#: templates/_base.html:63
+#: templates/_base.html:64
 msgid "Forum"
 msgstr ""
 
-#: templates/_base.html:64
+#: templates/_base.html:65
 msgid "Wiki"
 msgstr ""
 
-#: templates/_base.html:65
+#: templates/_base.html:66
 msgid "Development"
 msgstr ""
 
-#: templates/_base.html:102
+#: templates/_base.html:103
 msgid ""
 "\n"
 "            &copy; 2012 Dolphin Emulator Project -\n"

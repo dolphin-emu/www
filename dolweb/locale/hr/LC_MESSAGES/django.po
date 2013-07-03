@@ -3,135 +3,135 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Hydriz <admin@alphacorp.tk>, 2013
+# Alberto_CRO <albertopoljak@gmail.com>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-04-09 01:11+0200\n"
-"PO-Revision-Date: 2013-06-30 08:30+0000\n"
-"Last-Translator: delroth <delroth@gmail.com>\n"
-"Language-Team: Chinese (Taiwan) (http://www.transifex.com/projects/p/dolphin-emu/language/zh_TW/)\n"
+"PO-Revision-Date: 2013-07-03 18:24+0000\n"
+"Last-Translator: Alberto_CRO <albertopoljak@gmail.com>\n"
+"Language-Team: Croatian (http://www.transifex.com/projects/p/dolphin-emu/language/hr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: zh_TW\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Language: hr\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 
 #: compat/templates/compat-list.html:8
 #, python-format
 msgid "Compatibility List - page %(page)s"
-msgstr ""
+msgstr "Lista kompatibilnosti - stranica %(page)s"
 
 #: compat/templates/compat-list.html:20
 msgid "How to read the ratings"
-msgstr "如何閱讀評級"
+msgstr "Objašnjenje ocijena"
 
 #: compat/templates/compat-list.html:23
 msgid "5 out of 5"
-msgstr ""
+msgstr "5 od 5"
 
 #: compat/templates/compat-list.html:23
 msgid "<strong>Perfect</strong>: No issues at all!"
-msgstr "<strong>完美</strong>：沒問題！"
+msgstr "<strong>Savršeno</strong>: Problema nema!"
 
 #: compat/templates/compat-list.html:24
 msgid "4 out of 5"
-msgstr ""
+msgstr "4 od 5"
 
 #: compat/templates/compat-list.html:24
 msgid ""
 "<strong>Playable</strong>: Runs well, only minor graphical or audio "
 "glitches. Games can be played all the way through."
-msgstr ""
+msgstr "<strong>Igrivo</strong>: Možete prijeći cijelu igru uz tek poneku vizualnu ili audio grešku."
 
 #: compat/templates/compat-list.html:25
 msgid "3 out of 5"
-msgstr ""
+msgstr "3 od 5"
 
 #: compat/templates/compat-list.html:25
 msgid ""
 "<strong>Starts</strong>: Starts, maybe even plays well, but crashes or major"
 " graphical/audio glitches."
-msgstr ""
+msgstr "<strong>Pokrene se</strong>: Možda se i može igrati unatoč svim tim vizualnim/audio greškama."
 
 #: compat/templates/compat-list.html:26
 msgid "2 out of 5"
-msgstr ""
+msgstr "2 od 5"
 
 #: compat/templates/compat-list.html:26
 msgid ""
 "<strong>Intro/Menu</strong>: Hangs/crashes somewhere between booting and "
 "starting."
-msgstr ""
+msgstr "<strong>Uvod/Meni</strong>: Uruši se negdje između pokretanja i menija."
 
 #: compat/templates/compat-list.html:27
 msgid "1 out of 5"
-msgstr ""
+msgstr "1 od 5"
 
 #: compat/templates/compat-list.html:27
 msgid "<strong>Broken</strong>: Crashes when booting."
-msgstr ""
+msgstr "<strong>Pokvareno</strong>: Uruši se tijekom pokretanja."
 
 #: compat/templates/compat-list.html:34
 msgid "Statistics"
-msgstr "統計"
+msgstr "Statistike"
 
 #: compat/templates/compat-list.html:54
 msgid "Game title (click for details)"
-msgstr "遊戲標題（點擊了解詳情）"
+msgstr "Naslov Igre (kliknite za detalje)"
 
 #: compat/templates/compat-list.html:55 templates/_base.html:63
 msgid "Compatibility"
-msgstr ""
+msgstr "Kompatibilnost"
 
 #: compat/templates/compat-list.html:56
 msgid "Last updated"
-msgstr "最後更新"
+msgstr "Zadnji put ažurirano"
 
 #: compat/templatetags/compat.py:7
 msgid "Unknown"
-msgstr "未知"
+msgstr "Nepoznato"
 
 #: compat/templatetags/compat.py:8
 msgid "Broken"
-msgstr ""
+msgstr "Pokvareno"
 
 #: compat/templatetags/compat.py:9
 msgid "Intro/Menu"
-msgstr ""
+msgstr "Uvod/Meni"
 
 #: compat/templatetags/compat.py:10
 msgid "Starts"
-msgstr "能開始"
+msgstr "Pokrene se"
 
 #: compat/templatetags/compat.py:11
 msgid "Playable"
-msgstr "能玩"
+msgstr "Igrivo"
 
 #: compat/templatetags/compat.py:12
 msgid "Perfect"
-msgstr "完美"
+msgstr "Savršeno"
 
 #: docs/templates/docs-faq.html:7
 msgid "Frequently Asked Questions"
-msgstr "常問問題"
+msgstr "Često Postavljena Pitanja"
 
 #: docs/templates/docs-guide.html:11
 msgid "Go back to the guides list"
-msgstr ""
+msgstr "Natrag na listu vodiča"
 
 #: docs/templates/docs-guides-index.html:5 templates/_base.html:62
 msgid "Guides"
-msgstr "指南書"
+msgstr "Vodiči"
 
 #: docs/templates/docs-guides-index.html:9
 msgid "Guides and documentation"
-msgstr ""
+msgstr "Vodiči i dokumentacija"
 
 #: docs/templates/docs-guides-index.html:17
 msgid "No published guide available"
-msgstr "沒有已發布的指南書可以用"
+msgstr "Ni jedan takav vodič nije dostupan"
 
 #: downloads/models.py:32 downloads/models.py:50
 #, python-format
@@ -141,34 +141,34 @@ msgstr "Dolphin %s"
 #: downloads/templates/downloads-branches.html:5
 #: downloads/templates/downloads-branches.html:9
 msgid "Download development builds"
-msgstr ""
+msgstr "Preuzmi razvojnu verziju"
 
 #: downloads/templates/downloads-branches.html:18
 #, python-format
 msgid "<tt>%(branch)s</tt> branch"
-msgstr ""
+msgstr "<tt>%(branch)s</tt> grana"
 
 #: downloads/templates/downloads-branches.html:21
 #: downloads/templates/downloads-index.html:89
 msgid "View older versions »"
-msgstr "查閱舊式版本"
+msgstr "Pogledaj starije verzije »"
 
 #: downloads/templates/downloads-branches.html:28
 msgid "Branch list"
-msgstr ""
+msgstr "Lista grana"
 
 #: downloads/templates/downloads-devrel.html:19
 msgid "No development release yet"
-msgstr "還未有發育中的發行"
+msgstr "Razvojna verzija još nije izdana"
 
 #: downloads/templates/downloads-index.html:6
 #: downloads/templates/downloads-index.html:25 templates/_base.html:60
 msgid "Download"
-msgstr "下載"
+msgstr "Preuzmi"
 
 #: downloads/templates/downloads-index.html:29
 msgid "Stable versions"
-msgstr "穩定版本"
+msgstr "Stabilne verzije"
 
 #: downloads/templates/downloads-index.html:31
 msgid ""
@@ -176,15 +176,15 @@ msgid ""
 "    Stable versions are released after a lot of testing to ensure emulation\n"
 "    performance and stability. <strong>If you do not know what version of\n"
 "    Dolphin you should use, the latest stable version is generally the best.</strong>\n"
-msgstr ""
+msgstr "\nStabilne verzije se izdaju nakon mnogo testiranja da bi se osigurala brzina \ni stabilnost emulacije.<strong> Ako ne znate koju verziju \nDolphina da koristite, najnovija stabilna verzija je generalno najbolja.<strong>\n"
 
 #: downloads/templates/downloads-index.html:53
 msgid "No stable release yet"
-msgstr "還未有穩定的版本"
+msgstr "Stabilna verzije nije izdana"
 
 #: downloads/templates/downloads-index.html:74
 msgid "Development versions"
-msgstr "發育中的版本"
+msgstr "Verzije u izradi"
 
 #: downloads/templates/downloads-index.html:76
 msgid ""
@@ -193,19 +193,19 @@ msgid ""
 "    developer makes a change to Dolphin. Using development versions enables you\n"
 "    to use the latest and greatest improvements to the project, at the cost of\n"
 "    decreased stability.\n"
-msgstr ""
+msgstr "\n<strong>Upozorenje!</strong> Razvojne verzije se izdaju svaku put kada\nprogramer napravi promjene na Dolphinu. Razvojne verzije vam omogućuju\nda koristite najbolja i najnovija poboljšanja za cijenu smanjene stabilnosti.\n"
 
 #: downloads/templates/downloads-index.html:83
 msgid "Only displaying the <tt>master</tt> branch versions."
-msgstr ""
+msgstr "Prikazujem samo <tt>glavne</tt> grane."
 
 #: downloads/templates/downloads-index.html:84
 msgid "Show all available branches"
-msgstr ""
+msgstr "Prikaži sve dostupne grane"
 
 #: downloads/templates/downloads-index.html:93
 msgid "Source code"
-msgstr "源代碼"
+msgstr "Izvorni Kod"
 
 #: downloads/templates/downloads-index.html:95
 msgid ""
@@ -213,7 +213,7 @@ msgid ""
 "    The latest version of the Dolphin source code can be downloaded from the\n"
 "    project Git repository.\n"
 "    "
-msgstr ""
+msgstr "\nNajnovija verzija Dolphin izvornog koda je dostupna za preuzimanje sa\nskladišta projekta Git."
 
 #: downloads/templates/downloads-index.html:103
 msgid ""
@@ -221,84 +221,84 @@ msgid ""
 "    You can also <a href=\"http://code.google.com/p/dolphin-emu/source/browse/\">browse\n"
 "        the current version of the source code</a>.\n"
 "    "
-msgstr ""
+msgstr "\nTakođer možete <a href=\"http://code.google.com/p/dolphin-emu/source/browse/\">pregledati\ntrenutnu verziju izvornog koda</a>."
 
 #: downloads/templates/downloads-list.html:5
 #, python-format
 msgid "%(branch)s branch - page %(page)s"
-msgstr ""
+msgstr "%(branch)s grana - stranica %(page)s"
 
 #: downloads/templates/downloads-list.html:9
 #, python-format
 msgid "<tt>%(branch)s</tt> branch - page %(page)s"
-msgstr ""
+msgstr "<tt>%(branch)s</tt> grana - stranica %(page)s"
 
 #: downloads/templates/downloads-view-devrel.html:6
 #, python-format
 msgid "Information on %(br)s"
-msgstr "關於%(br)s的訊息"
+msgstr "Informacije o %(br)s"
 
 #: downloads/templates/downloads-view-devrel.html:10
 #, python-format
 msgid "Information for %(br)s"
-msgstr "關於%(br)s的訊息"
+msgstr "Informacije za %(br)s"
 
 #: downloads/templates/downloads-view-devrel.html:16
 msgid "Version"
-msgstr "版本"
+msgstr "Verzija"
 
 #: downloads/templates/downloads-view-devrel.html:19
 msgid "Branch"
-msgstr ""
+msgstr "Grana"
 
 #: downloads/templates/downloads-view-devrel.html:22
 msgid "Date"
-msgstr "日期"
+msgstr "Datum"
 
 #: downloads/templates/downloads-view-devrel.html:31
 msgid "Commit"
-msgstr ""
+msgstr "Objavite"
 
 #: downloads/templates/downloads-view-devrel.html:34
 msgid "Change author"
-msgstr "編輯作者"
+msgstr "Promjena autora"
 
 #: downloads/templates/downloads-view-devrel.html:37
 msgid "Change description"
-msgstr ""
+msgstr "Promjena opisa"
 
 #: homepage/templates/homepage-home.html:7
 msgid "Gamecube/Wii games on PC"
-msgstr ""
+msgstr "Gamecube/Wii igre na kompjuteru"
 
 #: homepage/templates/homepage-home.html:25 templates/_base.html:9
 #: templates/_base.html.py:55
 msgid "Dolphin Emulator"
-msgstr "Dolphin 仿真器"
+msgstr "Dolphin Emulator"
 
 #: homepage/templates/homepage-home.html:27
 msgid "Play Gamecube and Wii games in 1080p on your PC."
-msgstr ""
+msgstr "Igrajte Gamecube i Wii igre na vašem kompjuteru u 1080p"
 
 #: homepage/templates/homepage-home.html:30
 #, python-format
 msgid "Download %(last_release)s now for Windows, Mac and Linux »"
-msgstr ""
+msgstr "Preuzmite %(last_release)s odmah za Windows, Mac i Linux »"
 
 #: homepage/templates/homepage-home.html:33
 msgid ""
 "\n"
 "                <strong>Minimal requirements</strong>: SSE2 compatible CPU, Shader Model 3.0 GPU, 2GB of RAM, 50MB of disk space\n"
 "                "
-msgstr ""
+msgstr "\n<strong>Minimalni zahtjevi</strong>: SSE2 kompatibilan procesor, Shader Model 3.0 , 2GB  RAM-a , 50MB slobodnog prostora"
 
 #: homepage/templates/homepage-home.html:38
 msgid "More information about hardware requirements"
-msgstr ""
+msgstr "Više informacija o hardverskim zahtjevima"
 
 #: homepage/templates/homepage-home.html:68
 msgid "Improved graphics"
-msgstr ""
+msgstr "Poboljšana grafika"
 
 #: homepage/templates/homepage-home.html:71
 #, python-format
@@ -309,11 +309,11 @@ msgid ""
 "        Gamecube and Wii games. <a href=\"%(MEDIA_PAGE_URL)s\">View screenshots\n"
 "        of games played on Dolphin</a>.\n"
 "        "
-msgstr ""
+msgstr "\nWii obrađuje igre samo na rezoluciji od 480p. Dolphin podržava\n720p, 1080p pa čak i veće rezolucije i to za sve tvoje GameCube i Wii igre. <a href=\"%(MEDIA_PAGE_URL)s\">Pogledaj slike igrica</a>."
 
 #: homepage/templates/homepage-home.html:81
 msgid "Use your favorite controller"
-msgstr ""
+msgstr "Koristite vaš omiljeni kontroler"
 
 #: homepage/templates/homepage-home.html:83
 msgid ""
@@ -323,19 +323,19 @@ msgid ""
 "        and mouse! Wiimotes are still supported, including Wii Motion Plus\n"
 "        for games that require it.\n"
 "        "
-msgstr ""
+msgstr "\nNiste baš veliki obožavatelj Gamecube/Wiimote kontrolera?Nema problema! Sa Dolphinom možete igrati sve svoje igrice sa svojim najdražim kontrolerom te čak i sa tipkovnicom i mišem! Wii Motion Plus i Wiimote su još uvijek podržani."
 
 #: homepage/templates/homepage-home.html:93
 msgid "Recent Dolphin news"
-msgstr "最近 Dolphin 新聞"
+msgstr "Nedavne Dolphin vijesti"
 
 #: homepage/templates/homepage-home.html:98
 msgid "by"
-msgstr "由"
+msgstr "od"
 
 #: homepage/templates/homepage-home.html:110
 msgid "Great compatibility"
-msgstr ""
+msgstr "Izvrsna kompatibilnost"
 
 #: homepage/templates/homepage-home.html:113
 #, python-format
@@ -347,11 +347,11 @@ msgid ""
 "        the <a href=\"%(COMPAT_URL)s\">Dolphin compatibility list</a>\n"
 "        or the <a href=\"%(WIKI_URL)s\">Dolphin wiki</a> for more details.\n"
 "        "
-msgstr ""
+msgstr "\nDolphin bez problema može vrtjeti većinu Wii igrica bez ikakvih problema. Nove Wii igre se mogu igrati već od prvog dana izlaska,\nWiiware i Virtual Console igrice su također podržane. Provjerite\n<a href=\"%(COMPAT_URL)s\">Listu kompatibilnosti </a>\nili <a href=\"%(WIKI_URL)s\">Dolphin wiki</a> za više informacija."
 
 #: homepage/templates/homepage-home.html:124
 msgid "Helpful community"
-msgstr ""
+msgstr "Zajednica koja rado pomaže"
 
 #: homepage/templates/homepage-home.html:127
 #, python-format
@@ -363,11 +363,11 @@ msgid ""
 "        can't help you, other Dolphin users may be willing to help you over at the\n"
 "        <a href=\"%(FORUM_URL)s\">official discussion forums</a>.\n"
 "        "
-msgstr ""
+msgstr "\nProblemi sa instalacijom? Pokušavate pronaći najbolje postavke za igru? Ili ste možda zainteresirani za diskusiju o Gamecube/Wii igrama\n Ako vam <a href=\"%(FAQ_URL)s\">Često Postavljena Pitanja</a>⏎\nne uspiju pomoći, ostali korisnici Dolphina su vam voljni pomoći na\n\n<a href=\"%(FORUM_URL)s\">službenom forumu za raspravu</a>."
 
 #: homepage/templates/homepage-home.html:138
 msgid "Free and Open Source"
-msgstr ""
+msgstr "Besplatno i Otvorenog Koda"
 
 #: homepage/templates/homepage-home.html:140
 #, python-format
@@ -378,47 +378,47 @@ msgid ""
 "        Grab the emulator source code from <a href=\"%(GCODE_URL)s\">Google\n"
 "        Code</a> and start hacking!\n"
 "        "
-msgstr ""
+msgstr "\nDolphin Emulator je besplatan i razvijaju ga razni volonteri diljem \nsvijeta. Želite li i vi pomoći?\nPreuzmite izvorni kod sa <a href=\"%(GCODE_URL)s\">Google\nCode</a> i uključite se!"
 
 #: media/templates/media-all.html:6 media/templates/media-all.html.py:19
 msgid "Media gallery"
-msgstr ""
+msgstr "Galerija medija"
 
 #: media/templates/media-all.html:43
 msgid "Full size"
-msgstr ""
+msgstr "Puna Veličina"
 
 #: media/templates/media-all.html:44
 msgid "Previous"
-msgstr "上一頁"
+msgstr "Prethodna"
 
 #: media/templates/media-all.html:45
 msgid "Next"
-msgstr "下一頁"
+msgstr "Iduća"
 
 #: templates/_base.html:58
 msgid "Home"
-msgstr "首頁"
+msgstr "Naslovna"
 
 #: templates/_base.html:59
 msgid "Media"
-msgstr "媒體"
+msgstr "Mediji"
 
 #: templates/_base.html:61
 msgid "FAQ"
-msgstr "常問問題"
+msgstr "FAQ"
 
 #: templates/_base.html:64
 msgid "Forum"
-msgstr "論壇"
+msgstr "Forum"
 
 #: templates/_base.html:65
 msgid "Wiki"
-msgstr "維基"
+msgstr "Wiki"
 
 #: templates/_base.html:66
 msgid "Development"
-msgstr "發育中"
+msgstr "Razvoj"
 
 #: templates/_base.html:103
 msgid ""
@@ -426,4 +426,4 @@ msgid ""
 "            &copy; 2012 Dolphin Emulator Project -\n"
 "            <a href=\"https://bitbucket.org/delroth/dolphin-web/\">Website source code</a>\n"
 "            "
-msgstr ""
+msgstr "\n&copy; 2012 Dolphin Emulator -\n<a href=\"https://bitbucket.org/delroth/dolphin-web/\">Izvorni kod web stranice</a>"

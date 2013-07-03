@@ -8,9 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-02-14 06:21+0100\n"
-"PO-Revision-Date: 2013-05-19 19:29+0000\n"
-"Last-Translator: boatkung <boatkung20@gmail.com>\n"
+"POT-Creation-Date: 2013-04-09 01:11+0200\n"
+"PO-Revision-Date: 2013-06-30 08:31+0000\n"
+"Last-Translator: delroth <delroth@gmail.com>\n"
 "Language-Team: Thai (Thailand) (http://www.transifex.com/projects/p/dolphin-emu/language/th_TH/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -18,74 +18,74 @@ msgstr ""
 "Language: th_TH\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: compat/templates/compat-list.html:7
+#: compat/templates/compat-list.html:8
 #, python-format
 msgid "Compatibility List - page %(page)s"
 msgstr "รายการความเข้ากันได้ - หน้า %(page)s"
 
-#: compat/templates/compat-list.html:19
+#: compat/templates/compat-list.html:20
 msgid "How to read the ratings"
 msgstr "วิธีการอ่านค่าเรตติ้ง"
 
-#: compat/templates/compat-list.html:22
+#: compat/templates/compat-list.html:23
 msgid "5 out of 5"
 msgstr "5 เต็ม 5"
 
-#: compat/templates/compat-list.html:22
+#: compat/templates/compat-list.html:23
 msgid "<strong>Perfect</strong>: No issues at all!"
 msgstr "<strong>สมบูรณ์</strong>: ไม่มีปัญหาอะไรเลย!"
 
-#: compat/templates/compat-list.html:23
+#: compat/templates/compat-list.html:24
 msgid "4 out of 5"
 msgstr "4 จาก 5"
 
-#: compat/templates/compat-list.html:23
+#: compat/templates/compat-list.html:24
 msgid ""
 "<strong>Playable</strong>: Runs well, only minor graphical or audio "
 "glitches. Games can be played all the way through."
 msgstr "<strong>เล่นได้</strong>: รันเกมได้ดี มีปัญหาเล็กน้อยกับกราฟิกหรือเสียง แต่เกมยังคงเล่นต่อไปได้"
 
-#: compat/templates/compat-list.html:24
+#: compat/templates/compat-list.html:25
 msgid "3 out of 5"
 msgstr "3 จาก 5"
 
-#: compat/templates/compat-list.html:24
+#: compat/templates/compat-list.html:25
 msgid ""
 "<strong>Starts</strong>: Starts, maybe even plays well, but crashes or major"
 " graphical/audio glitches."
 msgstr "<strong>เริ่มเกมได้</strong>: เริ่มเกมได้ อาจจะเล่นไปได้สักพักแต่จะมีปัญหาการแครชหรือปัญหาใหญ่เกี่ยวกับกราฟิก/เสียง"
 
-#: compat/templates/compat-list.html:25
+#: compat/templates/compat-list.html:26
 msgid "2 out of 5"
 msgstr "2 จาก 5"
 
-#: compat/templates/compat-list.html:25
+#: compat/templates/compat-list.html:26
 msgid ""
 "<strong>Intro/Menu</strong>: Hangs/crashes somewhere between booting and "
 "starting."
 msgstr "<strong>อินโทร/เมนู</strong>: แฮงค์/แครช ในบางจุดระหว่างการบูตเกมไปจนถึงตอนเริ่มเกม"
 
-#: compat/templates/compat-list.html:26
+#: compat/templates/compat-list.html:27
 msgid "1 out of 5"
 msgstr "1 จาก 5"
 
-#: compat/templates/compat-list.html:26
+#: compat/templates/compat-list.html:27
 msgid "<strong>Broken</strong>: Crashes when booting."
 msgstr "<strong>เปิดไม่ได้</strong>: แครชเมื่อทำการบูตเกม"
 
-#: compat/templates/compat-list.html:33
+#: compat/templates/compat-list.html:34
 msgid "Statistics"
 msgstr "สถิติ"
 
-#: compat/templates/compat-list.html:53
+#: compat/templates/compat-list.html:54
 msgid "Game title (click for details)"
 msgstr "ชื่อเกม (คลิกดูรายละเอียด)"
 
-#: compat/templates/compat-list.html:54 templates/_base.html:62
+#: compat/templates/compat-list.html:55 templates/_base.html:63
 msgid "Compatibility"
 msgstr "การทำงานร่วมกันได้"
 
-#: compat/templates/compat-list.html:55
+#: compat/templates/compat-list.html:56
 msgid "Last updated"
 msgstr "การปรับปรุงล่าสุด"
 
@@ -113,19 +113,21 @@ msgstr "เล่นได้"
 msgid "Perfect"
 msgstr "สมบูรณ์"
 
-#: docs/templates/docs-faq.html:6
+#: docs/templates/docs-faq.html:7
 msgid "Frequently Asked Questions"
 msgstr "คำถามที่พบบ่อย"
 
-#: docs/templates/docs-guides-index.html:5
-#: docs/templates/docs-guides-index.html:9 templates/_base.html:61
+#: docs/templates/docs-guide.html:11
+msgid "Go back to the guides list"
+msgstr ""
+
+#: docs/templates/docs-guides-index.html:5 templates/_base.html:62
 msgid "Guides"
 msgstr "คู่มือการใช้"
 
-#: docs/templates/docs-guides-index.html:15
-#, python-format
-msgid "(by %(author)s)"
-msgstr "(โดย %(author)s)"
+#: docs/templates/docs-guides-index.html:9
+msgid "Guides and documentation"
+msgstr ""
 
 #: docs/templates/docs-guides-index.html:17
 msgid "No published guide available"
@@ -141,17 +143,17 @@ msgstr "Dolphin %s"
 msgid "Download development builds"
 msgstr "ดาวน์โหลดเวอร์ชันที่อยู่ในช่วงพัฒนา"
 
-#: downloads/templates/downloads-branches.html:17
+#: downloads/templates/downloads-branches.html:18
 #, python-format
 msgid "<tt>%(branch)s</tt> branch"
 msgstr "<tt>%(branch)s</tt> รุ่นต่อยอด"
 
-#: downloads/templates/downloads-branches.html:20
+#: downloads/templates/downloads-branches.html:21
 #: downloads/templates/downloads-index.html:89
 msgid "View older versions »"
 msgstr "ดูเวอร์ชันที่เก่ากว่า »"
 
-#: downloads/templates/downloads-branches.html:27
+#: downloads/templates/downloads-branches.html:28
 msgid "Branch list"
 msgstr "รายการรุ่นต่อยอด"
 
@@ -160,7 +162,7 @@ msgid "No development release yet"
 msgstr "ยังไม่มีการปล่อยเวอร์ชันที่อยู่ในช่วงพัฒนา"
 
 #: downloads/templates/downloads-index.html:6
-#: downloads/templates/downloads-index.html:25 templates/_base.html:59
+#: downloads/templates/downloads-index.html:25 templates/_base.html:60
 msgid "Download"
 msgstr "ดาวน์โหลด"
 
@@ -270,7 +272,7 @@ msgid "Gamecube/Wii games on PC"
 msgstr "เกม Gamecube/Wii บน PC"
 
 #: homepage/templates/homepage-home.html:25 templates/_base.html:9
-#: templates/_base.html.py:54
+#: templates/_base.html.py:55
 msgid "Dolphin Emulator"
 msgstr "Dolphin Emulator"
 
@@ -394,31 +396,31 @@ msgstr "ก่อนหน้า"
 msgid "Next"
 msgstr "ถัดไป"
 
-#: templates/_base.html:57
+#: templates/_base.html:58
 msgid "Home"
 msgstr "หน้าแรก"
 
-#: templates/_base.html:58
+#: templates/_base.html:59
 msgid "Media"
 msgstr "สื่อ"
 
-#: templates/_base.html:60
+#: templates/_base.html:61
 msgid "FAQ"
 msgstr "คำถามที่พบบ่อย"
 
-#: templates/_base.html:63
+#: templates/_base.html:64
 msgid "Forum"
 msgstr "ฟอรั่ม"
 
-#: templates/_base.html:64
+#: templates/_base.html:65
 msgid "Wiki"
 msgstr "วิกิ"
 
-#: templates/_base.html:65
+#: templates/_base.html:66
 msgid "Development"
 msgstr "การพัฒนา"
 
-#: templates/_base.html:102
+#: templates/_base.html:103
 msgid ""
 "\n"
 "            &copy; 2012 Dolphin Emulator Project -\n"
