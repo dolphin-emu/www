@@ -268,8 +268,8 @@ msgid "Change description"
 msgstr "Thay đổi mô tả"
 
 #: homepage/templates/homepage-home.html:7
-msgid "Gamecube/Wii games on PC"
-msgstr "Gamecube/Wii games trên PC"
+msgid "GameCube/Wii games on PC"
+msgstr "GameCube/Wii games trên PC"
 
 #: homepage/templates/homepage-home.html:25 templates/_base.html:9
 #: templates/_base.html.py:55
@@ -277,8 +277,8 @@ msgid "Dolphin Emulator"
 msgstr "Trình Giả Lập Dolphin"
 
 #: homepage/templates/homepage-home.html:27
-msgid "Play Gamecube and Wii games in 1080p on your PC."
-msgstr "Chơi Gamecube và Wii games với độ phân giải 1080 trên PC của bạn."
+msgid "Play GameCube and Wii games in 1080p on your PC."
+msgstr "Chơi GameCube và Wii games với độ phân giải 1080 trên PC của bạn."
 
 #: homepage/templates/homepage-home.html:30
 #, python-format
@@ -306,10 +306,10 @@ msgid ""
 "\n"
 "        The Wii only renders games at a 480p resolution. Dolphin supports\n"
 "        720p, 1080p and even higher definitions for all of your\n"
-"        Gamecube and Wii games. <a href=\"%(MEDIA_PAGE_URL)s\">View screenshots\n"
+"        GameCube and Wii games. <a href=\"%(MEDIA_PAGE_URL)s\">View screenshots\n"
 "        of games played on Dolphin</a>.\n"
 "        "
-msgstr "\n        The Wii chỉ render games ở độ phân giải 480p. Dolphin hỗ trợ\n        720p, 1080p và thậm chí là các độ phân giải lớn hơn dành cho hệ thống\n        Gamecube và Wii games. <a href=\"%(MEDIA_PAGE_URL)s\">Xem hình ảnh sơ lược\n        của game được giả lập trên Dolphin</a>.\n        "
+msgstr "\n        The Wii chỉ render games ở độ phân giải 480p. Dolphin hỗ trợ\n        720p, 1080p và thậm chí là các độ phân giải lớn hơn dành cho hệ thống\n        GameCube và Wii games. <a href=\"%(MEDIA_PAGE_URL)s\">Xem hình ảnh sơ lược\n        của game được giả lập trên Dolphin</a>.\n        "
 
 #: homepage/templates/homepage-home.html:81
 msgid "Use your favorite controller"
@@ -318,12 +318,12 @@ msgstr "Sử dụng điều khiển yêu thích"
 #: homepage/templates/homepage-home.html:83
 msgid ""
 "\n"
-"        Not a big fan of the Gamecube controller and the Wiimote? You can\n"
+"        Not a big fan of the GameCube controller and the Wiimote? You can\n"
 "        play games with your favorite PC controller, or even with keyboard\n"
 "        and mouse! Wiimotes are still supported, including Wii Motion Plus\n"
 "        for games that require it.\n"
 "        "
-msgstr "\n        Không thích điều khiển Gamecube và Wiimote? Bạn có thể\n        chơi game bằng điều khiển của chính máy PC, hoặc thậm chí là với bàn phím\n        kèm theo chuột! Wiimotes hiện đang được hỗ trợ, bao gồm Wii Motion Plus\n        cho game nào yêu cầu.\n        "
+msgstr "\n        Không thích điều khiển GameCube và Wiimote? Bạn có thể\n        chơi game bằng điều khiển của chính máy PC, hoặc thậm chí là với bàn phím\n        kèm theo chuột! Wiimotes hiện đang được hỗ trợ, bao gồm Wii Motion Plus\n        cho game nào yêu cầu.\n        "
 
 #: homepage/templates/homepage-home.html:93
 msgid "Recent Dolphin news"
@@ -341,13 +341,13 @@ msgstr "Khả năng tương thích cao"
 #, python-format
 msgid ""
 "\n"
-"        Dolphin can play most of the Gamecube and Wii games collection\n"
+"        Dolphin can play most of the GameCube and Wii games collection\n"
 "        without issues. New Wii releases often work on Dolphin from day one.\n"
 "        Wiiware and Virtual Console games are also supported. Check out\n"
 "        the <a href=\"%(COMPAT_URL)s\">Dolphin compatibility list</a>\n"
 "        or the <a href=\"%(WIKI_URL)s\">Dolphin wiki</a> for more details.\n"
 "        "
-msgstr "\n        Dolphin có thể chơi hầu hết các game trên Gamecube và Wii games\n        mà không gặp khó khăn. Phiên bản mới của Wii thường được cập nhật mỗi ngày.\n        Wiiware và Virtual Console game cũng được hỗ trợ. Truy\n        cập <a href=\"%(COMPAT_URL)s\">Danh sách tương thích với Dolphin</a>\n        hoặc <a href=\"%(WIKI_URL)s\">Dolphin wiki</a> để biết thêm chi tiết.\n        "
+msgstr "\n        Dolphin có thể chơi hầu hết các game trên GameCube và Wii games\n        mà không gặp khó khăn. Phiên bản mới của Wii thường được cập nhật mỗi ngày.\n        Wiiware và Virtual Console game cũng được hỗ trợ. Truy\n        cập <a href=\"%(COMPAT_URL)s\">Danh sách tương thích với Dolphin</a>\n        hoặc <a href=\"%(WIKI_URL)s\">Dolphin wiki</a> để biết thêm chi tiết.\n        "
 
 #: homepage/templates/homepage-home.html:124
 msgid "Helpful community"
@@ -358,12 +358,12 @@ msgstr "Cộng động đông đảo"
 msgid ""
 "\n"
 "        Installation issues? Trying to figure out the best settings for a\n"
-"        game? Or just interested in discussion about Gamecube and Wii games\n"
+"        game? Or just interested in discussion about GameCube and Wii games\n"
 "        you like? If the <a href=\"%(FAQ_URL)s\">Frequently Asked Questions</a>\n"
 "        can't help you, other Dolphin users may be willing to help you over at the\n"
 "        <a href=\"%(FORUM_URL)s\">official discussion forums</a>.\n"
 "        "
-msgstr "\n        Có vấn đề khi cài đặt? Cố gắng thử các thiết lập tốt nhất cho\n        game? Hoặc đơn giản là thích thảo luận về Gamecube và Wii games\n        mà bạn thích? Nếu <a href=\"%(FAQ_URL)s\">Câu hỏi thường gặp</a>\n        không thể giúp bạn, cộng đồng những người sử dụng Dolphin sẽ có thể trợ giúp bạn tại\n        <a href=\"%(FORUM_URL)s\">diễn đàn thảo luận</a>.\n        "
+msgstr "\n        Có vấn đề khi cài đặt? Cố gắng thử các thiết lập tốt nhất cho\n        game? Hoặc đơn giản là thích thảo luận về GameCube và Wii games\n        mà bạn thích? Nếu <a href=\"%(FAQ_URL)s\">Câu hỏi thường gặp</a>\n        không thể giúp bạn, cộng đồng những người sử dụng Dolphin sẽ có thể trợ giúp bạn tại\n        <a href=\"%(FORUM_URL)s\">diễn đàn thảo luận</a>.\n        "
 
 #: homepage/templates/homepage-home.html:138
 msgid "Free and Open Source"

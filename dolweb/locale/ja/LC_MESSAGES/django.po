@@ -268,8 +268,8 @@ msgid "Change description"
 msgstr "変更点"
 
 #: homepage/templates/homepage-home.html:7
-msgid "Gamecube/Wii games on PC"
-msgstr "Gamecube/Wii games on PC"
+msgid "GameCube/Wii games on PC"
+msgstr "GameCube/Wii games on PC"
 
 #: homepage/templates/homepage-home.html:25 templates/_base.html:9
 #: templates/_base.html.py:55
@@ -277,7 +277,7 @@ msgid "Dolphin Emulator"
 msgstr "Dolphin Emulator"
 
 #: homepage/templates/homepage-home.html:27
-msgid "Play Gamecube and Wii games in 1080p on your PC."
+msgid "Play GameCube and Wii games in 1080p on your PC."
 msgstr "ゲームキューブとWiiのゲームをHD画質で。"
 
 #: homepage/templates/homepage-home.html:30
@@ -306,7 +306,7 @@ msgid ""
 "\n"
 "        The Wii only renders games at a 480p resolution. Dolphin supports\n"
 "        720p, 1080p and even higher definitions for all of your\n"
-"        Gamecube and Wii games. <a href=\"%(MEDIA_PAGE_URL)s\">View screenshots\n"
+"        GameCube and Wii games. <a href=\"%(MEDIA_PAGE_URL)s\">View screenshots\n"
 "        of games played on Dolphin</a>.\n"
 "        "
 msgstr "\n        Wii実機の最大レンダリング解像度は480pに留まります。\n        Dolphinを使えば、ゲームキューブ、Wiiのゲーム共にフルHD解像度以上の表示が可能に。\n        <a href=\"%(MEDIA_PAGE_URL)s\">メディアギャラリーを見る。</a>\n        "
@@ -318,7 +318,7 @@ msgstr "お気に入りのコントローラーで"
 #: homepage/templates/homepage-home.html:83
 msgid ""
 "\n"
-"        Not a big fan of the Gamecube controller and the Wiimote? You can\n"
+"        Not a big fan of the GameCube controller and the Wiimote? You can\n"
 "        play games with your favorite PC controller, or even with keyboard\n"
 "        and mouse! Wiimotes are still supported, including Wii Motion Plus\n"
 "        for games that require it.\n"
@@ -341,7 +341,7 @@ msgstr "優れた互換性"
 #, python-format
 msgid ""
 "\n"
-"        Dolphin can play most of the Gamecube and Wii games collection\n"
+"        Dolphin can play most of the GameCube and Wii games collection\n"
 "        without issues. New Wii releases often work on Dolphin from day one.\n"
 "        Wiiware and Virtual Console games are also supported. Check out\n"
 "        the <a href=\"%(COMPAT_URL)s\">Dolphin compatibility list</a>\n"
@@ -358,7 +358,7 @@ msgstr "有用なコミュニティ"
 msgid ""
 "\n"
 "        Installation issues? Trying to figure out the best settings for a\n"
-"        game? Or just interested in discussion about Gamecube and Wii games\n"
+"        game? Or just interested in discussion about GameCube and Wii games\n"
 "        you like? If the <a href=\"%(FAQ_URL)s\">Frequently Asked Questions</a>\n"
 "        can't help you, other Dolphin users may be willing to help you over at the\n"
 "        <a href=\"%(FORUM_URL)s\">official discussion forums</a>.\n"

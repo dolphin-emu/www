@@ -269,8 +269,8 @@ msgid "Change description"
 msgstr "Изменить описание"
 
 #: homepage/templates/homepage-home.html:7
-msgid "Gamecube/Wii games on PC"
-msgstr "Игры от Gamecube/Wii на ПК"
+msgid "GameCube/Wii games on PC"
+msgstr "Игры от GameCube/Wii на ПК"
 
 #: homepage/templates/homepage-home.html:25 templates/_base.html:9
 #: templates/_base.html.py:55
@@ -278,8 +278,8 @@ msgid "Dolphin Emulator"
 msgstr "Dolphin Emulator"
 
 #: homepage/templates/homepage-home.html:27
-msgid "Play Gamecube and Wii games in 1080p on your PC."
-msgstr "Играйте в Gamecube и Wii игры в 1080p на вашем ПК."
+msgid "Play GameCube and Wii games in 1080p on your PC."
+msgstr "Играйте в GameCube и Wii игры в 1080p на вашем ПК."
 
 #: homepage/templates/homepage-home.html:30
 #, python-format
@@ -307,10 +307,10 @@ msgid ""
 "\n"
 "        The Wii only renders games at a 480p resolution. Dolphin supports\n"
 "        720p, 1080p and even higher definitions for all of your\n"
-"        Gamecube and Wii games. <a href=\"%(MEDIA_PAGE_URL)s\">View screenshots\n"
+"        GameCube and Wii games. <a href=\"%(MEDIA_PAGE_URL)s\">View screenshots\n"
 "        of games played on Dolphin</a>.\n"
 "        "
-msgstr "\n     Wii может отображать графику, только в 480p. Dolphin\n поддерживает 720p, 1080p и более высокие разрешения, для\n ваших Gamecube и Wii игр. \n <a href=\"%(MEDIA_PAGE_URL)s\">Посмотреть\n скриншоты игр запущенных на Dolphin</a>."
+msgstr "\n     Wii может отображать графику, только в 480p. Dolphin\n поддерживает 720p, 1080p и более высокие разрешения, для\n ваших GameCube и Wii игр. \n <a href=\"%(MEDIA_PAGE_URL)s\">Посмотреть\n скриншоты игр запущенных на Dolphin</a>."
 
 #: homepage/templates/homepage-home.html:81
 msgid "Use your favorite controller"
@@ -319,12 +319,12 @@ msgstr "Используйте ваш любимый способ управле
 #: homepage/templates/homepage-home.html:83
 msgid ""
 "\n"
-"        Not a big fan of the Gamecube controller and the Wiimote? You can\n"
+"        Not a big fan of the GameCube controller and the Wiimote? You can\n"
 "        play games with your favorite PC controller, or even with keyboard\n"
 "        and mouse! Wiimotes are still supported, including Wii Motion Plus\n"
 "        for games that require it.\n"
 "        "
-msgstr "\n      Не являетесь фанатом джойстика от Gamecube и Wiimote? Вы\n можете играть в игры на вашем любимом ПК джойстике, или на\n клавиатуре с мышкой! Wiimote также поддерживаются, включая\n Wii Motion Plus для игр которые его требуют."
+msgstr "\n      Не являетесь фанатом джойстика от GameCube и Wiimote? Вы\n можете играть в игры на вашем любимом ПК джойстике, или на\n клавиатуре с мышкой! Wiimote также поддерживаются, включая\n Wii Motion Plus для игр которые его требуют."
 
 #: homepage/templates/homepage-home.html:93
 msgid "Recent Dolphin news"
@@ -342,13 +342,13 @@ msgstr "Отличная совместимость"
 #, python-format
 msgid ""
 "\n"
-"        Dolphin can play most of the Gamecube and Wii games collection\n"
+"        Dolphin can play most of the GameCube and Wii games collection\n"
 "        without issues. New Wii releases often work on Dolphin from day one.\n"
 "        Wiiware and Virtual Console games are also supported. Check out\n"
 "        the <a href=\"%(COMPAT_URL)s\">Dolphin compatibility list</a>\n"
 "        or the <a href=\"%(WIKI_URL)s\">Dolphin wiki</a> for more details.\n"
 "        "
-msgstr "\nDolphin позволяет играть в большинство Gamecube и Wii игр, без каких-либо проблем. Новые Wii игры, обычно запускаются в день релиза. Игры для Wiiware и Virtual Console также поддерживаются. Проверьте <a href=\"%(COMPAT_URL)s\">Таблицу совместимости Dolphin. </a> или <a href=\"%(WIKI_URL)s\">Энциклопедию Dolphin</a>, для подробностей"
+msgstr "\nDolphin позволяет играть в большинство GameCube и Wii игр, без каких-либо проблем. Новые Wii игры, обычно запускаются в день релиза. Игры для Wiiware и Virtual Console также поддерживаются. Проверьте <a href=\"%(COMPAT_URL)s\">Таблицу совместимости Dolphin. </a> или <a href=\"%(WIKI_URL)s\">Энциклопедию Dolphin</a>, для подробностей"
 
 #: homepage/templates/homepage-home.html:124
 msgid "Helpful community"
@@ -359,12 +359,12 @@ msgstr "Помощь сообщества"
 msgid ""
 "\n"
 "        Installation issues? Trying to figure out the best settings for a\n"
-"        game? Or just interested in discussion about Gamecube and Wii games\n"
+"        game? Or just interested in discussion about GameCube and Wii games\n"
 "        you like? If the <a href=\"%(FAQ_URL)s\">Frequently Asked Questions</a>\n"
 "        can't help you, other Dolphin users may be willing to help you over at the\n"
 "        <a href=\"%(FORUM_URL)s\">official discussion forums</a>.\n"
 "        "
-msgstr "\n      Проблемы с установкой? Не можете подобрать лучшие настройки для\nигры? Или просто интересно поговорить насчет Gamecube и Wii игр?\nЕсли <a href=\"%(FAQ_URL)s\">ЧАВО</a>\nвам не поможет, другие пользователи Dolphin помогут вам\nна нашем <a href=\"%(FORUM_URL)s\">форуме</a>."
+msgstr "\n      Проблемы с установкой? Не можете подобрать лучшие настройки для\nигры? Или просто интересно поговорить насчет GameCube и Wii игр?\nЕсли <a href=\"%(FAQ_URL)s\">ЧАВО</a>\nвам не поможет, другие пользователи Dolphin помогут вам\nна нашем <a href=\"%(FORUM_URL)s\">форуме</a>."
 
 #: homepage/templates/homepage-home.html:138
 msgid "Free and Open Source"

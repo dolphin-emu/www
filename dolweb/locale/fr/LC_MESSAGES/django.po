@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-04-09 01:11+0200\n"
-"PO-Revision-Date: 2013-06-30 08:30+0000\n"
+"PO-Revision-Date: 2013-07-03 21:20+0000\n"
 "Last-Translator: delroth <delroth@gmail.com>\n"
 "Language-Team: French (http://www.transifex.com/projects/p/dolphin-emu/language/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -119,7 +119,7 @@ msgstr "Foire aux Questions"
 
 #: docs/templates/docs-guide.html:11
 msgid "Go back to the guides list"
-msgstr ""
+msgstr "Retourner à la liste des guides"
 
 #: docs/templates/docs-guides-index.html:5 templates/_base.html:62
 msgid "Guides"
@@ -127,7 +127,7 @@ msgstr "Guides"
 
 #: docs/templates/docs-guides-index.html:9
 msgid "Guides and documentation"
-msgstr ""
+msgstr "Guides et documentation"
 
 #: docs/templates/docs-guides-index.html:17
 msgid "No published guide available"
@@ -268,8 +268,8 @@ msgid "Change description"
 msgstr "Description"
 
 #: homepage/templates/homepage-home.html:7
-msgid "Gamecube/Wii games on PC"
-msgstr "jouez à la Gamecube/Wii sur PC"
+msgid "GameCube/Wii games on PC"
+msgstr "jouez à la GameCube/Wii sur PC"
 
 #: homepage/templates/homepage-home.html:25 templates/_base.html:9
 #: templates/_base.html.py:55
@@ -277,8 +277,8 @@ msgid "Dolphin Emulator"
 msgstr "Émulateur Dolphin"
 
 #: homepage/templates/homepage-home.html:27
-msgid "Play Gamecube and Wii games in 1080p on your PC."
-msgstr "Jouez à la Gamecube et la Wii en 1080p sur votre PC."
+msgid "Play GameCube and Wii games in 1080p on your PC."
+msgstr "Jouez à la GameCube et la Wii en 1080p sur votre PC."
 
 #: homepage/templates/homepage-home.html:30
 #, python-format
@@ -306,10 +306,10 @@ msgid ""
 "\n"
 "        The Wii only renders games at a 480p resolution. Dolphin supports\n"
 "        720p, 1080p and even higher definitions for all of your\n"
-"        Gamecube and Wii games. <a href=\"%(MEDIA_PAGE_URL)s\">View screenshots\n"
+"        GameCube and Wii games. <a href=\"%(MEDIA_PAGE_URL)s\">View screenshots\n"
 "        of games played on Dolphin</a>.\n"
 "        "
-msgstr "\n        La Wii est limitée à une résolution de 480p pour les jeux. Dolphin\n        supporte des définitions plus élevées pour tous vos jeux de Gamecube\n        et Wii : 720p, 1080p ou encore plus ! <a href=\"%(MEDIA_PAGE_URL)s\">Voir \n        des captures d'écran de jeux tournant avec Dolphin</a>.\n        "
+msgstr "\n        La Wii est limitée à une résolution de 480p pour les jeux. Dolphin\n        supporte des définitions plus élevées pour tous vos jeux de GameCube\n        et Wii : 720p, 1080p ou encore plus ! <a href=\"%(MEDIA_PAGE_URL)s\">Voir \n        des captures d'écran de jeux tournant avec Dolphin</a>.\n        "
 
 #: homepage/templates/homepage-home.html:81
 msgid "Use your favorite controller"
@@ -318,12 +318,12 @@ msgstr "Utilisez votre manette préférée"
 #: homepage/templates/homepage-home.html:83
 msgid ""
 "\n"
-"        Not a big fan of the Gamecube controller and the Wiimote? You can\n"
+"        Not a big fan of the GameCube controller and the Wiimote? You can\n"
 "        play games with your favorite PC controller, or even with keyboard\n"
 "        and mouse! Wiimotes are still supported, including Wii Motion Plus\n"
 "        for games that require it.\n"
 "        "
-msgstr "\n        Pas un grand fan de la manette de Gamecube ou de la Wiimote ? Vous\n        pouvez maintenant jouer à vos jeux avec votre manette favorite, ou\n        même avec votre clavier et votre souris. La Wiimote est quand même\n        supportée, et le Wii Motion Plus fonctionne pour les jeux le nécessitant.\n        "
+msgstr "\n        Pas un grand fan de la manette de GameCube ou de la Wiimote ? Vous\n        pouvez maintenant jouer à vos jeux avec votre manette favorite, ou\n        même avec votre clavier et votre souris. La Wiimote est quand même\n        supportée, et le Wii Motion Plus fonctionne pour les jeux le nécessitant.\n        "
 
 #: homepage/templates/homepage-home.html:93
 msgid "Recent Dolphin news"
@@ -341,13 +341,13 @@ msgstr "Excellente compatibilité"
 #, python-format
 msgid ""
 "\n"
-"        Dolphin can play most of the Gamecube and Wii games collection\n"
+"        Dolphin can play most of the GameCube and Wii games collection\n"
 "        without issues. New Wii releases often work on Dolphin from day one.\n"
 "        Wiiware and Virtual Console games are also supported. Check out\n"
 "        the <a href=\"%(COMPAT_URL)s\">Dolphin compatibility list</a>\n"
 "        or the <a href=\"%(WIKI_URL)s\">Dolphin wiki</a> for more details.\n"
 "        "
-msgstr "\n        Dolphin supporte une très grande partie des jeux de Gamecube et Wii\n        sans aucun problème. Les jeux sortant sur Wii fonctionnent généralement\n        sous Dolphin dès le jour de leur sortie en magasin ! Pour plus\n        d'informations, consultez la <a href=\"%(COMPAT_URL)s\">liste de compatibilité de Dolphin</a> ou le <a href=\"%(WIKI_URL)s\">Wiki de Dolphin</a>.\n        "
+msgstr "\n        Dolphin supporte une très grande partie des jeux de GameCube et Wii\n        sans aucun problème. Les jeux sortant sur Wii fonctionnent généralement\n        sous Dolphin dès le jour de leur sortie en magasin ! Pour plus\n        d'informations, consultez la <a href=\"%(COMPAT_URL)s\">liste de compatibilité de Dolphin</a> ou le <a href=\"%(WIKI_URL)s\">Wiki de Dolphin</a>.\n        "
 
 #: homepage/templates/homepage-home.html:124
 msgid "Helpful community"
@@ -358,7 +358,7 @@ msgstr "Forte communauté"
 msgid ""
 "\n"
 "        Installation issues? Trying to figure out the best settings for a\n"
-"        game? Or just interested in discussion about Gamecube and Wii games\n"
+"        game? Or just interested in discussion about GameCube and Wii games\n"
 "        you like? If the <a href=\"%(FAQ_URL)s\">Frequently Asked Questions</a>\n"
 "        can't help you, other Dolphin users may be willing to help you over at the\n"
 "        <a href=\"%(FORUM_URL)s\">official discussion forums</a>.\n"

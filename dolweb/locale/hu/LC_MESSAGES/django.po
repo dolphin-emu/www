@@ -268,8 +268,8 @@ msgid "Change description"
 msgstr "Leírás módosítása"
 
 #: homepage/templates/homepage-home.html:7
-msgid "Gamecube/Wii games on PC"
-msgstr "Gamecube/Wii játékok számítógépen"
+msgid "GameCube/Wii games on PC"
+msgstr "GameCube/Wii játékok számítógépen"
 
 #: homepage/templates/homepage-home.html:25 templates/_base.html:9
 #: templates/_base.html.py:55
@@ -277,8 +277,8 @@ msgid "Dolphin Emulator"
 msgstr "Dolphin emulátor"
 
 #: homepage/templates/homepage-home.html:27
-msgid "Play Gamecube and Wii games in 1080p on your PC."
-msgstr "Játssz Gamecube és Wii játékokat 1080p felbontáson a számítógépeden! "
+msgid "Play GameCube and Wii games in 1080p on your PC."
+msgstr "Játssz GameCube és Wii játékokat 1080p felbontáson a számítógépeden! "
 
 #: homepage/templates/homepage-home.html:30
 #, python-format
@@ -306,10 +306,10 @@ msgid ""
 "\n"
 "        The Wii only renders games at a 480p resolution. Dolphin supports\n"
 "        720p, 1080p and even higher definitions for all of your\n"
-"        Gamecube and Wii games. <a href=\"%(MEDIA_PAGE_URL)s\">View screenshots\n"
+"        GameCube and Wii games. <a href=\"%(MEDIA_PAGE_URL)s\">View screenshots\n"
 "        of games played on Dolphin</a>.\n"
 "        "
-msgstr "\nA Wii csak 480p felbontáson képes játékokat megjeleníteni. A Dolphin 720p, 1080p és még magasabb felbontásokat is támogat az összes Gamecube és Wii játékod esetén. <a href=\"%(MEDIA_PAGE_URL)s\">Tekintsd meg  a Dolphin emulátorról származó játékok pillanatképeit</a>.\n        "
+msgstr "\nA Wii csak 480p felbontáson képes játékokat megjeleníteni. A Dolphin 720p, 1080p és még magasabb felbontásokat is támogat az összes GameCube és Wii játékod esetén. <a href=\"%(MEDIA_PAGE_URL)s\">Tekintsd meg  a Dolphin emulátorról származó játékok pillanatképeit</a>.\n        "
 
 #: homepage/templates/homepage-home.html:81
 msgid "Use your favorite controller"
@@ -318,12 +318,12 @@ msgstr "Használd a kedvenc játékirányítód"
 #: homepage/templates/homepage-home.html:83
 msgid ""
 "\n"
-"        Not a big fan of the Gamecube controller and the Wiimote? You can\n"
+"        Not a big fan of the GameCube controller and the Wiimote? You can\n"
 "        play games with your favorite PC controller, or even with keyboard\n"
 "        and mouse! Wiimotes are still supported, including Wii Motion Plus\n"
 "        for games that require it.\n"
 "        "
-msgstr "\nNem tartozik a kedvenceid köze a Gamecube irányító és a Wiimote? Játszhatsz a kedvenc számítógépes irányítóddal, még a billentyűzeteddel és egereddel is! Wiimote továbbra is támogatott, valamint a Wii Motion Plus is, azokhoz a játékokhoz, amelyek használják.\n        "
+msgstr "\nNem tartozik a kedvenceid köze a GameCube irányító és a Wiimote? Játszhatsz a kedvenc számítógépes irányítóddal, még a billentyűzeteddel és egereddel is! Wiimote továbbra is támogatott, valamint a Wii Motion Plus is, azokhoz a játékokhoz, amelyek használják.\n        "
 
 #: homepage/templates/homepage-home.html:93
 msgid "Recent Dolphin news"
@@ -341,13 +341,13 @@ msgstr "Nagyszerű kompatibilitás"
 #, python-format
 msgid ""
 "\n"
-"        Dolphin can play most of the Gamecube and Wii games collection\n"
+"        Dolphin can play most of the GameCube and Wii games collection\n"
 "        without issues. New Wii releases often work on Dolphin from day one.\n"
 "        Wiiware and Virtual Console games are also supported. Check out\n"
 "        the <a href=\"%(COMPAT_URL)s\">Dolphin compatibility list</a>\n"
 "        or the <a href=\"%(WIKI_URL)s\">Dolphin wiki</a> for more details.\n"
 "        "
-msgstr "\nA Dolphin emulátoron a legtöbb Gamecube és Wii játék hiba nélkül játszható. Az új Wii játékok gyakran már a megjelenésük napján működnek az emulátoron. Wiiware és Virtual Console játékok is támogatottak. Tekintsd meg a <a href=\"%(COMPAT_URL)s\">Dolphin kompatibilitási listát</a>  vagy a <a href=\"%(WIKI_URL)s\">Dolphin wikit</a> további részletekért.\n\n        "
+msgstr "\nA Dolphin emulátoron a legtöbb GameCube és Wii játék hiba nélkül játszható. Az új Wii játékok gyakran már a megjelenésük napján működnek az emulátoron. Wiiware és Virtual Console játékok is támogatottak. Tekintsd meg a <a href=\"%(COMPAT_URL)s\">Dolphin kompatibilitási listát</a>  vagy a <a href=\"%(WIKI_URL)s\">Dolphin wikit</a> további részletekért.\n\n        "
 
 #: homepage/templates/homepage-home.html:124
 msgid "Helpful community"
@@ -358,12 +358,12 @@ msgstr "Segítőkész közösség"
 msgid ""
 "\n"
 "        Installation issues? Trying to figure out the best settings for a\n"
-"        game? Or just interested in discussion about Gamecube and Wii games\n"
+"        game? Or just interested in discussion about GameCube and Wii games\n"
 "        you like? If the <a href=\"%(FAQ_URL)s\">Frequently Asked Questions</a>\n"
 "        can't help you, other Dolphin users may be willing to help you over at the\n"
 "        <a href=\"%(FORUM_URL)s\">official discussion forums</a>.\n"
 "        "
-msgstr "\nTelepítési problémák? Próbálod megtalálni a legjobb beállításokat egy játékhoz? Vagy egyszerűen csak érdekelnek a Gamecube és Wii játékok amiket szeretsz? Ha a <a href=\"%(FAQ_URL)s\">Gyakran ismételt kérdések</a> nem segítenek, más Dolphin felhasználók talán szívesen segítenek a <a href=\"%(FORUM_URL)s\">hivatalos felhasználói fórumon</a>. "
+msgstr "\nTelepítési problémák? Próbálod megtalálni a legjobb beállításokat egy játékhoz? Vagy egyszerűen csak érdekelnek a GameCube és Wii játékok amiket szeretsz? Ha a <a href=\"%(FAQ_URL)s\">Gyakran ismételt kérdések</a> nem segítenek, más Dolphin felhasználók talán szívesen segítenek a <a href=\"%(FORUM_URL)s\">hivatalos felhasználói fórumon</a>. "
 
 #: homepage/templates/homepage-home.html:138
 msgid "Free and Open Source"

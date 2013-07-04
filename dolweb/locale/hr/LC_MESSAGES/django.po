@@ -3,14 +3,14 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Alberto_CRO <albertopoljak@gmail.com>, 2013
+# Alberto Poljak <albertopoljak@gmail.com>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-04-09 01:11+0200\n"
-"PO-Revision-Date: 2013-07-03 18:24+0000\n"
-"Last-Translator: Alberto_CRO <albertopoljak@gmail.com>\n"
+"PO-Revision-Date: 2013-07-03 21:58+0000\n"
+"Last-Translator: Alberto Poljak <albertopoljak@gmail.com>\n"
 "Language-Team: Croatian (http://www.transifex.com/projects/p/dolphin-emu/language/hr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -176,7 +176,7 @@ msgid ""
 "    Stable versions are released after a lot of testing to ensure emulation\n"
 "    performance and stability. <strong>If you do not know what version of\n"
 "    Dolphin you should use, the latest stable version is generally the best.</strong>\n"
-msgstr "\nStabilne verzije se izdaju nakon mnogo testiranja da bi se osigurala brzina \ni stabilnost emulacije.<strong> Ako ne znate koju verziju \nDolphina da koristite, najnovija stabilna verzija je generalno najbolja.<strong>\n"
+msgstr "\nStabilne verzije se izdaju nakon mnogo testiranja da bi se osigurala brzina \ni stabilnost emulacije.<strong> Ako niste sigurni koju verziju Dolphina da preuzmete, najnovija stabilna verzija je generalno najbolja.<strong>\n"
 
 #: downloads/templates/downloads-index.html:53
 msgid "No stable release yet"
@@ -193,7 +193,7 @@ msgid ""
 "    developer makes a change to Dolphin. Using development versions enables you\n"
 "    to use the latest and greatest improvements to the project, at the cost of\n"
 "    decreased stability.\n"
-msgstr "\n<strong>Upozorenje!</strong> Razvojne verzije se izdaju svaku put kada\nprogramer napravi promjene na Dolphinu. Razvojne verzije vam omogućuju\nda koristite najbolja i najnovija poboljšanja za cijenu smanjene stabilnosti.\n"
+msgstr "\n<strong>Upozorenje!</strong> Razvojne verzije se izdaju svaki put kada\nprogramer napravi promjene na Dolphinu. Razvojne verzije vam omogućuju\nda koristite najbolja i najnovija poboljšanja za cijenu smanjene stabilnosti.\n"
 
 #: downloads/templates/downloads-index.html:83
 msgid "Only displaying the <tt>master</tt> branch versions."
@@ -268,8 +268,8 @@ msgid "Change description"
 msgstr "Promjena opisa"
 
 #: homepage/templates/homepage-home.html:7
-msgid "Gamecube/Wii games on PC"
-msgstr "Gamecube/Wii igre na kompjuteru"
+msgid "GameCube/Wii games on PC"
+msgstr "GameCube/Wii igre na kompjuteru"
 
 #: homepage/templates/homepage-home.html:25 templates/_base.html:9
 #: templates/_base.html.py:55
@@ -277,8 +277,8 @@ msgid "Dolphin Emulator"
 msgstr "Dolphin Emulator"
 
 #: homepage/templates/homepage-home.html:27
-msgid "Play Gamecube and Wii games in 1080p on your PC."
-msgstr "Igrajte Gamecube i Wii igre na vašem kompjuteru u 1080p"
+msgid "Play GameCube and Wii games in 1080p on your PC."
+msgstr "Igrajte GameCube i Wii igre na vašem kompjuteru u 1080p"
 
 #: homepage/templates/homepage-home.html:30
 #, python-format
@@ -306,10 +306,10 @@ msgid ""
 "\n"
 "        The Wii only renders games at a 480p resolution. Dolphin supports\n"
 "        720p, 1080p and even higher definitions for all of your\n"
-"        Gamecube and Wii games. <a href=\"%(MEDIA_PAGE_URL)s\">View screenshots\n"
+"        GameCube and Wii games. <a href=\"%(MEDIA_PAGE_URL)s\">View screenshots\n"
 "        of games played on Dolphin</a>.\n"
 "        "
-msgstr "\nWii obrađuje igre samo na rezoluciji od 480p. Dolphin podržava\n720p, 1080p pa čak i veće rezolucije i to za sve tvoje GameCube i Wii igre. <a href=\"%(MEDIA_PAGE_URL)s\">Pogledaj slike igrica</a>."
+msgstr "\nWii obrađuje igre samo na rezoluciji od 480p. Dolphin podržava\n720p, 1080p pa čak i veće rezolucije i to za sve vaše GameCube i Wii igre. <a href=\"%(MEDIA_PAGE_URL)s\">Pogledaj slike igrica</a>."
 
 #: homepage/templates/homepage-home.html:81
 msgid "Use your favorite controller"
@@ -318,12 +318,12 @@ msgstr "Koristite vaš omiljeni kontroler"
 #: homepage/templates/homepage-home.html:83
 msgid ""
 "\n"
-"        Not a big fan of the Gamecube controller and the Wiimote? You can\n"
+"        Not a big fan of the GameCube controller and the Wiimote? You can\n"
 "        play games with your favorite PC controller, or even with keyboard\n"
 "        and mouse! Wiimotes are still supported, including Wii Motion Plus\n"
 "        for games that require it.\n"
 "        "
-msgstr "\nNiste baš veliki obožavatelj Gamecube/Wiimote kontrolera?Nema problema! Sa Dolphinom možete igrati sve svoje igrice sa svojim najdražim kontrolerom te čak i sa tipkovnicom i mišem! Wii Motion Plus i Wiimote su još uvijek podržani."
+msgstr "\nNiste baš veliki obožavatelj GameCube/Wiimote kontrolera?Nema problema! Sa Dolphinom možete igrati sve svoje igrice sa svojim najdražim kontrolerom te čak i sa tipkovnicom i mišem! Wii Motion Plus i Wiimote su još uvijek podržani."
 
 #: homepage/templates/homepage-home.html:93
 msgid "Recent Dolphin news"
@@ -341,13 +341,13 @@ msgstr "Izvrsna kompatibilnost"
 #, python-format
 msgid ""
 "\n"
-"        Dolphin can play most of the Gamecube and Wii games collection\n"
+"        Dolphin can play most of the GameCube and Wii games collection\n"
 "        without issues. New Wii releases often work on Dolphin from day one.\n"
 "        Wiiware and Virtual Console games are also supported. Check out\n"
 "        the <a href=\"%(COMPAT_URL)s\">Dolphin compatibility list</a>\n"
 "        or the <a href=\"%(WIKI_URL)s\">Dolphin wiki</a> for more details.\n"
 "        "
-msgstr "\nDolphin bez problema može vrtjeti većinu Wii igrica bez ikakvih problema. Nove Wii igre se mogu igrati već od prvog dana izlaska,\nWiiware i Virtual Console igrice su također podržane. Provjerite\n<a href=\"%(COMPAT_URL)s\">Listu kompatibilnosti </a>\nili <a href=\"%(WIKI_URL)s\">Dolphin wiki</a> za više informacija."
+msgstr "\nDolphin bez problema može vrtjeti većinu Wii igrica bez ikakvih problema. Nove Wii igre se mogu igrati već od prvog dana izlaska,\nWiiware i Virtual Console igrice su također podržane. Provjerite\n<a href=\"%(COMPAT_URL)s\">Listu kompatibilnosti</a>\nili <a href=\"%(WIKI_URL)s\">Dolphin wiki</a> za više informacija."
 
 #: homepage/templates/homepage-home.html:124
 msgid "Helpful community"
@@ -358,12 +358,12 @@ msgstr "Zajednica koja rado pomaže"
 msgid ""
 "\n"
 "        Installation issues? Trying to figure out the best settings for a\n"
-"        game? Or just interested in discussion about Gamecube and Wii games\n"
+"        game? Or just interested in discussion about GameCube and Wii games\n"
 "        you like? If the <a href=\"%(FAQ_URL)s\">Frequently Asked Questions</a>\n"
 "        can't help you, other Dolphin users may be willing to help you over at the\n"
 "        <a href=\"%(FORUM_URL)s\">official discussion forums</a>.\n"
 "        "
-msgstr "\nProblemi sa instalacijom? Pokušavate pronaći najbolje postavke za igru? Ili ste možda zainteresirani za diskusiju o Gamecube/Wii igrama\n Ako vam <a href=\"%(FAQ_URL)s\">Često Postavljena Pitanja</a>⏎\nne uspiju pomoći, ostali korisnici Dolphina su vam voljni pomoći na\n\n<a href=\"%(FORUM_URL)s\">službenom forumu za raspravu</a>."
+msgstr "\nProblemi sa instalacijom? Pokušavate pronaći najbolje postavke za\nigru? Ili ste možda zainteresirani za diskusiju o GameCube/Wii igrama?\n Ako vam <a href=\"%(FAQ_URL)s\">Često Postavljena Pitanja</a>\nne uspiju pomoći, ostali korisnici Dolphina su vam voljni pomoći na\n<a href=\"%(FORUM_URL)s\">službenom forumu za raspravu</a>."
 
 #: homepage/templates/homepage-home.html:138
 msgid "Free and Open Source"
@@ -382,7 +382,7 @@ msgstr "\nDolphin Emulator je besplatan i razvijaju ga razni volonteri diljem \n
 
 #: media/templates/media-all.html:6 media/templates/media-all.html.py:19
 msgid "Media gallery"
-msgstr "Galerija medija"
+msgstr "Galerija"
 
 #: media/templates/media-all.html:43
 msgid "Full size"

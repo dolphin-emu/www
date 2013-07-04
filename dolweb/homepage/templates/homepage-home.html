@@ -4,7 +4,7 @@
 {% load humanize %}
 {% load thumbnail %}
 
-{% block "title" %}{% trans "Gamecube/Wii games on PC" %}{% endblock %}
+{% block "title" %}{% trans "GameCube/Wii games on PC" %}{% endblock %}
 
 {% block "bodystart" %}
     <div id="fb-root"></div>
@@ -24,7 +24,7 @@
             <div class="span6">
                 <h1>{% trans "Dolphin Emulator" %}</h1>
                 <p>
-                {% trans "Play Gamecube and Wii games in 1080p on your PC." %}
+                {% trans "Play GameCube and Wii games in 1080p on your PC." %}
                 </p>
 
                 <p class="download-btn"><a class="btn btn-primary btn-large" href="{% url downloads-index %}?ref=btn">{% blocktrans %}Download {{ last_release }} now for Windows, Mac and Linux »{% endblocktrans %}</a></p>
@@ -71,7 +71,7 @@
         {% blocktrans %}
         The Wii only renders games at a 480p resolution. Dolphin supports
         720p, 1080p and even higher definitions for all of your
-        Gamecube and Wii games. <a href="{{ MEDIA_PAGE_URL }}">View screenshots
+        GameCube and Wii games. <a href="{{ MEDIA_PAGE_URL }}">View screenshots
         of games played on Dolphin</a>.
         {% endblocktrans %}
         </p>
@@ -81,7 +81,7 @@
         <h2>{% trans "Use your favorite controller" %}</h2>
         <p>
         {% blocktrans %}
-        Not a big fan of the Gamecube controller and the Wiimote? You can
+        Not a big fan of the GameCube controller and the Wiimote? You can
         play games with your favorite PC controller, or even with keyboard
         and mouse! Wiimotes are still supported, including Wii Motion Plus
         for games that require it.
@@ -111,7 +111,7 @@
         <p>
         {% url compat-index as COMPAT_URL %}
         {% blocktrans %}
-        Dolphin can play most of the Gamecube and Wii games collection
+        Dolphin can play most of the GameCube and Wii games collection
         without issues. New Wii releases often work on Dolphin from day one.
         Wiiware and Virtual Console games are also supported. Check out
         the <a href="{{ COMPAT_URL }}">Dolphin compatibility list</a>
@@ -126,7 +126,7 @@
         {% url docs-faq as FAQ_URL %}
         {% blocktrans %}
         Installation issues? Trying to figure out the best settings for a
-        game? Or just interested in discussion about Gamecube and Wii games
+        game? Or just interested in discussion about GameCube and Wii games
         you like? If the <a href="{{ FAQ_URL }}">Frequently Asked Questions</a>
         can't help you, other Dolphin users may be willing to help you over at the
         <a href="{{ FORUM_URL }}">official discussion forums</a>.

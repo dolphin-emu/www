@@ -269,8 +269,8 @@ msgid "Change description"
 msgstr "修改说明"
 
 #: homepage/templates/homepage-home.html:7
-msgid "Gamecube/Wii games on PC"
-msgstr "在PC上运行Gamecube/Wii游戏"
+msgid "GameCube/Wii games on PC"
+msgstr "在PC上运行GameCube/Wii游戏"
 
 #: homepage/templates/homepage-home.html:25 templates/_base.html:9
 #: templates/_base.html.py:55
@@ -278,8 +278,8 @@ msgid "Dolphin Emulator"
 msgstr "Dolphin Emulator"
 
 #: homepage/templates/homepage-home.html:27
-msgid "Play Gamecube and Wii games in 1080p on your PC."
-msgstr "在您的PC上以1080p运行Gamecube和Wii游戏。"
+msgid "Play GameCube and Wii games in 1080p on your PC."
+msgstr "在您的PC上以1080p运行GameCube和Wii游戏。"
 
 #: homepage/templates/homepage-home.html:30
 #, python-format
@@ -307,10 +307,10 @@ msgid ""
 "\n"
 "        The Wii only renders games at a 480p resolution. Dolphin supports\n"
 "        720p, 1080p and even higher definitions for all of your\n"
-"        Gamecube and Wii games. <a href=\"%(MEDIA_PAGE_URL)s\">View screenshots\n"
+"        GameCube and Wii games. <a href=\"%(MEDIA_PAGE_URL)s\">View screenshots\n"
 "        of games played on Dolphin</a>.\n"
 "        "
-msgstr "\n        Wii仅在480p分辨率下渲染游戏，而Dolphin支持在720p、1080p甚至更高分辨率下运行你所有的Gamecube和Wii游戏。<a href=\"%(MEDIA_PAGE_URL)s\">查看Dolphin中所运行游戏的截图</a>。\n        "
+msgstr "\n        Wii仅在480p分辨率下渲染游戏，而Dolphin支持在720p、1080p甚至更高分辨率下运行你所有的GameCube和Wii游戏。<a href=\"%(MEDIA_PAGE_URL)s\">查看Dolphin中所运行游戏的截图</a>。\n        "
 
 #: homepage/templates/homepage-home.html:81
 msgid "Use your favorite controller"
@@ -319,12 +319,12 @@ msgstr "使用您最爱的控制器"
 #: homepage/templates/homepage-home.html:83
 msgid ""
 "\n"
-"        Not a big fan of the Gamecube controller and the Wiimote? You can\n"
+"        Not a big fan of the GameCube controller and the Wiimote? You can\n"
 "        play games with your favorite PC controller, or even with keyboard\n"
 "        and mouse! Wiimotes are still supported, including Wii Motion Plus\n"
 "        for games that require it.\n"
 "        "
-msgstr "\n        不是那么喜欢Gamecube控制器和Wii遥控器？您可以使用您最喜爱的游戏控制器，或者甚至是键盘和鼠标来玩游戏！Wii遥控器和Wii动感强化器仍受支持，以便运行需要它们的游戏。\n        "
+msgstr "\n        不是那么喜欢GameCube控制器和Wii遥控器？您可以使用您最喜爱的游戏控制器，或者甚至是键盘和鼠标来玩游戏！Wii遥控器和Wii动感强化器仍受支持，以便运行需要它们的游戏。\n        "
 
 #: homepage/templates/homepage-home.html:93
 msgid "Recent Dolphin news"
@@ -342,13 +342,13 @@ msgstr "强大的兼容性"
 #, python-format
 msgid ""
 "\n"
-"        Dolphin can play most of the Gamecube and Wii games collection\n"
+"        Dolphin can play most of the GameCube and Wii games collection\n"
 "        without issues. New Wii releases often work on Dolphin from day one.\n"
 "        Wiiware and Virtual Console games are also supported. Check out\n"
 "        the <a href=\"%(COMPAT_URL)s\">Dolphin compatibility list</a>\n"
 "        or the <a href=\"%(WIKI_URL)s\">Dolphin wiki</a> for more details.\n"
 "        "
-msgstr "\n        Dolphin可以正确运行大多数Gamecube和Wii游戏。新发布的Wii游戏通常发售当天就能在Dolphin上运行。Dolphin同样支持Wiiware和Virtual Console游戏。查看<a href=\"%(COMPAT_URL)s\">Dolphin兼容列表</a>或<a href=\"%(WIKI_URL)s\">Dolphin wiki</a>以获取更多信息。\n        "
+msgstr "\n        Dolphin可以正确运行大多数GameCube和Wii游戏。新发布的Wii游戏通常发售当天就能在Dolphin上运行。Dolphin同样支持Wiiware和Virtual Console游戏。查看<a href=\"%(COMPAT_URL)s\">Dolphin兼容列表</a>或<a href=\"%(WIKI_URL)s\">Dolphin wiki</a>以获取更多信息。\n        "
 
 #: homepage/templates/homepage-home.html:124
 msgid "Helpful community"
@@ -359,12 +359,12 @@ msgstr "乐于助人的社区"
 msgid ""
 "\n"
 "        Installation issues? Trying to figure out the best settings for a\n"
-"        game? Or just interested in discussion about Gamecube and Wii games\n"
+"        game? Or just interested in discussion about GameCube and Wii games\n"
 "        you like? If the <a href=\"%(FAQ_URL)s\">Frequently Asked Questions</a>\n"
 "        can't help you, other Dolphin users may be willing to help you over at the\n"
 "        <a href=\"%(FORUM_URL)s\">official discussion forums</a>.\n"
 "        "
-msgstr "\n        安装遇到问题？想找出适用于某个游戏的最佳配置？或者只是希望讨论喜欢的Gamecube和Wii游戏？如果<a href=\"%(FAQ_URL)s\">常见问题解答</a>没能对你有所帮助，就来我们的<a href=\"%(FORUM_URL)s\">官方论坛</a>吧，其他Dolphin用户将随时伸出援手。\n        "
+msgstr "\n        安装遇到问题？想找出适用于某个游戏的最佳配置？或者只是希望讨论喜欢的GameCube和Wii游戏？如果<a href=\"%(FAQ_URL)s\">常见问题解答</a>没能对你有所帮助，就来我们的<a href=\"%(FORUM_URL)s\">官方论坛</a>吧，其他Dolphin用户将随时伸出援手。\n        "
 
 #: homepage/templates/homepage-home.html:138
 msgid "Free and Open Source"
