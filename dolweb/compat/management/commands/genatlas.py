@@ -53,15 +53,15 @@ def country_key(gameid):
 def get_gameids(letter):
     # Select all gameids redirecting to pages starting with that letter
     if letter == '#':
-        cond = 'pl.pl_title REGEXP "^[^a-zA-Z].*$"'
+        cond = "pl.pl_title SIMILAR TO '[^a-zA-Z]%%'"
     else:
-        cond = 'pl.pl_title LIKE "%s%%%%"' % letter
+        cond = "pl.pl_title LIKE '%s%%%%'" % letter
 
     gameids = Page.objects.raw('''
         SELECT gp.page_id, gp.page_title, pl.pl_title AS link_to
-            FROM mw_page gp
-            LEFT JOIN mw_pagelinks pl on pl.pl_from = gp.page_id
-            WHERE gp.page_is_redirect = TRUE
+            FROM page gp
+            LEFT JOIN pagelinks pl on pl.pl_from = gp.page_id
+            WHERE gp.page_is_redirect = 1
                 AND gp.page_namespace = 0
                 AND LENGTH(gp.page_title) = 6
                 AND pl.pl_namespace = 0
@@ -72,7 +72,7 @@ def get_gameids(letter):
     for gid in gameids:
         if not gid.title_url.isalnum():
             continue
-        hash = hashlib.sha1(gid.link_to).hexdigest()[:8]
+        hash = hashlib.sha1(gid.link_to.encode('utf-8')).hexdigest()[:8]
         title_gameids[hash].append(gid.title_url.upper())
 
     # Prefer in that order: US, EU, JP, then whatever
