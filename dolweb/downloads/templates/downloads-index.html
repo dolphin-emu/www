@@ -3,6 +3,8 @@
 {% load humanize %}
 {% load i18n %}
 
+{% block "metadescr" %}{% blocktrans with ver=last_master.shortrev %}Download the latest version of the Dolphin Emulator ({{ ver }}) from the official website.{% endblocktrans %}{% endblock %}
+
 {% block "title" %}{% trans "Download" %}{% endblock %}
 
 {% block "body" %}
