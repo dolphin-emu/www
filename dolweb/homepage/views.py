@@ -1,5 +1,5 @@
 from annoying.decorators import render_to
-from dolweb.downloads.models import ReleaseVersion
+from dolweb.downloads.models import DevVersion, ReleaseVersion
 from dolweb.homepage.models import NewsArticle
 from dolweb.media.models import Screenshot
 
@@ -11,5 +11,6 @@ def home(request):
         last_release = ReleaseVersion.objects.order_by('-date')[0]
     except IndexError:
         last_release = u"Dolphin"
+    last_master = DevVersion.objects.filter(branch='master').order_by('-date')[0]
     return { 'featured_images': featured, 'last_release': last_release,
-             'latest_news': news }
+             'latest_news': news, 'last_master': last_master }

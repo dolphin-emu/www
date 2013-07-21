@@ -4,7 +4,7 @@
 {% load humanize %}
 {% load thumbnail %}
 
-{% block "metadescr" %}{% trans "Official website of Dolphin, the GameCube and Wii emulator. Download the latest version or ask questions on our forums." %}{% endblock %}
+{% block "metadescr" %}{% blocktrans with ver=last_master.shortrev %}Official website of Dolphin, the GameCube and Wii emulator. Download the latest version ({{ ver }}) now or ask questions on our forums for help.{% endblocktrans %}{% endblock %}
 
 {% block "title" %}{% trans "GameCube/Wii games on PC" %}{% endblock %}
 
