@@ -1,1 +1,11 @@
-<h1>404 - not found</h1>
+{% extends "_base.html" %}
+
+{% load i18n %}
+
+{% block "title" %}{% trans "Page not found" %}{% endblock %}
+
+{% block "body" %}
+<h1>{% trans "Page not found" %}</h1>
+
+<p>{% blocktrans "The URL you tried to access does not exist." %}</p>
+{% endblock %}
