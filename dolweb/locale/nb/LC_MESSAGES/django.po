@@ -4,12 +4,13 @@
 # 
 # Translators:
 # KHRZ <e-k-nut@hotmail.com>, 2013
+# KHRZ <e-k-nut@hotmail.com>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-04-09 01:11+0200\n"
-"PO-Revision-Date: 2013-06-30 08:31+0000\n"
+"POT-Creation-Date: 2013-07-22 22:47+0200\n"
+"PO-Revision-Date: 2013-07-22 20:49+0000\n"
 "Last-Translator: delroth <delroth@gmail.com>\n"
 "Language-Team: Norwegian Bokmål (http://www.transifex.com/projects/p/dolphin-emu/language/nb/)\n"
 "MIME-Version: 1.0\n"
@@ -19,73 +20,79 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: compat/templates/compat-list.html:8
+msgid ""
+"The Dolphin Emulator compatibility list contains all the games we tested, "
+"sorted by how well they work on the emulator."
+msgstr ""
+
+#: compat/templates/compat-list.html:10
 #, python-format
 msgid "Compatibility List - page %(page)s"
 msgstr ""
 
-#: compat/templates/compat-list.html:20
+#: compat/templates/compat-list.html:22
 msgid "How to read the ratings"
 msgstr ""
 
-#: compat/templates/compat-list.html:23
+#: compat/templates/compat-list.html:25
 msgid "5 out of 5"
 msgstr ""
 
-#: compat/templates/compat-list.html:23
+#: compat/templates/compat-list.html:25
 msgid "<strong>Perfect</strong>: No issues at all!"
 msgstr ""
 
-#: compat/templates/compat-list.html:24
+#: compat/templates/compat-list.html:26
 msgid "4 out of 5"
 msgstr ""
 
-#: compat/templates/compat-list.html:24
+#: compat/templates/compat-list.html:26
 msgid ""
 "<strong>Playable</strong>: Runs well, only minor graphical or audio "
 "glitches. Games can be played all the way through."
 msgstr ""
 
-#: compat/templates/compat-list.html:25
+#: compat/templates/compat-list.html:27
 msgid "3 out of 5"
 msgstr ""
 
-#: compat/templates/compat-list.html:25
+#: compat/templates/compat-list.html:27
 msgid ""
 "<strong>Starts</strong>: Starts, maybe even plays well, but crashes or major"
 " graphical/audio glitches."
 msgstr ""
 
-#: compat/templates/compat-list.html:26
+#: compat/templates/compat-list.html:28
 msgid "2 out of 5"
 msgstr ""
 
-#: compat/templates/compat-list.html:26
+#: compat/templates/compat-list.html:28
 msgid ""
 "<strong>Intro/Menu</strong>: Hangs/crashes somewhere between booting and "
 "starting."
 msgstr ""
 
-#: compat/templates/compat-list.html:27
+#: compat/templates/compat-list.html:29
 msgid "1 out of 5"
 msgstr ""
 
-#: compat/templates/compat-list.html:27
+#: compat/templates/compat-list.html:29
 msgid "<strong>Broken</strong>: Crashes when booting."
 msgstr ""
 
-#: compat/templates/compat-list.html:34
+#: compat/templates/compat-list.html:36
 msgid "Statistics"
 msgstr ""
 
-#: compat/templates/compat-list.html:54
+#: compat/templates/compat-list.html:56
 msgid "Game title (click for details)"
 msgstr ""
 
-#: compat/templates/compat-list.html:55 templates/_base.html:63
+#: compat/templates/compat-list.html:57 templates/_base.html:63
 msgid "Compatibility"
 msgstr ""
 
-#: compat/templates/compat-list.html:56
+#: compat/templates/compat-list.html:58
 msgid "Last updated"
 msgstr ""
 
@@ -113,7 +120,13 @@ msgstr ""
 msgid "Perfect"
 msgstr ""
 
-#: docs/templates/docs-faq.html:7
+#: docs/templates/docs-faq.html:6
+msgid ""
+"The Official Dolphin FAQ answers all the questions that people often ask "
+"about Dolphin."
+msgstr ""
+
+#: docs/templates/docs-faq.html:8
 msgid "Frequently Asked Questions"
 msgstr "Ofte Stilte Spørsmål"
 
@@ -121,15 +134,19 @@ msgstr "Ofte Stilte Spørsmål"
 msgid "Go back to the guides list"
 msgstr ""
 
-#: docs/templates/docs-guides-index.html:5 templates/_base.html:62
+#: docs/templates/docs-guides-index.html:5
+msgid "See all the guides written by the Dolphin team about the emulator."
+msgstr ""
+
+#: docs/templates/docs-guides-index.html:7 templates/_base.html:62
 msgid "Guides"
 msgstr "Guider"
 
-#: docs/templates/docs-guides-index.html:9
+#: docs/templates/docs-guides-index.html:11
 msgid "Guides and documentation"
 msgstr ""
 
-#: docs/templates/docs-guides-index.html:17
+#: docs/templates/docs-guides-index.html:19
 msgid "No published guide available"
 msgstr "Ingen publiserte guider tilgjengelige"
 
@@ -149,7 +166,7 @@ msgid "<tt>%(branch)s</tt> branch"
 msgstr "<tt>%(branch)s</tt> grein"
 
 #: downloads/templates/downloads-branches.html:21
-#: downloads/templates/downloads-index.html:89
+#: downloads/templates/downloads-index.html:91
 msgid "View older versions »"
 msgstr "Vis eldre builds »"
 
@@ -162,15 +179,22 @@ msgid "No development release yet"
 msgstr "Ingen utviklings-release enda"
 
 #: downloads/templates/downloads-index.html:6
-#: downloads/templates/downloads-index.html:25 templates/_base.html:60
+#, python-format
+msgid ""
+"Download the latest version of the Dolphin Emulator (%(ver)s) from the "
+"official website."
+msgstr ""
+
+#: downloads/templates/downloads-index.html:8
+#: downloads/templates/downloads-index.html:27 templates/_base.html:59
 msgid "Download"
 msgstr "Last ned"
 
-#: downloads/templates/downloads-index.html:29
+#: downloads/templates/downloads-index.html:31
 msgid "Stable versions"
 msgstr "Stabile versjoner"
 
-#: downloads/templates/downloads-index.html:31
+#: downloads/templates/downloads-index.html:33
 msgid ""
 "\n"
 "    Stable versions are released after a lot of testing to ensure emulation\n"
@@ -178,15 +202,15 @@ msgid ""
 "    Dolphin you should use, the latest stable version is generally the best.</strong>\n"
 msgstr "\nStabile versjoner blir sluppet etter masse testing for å sikre emulasjons-\nytelse og stabilitet. <strong>Hvis du ikke hvilken versjon av\nDolphin du burde bruke, er som regel den siste stabile versjonen best.<strong>\n"
 
-#: downloads/templates/downloads-index.html:53
+#: downloads/templates/downloads-index.html:55
 msgid "No stable release yet"
 msgstr "Ingen stabile releaser enda"
 
-#: downloads/templates/downloads-index.html:74
+#: downloads/templates/downloads-index.html:76
 msgid "Development versions"
 msgstr "utviklingsversjoner"
 
-#: downloads/templates/downloads-index.html:76
+#: downloads/templates/downloads-index.html:78
 msgid ""
 "\n"
 "    <strong>Warning!</strong> Development versions are released every time a\n"
@@ -195,19 +219,19 @@ msgid ""
 "    decreased stability.\n"
 msgstr "\n<strong>Advarsel!<strong> utviklingsversjoner blir sluppet hver gang en\nutvikler gjør en endring i Dolphin.  Å bruke utviklingsversjoner tillater deg\nå bruke de siste i prosjektet, til prisen av senket stabilitet.\n"
 
-#: downloads/templates/downloads-index.html:83
+#: downloads/templates/downloads-index.html:85
 msgid "Only displaying the <tt>master</tt> branch versions."
 msgstr "Vis bare <tt>master</tt> branch-versjonene."
 
-#: downloads/templates/downloads-index.html:84
+#: downloads/templates/downloads-index.html:86
 msgid "Show all available branches"
 msgstr "Vil alle greiner"
 
-#: downloads/templates/downloads-index.html:93
+#: downloads/templates/downloads-index.html:95
 msgid "Source code"
 msgstr "Kildekode"
 
-#: downloads/templates/downloads-index.html:95
+#: downloads/templates/downloads-index.html:97
 msgid ""
 "\n"
 "    The latest version of the Dolphin source code can be downloaded from the\n"
@@ -215,7 +239,7 @@ msgid ""
 "    "
 msgstr "\nDen siste versjonen av Dolphins kildekode kan lastes ned fra Git\nrepositoriet."
 
-#: downloads/templates/downloads-index.html:103
+#: downloads/templates/downloads-index.html:105
 msgid ""
 "\n"
 "    You can also <a href=\"http://code.google.com/p/dolphin-emu/source/browse/\">browse\n"
@@ -268,39 +292,45 @@ msgid "Change description"
 msgstr ""
 
 #: homepage/templates/homepage-home.html:7
+#, python-format
+msgid ""
+"Official website of Dolphin, the GameCube and Wii emulator. Download the "
+"latest version (%(ver)s) now or ask questions on our forums for help."
+msgstr ""
+
+#: homepage/templates/homepage-home.html:9
 msgid "GameCube/Wii games on PC"
 msgstr ""
 
-#: homepage/templates/homepage-home.html:25 templates/_base.html:9
-#: templates/_base.html.py:55
+#: homepage/templates/homepage-home.html:27 templates/_base.html:56
 msgid "Dolphin Emulator"
 msgstr ""
 
-#: homepage/templates/homepage-home.html:27
+#: homepage/templates/homepage-home.html:29
 msgid "Play GameCube and Wii games in 1080p on your PC."
 msgstr ""
 
-#: homepage/templates/homepage-home.html:30
+#: homepage/templates/homepage-home.html:32
 #, python-format
 msgid "Download %(last_release)s now for Windows, Mac and Linux »"
 msgstr ""
 
-#: homepage/templates/homepage-home.html:33
+#: homepage/templates/homepage-home.html:35
 msgid ""
 "\n"
 "                <strong>Minimal requirements</strong>: SSE2 compatible CPU, Shader Model 3.0 GPU, 2GB of RAM, 50MB of disk space\n"
 "                "
 msgstr ""
 
-#: homepage/templates/homepage-home.html:38
+#: homepage/templates/homepage-home.html:40
 msgid "More information about hardware requirements"
 msgstr ""
 
-#: homepage/templates/homepage-home.html:68
+#: homepage/templates/homepage-home.html:70
 msgid "Improved graphics"
 msgstr ""
 
-#: homepage/templates/homepage-home.html:71
+#: homepage/templates/homepage-home.html:73
 #, python-format
 msgid ""
 "\n"
@@ -311,11 +341,11 @@ msgid ""
 "        "
 msgstr ""
 
-#: homepage/templates/homepage-home.html:81
+#: homepage/templates/homepage-home.html:83
 msgid "Use your favorite controller"
 msgstr ""
 
-#: homepage/templates/homepage-home.html:83
+#: homepage/templates/homepage-home.html:85
 msgid ""
 "\n"
 "        Not a big fan of the GameCube controller and the Wiimote? You can\n"
@@ -325,19 +355,19 @@ msgid ""
 "        "
 msgstr ""
 
-#: homepage/templates/homepage-home.html:93
+#: homepage/templates/homepage-home.html:95
 msgid "Recent Dolphin news"
 msgstr ""
 
-#: homepage/templates/homepage-home.html:98
+#: homepage/templates/homepage-home.html:100
 msgid "by"
 msgstr ""
 
-#: homepage/templates/homepage-home.html:110
+#: homepage/templates/homepage-home.html:112
 msgid "Great compatibility"
 msgstr ""
 
-#: homepage/templates/homepage-home.html:113
+#: homepage/templates/homepage-home.html:115
 #, python-format
 msgid ""
 "\n"
@@ -349,11 +379,11 @@ msgid ""
 "        "
 msgstr ""
 
-#: homepage/templates/homepage-home.html:124
+#: homepage/templates/homepage-home.html:126
 msgid "Helpful community"
 msgstr ""
 
-#: homepage/templates/homepage-home.html:127
+#: homepage/templates/homepage-home.html:129
 #, python-format
 msgid ""
 "\n"
@@ -365,11 +395,11 @@ msgid ""
 "        "
 msgstr ""
 
-#: homepage/templates/homepage-home.html:138
+#: homepage/templates/homepage-home.html:140
 msgid "Free and Open Source"
 msgstr ""
 
-#: homepage/templates/homepage-home.html:140
+#: homepage/templates/homepage-home.html:142
 #, python-format
 msgid ""
 "\n"
@@ -380,28 +410,56 @@ msgid ""
 "        "
 msgstr ""
 
-#: media/templates/media-all.html:6 media/templates/media-all.html.py:19
+#: media/templates/media-all.html:6
+msgid ""
+"View all the user-contributed screenshots of the Dolphin Emulator: GameCube "
+"and Wii games in HD."
+msgstr ""
+
+#: media/templates/media-all.html:8
+msgid "Screenshots gallery"
+msgstr ""
+
+#: media/templates/media-all.html:21
 msgid "Media gallery"
 msgstr ""
 
-#: media/templates/media-all.html:43
+#: media/templates/media-all.html:45
 msgid "Full size"
 msgstr ""
 
-#: media/templates/media-all.html:44
+#: media/templates/media-all.html:46
 msgid "Previous"
 msgstr ""
 
-#: media/templates/media-all.html:45
+#: media/templates/media-all.html:47
 msgid "Next"
 msgstr ""
 
-#: templates/_base.html:58
-msgid "Home"
+#: templates/404.html:5 templates/404.html.py:8
+msgid "Page not found"
 msgstr ""
 
-#: templates/_base.html:59
-msgid "Media"
+#: templates/404.html:10
+msgid "The URL you tried to access does not exist."
+msgstr ""
+
+#: templates/500.html:5 templates/500.html.py:8
+msgid "Internal Server Error"
+msgstr ""
+
+#: templates/500.html:10
+msgid ""
+"There was an error while trying to access this page. Please refresh the page"
+" in a few seconds."
+msgstr ""
+
+#: templates/_base.html:9
+msgid "Official Dolphin Emulator Website"
+msgstr ""
+
+#: templates/_base.html:60
+msgid "Screenshots"
 msgstr ""
 
 #: templates/_base.html:61
@@ -417,7 +475,7 @@ msgid "Wiki"
 msgstr ""
 
 #: templates/_base.html:66
-msgid "Development"
+msgid "Code"
 msgstr ""
 
 #: templates/_base.html:103

@@ -4,12 +4,13 @@
 # 
 # Translators:
 # boatkung <boatkung20@gmail.com>, 2013
+# boatkung <boatkung20@gmail.com>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-04-09 01:11+0200\n"
-"PO-Revision-Date: 2013-06-30 08:31+0000\n"
+"POT-Creation-Date: 2013-07-22 22:47+0200\n"
+"PO-Revision-Date: 2013-07-22 20:49+0000\n"
 "Last-Translator: delroth <delroth@gmail.com>\n"
 "Language-Team: Thai (Thailand) (http://www.transifex.com/projects/p/dolphin-emu/language/th_TH/)\n"
 "MIME-Version: 1.0\n"
@@ -19,73 +20,79 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: compat/templates/compat-list.html:8
+msgid ""
+"The Dolphin Emulator compatibility list contains all the games we tested, "
+"sorted by how well they work on the emulator."
+msgstr ""
+
+#: compat/templates/compat-list.html:10
 #, python-format
 msgid "Compatibility List - page %(page)s"
 msgstr "รายการความเข้ากันได้ - หน้า %(page)s"
 
-#: compat/templates/compat-list.html:20
+#: compat/templates/compat-list.html:22
 msgid "How to read the ratings"
 msgstr "วิธีการอ่านค่าเรตติ้ง"
 
-#: compat/templates/compat-list.html:23
+#: compat/templates/compat-list.html:25
 msgid "5 out of 5"
 msgstr "5 เต็ม 5"
 
-#: compat/templates/compat-list.html:23
+#: compat/templates/compat-list.html:25
 msgid "<strong>Perfect</strong>: No issues at all!"
 msgstr "<strong>สมบูรณ์</strong>: ไม่มีปัญหาอะไรเลย!"
 
-#: compat/templates/compat-list.html:24
+#: compat/templates/compat-list.html:26
 msgid "4 out of 5"
 msgstr "4 จาก 5"
 
-#: compat/templates/compat-list.html:24
+#: compat/templates/compat-list.html:26
 msgid ""
 "<strong>Playable</strong>: Runs well, only minor graphical or audio "
 "glitches. Games can be played all the way through."
 msgstr "<strong>เล่นได้</strong>: รันเกมได้ดี มีปัญหาเล็กน้อยกับกราฟิกหรือเสียง แต่เกมยังคงเล่นต่อไปได้"
 
-#: compat/templates/compat-list.html:25
+#: compat/templates/compat-list.html:27
 msgid "3 out of 5"
 msgstr "3 จาก 5"
 
-#: compat/templates/compat-list.html:25
+#: compat/templates/compat-list.html:27
 msgid ""
 "<strong>Starts</strong>: Starts, maybe even plays well, but crashes or major"
 " graphical/audio glitches."
 msgstr "<strong>เริ่มเกมได้</strong>: เริ่มเกมได้ อาจจะเล่นไปได้สักพักแต่จะมีปัญหาการแครชหรือปัญหาใหญ่เกี่ยวกับกราฟิก/เสียง"
 
-#: compat/templates/compat-list.html:26
+#: compat/templates/compat-list.html:28
 msgid "2 out of 5"
 msgstr "2 จาก 5"
 
-#: compat/templates/compat-list.html:26
+#: compat/templates/compat-list.html:28
 msgid ""
 "<strong>Intro/Menu</strong>: Hangs/crashes somewhere between booting and "
 "starting."
 msgstr "<strong>อินโทร/เมนู</strong>: แฮงค์/แครช ในบางจุดระหว่างการบูตเกมไปจนถึงตอนเริ่มเกม"
 
-#: compat/templates/compat-list.html:27
+#: compat/templates/compat-list.html:29
 msgid "1 out of 5"
 msgstr "1 จาก 5"
 
-#: compat/templates/compat-list.html:27
+#: compat/templates/compat-list.html:29
 msgid "<strong>Broken</strong>: Crashes when booting."
 msgstr "<strong>เปิดไม่ได้</strong>: แครชเมื่อทำการบูตเกม"
 
-#: compat/templates/compat-list.html:34
+#: compat/templates/compat-list.html:36
 msgid "Statistics"
 msgstr "สถิติ"
 
-#: compat/templates/compat-list.html:54
+#: compat/templates/compat-list.html:56
 msgid "Game title (click for details)"
 msgstr "ชื่อเกม (คลิกดูรายละเอียด)"
 
-#: compat/templates/compat-list.html:55 templates/_base.html:63
+#: compat/templates/compat-list.html:57 templates/_base.html:63
 msgid "Compatibility"
 msgstr "การทำงานร่วมกันได้"
 
-#: compat/templates/compat-list.html:56
+#: compat/templates/compat-list.html:58
 msgid "Last updated"
 msgstr "การปรับปรุงล่าสุด"
 
@@ -113,7 +120,13 @@ msgstr "เล่นได้"
 msgid "Perfect"
 msgstr "สมบูรณ์"
 
-#: docs/templates/docs-faq.html:7
+#: docs/templates/docs-faq.html:6
+msgid ""
+"The Official Dolphin FAQ answers all the questions that people often ask "
+"about Dolphin."
+msgstr ""
+
+#: docs/templates/docs-faq.html:8
 msgid "Frequently Asked Questions"
 msgstr "คำถามที่พบบ่อย"
 
@@ -121,15 +134,19 @@ msgstr "คำถามที่พบบ่อย"
 msgid "Go back to the guides list"
 msgstr ""
 
-#: docs/templates/docs-guides-index.html:5 templates/_base.html:62
+#: docs/templates/docs-guides-index.html:5
+msgid "See all the guides written by the Dolphin team about the emulator."
+msgstr ""
+
+#: docs/templates/docs-guides-index.html:7 templates/_base.html:62
 msgid "Guides"
 msgstr "คู่มือการใช้"
 
-#: docs/templates/docs-guides-index.html:9
+#: docs/templates/docs-guides-index.html:11
 msgid "Guides and documentation"
 msgstr ""
 
-#: docs/templates/docs-guides-index.html:17
+#: docs/templates/docs-guides-index.html:19
 msgid "No published guide available"
 msgstr "ยังไม่มีคู่มือเผยแพร่ที่ใช้ได้"
 
@@ -149,7 +166,7 @@ msgid "<tt>%(branch)s</tt> branch"
 msgstr "<tt>%(branch)s</tt> รุ่นต่อยอด"
 
 #: downloads/templates/downloads-branches.html:21
-#: downloads/templates/downloads-index.html:89
+#: downloads/templates/downloads-index.html:91
 msgid "View older versions »"
 msgstr "ดูเวอร์ชันที่เก่ากว่า »"
 
@@ -162,15 +179,22 @@ msgid "No development release yet"
 msgstr "ยังไม่มีการปล่อยเวอร์ชันที่อยู่ในช่วงพัฒนา"
 
 #: downloads/templates/downloads-index.html:6
-#: downloads/templates/downloads-index.html:25 templates/_base.html:60
+#, python-format
+msgid ""
+"Download the latest version of the Dolphin Emulator (%(ver)s) from the "
+"official website."
+msgstr ""
+
+#: downloads/templates/downloads-index.html:8
+#: downloads/templates/downloads-index.html:27 templates/_base.html:59
 msgid "Download"
 msgstr "ดาวน์โหลด"
 
-#: downloads/templates/downloads-index.html:29
+#: downloads/templates/downloads-index.html:31
 msgid "Stable versions"
 msgstr "เวอร์ชันสมบูรณ์"
 
-#: downloads/templates/downloads-index.html:31
+#: downloads/templates/downloads-index.html:33
 msgid ""
 "\n"
 "    Stable versions are released after a lot of testing to ensure emulation\n"
@@ -178,15 +202,15 @@ msgid ""
 "    Dolphin you should use, the latest stable version is generally the best.</strong>\n"
 msgstr "\nเวอร์ชันสมบูรณ์จะถูกปล่อยหลังจากผ่านการทดสอบหลายต่อหลายครั้งเพื่อให้แน่ใจว่าสามารถใช้งานได้\nเสถียรและมีประสิทธิภาพ <strong>ถ้าคุณไม่รู้ว่าควรใช้ Dolphin เวอร์ชันไหน\nเวอร์ชันสมบูรณ์ตัวล่าสุดย่อมดีที่สุด</strong>\n"
 
-#: downloads/templates/downloads-index.html:53
+#: downloads/templates/downloads-index.html:55
 msgid "No stable release yet"
 msgstr "ยังไม่มีการปล่อยเวอร์ชันสมบูรณ์"
 
-#: downloads/templates/downloads-index.html:74
+#: downloads/templates/downloads-index.html:76
 msgid "Development versions"
 msgstr "เวอร์ชันที่อยู่ในช่วงพัฒนา"
 
-#: downloads/templates/downloads-index.html:76
+#: downloads/templates/downloads-index.html:78
 msgid ""
 "\n"
 "    <strong>Warning!</strong> Development versions are released every time a\n"
@@ -195,19 +219,19 @@ msgid ""
 "    decreased stability.\n"
 msgstr "\n<strong>คำเตือน!</strong> เวอร์ชันที่อยู่ในช่วงพัฒนาจะถูกปล่อยออกมาทุกครั้งที่ผู้พัฒนาได้ทำการปรับแต่ง Dolphin การใช้เวอร์ชันที่อยู่ในช่วงพัฒนาจะทำให้คุณได้ใช้รุ่นที่เป็นล่าสุดและมีการพัฒนาดีที่สุด แต่ต้องแลกด้วยความเสถียรภาพของโปรแกรมที่ลดลง\n\n"
 
-#: downloads/templates/downloads-index.html:83
+#: downloads/templates/downloads-index.html:85
 msgid "Only displaying the <tt>master</tt> branch versions."
 msgstr "แสดงเฉพาะ<tt>ต้นแบบ</tt>ของรุ่นที่ต่อยอด"
 
-#: downloads/templates/downloads-index.html:84
+#: downloads/templates/downloads-index.html:86
 msgid "Show all available branches"
 msgstr "แสดงเวอร์ชันต่อยอดทั้งหมด"
 
-#: downloads/templates/downloads-index.html:93
+#: downloads/templates/downloads-index.html:95
 msgid "Source code"
 msgstr "ซอร์สโค้ด"
 
-#: downloads/templates/downloads-index.html:95
+#: downloads/templates/downloads-index.html:97
 msgid ""
 "\n"
 "    The latest version of the Dolphin source code can be downloaded from the\n"
@@ -215,7 +239,7 @@ msgid ""
 "    "
 msgstr "\nเวอร์ชันล่าสุดของ Dolphin ซอร์สโค้ด สามารถดาวน์โหลดได้จาก Git"
 
-#: downloads/templates/downloads-index.html:103
+#: downloads/templates/downloads-index.html:105
 msgid ""
 "\n"
 "    You can also <a href=\"http://code.google.com/p/dolphin-emu/source/browse/\">browse\n"
@@ -268,39 +292,45 @@ msgid "Change description"
 msgstr "เปลี่ยนคำอธิบาย"
 
 #: homepage/templates/homepage-home.html:7
+#, python-format
+msgid ""
+"Official website of Dolphin, the GameCube and Wii emulator. Download the "
+"latest version (%(ver)s) now or ask questions on our forums for help."
+msgstr ""
+
+#: homepage/templates/homepage-home.html:9
 msgid "GameCube/Wii games on PC"
 msgstr "เกม GameCube/Wii บน PC"
 
-#: homepage/templates/homepage-home.html:25 templates/_base.html:9
-#: templates/_base.html.py:55
+#: homepage/templates/homepage-home.html:27 templates/_base.html:56
 msgid "Dolphin Emulator"
 msgstr "Dolphin Emulator"
 
-#: homepage/templates/homepage-home.html:27
+#: homepage/templates/homepage-home.html:29
 msgid "Play GameCube and Wii games in 1080p on your PC."
 msgstr "เล่น GameCube และ Wii แบบ 1080p บน PC ของคุณ"
 
-#: homepage/templates/homepage-home.html:30
+#: homepage/templates/homepage-home.html:32
 #, python-format
 msgid "Download %(last_release)s now for Windows, Mac and Linux »"
 msgstr "ดาวน์โหลด %(last_release)s สำหรับ Windows, Mac และ Linux »"
 
-#: homepage/templates/homepage-home.html:33
+#: homepage/templates/homepage-home.html:35
 msgid ""
 "\n"
 "                <strong>Minimal requirements</strong>: SSE2 compatible CPU, Shader Model 3.0 GPU, 2GB of RAM, 50MB of disk space\n"
 "                "
 msgstr "\n<strong>ความต้องการขั้นต่ำ</strong>: CPU ที่รองรับ SSE2 ,GPU ที่รองรับ Shader Model 3.0, RAM 2GB, พื้นที่ว่างในฮาร์ดดิสก์ 50MB"
 
-#: homepage/templates/homepage-home.html:38
+#: homepage/templates/homepage-home.html:40
 msgid "More information about hardware requirements"
 msgstr "ข้อมูลเพิ่มเติมเกี่ยวกับความต้องการของอุปกรณ์"
 
-#: homepage/templates/homepage-home.html:68
+#: homepage/templates/homepage-home.html:70
 msgid "Improved graphics"
 msgstr "กราฟิกที่ดีขึ้น"
 
-#: homepage/templates/homepage-home.html:71
+#: homepage/templates/homepage-home.html:73
 #, python-format
 msgid ""
 "\n"
@@ -311,11 +341,11 @@ msgid ""
 "        "
 msgstr "\nWii แสดงความละเอียดเกมได้แค่ 480p แต่ Dolphin สามารถแสดงได้ถึง 720p, 1080p หรือมากกว่านี้ ทั้งสำหรับเกมของ GameCube และ Wii <a href=\"%(MEDIA_PAGE_URL)s\">ดูภาพตัวอย่างของเกมที่ได้ลองเล่นบน Dolphin</a>\n        "
 
-#: homepage/templates/homepage-home.html:81
+#: homepage/templates/homepage-home.html:83
 msgid "Use your favorite controller"
 msgstr "ใช้จอยบังคับที่คุณถนัด"
 
-#: homepage/templates/homepage-home.html:83
+#: homepage/templates/homepage-home.html:85
 msgid ""
 "\n"
 "        Not a big fan of the GameCube controller and the Wiimote? You can\n"
@@ -325,19 +355,19 @@ msgid ""
 "        "
 msgstr "\nไม่มีจอย GameCube และ Wiimote ใช่มั้ย? คุณสามารถเล่นเกมด้วยจอยที่คุณถนัดหรือมีอยู่แล้วของ PC รวมถึงคีย์บอร์ดและเมาส์ด้วย! แน่นอนว่า Wiimote ก็ยังสามารถนำมาใช้ รวมถึงสามารถใช้ Wii Motion Plus ได้ด้วยหากเกมจำเป็นต้องใช้"
 
-#: homepage/templates/homepage-home.html:93
+#: homepage/templates/homepage-home.html:95
 msgid "Recent Dolphin news"
 msgstr "ข่าว Dolphin เร็ว ๆ นี้"
 
-#: homepage/templates/homepage-home.html:98
+#: homepage/templates/homepage-home.html:100
 msgid "by"
 msgstr "โดย"
 
-#: homepage/templates/homepage-home.html:110
+#: homepage/templates/homepage-home.html:112
 msgid "Great compatibility"
 msgstr "ทำงานร่วมกันได้ดีเยี่ยม"
 
-#: homepage/templates/homepage-home.html:113
+#: homepage/templates/homepage-home.html:115
 #, python-format
 msgid ""
 "\n"
@@ -349,11 +379,11 @@ msgid ""
 "        "
 msgstr "\nDolphin สามารถเล่นเกมส่วนใหญ่ของ GameCube และ Wii โดยไม่มีปัญหา เกม Wii ที่ออกใหม่ก็สามารถเล่นได้เลยภายในวันเดียว Wiiware และ Virtual Console ก็ได้รับการสนับสนุนด้วย สามารถเช็คได้ที่ <a href=\"%(COMPAT_URL)s\">รายการความเข้ากันได้ของ Dolphin</a> หรือ <a href=\"%(WIKI_URL)s\">Dolphin วิกิ</a> สำหรับรายละเอียดเพิ่มเติม"
 
-#: homepage/templates/homepage-home.html:124
+#: homepage/templates/homepage-home.html:126
 msgid "Helpful community"
 msgstr "มีชุมชนที่คอยให้ความช่วยเหลือ"
 
-#: homepage/templates/homepage-home.html:127
+#: homepage/templates/homepage-home.html:129
 #, python-format
 msgid ""
 "\n"
@@ -365,11 +395,11 @@ msgid ""
 "        "
 msgstr "\nมีปัญหาในการติดตั้ง? พยายามตั้งค่าให้ดีกับเกมใดเกมหนึ่ง? หรือแค่สนใจอยากพูดคุยเกี่ยวกับเกมของ GameCube และ Wii ที่ชอบ ถ้า <a href=\"%(FAQ_URL)s\">คำถามที่พบบ่อย</a> ช่วยคุณไม่ได้ ผู้ใช้ Dolphin คนอื่นอาจช่วยคุณได้ที่ <a href=\"%(FORUM_URL)s\">ฟอรั่มพูดคุยอย่างเป็นทางการ</a>"
 
-#: homepage/templates/homepage-home.html:138
+#: homepage/templates/homepage-home.html:140
 msgid "Free and Open Source"
 msgstr "ฟรีและเป็นโอเพ็นซอร์ส"
 
-#: homepage/templates/homepage-home.html:140
+#: homepage/templates/homepage-home.html:142
 #, python-format
 msgid ""
 "\n"
@@ -380,29 +410,57 @@ msgid ""
 "        "
 msgstr "\nDolphin Emulator ถูกพัฒนาขึ้นโดยอาสาสมัครจากทั่วทุกมุมโลกและแจกจ่ายโดยไม่เก็บค่าใช้จ่ายใด ๆ ถ้าต้องการเป็นส่วนร่วมในการพัฒนาโครงการ สามารถนำซอร์สโค้ดจาก <a href=\"%(GCODE_URL)s\">Google⏎\nCode</a> ไปพัฒนาต่อได้เลย!"
 
-#: media/templates/media-all.html:6 media/templates/media-all.html.py:19
+#: media/templates/media-all.html:6
+msgid ""
+"View all the user-contributed screenshots of the Dolphin Emulator: GameCube "
+"and Wii games in HD."
+msgstr ""
+
+#: media/templates/media-all.html:8
+msgid "Screenshots gallery"
+msgstr ""
+
+#: media/templates/media-all.html:21
 msgid "Media gallery"
 msgstr "คลังสื่อ"
 
-#: media/templates/media-all.html:43
+#: media/templates/media-all.html:45
 msgid "Full size"
 msgstr "ขนาดเต็ม"
 
-#: media/templates/media-all.html:44
+#: media/templates/media-all.html:46
 msgid "Previous"
 msgstr "ก่อนหน้า"
 
-#: media/templates/media-all.html:45
+#: media/templates/media-all.html:47
 msgid "Next"
 msgstr "ถัดไป"
 
-#: templates/_base.html:58
-msgid "Home"
-msgstr "หน้าแรก"
+#: templates/404.html:5 templates/404.html.py:8
+msgid "Page not found"
+msgstr ""
 
-#: templates/_base.html:59
-msgid "Media"
-msgstr "สื่อ"
+#: templates/404.html:10
+msgid "The URL you tried to access does not exist."
+msgstr ""
+
+#: templates/500.html:5 templates/500.html.py:8
+msgid "Internal Server Error"
+msgstr ""
+
+#: templates/500.html:10
+msgid ""
+"There was an error while trying to access this page. Please refresh the page"
+" in a few seconds."
+msgstr ""
+
+#: templates/_base.html:9
+msgid "Official Dolphin Emulator Website"
+msgstr ""
+
+#: templates/_base.html:60
+msgid "Screenshots"
+msgstr ""
 
 #: templates/_base.html:61
 msgid "FAQ"
@@ -417,8 +475,8 @@ msgid "Wiki"
 msgstr "วิกิ"
 
 #: templates/_base.html:66
-msgid "Development"
-msgstr "การพัฒนา"
+msgid "Code"
+msgstr ""
 
 #: templates/_base.html:103
 msgid ""

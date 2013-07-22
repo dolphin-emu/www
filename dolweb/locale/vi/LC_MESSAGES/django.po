@@ -4,13 +4,14 @@
 # 
 # Translators:
 # ppanhh <ppanhh@gmail.com>, 2013
+# ppanhh <ppanhh@gmail.com>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-04-09 01:11+0200\n"
-"PO-Revision-Date: 2013-06-30 09:01+0000\n"
-"Last-Translator: ppanhh <ppanhh@gmail.com>\n"
+"POT-Creation-Date: 2013-07-22 22:47+0200\n"
+"PO-Revision-Date: 2013-07-22 20:49+0000\n"
+"Last-Translator: delroth <delroth@gmail.com>\n"
 "Language-Team: Vietnamese (http://www.transifex.com/projects/p/dolphin-emu/language/vi/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,73 +20,79 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: compat/templates/compat-list.html:8
+msgid ""
+"The Dolphin Emulator compatibility list contains all the games we tested, "
+"sorted by how well they work on the emulator."
+msgstr ""
+
+#: compat/templates/compat-list.html:10
 #, python-format
 msgid "Compatibility List - page %(page)s"
 msgstr "Danh sách tương thích - trang %(page)s"
 
-#: compat/templates/compat-list.html:20
+#: compat/templates/compat-list.html:22
 msgid "How to read the ratings"
 msgstr "Đọc để biết cách xếp hạng"
 
-#: compat/templates/compat-list.html:23
+#: compat/templates/compat-list.html:25
 msgid "5 out of 5"
 msgstr "Đã hết phần 5 của 5"
 
-#: compat/templates/compat-list.html:23
+#: compat/templates/compat-list.html:25
 msgid "<strong>Perfect</strong>: No issues at all!"
 msgstr "<strong>Hoàn hảo</strong>: Hoàn toàn không lỗi!"
 
-#: compat/templates/compat-list.html:24
+#: compat/templates/compat-list.html:26
 msgid "4 out of 5"
 msgstr "Phần 4 của 5"
 
-#: compat/templates/compat-list.html:24
+#: compat/templates/compat-list.html:26
 msgid ""
 "<strong>Playable</strong>: Runs well, only minor graphical or audio "
 "glitches. Games can be played all the way through."
 msgstr "<strong>Có thể chơi được</strong>: Chạy tốt, chỉ gặp một số vấn đề nhỏ về đồ họa và âm thanh. Game có thể được chơi toàn bộ qua các màn."
 
-#: compat/templates/compat-list.html:25
+#: compat/templates/compat-list.html:27
 msgid "3 out of 5"
 msgstr "Phần 3 của 5"
 
-#: compat/templates/compat-list.html:25
+#: compat/templates/compat-list.html:27
 msgid ""
 "<strong>Starts</strong>: Starts, maybe even plays well, but crashes or major"
 " graphical/audio glitches."
 msgstr "<strong>Bắt đầu</strong>: Bắt đầu, mặc dù khi đã chơi một cách rất Phồng Tôm, nhưng lỗi và một số vấn đề về đồ họa/âm thanh vẫn hay xuất hiện."
 
-#: compat/templates/compat-list.html:26
+#: compat/templates/compat-list.html:28
 msgid "2 out of 5"
 msgstr "Phần 2 của 5"
 
-#: compat/templates/compat-list.html:26
+#: compat/templates/compat-list.html:28
 msgid ""
 "<strong>Intro/Menu</strong>: Hangs/crashes somewhere between booting and "
 "starting."
 msgstr "<strong>Giới thiệu/Menu</strong>: Bị treo/tắt đột ngột trong quá trình khởi động và chạy."
 
-#: compat/templates/compat-list.html:27
+#: compat/templates/compat-list.html:29
 msgid "1 out of 5"
 msgstr "Phần 1 của 5"
 
-#: compat/templates/compat-list.html:27
+#: compat/templates/compat-list.html:29
 msgid "<strong>Broken</strong>: Crashes when booting."
 msgstr "<strong>Bị lỗi</strong>: Thường tắt bất chợt khi tải game."
 
-#: compat/templates/compat-list.html:34
+#: compat/templates/compat-list.html:36
 msgid "Statistics"
 msgstr "Thống kê"
 
-#: compat/templates/compat-list.html:54
+#: compat/templates/compat-list.html:56
 msgid "Game title (click for details)"
 msgstr "Tựa đề game (click để biết thêm chi tiết)"
 
-#: compat/templates/compat-list.html:55 templates/_base.html:63
+#: compat/templates/compat-list.html:57 templates/_base.html:63
 msgid "Compatibility"
 msgstr "Khả năng tương thích"
 
-#: compat/templates/compat-list.html:56
+#: compat/templates/compat-list.html:58
 msgid "Last updated"
 msgstr "Lần cập trước"
 
@@ -113,7 +120,13 @@ msgstr "Chơi được"
 msgid "Perfect"
 msgstr "Hoàn hảo"
 
-#: docs/templates/docs-faq.html:7
+#: docs/templates/docs-faq.html:6
+msgid ""
+"The Official Dolphin FAQ answers all the questions that people often ask "
+"about Dolphin."
+msgstr ""
+
+#: docs/templates/docs-faq.html:8
 msgid "Frequently Asked Questions"
 msgstr "Các câu hỏi thường gặp"
 
@@ -121,15 +134,19 @@ msgstr "Các câu hỏi thường gặp"
 msgid "Go back to the guides list"
 msgstr "Quay trở lại danh sách hướng dẫn"
 
-#: docs/templates/docs-guides-index.html:5 templates/_base.html:62
+#: docs/templates/docs-guides-index.html:5
+msgid "See all the guides written by the Dolphin team about the emulator."
+msgstr ""
+
+#: docs/templates/docs-guides-index.html:7 templates/_base.html:62
 msgid "Guides"
 msgstr "Hướng dẫn"
 
-#: docs/templates/docs-guides-index.html:9
+#: docs/templates/docs-guides-index.html:11
 msgid "Guides and documentation"
 msgstr "Tài liệu hướng dẫn sử dụng"
 
-#: docs/templates/docs-guides-index.html:17
+#: docs/templates/docs-guides-index.html:19
 msgid "No published guide available"
 msgstr "Hiện phần này đang được biên soạn"
 
@@ -149,7 +166,7 @@ msgid "<tt>%(branch)s</tt> branch"
 msgstr "<tt>%(branch)s</tt> nhánh"
 
 #: downloads/templates/downloads-branches.html:21
-#: downloads/templates/downloads-index.html:89
+#: downloads/templates/downloads-index.html:91
 msgid "View older versions »"
 msgstr "Xem các phiên bản cũ hơn »"
 
@@ -162,15 +179,22 @@ msgid "No development release yet"
 msgstr "Hiện vẫn chưa công bố phiên bản phát triển"
 
 #: downloads/templates/downloads-index.html:6
-#: downloads/templates/downloads-index.html:25 templates/_base.html:60
+#, python-format
+msgid ""
+"Download the latest version of the Dolphin Emulator (%(ver)s) from the "
+"official website."
+msgstr ""
+
+#: downloads/templates/downloads-index.html:8
+#: downloads/templates/downloads-index.html:27 templates/_base.html:59
 msgid "Download"
 msgstr "Tải xuống"
 
-#: downloads/templates/downloads-index.html:29
+#: downloads/templates/downloads-index.html:31
 msgid "Stable versions"
 msgstr "Phiên bản ổn định"
 
-#: downloads/templates/downloads-index.html:31
+#: downloads/templates/downloads-index.html:33
 msgid ""
 "\n"
 "    Stable versions are released after a lot of testing to ensure emulation\n"
@@ -178,15 +202,15 @@ msgid ""
 "    Dolphin you should use, the latest stable version is generally the best.</strong>\n"
 msgstr "\nPhiên bản ổn định được phát hành sau nhiều quá trình thử nghiệm với trình giả lập\nnhằm đạt được chất lượng và độ tin cậy nhất. <strong>Nếu bạn không biết loại phiên bản\nDolphin mà bạn nên sử dụng, hãy sử dụng phiên bản ổn định.</strong>\n"
 
-#: downloads/templates/downloads-index.html:53
+#: downloads/templates/downloads-index.html:55
 msgid "No stable release yet"
 msgstr "Hiện chưa phát hành phiên bản ổn định"
 
-#: downloads/templates/downloads-index.html:74
+#: downloads/templates/downloads-index.html:76
 msgid "Development versions"
 msgstr "Phiên bản phát triển"
 
-#: downloads/templates/downloads-index.html:76
+#: downloads/templates/downloads-index.html:78
 msgid ""
 "\n"
 "    <strong>Warning!</strong> Development versions are released every time a\n"
@@ -195,19 +219,19 @@ msgid ""
 "    decreased stability.\n"
 msgstr "\n    <strong>Cảnh báo!</strong> Phiên bản phát triển được ban hành mỗi\n    khi các nhà phát triển tiến hành các thay đổi trong Dolphin. Sử dụng phiên bản phát triển cho phép bạn\n   tiếp cận các tính năng mới nhất và tuyệt vời nhất từ dự án, tuy nhiên\n    độ ổn định của phiên bản loại này vẫn cần được cải thiện theo thời gian.\n"
 
-#: downloads/templates/downloads-index.html:83
+#: downloads/templates/downloads-index.html:85
 msgid "Only displaying the <tt>master</tt> branch versions."
 msgstr "Chỉ hiện thị <tt>phần chính</tt> đối với phiên bản nhánh."
 
-#: downloads/templates/downloads-index.html:84
+#: downloads/templates/downloads-index.html:86
 msgid "Show all available branches"
 msgstr "Hiển thị tất cả các nhánh hiện có"
 
-#: downloads/templates/downloads-index.html:93
+#: downloads/templates/downloads-index.html:95
 msgid "Source code"
 msgstr "Mã nguồn"
 
-#: downloads/templates/downloads-index.html:95
+#: downloads/templates/downloads-index.html:97
 msgid ""
 "\n"
 "    The latest version of the Dolphin source code can be downloaded from the\n"
@@ -215,7 +239,7 @@ msgid ""
 "    "
 msgstr "\nPhiên bản mã nguồn mới nhất của Dolphin có thể được tải về từ\ntrang web Git."
 
-#: downloads/templates/downloads-index.html:103
+#: downloads/templates/downloads-index.html:105
 msgid ""
 "\n"
 "    You can also <a href=\"http://code.google.com/p/dolphin-emu/source/browse/\">browse\n"
@@ -268,39 +292,45 @@ msgid "Change description"
 msgstr "Thay đổi mô tả"
 
 #: homepage/templates/homepage-home.html:7
+#, python-format
+msgid ""
+"Official website of Dolphin, the GameCube and Wii emulator. Download the "
+"latest version (%(ver)s) now or ask questions on our forums for help."
+msgstr ""
+
+#: homepage/templates/homepage-home.html:9
 msgid "GameCube/Wii games on PC"
 msgstr "GameCube/Wii games trên PC"
 
-#: homepage/templates/homepage-home.html:25 templates/_base.html:9
-#: templates/_base.html.py:55
+#: homepage/templates/homepage-home.html:27 templates/_base.html:56
 msgid "Dolphin Emulator"
 msgstr "Trình Giả Lập Dolphin"
 
-#: homepage/templates/homepage-home.html:27
+#: homepage/templates/homepage-home.html:29
 msgid "Play GameCube and Wii games in 1080p on your PC."
 msgstr "Chơi GameCube và Wii games với độ phân giải 1080 trên PC của bạn."
 
-#: homepage/templates/homepage-home.html:30
+#: homepage/templates/homepage-home.html:32
 #, python-format
 msgid "Download %(last_release)s now for Windows, Mac and Linux »"
 msgstr "Tải xuống %(last_release)s dành cho Windows, Mac and Linux »"
 
-#: homepage/templates/homepage-home.html:33
+#: homepage/templates/homepage-home.html:35
 msgid ""
 "\n"
 "                <strong>Minimal requirements</strong>: SSE2 compatible CPU, Shader Model 3.0 GPU, 2GB of RAM, 50MB of disk space\n"
 "                "
 msgstr "\n                <strong>Yêu cầu hệ thống tối thiểu</strong>: SSE2 compatible CPU, Shader Model 3.0 GPU, 2GB of RAM, 50MB of disk space\n                "
 
-#: homepage/templates/homepage-home.html:38
+#: homepage/templates/homepage-home.html:40
 msgid "More information about hardware requirements"
 msgstr "Thông tin chi tiết về yêu cầu phần cứng"
 
-#: homepage/templates/homepage-home.html:68
+#: homepage/templates/homepage-home.html:70
 msgid "Improved graphics"
 msgstr "Cải tiến card đồ họa"
 
-#: homepage/templates/homepage-home.html:71
+#: homepage/templates/homepage-home.html:73
 #, python-format
 msgid ""
 "\n"
@@ -311,11 +341,11 @@ msgid ""
 "        "
 msgstr "\n        The Wii chỉ render games ở độ phân giải 480p. Dolphin hỗ trợ\n        720p, 1080p và thậm chí là các độ phân giải lớn hơn dành cho hệ thống\n        GameCube và Wii games. <a href=\"%(MEDIA_PAGE_URL)s\">Xem hình ảnh sơ lược\n        của game được giả lập trên Dolphin</a>.\n        "
 
-#: homepage/templates/homepage-home.html:81
+#: homepage/templates/homepage-home.html:83
 msgid "Use your favorite controller"
 msgstr "Sử dụng điều khiển yêu thích"
 
-#: homepage/templates/homepage-home.html:83
+#: homepage/templates/homepage-home.html:85
 msgid ""
 "\n"
 "        Not a big fan of the GameCube controller and the Wiimote? You can\n"
@@ -325,19 +355,19 @@ msgid ""
 "        "
 msgstr "\n        Không thích điều khiển GameCube và Wiimote? Bạn có thể\n        chơi game bằng điều khiển của chính máy PC, hoặc thậm chí là với bàn phím\n        kèm theo chuột! Wiimotes hiện đang được hỗ trợ, bao gồm Wii Motion Plus\n        cho game nào yêu cầu.\n        "
 
-#: homepage/templates/homepage-home.html:93
+#: homepage/templates/homepage-home.html:95
 msgid "Recent Dolphin news"
 msgstr "Tin tức gần đây về Dolphin"
 
-#: homepage/templates/homepage-home.html:98
+#: homepage/templates/homepage-home.html:100
 msgid "by"
 msgstr "bởi"
 
-#: homepage/templates/homepage-home.html:110
+#: homepage/templates/homepage-home.html:112
 msgid "Great compatibility"
 msgstr "Khả năng tương thích cao"
 
-#: homepage/templates/homepage-home.html:113
+#: homepage/templates/homepage-home.html:115
 #, python-format
 msgid ""
 "\n"
@@ -349,11 +379,11 @@ msgid ""
 "        "
 msgstr "\n        Dolphin có thể chơi hầu hết các game trên GameCube và Wii games\n        mà không gặp khó khăn. Phiên bản mới của Wii thường được cập nhật mỗi ngày.\n        Wiiware và Virtual Console game cũng được hỗ trợ. Truy\n        cập <a href=\"%(COMPAT_URL)s\">Danh sách tương thích với Dolphin</a>\n        hoặc <a href=\"%(WIKI_URL)s\">Dolphin wiki</a> để biết thêm chi tiết.\n        "
 
-#: homepage/templates/homepage-home.html:124
+#: homepage/templates/homepage-home.html:126
 msgid "Helpful community"
 msgstr "Cộng động đông đảo"
 
-#: homepage/templates/homepage-home.html:127
+#: homepage/templates/homepage-home.html:129
 #, python-format
 msgid ""
 "\n"
@@ -365,11 +395,11 @@ msgid ""
 "        "
 msgstr "\n        Có vấn đề khi cài đặt? Cố gắng thử các thiết lập tốt nhất cho\n        game? Hoặc đơn giản là thích thảo luận về GameCube và Wii games\n        mà bạn thích? Nếu <a href=\"%(FAQ_URL)s\">Câu hỏi thường gặp</a>\n        không thể giúp bạn, cộng đồng những người sử dụng Dolphin sẽ có thể trợ giúp bạn tại\n        <a href=\"%(FORUM_URL)s\">diễn đàn thảo luận</a>.\n        "
 
-#: homepage/templates/homepage-home.html:138
+#: homepage/templates/homepage-home.html:140
 msgid "Free and Open Source"
 msgstr "Miễn phí và mã nguồn mở"
 
-#: homepage/templates/homepage-home.html:140
+#: homepage/templates/homepage-home.html:142
 #, python-format
 msgid ""
 "\n"
@@ -380,29 +410,57 @@ msgid ""
 "        "
 msgstr "\n        Trình giả lập Dolphin được phát triển bởi các tình nguyện viên từ khắp nơi trên\n        thế giới và được phát hành miễn phí. Bạn muốn giúp đỡ dự án?\n        Hãy thử tải về mã nguồn của chương trình từ <a href=\"%(GCODE_URL)s\">Google\n        Code</a> và bắt đầu phồng tôm với mã nguồn nhé!\n        "
 
-#: media/templates/media-all.html:6 media/templates/media-all.html.py:19
+#: media/templates/media-all.html:6
+msgid ""
+"View all the user-contributed screenshots of the Dolphin Emulator: GameCube "
+"and Wii games in HD."
+msgstr ""
+
+#: media/templates/media-all.html:8
+msgid "Screenshots gallery"
+msgstr "Ảnh chụp về chương trình"
+
+#: media/templates/media-all.html:21
 msgid "Media gallery"
 msgstr "Thư viện Media"
 
-#: media/templates/media-all.html:43
+#: media/templates/media-all.html:45
 msgid "Full size"
 msgstr "Kích thước đầy đủ"
 
-#: media/templates/media-all.html:44
+#: media/templates/media-all.html:46
 msgid "Previous"
 msgstr "Trước đó"
 
-#: media/templates/media-all.html:45
+#: media/templates/media-all.html:47
 msgid "Next"
 msgstr "Tiếp theo"
 
-#: templates/_base.html:58
-msgid "Home"
-msgstr "Trang chủ"
+#: templates/404.html:5 templates/404.html.py:8
+msgid "Page not found"
+msgstr ""
 
-#: templates/_base.html:59
-msgid "Media"
-msgstr "Media"
+#: templates/404.html:10
+msgid "The URL you tried to access does not exist."
+msgstr ""
+
+#: templates/500.html:5 templates/500.html.py:8
+msgid "Internal Server Error"
+msgstr ""
+
+#: templates/500.html:10
+msgid ""
+"There was an error while trying to access this page. Please refresh the page"
+" in a few seconds."
+msgstr ""
+
+#: templates/_base.html:9
+msgid "Official Dolphin Emulator Website"
+msgstr "Website Chính Thức Của Trình Giả Lập Dolphin"
+
+#: templates/_base.html:60
+msgid "Screenshots"
+msgstr "Hình chụp"
 
 #: templates/_base.html:61
 msgid "FAQ"
@@ -417,8 +475,8 @@ msgid "Wiki"
 msgstr "Wiki"
 
 #: templates/_base.html:66
-msgid "Development"
-msgstr "Phát triển"
+msgid "Code"
+msgstr "Mã"
 
 #: templates/_base.html:103
 msgid ""

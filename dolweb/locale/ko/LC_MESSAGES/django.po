@@ -4,13 +4,14 @@
 # 
 # Translators:
 # Siegfried <iori3000@hanafos.com>, 2013
+# Siegfried <iori3000@hanafos.com>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-04-09 01:11+0200\n"
-"PO-Revision-Date: 2013-06-30 16:53+0000\n"
-"Last-Translator: Siegfried <iori3000@hanafos.com>\n"
+"POT-Creation-Date: 2013-07-22 22:47+0200\n"
+"PO-Revision-Date: 2013-07-22 20:49+0000\n"
+"Last-Translator: delroth <delroth@gmail.com>\n"
 "Language-Team: Korean (http://www.transifex.com/projects/p/dolphin-emu/language/ko/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,73 +20,79 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: compat/templates/compat-list.html:8
+msgid ""
+"The Dolphin Emulator compatibility list contains all the games we tested, "
+"sorted by how well they work on the emulator."
+msgstr ""
+
+#: compat/templates/compat-list.html:10
 #, python-format
 msgid "Compatibility List - page %(page)s"
 msgstr "호환 목록 - 페이지 %(page)s"
 
-#: compat/templates/compat-list.html:20
+#: compat/templates/compat-list.html:22
 msgid "How to read the ratings"
 msgstr "등급 읽는 방법"
 
-#: compat/templates/compat-list.html:23
+#: compat/templates/compat-list.html:25
 msgid "5 out of 5"
 msgstr "5 중에 5"
 
-#: compat/templates/compat-list.html:23
+#: compat/templates/compat-list.html:25
 msgid "<strong>Perfect</strong>: No issues at all!"
 msgstr "<strong>완벽한</strong>: 이슈가 전혀 없음!"
 
-#: compat/templates/compat-list.html:24
+#: compat/templates/compat-list.html:26
 msgid "4 out of 5"
 msgstr "5 중에 4"
 
-#: compat/templates/compat-list.html:24
+#: compat/templates/compat-list.html:26
 msgid ""
 "<strong>Playable</strong>: Runs well, only minor graphical or audio "
 "glitches. Games can be played all the way through."
 msgstr "<strong>플레이가능</strong>: 잘 구동됨, 단지 그래픽이나 오디오의 작은 문제들. 게임을 쭉 플레이 가능."
 
-#: compat/templates/compat-list.html:25
+#: compat/templates/compat-list.html:27
 msgid "3 out of 5"
 msgstr "5 중에 3"
 
-#: compat/templates/compat-list.html:25
+#: compat/templates/compat-list.html:27
 msgid ""
 "<strong>Starts</strong>: Starts, maybe even plays well, but crashes or major"
 " graphical/audio glitches."
 msgstr "<strong>시작</strong>: 시작, 심지어 플레이가 잘 될 지도 모른다, 깨지거나 주요 그래픽/오디오 문제들 외에."
 
-#: compat/templates/compat-list.html:26
+#: compat/templates/compat-list.html:28
 msgid "2 out of 5"
 msgstr "5 중에 2"
 
-#: compat/templates/compat-list.html:26
+#: compat/templates/compat-list.html:28
 msgid ""
 "<strong>Intro/Menu</strong>: Hangs/crashes somewhere between booting and "
 "starting."
 msgstr "<strong>도입부/메뉴</strong>: 부팅과 시작사이 어딘가에서 멈춤/고장남 ."
 
-#: compat/templates/compat-list.html:27
+#: compat/templates/compat-list.html:29
 msgid "1 out of 5"
 msgstr "5 중에 1"
 
-#: compat/templates/compat-list.html:27
+#: compat/templates/compat-list.html:29
 msgid "<strong>Broken</strong>: Crashes when booting."
 msgstr "<strong>고장난</strong>: 부팅할 때 깨짐."
 
-#: compat/templates/compat-list.html:34
+#: compat/templates/compat-list.html:36
 msgid "Statistics"
 msgstr "통계"
 
-#: compat/templates/compat-list.html:54
+#: compat/templates/compat-list.html:56
 msgid "Game title (click for details)"
 msgstr "게임 타이틀 (세부사항은 클릭)"
 
-#: compat/templates/compat-list.html:55 templates/_base.html:63
+#: compat/templates/compat-list.html:57 templates/_base.html:63
 msgid "Compatibility"
 msgstr "호환성"
 
-#: compat/templates/compat-list.html:56
+#: compat/templates/compat-list.html:58
 msgid "Last updated"
 msgstr "최근 업데이트된"
 
@@ -113,7 +120,13 @@ msgstr "플레이가능한"
 msgid "Perfect"
 msgstr "완벽한"
 
-#: docs/templates/docs-faq.html:7
+#: docs/templates/docs-faq.html:6
+msgid ""
+"The Official Dolphin FAQ answers all the questions that people often ask "
+"about Dolphin."
+msgstr ""
+
+#: docs/templates/docs-faq.html:8
 msgid "Frequently Asked Questions"
 msgstr "자주 묻는 질문들"
 
@@ -121,15 +134,19 @@ msgstr "자주 묻는 질문들"
 msgid "Go back to the guides list"
 msgstr "가이드 목록으로 돌아갑니다"
 
-#: docs/templates/docs-guides-index.html:5 templates/_base.html:62
+#: docs/templates/docs-guides-index.html:5
+msgid "See all the guides written by the Dolphin team about the emulator."
+msgstr ""
+
+#: docs/templates/docs-guides-index.html:7 templates/_base.html:62
 msgid "Guides"
 msgstr "가이드"
 
-#: docs/templates/docs-guides-index.html:9
+#: docs/templates/docs-guides-index.html:11
 msgid "Guides and documentation"
 msgstr "가이드와 문서"
 
-#: docs/templates/docs-guides-index.html:17
+#: docs/templates/docs-guides-index.html:19
 msgid "No published guide available"
 msgstr "제공된 유효한 가이드가 없습니다"
 
@@ -149,7 +166,7 @@ msgid "<tt>%(branch)s</tt> branch"
 msgstr "<tt>%(branch)s</tt> 분기"
 
 #: downloads/templates/downloads-branches.html:21
-#: downloads/templates/downloads-index.html:89
+#: downloads/templates/downloads-index.html:91
 msgid "View older versions »"
 msgstr "예전 버전들 보기"
 
@@ -162,15 +179,22 @@ msgid "No development release yet"
 msgstr "개발자 릴리즈가 아직 없습니다"
 
 #: downloads/templates/downloads-index.html:6
-#: downloads/templates/downloads-index.html:25 templates/_base.html:60
+#, python-format
+msgid ""
+"Download the latest version of the Dolphin Emulator (%(ver)s) from the "
+"official website."
+msgstr ""
+
+#: downloads/templates/downloads-index.html:8
+#: downloads/templates/downloads-index.html:27 templates/_base.html:59
 msgid "Download"
 msgstr "다운로드"
 
-#: downloads/templates/downloads-index.html:29
+#: downloads/templates/downloads-index.html:31
 msgid "Stable versions"
 msgstr "안정된 버전"
 
-#: downloads/templates/downloads-index.html:31
+#: downloads/templates/downloads-index.html:33
 msgid ""
 "\n"
 "    Stable versions are released after a lot of testing to ensure emulation\n"
@@ -178,15 +202,15 @@ msgid ""
 "    Dolphin you should use, the latest stable version is generally the best.</strong>\n"
 msgstr "\n    안정된 버전은 에뮬레이션 성능과 안정성을 확신하기 위해 \n많은 테스트를 거친 후에 출시됩니다.    <strong> 어떤 버전을 \n사용해야할지 모르시겠으면, 일반적으로 가장 최근 안정 버전이 최고입니다.</strong>\n"
 
-#: downloads/templates/downloads-index.html:53
+#: downloads/templates/downloads-index.html:55
 msgid "No stable release yet"
 msgstr "안정된 출시가 아직 없음"
 
-#: downloads/templates/downloads-index.html:74
+#: downloads/templates/downloads-index.html:76
 msgid "Development versions"
 msgstr "개발자 버전"
 
-#: downloads/templates/downloads-index.html:76
+#: downloads/templates/downloads-index.html:78
 msgid ""
 "\n"
 "    <strong>Warning!</strong> Development versions are released every time a\n"
@@ -195,19 +219,19 @@ msgid ""
 "    decreased stability.\n"
 msgstr "\n    <strong>경고!</strong> 개발 버전들은 개발자가 돌핀을 변경할 때마다 릴리즈됩니다.\n    개발 버전을 사용하는 것은 최신 그리고 가장 뛰어난 프로젝트 향상들을 사용하게 해줍니다,\n    안정성 감소를 감안하고 말이죠.\n"
 
-#: downloads/templates/downloads-index.html:83
+#: downloads/templates/downloads-index.html:85
 msgid "Only displaying the <tt>master</tt> branch versions."
 msgstr "<tt>마스터</tt> 분기 버전들만 보여줍니다."
 
-#: downloads/templates/downloads-index.html:84
+#: downloads/templates/downloads-index.html:86
 msgid "Show all available branches"
 msgstr "모든 유효한 분기들 보여주기"
 
-#: downloads/templates/downloads-index.html:93
+#: downloads/templates/downloads-index.html:95
 msgid "Source code"
 msgstr "소스 코드"
 
-#: downloads/templates/downloads-index.html:95
+#: downloads/templates/downloads-index.html:97
 msgid ""
 "\n"
 "    The latest version of the Dolphin source code can be downloaded from the\n"
@@ -215,7 +239,7 @@ msgid ""
 "    "
 msgstr "\n    프로젝트 Git(분산 버전 관리 시스템) 저장소에서    \n가장 최신 버전의 돌핀 소스 코드를 다운로드 할 수 있습니다.\n   "
 
-#: downloads/templates/downloads-index.html:103
+#: downloads/templates/downloads-index.html:105
 msgid ""
 "\n"
 "    You can also <a href=\"http://code.google.com/p/dolphin-emu/source/browse/\">browse\n"
@@ -268,39 +292,45 @@ msgid "Change description"
 msgstr "설명을 변경하세요"
 
 #: homepage/templates/homepage-home.html:7
+#, python-format
+msgid ""
+"Official website of Dolphin, the GameCube and Wii emulator. Download the "
+"latest version (%(ver)s) now or ask questions on our forums for help."
+msgstr ""
+
+#: homepage/templates/homepage-home.html:9
 msgid "GameCube/Wii games on PC"
 msgstr "PC에서 게임큐브/위 게임"
 
-#: homepage/templates/homepage-home.html:25 templates/_base.html:9
-#: templates/_base.html.py:55
+#: homepage/templates/homepage-home.html:27 templates/_base.html:56
 msgid "Dolphin Emulator"
 msgstr "돌핀 에뮬레이터"
 
-#: homepage/templates/homepage-home.html:27
+#: homepage/templates/homepage-home.html:29
 msgid "Play GameCube and Wii games in 1080p on your PC."
 msgstr "PC에서 게임큐브와 Wii 게임들을 1080p 로 플레이해보세요."
 
-#: homepage/templates/homepage-home.html:30
+#: homepage/templates/homepage-home.html:32
 #, python-format
 msgid "Download %(last_release)s now for Windows, Mac and Linux »"
 msgstr "윈도우, 맥, 리눅스 용 %(last_release)s 를 지금 다운로드 하세요 »"
 
-#: homepage/templates/homepage-home.html:33
+#: homepage/templates/homepage-home.html:35
 msgid ""
 "\n"
 "                <strong>Minimal requirements</strong>: SSE2 compatible CPU, Shader Model 3.0 GPU, 2GB of RAM, 50MB of disk space\n"
 "                "
 msgstr "\n                <strong>최소 요구 사항</strong>: SSE2 호환 CPU, 쉐이더 모델 3.0 GPU, 2GB 메모리, 50MB 디스크 공간\n                "
 
-#: homepage/templates/homepage-home.html:38
+#: homepage/templates/homepage-home.html:40
 msgid "More information about hardware requirements"
 msgstr "하드웨어 요구사항에 대한 더 자세한 정보"
 
-#: homepage/templates/homepage-home.html:68
+#: homepage/templates/homepage-home.html:70
 msgid "Improved graphics"
 msgstr "향상된 그래픽"
 
-#: homepage/templates/homepage-home.html:71
+#: homepage/templates/homepage-home.html:73
 #, python-format
 msgid ""
 "\n"
@@ -311,11 +341,11 @@ msgid ""
 "        "
 msgstr "\n        Wii 는 480p 해상도에서만 게임들을 렌더링합니다. \n돌핀은 모든 게임큐브와 Wii 게임들에서 720p, 1080p \n그리고 심지어 더 높은 선명도를 지원합니다.  \n<a href=\"%(MEDIA_PAGE_URL)s\"> 돌핀에서 플레이된 게임들의 스크린샷들을 보세요 </a>.\n  "
 
-#: homepage/templates/homepage-home.html:81
+#: homepage/templates/homepage-home.html:83
 msgid "Use your favorite controller"
 msgstr "좋아하는 컨트롤러 사용"
 
-#: homepage/templates/homepage-home.html:83
+#: homepage/templates/homepage-home.html:85
 msgid ""
 "\n"
 "        Not a big fan of the GameCube controller and the Wiimote? You can\n"
@@ -325,19 +355,19 @@ msgid ""
 "        "
 msgstr "\n        게임큐브 컨트롤러와 위모트의 빅 팬이 아니십니까 ? \n        좋아하는 PC 컨트롤러, 혹은 키보드와 마우스를 가지고도 게임들을 플레이 할 수 있습니다!\n        Wii 모션 플러스를 요구하는 게임들은 그것을 포함한\n        위모트도 여전히 지원됩니다. \n        "
 
-#: homepage/templates/homepage-home.html:93
+#: homepage/templates/homepage-home.html:95
 msgid "Recent Dolphin news"
 msgstr "  최근 돌핀 뉴스"
 
-#: homepage/templates/homepage-home.html:98
+#: homepage/templates/homepage-home.html:100
 msgid "by"
 msgstr "에 의해:"
 
-#: homepage/templates/homepage-home.html:110
+#: homepage/templates/homepage-home.html:112
 msgid "Great compatibility"
 msgstr "뛰어난 호환성"
 
-#: homepage/templates/homepage-home.html:113
+#: homepage/templates/homepage-home.html:115
 #, python-format
 msgid ""
 "\n"
@@ -349,11 +379,11 @@ msgid ""
 "        "
 msgstr "\n        돌핀은 게임큐브와 Wii 게임들 컬렉션 대부분을 이슈 없이 \n        플레이할 수 있습니다. 새로운 Wii 출시품들은 흔히 처음부터 돌핀에서 작동합니다.\n        Wii웨어와 가상 콘솔 게임들 역시 지원됩니다.\n        <a href=\"%(COMPAT_URL)s\">돌핀 호환성 목록</a>\n        혹은 더 자세한 사항은 <a href=\"%(WIKI_URL)s\">돌핀 위키</a>를 확인해 보세요.\n        "
 
-#: homepage/templates/homepage-home.html:124
+#: homepage/templates/homepage-home.html:126
 msgid "Helpful community"
 msgstr "도움되는 커뮤니티"
 
-#: homepage/templates/homepage-home.html:127
+#: homepage/templates/homepage-home.html:129
 #, python-format
 msgid ""
 "\n"
@@ -365,11 +395,11 @@ msgid ""
 "        "
 msgstr "\n        설치 문제? 게임 최적 세팅을 알아내기?\n       혹은 단지 좋아하는 게임큐브와 Wii 게임들에 대해 토론하는데에 관심있으세요?\n        <a href=\"%(FAQ_URL)s\">자주 묻는 질문들</a>이 도움이 안된다면,\n        <a href=\"%(FORUM_URL)s\">공식 토론 포럼들</a>. 에서 다른 돌핀 유저들이 기꺼이 도와줄지도 모릅니다.\n        \n        "
 
-#: homepage/templates/homepage-home.html:138
+#: homepage/templates/homepage-home.html:140
 msgid "Free and Open Source"
 msgstr "프리 오픈 소스"
 
-#: homepage/templates/homepage-home.html:140
+#: homepage/templates/homepage-home.html:142
 #, python-format
 msgid ""
 "\n"
@@ -380,29 +410,57 @@ msgid ""
 "        "
 msgstr "\n        돌핀 에뮬레이터는 세계 곳곳의 자원 봉사자들에 의해 개발되고 무료로 제공됩니다.\n        프로젝트가 향상되는데 도움을 주고 싶으세요?\n        <a href=\"%(GCODE_URL)s\">구글 코드</a>에서 에뮬레이터 소스 코드를 붙잡고 \n        해킹을 시작하세요!\n        "
 
-#: media/templates/media-all.html:6 media/templates/media-all.html.py:19
+#: media/templates/media-all.html:6
+msgid ""
+"View all the user-contributed screenshots of the Dolphin Emulator: GameCube "
+"and Wii games in HD."
+msgstr ""
+
+#: media/templates/media-all.html:8
+msgid "Screenshots gallery"
+msgstr ""
+
+#: media/templates/media-all.html:21
 msgid "Media gallery"
 msgstr "미디어 갤러리"
 
-#: media/templates/media-all.html:43
+#: media/templates/media-all.html:45
 msgid "Full size"
 msgstr "최대 크기"
 
-#: media/templates/media-all.html:44
+#: media/templates/media-all.html:46
 msgid "Previous"
 msgstr "이전"
 
-#: media/templates/media-all.html:45
+#: media/templates/media-all.html:47
 msgid "Next"
 msgstr "다음"
 
-#: templates/_base.html:58
-msgid "Home"
-msgstr "홈"
+#: templates/404.html:5 templates/404.html.py:8
+msgid "Page not found"
+msgstr ""
 
-#: templates/_base.html:59
-msgid "Media"
-msgstr "미디어"
+#: templates/404.html:10
+msgid "The URL you tried to access does not exist."
+msgstr ""
+
+#: templates/500.html:5 templates/500.html.py:8
+msgid "Internal Server Error"
+msgstr ""
+
+#: templates/500.html:10
+msgid ""
+"There was an error while trying to access this page. Please refresh the page"
+" in a few seconds."
+msgstr ""
+
+#: templates/_base.html:9
+msgid "Official Dolphin Emulator Website"
+msgstr ""
+
+#: templates/_base.html:60
+msgid "Screenshots"
+msgstr ""
 
 #: templates/_base.html:61
 msgid "FAQ"
@@ -417,8 +475,8 @@ msgid "Wiki"
 msgstr "위키"
 
 #: templates/_base.html:66
-msgid "Development"
-msgstr "개발"
+msgid "Code"
+msgstr ""
 
 #: templates/_base.html:103
 msgid ""
