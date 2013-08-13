@@ -27,13 +27,46 @@ src="//pagead2.googlesyndication.com/pagead/show_ads.js">
     <h1>{% trans "Download" %}</h1>
 </div>
 
+<div id="download-dev">
+<h1>{% trans "Development versions" %}</h1>
+
+<div class="alert">{% blocktrans %}
+    Development versions are released every time a developer makes a change to
+    Dolphin, several times every day! Using development versions enables you to
+    use the latest and greatest improvements to the project. They are however
+    less tested than stable versions of the emulator.
+{% endblocktrans %}</div>
+
+<p>{% trans "Only displaying the <tt>master</tt> branch versions." %}
+<a class="all-branches" href="{% url downloads-branches %}">{% trans "Show all available branches" %}</a>.
+</p>
+
+{% include "downloads-devrel.html" with builds=master_builds primclass='btn-info' %}
+
+<p><a class="btn" href="{% url downloads-list "master" 1 %}">{% trans "View older versions »" %}</a></p>
+</div>
+
+<div style="text-align: center;">
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-8646203626363069";
+/* Downloads page ad (middle) */
+google_ad_slot = "2595840518";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="//pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</div>
+
 <div id="download-stable">
 <h1>{% trans "Stable versions" %}</h2>
 
 <div class="alert alert-info">{% blocktrans %}
     Stable versions are released after a lot of testing to ensure emulation
-    performance and stability. <strong>If you do not know what version of
-    Dolphin you should use, the latest stable version is generally the best.</strong>
+    performance and stability. However, since they are released less often,
+    they might be outdated and lacking some new features.
 {% endblocktrans %}</div>
 
 <table class="versions-list stable-versions">
@@ -56,39 +89,6 @@ src="//pagead2.googlesyndication.com/pagead/show_ads.js">
     {% endfor %}
     </tbody>
 </table>
-</div>
-
-<div style="text-align: center;">
-<script type="text/javascript"><!--
-google_ad_client = "ca-pub-8646203626363069";
-/* Downloads page ad (middle) */
-google_ad_slot = "2595840518";
-google_ad_width = 728;
-google_ad_height = 90;
-//-->
-</script>
-<script type="text/javascript"
-src="//pagead2.googlesyndication.com/pagead/show_ads.js">
-</script>
-</div>
-
-<div id="download-dev">
-<h1>{% trans "Development versions" %}</h1>
-
-<div class="alert">{% blocktrans %}
-    <strong>Warning!</strong> Development versions are released every time a
-    developer makes a change to Dolphin. Using development versions enables you
-    to use the latest and greatest improvements to the project, at the cost of
-    decreased stability.
-{% endblocktrans %}</div>
-
-<p>{% trans "Only displaying the <tt>master</tt> branch versions." %}
-<a class="all-branches" href="{% url downloads-branches %}">{% trans "Show all available branches" %}</a>.
-</p>
-
-{% include "downloads-devrel.html" with builds=master_builds primclass='btn-info' %}
-
-<p><a class="btn" href="{% url downloads-list "master" 1 %}">{% trans "View older versions »" %}</a></p>
 </div>
 
 <div id="download-source">
