@@ -11,8 +11,8 @@ msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-07-22 22:47+0200\n"
-"PO-Revision-Date: 2013-07-22 20:49+0000\n"
-"Last-Translator: delroth <delroth@gmail.com>\n"
+"PO-Revision-Date: 2013-07-24 11:35+0000\n"
+"Last-Translator: Puniasterus <puniasterus@gmail.com>\n"
 "Language-Team: Spanish (http://www.transifex.com/projects/p/dolphin-emu/language/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -24,7 +24,7 @@ msgstr ""
 msgid ""
 "The Dolphin Emulator compatibility list contains all the games we tested, "
 "sorted by how well they work on the emulator."
-msgstr ""
+msgstr "La lista de compatibilidad emulador Dolphin contiene todos los juegos que hemos probado, según lo bien que funcionan en el emulador."
 
 #: compat/templates/compat-list.html:10
 #, python-format
@@ -87,7 +87,7 @@ msgstr "Estadísticas"
 
 #: compat/templates/compat-list.html:56
 msgid "Game title (click for details)"
-msgstr "Nombre del juego (click para detalles)"
+msgstr "Título del juego (clic para detalles)"
 
 #: compat/templates/compat-list.html:57 templates/_base.html:63
 msgid "Compatibility"
@@ -125,7 +125,7 @@ msgstr "Perfecto"
 msgid ""
 "The Official Dolphin FAQ answers all the questions that people often ask "
 "about Dolphin."
-msgstr ""
+msgstr "La FAQ oficial de Dolphin responde a todas las preguntas que la gente suele preguntar acerca de Dolphin."
 
 #: docs/templates/docs-faq.html:8
 msgid "Frequently Asked Questions"
@@ -137,7 +137,7 @@ msgstr "Volver a la lista de guías"
 
 #: docs/templates/docs-guides-index.html:5
 msgid "See all the guides written by the Dolphin team about the emulator."
-msgstr ""
+msgstr "Ver todas las guías escritas por el equipo de Dolphin en el emulador."
 
 #: docs/templates/docs-guides-index.html:7 templates/_base.html:62
 msgid "Guides"
@@ -184,7 +184,7 @@ msgstr "No hay versiones de desarrollo disponibles"
 msgid ""
 "Download the latest version of the Dolphin Emulator (%(ver)s) from the "
 "official website."
-msgstr ""
+msgstr "Descargar la última versión del emulador Dolphin (%(ver)s) desde la web oficial."
 
 #: downloads/templates/downloads-index.html:8
 #: downloads/templates/downloads-index.html:27 templates/_base.html:59
@@ -297,7 +297,7 @@ msgstr "Descripción del cambio"
 msgid ""
 "Official website of Dolphin, the GameCube and Wii emulator. Download the "
 "latest version (%(ver)s) now or ask questions on our forums for help."
-msgstr ""
+msgstr "Web oficial de Dolphin, el emulador de GameCube y Wii. Descargar la última versión (%(ver)s) ahora o haga preguntas en nuestro foro para obtener ayuda."
 
 #: homepage/templates/homepage-home.html:9
 msgid "GameCube/Wii games on PC"
@@ -415,7 +415,7 @@ msgstr "\n        El emulador Dolphin es desarrollado por voluntarios de  todo e
 msgid ""
 "View all the user-contributed screenshots of the Dolphin Emulator: GameCube "
 "and Wii games in HD."
-msgstr ""
+msgstr "Ver todas las capturas de pantalla que aportan los usuarios del emulador Dolphin: GameCube y Wii en HD."
 
 #: media/templates/media-all.html:8
 msgid "Screenshots gallery"
@@ -423,7 +423,7 @@ msgstr "Galería de imágenes"
 
 #: media/templates/media-all.html:21
 msgid "Media gallery"
-msgstr "Galería de medios"
+msgstr "Galería de imágenes"
 
 #: media/templates/media-all.html:45
 msgid "Full size"
@@ -439,21 +439,21 @@ msgstr "Siguiente"
 
 #: templates/404.html:5 templates/404.html.py:8
 msgid "Page not found"
-msgstr ""
+msgstr "Página no encontrada"
 
 #: templates/404.html:10
 msgid "The URL you tried to access does not exist."
-msgstr ""
+msgstr "La URL que intentaste acceder no existe."
 
 #: templates/500.html:5 templates/500.html.py:8
 msgid "Internal Server Error"
-msgstr ""
+msgstr "Error interno del servidor"
 
 #: templates/500.html:10
 msgid ""
 "There was an error while trying to access this page. Please refresh the page"
 " in a few seconds."
-msgstr ""
+msgstr "Ha ocurrido un error al intentar acceder a esta página. Actualiza la página en unos segundos."
 
 #: templates/_base.html:9
 msgid "Official Dolphin Emulator Website"

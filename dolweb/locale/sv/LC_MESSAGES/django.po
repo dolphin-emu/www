@@ -10,8 +10,8 @@ msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-07-22 22:47+0200\n"
-"PO-Revision-Date: 2013-07-22 20:49+0000\n"
-"Last-Translator: delroth <delroth@gmail.com>\n"
+"PO-Revision-Date: 2013-08-13 17:43+0000\n"
+"Last-Translator: DolphinPhoenix <anton_r_3@hotmail.com>\n"
 "Language-Team: Swedish (http://www.transifex.com/projects/p/dolphin-emu/language/sv/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -23,7 +23,7 @@ msgstr ""
 msgid ""
 "The Dolphin Emulator compatibility list contains all the games we tested, "
 "sorted by how well they work on the emulator."
-msgstr ""
+msgstr "Dolphins kompatibilitetslista innehåller alla spel som vi har testat, sorterade efter hur bra de fungerar med emulatorn."
 
 #: compat/templates/compat-list.html:10
 #, python-format
@@ -124,7 +124,7 @@ msgstr "Perfekt"
 msgid ""
 "The Official Dolphin FAQ answers all the questions that people often ask "
 "about Dolphin."
-msgstr ""
+msgstr "Dolphins officiella sida för vanliga frågor besvarar alla frågor som folk ofta ställer om Dolphin."
 
 #: docs/templates/docs-faq.html:8
 msgid "Frequently Asked Questions"
@@ -132,11 +132,11 @@ msgstr "Vanliga frågor"
 
 #: docs/templates/docs-guide.html:11
 msgid "Go back to the guides list"
-msgstr "Gå tillbaka till guidelistan"
+msgstr "Gå tillbaka till listan över guider"
 
 #: docs/templates/docs-guides-index.html:5
 msgid "See all the guides written by the Dolphin team about the emulator."
-msgstr ""
+msgstr "Se alla guider som Dolphin-teamet har skrivit om emulatorn."
 
 #: docs/templates/docs-guides-index.html:7 templates/_base.html:62
 msgid "Guides"
@@ -183,7 +183,7 @@ msgstr "Ingen utvecklingsutgåva ännu"
 msgid ""
 "Download the latest version of the Dolphin Emulator (%(ver)s) from the "
 "official website."
-msgstr ""
+msgstr "Ladda ned den senaste versionen av emulatorn Dolphin (%(ver)s) från den officiella webbplatsen."
 
 #: downloads/templates/downloads-index.html:8
 #: downloads/templates/downloads-index.html:27 templates/_base.html:59
@@ -296,7 +296,7 @@ msgstr "Ändra beskrivning"
 msgid ""
 "Official website of Dolphin, the GameCube and Wii emulator. Download the "
 "latest version (%(ver)s) now or ask questions on our forums for help."
-msgstr ""
+msgstr "Officiell webbplats för Dolphin, emulatorn för GameCube och Wii. Ladda ned den senaste versionen (%(ver)s) nu eller ställ frågor på våra forum för hjälp."
 
 #: homepage/templates/homepage-home.html:9
 msgid "GameCube/Wii games on PC"
@@ -414,7 +414,7 @@ msgstr "\n        Dolphin-emulatorn utvecklas av volontärer från hela världen
 msgid ""
 "View all the user-contributed screenshots of the Dolphin Emulator: GameCube "
 "and Wii games in HD."
-msgstr ""
+msgstr "Visa alla användarinskickade skärmdumpar på emulatorn Dolphin: GameCube- och Wii-spel i HD."
 
 #: media/templates/media-all.html:8
 msgid "Screenshots gallery"
@@ -438,21 +438,21 @@ msgstr "Nästa"
 
 #: templates/404.html:5 templates/404.html.py:8
 msgid "Page not found"
-msgstr ""
+msgstr "Sidan hittades inte"
 
 #: templates/404.html:10
 msgid "The URL you tried to access does not exist."
-msgstr ""
+msgstr "Webbadressen du försökte komma åt finns inte."
 
 #: templates/500.html:5 templates/500.html.py:8
 msgid "Internal Server Error"
-msgstr ""
+msgstr "Internt serverfel"
 
 #: templates/500.html:10
 msgid ""
 "There was an error while trying to access this page. Please refresh the page"
 " in a few seconds."
-msgstr ""
+msgstr "Ett fel uppstod när denna sida skulle hämtas. Var god uppdatera sidan om några sekunder."
 
 #: templates/_base.html:9
 msgid "Official Dolphin Emulator Website"

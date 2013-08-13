@@ -10,8 +10,8 @@ msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-07-22 22:47+0200\n"
-"PO-Revision-Date: 2013-07-22 20:49+0000\n"
-"Last-Translator: delroth <delroth@gmail.com>\n"
+"PO-Revision-Date: 2013-07-24 12:10+0000\n"
+"Last-Translator: Puniasterus <puniasterus@gmail.com>\n"
 "Language-Team: Catalan (http://www.transifex.com/projects/p/dolphin-emu/language/ca/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -23,7 +23,7 @@ msgstr ""
 msgid ""
 "The Dolphin Emulator compatibility list contains all the games we tested, "
 "sorted by how well they work on the emulator."
-msgstr ""
+msgstr "La llista de compatibilitat de l'emulador Dolphin conté tots els jocs que hem provat, segons com funcionen en l'emulador."
 
 #: compat/templates/compat-list.html:10
 #, python-format
@@ -124,7 +124,7 @@ msgstr "Perfecte"
 msgid ""
 "The Official Dolphin FAQ answers all the questions that people often ask "
 "about Dolphin."
-msgstr ""
+msgstr "La FAQ oficial de Dolphin respon a totes les preguntes que la gent sol preguntar sobre Dolphin."
 
 #: docs/templates/docs-faq.html:8
 msgid "Frequently Asked Questions"
@@ -136,7 +136,7 @@ msgstr "Tornar a la llista de guies"
 
 #: docs/templates/docs-guides-index.html:5
 msgid "See all the guides written by the Dolphin team about the emulator."
-msgstr ""
+msgstr "Veure totes les guies escrites per l'equip de Dolphin sobre l'emulador."
 
 #: docs/templates/docs-guides-index.html:7 templates/_base.html:62
 msgid "Guides"
@@ -183,7 +183,7 @@ msgstr "Encara no hi ha versions de desenvolupament disponibles"
 msgid ""
 "Download the latest version of the Dolphin Emulator (%(ver)s) from the "
 "official website."
-msgstr ""
+msgstr "Descarregar la última versió de l'emulador Dolphin (%(ver)s) des de la web oficial."
 
 #: downloads/templates/downloads-index.html:8
 #: downloads/templates/downloads-index.html:27 templates/_base.html:59
@@ -200,7 +200,7 @@ msgid ""
 "    Stable versions are released after a lot of testing to ensure emulation\n"
 "    performance and stability. <strong>If you do not know what version of\n"
 "    Dolphin you should use, the latest stable version is generally the best.</strong>\n"
-msgstr ""
+msgstr "\nLes versions estables són llançades després de moltes proves per garantir el rendiment i la estabilitat d'emulació. <strong>Si no saps quina versió de Dolphin utilitzar l'última versió estable generalment és la millor.</strong>\n"
 
 #: downloads/templates/downloads-index.html:55
 msgid "No stable release yet"
@@ -217,7 +217,7 @@ msgid ""
 "    developer makes a change to Dolphin. Using development versions enables you\n"
 "    to use the latest and greatest improvements to the project, at the cost of\n"
 "    decreased stability.\n"
-msgstr ""
+msgstr "\n<strong>Advertència!</ strong> Les versions de desenvolupament són llançades cada vegada\n que un desenvolupador realitza un canvi a Dolphin. Les versions de desenvolupament permeten utilitzar\n les últimes millores i canvis del projecte, a costa\n de la disminució de l'estabilitat.\n"
 
 #: downloads/templates/downloads-index.html:85
 msgid "Only displaying the <tt>master</tt> branch versions."
@@ -296,7 +296,7 @@ msgstr "Descripció del canvi"
 msgid ""
 "Official website of Dolphin, the GameCube and Wii emulator. Download the "
 "latest version (%(ver)s) now or ask questions on our forums for help."
-msgstr ""
+msgstr "Web oficial de Dolphin, l'emulador de GameCube i Wii. Descarregar la última versió (%(ver)s) ara o fer preguntes en el nostre fòrum per obtenir ajuda."
 
 #: homepage/templates/homepage-home.html:9
 msgid "GameCube/Wii games on PC"
@@ -408,13 +408,13 @@ msgid ""
 "        Grab the emulator source code from <a href=\"%(GCODE_URL)s\">Google\n"
 "        Code</a> and start hacking!\n"
 "        "
-msgstr ""
+msgstr "\nL'emulador Dolphin és desenvolupat per voluntaris de tot el món\n i es distribueix de forma gratuïta. Vols ajudar a millorar el projecte?\n\nAgafa el codi font de l'emulador de <a href=\"%(GCODE_URL)s\">Google\nCode</a> i comença a hackejar!"
 
 #: media/templates/media-all.html:6
 msgid ""
 "View all the user-contributed screenshots of the Dolphin Emulator: GameCube "
 "and Wii games in HD."
-msgstr ""
+msgstr "Veure totes les captures de pantalla que aporten els usuaris de l'emulador Dolphin: jocs de GameCube i Wii en HD."
 
 #: media/templates/media-all.html:8
 msgid "Screenshots gallery"
@@ -438,21 +438,21 @@ msgstr "Següent"
 
 #: templates/404.html:5 templates/404.html.py:8
 msgid "Page not found"
-msgstr ""
+msgstr "Pàgina no trobada"
 
 #: templates/404.html:10
 msgid "The URL you tried to access does not exist."
-msgstr ""
+msgstr "La URL que has intentat accedir no existeix."
 
 #: templates/500.html:5 templates/500.html.py:8
 msgid "Internal Server Error"
-msgstr ""
+msgstr "Error intern del servidor"
 
 #: templates/500.html:10
 msgid ""
 "There was an error while trying to access this page. Please refresh the page"
 " in a few seconds."
-msgstr ""
+msgstr "S'ha produït un error al intentar accedir aquesta pàgina. Actualitza la pàgina en uns segons."
 
 #: templates/_base.html:9
 msgid "Official Dolphin Emulator Website"
