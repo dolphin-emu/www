@@ -8,9 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-07-22 22:47+0200\n"
-"PO-Revision-Date: 2013-07-23 21:33+0000\n"
-"Last-Translator: delroth <delroth@gmail.com>\n"
+"POT-Creation-Date: 2013-08-16 18:17+0200\n"
+"PO-Revision-Date: 2013-08-16 17:07+0000\n"
+"Last-Translator: Garteal <garteal@gmail.com>\n"
 "Language-Team: Dutch (http://www.transifex.com/projects/p/dolphin-emu/language/nl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -22,7 +22,7 @@ msgstr ""
 msgid ""
 "The Dolphin Emulator compatibility list contains all the games we tested, "
 "sorted by how well they work on the emulator."
-msgstr ""
+msgstr "De Dolphin Emulator compatibiliteitslijst bevat alle games die we hebben getest gesorteerd op hoe goed deze werkt op de emulator."
 
 #: compat/templates/compat-list.html:10
 #, python-format
@@ -123,7 +123,7 @@ msgstr "Perfect"
 msgid ""
 "The Official Dolphin FAQ answers all the questions that people often ask "
 "about Dolphin."
-msgstr ""
+msgstr "De veelgestelde vragenlijst beantwoord alle vragen die men het vaakst stelt."
 
 #: docs/templates/docs-faq.html:8
 msgid "Frequently Asked Questions"
@@ -131,19 +131,19 @@ msgstr "Veelgestelde vragen"
 
 #: docs/templates/docs-guide.html:11
 msgid "Go back to the guides list"
-msgstr ""
+msgstr "Ga terug naar het handboek"
 
 #: docs/templates/docs-guides-index.html:5
 msgid "See all the guides written by the Dolphin team about the emulator."
-msgstr ""
+msgstr "Bekijk alle handboeken geschreven door de Dolphin team over de emulator."
 
 #: docs/templates/docs-guides-index.html:7 templates/_base.html:62
 msgid "Guides"
-msgstr "Gidsen"
+msgstr "Handboek"
 
 #: docs/templates/docs-guides-index.html:11
 msgid "Guides and documentation"
-msgstr ""
+msgstr "Handboek en documentatie"
 
 #: docs/templates/docs-guides-index.html:19
 msgid "No published guide available"
@@ -165,7 +165,7 @@ msgid "<tt>%(branch)s</tt> branch"
 msgstr "<tt>%(branch)s</tt> branche"
 
 #: downloads/templates/downloads-branches.html:21
-#: downloads/templates/downloads-index.html:91
+#: downloads/templates/downloads-index.html:46
 msgid "View older versions »"
 msgstr "Bekijk oudere versies »"
 
@@ -182,7 +182,7 @@ msgstr "Geen development release beschikbaar"
 msgid ""
 "Download the latest version of the Dolphin Emulator (%(ver)s) from the "
 "official website."
-msgstr ""
+msgstr "Download de laatste versie van de Dolphin Emulator (%(ver)s) op de officiële website."
 
 #: downloads/templates/downloads-index.html:8
 #: downloads/templates/downloads-index.html:27 templates/_base.html:59
@@ -190,41 +190,41 @@ msgid "Download"
 msgstr "Download"
 
 #: downloads/templates/downloads-index.html:31
-msgid "Stable versions"
-msgstr "Stabiele versies"
+msgid "Development versions"
+msgstr "Development versies"
 
 #: downloads/templates/downloads-index.html:33
 msgid ""
 "\n"
-"    Stable versions are released after a lot of testing to ensure emulation\n"
-"    performance and stability. <strong>If you do not know what version of\n"
-"    Dolphin you should use, the latest stable version is generally the best.</strong>\n"
-msgstr "\nStabiele versies worden pas vrijgegeven na het veelvuldig testen om goede emulatie, prestaties en stabiliteit te garanderen. <strong>Als je niet weet welke versie je van\nDolphin moet gebruiken, gebruik dan de laatste stabiele versie.</strong>\n"
+"    Development versions are released every time a developer makes a change to\n"
+"    Dolphin, several times every day! Using development versions enables you to\n"
+"    use the latest and greatest improvements to the project. They are however\n"
+"    less tested than stable versions of the emulator.\n"
+msgstr "\nDevelopment versies worden telkens uitgebracht als een ontwikkelaar een verandering aanbrengt aan Dolphin. Als je development builds gebruikt krijg je toegang tot de laatste verbeteringen aan het project. Houd er wel rekening mee dat er stabiliteitsproblemen kunnen zijn.\n"
 
-#: downloads/templates/downloads-index.html:55
-msgid "No stable release yet"
-msgstr "Geen stabiele release beschikbaar"
-
-#: downloads/templates/downloads-index.html:76
-msgid "Development versions"
-msgstr "Development versies"
-
-#: downloads/templates/downloads-index.html:78
-msgid ""
-"\n"
-"    <strong>Warning!</strong> Development versions are released every time a\n"
-"    developer makes a change to Dolphin. Using development versions enables you\n"
-"    to use the latest and greatest improvements to the project, at the cost of\n"
-"    decreased stability.\n"
-msgstr "\n    <strong>Waarschuwing!</strong> Development versies worden telkens uitgebracht als een\n    ontwikkelaar een verandering aanbrengt aan Dolphin. Als je development builds gebruikt krijg je toegang tot de laatste verbeteringen aan het project. Houd er wel rekening mee dat er stabiliteitsproblemen kunnen zijn.\n"
-
-#: downloads/templates/downloads-index.html:85
+#: downloads/templates/downloads-index.html:40
 msgid "Only displaying the <tt>master</tt> branch versions."
 msgstr "Weergeeft alleen de <tt>master</tt> branche versies."
 
-#: downloads/templates/downloads-index.html:86
+#: downloads/templates/downloads-index.html:41
 msgid "Show all available branches"
 msgstr "Toon alle beschikbare branches"
+
+#: downloads/templates/downloads-index.html:64
+msgid "Stable versions"
+msgstr "Stabiele versies"
+
+#: downloads/templates/downloads-index.html:66
+msgid ""
+"\n"
+"    Stable versions are released after a lot of testing to ensure emulation\n"
+"    performance and stability. However, since they are released less often,\n"
+"    they might be outdated and lacking some new features.\n"
+msgstr "\nStabiele versies worden pas vrijgegeven na het veelvuldig testen om goede emulatie, prestaties en stabiliteit te garanderen. Deze worden daarom minder vaak uitgebracht. Hierdoor zijn deze versies snel verouderd omdat deze de nieuwste features missen.\n"
+
+#: downloads/templates/downloads-index.html:88
+msgid "No stable release yet"
+msgstr "Geen stabiele release beschikbaar"
 
 #: downloads/templates/downloads-index.html:95
 msgid "Source code"
@@ -295,7 +295,7 @@ msgstr "Beschrijving"
 msgid ""
 "Official website of Dolphin, the GameCube and Wii emulator. Download the "
 "latest version (%(ver)s) now or ask questions on our forums for help."
-msgstr ""
+msgstr "Officiële website van Dolphin, de GameCube en Wii emulator. Download de laatste versie (%(ver)s) nu of vraag om hulp op onze forums."
 
 #: homepage/templates/homepage-home.html:9
 msgid "GameCube/Wii games on PC"
@@ -413,11 +413,11 @@ msgstr "\n        De Dolphin Emulator is ontwikkeld door vrijwilligers vanuit de
 msgid ""
 "View all the user-contributed screenshots of the Dolphin Emulator: GameCube "
 "and Wii games in HD."
-msgstr ""
+msgstr "Bekijk alle gebruikers ingestuurde screenshots van de Dolphin Emulator: GameCube en Wii in HD."
 
 #: media/templates/media-all.html:8
 msgid "Screenshots gallery"
-msgstr ""
+msgstr "Screenshots gallerij"
 
 #: media/templates/media-all.html:21
 msgid "Media gallery"
@@ -437,29 +437,29 @@ msgstr "Volgende"
 
 #: templates/404.html:5 templates/404.html.py:8
 msgid "Page not found"
-msgstr ""
+msgstr "Pagina niet gevonden"
 
 #: templates/404.html:10
 msgid "The URL you tried to access does not exist."
-msgstr ""
+msgstr "Het URL dat je probeert te benaderen bestaat niet."
 
 #: templates/500.html:5 templates/500.html.py:8
 msgid "Internal Server Error"
-msgstr ""
+msgstr "Interne Server Error"
 
 #: templates/500.html:10
 msgid ""
 "There was an error while trying to access this page. Please refresh the page"
 " in a few seconds."
-msgstr ""
+msgstr "Er is een error opgekomen tijdens het laden van deze pagina. Refresh de pagina in een paar seconden."
 
 #: templates/_base.html:9
 msgid "Official Dolphin Emulator Website"
-msgstr ""
+msgstr "Officiële Dolphin Emulator Website"
 
 #: templates/_base.html:60
 msgid "Screenshots"
-msgstr ""
+msgstr "Screenshots"
 
 #: templates/_base.html:61
 msgid "FAQ"
@@ -475,7 +475,7 @@ msgstr "Wiki"
 
 #: templates/_base.html:66
 msgid "Code"
-msgstr ""
+msgstr "Code"
 
 #: templates/_base.html:103
 msgid ""

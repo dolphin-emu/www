@@ -9,9 +9,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-07-22 22:47+0200\n"
-"PO-Revision-Date: 2013-07-23 21:33+0000\n"
-"Last-Translator: delroth <delroth@gmail.com>\n"
+"POT-Creation-Date: 2013-08-16 18:17+0200\n"
+"PO-Revision-Date: 2013-08-18 01:34+0000\n"
+"Last-Translator: DanbSky <smariojp@gmail.com>\n"
 "Language-Team: Japanese (http://www.transifex.com/projects/p/dolphin-emu/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -23,12 +23,12 @@ msgstr ""
 msgid ""
 "The Dolphin Emulator compatibility list contains all the games we tested, "
 "sorted by how well they work on the emulator."
-msgstr ""
+msgstr "The Dolphin Emulator compatibility list contains all the games we tested, sorted by how well they work on the emulator."
 
 #: compat/templates/compat-list.html:10
 #, python-format
 msgid "Compatibility List - page %(page)s"
-msgstr "互換性リスト - %(page)s ページ"
+msgstr "動作リスト - %(page)s ページ"
 
 #: compat/templates/compat-list.html:22
 msgid "How to read the ratings"
@@ -90,7 +90,7 @@ msgstr "ゲームタイトル（クリックで詳細な情報へ）"
 
 #: compat/templates/compat-list.html:57 templates/_base.html:63
 msgid "Compatibility"
-msgstr "互換性"
+msgstr "動作リスト"
 
 #: compat/templates/compat-list.html:58
 msgid "Last updated"
@@ -124,7 +124,7 @@ msgstr "カンペキ"
 msgid ""
 "The Official Dolphin FAQ answers all the questions that people often ask "
 "about Dolphin."
-msgstr ""
+msgstr "The Official Dolphin FAQ answers all the questions that people often ask about Dolphin."
 
 #: docs/templates/docs-faq.html:8
 msgid "Frequently Asked Questions"
@@ -132,11 +132,11 @@ msgstr "よくある質問"
 
 #: docs/templates/docs-guide.html:11
 msgid "Go back to the guides list"
-msgstr ""
+msgstr "ガイドリストに戻る"
 
 #: docs/templates/docs-guides-index.html:5
 msgid "See all the guides written by the Dolphin team about the emulator."
-msgstr ""
+msgstr "See all the guides written by the Dolphin team about the emulator."
 
 #: docs/templates/docs-guides-index.html:7 templates/_base.html:62
 msgid "Guides"
@@ -144,7 +144,7 @@ msgstr "利用ガイド"
 
 #: docs/templates/docs-guides-index.html:11
 msgid "Guides and documentation"
-msgstr ""
+msgstr "利用ガイド"
 
 #: docs/templates/docs-guides-index.html:19
 msgid "No published guide available"
@@ -166,7 +166,7 @@ msgid "<tt>%(branch)s</tt> branch"
 msgstr "<tt>%(branch)s</tt> branch"
 
 #: downloads/templates/downloads-branches.html:21
-#: downloads/templates/downloads-index.html:91
+#: downloads/templates/downloads-index.html:46
 msgid "View older versions »"
 msgstr "過去のバージョンを入手 »"
 
@@ -183,7 +183,7 @@ msgstr "現在、開発版のリリースはありません。"
 msgid ""
 "Download the latest version of the Dolphin Emulator (%(ver)s) from the "
 "official website."
-msgstr ""
+msgstr "Download the latest version of the Dolphin Emulator (%(ver)s) from the official website."
 
 #: downloads/templates/downloads-index.html:8
 #: downloads/templates/downloads-index.html:27 templates/_base.html:59
@@ -191,41 +191,41 @@ msgid "Download"
 msgstr "ダウンロード"
 
 #: downloads/templates/downloads-index.html:31
-msgid "Stable versions"
-msgstr "安定版"
+msgid "Development versions"
+msgstr "開発版"
 
 #: downloads/templates/downloads-index.html:33
 msgid ""
 "\n"
-"    Stable versions are released after a lot of testing to ensure emulation\n"
-"    performance and stability. <strong>If you do not know what version of\n"
-"    Dolphin you should use, the latest stable version is generally the best.</strong>\n"
-msgstr "\n    安定版はパフォーマンスと安定した動作のテストを繰り返した後にリリースされるものです。\n    <strong>もし、どのバージョンを使うべきかでお悩みなら、\n    まず最新の安定版を選択することを推奨します。</strong>\n"
+"    Development versions are released every time a developer makes a change to\n"
+"    Dolphin, several times every day! Using development versions enables you to\n"
+"    use the latest and greatest improvements to the project. They are however\n"
+"    less tested than stable versions of the emulator.\n"
+msgstr "\n開発版は Dolphin に変更を加えられると自動的にリリースされるものです。その時点のプロジェクトの最新かつ最大の改善点を試すことが可能ですが、必ずしも安定した動作は約束されません。\n"
 
-#: downloads/templates/downloads-index.html:55
-msgid "No stable release yet"
-msgstr "現在、安定版のリリースはありません。"
-
-#: downloads/templates/downloads-index.html:76
-msgid "Development versions"
-msgstr "開発版"
-
-#: downloads/templates/downloads-index.html:78
-msgid ""
-"\n"
-"    <strong>Warning!</strong> Development versions are released every time a\n"
-"    developer makes a change to Dolphin. Using development versions enables you\n"
-"    to use the latest and greatest improvements to the project, at the cost of\n"
-"    decreased stability.\n"
-msgstr "\n    <strong>注意！</strong>　開発版は Dolphin に変更を加えられると\n    自動的にリリースされるものです。安定性は落ちますが、その時点のプロジェクトの\n    最新かつ最大の改善点を試すことが可能です。\n"
-
-#: downloads/templates/downloads-index.html:85
+#: downloads/templates/downloads-index.html:40
 msgid "Only displaying the <tt>master</tt> branch versions."
 msgstr "ここには <tt>master</tt> branchのみが表示されています。"
 
-#: downloads/templates/downloads-index.html:86
+#: downloads/templates/downloads-index.html:41
 msgid "Show all available branches"
 msgstr "現在入手可能な branch のリストを確認"
+
+#: downloads/templates/downloads-index.html:64
+msgid "Stable versions"
+msgstr "安定版"
+
+#: downloads/templates/downloads-index.html:66
+msgid ""
+"\n"
+"    Stable versions are released after a lot of testing to ensure emulation\n"
+"    performance and stability. However, since they are released less often,\n"
+"    they might be outdated and lacking some new features.\n"
+msgstr "\n安定版はパフォーマンスと安定した動作のテストを繰り返した後にリリースされるものです。 \nそのかわり、あまり頻繁には更新されないので、旧式の仕様が残っていたり、新しい機能が使えないという欠点もあります。\n"
+
+#: downloads/templates/downloads-index.html:88
+msgid "No stable release yet"
+msgstr "現在、安定版のリリースはありません。"
 
 #: downloads/templates/downloads-index.html:95
 msgid "Source code"
@@ -296,7 +296,7 @@ msgstr "変更点"
 msgid ""
 "Official website of Dolphin, the GameCube and Wii emulator. Download the "
 "latest version (%(ver)s) now or ask questions on our forums for help."
-msgstr ""
+msgstr "Official website of Dolphin, the GameCube and Wii emulator. Download the latest version (%(ver)s) now or ask questions on our forums for help."
 
 #: homepage/templates/homepage-home.html:9
 msgid "GameCube/Wii games on PC"
@@ -414,11 +414,11 @@ msgstr "\n        Dolphin は世界中のボランティアによって開発さ
 msgid ""
 "View all the user-contributed screenshots of the Dolphin Emulator: GameCube "
 "and Wii games in HD."
-msgstr ""
+msgstr "View all the user-contributed screenshots of the Dolphin Emulator: GameCube and Wii games in HD."
 
 #: media/templates/media-all.html:8
 msgid "Screenshots gallery"
-msgstr ""
+msgstr "スクリーンショット"
 
 #: media/templates/media-all.html:21
 msgid "Media gallery"
@@ -438,29 +438,29 @@ msgstr "次へ"
 
 #: templates/404.html:5 templates/404.html.py:8
 msgid "Page not found"
-msgstr ""
+msgstr "ページが見つかりません。"
 
 #: templates/404.html:10
 msgid "The URL you tried to access does not exist."
-msgstr ""
+msgstr "アクセスしようとしたページは存在しません。"
 
 #: templates/500.html:5 templates/500.html.py:8
 msgid "Internal Server Error"
-msgstr ""
+msgstr "Internal Server Error"
 
 #: templates/500.html:10
 msgid ""
 "There was an error while trying to access this page. Please refresh the page"
 " in a few seconds."
-msgstr ""
+msgstr "アクセスしようとしたページでエラーが発生しました。時間をおいて再更新してみてください。"
 
 #: templates/_base.html:9
 msgid "Official Dolphin Emulator Website"
-msgstr ""
+msgstr "Official Dolphin Emulator Website"
 
 #: templates/_base.html:60
 msgid "Screenshots"
-msgstr ""
+msgstr "スクリーンショット"
 
 #: templates/_base.html:61
 msgid "FAQ"
@@ -476,7 +476,7 @@ msgstr "Wiki"
 
 #: templates/_base.html:66
 msgid "Code"
-msgstr ""
+msgstr "開発"
 
 #: templates/_base.html:103
 msgid ""

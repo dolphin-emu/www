@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-08-16 18:17+0200\n"
-"PO-Revision-Date: 2013-08-16 16:18+0000\n"
+"PO-Revision-Date: 2013-08-17 14:57+0000\n"
 "Last-Translator: delroth <delroth@gmail.com>\n"
-"Language-Team: Persian (http://www.transifex.com/projects/p/dolphin-emu/language/fa/)\n"
+"Language-Team: Vietnamese (Viet Nam) (http://www.transifex.com/projects/p/dolphin-emu/language/vi_VN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: fa\n"
+"Language: vi_VN\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: compat/templates/compat-list.html:8
@@ -26,97 +26,97 @@ msgstr ""
 #: compat/templates/compat-list.html:10
 #, python-format
 msgid "Compatibility List - page %(page)s"
-msgstr "لیست سازگاری - صفحه %(page)s"
+msgstr ""
 
 #: compat/templates/compat-list.html:22
 msgid "How to read the ratings"
-msgstr "چگونه خواندن رتبه ها"
+msgstr ""
 
 #: compat/templates/compat-list.html:25
 msgid "5 out of 5"
-msgstr "۵ از ۵"
+msgstr ""
 
 #: compat/templates/compat-list.html:25
 msgid "<strong>Perfect</strong>: No issues at all!"
-msgstr "<strong>کامل</strong>: هیچ مشکلی وجود ندارد!"
+msgstr ""
 
 #: compat/templates/compat-list.html:26
 msgid "4 out of 5"
-msgstr "۴ از ۵"
+msgstr ""
 
 #: compat/templates/compat-list.html:26
 msgid ""
 "<strong>Playable</strong>: Runs well, only minor graphical or audio "
 "glitches. Games can be played all the way through."
-msgstr "<strong>قابل بازی</strong>: به خوبی اجرا می شود، تنها خرابی های ناچیز گرافیکی یا صوتی. بازی ها قابل بازی کردن هستند."
+msgstr ""
 
 #: compat/templates/compat-list.html:27
 msgid "3 out of 5"
-msgstr "۳ از ۵"
+msgstr ""
 
 #: compat/templates/compat-list.html:27
 msgid ""
 "<strong>Starts</strong>: Starts, maybe even plays well, but crashes or major"
 " graphical/audio glitches."
-msgstr "<strong>شروع</strong>: شروع، حتی شاید به خوبی اجرا شود، اما به همراه خرابی های بزرگ گرافیکی و صوتی."
+msgstr ""
 
 #: compat/templates/compat-list.html:28
 msgid "2 out of 5"
-msgstr "۲ از ۵"
+msgstr ""
 
 #: compat/templates/compat-list.html:28
 msgid ""
 "<strong>Intro/Menu</strong>: Hangs/crashes somewhere between booting and "
 "starting."
-msgstr "<strong>صفحه نخست/فهرست انتخاب</strong>: هنگ/خرابی جائی میان بوت و شروع بازی."
+msgstr ""
 
 #: compat/templates/compat-list.html:29
 msgid "1 out of 5"
-msgstr "۱ از ۵"
+msgstr ""
 
 #: compat/templates/compat-list.html:29
 msgid "<strong>Broken</strong>: Crashes when booting."
-msgstr "<strong>خراب</strong>: خراب شدن هنگام بوت."
+msgstr ""
 
 #: compat/templates/compat-list.html:36
 msgid "Statistics"
-msgstr "آمار"
+msgstr ""
 
 #: compat/templates/compat-list.html:56
 msgid "Game title (click for details)"
-msgstr "عنوان بازی (کلیک برای نمایش جزئیات)"
+msgstr ""
 
 #: compat/templates/compat-list.html:57 templates/_base.html:63
 msgid "Compatibility"
-msgstr "سازگاری"
+msgstr ""
 
 #: compat/templates/compat-list.html:58
 msgid "Last updated"
-msgstr "آخرین آپدیت"
+msgstr ""
 
 #: compat/templatetags/compat.py:7
 msgid "Unknown"
-msgstr "ناشناخته"
+msgstr ""
 
 #: compat/templatetags/compat.py:8
 msgid "Broken"
-msgstr "خراب"
+msgstr ""
 
 #: compat/templatetags/compat.py:9
 msgid "Intro/Menu"
-msgstr "صفحه نخست/فهرست انتخاب"
+msgstr ""
 
 #: compat/templatetags/compat.py:10
 msgid "Starts"
-msgstr "شروع"
+msgstr ""
 
 #: compat/templatetags/compat.py:11
 msgid "Playable"
-msgstr "قابل بازی"
+msgstr ""
 
 #: compat/templatetags/compat.py:12
 msgid "Perfect"
-msgstr "کامل"
+msgstr ""
 
 #: docs/templates/docs-faq.html:6
 msgid ""
@@ -126,7 +126,7 @@ msgstr ""
 
 #: docs/templates/docs-faq.html:8
 msgid "Frequently Asked Questions"
-msgstr "پرسشگان"
+msgstr ""
 
 #: docs/templates/docs-guide.html:11
 msgid "Go back to the guides list"
@@ -138,7 +138,7 @@ msgstr ""
 
 #: docs/templates/docs-guides-index.html:7 templates/_base.html:62
 msgid "Guides"
-msgstr "راهنما"
+msgstr ""
 
 #: docs/templates/docs-guides-index.html:11
 msgid "Guides and documentation"
@@ -146,35 +146,35 @@ msgstr ""
 
 #: docs/templates/docs-guides-index.html:19
 msgid "No published guide available"
-msgstr "راهنمای منتشر شده ای وجود ندارد"
+msgstr ""
 
 #: downloads/models.py:32 downloads/models.py:50
 #, python-format
 msgid "Dolphin %s"
-msgstr "دلفین %s"
+msgstr ""
 
 #: downloads/templates/downloads-branches.html:5
 #: downloads/templates/downloads-branches.html:9
 msgid "Download development builds"
-msgstr "دانلود بسته های توسعه یافته"
+msgstr ""
 
 #: downloads/templates/downloads-branches.html:18
 #, python-format
 msgid "<tt>%(branch)s</tt> branch"
-msgstr "<tt>%(branch)s</tt> انشعاب"
+msgstr ""
 
 #: downloads/templates/downloads-branches.html:21
 #: downloads/templates/downloads-index.html:46
 msgid "View older versions »"
-msgstr "نمایش نسخه های قدیمی تر »"
+msgstr ""
 
 #: downloads/templates/downloads-branches.html:28
 msgid "Branch list"
-msgstr "لیست انشعاب"
+msgstr ""
 
 #: downloads/templates/downloads-devrel.html:19
 msgid "No development release yet"
-msgstr "هنوز نسخه توسعه یافته ای وجود ندارد"
+msgstr ""
 
 #: downloads/templates/downloads-index.html:6
 #, python-format
@@ -186,11 +186,11 @@ msgstr ""
 #: downloads/templates/downloads-index.html:8
 #: downloads/templates/downloads-index.html:27 templates/_base.html:59
 msgid "Download"
-msgstr "دانلود"
+msgstr ""
 
 #: downloads/templates/downloads-index.html:31
 msgid "Development versions"
-msgstr "نسخه های توسعه یافته (ناپایدار)"
+msgstr ""
 
 #: downloads/templates/downloads-index.html:33
 msgid ""
@@ -203,15 +203,15 @@ msgstr ""
 
 #: downloads/templates/downloads-index.html:40
 msgid "Only displaying the <tt>master</tt> branch versions."
-msgstr "فقط نسخه های انشعاب <tt>مستر</tt> نمایش داده شود."
+msgstr ""
 
 #: downloads/templates/downloads-index.html:41
 msgid "Show all available branches"
-msgstr "نمایش تمام انشعاب های موجود"
+msgstr ""
 
 #: downloads/templates/downloads-index.html:64
 msgid "Stable versions"
-msgstr "نسخه های پایدار"
+msgstr ""
 
 #: downloads/templates/downloads-index.html:66
 msgid ""
@@ -223,11 +223,11 @@ msgstr ""
 
 #: downloads/templates/downloads-index.html:88
 msgid "No stable release yet"
-msgstr "هنوز نسخه پایداری وجود ندارد"
+msgstr ""
 
 #: downloads/templates/downloads-index.html:95
 msgid "Source code"
-msgstr "کد متن"
+msgstr ""
 
 #: downloads/templates/downloads-index.html:97
 msgid ""
@@ -235,7 +235,7 @@ msgid ""
 "    The latest version of the Dolphin source code can be downloaded from the\n"
 "    project Git repository.\n"
 "    "
-msgstr "\n    آخرین نسخه کد متن دلفین می تواند از \n    مخزن پروژه Git دانلود شود.    "
+msgstr ""
 
 #: downloads/templates/downloads-index.html:105
 msgid ""
@@ -243,51 +243,51 @@ msgid ""
 "    You can also <a href=\"http://code.google.com/p/dolphin-emu/source/browse/\">browse\n"
 "        the current version of the source code</a>.\n"
 "    "
-msgstr "\n    شما همچنین می توانید <a href=\"http://code.google.com/p/dolphin-emu/source/browse/\">نسخه رایج کد متن\n        را مرور کنید</a>.\n    "
+msgstr ""
 
 #: downloads/templates/downloads-list.html:5
 #, python-format
 msgid "%(branch)s branch - page %(page)s"
-msgstr "%(branch)s انشعاب - صفحه %(page)s"
+msgstr ""
 
 #: downloads/templates/downloads-list.html:9
 #, python-format
 msgid "<tt>%(branch)s</tt> branch - page %(page)s"
-msgstr "<tt>%(branch)s</tt> انشعاب - صفحه %(page)s"
+msgstr ""
 
 #: downloads/templates/downloads-view-devrel.html:6
 #, python-format
 msgid "Information on %(br)s"
-msgstr "اطلاعات در %(br)s"
+msgstr ""
 
 #: downloads/templates/downloads-view-devrel.html:10
 #, python-format
 msgid "Information for %(br)s"
-msgstr "اطلاعات برای %(br)s"
+msgstr ""
 
 #: downloads/templates/downloads-view-devrel.html:16
 msgid "Version"
-msgstr "نسخه"
+msgstr ""
 
 #: downloads/templates/downloads-view-devrel.html:19
 msgid "Branch"
-msgstr "انشعاب"
+msgstr ""
 
 #: downloads/templates/downloads-view-devrel.html:22
 msgid "Date"
-msgstr "تاریخ"
+msgstr ""
 
 #: downloads/templates/downloads-view-devrel.html:31
 msgid "Commit"
-msgstr "سپردن"
+msgstr ""
 
 #: downloads/templates/downloads-view-devrel.html:34
 msgid "Change author"
-msgstr "تغییر مولف"
+msgstr ""
 
 #: downloads/templates/downloads-view-devrel.html:37
 msgid "Change description"
-msgstr "تغییر تشریح"
+msgstr ""
 
 #: homepage/templates/homepage-home.html:7
 #, python-format
@@ -298,35 +298,35 @@ msgstr ""
 
 #: homepage/templates/homepage-home.html:9
 msgid "GameCube/Wii games on PC"
-msgstr "بازی های گیم کیوب و وی بر روی کامپوتر شخصی"
+msgstr ""
 
 #: homepage/templates/homepage-home.html:27 templates/_base.html:56
 msgid "Dolphin Emulator"
-msgstr "برابرساز دلفین"
+msgstr ""
 
 #: homepage/templates/homepage-home.html:29
 msgid "Play GameCube and Wii games in 1080p on your PC."
-msgstr "بازی های گیم کیوب و وی را به صورت فول اچ دی در کامپوتر خود بازی کنید."
+msgstr ""
 
 #: homepage/templates/homepage-home.html:32
 #, python-format
 msgid "Download %(last_release)s now for Windows, Mac and Linux »"
-msgstr "دانلود %(last_release)s حالا برای ویندوز، مکینتاش و لینوکس »"
+msgstr ""
 
 #: homepage/templates/homepage-home.html:35
 msgid ""
 "\n"
 "                <strong>Minimal requirements</strong>: SSE2 compatible CPU, Shader Model 3.0 GPU, 2GB of RAM, 50MB of disk space\n"
 "                "
-msgstr "\n                <strong>حداقل سیستم مورد نیاز</strong>: پردازنده سازگار با SSE2، پردازنده گرافیک سازگار با Shader Model 3.0، حافظه رم ۲ گیگابایت، ۵۰ مگابایت فضای دیسک\n                "
+msgstr ""
 
 #: homepage/templates/homepage-home.html:40
 msgid "More information about hardware requirements"
-msgstr "اطلاعات بیشتر در مورد نیازمندیهای سخت افزاری"
+msgstr ""
 
 #: homepage/templates/homepage-home.html:70
 msgid "Improved graphics"
-msgstr "گرافیک بهبود یافته"
+msgstr ""
 
 #: homepage/templates/homepage-home.html:73
 #, python-format
@@ -337,11 +337,11 @@ msgid ""
 "        GameCube and Wii games. <a href=\"%(MEDIA_PAGE_URL)s\">View screenshots\n"
 "        of games played on Dolphin</a>.\n"
 "        "
-msgstr "\n        وی بازی ها را تنها با وضوح 480p نمایش می دهد. دلفین\n        از 1080p، 720p و حتی تفکیک پذیری های بالاتر برای تمام\n        بازی های گیم کیوب و وی پشتیبانی می کند. <a href=\"%(MEDIA_PAGE_URL)s\">دیدن عکس بازی های\n        اجرا شده در دلفین</a>.\n        "
+msgstr ""
 
 #: homepage/templates/homepage-home.html:83
 msgid "Use your favorite controller"
-msgstr "از کنترلر دلخواهتان استفاده کنید"
+msgstr ""
 
 #: homepage/templates/homepage-home.html:85
 msgid ""
@@ -351,19 +351,19 @@ msgid ""
 "        and mouse! Wiimotes are still supported, including Wii Motion Plus\n"
 "        for games that require it.\n"
 "        "
-msgstr "\n        طرفدار کنترلر گیم کیوب و ویموت نیستید؟ شما میتوانید بازی ها را\n        با کنترلر مورد علاقه کامپوتر شخصی خود بازی کنید، یا حتی با کیبورد و ماس!\n        ویموت ها همچنان پشتیبانی می شوند در حالی که شامل وی موشن پلاس برای\n        بازی هایی اند که به آن نیاز دارند.\n        "
+msgstr ""
 
 #: homepage/templates/homepage-home.html:95
 msgid "Recent Dolphin news"
-msgstr "اخبار جدید دلفین"
+msgstr ""
 
 #: homepage/templates/homepage-home.html:100
 msgid "by"
-msgstr "توسط"
+msgstr ""
 
 #: homepage/templates/homepage-home.html:112
 msgid "Great compatibility"
-msgstr "سازگاری مطلوب"
+msgstr ""
 
 #: homepage/templates/homepage-home.html:115
 #, python-format
@@ -375,11 +375,11 @@ msgid ""
 "        the <a href=\"%(COMPAT_URL)s\">Dolphin compatibility list</a>\n"
 "        or the <a href=\"%(WIKI_URL)s\">Dolphin wiki</a> for more details.\n"
 "        "
-msgstr "\n        دلفین می تواند بیشتر بازی های گیم کیوب و وی را بدون مشکل اجرا کند.\n        بازی های منتشر شده جدید وی اغلب از روز اول در دلفین کار می کنند.\n        بازی های وی ویر و ویرچوال کنسول نیز پشتیبانی می شوند.\n        برای اطلاعات بیشتر <a href=\"%(COMPAT_URL)s\">لیست سازگاری دلفین</a>\n        یا <a href=\"%(WIKI_URL)s\">ویکی دلفین</a> را چک کنید.\n        "
+msgstr ""
 
 #: homepage/templates/homepage-home.html:126
 msgid "Helpful community"
-msgstr "انجمن مفید"
+msgstr ""
 
 #: homepage/templates/homepage-home.html:129
 #, python-format
@@ -391,11 +391,11 @@ msgid ""
 "        can't help you, other Dolphin users may be willing to help you over at the\n"
 "        <a href=\"%(FORUM_URL)s\">official discussion forums</a>.\n"
 "        "
-msgstr "\n        برای نصب مشکلی دارید؟ سعی دارید بهترین تنظیمات را برای بازی\n        تعین کنید؟ یا فقط علاقه مندید به گفتگو درباره بازی های گیم کیوب و وی\n         که دوست دارید؟ اگر <a href=\"%(FAQ_URL)s\">پرسشگان</a>\n        نمی تواند به شما کمک کند، ممکن است کاربران دیگر دلفین مایل به کمک به شما در\n        <a href=\"%(FORUM_URL)s\">فرم های گفتگوی رسمی</a> باشند.\n        "
+msgstr ""
 
 #: homepage/templates/homepage-home.html:140
 msgid "Free and Open Source"
-msgstr "متن باز و آزاد"
+msgstr ""
 
 #: homepage/templates/homepage-home.html:142
 #, python-format
@@ -406,7 +406,7 @@ msgid ""
 "        Grab the emulator source code from <a href=\"%(GCODE_URL)s\">Google\n"
 "        Code</a> and start hacking!\n"
 "        "
-msgstr "\n        برابرساز دلفین از سوی داوطلبانی از سراسر دنیا توسعه یافته و\n        به صورت آزاد توزیع می شود. می خواهید به بهبود پروژه کمک کنید؟\n        کد متن دلفین را از <a href=\"%(GCODE_URL)s\">گوگل کد\n        </a> بگیرید و شروع به هک کردن کنید!\n        "
+msgstr ""
 
 #: media/templates/media-all.html:6
 msgid ""
@@ -420,19 +420,19 @@ msgstr ""
 
 #: media/templates/media-all.html:21
 msgid "Media gallery"
-msgstr "گالری رسانه ها"
+msgstr ""
 
 #: media/templates/media-all.html:45
 msgid "Full size"
-msgstr "اندازه کامل"
+msgstr ""
 
 #: media/templates/media-all.html:46
 msgid "Previous"
-msgstr "پیشین"
+msgstr ""
 
 #: media/templates/media-all.html:47
 msgid "Next"
-msgstr "بعدی"
+msgstr ""
 
 #: templates/404.html:5 templates/404.html.py:8
 msgid "Page not found"
@@ -462,15 +462,15 @@ msgstr ""
 
 #: templates/_base.html:61
 msgid "FAQ"
-msgstr "پرسشگان"
+msgstr ""
 
 #: templates/_base.html:64
 msgid "Forum"
-msgstr "فرم"
+msgstr ""
 
 #: templates/_base.html:65
 msgid "Wiki"
-msgstr "ویکی"
+msgstr ""
 
 #: templates/_base.html:66
 msgid "Code"
@@ -482,4 +482,4 @@ msgid ""
 "            &copy; 2012 Dolphin Emulator Project -\n"
 "            <a href=\"https://bitbucket.org/delroth/dolphin-web/\">Website source code</a>\n"
 "            "
-msgstr "\n            &copy; ۲.۱۲ پروژه برابرساز دلفین -\n            <a href=\"https://bitbucket.org/delroth/dolphin-web/\">کد متن وب سایت</a>\n            "
+msgstr ""

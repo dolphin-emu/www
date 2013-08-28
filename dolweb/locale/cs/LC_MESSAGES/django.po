@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-07-22 22:47+0200\n"
-"PO-Revision-Date: 2013-07-30 18:37+0000\n"
+"POT-Creation-Date: 2013-08-16 18:17+0200\n"
+"PO-Revision-Date: 2013-08-20 10:18+0000\n"
 "Last-Translator: Zbyněk Schwarz <zbynek.schwarz@gmail.com>\n"
 "Language-Team: Czech (http://www.transifex.com/projects/p/dolphin-emu/language/cs/)\n"
 "MIME-Version: 1.0\n"
@@ -165,7 +165,7 @@ msgid "<tt>%(branch)s</tt> branch"
 msgstr "větev <tt>%(branch)s</tt>"
 
 #: downloads/templates/downloads-branches.html:21
-#: downloads/templates/downloads-index.html:91
+#: downloads/templates/downloads-index.html:46
 msgid "View older versions »"
 msgstr "Zobrazit starší verze »"
 
@@ -190,41 +190,41 @@ msgid "Download"
 msgstr "Stáhnout"
 
 #: downloads/templates/downloads-index.html:31
-msgid "Stable versions"
-msgstr "Stabilní verze"
+msgid "Development versions"
+msgstr "Vývojové verze"
 
 #: downloads/templates/downloads-index.html:33
 msgid ""
 "\n"
-"    Stable versions are released after a lot of testing to ensure emulation\n"
-"    performance and stability. <strong>If you do not know what version of\n"
-"    Dolphin you should use, the latest stable version is generally the best.</strong>\n"
-msgstr "\n    Stabilní verze jsou vydávány po spoustě testů zajišťující stabilitu a výkon emulace.\n <strong>pokud nevíte kterou verzi\n    Dolphin byste měli použít, je nejlepší zvolit poslední stabilní verzi.</strong>\n"
+"    Development versions are released every time a developer makes a change to\n"
+"    Dolphin, several times every day! Using development versions enables you to\n"
+"    use the latest and greatest improvements to the project. They are however\n"
+"    less tested than stable versions of the emulator.\n"
+msgstr "\n    Vývojové verze jsou vydávány pokaždé když vývojář provede změny v Dolphin\n    a to i několikrát za den! Použitím vývojových verzí můžete získat\n    nejnovější vylepšení v projektu. Tyto verze ale podstupují méně testů, než\n    stabilní verze emulátoru.\n"
 
-#: downloads/templates/downloads-index.html:55
-msgid "No stable release yet"
-msgstr "Zatím žádná stabilní verze"
-
-#: downloads/templates/downloads-index.html:76
-msgid "Development versions"
-msgstr "Vývojové verze"
-
-#: downloads/templates/downloads-index.html:78
-msgid ""
-"\n"
-"    <strong>Warning!</strong> Development versions are released every time a\n"
-"    developer makes a change to Dolphin. Using development versions enables you\n"
-"    to use the latest and greatest improvements to the project, at the cost of\n"
-"    decreased stability.\n"
-msgstr "\n    <strong>Varování!</strong> Vývojové verze jsou vydávány pokaždé když\n    vývojář provede změny v Dolphin. Použitím vývojových verzí můžete získat\n    nejnovější vylepšení v projektu, za cenu snížené stability.\n"
-
-#: downloads/templates/downloads-index.html:85
+#: downloads/templates/downloads-index.html:40
 msgid "Only displaying the <tt>master</tt> branch versions."
 msgstr "Zobrazovány pouze verze z větve <tt>master</tt>."
 
-#: downloads/templates/downloads-index.html:86
+#: downloads/templates/downloads-index.html:41
 msgid "Show all available branches"
 msgstr "Zobrazit všechny dostupné větve"
+
+#: downloads/templates/downloads-index.html:64
+msgid "Stable versions"
+msgstr "Stabilní verze"
+
+#: downloads/templates/downloads-index.html:66
+msgid ""
+"\n"
+"    Stable versions are released after a lot of testing to ensure emulation\n"
+"    performance and stability. However, since they are released less often,\n"
+"    they might be outdated and lacking some new features.\n"
+msgstr "\n    Stabilní verze jsou vydávány po mnoha testech zajišťující výkon a stabilitu\n    emulace. Protože jsou tyto verze vydávány po určité době, mohou\n    být zastaralé a bez některých nových funkcí.\n"
+
+#: downloads/templates/downloads-index.html:88
+msgid "No stable release yet"
+msgstr "Zatím žádná stabilní verze"
 
 #: downloads/templates/downloads-index.html:95
 msgid "Source code"

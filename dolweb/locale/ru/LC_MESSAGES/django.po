@@ -11,8 +11,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-07-22 22:47+0200\n"
-"PO-Revision-Date: 2013-07-23 21:33+0000\n"
+"POT-Creation-Date: 2013-08-16 18:17+0200\n"
+"PO-Revision-Date: 2013-08-16 16:18+0000\n"
 "Last-Translator: delroth <delroth@gmail.com>\n"
 "Language-Team: Russian (http://www.transifex.com/projects/p/dolphin-emu/language/ru/)\n"
 "MIME-Version: 1.0\n"
@@ -168,7 +168,7 @@ msgid "<tt>%(branch)s</tt> branch"
 msgstr "<tt>%(branch)s</tt> Ветви"
 
 #: downloads/templates/downloads-branches.html:21
-#: downloads/templates/downloads-index.html:91
+#: downloads/templates/downloads-index.html:46
 msgid "View older versions »"
 msgstr "Посмотреть предыдущие версии »"
 
@@ -193,41 +193,41 @@ msgid "Download"
 msgstr "Загрузить"
 
 #: downloads/templates/downloads-index.html:31
-msgid "Stable versions"
-msgstr "Стабильные версии"
+msgid "Development versions"
+msgstr "Разрабатываемые версии "
 
 #: downloads/templates/downloads-index.html:33
 msgid ""
 "\n"
-"    Stable versions are released after a lot of testing to ensure emulation\n"
-"    performance and stability. <strong>If you do not know what version of\n"
-"    Dolphin you should use, the latest stable version is generally the best.</strong>\n"
-msgstr "\n Стабильные версии выпускаются после долгого тестирования, для обеспечения качественной эмуляции, производительности и стабильности. <strong> Если вы не знаете, какую версию Dolphin \nвы хотите использовать, последняя стабильная версия, как правило, лучший выбор. </strong> \n"
+"    Development versions are released every time a developer makes a change to\n"
+"    Dolphin, several times every day! Using development versions enables you to\n"
+"    use the latest and greatest improvements to the project. They are however\n"
+"    less tested than stable versions of the emulator.\n"
+msgstr ""
 
-#: downloads/templates/downloads-index.html:55
-msgid "No stable release yet"
-msgstr "Стабильных версий сейчас нет"
-
-#: downloads/templates/downloads-index.html:76
-msgid "Development versions"
-msgstr "Разрабатываемые версии "
-
-#: downloads/templates/downloads-index.html:78
-msgid ""
-"\n"
-"    <strong>Warning!</strong> Development versions are released every time a\n"
-"    developer makes a change to Dolphin. Using development versions enables you\n"
-"    to use the latest and greatest improvements to the project, at the cost of\n"
-"    decreased stability.\n"
-msgstr "\n <strong> Внимание! </strong> Разрабатываемые версии выпускаются каждый раз, когда \nразработчики вносят изменения в Dolphin. Использование разрабатываемых версий позволяет \nиспользовать последние и самые большие улучшения в проекте, за счет ухудшенной стабильности. \n"
-
-#: downloads/templates/downloads-index.html:85
+#: downloads/templates/downloads-index.html:40
 msgid "Only displaying the <tt>master</tt> branch versions."
 msgstr "Показывать только  <tt>основную</tt> ветвь версий"
 
-#: downloads/templates/downloads-index.html:86
+#: downloads/templates/downloads-index.html:41
 msgid "Show all available branches"
 msgstr "Показать все доступные ветви"
+
+#: downloads/templates/downloads-index.html:64
+msgid "Stable versions"
+msgstr "Стабильные версии"
+
+#: downloads/templates/downloads-index.html:66
+msgid ""
+"\n"
+"    Stable versions are released after a lot of testing to ensure emulation\n"
+"    performance and stability. However, since they are released less often,\n"
+"    they might be outdated and lacking some new features.\n"
+msgstr ""
+
+#: downloads/templates/downloads-index.html:88
+msgid "No stable release yet"
+msgstr "Стабильных версий сейчас нет"
 
 #: downloads/templates/downloads-index.html:95
 msgid "Source code"

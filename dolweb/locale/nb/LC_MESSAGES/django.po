@@ -3,14 +3,15 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
+# chriztr <chriztr@gmail.com>, 2013
 # KHRZ <e-k-nut@hotmail.com>, 2013
 # KHRZ <e-k-nut@hotmail.com>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-07-22 22:47+0200\n"
-"PO-Revision-Date: 2013-08-05 20:00+0000\n"
+"POT-Creation-Date: 2013-08-16 18:17+0200\n"
+"PO-Revision-Date: 2013-08-17 08:48+0000\n"
 "Last-Translator: chriztr <chriztr@gmail.com>\n"
 "Language-Team: Norwegian Bokmål (http://www.transifex.com/projects/p/dolphin-emu/language/nb/)\n"
 "MIME-Version: 1.0\n"
@@ -166,7 +167,7 @@ msgid "<tt>%(branch)s</tt> branch"
 msgstr "<tt>%(branch)s</tt> grein"
 
 #: downloads/templates/downloads-branches.html:21
-#: downloads/templates/downloads-index.html:91
+#: downloads/templates/downloads-index.html:46
 msgid "View older versions »"
 msgstr "Vis eldre builds »"
 
@@ -191,41 +192,41 @@ msgid "Download"
 msgstr "Last ned"
 
 #: downloads/templates/downloads-index.html:31
-msgid "Stable versions"
-msgstr "Stabile versjoner"
+msgid "Development versions"
+msgstr "utviklingsversjoner"
 
 #: downloads/templates/downloads-index.html:33
 msgid ""
 "\n"
-"    Stable versions are released after a lot of testing to ensure emulation\n"
-"    performance and stability. <strong>If you do not know what version of\n"
-"    Dolphin you should use, the latest stable version is generally the best.</strong>\n"
-msgstr "\nStabile versjoner blir sluppet etter masse testing for å sikre emulasjons-\nytelse og stabilitet. <strong>Hvis du ikke hvilken versjon av\nDolphin du burde bruke, er som regel den siste stabile versjonen best.<strong>\n"
+"    Development versions are released every time a developer makes a change to\n"
+"    Dolphin, several times every day! Using development versions enables you to\n"
+"    use the latest and greatest improvements to the project. They are however\n"
+"    less tested than stable versions of the emulator.\n"
+msgstr "\nUtviklerutgaver er sluppet hver gang en utvikler gjør en forrandring med\nDolphin. Å bruke utviklerutgavene tillater deg til å prøve de siste oppdateringene\nog forbedringene som har skjedd i prosjektet. Bakdelen er at disse utgavene\ner mindre testet enn de stabile versjonene av Dolphin.\n"
 
-#: downloads/templates/downloads-index.html:55
-msgid "No stable release yet"
-msgstr "Ingen stabile releaser enda"
-
-#: downloads/templates/downloads-index.html:76
-msgid "Development versions"
-msgstr "utviklingsversjoner"
-
-#: downloads/templates/downloads-index.html:78
-msgid ""
-"\n"
-"    <strong>Warning!</strong> Development versions are released every time a\n"
-"    developer makes a change to Dolphin. Using development versions enables you\n"
-"    to use the latest and greatest improvements to the project, at the cost of\n"
-"    decreased stability.\n"
-msgstr "\n<strong>Advarsel!<strong> utviklingsversjoner blir sluppet hver gang en\nutvikler gjør en endring i Dolphin.  Å bruke utviklingsversjoner tillater deg\nå bruke de siste i prosjektet, til prisen av senket stabilitet.\n"
-
-#: downloads/templates/downloads-index.html:85
+#: downloads/templates/downloads-index.html:40
 msgid "Only displaying the <tt>master</tt> branch versions."
 msgstr "Vis bare <tt>master</tt> branch-versjonene."
 
-#: downloads/templates/downloads-index.html:86
+#: downloads/templates/downloads-index.html:41
 msgid "Show all available branches"
 msgstr "Vil alle greiner"
+
+#: downloads/templates/downloads-index.html:64
+msgid "Stable versions"
+msgstr "Stabile versjoner"
+
+#: downloads/templates/downloads-index.html:66
+msgid ""
+"\n"
+"    Stable versions are released after a lot of testing to ensure emulation\n"
+"    performance and stability. However, since they are released less often,\n"
+"    they might be outdated and lacking some new features.\n"
+msgstr "\nStabile utgaver er sluppet etter en god del testing for å forsikre\nat ytelse og stabilitet er i orden. Men siden de er sluppet så skjeldent\nså kan de være litt utdatert og mangle noen av de nye funksjonene.\n"
+
+#: downloads/templates/downloads-index.html:88
+msgid "No stable release yet"
+msgstr "Ingen stabile releaser enda"
 
 #: downloads/templates/downloads-index.html:95
 msgid "Source code"

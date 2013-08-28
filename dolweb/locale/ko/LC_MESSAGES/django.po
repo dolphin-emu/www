@@ -9,9 +9,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-07-22 22:47+0200\n"
-"PO-Revision-Date: 2013-07-23 21:33+0000\n"
-"Last-Translator: delroth <delroth@gmail.com>\n"
+"POT-Creation-Date: 2013-08-16 18:17+0200\n"
+"PO-Revision-Date: 2013-08-20 18:58+0000\n"
+"Last-Translator: Siegfried <iori3000@hanafos.com>\n"
 "Language-Team: Korean (http://www.transifex.com/projects/p/dolphin-emu/language/ko/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -23,7 +23,7 @@ msgstr ""
 msgid ""
 "The Dolphin Emulator compatibility list contains all the games we tested, "
 "sorted by how well they work on the emulator."
-msgstr ""
+msgstr "돌핀 에뮬레이터 호환성 리스트는 우리가 테스트한 모든 게임을 포함합니다, 에뮬레이터에서 얼마나 잘 작동하냐에 따라 정렬되어 있습니다."
 
 #: compat/templates/compat-list.html:10
 #, python-format
@@ -124,7 +124,7 @@ msgstr "완벽한"
 msgid ""
 "The Official Dolphin FAQ answers all the questions that people often ask "
 "about Dolphin."
-msgstr ""
+msgstr "공식 돌핀 FAQ는 사람들이 종종 돌핀에 대해 묻는 모든 질문들을 답해줍니다."
 
 #: docs/templates/docs-faq.html:8
 msgid "Frequently Asked Questions"
@@ -136,7 +136,7 @@ msgstr "가이드 목록으로 돌아갑니다"
 
 #: docs/templates/docs-guides-index.html:5
 msgid "See all the guides written by the Dolphin team about the emulator."
-msgstr ""
+msgstr "에뮬레이터에 대한 돌핀팀에 의해 쓰여진 모든 안내를 보세요."
 
 #: docs/templates/docs-guides-index.html:7 templates/_base.html:62
 msgid "Guides"
@@ -166,7 +166,7 @@ msgid "<tt>%(branch)s</tt> branch"
 msgstr "<tt>%(branch)s</tt> 분기"
 
 #: downloads/templates/downloads-branches.html:21
-#: downloads/templates/downloads-index.html:91
+#: downloads/templates/downloads-index.html:46
 msgid "View older versions »"
 msgstr "예전 버전들 보기"
 
@@ -183,7 +183,7 @@ msgstr "개발자 릴리즈가 아직 없습니다"
 msgid ""
 "Download the latest version of the Dolphin Emulator (%(ver)s) from the "
 "official website."
-msgstr ""
+msgstr "공식 홈페이지에서 돌핀 에뮬레이터의 가장 최신 버전 (%(ver)s) 을 다운로드합니다 ."
 
 #: downloads/templates/downloads-index.html:8
 #: downloads/templates/downloads-index.html:27 templates/_base.html:59
@@ -191,41 +191,41 @@ msgid "Download"
 msgstr "다운로드"
 
 #: downloads/templates/downloads-index.html:31
-msgid "Stable versions"
-msgstr "안정된 버전"
+msgid "Development versions"
+msgstr "개발자 버전"
 
 #: downloads/templates/downloads-index.html:33
 msgid ""
 "\n"
-"    Stable versions are released after a lot of testing to ensure emulation\n"
-"    performance and stability. <strong>If you do not know what version of\n"
-"    Dolphin you should use, the latest stable version is generally the best.</strong>\n"
-msgstr "\n    안정된 버전은 에뮬레이션 성능과 안정성을 확신하기 위해 \n많은 테스트를 거친 후에 출시됩니다.    <strong> 어떤 버전을 \n사용해야할지 모르시겠으면, 일반적으로 가장 최근 안정 버전이 최고입니다.</strong>\n"
+"    Development versions are released every time a developer makes a change to\n"
+"    Dolphin, several times every day! Using development versions enables you to\n"
+"    use the latest and greatest improvements to the project. They are however\n"
+"    less tested than stable versions of the emulator.\n"
+msgstr "\n개발 버전들은 개발자가 돌핀에 변경을 만들 때마다 매번 릴리즈됩니다,\n하루에 여러번! 개발 버전을 사용하는 것은 당신에게 프로젝트에 가장 최신이면서 뛰어난 향상을\n사용하게해줍니다. 하지만 그것들은 안정된 에뮬레이터 버전들보다 덜 테스트됩니다.\n"
 
-#: downloads/templates/downloads-index.html:55
-msgid "No stable release yet"
-msgstr "안정된 출시가 아직 없음"
-
-#: downloads/templates/downloads-index.html:76
-msgid "Development versions"
-msgstr "개발자 버전"
-
-#: downloads/templates/downloads-index.html:78
-msgid ""
-"\n"
-"    <strong>Warning!</strong> Development versions are released every time a\n"
-"    developer makes a change to Dolphin. Using development versions enables you\n"
-"    to use the latest and greatest improvements to the project, at the cost of\n"
-"    decreased stability.\n"
-msgstr "\n    <strong>경고!</strong> 개발 버전들은 개발자가 돌핀을 변경할 때마다 릴리즈됩니다.\n    개발 버전을 사용하는 것은 최신 그리고 가장 뛰어난 프로젝트 향상들을 사용하게 해줍니다,\n    안정성 감소를 감안하고 말이죠.\n"
-
-#: downloads/templates/downloads-index.html:85
+#: downloads/templates/downloads-index.html:40
 msgid "Only displaying the <tt>master</tt> branch versions."
 msgstr "<tt>마스터</tt> 분기 버전들만 보여줍니다."
 
-#: downloads/templates/downloads-index.html:86
+#: downloads/templates/downloads-index.html:41
 msgid "Show all available branches"
 msgstr "모든 유효한 분기들 보여주기"
+
+#: downloads/templates/downloads-index.html:64
+msgid "Stable versions"
+msgstr "안정된 버전"
+
+#: downloads/templates/downloads-index.html:66
+msgid ""
+"\n"
+"    Stable versions are released after a lot of testing to ensure emulation\n"
+"    performance and stability. However, since they are released less often,\n"
+"    they might be outdated and lacking some new features.\n"
+msgstr "\n안정 버전들은 에뮬레이션 성능과 안정성을 신뢰하기 위해 많은 테스트후에 릴리즈됩니다.\n하지만, 아주 드문 간격으로 릴리즈되기 때문에,\n구식이거나 일부 새로운 것들이 빠질 수도 있습니다.\n"
+
+#: downloads/templates/downloads-index.html:88
+msgid "No stable release yet"
+msgstr "안정된 출시가 아직 없음"
 
 #: downloads/templates/downloads-index.html:95
 msgid "Source code"
@@ -296,7 +296,7 @@ msgstr "설명을 변경하세요"
 msgid ""
 "Official website of Dolphin, the GameCube and Wii emulator. Download the "
 "latest version (%(ver)s) now or ask questions on our forums for help."
-msgstr ""
+msgstr "공식 돌핀 웹사이트, 게임큐브와 Wii 에뮬레이터. 최신 버전 (%(ver)s) 을 지금 다운받으시거나 도움을 위해 우리 포럼에서 질문 하세요."
 
 #: homepage/templates/homepage-home.html:9
 msgid "GameCube/Wii games on PC"
@@ -414,11 +414,11 @@ msgstr "\n        돌핀 에뮬레이터는 세계 곳곳의 자원 봉사자들
 msgid ""
 "View all the user-contributed screenshots of the Dolphin Emulator: GameCube "
 "and Wii games in HD."
-msgstr ""
+msgstr "돌핀 에뮬레이터의 사용자-기증된 스크린샷들을 보세요: HD로 게임큐브와 Wii 게임들."
 
 #: media/templates/media-all.html:8
 msgid "Screenshots gallery"
-msgstr ""
+msgstr "스크린샷 갤러리"
 
 #: media/templates/media-all.html:21
 msgid "Media gallery"
@@ -438,29 +438,29 @@ msgstr "다음"
 
 #: templates/404.html:5 templates/404.html.py:8
 msgid "Page not found"
-msgstr ""
+msgstr "페이지가 없습니다"
 
 #: templates/404.html:10
 msgid "The URL you tried to access does not exist."
-msgstr ""
+msgstr "접속하려는 URL이 존재하지 않습니다."
 
 #: templates/500.html:5 templates/500.html.py:8
 msgid "Internal Server Error"
-msgstr ""
+msgstr "내부 서버 에러"
 
 #: templates/500.html:10
 msgid ""
 "There was an error while trying to access this page. Please refresh the page"
 " in a few seconds."
-msgstr ""
+msgstr "이 페이지를 접속하는 동안 에러가 있었습니다. 몇 초사이에 페이지를 새로고침하세요."
 
 #: templates/_base.html:9
 msgid "Official Dolphin Emulator Website"
-msgstr ""
+msgstr "공식 돌핀 에뮬레이터 웹사이트"
 
 #: templates/_base.html:60
 msgid "Screenshots"
-msgstr ""
+msgstr "스크린샷"
 
 #: templates/_base.html:61
 msgid "FAQ"
@@ -476,7 +476,7 @@ msgstr "위키"
 
 #: templates/_base.html:66
 msgid "Code"
-msgstr ""
+msgstr "코드"
 
 #: templates/_base.html:103
 msgid ""

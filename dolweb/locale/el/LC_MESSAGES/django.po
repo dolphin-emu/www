@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-07-22 22:47+0200\n"
-"PO-Revision-Date: 2013-08-05 16:24+0000\n"
+"POT-Creation-Date: 2013-08-16 18:17+0200\n"
+"PO-Revision-Date: 2013-08-20 17:49+0000\n"
 "Last-Translator: link_to_the_past <kostamarino@gmail.com>\n"
 "Language-Team: Greek (http://www.transifex.com/projects/p/dolphin-emu/language/el/)\n"
 "MIME-Version: 1.0\n"
@@ -166,7 +166,7 @@ msgid "<tt>%(branch)s</tt> branch"
 msgstr "<tt>%(branch)s</tt> διακλάδωση"
 
 #: downloads/templates/downloads-branches.html:21
-#: downloads/templates/downloads-index.html:91
+#: downloads/templates/downloads-index.html:46
 msgid "View older versions »"
 msgstr "Προβολή παλαιότερων εκδόσεων »"
 
@@ -191,41 +191,41 @@ msgid "Download"
 msgstr "Κατεβάστε"
 
 #: downloads/templates/downloads-index.html:31
-msgid "Stable versions"
-msgstr "Σταθερές εκδόσεις"
+msgid "Development versions"
+msgstr "Δοκιμαστικές εκδόσεις"
 
 #: downloads/templates/downloads-index.html:33
 msgid ""
 "\n"
-"    Stable versions are released after a lot of testing to ensure emulation\n"
-"    performance and stability. <strong>If you do not know what version of\n"
-"    Dolphin you should use, the latest stable version is generally the best.</strong>\n"
-msgstr "\n Οι σταθερές εκδόσεις κυκλοφορούν μετά από πολλές δοκιμές για να διασφαλιστεί \nη ταχύτητα και η σταθερότητα της εξομοίωσης. <strong> Άμα δεν γνωρίζεται ποια έκδοση\nτου Dolphin να χρησιμοποιήσετε, η τελευταία σταθερή έκδοση είναι γενικώς η \nκαλύτερη επιλογή.</strong>\n"
+"    Development versions are released every time a developer makes a change to\n"
+"    Dolphin, several times every day! Using development versions enables you to\n"
+"    use the latest and greatest improvements to the project. They are however\n"
+"    less tested than stable versions of the emulator.\n"
+msgstr "\nΟι δοκιμαστικές εκδόσεις κυκλοφορούν κάθε φορά που ένας\nπρογραμματιστής κάνει μια αλλαγή στο Dolphin, πολλές φορές σε \nκαθημερινή βάση! Η χρησιμοποίηση των δοκιμαστικών εκδόσεων \nσας δίνει την δυνατότητα να χρησιμοποιήσετε τις τελευταίες και μεγαλύτερες βελτιώσεις στο project. Έχουν ελεγχθεί όμως λιγότερο \nαπ' ότι οι σταθερές εκδόσεις του εξομοιωτή.\n"
 
-#: downloads/templates/downloads-index.html:55
-msgid "No stable release yet"
-msgstr "Δεν έχει εκδοθεί σταθερή έκδοση ακόμα"
-
-#: downloads/templates/downloads-index.html:76
-msgid "Development versions"
-msgstr "Δοκιμαστικές εκδόσεις"
-
-#: downloads/templates/downloads-index.html:78
-msgid ""
-"\n"
-"    <strong>Warning!</strong> Development versions are released every time a\n"
-"    developer makes a change to Dolphin. Using development versions enables you\n"
-"    to use the latest and greatest improvements to the project, at the cost of\n"
-"    decreased stability.\n"
-msgstr "\n<strong>Προσοχή!</strong> Οι δοκιμαστικές εκδόσεις κυκλοφορούν κάθε φορά που ένας\nπρογραμματιστής κάνει μια αλλαγή στο Dolphin. Η χρησιμοποίηση των δοκιμαστικών εκδόσεων \nσας δίνει την δυνατότητα να χρησιμοποιήσετε τις τελευταίες και μεγαλύτερες βελτιώσεις στο project, με κόστος την σταθερότητα του προγράμματος.\n"
-
-#: downloads/templates/downloads-index.html:85
+#: downloads/templates/downloads-index.html:40
 msgid "Only displaying the <tt>master</tt> branch versions."
 msgstr "Εμφανίζει μόνο τις <tt>master</tt> εκδόσεις διακλάδωσης."
 
-#: downloads/templates/downloads-index.html:86
+#: downloads/templates/downloads-index.html:41
 msgid "Show all available branches"
 msgstr "Εμφάνιση όλων των διαθέσιμων διακλαδώσεων"
+
+#: downloads/templates/downloads-index.html:64
+msgid "Stable versions"
+msgstr "Σταθερές εκδόσεις"
+
+#: downloads/templates/downloads-index.html:66
+msgid ""
+"\n"
+"    Stable versions are released after a lot of testing to ensure emulation\n"
+"    performance and stability. However, since they are released less often,\n"
+"    they might be outdated and lacking some new features.\n"
+msgstr "\nΟι σταθερές εκδόσεις κυκλοφορούν μετά από πολλές δοκιμές για να \nδιασφαλιστεί η ταχύτητα και η σταθερότητα της εξομοίωσης. Παρόλα αυτά, \nκαθότι γίνονται διαθέσιμες πιο σπάνια, μπορεί να έχουν ξεπεραστεί και να \nυπολείπονται ορισμένα νέα χαρακτηριστικά.\n"
+
+#: downloads/templates/downloads-index.html:88
+msgid "No stable release yet"
+msgstr "Δεν έχει εκδοθεί σταθερή έκδοση ακόμα"
 
 #: downloads/templates/downloads-index.html:95
 msgid "Source code"

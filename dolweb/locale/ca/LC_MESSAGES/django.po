@@ -9,9 +9,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-07-22 22:47+0200\n"
-"PO-Revision-Date: 2013-07-24 12:10+0000\n"
-"Last-Translator: Puniasterus <puniasterus@gmail.com>\n"
+"POT-Creation-Date: 2013-08-16 18:17+0200\n"
+"PO-Revision-Date: 2013-08-16 16:18+0000\n"
+"Last-Translator: delroth <delroth@gmail.com>\n"
 "Language-Team: Catalan (http://www.transifex.com/projects/p/dolphin-emu/language/ca/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -166,7 +166,7 @@ msgid "<tt>%(branch)s</tt> branch"
 msgstr "Branca <tt>%(branch)s</tt>"
 
 #: downloads/templates/downloads-branches.html:21
-#: downloads/templates/downloads-index.html:91
+#: downloads/templates/downloads-index.html:46
 msgid "View older versions »"
 msgstr "Veure versions antigues »"
 
@@ -191,41 +191,41 @@ msgid "Download"
 msgstr "Descarregar"
 
 #: downloads/templates/downloads-index.html:31
-msgid "Stable versions"
-msgstr "Versions estables "
+msgid "Development versions"
+msgstr "Versions de desenvolupament"
 
 #: downloads/templates/downloads-index.html:33
 msgid ""
 "\n"
-"    Stable versions are released after a lot of testing to ensure emulation\n"
-"    performance and stability. <strong>If you do not know what version of\n"
-"    Dolphin you should use, the latest stable version is generally the best.</strong>\n"
-msgstr "\nLes versions estables són llançades després de moltes proves per garantir el rendiment i la estabilitat d'emulació. <strong>Si no saps quina versió de Dolphin utilitzar l'última versió estable generalment és la millor.</strong>\n"
+"    Development versions are released every time a developer makes a change to\n"
+"    Dolphin, several times every day! Using development versions enables you to\n"
+"    use the latest and greatest improvements to the project. They are however\n"
+"    less tested than stable versions of the emulator.\n"
+msgstr ""
 
-#: downloads/templates/downloads-index.html:55
-msgid "No stable release yet"
-msgstr "Encara no hi ha versions estables"
-
-#: downloads/templates/downloads-index.html:76
-msgid "Development versions"
-msgstr "Versions de desenvolupament"
-
-#: downloads/templates/downloads-index.html:78
-msgid ""
-"\n"
-"    <strong>Warning!</strong> Development versions are released every time a\n"
-"    developer makes a change to Dolphin. Using development versions enables you\n"
-"    to use the latest and greatest improvements to the project, at the cost of\n"
-"    decreased stability.\n"
-msgstr "\n<strong>Advertència!</ strong> Les versions de desenvolupament són llançades cada vegada\n que un desenvolupador realitza un canvi a Dolphin. Les versions de desenvolupament permeten utilitzar\n les últimes millores i canvis del projecte, a costa\n de la disminució de l'estabilitat.\n"
-
-#: downloads/templates/downloads-index.html:85
+#: downloads/templates/downloads-index.html:40
 msgid "Only displaying the <tt>master</tt> branch versions."
 msgstr "Mostrant només les versions de la branca <tt>master</ tt>."
 
-#: downloads/templates/downloads-index.html:86
+#: downloads/templates/downloads-index.html:41
 msgid "Show all available branches"
 msgstr "Mostrar totes les branques disponibles"
+
+#: downloads/templates/downloads-index.html:64
+msgid "Stable versions"
+msgstr "Versions estables "
+
+#: downloads/templates/downloads-index.html:66
+msgid ""
+"\n"
+"    Stable versions are released after a lot of testing to ensure emulation\n"
+"    performance and stability. However, since they are released less often,\n"
+"    they might be outdated and lacking some new features.\n"
+msgstr ""
+
+#: downloads/templates/downloads-index.html:88
+msgid "No stable release yet"
+msgstr "Encara no hi ha versions estables"
 
 #: downloads/templates/downloads-index.html:95
 msgid "Source code"
