@@ -3,14 +3,16 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
+# chriztr <chriztr@gmail.com>, 2013
+# KHRZ <e-k-nut@hotmail.com>, 2013
 # KHRZ <e-k-nut@hotmail.com>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-04-09 01:11+0200\n"
-"PO-Revision-Date: 2013-06-30 08:31+0000\n"
-"Last-Translator: delroth <delroth@gmail.com>\n"
+"POT-Creation-Date: 2013-08-16 18:17+0200\n"
+"PO-Revision-Date: 2013-08-17 08:48+0000\n"
+"Last-Translator: chriztr <chriztr@gmail.com>\n"
 "Language-Team: Norwegian Bokmål (http://www.transifex.com/projects/p/dolphin-emu/language/nb/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,117 +21,133 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: compat/templates/compat-list.html:8
+msgid ""
+"The Dolphin Emulator compatibility list contains all the games we tested, "
+"sorted by how well they work on the emulator."
+msgstr "Dolphins kompabilitesliste inneholder alle spillene vi har testet, sortert etter hvor bra de fungerer på emulatoren."
+
+#: compat/templates/compat-list.html:10
 #, python-format
 msgid "Compatibility List - page %(page)s"
-msgstr ""
+msgstr "Kompabilitetsliste - side %(page)s"
 
-#: compat/templates/compat-list.html:20
+#: compat/templates/compat-list.html:22
 msgid "How to read the ratings"
-msgstr ""
+msgstr "Hvordan lese rateringene"
 
-#: compat/templates/compat-list.html:23
+#: compat/templates/compat-list.html:25
 msgid "5 out of 5"
-msgstr ""
+msgstr "fem ut av fem"
 
-#: compat/templates/compat-list.html:23
+#: compat/templates/compat-list.html:25
 msgid "<strong>Perfect</strong>: No issues at all!"
-msgstr ""
+msgstr "<strong>Perfekt</strong>: Ingen problemer i det heletatt!"
 
-#: compat/templates/compat-list.html:24
+#: compat/templates/compat-list.html:26
 msgid "4 out of 5"
-msgstr ""
+msgstr "fire ut av fem"
 
-#: compat/templates/compat-list.html:24
+#: compat/templates/compat-list.html:26
 msgid ""
 "<strong>Playable</strong>: Runs well, only minor graphical or audio "
 "glitches. Games can be played all the way through."
-msgstr ""
+msgstr "<strong>Spillbar</strong>: Fungerer bra med mindre små grafiske eller lydmessige feil. Spillene kan spilles gjennom."
 
-#: compat/templates/compat-list.html:25
+#: compat/templates/compat-list.html:27
 msgid "3 out of 5"
-msgstr ""
+msgstr "tre ut av fem"
 
-#: compat/templates/compat-list.html:25
+#: compat/templates/compat-list.html:27
 msgid ""
 "<strong>Starts</strong>: Starts, maybe even plays well, but crashes or major"
 " graphical/audio glitches."
-msgstr ""
+msgstr "<strong>Starter</strong>: Starter og fungerer også bra, men kræsjer eller har store grafiske eller lydmessige feil."
 
-#: compat/templates/compat-list.html:26
+#: compat/templates/compat-list.html:28
 msgid "2 out of 5"
-msgstr ""
+msgstr "to ut av fem"
 
-#: compat/templates/compat-list.html:26
+#: compat/templates/compat-list.html:28
 msgid ""
 "<strong>Intro/Menu</strong>: Hangs/crashes somewhere between booting and "
 "starting."
-msgstr ""
+msgstr "<strong>Intro/Menyer</strong>: Henger eller kræsjer mellom oppstart av spillet og/eller ved å gå \"ingame\"."
 
-#: compat/templates/compat-list.html:27
+#: compat/templates/compat-list.html:29
 msgid "1 out of 5"
-msgstr ""
+msgstr "en ut av fem"
 
-#: compat/templates/compat-list.html:27
+#: compat/templates/compat-list.html:29
 msgid "<strong>Broken</strong>: Crashes when booting."
-msgstr ""
+msgstr "<strong>Ødelagt</strong>: Kræsjer konstant ved oppstart."
 
-#: compat/templates/compat-list.html:34
+#: compat/templates/compat-list.html:36
 msgid "Statistics"
-msgstr ""
-
-#: compat/templates/compat-list.html:54
-msgid "Game title (click for details)"
-msgstr ""
-
-#: compat/templates/compat-list.html:55 templates/_base.html:63
-msgid "Compatibility"
-msgstr ""
+msgstr "Statestikk"
 
 #: compat/templates/compat-list.html:56
+msgid "Game title (click for details)"
+msgstr "Spilltittel (klikk for detaljer)"
+
+#: compat/templates/compat-list.html:57 templates/_base.html:63
+msgid "Compatibility"
+msgstr "Kompabilitet"
+
+#: compat/templates/compat-list.html:58
 msgid "Last updated"
-msgstr ""
+msgstr "Sist oppdatert"
 
 #: compat/templatetags/compat.py:7
 msgid "Unknown"
-msgstr ""
+msgstr "Ukjent"
 
 #: compat/templatetags/compat.py:8
 msgid "Broken"
-msgstr ""
+msgstr "Ødelagt"
 
 #: compat/templatetags/compat.py:9
 msgid "Intro/Menu"
-msgstr ""
+msgstr "Intro/Menyer"
 
 #: compat/templatetags/compat.py:10
 msgid "Starts"
-msgstr ""
+msgstr "Starter"
 
 #: compat/templatetags/compat.py:11
 msgid "Playable"
-msgstr ""
+msgstr "Spillbar"
 
 #: compat/templatetags/compat.py:12
 msgid "Perfect"
-msgstr ""
+msgstr "Perfekt"
 
-#: docs/templates/docs-faq.html:7
+#: docs/templates/docs-faq.html:6
+msgid ""
+"The Official Dolphin FAQ answers all the questions that people often ask "
+"about Dolphin."
+msgstr "Dolphins offisielle FAQ, svar til ale de ofte stilte spørsmålene om Dolphin."
+
+#: docs/templates/docs-faq.html:8
 msgid "Frequently Asked Questions"
 msgstr "Ofte Stilte Spørsmål"
 
 #: docs/templates/docs-guide.html:11
 msgid "Go back to the guides list"
-msgstr ""
+msgstr "Tilbake til listen over guider"
 
-#: docs/templates/docs-guides-index.html:5 templates/_base.html:62
+#: docs/templates/docs-guides-index.html:5
+msgid "See all the guides written by the Dolphin team about the emulator."
+msgstr "Se alle guidene skrevet av Dolphin-teamet om emulatoren."
+
+#: docs/templates/docs-guides-index.html:7 templates/_base.html:62
 msgid "Guides"
 msgstr "Guider"
 
-#: docs/templates/docs-guides-index.html:9
+#: docs/templates/docs-guides-index.html:11
 msgid "Guides and documentation"
-msgstr ""
+msgstr "Guider og dokumentasjon"
 
-#: docs/templates/docs-guides-index.html:17
+#: docs/templates/docs-guides-index.html:19
 msgid "No published guide available"
 msgstr "Ingen publiserte guider tilgjengelige"
 
@@ -149,7 +167,7 @@ msgid "<tt>%(branch)s</tt> branch"
 msgstr "<tt>%(branch)s</tt> grein"
 
 #: downloads/templates/downloads-branches.html:21
-#: downloads/templates/downloads-index.html:89
+#: downloads/templates/downloads-index.html:46
 msgid "View older versions »"
 msgstr "Vis eldre builds »"
 
@@ -162,52 +180,59 @@ msgid "No development release yet"
 msgstr "Ingen utviklings-release enda"
 
 #: downloads/templates/downloads-index.html:6
-#: downloads/templates/downloads-index.html:25 templates/_base.html:60
+#, python-format
+msgid ""
+"Download the latest version of the Dolphin Emulator (%(ver)s) from the "
+"official website."
+msgstr "Last ned den siste versjonen av Dolphin Emulator (%(ver)s) fra den offisielle nettsiden."
+
+#: downloads/templates/downloads-index.html:8
+#: downloads/templates/downloads-index.html:27 templates/_base.html:59
 msgid "Download"
 msgstr "Last ned"
 
-#: downloads/templates/downloads-index.html:29
-msgid "Stable versions"
-msgstr "Stabile versjoner"
-
 #: downloads/templates/downloads-index.html:31
-msgid ""
-"\n"
-"    Stable versions are released after a lot of testing to ensure emulation\n"
-"    performance and stability. <strong>If you do not know what version of\n"
-"    Dolphin you should use, the latest stable version is generally the best.</strong>\n"
-msgstr "\nStabile versjoner blir sluppet etter masse testing for å sikre emulasjons-\nytelse og stabilitet. <strong>Hvis du ikke hvilken versjon av\nDolphin du burde bruke, er som regel den siste stabile versjonen best.<strong>\n"
-
-#: downloads/templates/downloads-index.html:53
-msgid "No stable release yet"
-msgstr "Ingen stabile releaser enda"
-
-#: downloads/templates/downloads-index.html:74
 msgid "Development versions"
 msgstr "utviklingsversjoner"
 
-#: downloads/templates/downloads-index.html:76
+#: downloads/templates/downloads-index.html:33
 msgid ""
 "\n"
-"    <strong>Warning!</strong> Development versions are released every time a\n"
-"    developer makes a change to Dolphin. Using development versions enables you\n"
-"    to use the latest and greatest improvements to the project, at the cost of\n"
-"    decreased stability.\n"
-msgstr "\n<strong>Advarsel!<strong> utviklingsversjoner blir sluppet hver gang en\nutvikler gjør en endring i Dolphin.  Å bruke utviklingsversjoner tillater deg\nå bruke de siste i prosjektet, til prisen av senket stabilitet.\n"
+"    Development versions are released every time a developer makes a change to\n"
+"    Dolphin, several times every day! Using development versions enables you to\n"
+"    use the latest and greatest improvements to the project. They are however\n"
+"    less tested than stable versions of the emulator.\n"
+msgstr "\nUtviklerutgaver er sluppet hver gang en utvikler gjør en forrandring med\nDolphin. Å bruke utviklerutgavene tillater deg til å prøve de siste oppdateringene\nog forbedringene som har skjedd i prosjektet. Bakdelen er at disse utgavene\ner mindre testet enn de stabile versjonene av Dolphin.\n"
 
-#: downloads/templates/downloads-index.html:83
+#: downloads/templates/downloads-index.html:40
 msgid "Only displaying the <tt>master</tt> branch versions."
 msgstr "Vis bare <tt>master</tt> branch-versjonene."
 
-#: downloads/templates/downloads-index.html:84
+#: downloads/templates/downloads-index.html:41
 msgid "Show all available branches"
 msgstr "Vil alle greiner"
 
-#: downloads/templates/downloads-index.html:93
+#: downloads/templates/downloads-index.html:64
+msgid "Stable versions"
+msgstr "Stabile versjoner"
+
+#: downloads/templates/downloads-index.html:66
+msgid ""
+"\n"
+"    Stable versions are released after a lot of testing to ensure emulation\n"
+"    performance and stability. However, since they are released less often,\n"
+"    they might be outdated and lacking some new features.\n"
+msgstr "\nStabile utgaver er sluppet etter en god del testing for å forsikre\nat ytelse og stabilitet er i orden. Men siden de er sluppet så skjeldent\nså kan de være litt utdatert og mangle noen av de nye funksjonene.\n"
+
+#: downloads/templates/downloads-index.html:88
+msgid "No stable release yet"
+msgstr "Ingen stabile releaser enda"
+
+#: downloads/templates/downloads-index.html:95
 msgid "Source code"
 msgstr "Kildekode"
 
-#: downloads/templates/downloads-index.html:95
+#: downloads/templates/downloads-index.html:97
 msgid ""
 "\n"
 "    The latest version of the Dolphin source code can be downloaded from the\n"
@@ -215,92 +240,98 @@ msgid ""
 "    "
 msgstr "\nDen siste versjonen av Dolphins kildekode kan lastes ned fra Git\nrepositoriet."
 
-#: downloads/templates/downloads-index.html:103
+#: downloads/templates/downloads-index.html:105
 msgid ""
 "\n"
 "    You can also <a href=\"http://code.google.com/p/dolphin-emu/source/browse/\">browse\n"
 "        the current version of the source code</a>.\n"
 "    "
-msgstr ""
+msgstr "\n    Du kan også <a href=\"http://code.google.com/p/dolphin-emu/source/browse/\">bla gjennom\n        siste utgave av kildekoden</a>.\n    "
 
 #: downloads/templates/downloads-list.html:5
 #, python-format
 msgid "%(branch)s branch - page %(page)s"
-msgstr ""
+msgstr "%(branch)s gren - side %(page)s"
 
 #: downloads/templates/downloads-list.html:9
 #, python-format
 msgid "<tt>%(branch)s</tt> branch - page %(page)s"
-msgstr ""
+msgstr "<tt>%(branch)s</tt> gren - side %(page)s"
 
 #: downloads/templates/downloads-view-devrel.html:6
 #, python-format
 msgid "Information on %(br)s"
-msgstr ""
+msgstr "Informasjon om %(br)s"
 
 #: downloads/templates/downloads-view-devrel.html:10
 #, python-format
 msgid "Information for %(br)s"
-msgstr ""
+msgstr "Informasjon for %(br)s"
 
 #: downloads/templates/downloads-view-devrel.html:16
 msgid "Version"
-msgstr ""
+msgstr "Versjon"
 
 #: downloads/templates/downloads-view-devrel.html:19
 msgid "Branch"
-msgstr ""
+msgstr "Gren"
 
 #: downloads/templates/downloads-view-devrel.html:22
 msgid "Date"
-msgstr ""
+msgstr "Dato"
 
 #: downloads/templates/downloads-view-devrel.html:31
 msgid "Commit"
-msgstr ""
+msgstr "Forklaring"
 
 #: downloads/templates/downloads-view-devrel.html:34
 msgid "Change author"
-msgstr ""
+msgstr "Endre forfatter"
 
 #: downloads/templates/downloads-view-devrel.html:37
 msgid "Change description"
-msgstr ""
+msgstr "Endre beskrivelse"
 
 #: homepage/templates/homepage-home.html:7
+#, python-format
+msgid ""
+"Official website of Dolphin, the GameCube and Wii emulator. Download the "
+"latest version (%(ver)s) now or ask questions on our forums for help."
+msgstr "Offisielle nettsiden for Dolphin, Gamecube og Wii emulatoren. Last ned siste versjon (%(ver)s) nå eller spør spørsmål på vårt forum om hjelp."
+
+#: homepage/templates/homepage-home.html:9
 msgid "GameCube/Wii games on PC"
-msgstr ""
+msgstr "Gamecube/Wii spill på din OC"
 
-#: homepage/templates/homepage-home.html:25 templates/_base.html:9
-#: templates/_base.html.py:55
+#: homepage/templates/homepage-home.html:27 templates/_base.html:56
 msgid "Dolphin Emulator"
-msgstr ""
+msgstr "Dolphin Emulator"
 
-#: homepage/templates/homepage-home.html:27
+#: homepage/templates/homepage-home.html:29
 msgid "Play GameCube and Wii games in 1080p on your PC."
-msgstr ""
+msgstr "Spill Gamecube og Wii -spil i 1080p på din PC."
 
-#: homepage/templates/homepage-home.html:30
+#: homepage/templates/homepage-home.html:32
 #, python-format
 msgid "Download %(last_release)s now for Windows, Mac and Linux »"
-msgstr ""
+msgstr "Last ned %(last_release)s nå for Windows, Mac og Linux »"
 
-#: homepage/templates/homepage-home.html:33
+#: homepage/templates/homepage-home.html:35
 msgid ""
 "\n"
 "                <strong>Minimal requirements</strong>: SSE2 compatible CPU, Shader Model 3.0 GPU, 2GB of RAM, 50MB of disk space\n"
 "                "
-msgstr ""
+msgstr "\n                <strong>Minste maskinkravet</strong>: SSE2 kompatibel CPU, Shader Model 3.0 GPU, 2GB RAM, 50MB med ledig plass\n                "
 
-#: homepage/templates/homepage-home.html:38
+#: homepage/templates/homepage-home.html:40
 msgid "More information about hardware requirements"
-msgstr ""
+msgstr "Mer informasjon angående maskinvarekrav"
 
-#: homepage/templates/homepage-home.html:68
+#: homepage/templates/homepage-home.html:70
 msgid "Improved graphics"
-msgstr ""
+msgstr "Forbedret grafikk"
 
-#: homepage/templates/homepage-home.html:71
+#: homepage/templates/homepage-home.html:73
 #, python-format
 msgid ""
 "\n"
@@ -309,13 +340,13 @@ msgid ""
 "        GameCube and Wii games. <a href=\"%(MEDIA_PAGE_URL)s\">View screenshots\n"
 "        of games played on Dolphin</a>.\n"
 "        "
-msgstr ""
-
-#: homepage/templates/homepage-home.html:81
-msgid "Use your favorite controller"
-msgstr ""
+msgstr "\n        Wii gjengir bare spill på en 480p oppløsning. Dolphin støtter\n        720p, 1080p og enda høyere oppløsninger for alle dine\n        GameCube og Wii spill. <a href=\"%(MEDIA_PAGE_URL)s\">Vis skjermbilder\n        av spill spilt på Dolphin</a>.\n        "
 
 #: homepage/templates/homepage-home.html:83
+msgid "Use your favorite controller"
+msgstr "Bruk dine favoritt kontrollere"
+
+#: homepage/templates/homepage-home.html:85
 msgid ""
 "\n"
 "        Not a big fan of the GameCube controller and the Wiimote? You can\n"
@@ -323,21 +354,21 @@ msgid ""
 "        and mouse! Wiimotes are still supported, including Wii Motion Plus\n"
 "        for games that require it.\n"
 "        "
-msgstr ""
+msgstr "\n        Ikke en stor fan av GameCube-kontrolleren og Wiikontrolleren? Du kan\n        spille spill med din favoritt PC-kontrolleren, eller med tastatur\n        og mus! Wiikontrollerne støttes fortsatt, inkludert Wii Motion Plus\n        for spill som krever det.\n        "
 
-#: homepage/templates/homepage-home.html:93
+#: homepage/templates/homepage-home.html:95
 msgid "Recent Dolphin news"
-msgstr ""
+msgstr "Siste nytt"
 
-#: homepage/templates/homepage-home.html:98
+#: homepage/templates/homepage-home.html:100
 msgid "by"
-msgstr ""
+msgstr "av"
 
-#: homepage/templates/homepage-home.html:110
+#: homepage/templates/homepage-home.html:112
 msgid "Great compatibility"
-msgstr ""
+msgstr "Bra kompatiblitet"
 
-#: homepage/templates/homepage-home.html:113
+#: homepage/templates/homepage-home.html:115
 #, python-format
 msgid ""
 "\n"
@@ -347,13 +378,13 @@ msgid ""
 "        the <a href=\"%(COMPAT_URL)s\">Dolphin compatibility list</a>\n"
 "        or the <a href=\"%(WIKI_URL)s\">Dolphin wiki</a> for more details.\n"
 "        "
-msgstr ""
+msgstr "\n        Dolphin kan spille det meste av GameCube og Wii-spill samling\n        uten problemer. Nye Wii utgivelser virker ofte på Dolphin fra dag én.\n        WiiWare og Virtual Console-spill er også støttet. Sjekk ut\n        the <a href=\"%(COMPAT_URL)s\">Dolphins kompatibilitetliste</a>\n        eller <a href=\"%(WIKI_URL)s\">Dolphin wiki</a> for mer detaljer\n        "
 
-#: homepage/templates/homepage-home.html:124
+#: homepage/templates/homepage-home.html:126
 msgid "Helpful community"
-msgstr ""
+msgstr "Hjelpsomt miljø"
 
-#: homepage/templates/homepage-home.html:127
+#: homepage/templates/homepage-home.html:129
 #, python-format
 msgid ""
 "\n"
@@ -363,13 +394,13 @@ msgid ""
 "        can't help you, other Dolphin users may be willing to help you over at the\n"
 "        <a href=\"%(FORUM_URL)s\">official discussion forums</a>.\n"
 "        "
-msgstr ""
-
-#: homepage/templates/homepage-home.html:138
-msgid "Free and Open Source"
-msgstr ""
+msgstr "\n        Installasjonsproblemer? Sliter du med å finne det beste oppsettet\n        for et spill? Eller bare interessert i å diskutere om Gamecube og Wii\n        spill som du liker? Hvis ikke <a href=\"%(FAQ_URL)s\">Frequently Asked Questions</a>\n        kan hjelpe deg så kan kanskje andre brukere være villige å hjelpe deg\n        på det <a href=\"%(FORUM_URL)s\">offisielle diskusjonsforumet</a>.\n        "
 
 #: homepage/templates/homepage-home.html:140
+msgid "Free and Open Source"
+msgstr "Gratis og åpen kildekode"
+
+#: homepage/templates/homepage-home.html:142
 #, python-format
 msgid ""
 "\n"
@@ -378,47 +409,75 @@ msgid ""
 "        Grab the emulator source code from <a href=\"%(GCODE_URL)s\">Google\n"
 "        Code</a> and start hacking!\n"
 "        "
-msgstr ""
+msgstr "\n        Dolphin Emulator er kodet og laget av brukere over hele\n        verden og distrubiert gratis. Lyst til å hjelpe til med prosjektet?\n        Hent kildekoden for emulatoren fra <a href=\"%(GCODE_URL)s\">Google\n        Code</a> og start hackingen!"
 
-#: media/templates/media-all.html:6 media/templates/media-all.html.py:19
+#: media/templates/media-all.html:6
+msgid ""
+"View all the user-contributed screenshots of the Dolphin Emulator: GameCube "
+"and Wii games in HD."
+msgstr "Se alle brukeropplastede skjermbilde av Dolphin Emulator: Gamecube og Wii -spill i HD."
+
+#: media/templates/media-all.html:8
+msgid "Screenshots gallery"
+msgstr "Skjermbildegalleri"
+
+#: media/templates/media-all.html:21
 msgid "Media gallery"
-msgstr ""
-
-#: media/templates/media-all.html:43
-msgid "Full size"
-msgstr ""
-
-#: media/templates/media-all.html:44
-msgid "Previous"
-msgstr ""
+msgstr "Mediagalleri"
 
 #: media/templates/media-all.html:45
+msgid "Full size"
+msgstr "Full størrelse"
+
+#: media/templates/media-all.html:46
+msgid "Previous"
+msgstr "Forrige"
+
+#: media/templates/media-all.html:47
 msgid "Next"
-msgstr ""
+msgstr "Neste"
 
-#: templates/_base.html:58
-msgid "Home"
-msgstr ""
+#: templates/404.html:5 templates/404.html.py:8
+msgid "Page not found"
+msgstr "Side ikke funnet."
 
-#: templates/_base.html:59
-msgid "Media"
-msgstr ""
+#: templates/404.html:10
+msgid "The URL you tried to access does not exist."
+msgstr "Adressen du prøvde å nå eksisterer ikke."
+
+#: templates/500.html:5 templates/500.html.py:8
+msgid "Internal Server Error"
+msgstr "Intern Server Error."
+
+#: templates/500.html:10
+msgid ""
+"There was an error while trying to access this page. Please refresh the page"
+" in a few seconds."
+msgstr "Det oppsto en feil mens du prøvde å nå denne siden. Prøv igjen om noen få sekunder."
+
+#: templates/_base.html:9
+msgid "Official Dolphin Emulator Website"
+msgstr "Dolphin Emulators offisielle nettside."
+
+#: templates/_base.html:60
+msgid "Screenshots"
+msgstr "Skjermbilder"
 
 #: templates/_base.html:61
 msgid "FAQ"
-msgstr ""
+msgstr "FAQ"
 
 #: templates/_base.html:64
 msgid "Forum"
-msgstr ""
+msgstr "Forum"
 
 #: templates/_base.html:65
 msgid "Wiki"
-msgstr ""
+msgstr "Wiki"
 
 #: templates/_base.html:66
-msgid "Development"
-msgstr ""
+msgid "Code"
+msgstr "Kode"
 
 #: templates/_base.html:103
 msgid ""
@@ -426,4 +485,4 @@ msgid ""
 "            &copy; 2012 Dolphin Emulator Project -\n"
 "            <a href=\"https://bitbucket.org/delroth/dolphin-web/\">Website source code</a>\n"
 "            "
-msgstr ""
+msgstr "\n            &copy; 2012 Dolphin Emulator Project -\n            <a href=\"https://bitbucket.org/delroth/dolphin-web/\">Kildekode til websiden</a>\n            "

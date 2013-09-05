@@ -4,12 +4,13 @@
 # 
 # Translators:
 # mustafacan <m.can.elmaci@gmail.com>, 2013
+# mustafacan <m.can.elmaci@gmail.com>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-04-09 01:11+0200\n"
-"PO-Revision-Date: 2013-06-30 08:30+0000\n"
+"POT-Creation-Date: 2013-08-16 18:17+0200\n"
+"PO-Revision-Date: 2013-08-16 16:18+0000\n"
 "Last-Translator: delroth <delroth@gmail.com>\n"
 "Language-Team: Turkish (http://www.transifex.com/projects/p/dolphin-emu/language/tr/)\n"
 "MIME-Version: 1.0\n"
@@ -19,73 +20,79 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #: compat/templates/compat-list.html:8
+msgid ""
+"The Dolphin Emulator compatibility list contains all the games we tested, "
+"sorted by how well they work on the emulator."
+msgstr ""
+
+#: compat/templates/compat-list.html:10
 #, python-format
 msgid "Compatibility List - page %(page)s"
 msgstr "Uyumluluk listesi - sayfa %(page)s"
 
-#: compat/templates/compat-list.html:20
+#: compat/templates/compat-list.html:22
 msgid "How to read the ratings"
-msgstr ""
+msgstr "Sıralamalar nasıl okunur"
 
-#: compat/templates/compat-list.html:23
+#: compat/templates/compat-list.html:25
 msgid "5 out of 5"
 msgstr "5 üzerinden 5"
 
-#: compat/templates/compat-list.html:23
+#: compat/templates/compat-list.html:25
 msgid "<strong>Perfect</strong>: No issues at all!"
 msgstr "<strong>Mükemmel</strong>: Hiçbir sorun yok!"
 
-#: compat/templates/compat-list.html:24
+#: compat/templates/compat-list.html:26
 msgid "4 out of 5"
 msgstr "5 üzerinden 4"
 
-#: compat/templates/compat-list.html:24
+#: compat/templates/compat-list.html:26
 msgid ""
 "<strong>Playable</strong>: Runs well, only minor graphical or audio "
 "glitches. Games can be played all the way through."
 msgstr "<strong>Oynanabilir</strong>: Çalışıyor, sadece küçük grafik ve ses sorunları var. Oyun sonuna kadar oynanabiliyor."
 
-#: compat/templates/compat-list.html:25
+#: compat/templates/compat-list.html:27
 msgid "3 out of 5"
 msgstr "5 üzerinden 3"
 
-#: compat/templates/compat-list.html:25
+#: compat/templates/compat-list.html:27
 msgid ""
 "<strong>Starts</strong>: Starts, maybe even plays well, but crashes or major"
 " graphical/audio glitches."
 msgstr "<strong>Oyuna giriyor</strong>: Oyuna giriyor, oynanabiliyor, ama ileriki bölümlerde çöküyor veya büyük grafik ve ses sorunları var."
 
-#: compat/templates/compat-list.html:26
+#: compat/templates/compat-list.html:28
 msgid "2 out of 5"
 msgstr "5 üzerinden 2"
 
-#: compat/templates/compat-list.html:26
+#: compat/templates/compat-list.html:28
 msgid ""
 "<strong>Intro/Menu</strong>: Hangs/crashes somewhere between booting and "
 "starting."
 msgstr "<strong>Açılıyor</strong>: Oyuna girerken bir yerde donuyor veya çöküyor."
 
-#: compat/templates/compat-list.html:27
+#: compat/templates/compat-list.html:29
 msgid "1 out of 5"
 msgstr "5 üzerinden 1"
 
-#: compat/templates/compat-list.html:27
+#: compat/templates/compat-list.html:29
 msgid "<strong>Broken</strong>: Crashes when booting."
 msgstr "<strong>Bozuk</strong>: Oyunu açarken çöküyor."
 
-#: compat/templates/compat-list.html:34
+#: compat/templates/compat-list.html:36
 msgid "Statistics"
 msgstr "İstatistikler"
 
-#: compat/templates/compat-list.html:54
+#: compat/templates/compat-list.html:56
 msgid "Game title (click for details)"
 msgstr "Oyunun adı (ayrıntılar için tıklayın)"
 
-#: compat/templates/compat-list.html:55 templates/_base.html:63
+#: compat/templates/compat-list.html:57 templates/_base.html:63
 msgid "Compatibility"
 msgstr "Uyumluluk"
 
-#: compat/templates/compat-list.html:56
+#: compat/templates/compat-list.html:58
 msgid "Last updated"
 msgstr "Son güncelleme"
 
@@ -113,23 +120,33 @@ msgstr "Oynanabilir"
 msgid "Perfect"
 msgstr "Mükemmel"
 
-#: docs/templates/docs-faq.html:7
+#: docs/templates/docs-faq.html:6
+msgid ""
+"The Official Dolphin FAQ answers all the questions that people often ask "
+"about Dolphin."
+msgstr ""
+
+#: docs/templates/docs-faq.html:8
 msgid "Frequently Asked Questions"
 msgstr "Sıkça Sorulan Sorular"
 
 #: docs/templates/docs-guide.html:11
 msgid "Go back to the guides list"
+msgstr "Klavuzlar listesine geri dön"
+
+#: docs/templates/docs-guides-index.html:5
+msgid "See all the guides written by the Dolphin team about the emulator."
 msgstr ""
 
-#: docs/templates/docs-guides-index.html:5 templates/_base.html:62
+#: docs/templates/docs-guides-index.html:7 templates/_base.html:62
 msgid "Guides"
 msgstr "Klavuzlar"
 
-#: docs/templates/docs-guides-index.html:9
+#: docs/templates/docs-guides-index.html:11
 msgid "Guides and documentation"
-msgstr ""
+msgstr "Kılavuzlar ve belgeler"
 
-#: docs/templates/docs-guides-index.html:17
+#: docs/templates/docs-guides-index.html:19
 msgid "No published guide available"
 msgstr "Yayınlanmış hiç klavuz yok"
 
@@ -149,7 +166,7 @@ msgid "<tt>%(branch)s</tt> branch"
 msgstr "<tt>%(branch)s</tt> dalı"
 
 #: downloads/templates/downloads-branches.html:21
-#: downloads/templates/downloads-index.html:89
+#: downloads/templates/downloads-index.html:46
 msgid "View older versions »"
 msgstr "Eski sürümleri göster »"
 
@@ -162,52 +179,59 @@ msgid "No development release yet"
 msgstr "Şu anda geliştirme sürümü yok"
 
 #: downloads/templates/downloads-index.html:6
-#: downloads/templates/downloads-index.html:25 templates/_base.html:60
+#, python-format
+msgid ""
+"Download the latest version of the Dolphin Emulator (%(ver)s) from the "
+"official website."
+msgstr ""
+
+#: downloads/templates/downloads-index.html:8
+#: downloads/templates/downloads-index.html:27 templates/_base.html:59
 msgid "Download"
 msgstr "İndir"
 
-#: downloads/templates/downloads-index.html:29
-msgid "Stable versions"
-msgstr "Kararlı sürümler"
-
 #: downloads/templates/downloads-index.html:31
-msgid ""
-"\n"
-"    Stable versions are released after a lot of testing to ensure emulation\n"
-"    performance and stability. <strong>If you do not know what version of\n"
-"    Dolphin you should use, the latest stable version is generally the best.</strong>\n"
-msgstr "\n    Kararlı sürümler, emulasyon hızı ve kararlılık açısından yapılan testlerden\n    sonra yayınlanan sürümlerdir. <strong>Eğer hangi sürümü seçeceğinizden emin\n    değilseniz, en yeni kararlı sürüm genellikle en iyi seçenektir.</strong>\n"
-
-#: downloads/templates/downloads-index.html:53
-msgid "No stable release yet"
-msgstr "Şu anda kararlı sürüm yok"
-
-#: downloads/templates/downloads-index.html:74
 msgid "Development versions"
 msgstr "Geliştirme sürümleri"
 
-#: downloads/templates/downloads-index.html:76
+#: downloads/templates/downloads-index.html:33
 msgid ""
 "\n"
-"    <strong>Warning!</strong> Development versions are released every time a\n"
-"    developer makes a change to Dolphin. Using development versions enables you\n"
-"    to use the latest and greatest improvements to the project, at the cost of\n"
-"    decreased stability.\n"
-msgstr "\n    <strong>Dikkat!</strong> Geliştirme sürümleri geliştiricilerin yaptığı her yeni\n     değişimde yeniden yayınlanan sürümlerdir. Bu sürümleri kullanmak yapılan en son\n     değişiklikleri ve en yeni özellikleri test etmenize imkan sağlayacaktır, ama\n     kararlılık ve emulasyon hızı düşecektir.\n"
+"    Development versions are released every time a developer makes a change to\n"
+"    Dolphin, several times every day! Using development versions enables you to\n"
+"    use the latest and greatest improvements to the project. They are however\n"
+"    less tested than stable versions of the emulator.\n"
+msgstr ""
 
-#: downloads/templates/downloads-index.html:83
+#: downloads/templates/downloads-index.html:40
 msgid "Only displaying the <tt>master</tt> branch versions."
 msgstr "Sadece <tt>master</tt> dalının sürümleri gösteriliyor."
 
-#: downloads/templates/downloads-index.html:84
+#: downloads/templates/downloads-index.html:41
 msgid "Show all available branches"
 msgstr "Bütün dalları göster."
 
-#: downloads/templates/downloads-index.html:93
+#: downloads/templates/downloads-index.html:64
+msgid "Stable versions"
+msgstr "Kararlı sürümler"
+
+#: downloads/templates/downloads-index.html:66
+msgid ""
+"\n"
+"    Stable versions are released after a lot of testing to ensure emulation\n"
+"    performance and stability. However, since they are released less often,\n"
+"    they might be outdated and lacking some new features.\n"
+msgstr ""
+
+#: downloads/templates/downloads-index.html:88
+msgid "No stable release yet"
+msgstr "Şu anda kararlı sürüm yok"
+
+#: downloads/templates/downloads-index.html:95
 msgid "Source code"
 msgstr "Kaynak kodu"
 
-#: downloads/templates/downloads-index.html:95
+#: downloads/templates/downloads-index.html:97
 msgid ""
 "\n"
 "    The latest version of the Dolphin source code can be downloaded from the\n"
@@ -215,7 +239,7 @@ msgid ""
 "    "
 msgstr "\n    Dolphin'in son sürümünün kaynak kodu Git deposundan indirilebilir.\n    "
 
-#: downloads/templates/downloads-index.html:103
+#: downloads/templates/downloads-index.html:105
 msgid ""
 "\n"
 "    You can also <a href=\"http://code.google.com/p/dolphin-emu/source/browse/\">browse\n"
@@ -268,39 +292,45 @@ msgid "Change description"
 msgstr "Açıklamayı değiştir"
 
 #: homepage/templates/homepage-home.html:7
+#, python-format
+msgid ""
+"Official website of Dolphin, the GameCube and Wii emulator. Download the "
+"latest version (%(ver)s) now or ask questions on our forums for help."
+msgstr ""
+
+#: homepage/templates/homepage-home.html:9
 msgid "GameCube/Wii games on PC"
 msgstr "GameCube/Wii oyunlarını PC'de oynayın"
 
-#: homepage/templates/homepage-home.html:25 templates/_base.html:9
-#: templates/_base.html.py:55
+#: homepage/templates/homepage-home.html:27 templates/_base.html:56
 msgid "Dolphin Emulator"
 msgstr "Dolphin Emulator"
 
-#: homepage/templates/homepage-home.html:27
+#: homepage/templates/homepage-home.html:29
 msgid "Play GameCube and Wii games in 1080p on your PC."
 msgstr "GameCube ve Wii oyunlarını 1080p de PC'de oynayın. "
 
-#: homepage/templates/homepage-home.html:30
+#: homepage/templates/homepage-home.html:32
 #, python-format
 msgid "Download %(last_release)s now for Windows, Mac and Linux »"
 msgstr "%(last_release)s 'i Windows, Mac and Linux için indirin »"
 
-#: homepage/templates/homepage-home.html:33
+#: homepage/templates/homepage-home.html:35
 msgid ""
 "\n"
 "                <strong>Minimal requirements</strong>: SSE2 compatible CPU, Shader Model 3.0 GPU, 2GB of RAM, 50MB of disk space\n"
 "                "
 msgstr "\n                <strong>Sistem gereksinimleri</strong>: SSE2 destekli CPU, Shader Model 3.0 destekli GPU, 2GB RAM, 50MB disk alanı\n                "
 
-#: homepage/templates/homepage-home.html:38
+#: homepage/templates/homepage-home.html:40
 msgid "More information about hardware requirements"
 msgstr "Sistem gereksinimleri hakkında daha fazla bilgi"
 
-#: homepage/templates/homepage-home.html:68
+#: homepage/templates/homepage-home.html:70
 msgid "Improved graphics"
 msgstr "Geliştirilmiş grafikler"
 
-#: homepage/templates/homepage-home.html:71
+#: homepage/templates/homepage-home.html:73
 #, python-format
 msgid ""
 "\n"
@@ -311,11 +341,11 @@ msgid ""
 "        "
 msgstr "\n        Wii oyunları sadece 480p çözünürlikte çalıştırabilir. Dolphin ise \n        720p, 1080p ve daha yüksek çözünürlükleri bütün GameCube ve Wii\n         oyunları için destekler. <a href=\"%(MEDIA_PAGE_URL)s\">Dolphin'de oynanan\n        oyunların ekran görüntülerine bakın</a>.\n        "
 
-#: homepage/templates/homepage-home.html:81
-msgid "Use your favorite controller"
-msgstr "En beğendiğiniz kumanda ile oynayın."
-
 #: homepage/templates/homepage-home.html:83
+msgid "Use your favorite controller"
+msgstr "Favori kumandanız ile oynayın."
+
+#: homepage/templates/homepage-home.html:85
 msgid ""
 "\n"
 "        Not a big fan of the GameCube controller and the Wiimote? You can\n"
@@ -325,19 +355,19 @@ msgid ""
 "        "
 msgstr "\n        GameCube oyun kolunu ve Wiimote kumandasını sevmiyor musunuz?\n        Oyunları istediğiniz kumanda veya oyun koluyla oynayabilirsiniz, hatta\n        isterseniz klavye ve fare de kullanabilirsiniz. Wiimote kumandaları hala destekleniyor.\n        Bazı oyunlar için gerekli Wii Motion Plus da dahil.\n        "
 
-#: homepage/templates/homepage-home.html:93
+#: homepage/templates/homepage-home.html:95
 msgid "Recent Dolphin news"
 msgstr "Dolphin'den en son haberler"
 
-#: homepage/templates/homepage-home.html:98
+#: homepage/templates/homepage-home.html:100
 msgid "by"
 msgstr "tarafından"
 
-#: homepage/templates/homepage-home.html:110
+#: homepage/templates/homepage-home.html:112
 msgid "Great compatibility"
 msgstr "Mükemmel Uyumluluk"
 
-#: homepage/templates/homepage-home.html:113
+#: homepage/templates/homepage-home.html:115
 #, python-format
 msgid ""
 "\n"
@@ -349,11 +379,11 @@ msgid ""
 "        "
 msgstr "\n        Dolphin çoğu GameCube ve Wii oyununu sorunsuz çalıştırabilir.\n        Yeni Wii oyunları genellikle ilk günden Dolphin'le çalıştırılabilir.\n        Wiiware ve Virtual Console oyunları ayrıca desteklenir. \n        Daha fazla bilgi için <a href=\"%(COMPAT_URL)s\">Uyumluluk listesi</a> ve <a href=\"%(WIKI_URL)s\">wiki'ye</a> gözatın.\n        "
 
-#: homepage/templates/homepage-home.html:124
+#: homepage/templates/homepage-home.html:126
 msgid "Helpful community"
 msgstr "Yardımsever topluluk"
 
-#: homepage/templates/homepage-home.html:127
+#: homepage/templates/homepage-home.html:129
 #, python-format
 msgid ""
 "\n"
@@ -365,11 +395,11 @@ msgid ""
 "        "
 msgstr "\n        Dolphin'i yüklerken bir sorunla mı karşılaştinız? Bir oyunun en iyi hangi\n        ayarlarda çalıştığını mı bulmaya çalışıyorsunuz? Yada sadece GameCube ve Wii\n        hakkında konuşmak mı istiyorsunuz? Eğer <a href=\"%(FAQ_URL)s\">Sıkça Sorulan Sorular</a>\n        da aradığınızı bulamadıysanız <a href=\"%(FORUM_URL)s\">Dolphin forumlarında</a>\n        diğer Dolphin kullanıcılarından yardım isteyebilirsiniz.\n        "
 
-#: homepage/templates/homepage-home.html:138
+#: homepage/templates/homepage-home.html:140
 msgid "Free and Open Source"
 msgstr "Bedava ve Açık Kaynak"
 
-#: homepage/templates/homepage-home.html:140
+#: homepage/templates/homepage-home.html:142
 #, python-format
 msgid ""
 "\n"
@@ -378,31 +408,59 @@ msgid ""
 "        Grab the emulator source code from <a href=\"%(GCODE_URL)s\">Google\n"
 "        Code</a> and start hacking!\n"
 "        "
-msgstr "\n        Dolphin Emulator tüm dünyada yüzlerce kişi tarafından bedavaya yapılıyor\n        Sizde Projeye yardım etmek ister misiniz?\n        Dolphin Emulator'ün kaynak kodunu <a href=\"%(GCODE_URL)s\">Google\n        Code</a>'dan indirip sizde projeye katılabilirsiniz.\n        "
+msgstr "\n        Dolphin Emulator tüm dünyada yüzlerce gönüllü tarafından bedavaya\n        yapılıyor ve yayınlanıyor. Sizde projeye yardım etmek ister misiniz?\n        Dolphin Emulator'ün kaynak kodunu <a href=\"%(GCODE_URL)s\">Google\n        Code</a>'dan indirip sizde projeye katılabilirsiniz.\n        "
 
-#: media/templates/media-all.html:6 media/templates/media-all.html.py:19
+#: media/templates/media-all.html:6
+msgid ""
+"View all the user-contributed screenshots of the Dolphin Emulator: GameCube "
+"and Wii games in HD."
+msgstr ""
+
+#: media/templates/media-all.html:8
+msgid "Screenshots gallery"
+msgstr "Ekran Görüntüleri Galerisi"
+
+#: media/templates/media-all.html:21
 msgid "Media gallery"
 msgstr "Medya Galerisi"
 
-#: media/templates/media-all.html:43
+#: media/templates/media-all.html:45
 msgid "Full size"
 msgstr "Tam boyut"
 
-#: media/templates/media-all.html:44
+#: media/templates/media-all.html:46
 msgid "Previous"
 msgstr "Önceki"
 
-#: media/templates/media-all.html:45
+#: media/templates/media-all.html:47
 msgid "Next"
 msgstr "Sonraki"
 
-#: templates/_base.html:58
-msgid "Home"
-msgstr "Ana Sayfa"
+#: templates/404.html:5 templates/404.html.py:8
+msgid "Page not found"
+msgstr ""
 
-#: templates/_base.html:59
-msgid "Media"
-msgstr "Medya"
+#: templates/404.html:10
+msgid "The URL you tried to access does not exist."
+msgstr ""
+
+#: templates/500.html:5 templates/500.html.py:8
+msgid "Internal Server Error"
+msgstr ""
+
+#: templates/500.html:10
+msgid ""
+"There was an error while trying to access this page. Please refresh the page"
+" in a few seconds."
+msgstr ""
+
+#: templates/_base.html:9
+msgid "Official Dolphin Emulator Website"
+msgstr "Dolphin Emulator Resmi Sitesi"
+
+#: templates/_base.html:60
+msgid "Screenshots"
+msgstr "Ekran Görüntüleri"
 
 #: templates/_base.html:61
 msgid "FAQ"
@@ -417,8 +475,8 @@ msgid "Wiki"
 msgstr "Wiki"
 
 #: templates/_base.html:66
-msgid "Development"
-msgstr "Geliştirme"
+msgid "Code"
+msgstr "Code"
 
 #: templates/_base.html:103
 msgid ""

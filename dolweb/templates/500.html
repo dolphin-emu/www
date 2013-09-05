@@ -1,0 +1,11 @@
+{% extends "_base.html" %}
+
+{% load i18n %}
+
+{% block "title" %}{% trans "Internal Server Error" %}{% endblock %}
+
+{% block "body" %}
+<h1>{% trans "Internal Server Error" %}</h1>
+
+<p>{% trans "There was an error while trying to access this page. Please refresh the page in a few seconds." %}</p>
+{% endblock %}
