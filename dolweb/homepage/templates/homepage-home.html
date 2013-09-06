@@ -49,6 +49,7 @@
                             <img src="{{ big.url }}" alt="{{ image.game_name }}">
                         {% endthumbnail %}
                         <div class="carousel-caption">
+                            <h3>&nbsp;</h3>
                             <p>{{ image.game_name }}</p>
                         </div>
                     </div>
@@ -101,5 +102,13 @@
         po.src = 'https://apis.google.com/js/plusone.js';
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
     })();
+
+    $(document).ready(function () {
+        $('.carousel').carousel({
+            interval: 7500
+        });
+
+        $('.carousel').carousel('cycle');
+    });
 </script>
 {% endblock %}

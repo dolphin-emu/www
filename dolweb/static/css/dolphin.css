@@ -365,3 +365,11 @@ p.intro {
 div.my-hero h3 {
     font-weight: bold;
 }
+
+.carousel-caption {
+    padding-bottom: 2px;
+}
+
+.carousel-caption p {
+    font-size: 18px;
+}
