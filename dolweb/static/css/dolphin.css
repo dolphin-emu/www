@@ -231,6 +231,10 @@ html[dir="rtl"] .nav .flag {
     font-size: 0.85em;
 }
 
+div.realign.ratings-stats {
+    margin-top: 3.1em;
+}
+
 .ratings-stats .progress-bar {
     height: 12px;
 }
@@ -343,6 +347,7 @@ img.fp-sshot {
 div.sshot-row {
     padding-left: 0.9em;
     padding-right: 0.9em;
+    padding-bottom: 1em;
 }
 
 div.sshot-col {
@@ -373,4 +378,8 @@ div.my-hero h3 {
 
 .carousel-caption p {
     font-size: 18px;
+}
+
+h2.latest-articles {
+    margin-top: 0;
 }
