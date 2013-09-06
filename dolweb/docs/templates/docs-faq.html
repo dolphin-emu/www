@@ -8,51 +8,49 @@
 {% block "title" %}{% trans "Frequently Asked Questions" %}{% endblock %}
 
 {% block "body" %}
-<div class="container-fluid">
-    <div class="row-fluid">
-        <div class="span3">
-            <div class="well sidebar-nav">
-                <ul class="nav nav-list">
-                    {% for category in categories %}
-                    <li class="nav-header">{{ category.title|faq_translate }}</li>
-                    {% for question in category.sorted_questions %}
-                    <li class="faq-title"><a href="#{{ question.slug }}">{{ question.short_title|faq_translate }}</a></li>
-                    {% endfor %}
-                    {% endfor %}
-                </ul>
-            </div>
+<div class="row">
+    <div class="col-md-3">
+        <div class="well sidebar-nav">
+            <ul class="nav">
+                {% for category in categories %}
+                <li class="faq-cat">{{ category.title|faq_translate }}</li>
+                {% for question in category.sorted_questions %}
+                <li class="faq-title"><a href="#{{ question.slug }}">{{ question.short_title|faq_translate }}</a></li>
+                {% endfor %}
+                {% endfor %}
+            </ul>
         </div>
-        <div class="span9">
-            <div style="text-align: center;">
-            <script type="text/javascript"><!--
-            google_ad_client = "ca-pub-8646203626363069";
-            /* FAQ page ad */
-            google_ad_slot = "4072573718";
-            google_ad_width = 728;
-            google_ad_height = 90;
-            //-->
-            </script>
-            <script type="text/javascript"
-            src="//pagead2.googlesyndication.com/pagead/show_ads.js">
-            </script>
-            </div>
-        {% for category in categories %}
-            <section id="{{ category.slug }}" class="faq-section">
-            <div class="page-header">
-                <h1 {% if not category.title|faq_can_translate %}dir="ltr"{% endif %}>{{ category.title|faq_translate }}</h1>
-            </div>
+    </div>
+    <div class="col-md-9">
+        <div style="text-align: center;">
+        <script type="text/javascript"><!--
+        google_ad_client = "ca-pub-8646203626363069";
+        /* FAQ page ad */
+        google_ad_slot = "4072573718";
+        google_ad_width = 728;
+        google_ad_height = 90;
+        //-->
+        </script>
+        <script type="text/javascript"
+        src="//pagead2.googlesyndication.com/pagead/show_ads.js">
+        </script>
+        </div>
+    {% for category in categories %}
+        <section id="{{ category.slug }}" class="faq-section">
+        <div class="page-header">
+            <h1 {% if not category.title|faq_can_translate %}dir="ltr"{% endif %}>{{ category.title|faq_translate }}</h1>
+        </div>
 
-            {% for question in category.sorted_questions %}
-            <h3 id="{{ question.slug }}" {% if not question.title|faq_can_translate %}dir="ltr"{% endif %}>{{ question.title|faq_translate }}
-                <a class="anchor" href="#{{ question.slug }}">¶</a></h3>
+        {% for question in category.sorted_questions %}
+        <h3 id="{{ question.slug }}" {% if not question.title|faq_can_translate %}dir="ltr"{% endif %}>{{ question.title|faq_translate }}
+            <a class="anchor" href="#{{ question.slug }}">¶</a></h3>
 
-            <div class="faq-answer {% if not question.text|faq_can_translate %}always-ltr{% endif %}">
-            {{ question.text|faq_translate|markdown:"safe" }}
-            </div>
-            {% endfor %}
-            </section>
+        <div class="faq-answer {% if not question.text|faq_can_translate %}always-ltr{% endif %}">
+        {{ question.text|faq_translate|markdown:"safe" }}
+        </div>
         {% endfor %}
-        </div>
+        </section>
+    {% endfor %}
     </div>
 </div>
 {% endblock %}

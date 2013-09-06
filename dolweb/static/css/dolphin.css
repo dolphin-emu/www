@@ -47,28 +47,6 @@ html[dir="rtl"] ul.rtl-fixed, html[dir="rtl"] ol.rtl-fixed {
     margin: 0 0 9px 0;
 }
 
-/* Fix .container in .hero-unit */
-@media (min-width: 1200px) {
-    .hero-unit .container {
-        width: 1100px !important;
-    }
-}
-
-.navbar-inner { border-radius: 0; }
-
-.navbar .brand i.logo {
-    display: inline-block;
-    margin-bottom: -5px;
-    margin-top: -5px;
-    margin-left: -10px;
-    margin-right: 10px;
-}
-
-html[dir="rtl"] .navbar .brand i.logo {
-    margin-left: 10px;
-    margin-right: 0px;
-}
-
 h1 a.anchor, h3 a.anchor {
     font-size: 60%;
     visibility: hidden;
@@ -156,12 +134,9 @@ div#download-stable h1, div#download-dev h1, div#download-source h1 {
     width: 14em;
 }
 
-.hero-unit h1 {
-    margin-top: 0.5em;
-}
-
 .download-btn {
     margin-top: 2.0em;
+    text-align: right;
 }
 
 .fb-like {
@@ -185,9 +160,15 @@ div#download-stable h1, div#download-dev h1, div#download-source h1 {
     line-height: 1.4em;
 }
 
+li.faq-cat {
+    text-transform: uppercase;
+    font-size: 0.9em;
+    margin-top: 0.7em;
+}
+
 li.faq-title {
     font-size: 0.9em;
-    line-height: 1.1em;
+    line-height: 0.3em;
 }
 
 section.faq-section div.faq-answer {
@@ -331,9 +312,14 @@ html[dir="rtl"] .nav .flag {
 .col-row .col {
     margin-bottom: -99999px;
     padding-bottom: 99999px;
+    padding-left: 1em;
     background-color:#f5f5f5;
     border: 0;
     border-radius: 0;
+}
+
+.ratings-expl h3 {
+    margin-left: 35px;
 }
 
 .ratings-expl, .ratings-stats {
@@ -342,4 +328,19 @@ html[dir="rtl"] .nav .flag {
 
 .back-link {
     font-weight: bold;
+}
+
+img.logo {
+    height: 8em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+img.fp-sshot {
+    width: 100%;
+}
+
+div.sshot-col {
+    text-align: center;
+    padding: 0.3em;
 }

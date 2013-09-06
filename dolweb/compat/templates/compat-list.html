@@ -16,8 +16,8 @@
 {% block "body" %}
 
 <div class="col-row">
-<div class="row-fluid">
-    <div class="span9 well col">
+<div class="row">
+    <div class="col-md-9 well col">
         <div class="ratings-expl">
         <h3>{% trans "How to read the ratings" %}</h3>
 
@@ -31,14 +31,14 @@
         </div>
     </div>
 
-    <div class="span3 well col">
+    <div class="col-md-3 well col">
         <div class="ratings-stats">
         <h3>{% trans "Statistics" %}</h3>
 
         <dl>
         {% for rating in all_ratings %}
         <dt>{{ rating|compat_text }}: {{ rating|rating_pct|floatformat }}%</dt>
-        <dd><div class="progress progress-{{ rating|rating_class }}"><div class="bar" style="width: {{ rating|rating_pct|unlocalize }}%"></div></div></dd>
+        <dd><div class="progress"><div class="progress-bar progress-bar-{{ rating|rating_class }}" style="width: {{ rating|rating_pct|unlocalize }}%"></div></div></dd>
         {% endfor %}
         </dl>
         </div>

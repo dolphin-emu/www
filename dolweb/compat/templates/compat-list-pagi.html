@@ -1,11 +1,11 @@
-<div class="pagination pagination-centered pagination-small">
-    <ul>
-    {% for p in pages %}
-        {% if p == page %}
-        <li class="active"><a href="#">{{ p }}</a></li>
-        {% else %}
-        <li><a href="{% url compat-list p %}">{{ p }}</a></li>
-        {% endif %}
-    {% endfor %}
-    </ul>
+<div class="text-center">
+<ul class="pagination">
+{% for p in pages %}
+    {% if p == page %}
+    <li class="active"><a href="#">{{ p }}</a></li>
+    {% else %}
+    <li><a href="{% url compat-list p %}">{{ p }}</a></li>
+    {% endif %}
+{% endfor %}
+</ul>
 </div>

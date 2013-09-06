@@ -7,15 +7,6 @@
 
 {% block "title" %}{% trans "Screenshots gallery" %}{% endblock %}
 
-{% block "extracss" %}
-<link rel="stylesheet" href="{{ STATIC_URL }}css/bootstrap-image-gallery.min.css">
-{% endblock %}
-
-{% block "extrajs" %}
-<script src="{{ STATIC_URL }}js/load-image.min.js"></script>
-<script src="{{ STATIC_URL }}js/bootstrap-image-gallery.min.js"></script>
-{% endblock %}
-
 {% block "body" %}
 <div class="page-header">
     <h1>{% trans "Media gallery" %}</h1>
@@ -31,20 +22,5 @@
     </a>
     {% endthumbnail %}
     {% endfor %}
-</div>
-{% endblock %}
-
-{% block "outerbody" %}
-<div id="modal-gallery" class="modal modal-gallery hide fade">
-    <div class="modal-header always-ltr">
-        <a class="close" data-dismiss="modal">&times;</a>
-        <h3 class="modal-title"></h3>
-    </div>
-    <div class="modal-body"><div class="modal-image"></div></div>
-    <div class="modal-footer always-ltr">
-        <a class="btn modal-download default-dir" target="_blank"><i class="icon-zoom-in"></i> {% trans "Full size" %}</a>
-        <a class="btn btn-info modal-prev default-dir"><i class="icon-arrow-left icon-white"></i> {% trans "Previous" %}</a>
-        <a class="btn btn-primary modal-next default-dir">{% trans "Next" %} <i class="icon-arrow-right icon-white"></i></a>
-    </div>
 </div>
 {% endblock %}

@@ -17,7 +17,9 @@
         <meta property="og:site_name" content="Dolphin Emulator" />
         <meta property="fb:admins" content="1064682820" />
 
+        <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
         <link href="{{ STATIC_URL }}css/bootstrap.min.css" rel="stylesheet">
+        <link href="{{ STATIC_URL }}css/bootstrap-theme.min.css" rel="stylesheet">
         <link href="{{ STATIC_URL }}css/dolphin.css" rel="stylesheet">
         <link href="{{ STATIC_URL }}sprites/nav.css" rel="stylesheet">
         {% block "extracss" %}
@@ -44,39 +46,39 @@
     <body>
         {% block "bodystart" %}{% endblock %}
 
-        <div class="navbar">
-            <div class="navbar-inner">
-                <div class="container">
-                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <div class="navbar navbar-inverse">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
-                    </a>
-                    <a class="brand" href="{% url home %}"><i class="logo sprite-nav-logo-small"></i>{% trans "Dolphin Emulator" %}</a>
-                    <div class="nav-collapse">
-                        <ul class="nav pull-left">
-                            <li><a href="{% url downloads-index %}">{% trans "Download" %}</a></li>
-                            <li><a href="{% url media-all %}">{% trans "Screenshots" %}</a></li>
-                            <li><a href="{% url docs-faq %}">{% trans "FAQ" %}</a></li>
-                            <li><a href="{% url docs-guides-index %}">{% trans "Guides" %}</a></li>
-                            <li><a href="{% url compat-index %}">{% trans "Compatibility" %}</a></li>
-                            <li><a href="{{ FORUM_URL }}">{% trans "Forum" %}</a></li>
-                            <li><a href="{{ WIKI_URL }}">{% trans "Wiki" %}</a></li>
-                            <li><a href="{{ GCODE_URL }}">{% trans "Code" %}</a></li>
-                        </ul>
-                        <ul class="nav pull-right">
-                            <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><div class="flag curr-flag sprite-nav-{{ LANGUAGE_CODE|short }}"></div> {{ LANGUAGE_CODE|langname }} <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                {% for langcode, langname in LANGUAGES %}
-                                    {% if langcode != LANGUAGE_CODE|short %}
-                                    <li><a href="//{{ langcode|to_subdomain }}{{ request.path }}?nocr=true"><div class="flag sprite-nav-{{ langcode }}"></div><span dir="{{ langcode|langdir }}">{{ langname }}</span></a></li>
-                                    {% endif %}
-                                {% endfor %}
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
+                    </button>
+                    <a class="navbar-brand" href="{% url home %}">{% trans "Dolphin Emulator" %}</a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav pull-left">
+                        <li><a href="{% url downloads-index %}">{% trans "Download" %}</a></li>
+                        <li><a href="{% url media-all %}">{% trans "Screenshots" %}</a></li>
+                        <li><a href="{% url docs-faq %}">{% trans "FAQ" %}</a></li>
+                        <li><a href="{% url docs-guides-index %}">{% trans "Guides" %}</a></li>
+                        <li><a href="{% url compat-index %}">{% trans "Compatibility" %}</a></li>
+                        <li><a href="{{ FORUM_URL }}">{% trans "Forum" %}</a></li>
+                        <li><a href="{{ WIKI_URL }}">{% trans "Wiki" %}</a></li>
+                        <li><a href="{{ GCODE_URL }}">{% trans "Code" %}</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav pull-right">
+                        <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><div class="flag curr-flag sprite-nav-{{ LANGUAGE_CODE|short }}"></div> {{ LANGUAGE_CODE|langname }} <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                            {% for langcode, langname in LANGUAGES %}
+                                {% if langcode != LANGUAGE_CODE|short %}
+                                <li><a href="//{{ langcode|to_subdomain }}{{ request.path }}?nocr=true"><div class="flag sprite-nav-{{ langcode }}"></div><span dir="{{ langcode|langdir }}">{{ langname }}</span></a></li>
+                                {% endif %}
+                            {% endfor %}
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -100,13 +102,13 @@
         <footer>
         <p class="footer-text">
             {% blocktrans %}
-            &copy; 2012 Dolphin Emulator Project -
-            <a href="https://bitbucket.org/delroth/dolphin-web/">Website source code</a>
+            &copy; 2013 Dolphin Emulator Project -
+            <a href="https://github.com/dolphin-emu/www/">Website source code</a>
             {% endblocktrans %}
         </p>
         </footer>
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <script src="//code.jquery.com/jquery.js"></script>
         <script src="{{ STATIC_URL }}js/bootstrap.min.js"></script>
         {% block "extrajs" %}
         {% endblock %}
