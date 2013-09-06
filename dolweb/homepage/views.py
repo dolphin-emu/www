@@ -16,4 +16,4 @@ def home(request):
         last_release = u"Dolphin"
     last_master = DevVersion.objects.filter(branch='master').order_by('-date')[0]
     return { 'featured_images': featured, 'last_release': last_release,
-             'last_master': last_master }
+             'last_master': last_master, 'all_ratings': (5, 4, 3, 2, 1) }

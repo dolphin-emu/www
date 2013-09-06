@@ -1,7 +1,9 @@
 {% extends "_base.html" %}
 
+{% load compat %}
 {% load i18n %}
 {% load humanize %}
+{% load l10n %}
 {% load thumbnail %}
 
 {% block "metadescr" %}{% blocktrans with ver=last_master.shortrev %}Official website of Dolphin, the GameCube and Wii emulator. Download the latest version ({{ ver }}) now or ask questions on our forums for help.{% endblocktrans %}{% endblock %}
@@ -54,9 +56,15 @@
 
 <div class="row" style="margin-top: 1em">
     <div class="col-md-3">
-        <div class="well">
-            Compat stats here.
-            <div style="height: 10em"></div>
+        <div class="ratings-stats well">
+            <h4><a href="{% url compat-index %}">{% trans "Compatibility" %} »</a></h4>
+
+            <dl>
+            {% for rating in all_ratings %}
+            <dt>{{ rating|compat_text }}: {{ rating|rating_pct|floatformat }}%</dt>
+            <dd><div class="progress"><div class="progress-bar progress-bar-{{ rating|rating_class }}" style="width: {{ rating|rating_pct|unlocalize }}%"></div></div></dd>
+            {% endfor %}
+            </dl>
         </div>
         <div class="well">
             Articles archive here.
