@@ -135,8 +135,8 @@ div#download-stable h1, div#download-dev h1, div#download-source h1 {
 }
 
 .download-btn {
-    margin-top: 2.0em;
-    text-align: right;
+    margin-top: 1.0em;
+    text-align: center;
 }
 
 .fb-like {
@@ -340,7 +340,28 @@ img.fp-sshot {
     width: 100%;
 }
 
+div.sshot-row {
+    padding-left: 0.9em;
+    padding-right: 0.9em;
+}
+
 div.sshot-col {
     text-align: center;
     padding: 0.3em;
+}
+
+p.intro {
+    margin-top: 0.7em;
+    font-size: 14px;
+}
+
+.container div.jumbotron.my-hero {
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+div.my-hero h3 {
+    font-weight: bold;
 }

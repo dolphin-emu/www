@@ -22,29 +22,46 @@
 {% endblock %}
 
 {% block "body" %}
-<div class="row">
-    <div class="col-md-9">
-        <h1>{% trans "Dolphin Emulator: Wii and GameCube on PC" %}</h1>
-        <p>
-        {% blocktrans %}
-        <b>Dolphin</b> is an emulator for two recent Nintendo consoles: the
-        <b>GameCube</b> and the <b>Wii</b>. It allows PC gamers to enjoy games
-        for these two consoles in <b>full HD</b> (1080p) with several
-        enhancements: compatibility with all PC controllers, turbo speed,
-        networked multiplayer, and even more!
-        {% endblocktrans %}
-        </p>
+<div class="jumbotron my-hero">
+    <div class="row">
+        <div class="col-md-6">
+            <h3>{% trans "Dolphin Emulator: Wii and GameCube on PC" %}</h3>
+            <p class="intro">
+            {% blocktrans %}
+            <b>Dolphin</b> is an emulator for two recent Nintendo consoles: the
+            <b>GameCube</b> and the <b>Wii</b>. It allows PC gamers to enjoy games
+            for these two consoles in <b>full HD</b> (1080p) with several
+            enhancements: compatibility with all PC controllers, turbo speed,
+            networked multiplayer, and even more!
+            {% endblocktrans %}
+            </p>
 
-        <p class="download-btn"><a class="btn btn-primary btn-lg" href="{% url downloads-index %}?ref=btn"><i class="icon-download-alt"></i> {% blocktrans %}Download {{ last_release }} now for Windows, Mac and Linux »{% endblocktrans %}</a></p>
-        <div class="fb-like" data-href="http://www.facebook.com/dolphin.emu" data-send="false" data-layout="button_count" data-width="100" data-show-faces="true"></div>
-        <div class="g-plusone" data-size="small" data-href="http://dolphin-emu.org/"></div>
-    </div>
-    <div class="col-md-3" style="text-align: center">
-        <img class="logo" src="{{ STATIC_URL }}img/logo-big.png">
+            <p class="download-btn"><a class="btn btn-primary btn-lg" href="{% url downloads-index %}?ref=btn"><i class="icon-download-alt"></i> {% blocktrans %}Download {{ last_release }} for Windows, Mac and Linux »{% endblocktrans %}</a></p>
+            <div class="fb-like" data-href="http://www.facebook.com/dolphin.emu" data-send="false" data-layout="button_count" data-width="100" data-show-faces="true"></div>
+            <div class="g-plusone" data-size="small" data-href="http://dolphin-emu.org/"></div>
+        </div>
+        <div class="col-md-6">
+            <div id="carousel-sshot" class="carousel slide">
+                <div class="carousel-inner">
+                    {% for image in featured_images %}
+                    <div class="item {% if forloop.counter == 1 %}active{% endif %}">
+                        {% thumbnail image.image "853x480" crop="center" format="JPEG" quality=80 as big %}
+                            <img src="{{ big.url }}" alt="{{ image.game_name }}">
+                        {% endthumbnail %}
+                        <div class="carousel-caption">
+                            <p>{{ image.game_name }}</p>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+                  <a class="left carousel-control" href="#carousel-sshot" data-slide="prev"><span class="icon-prev"></span></a>
+                  <a class="right carousel-control" href="#carousel-sshot" data-slide="next"><span class="icon-next"></span></a>
+            </div>
+        </div>
     </div>
 </div>
 
-<div class="row">
+<div class="row sshot-row">
     {% for image in featured_images %}
     <div class="col-md-2 sshot-col">
         {% thumbnail image.image "640x360" crop="center" format="JPEG" quality=80 as big %}
