@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-08-16 18:17+0200\n"
+"POT-Creation-Date: 2013-09-11 21:04+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -86,7 +86,8 @@ msgstr ""
 msgid "Game title (click for details)"
 msgstr ""
 
-#: compat/templates/compat-list.html:57 templates/_base.html:63
+#: compat/templates/compat-list.html:57
+#: homepage/templates/homepage-home.html:78 templates/_base.html:65
 msgid "Compatibility"
 msgstr ""
 
@@ -136,7 +137,7 @@ msgstr ""
 msgid "See all the guides written by the Dolphin team about the emulator."
 msgstr ""
 
-#: docs/templates/docs-guides-index.html:7 templates/_base.html:62
+#: docs/templates/docs-guides-index.html:7 templates/_base.html:64
 msgid "Guides"
 msgstr ""
 
@@ -184,7 +185,7 @@ msgid ""
 msgstr ""
 
 #: downloads/templates/downloads-index.html:8
-#: downloads/templates/downloads-index.html:27 templates/_base.html:59
+#: downloads/templates/downloads-index.html:27 templates/_base.html:61
 msgid "Download"
 msgstr ""
 
@@ -270,153 +271,62 @@ msgstr ""
 msgid "Information for %(br)s"
 msgstr ""
 
-#: downloads/templates/downloads-view-devrel.html:16
+#: downloads/templates/downloads-view-devrel.html:30
 msgid "Version"
 msgstr ""
 
-#: downloads/templates/downloads-view-devrel.html:19
+#: downloads/templates/downloads-view-devrel.html:33
 msgid "Branch"
 msgstr ""
 
-#: downloads/templates/downloads-view-devrel.html:22
+#: downloads/templates/downloads-view-devrel.html:36
 msgid "Date"
 msgstr ""
 
-#: downloads/templates/downloads-view-devrel.html:31
+#: downloads/templates/downloads-view-devrel.html:45
 msgid "Commit"
 msgstr ""
 
-#: downloads/templates/downloads-view-devrel.html:34
+#: downloads/templates/downloads-view-devrel.html:48
 msgid "Change author"
 msgstr ""
 
-#: downloads/templates/downloads-view-devrel.html:37
+#: downloads/templates/downloads-view-devrel.html:51
 msgid "Change description"
 msgstr ""
 
-#: homepage/templates/homepage-home.html:7
+#: homepage/templates/homepage-home.html:9
 #, python-format
 msgid ""
 "Official website of Dolphin, the GameCube and Wii emulator. Download the "
 "latest version (%(ver)s) now or ask questions on our forums for help."
 msgstr ""
 
-#: homepage/templates/homepage-home.html:9
+#: homepage/templates/homepage-home.html:11
 msgid "GameCube/Wii games on PC"
 msgstr ""
 
-#: homepage/templates/homepage-home.html:27 templates/_base.html:56
-msgid "Dolphin Emulator"
+#: homepage/templates/homepage-home.html:28
+msgid "Dolphin Emulator: Wii and GameCube on PC"
 msgstr ""
 
-#: homepage/templates/homepage-home.html:29
-msgid "Play GameCube and Wii games in 1080p on your PC."
+#: homepage/templates/homepage-home.html:30
+msgid ""
+"\n"
+"            <b>Dolphin</b> is an emulator for two recent Nintendo consoles: "
+"the\n"
+"            <b>GameCube</b> and the <b>Wii</b>. It allows PC gamers to enjoy "
+"games\n"
+"            for these two consoles in <b>full HD</b> (1080p) with several\n"
+"            enhancements: compatibility with all PC controllers, turbo "
+"speed,\n"
+"            networked multiplayer, and even more!\n"
+"            "
 msgstr ""
 
-#: homepage/templates/homepage-home.html:32
+#: homepage/templates/homepage-home.html:39
 #, python-format
-msgid "Download %(last_release)s now for Windows, Mac and Linux »"
-msgstr ""
-
-#: homepage/templates/homepage-home.html:35
-msgid ""
-"\n"
-"                <strong>Minimal requirements</strong>: SSE2 compatible CPU, "
-"Shader Model 3.0 GPU, 2GB of RAM, 50MB of disk space\n"
-"                "
-msgstr ""
-
-#: homepage/templates/homepage-home.html:40
-msgid "More information about hardware requirements"
-msgstr ""
-
-#: homepage/templates/homepage-home.html:70
-msgid "Improved graphics"
-msgstr ""
-
-#: homepage/templates/homepage-home.html:73
-#, python-format
-msgid ""
-"\n"
-"        The Wii only renders games at a 480p resolution. Dolphin supports\n"
-"        720p, 1080p and even higher definitions for all of your\n"
-"        GameCube and Wii games. <a href=\"%(MEDIA_PAGE_URL)s\">View "
-"screenshots\n"
-"        of games played on Dolphin</a>.\n"
-"        "
-msgstr ""
-
-#: homepage/templates/homepage-home.html:83
-msgid "Use your favorite controller"
-msgstr ""
-
-#: homepage/templates/homepage-home.html:85
-msgid ""
-"\n"
-"        Not a big fan of the GameCube controller and the Wiimote? You can\n"
-"        play games with your favorite PC controller, or even with keyboard\n"
-"        and mouse! Wiimotes are still supported, including Wii Motion Plus\n"
-"        for games that require it.\n"
-"        "
-msgstr ""
-
-#: homepage/templates/homepage-home.html:95
-msgid "Recent Dolphin news"
-msgstr ""
-
-#: homepage/templates/homepage-home.html:100
-msgid "by"
-msgstr ""
-
-#: homepage/templates/homepage-home.html:112
-msgid "Great compatibility"
-msgstr ""
-
-#: homepage/templates/homepage-home.html:115
-#, python-format
-msgid ""
-"\n"
-"        Dolphin can play most of the GameCube and Wii games collection\n"
-"        without issues. New Wii releases often work on Dolphin from day "
-"one.\n"
-"        Wiiware and Virtual Console games are also supported. Check out\n"
-"        the <a href=\"%(COMPAT_URL)s\">Dolphin compatibility list</a>\n"
-"        or the <a href=\"%(WIKI_URL)s\">Dolphin wiki</a> for more details.\n"
-"        "
-msgstr ""
-
-#: homepage/templates/homepage-home.html:126
-msgid "Helpful community"
-msgstr ""
-
-#: homepage/templates/homepage-home.html:129
-#, python-format
-msgid ""
-"\n"
-"        Installation issues? Trying to figure out the best settings for a\n"
-"        game? Or just interested in discussion about GameCube and Wii games\n"
-"        you like? If the <a href=\"%(FAQ_URL)s\">Frequently Asked Questions</"
-"a>\n"
-"        can't help you, other Dolphin users may be willing to help you over "
-"at the\n"
-"        <a href=\"%(FORUM_URL)s\">official discussion forums</a>.\n"
-"        "
-msgstr ""
-
-#: homepage/templates/homepage-home.html:140
-msgid "Free and Open Source"
-msgstr ""
-
-#: homepage/templates/homepage-home.html:142
-#, python-format
-msgid ""
-"\n"
-"        The Dolphin Emulator is developed by volunteers from all around the\n"
-"        world and distributed free of charge. Want to help the project "
-"improve?\n"
-"        Grab the emulator source code from <a href=\"%(GCODE_URL)s\">Google\n"
-"        Code</a> and start hacking!\n"
-"        "
+msgid "Download %(last_release)s for Windows, Mac and Linux »"
 msgstr ""
 
 #: media/templates/media-all.html:6
@@ -429,20 +339,8 @@ msgstr ""
 msgid "Screenshots gallery"
 msgstr ""
 
-#: media/templates/media-all.html:21
+#: media/templates/media-all.html:12
 msgid "Media gallery"
-msgstr ""
-
-#: media/templates/media-all.html:45
-msgid "Full size"
-msgstr ""
-
-#: media/templates/media-all.html:46
-msgid "Previous"
-msgstr ""
-
-#: media/templates/media-all.html:47
-msgid "Next"
 msgstr ""
 
 #: templates/404.html:5 templates/404.html.py:8
@@ -467,31 +365,35 @@ msgstr ""
 msgid "Official Dolphin Emulator Website"
 msgstr ""
 
-#: templates/_base.html:60
+#: templates/_base.html:57
+msgid "Dolphin Emulator"
+msgstr ""
+
+#: templates/_base.html:62
 msgid "Screenshots"
 msgstr ""
 
-#: templates/_base.html:61
+#: templates/_base.html:63
 msgid "FAQ"
 msgstr ""
 
-#: templates/_base.html:64
+#: templates/_base.html:66
 msgid "Forum"
 msgstr ""
 
-#: templates/_base.html:65
+#: templates/_base.html:67
 msgid "Wiki"
 msgstr ""
 
-#: templates/_base.html:66
+#: templates/_base.html:68
 msgid "Code"
 msgstr ""
 
-#: templates/_base.html:103
+#: templates/_base.html:104
 msgid ""
 "\n"
-"            &copy; 2012 Dolphin Emulator Project -\n"
-"            <a href=\"https://bitbucket.org/delroth/dolphin-web/\">Website "
-"source code</a>\n"
+"            &copy; 2013 Dolphin Emulator Project -\n"
+"            <a href=\"https://github.com/dolphin-emu/www/\">Website source "
+"code</a>\n"
 "            "
 msgstr ""
