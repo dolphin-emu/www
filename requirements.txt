@@ -17,3 +17,4 @@ pymongo==2.4.2
 requests==1.1.0
 sorl-thumbnail==11.12
 wsgiref==0.1.2
+django-blog-zinnia==0.12.3
