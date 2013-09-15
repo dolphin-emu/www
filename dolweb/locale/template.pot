@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-09-11 21:04+0200\n"
+"POT-Creation-Date: 2013-09-16 00:56+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,6 +16,185 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+
+#: blog/admin.py:17
+msgid "Content"
+msgstr ""
+
+#: blog/models.py:16
+msgid "image"
+msgstr ""
+
+#: blog/models.py:17
+msgid "Used for illustration."
+msgstr ""
+
+#: blog/templates/blog_sidebar.html:6
+#: blog/templates/zinnia/tags/search_form.html:5
+msgid "Search articles"
+msgstr ""
+
+#: blog/templates/blog_sidebar.html:17
+msgid "Blog tags"
+msgstr ""
+
+#: blog/templates/blog_sidebar.html:22
+msgid "Blog series"
+msgstr ""
+
+#: blog/templates/blog_sidebar.html:24
+msgid "See all"
+msgstr ""
+
+#: blog/templates/series-index.html:16
+#, python-format
+msgid ""
+"\n"
+"    %(count)s entrie\n"
+"  "
+msgid_plural ""
+"\n"
+"    %(count)s entries\n"
+"  "
+msgstr[0] ""
+msgstr[1] ""
+
+#: blog/templates/series-index.html:29
+msgid "No blog series yet."
+msgstr ""
+
+#: blog/templates/zinnia/_entry_detail_base.html:18
+msgid "Written by"
+msgstr ""
+
+#: blog/templates/zinnia/_entry_detail_base.html:22
+#, python-format
+msgid "Show all %(author)s's entries"
+msgstr ""
+
+#: blog/templates/zinnia/_entry_detail_base.html:24
+msgid "on"
+msgstr ""
+
+#: blog/templates/zinnia/_entry_detail_base.html:26
+msgid "Written on"
+msgstr ""
+
+#: blog/templates/zinnia/_entry_detail_base.html:34
+msgid "Last update on"
+msgstr ""
+
+#: blog/templates/zinnia/_entry_detail_base.html:36
+#, python-format
+msgid "Short URL to %(object)s"
+msgstr ""
+
+#: blog/templates/zinnia/_entry_detail_base.html:37
+msgid "Short link"
+msgstr ""
+
+#: blog/templates/zinnia/_entry_detail_base.html:70
+#, python-format
+msgid "Continue reading %(object)s"
+msgstr ""
+
+#: blog/templates/zinnia/_entry_detail_base.html:72
+msgid "Continue reading"
+msgstr ""
+
+#: blog/templates/zinnia/_entry_detail_base.html:87
+msgid "Tags"
+msgstr ""
+
+#: blog/templates/zinnia/_entry_detail_base.html:90
+#, python-format
+msgid "Show all entries tagged by %(tag)s"
+msgstr ""
+
+#: blog/templates/zinnia/_entry_detail_base.html:93
+msgid "No tags"
+msgstr ""
+
+#: blog/templates/zinnia/_entry_detail_base.html:99
+msgid "Categories"
+msgstr ""
+
+#: blog/templates/zinnia/_entry_detail_base.html:103
+#, python-format
+msgid "Show all entries in %(category)s"
+msgstr ""
+
+#: blog/templates/zinnia/_entry_detail_base.html:106
+msgid "None"
+msgstr ""
+
+#: blog/templates/zinnia/_entry_detail_base.html:115
+#, python-format
+msgid ""
+"This article is number %(nth)s within the blog serie\n"
+"    <a href=\"%(url)s\"><em>%(serie)s</em></a>."
+msgstr ""
+
+#: blog/templates/zinnia/_entry_detail_base.html:120
+msgid "‹ Previous article in serie"
+msgstr ""
+
+#: blog/templates/zinnia/_entry_detail_base.html:122
+msgid "Next article in serie ›"
+msgstr ""
+
+#: blog/templates/zinnia/entry_detail_base.html:22
+msgid "RSS Feed of discussions on"
+msgstr ""
+
+#: blog/templates/zinnia/entry_detail_base.html:24
+msgid "RSS Feed of comments on"
+msgstr ""
+
+#: blog/templates/zinnia/entry_detail_base.html:26
+msgid "RSS Feed of pingbacks on"
+msgstr ""
+
+#: blog/templates/zinnia/entry_detail_base.html:28
+msgid "RSS Feed of trackbacks on"
+msgstr ""
+
+#: blog/templates/zinnia/entry_detail_base.html:46
+msgid "Next entry"
+msgstr ""
+
+#: blog/templates/zinnia/entry_detail_base.html:58
+msgid "Previous entry"
+msgstr ""
+
+#: blog/templates/zinnia/entry_detail_base.html:70
+msgid "Related entries"
+msgstr ""
+
+#: blog/templates/zinnia/entry_detail_base.html:82
+msgid "Similar entries"
+msgstr ""
+
+#: blog/templates/zinnia/entry_detail_base.html:224
+#: blog/templates/zinnia/entry_detail_base.html:225
+msgid "Edit the entry"
+msgstr ""
+
+#: blog/templates/zinnia/skeleton.html:5
+msgid "Latest news for Dolphin Emulator"
+msgstr ""
+
+#: blog/templates/zinnia/skeleton.html:8
+#: blog/templates/zinnia/skeleton.html:13 templates/_base.html:64
+msgid "Articles"
+msgstr ""
+
+#: blog/templates/zinnia/tags/search_form.html:16
+msgid ""
+"You can use - to exclude words or phrases, &quot;double quotes&quot; for "
+"exact phrases and the AND/OR boolean operators combined with parenthesis for "
+"complex queries."
+msgstr ""
 
 #: compat/templates/compat-list.html:8
 msgid ""
@@ -87,7 +266,7 @@ msgid "Game title (click for details)"
 msgstr ""
 
 #: compat/templates/compat-list.html:57
-#: homepage/templates/homepage-home.html:78 templates/_base.html:65
+#: homepage/templates/homepage-home.html:79 templates/_base.html:68
 msgid "Compatibility"
 msgstr ""
 
@@ -137,7 +316,7 @@ msgstr ""
 msgid "See all the guides written by the Dolphin team about the emulator."
 msgstr ""
 
-#: docs/templates/docs-guides-index.html:7 templates/_base.html:64
+#: docs/templates/docs-guides-index.html:7 templates/_base.html:67
 msgid "Guides"
 msgstr ""
 
@@ -185,7 +364,7 @@ msgid ""
 msgstr ""
 
 #: downloads/templates/downloads-index.html:8
-#: downloads/templates/downloads-index.html:27 templates/_base.html:61
+#: downloads/templates/downloads-index.html:27 templates/_base.html:63
 msgid "Download"
 msgstr ""
 
@@ -295,36 +474,34 @@ msgstr ""
 msgid "Change description"
 msgstr ""
 
-#: homepage/templates/homepage-home.html:9
+#: homepage/templates/homepage-home.html:10
 #, python-format
 msgid ""
 "Official website of Dolphin, the GameCube and Wii emulator. Download the "
 "latest version (%(ver)s) now or ask questions on our forums for help."
 msgstr ""
 
-#: homepage/templates/homepage-home.html:11
+#: homepage/templates/homepage-home.html:12
 msgid "GameCube/Wii games on PC"
 msgstr ""
 
-#: homepage/templates/homepage-home.html:28
-msgid "Dolphin Emulator: Wii and GameCube on PC"
+#: homepage/templates/homepage-home.html:29 templates/_base.html:59
+msgid "Dolphin Emulator"
 msgstr ""
 
-#: homepage/templates/homepage-home.html:30
+#: homepage/templates/homepage-home.html:31
 msgid ""
 "\n"
-"            <b>Dolphin</b> is an emulator for two recent Nintendo consoles: "
-"the\n"
-"            <b>GameCube</b> and the <b>Wii</b>. It allows PC gamers to enjoy "
-"games\n"
-"            for these two consoles in <b>full HD</b> (1080p) with several\n"
-"            enhancements: compatibility with all PC controllers, turbo "
-"speed,\n"
-"            networked multiplayer, and even more!\n"
+"            <b>Dolphin</b> is an emulator for two recent Nintendo video "
+"game\n"
+"            consoles: the <b>GameCube</b> and the <b>Wii</b>. It allows PC\n"
+"            gamers to enjoy games for these two consoles in <b>full HD</b>\n"
+"            (1080p) with several enhancements: compatibility with all PC\n"
+"            controllers, turbo speed, networked multiplayer, and even more!\n"
 "            "
 msgstr ""
 
-#: homepage/templates/homepage-home.html:39
+#: homepage/templates/homepage-home.html:40
 #, python-format
 msgid "Download %(last_release)s for Windows, Mac and Linux »"
 msgstr ""
@@ -365,31 +542,27 @@ msgstr ""
 msgid "Official Dolphin Emulator Website"
 msgstr ""
 
-#: templates/_base.html:57
-msgid "Dolphin Emulator"
-msgstr ""
-
-#: templates/_base.html:62
+#: templates/_base.html:65
 msgid "Screenshots"
 msgstr ""
 
-#: templates/_base.html:63
+#: templates/_base.html:66
 msgid "FAQ"
 msgstr ""
 
-#: templates/_base.html:66
+#: templates/_base.html:69
 msgid "Forum"
 msgstr ""
 
-#: templates/_base.html:67
+#: templates/_base.html:70
 msgid "Wiki"
 msgstr ""
 
-#: templates/_base.html:68
+#: templates/_base.html:71
 msgid "Code"
 msgstr ""
 
-#: templates/_base.html:104
+#: templates/_base.html:107
 msgid ""
 "\n"
 "            &copy; 2013 Dolphin Emulator Project -\n"
