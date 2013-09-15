@@ -27,6 +27,8 @@ def rating_pct(compat):
     compat = int(compat)
     count = get_rating_count(compat)
     count_all = get_rated_games()
+    if count_all == 0:
+        return 0
     return (float(count) * 100) / count_all
 
 @register.filter
