@@ -1,0 +1,32 @@
+{% extends "zinnia/base.html" %}
+{% load i18n comments zinnia_tags %}
+{% load url from future %}
+
+{% block "title" %}Blog series{% endblock %}
+
+{% block "metadescr" %}List of blog series{% endblock %}
+
+{% block content %}
+
+{% for serie in page_obj.object_list %}
+
+<div class="well clearfix">
+  {% if serie.image %}<img src="{{ serie.image.url }}" alt="Serie illustration" class="pull-left thumbnail" />{% endif %}
+  <h2><a href="{% url 'dolweb.blog.views.serie_view' uid=serie.pk %}">{{ serie.name }}</a>
+  <small>{% blocktrans count count=serie.entries.count %}
+    {{ count }} entrie
+  {% plural %}
+    {{ count }} entries
+  {% endblocktrans %}</small></h2>
+  <ol>
+  {% for entry in serie.entries_reversed %}
+  <li><a href="{{ entry.get_absolute_url }}">{{ entry.title }}</a></li>
+  {% endfor %}
+  </ol>
+</div>
+
+{% empty %}
+<p>{% trans "No blog series yet."}</p>
+{% endfor %}
+
+{% endblock %}

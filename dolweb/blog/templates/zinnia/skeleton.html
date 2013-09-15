@@ -1,0 +1,59 @@
+{% extends "zinnia/_base_blog.html" %}
+{% load i18n staticfiles %}
+{% load url from future %}
+
+{% block "metadescr" %}{% trans "Latest news for Dolphin Emulator" %}{% endblock %}
+
+{# Aweful hack to workaround stupid quotes in block name #}
+{% block "title" %}{% block title %}{% trans "Articles" %}{% endblock %}{% endblock %}
+
+{% block "body" %}
+
+<div class="page-header">
+    <h1>{% trans "Articles" %}</h1>
+</div>
+
+<div class="row" style="margin-top: 1em">
+    <div class="col-md-3">
+        {% include "blog_sidebar.html" %}
+    </div>
+    <div class="col-md-9">
+
+        {% block breadcrumbs %}{% endblock breadcrumbs  %}
+        {% block slider %}{% endblock slider %}
+
+        {% block content %}{% endblock %}
+
+    </div>
+</div>
+
+{% comment %}
+<div id="content" class="hfeed">
+  {% block content %}
+  <div class="links">
+    <h3>{% trans "Useful links" %}</h3>
+    <ul>
+      <li>
+        <a href="{% url 'zinnia_entry_archive_index' %}" title="{% trans "Weblog index" %}">
+          {% trans "Weblog index" %}
+        </a>
+      </li>
+      <li>
+        <a href="{% url 'zinnia_sitemap' %}" title="{% trans "Sitemap" %}">
+          {% trans "Sitemap" %}
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="search">
+    <h3>{% trans "Search" %}</h3>
+    {% include "zinnia/tags/search_form.html" %}
+  </div>
+  {% endblock content %}
+</div>
+<div id="sidebar">
+  {% block sidebar %}
+  {% endblock sidebar %}
+</div>
+{% endcomment %}
+{% endblock %}
