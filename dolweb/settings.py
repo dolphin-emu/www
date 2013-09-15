@@ -192,6 +192,10 @@ INSTALLED_APPS = (
     'bootstrapform',
     'debug_toolbar',
     'sorl.thumbnail',
+    # Blog dependencies
+    'django.contrib.comments',
+    'tagging',
+    'mptt',
 
     # Internal
     'dolweb.homepage',
@@ -200,6 +204,9 @@ INSTALLED_APPS = (
     'dolweb.media',
     'dolweb.compat',
     'dolweb.localefixes',
+    # External blog, after 'dolweb.blog' for template overwriting
+    'dolweb.blog',
+    'zinnia',
 )
 
 # A sample logging configuration. The only tangible logging
@@ -250,6 +257,14 @@ TRANSIFEX_USER = ''
 TRANSIFEX_PASSWORD = ''
 TRANSIFEX_PROJECT = ''
 TRANSIFEX_FAQ_RESOURCE = ''
+
+# Blog settings
+HOMEPAGE_ARTICLES = 3
+FORUM_URL_FOR_THREAD = 'https://forums.dolphin-emu.org/showthread.php?tid={id}'
+ZINNIA_MARKUP_LANGUAGE = 'markdown'
+ZINNIA_MAIL_COMMENT_AUTHORS = False
+ZINNIA_ENTRY_BASE_MODEL = 'dolweb.blog.entry_model.BlogEntry'
+
 
 try:
     execfile(os.path.join(PROJECT_ROOT, 'dolweb', 'local_settings.py'), globals(), locals())

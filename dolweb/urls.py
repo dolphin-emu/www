@@ -22,6 +22,9 @@ urlpatterns = patterns('',
     # Downloads
     url(r'^download/', include('dolweb.downloads.urls')),
 
+    # Blog
+    url(r'^blog/', include('dolweb.blog.urls')),
+
     # Compatibility list
     url(r'^compat/', include('dolweb.compat.urls')),
 

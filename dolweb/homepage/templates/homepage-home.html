@@ -5,6 +5,7 @@
 {% load humanize %}
 {% load l10n %}
 {% load thumbnail %}
+{% load zinnia_tags %}
 
 {% block "metadescr" %}{% blocktrans with ver=last_master.shortrev %}Official website of Dolphin, the GameCube and Wii emulator. Download the latest version ({{ ver }}) now or ask questions on our forums for help.{% endblocktrans %}{% endblock %}
 
@@ -85,35 +86,23 @@
             </dl>
         </div>
 
-        <div class="well">
-            <p>Series here (with RSS links)</p>
-        </div>
-
-        <div class="well">
-            <p>Ad here &gt;:|</p>
-        </div>
-
-        <div class="well">
-            <p>Tags here</p>
-        </div>
+        {% include "blog_sidebar.html" %}
     </div>
     <div class="col-md-9">
-        <h2 class="latest-articles">Latest articles</h1>
+        <h2 class="latest-articles">Latest articles</h2>
+        {% for article in home_articles %}
         <div class="well">
-            <h3><a href="#">Release: Dolphin 4.0</a></h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et rutrum elit, nec placerat nulla. Donec dignissim leo non convallis placerat. Etiam placerat tellus quis mattis euismod. Sed quis sollicitudin turpis. Mauris luctus est ante, eget tristique ipsum hendrerit venenatis. Nam eget aliquam eros. Etiam mattis turpis quis mauris dapibus, et scelerisque sapien congue. Nullam sodales quis neque non commodo. Fusce quis interdum lectus. Quisque tincidunt tristique elit, sed elementum leo pellentesque at. In id mollis tortor. Quisque nec placerat massa. Sed id ligula non erat venenatis laoreet. Etiam commodo viverra scelerisque. Maecenas id diam congue, vulputate lectus rhoncus, dictum arcu.</p>
-            <p>Morbi nisi lorem, bibendum eget dolor sit amet, varius lobortis massa. Integer neque tortor, semper at velit eget, fringilla eleifend magna. Integer scelerisque, nisl id rutrum fringilla, velit dui pharetra odio, sit amet vestibulum leo sem sed tortor. Cras nulla augue, sagittis et laoreet sit amet, pharetra non urna. Etiam at nibh ornare, venenatis diam quis, commodo justo. Nam posuere, tellus quis suscipit elementum, augue nibh pellentesque massa, ut aliquam quam elit vel diam. Fusce a dolor et turpis semper feugiat ut a neque. Phasellus luctus aliquet eleifend. Ut dictum enim vitae euismod varius.</p>
-            <p><a href="#">Read this article</a></p>
+            <h3><a href="{{ article.get_absolute_url }}" title="{{ article.title }}" rel="bookmark">
+                {{ article.title }}
+            </a></h3>
+            <div class="entry-content">
+                {{ article.html_content|safe }}
+                <p><a href="#">Read this article</a></p>
+            </div>
         </div>
-        <div class="well">
-            <h3><a href="#">Information: delroth appointed dictator</a></h3>
-        </div>
-        <div class="well">
-            <h3><a href="#">Release: Dolphin 3.5</a></h3>
-        </div>
-        <div class="well">
-            <h3><a href="#">Release: Dolphin 3.0</a></h3>
-        </div>
+        {% empty %}
+        <p>No articles yet.</p>
+        {% endfor %}
     </div>
 </div>
 

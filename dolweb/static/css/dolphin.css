@@ -403,3 +403,16 @@ a.navbar-logo {
     margin-top: 10px;
     margin-bottom: 20px;
 }
+
+/* Blog */
+p.seemore {
+    text-align: right;
+}
+.entry-meta-line {
+    margin: 0 0 1em;
+}
+p.entry-info, p.entry-last-update {
+    display: inline;
+    color: #aaa;
+    font-style: 0.8em;
+}
