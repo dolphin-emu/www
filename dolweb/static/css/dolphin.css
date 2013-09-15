@@ -390,3 +390,16 @@ a.navbar-logo {
     margin-bottom: 4px;
     margin-right: 20px;
 }
+
+.my-hero h1.title {
+    font-size: 40px;
+    background-image: url("../img/logo-blue.png");
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-size: 100px;
+    padding-left: 120px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
