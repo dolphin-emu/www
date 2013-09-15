@@ -416,3 +416,7 @@ p.entry-info, p.entry-last-update {
     color: #aaa;
     font-style: 0.8em;
 }
+
+#navbar-dolphin {
+    border-radius: 0;
+}
