@@ -1,5 +1,5 @@
 {% extends "zinnia/base.html" %}
-{% load i18n comments zinnia_tags %}
+{% load i18n comments zinnia_tags thumbnail %}
 {% load url from future %}
 
 {% block "title" %}Blog series{% endblock %}
@@ -10,8 +10,13 @@
 
 {% for serie in page_obj.object_list %}
 
-<div class="well clearfix">
-  {% if serie.image %}<img src="{{ serie.image.url }}" alt="Serie illustration" class="pull-left thumbnail" />{% endif %}
+<div class="well clearfix serie">
+  {% if serie.image %}
+    {% thumbnail serie.image "120x120" crop="center" as im %}
+    <img src="{{ im.url }}" alt="Serie illustration" class="pull-left thumbnail" width="{{ im.width }}" height="{{ im.height }}" />
+    {% endthumbnail %}
+  {% endif %}
+  <div class="innerdiv">
   <h2><a href="{% url 'dolweb.blog.views.serie_view' uid=serie.pk %}">{{ serie.name }}</a>
   <small>{% blocktrans count count=serie.entries.count %}
     {{ count }} entrie
@@ -23,6 +28,7 @@
   <li><a href="{{ entry.get_absolute_url }}">{{ entry.title }}</a></li>
   {% endfor %}
   </ol>
+  </div>
 </div>
 
 {% empty %}

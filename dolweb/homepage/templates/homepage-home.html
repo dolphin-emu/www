@@ -92,12 +92,38 @@
         <h2 class="latest-articles">Latest articles</h2>
         {% for article in home_articles %}
         <div class="well">
+            {% thumbnail article.real_image "48x48" crop="center" as im %}
+            <img src="{{ im.url }}" alt="{{ object.title }}" class="side-thumb thumbnail" width="{{ im.width }}" height="{{ im.height }}" />
+            {% endthumbnail %}
             <h3><a href="{{ article.get_absolute_url }}" title="{{ article.title }}" rel="bookmark">
                 {{ article.title }}
             </a></h3>
+             <div class="entry-meta-line">
+                <p class="entry-info">
+                  {% with authors=article.authors.all %}
+                  {% if authors|length %}
+                  {% trans "Written by" %}
+                  {% for author in authors %}
+                  <span class="vcard author">
+                    <a href="{{ author.get_absolute_url }}" class="fn url{% if not author.get_full_name %} nickname{% endif %}" rel="author"
+                       title="{% blocktrans %}Show all {{ author }}'s entries{% endblocktrans %}">{{ author }}</a></span>{% if not forloop.last %}, {% endif %}
+                  {% endfor %}
+                  {% trans "on" %}
+                  {% else %}
+                  {% trans "Written on" %}
+                  {% endif %}
+                  {% endwith %}
+                  <abbr class="published" title="{{ article.creation_date|date:"c" }}">{{ article.creation_date|date:"DATE_FORMAT" }}</abbr>
+                  {% if article.within_serie %}
+                  {% url dolweb.blog.views.serie_view uid=article.within_serie.pk as serie_url %}
+                  {% blocktrans with url=serie_url name=article.within_serie.name %}/ Part of serie <a href="{{ url }}">{{ name}}</a>{% endblocktrans %}
+                  {% endif %}
+                  / <i class="icon-comments"></i> <a href="{{ object.forum_thread.get_absolute_url }}" title="Visit forum thread for this article">Forum thread</a>
+               </p>
+            </div>
             <div class="entry-content">
-                {{ article.html_content|safe }}
-                <p><a href="#">Read this article</a></p>
+                {{ article.html_content|safe|truncatewords:100 }}
+                <p><a href="{{ article.get_absolute_url }}#cuthere">Read this article</a></p>
             </div>
         </div>
         {% empty %}
