@@ -404,6 +404,10 @@ a.navbar-logo {
     margin-bottom: 20px;
 }
 
+.page-header {
+    margin-top: 0;
+}
+
 /* Blog */
 p.seemore {
     text-align: right;
