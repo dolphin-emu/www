@@ -3,7 +3,7 @@
 <div id="entry-{{ object.pk }}" class="hentry{% if object.featured %} featured{% endif %}">
   {% block entry-header %}
   <div class="entry-header">
-    {% thumbnail object.real_image "48x48" crop="center" as im %}
+    {% thumbnail object.real_image "48x48" crop="center" format="PNG" as im %}
     <img src="{{ im.url }}" alt="{{ object.title }}" class="side-thumb thumbnail" width="{{ im.width }}" height="{{ im.height }}" />
     {% endthumbnail %}
     {% block entry-title %}
