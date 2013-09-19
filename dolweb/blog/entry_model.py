@@ -20,8 +20,8 @@ class BlogEntry(EntryAbstractClass):
     @property
     def real_image(self):
         """Priorities the entry image, then the serie image, if any."""
-        if self.entry_image is not None:
-            return self.entry_image
+        if self.image:
+            return self.image
 
         if self.within_serie is not None:
             # May be None!

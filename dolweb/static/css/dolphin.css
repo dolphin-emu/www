@@ -396,3 +396,33 @@ p.entry-info, p.entry-last-update {
     color: #aaa;
     font-style: 0.8em;
 }
+
+.serie .thumbnail {
+    margin: 0 1em 0 0;
+}
+.serie .innerdiv {
+    display: inline-block;
+}
+
+ul.tags {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+ul.tags li {
+    display: inline-block;
+    margin: 0 0 0.3em 0;
+}
+ul.tags a {
+    background: #5bc0de;
+    border-radius: 2px;
+    padding: 2px 5px;
+    color: white;
+}
+
+.side-thumb {
+    float: right;
+}
+html[dir="rtl"] .side-thumb {
+    float: left;
+}

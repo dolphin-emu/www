@@ -1,8 +1,11 @@
-{% load comments i18n %}
+{% load comments i18n thumbnail %}
 {% load url from future %}
 <div id="entry-{{ object.pk }}" class="hentry{% if object.featured %} featured{% endif %}">
   {% block entry-header %}
   <div class="entry-header">
+    {% thumbnail object.real_image "48x48" crop="center" as im %}
+    <img src="{{ im.url }}" alt="{{ object.title }}" class="side-thumb thumbnail" width="{{ im.width }}" height="{{ im.height }}" />
+    {% endthumbnail %}
     {% block entry-title %}
     <h2 class="entry-title">
       <a href="{{ object.get_absolute_url }}" title="{{ object.title }}" rel="bookmark">
@@ -44,21 +47,6 @@
 
   {% block entry-body %}
   <div class="entry-body">
-    {% block entry-image %}
-    {% if object.real_image %}
-    <div class="entry-image">
-      <p>
-        {% if continue_reading %}
-        <a href="{{ object.get_absolute_url }}" title="{{ object.title }}" rel="bookmark">
-          {% endif %}
-          <img src="{{ object.real_image.url }}" alt="{{ object.title }}" class="left" />
-          {% if continue_reading %}
-        </a>
-        {% endif %}
-      </p>
-    </div>
-    {% endif %}
-    {% endblock %}
     {% block entry-content %}
     <div class="entry-content">
       {{ object_content }}
@@ -82,41 +70,16 @@
 
   {% block entry-footer %}
   <div class="entry-footer row">
-    {% block entry-tags %}
-    <div class="entry-tags col-md-3">
-      <h4>{% trans "Tags" %}</h4>
-      {% for tag in object.tags_list %}
-      <a href="{% url 'zinnia_tag_detail' tag %}"
-         title="{% blocktrans %}Show all entries tagged by {{ tag }}{% endblocktrans %}"
-         rel="tag">{{ tag }}</a>
-      {% empty %}
-      <span class="empty">{% trans "No tags" %}</span>
-      {% endfor %}
-    </div>
-    {% endblock %}
-    {% block entry-categories %}
-    <div class="entry-categories col-md-3">
-      <h4>{% trans "Categories" %}</h4>
-      {% with categories=object.categories.all %}
-      {% for category in categories %}
-      <a href="{{ category.get_absolute_url }}"
-         title="{% blocktrans %}Show all entries in {{ category }}{% endblocktrans %}"
-         rel="tag category">{{ category }}</a>{% if not forloop.last %}, {% endif %}
-      {% empty %}
-      <span class="empty">{% trans "None" %}</span>
-      {% endfor %}{% endwith %}
-    </div>
-    {% endblock %}
     <div class="col-md-6">
     {% block entry-serie %}
     {% if object.within_serie %}
     <h4>Blog serie</h4>
     {% url 'dolweb.blog.views.serie_view' uid=object.within_serie.pk as serie_url %}
     <p>{% blocktrans with nth=object.serie_index url=serie_url serie=object.within_serie %}This article is number {{ nth }} within the blog serie
-    <a href="{{ url }}"><em>{{ serie }}</em></a>.{% endblocktrans %}</p>
+    <a href="{{ url }}"><em>{{ serie }}</em></a>.{% endblocktrans %} {# </p> #}
     {% with previous=object.previous_entry_in_serie next=object.next_entry_in_serie %}
     {% if previous or next %}
-    <p>
+    {# <p> #}
       {% if previous %}<a href="{{ previous.get_absolute_url }}">{% trans "‹ Previous article in serie" %}</a>{% endif %}
       {% if previous and next %}/{% endif %}
       {% if next %}<a href="{{ next.get_absolute_url }}">{% trans "Next article in serie ›" %}</a>{% endif %}
@@ -164,7 +127,35 @@
     </p>
     {% endcomment %}
     {% endblock %}
-    </div> {# col-md-6 (last column) #}
+    </div>
+
+    {% block entry-tags %}
+    <div class="entry-tags col-md-3">
+      <h4>{% trans "Tags" %}</h4>
+      <ul class="tags">
+      {% for tag in object.tags_list %}
+      <li><a href="{% url 'zinnia_tag_detail' tag %}"
+         title="{% blocktrans %}Show all entries tagged by {{ tag }}{% endblocktrans %}"
+         rel="tag">{{ tag }}</a></li>
+      {% empty %}
+      <span class="empty">{% trans "No tags" %}</span>
+      {% endfor %}
+      </ul>
+    </div>
+    {% endblock %}
+    {% block entry-categories %}
+    <div class="entry-categories col-md-3">
+      <h4>{% trans "Categories" %}</h4>
+      {% with categories=object.categories.all %}
+      {% for category in categories %}
+      <a href="{{ category.get_absolute_url }}"
+         title="{% blocktrans %}Show all entries in {{ category }}{% endblocktrans %}"
+         rel="tag category">{{ category }}</a>{% if not forloop.last %}, {% endif %}
+      {% empty %}
+      <span class="empty">{% trans "No categories" %}</span>
+      {% endfor %}{% endwith %}
+    </div>
+    {% endblock %}
   </div>
   {% endblock %}
 </div>
