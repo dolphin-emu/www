@@ -1,9 +1,9 @@
 from annoying.decorators import render_to
 from django.conf import settings
-from django.core.paginator import Paginator, EmptyPage
 from django.http import Http404, HttpResponse
 from django.shortcuts import get_object_or_404
 from django.views.decorators.csrf import csrf_exempt
+from dolweb.downloads.diggpaginator import DiggPaginator
 from dolweb.downloads.models import BranchInfo, DevVersion, ReleaseVersion
 
 import hashlib
@@ -51,7 +51,7 @@ def list(request, branch, page):
     builds = DevVersion.objects.filter(branch=branch).order_by('-date')
     if len(builds) == 0 and branch != 'master':
         get_object_or_404(BranchInfo, name=branch)
-    pagi = Paginator(builds, 20)
+    pagi = DiggPaginator(builds, 20, body=9, tail=2)
 
     try:
         page_obj = pagi.page(page)
