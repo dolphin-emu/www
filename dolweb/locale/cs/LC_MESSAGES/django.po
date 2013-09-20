@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-08-16 18:17+0200\n"
-"PO-Revision-Date: 2013-08-20 10:18+0000\n"
+"POT-Creation-Date: 2013-09-16 00:56+0200\n"
+"PO-Revision-Date: 2013-09-18 07:10+0000\n"
 "Last-Translator: Zbyněk Schwarz <zbynek.schwarz@gmail.com>\n"
 "Language-Team: Czech (http://www.transifex.com/projects/p/dolphin-emu/language/cs/)\n"
 "MIME-Version: 1.0\n"
@@ -17,6 +17,186 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: cs\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+
+#: blog/admin.py:17
+msgid "Content"
+msgstr "Obsah"
+
+#: blog/models.py:16
+msgid "image"
+msgstr "Obrázek"
+
+#: blog/models.py:17
+msgid "Used for illustration."
+msgstr "Použito pro ilustraci."
+
+#: blog/templates/blog_sidebar.html:6
+#: blog/templates/zinnia/tags/search_form.html:5
+msgid "Search articles"
+msgstr "Hledat články"
+
+#: blog/templates/blog_sidebar.html:17
+msgid "Blog tags"
+msgstr ""
+
+#: blog/templates/blog_sidebar.html:22
+msgid "Blog series"
+msgstr ""
+
+#: blog/templates/blog_sidebar.html:24
+msgid "See all"
+msgstr ""
+
+#: blog/templates/series-index.html:16
+#, python-format
+msgid ""
+"\n"
+"    %(count)s entrie\n"
+"  "
+msgid_plural ""
+"\n"
+"    %(count)s entries\n"
+"  "
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: blog/templates/series-index.html:29
+msgid "No blog series yet."
+msgstr ""
+
+#: blog/templates/zinnia/_entry_detail_base.html:18
+msgid "Written by"
+msgstr "Napsal"
+
+#: blog/templates/zinnia/_entry_detail_base.html:22
+#, python-format
+msgid "Show all %(author)s's entries"
+msgstr ""
+
+#: blog/templates/zinnia/_entry_detail_base.html:24
+msgid "on"
+msgstr ""
+
+#: blog/templates/zinnia/_entry_detail_base.html:26
+msgid "Written on"
+msgstr ""
+
+#: blog/templates/zinnia/_entry_detail_base.html:34
+msgid "Last update on"
+msgstr ""
+
+#: blog/templates/zinnia/_entry_detail_base.html:36
+#, python-format
+msgid "Short URL to %(object)s"
+msgstr ""
+
+#: blog/templates/zinnia/_entry_detail_base.html:37
+msgid "Short link"
+msgstr ""
+
+#: blog/templates/zinnia/_entry_detail_base.html:70
+#, python-format
+msgid "Continue reading %(object)s"
+msgstr ""
+
+#: blog/templates/zinnia/_entry_detail_base.html:72
+msgid "Continue reading"
+msgstr ""
+
+#: blog/templates/zinnia/_entry_detail_base.html:87
+msgid "Tags"
+msgstr "Značky"
+
+#: blog/templates/zinnia/_entry_detail_base.html:90
+#, python-format
+msgid "Show all entries tagged by %(tag)s"
+msgstr ""
+
+#: blog/templates/zinnia/_entry_detail_base.html:93
+msgid "No tags"
+msgstr "Žádné značky"
+
+#: blog/templates/zinnia/_entry_detail_base.html:99
+msgid "Categories"
+msgstr "Kategorie"
+
+#: blog/templates/zinnia/_entry_detail_base.html:103
+#, python-format
+msgid "Show all entries in %(category)s"
+msgstr ""
+
+#: blog/templates/zinnia/_entry_detail_base.html:106
+msgid "None"
+msgstr "Žádné"
+
+#: blog/templates/zinnia/_entry_detail_base.html:115
+#, python-format
+msgid ""
+"This article is number %(nth)s within the blog serie\n"
+"    <a href=\"%(url)s\"><em>%(serie)s</em></a>."
+msgstr "Tento článek je %(nth)s. v řadě blogů\n<a href=\"%(url)s\"><em>%(serie)s</em></a>."
+
+#: blog/templates/zinnia/_entry_detail_base.html:120
+msgid "‹ Previous article in serie"
+msgstr ""
+
+#: blog/templates/zinnia/_entry_detail_base.html:122
+msgid "Next article in serie ›"
+msgstr ""
+
+#: blog/templates/zinnia/entry_detail_base.html:22
+msgid "RSS Feed of discussions on"
+msgstr ""
+
+#: blog/templates/zinnia/entry_detail_base.html:24
+msgid "RSS Feed of comments on"
+msgstr ""
+
+#: blog/templates/zinnia/entry_detail_base.html:26
+msgid "RSS Feed of pingbacks on"
+msgstr ""
+
+#: blog/templates/zinnia/entry_detail_base.html:28
+msgid "RSS Feed of trackbacks on"
+msgstr ""
+
+#: blog/templates/zinnia/entry_detail_base.html:46
+msgid "Next entry"
+msgstr ""
+
+#: blog/templates/zinnia/entry_detail_base.html:58
+msgid "Previous entry"
+msgstr ""
+
+#: blog/templates/zinnia/entry_detail_base.html:70
+msgid "Related entries"
+msgstr ""
+
+#: blog/templates/zinnia/entry_detail_base.html:82
+msgid "Similar entries"
+msgstr ""
+
+#: blog/templates/zinnia/entry_detail_base.html:224
+#: blog/templates/zinnia/entry_detail_base.html:225
+msgid "Edit the entry"
+msgstr ""
+
+#: blog/templates/zinnia/skeleton.html:5
+msgid "Latest news for Dolphin Emulator"
+msgstr ""
+
+#: blog/templates/zinnia/skeleton.html:8
+#: blog/templates/zinnia/skeleton.html:13 templates/_base.html:64
+msgid "Articles"
+msgstr ""
+
+#: blog/templates/zinnia/tags/search_form.html:16
+msgid ""
+"You can use - to exclude words or phrases, &quot;double quotes&quot; for "
+"exact phrases and the AND/OR boolean operators combined with parenthesis for"
+" complex queries."
+msgstr ""
 
 #: compat/templates/compat-list.html:8
 msgid ""
@@ -87,7 +267,8 @@ msgstr "Statistiky"
 msgid "Game title (click for details)"
 msgstr "Název hry (klikněte pro podrobnosti)"
 
-#: compat/templates/compat-list.html:57 templates/_base.html:63
+#: compat/templates/compat-list.html:57
+#: homepage/templates/homepage-home.html:79 templates/_base.html:68
 msgid "Compatibility"
 msgstr "Kompatibilita"
 
@@ -137,7 +318,7 @@ msgstr "Zpět na seznam příruček"
 msgid "See all the guides written by the Dolphin team about the emulator."
 msgstr "Prohlédněte si všechny příručky o emulátoru od týmu Dolphin."
 
-#: docs/templates/docs-guides-index.html:7 templates/_base.html:62
+#: docs/templates/docs-guides-index.html:7 templates/_base.html:67
 msgid "Guides"
 msgstr "Příručky"
 
@@ -185,7 +366,7 @@ msgid ""
 msgstr "Stáhnout nejnovější verzi emulátoru Dolphin (%(ver)s) z oficiálních stránek."
 
 #: downloads/templates/downloads-index.html:8
-#: downloads/templates/downloads-index.html:27 templates/_base.html:59
+#: downloads/templates/downloads-index.html:27 templates/_base.html:63
 msgid "Download"
 msgstr "Stáhnout"
 
@@ -266,148 +447,60 @@ msgstr "Informace o %(br)s"
 msgid "Information for %(br)s"
 msgstr "Informace pro %(br)s"
 
-#: downloads/templates/downloads-view-devrel.html:16
+#: downloads/templates/downloads-view-devrel.html:30
 msgid "Version"
 msgstr "Verze"
 
-#: downloads/templates/downloads-view-devrel.html:19
+#: downloads/templates/downloads-view-devrel.html:33
 msgid "Branch"
 msgstr "Větev"
 
-#: downloads/templates/downloads-view-devrel.html:22
+#: downloads/templates/downloads-view-devrel.html:36
 msgid "Date"
 msgstr "Datum"
 
-#: downloads/templates/downloads-view-devrel.html:31
+#: downloads/templates/downloads-view-devrel.html:45
 msgid "Commit"
 msgstr "Odevzdání"
 
-#: downloads/templates/downloads-view-devrel.html:34
+#: downloads/templates/downloads-view-devrel.html:48
 msgid "Change author"
 msgstr "Autor změny"
 
-#: downloads/templates/downloads-view-devrel.html:37
+#: downloads/templates/downloads-view-devrel.html:51
 msgid "Change description"
 msgstr "Popis změny"
 
-#: homepage/templates/homepage-home.html:7
+#: homepage/templates/homepage-home.html:10
 #, python-format
 msgid ""
 "Official website of Dolphin, the GameCube and Wii emulator. Download the "
 "latest version (%(ver)s) now or ask questions on our forums for help."
 msgstr "Oficiální stránka programu Dolphin, emulátora konzolí GameCube a Wii. Stáhněte si nejnovější verzi (%(ver)s), nebo, pokud máte nějaké otázky, se ptejte na našem fóru."
 
-#: homepage/templates/homepage-home.html:9
+#: homepage/templates/homepage-home.html:12
 msgid "GameCube/Wii games on PC"
 msgstr "Hry GameCube/Wii na PC"
 
-#: homepage/templates/homepage-home.html:27 templates/_base.html:56
+#: homepage/templates/homepage-home.html:29 templates/_base.html:59
 msgid "Dolphin Emulator"
 msgstr "Emulátor Dolphin"
 
-#: homepage/templates/homepage-home.html:29
-msgid "Play GameCube and Wii games in 1080p on your PC."
-msgstr "Hrajte hry GameCube a Wii na vašem PC v režimu 1080p."
-
-#: homepage/templates/homepage-home.html:32
-#, python-format
-msgid "Download %(last_release)s now for Windows, Mac and Linux »"
-msgstr "Stáhnout %(last_release)s pro Windows, Mac a Linux »"
-
-#: homepage/templates/homepage-home.html:35
+#: homepage/templates/homepage-home.html:31
 msgid ""
 "\n"
-"                <strong>Minimal requirements</strong>: SSE2 compatible CPU, Shader Model 3.0 GPU, 2GB of RAM, 50MB of disk space\n"
-"                "
-msgstr "\n                <strong>Minimální požadavky</strong>: Procesor kompatibilní s SSE2, Shader Model 3.0 GPU, 2GB RAM, 50MB místa na disku\n                "
+"            <b>Dolphin</b> is an emulator for two recent Nintendo video game\n"
+"            consoles: the <b>GameCube</b> and the <b>Wii</b>. It allows PC\n"
+"            gamers to enjoy games for these two consoles in <b>full HD</b>\n"
+"            (1080p) with several enhancements: compatibility with all PC\n"
+"            controllers, turbo speed, networked multiplayer, and even more!\n"
+"            "
+msgstr ""
 
 #: homepage/templates/homepage-home.html:40
-msgid "More information about hardware requirements"
-msgstr "Další informace o hardwarových nárocích"
-
-#: homepage/templates/homepage-home.html:70
-msgid "Improved graphics"
-msgstr "Vylepšená grafika"
-
-#: homepage/templates/homepage-home.html:73
 #, python-format
-msgid ""
-"\n"
-"        The Wii only renders games at a 480p resolution. Dolphin supports\n"
-"        720p, 1080p and even higher definitions for all of your\n"
-"        GameCube and Wii games. <a href=\"%(MEDIA_PAGE_URL)s\">View screenshots\n"
-"        of games played on Dolphin</a>.\n"
-"        "
-msgstr "\n        Wii vykresluje hry v rozlišení 480p. Dolphin podporuje\n        720p, 1080p a dokonce i vyšší rozlišení ve všech hrách na\n        GameCube a Wii. <a href=\"%(MEDIA_PAGE_URL)s\">Prohlédněte si snímky obrazovek\n        her hraných v Dolphin</a>.\n        "
-
-#: homepage/templates/homepage-home.html:83
-msgid "Use your favorite controller"
-msgstr "Použijte váš oblíbený ovladač"
-
-#: homepage/templates/homepage-home.html:85
-msgid ""
-"\n"
-"        Not a big fan of the GameCube controller and the Wiimote? You can\n"
-"        play games with your favorite PC controller, or even with keyboard\n"
-"        and mouse! Wiimotes are still supported, including Wii Motion Plus\n"
-"        for games that require it.\n"
-"        "
-msgstr "\n        Nejste velkými fanoušky ovladače GameCube a Wiimote? Hry můžete\nhrát i s vaším oblíbeným ovladačem PC, dokonce i s klávesnicí\na myší! Wiimoty jsou stále podporovány včetně Wii Motion Plus\nve hrách, kde je vyžadován.\n         \n        "
-
-#: homepage/templates/homepage-home.html:95
-msgid "Recent Dolphin news"
-msgstr "Poslední novinky projektu Dolphin"
-
-#: homepage/templates/homepage-home.html:100
-msgid "by"
-msgstr "od"
-
-#: homepage/templates/homepage-home.html:112
-msgid "Great compatibility"
-msgstr "Skvělá kompatibilita"
-
-#: homepage/templates/homepage-home.html:115
-#, python-format
-msgid ""
-"\n"
-"        Dolphin can play most of the GameCube and Wii games collection\n"
-"        without issues. New Wii releases often work on Dolphin from day one.\n"
-"        Wiiware and Virtual Console games are also supported. Check out\n"
-"        the <a href=\"%(COMPAT_URL)s\">Dolphin compatibility list</a>\n"
-"        or the <a href=\"%(WIKI_URL)s\">Dolphin wiki</a> for more details.\n"
-"        "
-msgstr "\n        Dolphin může spustit většinu her ze sbírky GameCube a Wii\n        bez problémů. Nové hry na Wii často fungují od prvního dne.\n        Hry Wiiware a Virtual Console jsou také podporovány. Podívejte\n        se na <a href=\"%(COMPAT_URL)s\">wiki kompatibility Dolphin</a>,\n        nebo <a href=\"%(WIKI_URL)s\">wiki Dolphin</a> pro další podrobnosti.\n        "
-
-#: homepage/templates/homepage-home.html:126
-msgid "Helpful community"
-msgstr "Nápomocná komunita"
-
-#: homepage/templates/homepage-home.html:129
-#, python-format
-msgid ""
-"\n"
-"        Installation issues? Trying to figure out the best settings for a\n"
-"        game? Or just interested in discussion about GameCube and Wii games\n"
-"        you like? If the <a href=\"%(FAQ_URL)s\">Frequently Asked Questions</a>\n"
-"        can't help you, other Dolphin users may be willing to help you over at the\n"
-"        <a href=\"%(FORUM_URL)s\">official discussion forums</a>.\n"
-"        "
-msgstr "\n        Problémy s instalací? CHcete zjistit nejlepší nastavení pro\nhru? Nebo máte zájem si povídat o vašich oblíbených\nhrách na GameCube a Wii? Pokud Vám \n<a href=\"%(FAQ_URL)s\">Nejčastěji kladené otázky</a> nemohou pomoci, ostatní uživatelé Dolphin jsou ochotni Vám pomoci v\n<a href=\"%(FORUM_URL)s\">oficiálních diskuzních fórech</a>.\n         \n        "
-
-#: homepage/templates/homepage-home.html:140
-msgid "Free and Open Source"
-msgstr "Zdarma s otevřeným zdrojem"
-
-#: homepage/templates/homepage-home.html:142
-#, python-format
-msgid ""
-"\n"
-"        The Dolphin Emulator is developed by volunteers from all around the\n"
-"        world and distributed free of charge. Want to help the project improve?\n"
-"        Grab the emulator source code from <a href=\"%(GCODE_URL)s\">Google\n"
-"        Code</a> and start hacking!\n"
-"        "
-msgstr "\n        Emulátor Dolphin je vyvíjen dobrovolníky z celého světa\na šířen zdarma.\n        Chcete pomoci projektu ve vývoji?\n        Z <a href=\"%(GCODE_URL)s\">Google Code</a>\n        si stáhněte zdrojový kód a začněte se hrabat!\n        "
+msgid "Download %(last_release)s for Windows, Mac and Linux »"
+msgstr "Stáhnout %(last_release)s pro Windows, Mac a Linux »"
 
 #: media/templates/media-all.html:6
 msgid ""
@@ -419,21 +512,9 @@ msgstr "Prohlédněte si všechny snímky obrazovky emulátoru Dolphin od uživa
 msgid "Screenshots gallery"
 msgstr "Galerie snímků obrazovky"
 
-#: media/templates/media-all.html:21
+#: media/templates/media-all.html:12
 msgid "Media gallery"
 msgstr "Galerie médií"
-
-#: media/templates/media-all.html:45
-msgid "Full size"
-msgstr "Původní velikost"
-
-#: media/templates/media-all.html:46
-msgid "Previous"
-msgstr "Předchozí"
-
-#: media/templates/media-all.html:47
-msgid "Next"
-msgstr "Další"
 
 #: templates/404.html:5 templates/404.html.py:8
 msgid "Page not found"
@@ -457,30 +538,30 @@ msgstr "Při pokusu o přístup na tuto stránku došlo k chybě. Prosím zkuste
 msgid "Official Dolphin Emulator Website"
 msgstr "Oficiální stránka emulátoru Dolphin"
 
-#: templates/_base.html:60
+#: templates/_base.html:65
 msgid "Screenshots"
 msgstr "Snímky obrazovky"
 
-#: templates/_base.html:61
+#: templates/_base.html:66
 msgid "FAQ"
 msgstr "Nejčastější otázky"
 
-#: templates/_base.html:64
+#: templates/_base.html:69
 msgid "Forum"
 msgstr "Fórum"
 
-#: templates/_base.html:65
+#: templates/_base.html:70
 msgid "Wiki"
 msgstr "Wiki"
 
-#: templates/_base.html:66
+#: templates/_base.html:71
 msgid "Code"
 msgstr "Zdrojový kód"
 
-#: templates/_base.html:103
+#: templates/_base.html:107
 msgid ""
 "\n"
-"            &copy; 2012 Dolphin Emulator Project -\n"
-"            <a href=\"https://bitbucket.org/delroth/dolphin-web/\">Website source code</a>\n"
+"            &copy; 2013 Dolphin Emulator Project -\n"
+"            <a href=\"https://github.com/dolphin-emu/www/\">Website source code</a>\n"
 "            "
-msgstr "\n            &copy; 2012 Dolphin Emulator Project -\n            <a href=\"https://bitbucket.org/delroth/dolphin-web/\">Zdrojový kód stránky</a>\n            "
+msgstr "\n            &copy; 2013 Dolphin Emulator Project -\n            <a href=\"https://github.com/dolphin-emu/www/\">Zdrojový kód stránky</a>\n            "

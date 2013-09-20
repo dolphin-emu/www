@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-08-16 18:17+0200\n"
-"PO-Revision-Date: 2013-08-20 17:49+0000\n"
+"POT-Creation-Date: 2013-09-16 00:56+0200\n"
+"PO-Revision-Date: 2013-09-18 14:20+0000\n"
 "Last-Translator: link_to_the_past <kostamarino@gmail.com>\n"
 "Language-Team: Greek (http://www.transifex.com/projects/p/dolphin-emu/language/el/)\n"
 "MIME-Version: 1.0\n"
@@ -18,6 +18,185 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: el\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: blog/admin.py:17
+msgid "Content"
+msgstr "Περιεχόμενο"
+
+#: blog/models.py:16
+msgid "image"
+msgstr "εικόνα"
+
+#: blog/models.py:17
+msgid "Used for illustration."
+msgstr "Χρησιμοποιούνται για απεικόνιση."
+
+#: blog/templates/blog_sidebar.html:6
+#: blog/templates/zinnia/tags/search_form.html:5
+msgid "Search articles"
+msgstr "Αναζήτηση άρθρων"
+
+#: blog/templates/blog_sidebar.html:17
+msgid "Blog tags"
+msgstr ""
+
+#: blog/templates/blog_sidebar.html:22
+msgid "Blog series"
+msgstr ""
+
+#: blog/templates/blog_sidebar.html:24
+msgid "See all"
+msgstr "Προβολή όλων"
+
+#: blog/templates/series-index.html:16
+#, python-format
+msgid ""
+"\n"
+"    %(count)s entrie\n"
+"  "
+msgid_plural ""
+"\n"
+"    %(count)s entries\n"
+"  "
+msgstr[0] ""
+msgstr[1] ""
+
+#: blog/templates/series-index.html:29
+msgid "No blog series yet."
+msgstr ""
+
+#: blog/templates/zinnia/_entry_detail_base.html:18
+msgid "Written by"
+msgstr "Συντάχθηκε από τον"
+
+#: blog/templates/zinnia/_entry_detail_base.html:22
+#, python-format
+msgid "Show all %(author)s's entries"
+msgstr "Δείτε όλες τις καταχωρήσεις του %(author)s"
+
+#: blog/templates/zinnia/_entry_detail_base.html:24
+msgid "on"
+msgstr ""
+
+#: blog/templates/zinnia/_entry_detail_base.html:26
+msgid "Written on"
+msgstr ""
+
+#: blog/templates/zinnia/_entry_detail_base.html:34
+msgid "Last update on"
+msgstr "Τελευταία ενημέρωση στις"
+
+#: blog/templates/zinnia/_entry_detail_base.html:36
+#, python-format
+msgid "Short URL to %(object)s"
+msgstr ""
+
+#: blog/templates/zinnia/_entry_detail_base.html:37
+msgid "Short link"
+msgstr ""
+
+#: blog/templates/zinnia/_entry_detail_base.html:70
+#, python-format
+msgid "Continue reading %(object)s"
+msgstr ""
+
+#: blog/templates/zinnia/_entry_detail_base.html:72
+msgid "Continue reading"
+msgstr "Συνέχεια ανάγνωσης"
+
+#: blog/templates/zinnia/_entry_detail_base.html:87
+msgid "Tags"
+msgstr "Ετικέτες"
+
+#: blog/templates/zinnia/_entry_detail_base.html:90
+#, python-format
+msgid "Show all entries tagged by %(tag)s"
+msgstr ""
+
+#: blog/templates/zinnia/_entry_detail_base.html:93
+msgid "No tags"
+msgstr "Καμία ετικέτα"
+
+#: blog/templates/zinnia/_entry_detail_base.html:99
+msgid "Categories"
+msgstr "Κατηγορίες"
+
+#: blog/templates/zinnia/_entry_detail_base.html:103
+#, python-format
+msgid "Show all entries in %(category)s"
+msgstr ""
+
+#: blog/templates/zinnia/_entry_detail_base.html:106
+msgid "None"
+msgstr ""
+
+#: blog/templates/zinnia/_entry_detail_base.html:115
+#, python-format
+msgid ""
+"This article is number %(nth)s within the blog serie\n"
+"    <a href=\"%(url)s\"><em>%(serie)s</em></a>."
+msgstr "Αυτό το άρθρο είναι το νούμερο %(nth)s στην σειρά του blog\n    <a href=\"%(url)s\"><em>%(serie)s</em></a>."
+
+#: blog/templates/zinnia/_entry_detail_base.html:120
+msgid "‹ Previous article in serie"
+msgstr "‹ Προηγούμενο άρθρο στη σειρά"
+
+#: blog/templates/zinnia/_entry_detail_base.html:122
+msgid "Next article in serie ›"
+msgstr "Επόμενο άρθρο στη  σειρά ›"
+
+#: blog/templates/zinnia/entry_detail_base.html:22
+msgid "RSS Feed of discussions on"
+msgstr "RSS Feed των συζητήσεων για"
+
+#: blog/templates/zinnia/entry_detail_base.html:24
+msgid "RSS Feed of comments on"
+msgstr "RSS Feed σχολίων σχετικά με"
+
+#: blog/templates/zinnia/entry_detail_base.html:26
+msgid "RSS Feed of pingbacks on"
+msgstr ""
+
+#: blog/templates/zinnia/entry_detail_base.html:28
+msgid "RSS Feed of trackbacks on"
+msgstr ""
+
+#: blog/templates/zinnia/entry_detail_base.html:46
+msgid "Next entry"
+msgstr "Επόμενη καταχώρηση"
+
+#: blog/templates/zinnia/entry_detail_base.html:58
+msgid "Previous entry"
+msgstr "Προηγούμενη καταχώρηση"
+
+#: blog/templates/zinnia/entry_detail_base.html:70
+msgid "Related entries"
+msgstr "Σχετικές καταχωρήσεις"
+
+#: blog/templates/zinnia/entry_detail_base.html:82
+msgid "Similar entries"
+msgstr "Παρόμοιες καταχωρήσεις"
+
+#: blog/templates/zinnia/entry_detail_base.html:224
+#: blog/templates/zinnia/entry_detail_base.html:225
+msgid "Edit the entry"
+msgstr "Επεξεργαστείτε την καταχώρηση"
+
+#: blog/templates/zinnia/skeleton.html:5
+msgid "Latest news for Dolphin Emulator"
+msgstr "Τελευταία νέα για τον Dolphin Εξομοιωτή"
+
+#: blog/templates/zinnia/skeleton.html:8
+#: blog/templates/zinnia/skeleton.html:13 templates/_base.html:64
+msgid "Articles"
+msgstr "Άρθρα"
+
+#: blog/templates/zinnia/tags/search_form.html:16
+msgid ""
+"You can use - to exclude words or phrases, &quot;double quotes&quot; for "
+"exact phrases and the AND/OR boolean operators combined with parenthesis for"
+" complex queries."
+msgstr ""
 
 #: compat/templates/compat-list.html:8
 msgid ""
@@ -88,7 +267,8 @@ msgstr "Στατιστικά"
 msgid "Game title (click for details)"
 msgstr "Τίτλος παιχνιδιού (κάντε κλικ για λεπτομέρειες)"
 
-#: compat/templates/compat-list.html:57 templates/_base.html:63
+#: compat/templates/compat-list.html:57
+#: homepage/templates/homepage-home.html:79 templates/_base.html:68
 msgid "Compatibility"
 msgstr "Συμβατότητα"
 
@@ -138,7 +318,7 @@ msgstr "Πηγαίνετε πίσω στην λίστα οδηγιών"
 msgid "See all the guides written by the Dolphin team about the emulator."
 msgstr "Δείτε όλους τους οδηγούς που γράφτηκαν από την ομάδα του Dolphin για τον εξομοιωτή."
 
-#: docs/templates/docs-guides-index.html:7 templates/_base.html:62
+#: docs/templates/docs-guides-index.html:7 templates/_base.html:67
 msgid "Guides"
 msgstr "Οδηγίες"
 
@@ -186,7 +366,7 @@ msgid ""
 msgstr "Κατεβάστε την τελευταία έκδοση του Dolphin Εξομοιωτή (%(ver)s) από την επίσημη ιστοσελίδα."
 
 #: downloads/templates/downloads-index.html:8
-#: downloads/templates/downloads-index.html:27 templates/_base.html:59
+#: downloads/templates/downloads-index.html:27 templates/_base.html:63
 msgid "Download"
 msgstr "Κατεβάστε"
 
@@ -267,148 +447,60 @@ msgstr "Πληροφορίες για %(br)s"
 msgid "Information for %(br)s"
 msgstr "Πληροφορίες για %(br)s"
 
-#: downloads/templates/downloads-view-devrel.html:16
+#: downloads/templates/downloads-view-devrel.html:30
 msgid "Version"
 msgstr "Έκδοση"
 
-#: downloads/templates/downloads-view-devrel.html:19
+#: downloads/templates/downloads-view-devrel.html:33
 msgid "Branch"
 msgstr "Διακλάδωση"
 
-#: downloads/templates/downloads-view-devrel.html:22
+#: downloads/templates/downloads-view-devrel.html:36
 msgid "Date"
 msgstr "Ημερομηνία"
 
-#: downloads/templates/downloads-view-devrel.html:31
+#: downloads/templates/downloads-view-devrel.html:45
 msgid "Commit"
 msgstr "Commit"
 
-#: downloads/templates/downloads-view-devrel.html:34
+#: downloads/templates/downloads-view-devrel.html:48
 msgid "Change author"
 msgstr "Αλλαγή συγγραφέα"
 
-#: downloads/templates/downloads-view-devrel.html:37
+#: downloads/templates/downloads-view-devrel.html:51
 msgid "Change description"
 msgstr "Αλλαγή περιγραφής"
 
-#: homepage/templates/homepage-home.html:7
+#: homepage/templates/homepage-home.html:10
 #, python-format
 msgid ""
 "Official website of Dolphin, the GameCube and Wii emulator. Download the "
 "latest version (%(ver)s) now or ask questions on our forums for help."
 msgstr "Επίσημη ιστοσελίδα του Dolphin, εξομοιωτή του GameCube και Wii. Κατεβάστε την τελευταία έκδοση (%(ver)s) τώρα ή κάντε ερωτήσεις στο φόρουμ μας για βοήθεια."
 
-#: homepage/templates/homepage-home.html:9
+#: homepage/templates/homepage-home.html:12
 msgid "GameCube/Wii games on PC"
 msgstr "GameCube/Wii παιχνίδια στο PC"
 
-#: homepage/templates/homepage-home.html:27 templates/_base.html:56
+#: homepage/templates/homepage-home.html:29 templates/_base.html:59
 msgid "Dolphin Emulator"
 msgstr "Dolphin Εξομοιωτής "
 
-#: homepage/templates/homepage-home.html:29
-msgid "Play GameCube and Wii games in 1080p on your PC."
-msgstr "Παίξτε GameCube και Wii παιχνίδια σε 1080p στο PC σας."
-
-#: homepage/templates/homepage-home.html:32
-#, python-format
-msgid "Download %(last_release)s now for Windows, Mac and Linux »"
-msgstr "Κατέβασε το %(last_release)s τώρα για Windows, Mac και Linux »"
-
-#: homepage/templates/homepage-home.html:35
+#: homepage/templates/homepage-home.html:31
 msgid ""
 "\n"
-"                <strong>Minimal requirements</strong>: SSE2 compatible CPU, Shader Model 3.0 GPU, 2GB of RAM, 50MB of disk space\n"
-"                "
-msgstr "\n                <strong>Ελάχιστες απαιτήσεις</strong>: SSE2 συμβατή CPU, Shader Model 3.0 GPU, 2GB μνήμης RAM, 50MB ελεύθερο χώρο στον δίσκο.\n\n                "
+"            <b>Dolphin</b> is an emulator for two recent Nintendo video game\n"
+"            consoles: the <b>GameCube</b> and the <b>Wii</b>. It allows PC\n"
+"            gamers to enjoy games for these two consoles in <b>full HD</b>\n"
+"            (1080p) with several enhancements: compatibility with all PC\n"
+"            controllers, turbo speed, networked multiplayer, and even more!\n"
+"            "
+msgstr "\nΤο <b>Dolphin</b> είναι εξομοιωτής για τις δύο πρόσφατες κονσόλες της Nintendo:\nΤο <b>GameCube</b> και το <b>Wii</b>. Επιτρέπει τους PC gamers να απολαύσουν\nπαιχνίδια για αυτές τις δύο κονσόλες σε <b>full HD</b> (1080p) με διάφορες \nβελτιώσεις: συμβατότητα με όλα τα χειριστήρια για PC, turbo ταχύτητα, διαδικτυακό \nmultiplayer, και πολλά ακόμη!\n\n            "
 
 #: homepage/templates/homepage-home.html:40
-msgid "More information about hardware requirements"
-msgstr "Περισσότερες πληροφορίες σχετικά με τις απαιτήσεις υλικού"
-
-#: homepage/templates/homepage-home.html:70
-msgid "Improved graphics"
-msgstr "Βελτιωμένα γραφικά"
-
-#: homepage/templates/homepage-home.html:73
 #, python-format
-msgid ""
-"\n"
-"        The Wii only renders games at a 480p resolution. Dolphin supports\n"
-"        720p, 1080p and even higher definitions for all of your\n"
-"        GameCube and Wii games. <a href=\"%(MEDIA_PAGE_URL)s\">View screenshots\n"
-"        of games played on Dolphin</a>.\n"
-"        "
-msgstr "\nΤο Wii μπορεί να απεικονίσει τα παιχνίδια μόνο σε ανάλυση 480p. Το Dolphin υποστηρίζει 720p, 1080p και ακόμη μεγαλύτερες αναλύσεις για όλα τα παιχνίδια GameCube και Wii. <a href=\"%(MEDIA_PAGE_URL)s\">Δείτε στιγμιότυπα από παιχνίδια που παίχτηκαν στο Dolphin</a>. "
-
-#: homepage/templates/homepage-home.html:83
-msgid "Use your favorite controller"
-msgstr "Χρησιμοποίησε το αγαπημένο σου χειριστήριο"
-
-#: homepage/templates/homepage-home.html:85
-msgid ""
-"\n"
-"        Not a big fan of the GameCube controller and the Wiimote? You can\n"
-"        play games with your favorite PC controller, or even with keyboard\n"
-"        and mouse! Wiimotes are still supported, including Wii Motion Plus\n"
-"        for games that require it.\n"
-"        "
-msgstr "\nΔεν είστε και μεγάλος θαυμαστής του χειριστηρίου του GameCube και του Wiimote;\nΜπορείτε να παίξετε τα παιχνίδια με το αγαπημένο σας PC χειριστήριο, ή ακόμα και \nμε το πληκτρολόγιο και το ποντίκι! Τα Wiimotes υποστηρίζονται επίσης, \nσυμπεριλαμβανομένου του Wii Motion Plus για τα παιχνίδια που το χρειάζονται.\n        "
-
-#: homepage/templates/homepage-home.html:95
-msgid "Recent Dolphin news"
-msgstr "Πρόσφατα νέα του Dolphin"
-
-#: homepage/templates/homepage-home.html:100
-msgid "by"
-msgstr "από"
-
-#: homepage/templates/homepage-home.html:112
-msgid "Great compatibility"
-msgstr "Μεγάλη συμβατότητα"
-
-#: homepage/templates/homepage-home.html:115
-#, python-format
-msgid ""
-"\n"
-"        Dolphin can play most of the GameCube and Wii games collection\n"
-"        without issues. New Wii releases often work on Dolphin from day one.\n"
-"        Wiiware and Virtual Console games are also supported. Check out\n"
-"        the <a href=\"%(COMPAT_URL)s\">Dolphin compatibility list</a>\n"
-"        or the <a href=\"%(WIKI_URL)s\">Dolphin wiki</a> for more details.\n"
-"        "
-msgstr "\n Το Dolphin μπορεί να παίξει τα περισσότερα παιχνίδια από την συλλογή\nπαιχνιδιών του GameCube και του Wii χωρίς προβλήματα. Οι νέες κυκλοφορίες\nγια Wii συχνά δουλεύουν στο Dolphin από την πρώτη μέρα κυκλοφορίας τους.\nΤα παιχνίδια Wiiware και για Virtual Console υποστηρίζονται επίσης. Δείτε την\n <a href=\"%(COMPAT_URL)s\">Λίστα συμβατότητας του Dolphin</a>\nή το <a href=\"%(WIKI_URL)s\">Dolphin wiki</a> για περισσότερες λεπτομέρειες.\n\n        "
-
-#: homepage/templates/homepage-home.html:126
-msgid "Helpful community"
-msgstr "Κοινότητα υποστήριξης"
-
-#: homepage/templates/homepage-home.html:129
-#, python-format
-msgid ""
-"\n"
-"        Installation issues? Trying to figure out the best settings for a\n"
-"        game? Or just interested in discussion about GameCube and Wii games\n"
-"        you like? If the <a href=\"%(FAQ_URL)s\">Frequently Asked Questions</a>\n"
-"        can't help you, other Dolphin users may be willing to help you over at the\n"
-"        <a href=\"%(FORUM_URL)s\">official discussion forums</a>.\n"
-"        "
-msgstr "\nΈχετε προβλήματα εγκατάστασης; Προσπαθείτε να βρείτε τις καλύτερες ρυθμίσεις για ένα\nπαιχνίδι; Ή απλά ενδιαφέρεστε για συζήτηση σχετικά με παιχνίδια που σας αρέσουν του \nGameCube και Wii; Άμα οι <a href=\"%(FAQ_URL)s\">Συχνά Ασκούμενες Ερωτήσεις</a>\nδεν μπορούν να σας βοηθήσουν, άλλοι χρήστες του Dolphin μπορεί να θελήσουν να βοηθήσουν\nστα <a href=\"%(FORUM_URL)s\">επίσημα forums συζητήσεων</a>.\n        "
-
-#: homepage/templates/homepage-home.html:140
-msgid "Free and Open Source"
-msgstr "Δωρεάν και Ανοιχτού Κώδικα"
-
-#: homepage/templates/homepage-home.html:142
-#, python-format
-msgid ""
-"\n"
-"        The Dolphin Emulator is developed by volunteers from all around the\n"
-"        world and distributed free of charge. Want to help the project improve?\n"
-"        Grab the emulator source code from <a href=\"%(GCODE_URL)s\">Google\n"
-"        Code</a> and start hacking!\n"
-"        "
-msgstr "\nΟ Εξομοιωτής Dolphin αναπτύσσεται από εθελοντές απ' όλο τον κόσμο\nκαι διανέμεται χωρίς χρέωση. Θέλετε να βοηθήσετε το project να βελτιωθεί;\nΑρπάξτε τον πηγαίο κώδικα του εξομοιωτή από το <a href=\"%(GCODE_URL)s\">Google \nCode</a> και ξεκινήστε το hacking!\n      "
+msgid "Download %(last_release)s for Windows, Mac and Linux »"
+msgstr "Κατεβάστε το %(last_release)s  για Windows, Mac και Linux »"
 
 #: media/templates/media-all.html:6
 msgid ""
@@ -420,21 +512,9 @@ msgstr "Δείτε όλες τις φωτογραφίες που συνέβαλ�
 msgid "Screenshots gallery"
 msgstr "Γκαλερί Στιγμιότυπων"
 
-#: media/templates/media-all.html:21
+#: media/templates/media-all.html:12
 msgid "Media gallery"
 msgstr "Γκαλερί πολυμέσων"
-
-#: media/templates/media-all.html:45
-msgid "Full size"
-msgstr "Πλήρες μέγεθος"
-
-#: media/templates/media-all.html:46
-msgid "Previous"
-msgstr "Προηγούμενη"
-
-#: media/templates/media-all.html:47
-msgid "Next"
-msgstr "Επόμενη"
 
 #: templates/404.html:5 templates/404.html.py:8
 msgid "Page not found"
@@ -458,30 +538,30 @@ msgstr "Παρουσιάστηκε σφάλμα κατά την προσπάθε
 msgid "Official Dolphin Emulator Website"
 msgstr "Επίσημη Ιστοσελίδα Dolphin Εξομοιωτή"
 
-#: templates/_base.html:60
+#: templates/_base.html:65
 msgid "Screenshots"
 msgstr "Εικόνες"
 
-#: templates/_base.html:61
+#: templates/_base.html:66
 msgid "FAQ"
 msgstr "Συχνές Ερωτήσεις"
 
-#: templates/_base.html:64
+#: templates/_base.html:69
 msgid "Forum"
 msgstr "Forum"
 
-#: templates/_base.html:65
+#: templates/_base.html:70
 msgid "Wiki"
 msgstr "Wiki"
 
-#: templates/_base.html:66
+#: templates/_base.html:71
 msgid "Code"
 msgstr "Κώδικας"
 
-#: templates/_base.html:103
+#: templates/_base.html:107
 msgid ""
 "\n"
-"            &copy; 2012 Dolphin Emulator Project -\n"
-"            <a href=\"https://bitbucket.org/delroth/dolphin-web/\">Website source code</a>\n"
+"            &copy; 2013 Dolphin Emulator Project -\n"
+"            <a href=\"https://github.com/dolphin-emu/www/\">Website source code</a>\n"
 "            "
-msgstr "\n &copy; 2012 Dolphin Emulator Project -\n <a href=\"https://bitbucket.org/delroth/dolphin-web/\">Πηγαίος κώδικας ιστοσελίδας</a>\n "
+msgstr "\n&copy; 2013 Dolphin Emulator Project -\n <a href=\"https://github.com/dolphin-emu/www/\">Πηγαίος κώδικας ιστοσελίδας</a>"

@@ -9,15 +9,193 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-08-16 18:17+0200\n"
-"PO-Revision-Date: 2013-08-20 18:58+0000\n"
-"Last-Translator: Siegfried <iori3000@hanafos.com>\n"
+"POT-Creation-Date: 2013-09-16 00:56+0200\n"
+"PO-Revision-Date: 2013-09-15 22:57+0000\n"
+"Last-Translator: delroth <delroth@gmail.com>\n"
 "Language-Team: Korean (http://www.transifex.com/projects/p/dolphin-emu/language/ko/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: ko\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+
+#: blog/admin.py:17
+msgid "Content"
+msgstr ""
+
+#: blog/models.py:16
+msgid "image"
+msgstr ""
+
+#: blog/models.py:17
+msgid "Used for illustration."
+msgstr ""
+
+#: blog/templates/blog_sidebar.html:6
+#: blog/templates/zinnia/tags/search_form.html:5
+msgid "Search articles"
+msgstr ""
+
+#: blog/templates/blog_sidebar.html:17
+msgid "Blog tags"
+msgstr ""
+
+#: blog/templates/blog_sidebar.html:22
+msgid "Blog series"
+msgstr ""
+
+#: blog/templates/blog_sidebar.html:24
+msgid "See all"
+msgstr ""
+
+#: blog/templates/series-index.html:16
+#, python-format
+msgid ""
+"\n"
+"    %(count)s entrie\n"
+"  "
+msgid_plural ""
+"\n"
+"    %(count)s entries\n"
+"  "
+msgstr[0] ""
+
+#: blog/templates/series-index.html:29
+msgid "No blog series yet."
+msgstr ""
+
+#: blog/templates/zinnia/_entry_detail_base.html:18
+msgid "Written by"
+msgstr ""
+
+#: blog/templates/zinnia/_entry_detail_base.html:22
+#, python-format
+msgid "Show all %(author)s's entries"
+msgstr ""
+
+#: blog/templates/zinnia/_entry_detail_base.html:24
+msgid "on"
+msgstr ""
+
+#: blog/templates/zinnia/_entry_detail_base.html:26
+msgid "Written on"
+msgstr ""
+
+#: blog/templates/zinnia/_entry_detail_base.html:34
+msgid "Last update on"
+msgstr ""
+
+#: blog/templates/zinnia/_entry_detail_base.html:36
+#, python-format
+msgid "Short URL to %(object)s"
+msgstr ""
+
+#: blog/templates/zinnia/_entry_detail_base.html:37
+msgid "Short link"
+msgstr ""
+
+#: blog/templates/zinnia/_entry_detail_base.html:70
+#, python-format
+msgid "Continue reading %(object)s"
+msgstr ""
+
+#: blog/templates/zinnia/_entry_detail_base.html:72
+msgid "Continue reading"
+msgstr ""
+
+#: blog/templates/zinnia/_entry_detail_base.html:87
+msgid "Tags"
+msgstr ""
+
+#: blog/templates/zinnia/_entry_detail_base.html:90
+#, python-format
+msgid "Show all entries tagged by %(tag)s"
+msgstr ""
+
+#: blog/templates/zinnia/_entry_detail_base.html:93
+msgid "No tags"
+msgstr ""
+
+#: blog/templates/zinnia/_entry_detail_base.html:99
+msgid "Categories"
+msgstr ""
+
+#: blog/templates/zinnia/_entry_detail_base.html:103
+#, python-format
+msgid "Show all entries in %(category)s"
+msgstr ""
+
+#: blog/templates/zinnia/_entry_detail_base.html:106
+msgid "None"
+msgstr ""
+
+#: blog/templates/zinnia/_entry_detail_base.html:115
+#, python-format
+msgid ""
+"This article is number %(nth)s within the blog serie\n"
+"    <a href=\"%(url)s\"><em>%(serie)s</em></a>."
+msgstr ""
+
+#: blog/templates/zinnia/_entry_detail_base.html:120
+msgid "‹ Previous article in serie"
+msgstr ""
+
+#: blog/templates/zinnia/_entry_detail_base.html:122
+msgid "Next article in serie ›"
+msgstr ""
+
+#: blog/templates/zinnia/entry_detail_base.html:22
+msgid "RSS Feed of discussions on"
+msgstr ""
+
+#: blog/templates/zinnia/entry_detail_base.html:24
+msgid "RSS Feed of comments on"
+msgstr ""
+
+#: blog/templates/zinnia/entry_detail_base.html:26
+msgid "RSS Feed of pingbacks on"
+msgstr ""
+
+#: blog/templates/zinnia/entry_detail_base.html:28
+msgid "RSS Feed of trackbacks on"
+msgstr ""
+
+#: blog/templates/zinnia/entry_detail_base.html:46
+msgid "Next entry"
+msgstr ""
+
+#: blog/templates/zinnia/entry_detail_base.html:58
+msgid "Previous entry"
+msgstr ""
+
+#: blog/templates/zinnia/entry_detail_base.html:70
+msgid "Related entries"
+msgstr ""
+
+#: blog/templates/zinnia/entry_detail_base.html:82
+msgid "Similar entries"
+msgstr ""
+
+#: blog/templates/zinnia/entry_detail_base.html:224
+#: blog/templates/zinnia/entry_detail_base.html:225
+msgid "Edit the entry"
+msgstr ""
+
+#: blog/templates/zinnia/skeleton.html:5
+msgid "Latest news for Dolphin Emulator"
+msgstr ""
+
+#: blog/templates/zinnia/skeleton.html:8
+#: blog/templates/zinnia/skeleton.html:13 templates/_base.html:64
+msgid "Articles"
+msgstr ""
+
+#: blog/templates/zinnia/tags/search_form.html:16
+msgid ""
+"You can use - to exclude words or phrases, &quot;double quotes&quot; for "
+"exact phrases and the AND/OR boolean operators combined with parenthesis for"
+" complex queries."
+msgstr ""
 
 #: compat/templates/compat-list.html:8
 msgid ""
@@ -88,7 +266,8 @@ msgstr "통계"
 msgid "Game title (click for details)"
 msgstr "게임 타이틀 (세부사항은 클릭)"
 
-#: compat/templates/compat-list.html:57 templates/_base.html:63
+#: compat/templates/compat-list.html:57
+#: homepage/templates/homepage-home.html:79 templates/_base.html:68
 msgid "Compatibility"
 msgstr "호환성"
 
@@ -138,7 +317,7 @@ msgstr "가이드 목록으로 돌아갑니다"
 msgid "See all the guides written by the Dolphin team about the emulator."
 msgstr "에뮬레이터에 대한 돌핀팀에 의해 쓰여진 모든 안내를 보세요."
 
-#: docs/templates/docs-guides-index.html:7 templates/_base.html:62
+#: docs/templates/docs-guides-index.html:7 templates/_base.html:67
 msgid "Guides"
 msgstr "가이드"
 
@@ -186,7 +365,7 @@ msgid ""
 msgstr "공식 홈페이지에서 돌핀 에뮬레이터의 가장 최신 버전 (%(ver)s) 을 다운로드합니다 ."
 
 #: downloads/templates/downloads-index.html:8
-#: downloads/templates/downloads-index.html:27 templates/_base.html:59
+#: downloads/templates/downloads-index.html:27 templates/_base.html:63
 msgid "Download"
 msgstr "다운로드"
 
@@ -201,7 +380,7 @@ msgid ""
 "    Dolphin, several times every day! Using development versions enables you to\n"
 "    use the latest and greatest improvements to the project. They are however\n"
 "    less tested than stable versions of the emulator.\n"
-msgstr "\n개발 버전들은 개발자가 돌핀에 변경을 만들 때마다 매번 릴리즈됩니다,\n하루에 여러번! 개발 버전을 사용하는 것은 당신에게 프로젝트에 가장 최신이면서 뛰어난 향상을\n사용하게해줍니다. 하지만 그것들은 안정된 에뮬레이터 버전들보다 덜 테스트됩니다.\n"
+msgstr "\n개발 버전들은 개발자가 돌핀에 변경을 만들 때마다 매번 릴리즈됩니다, 하루에 여러번! \n개발 버전을 사용하는 것은 당신에게 프로젝트에 가장 최신이면서 뛰어난 향상을\n사용하게 해줍니다. 하지만 그것들은 안정된 에뮬레이터 버전들보다 덜 테스트됩니다.\n"
 
 #: downloads/templates/downloads-index.html:40
 msgid "Only displaying the <tt>master</tt> branch versions."
@@ -267,148 +446,60 @@ msgstr "%(br)s 상에 정보"
 msgid "Information for %(br)s"
 msgstr "%(br)s 에 대한 정보"
 
-#: downloads/templates/downloads-view-devrel.html:16
+#: downloads/templates/downloads-view-devrel.html:30
 msgid "Version"
 msgstr "버전"
 
-#: downloads/templates/downloads-view-devrel.html:19
+#: downloads/templates/downloads-view-devrel.html:33
 msgid "Branch"
 msgstr "분기"
 
-#: downloads/templates/downloads-view-devrel.html:22
+#: downloads/templates/downloads-view-devrel.html:36
 msgid "Date"
 msgstr "날짜"
 
-#: downloads/templates/downloads-view-devrel.html:31
+#: downloads/templates/downloads-view-devrel.html:45
 msgid "Commit"
 msgstr "커밋"
 
-#: downloads/templates/downloads-view-devrel.html:34
+#: downloads/templates/downloads-view-devrel.html:48
 msgid "Change author"
 msgstr "만든이를 변경하세요"
 
-#: downloads/templates/downloads-view-devrel.html:37
+#: downloads/templates/downloads-view-devrel.html:51
 msgid "Change description"
 msgstr "설명을 변경하세요"
 
-#: homepage/templates/homepage-home.html:7
+#: homepage/templates/homepage-home.html:10
 #, python-format
 msgid ""
 "Official website of Dolphin, the GameCube and Wii emulator. Download the "
 "latest version (%(ver)s) now or ask questions on our forums for help."
 msgstr "공식 돌핀 웹사이트, 게임큐브와 Wii 에뮬레이터. 최신 버전 (%(ver)s) 을 지금 다운받으시거나 도움을 위해 우리 포럼에서 질문 하세요."
 
-#: homepage/templates/homepage-home.html:9
+#: homepage/templates/homepage-home.html:12
 msgid "GameCube/Wii games on PC"
 msgstr "PC에서 게임큐브/위 게임"
 
-#: homepage/templates/homepage-home.html:27 templates/_base.html:56
+#: homepage/templates/homepage-home.html:29 templates/_base.html:59
 msgid "Dolphin Emulator"
 msgstr "돌핀 에뮬레이터"
 
-#: homepage/templates/homepage-home.html:29
-msgid "Play GameCube and Wii games in 1080p on your PC."
-msgstr "PC에서 게임큐브와 Wii 게임들을 1080p 로 플레이해보세요."
-
-#: homepage/templates/homepage-home.html:32
-#, python-format
-msgid "Download %(last_release)s now for Windows, Mac and Linux »"
-msgstr "윈도우, 맥, 리눅스 용 %(last_release)s 를 지금 다운로드 하세요 »"
-
-#: homepage/templates/homepage-home.html:35
+#: homepage/templates/homepage-home.html:31
 msgid ""
 "\n"
-"                <strong>Minimal requirements</strong>: SSE2 compatible CPU, Shader Model 3.0 GPU, 2GB of RAM, 50MB of disk space\n"
-"                "
-msgstr "\n                <strong>최소 요구 사항</strong>: SSE2 호환 CPU, 쉐이더 모델 3.0 GPU, 2GB 메모리, 50MB 디스크 공간\n                "
+"            <b>Dolphin</b> is an emulator for two recent Nintendo video game\n"
+"            consoles: the <b>GameCube</b> and the <b>Wii</b>. It allows PC\n"
+"            gamers to enjoy games for these two consoles in <b>full HD</b>\n"
+"            (1080p) with several enhancements: compatibility with all PC\n"
+"            controllers, turbo speed, networked multiplayer, and even more!\n"
+"            "
+msgstr ""
 
 #: homepage/templates/homepage-home.html:40
-msgid "More information about hardware requirements"
-msgstr "하드웨어 요구사항에 대한 더 자세한 정보"
-
-#: homepage/templates/homepage-home.html:70
-msgid "Improved graphics"
-msgstr "향상된 그래픽"
-
-#: homepage/templates/homepage-home.html:73
 #, python-format
-msgid ""
-"\n"
-"        The Wii only renders games at a 480p resolution. Dolphin supports\n"
-"        720p, 1080p and even higher definitions for all of your\n"
-"        GameCube and Wii games. <a href=\"%(MEDIA_PAGE_URL)s\">View screenshots\n"
-"        of games played on Dolphin</a>.\n"
-"        "
-msgstr "\n        Wii 는 480p 해상도에서만 게임들을 렌더링합니다. \n돌핀은 모든 게임큐브와 Wii 게임들에서 720p, 1080p \n그리고 심지어 더 높은 선명도를 지원합니다.  \n<a href=\"%(MEDIA_PAGE_URL)s\"> 돌핀에서 플레이된 게임들의 스크린샷들을 보세요 </a>.\n  "
-
-#: homepage/templates/homepage-home.html:83
-msgid "Use your favorite controller"
-msgstr "좋아하는 컨트롤러 사용"
-
-#: homepage/templates/homepage-home.html:85
-msgid ""
-"\n"
-"        Not a big fan of the GameCube controller and the Wiimote? You can\n"
-"        play games with your favorite PC controller, or even with keyboard\n"
-"        and mouse! Wiimotes are still supported, including Wii Motion Plus\n"
-"        for games that require it.\n"
-"        "
-msgstr "\n        게임큐브 컨트롤러와 위모트의 빅 팬이 아니십니까 ? \n        좋아하는 PC 컨트롤러, 혹은 키보드와 마우스를 가지고도 게임들을 플레이 할 수 있습니다!\n        Wii 모션 플러스를 요구하는 게임들은 그것을 포함한\n        위모트도 여전히 지원됩니다. \n        "
-
-#: homepage/templates/homepage-home.html:95
-msgid "Recent Dolphin news"
-msgstr "  최근 돌핀 뉴스"
-
-#: homepage/templates/homepage-home.html:100
-msgid "by"
-msgstr "에 의해:"
-
-#: homepage/templates/homepage-home.html:112
-msgid "Great compatibility"
-msgstr "뛰어난 호환성"
-
-#: homepage/templates/homepage-home.html:115
-#, python-format
-msgid ""
-"\n"
-"        Dolphin can play most of the GameCube and Wii games collection\n"
-"        without issues. New Wii releases often work on Dolphin from day one.\n"
-"        Wiiware and Virtual Console games are also supported. Check out\n"
-"        the <a href=\"%(COMPAT_URL)s\">Dolphin compatibility list</a>\n"
-"        or the <a href=\"%(WIKI_URL)s\">Dolphin wiki</a> for more details.\n"
-"        "
-msgstr "\n        돌핀은 게임큐브와 Wii 게임들 컬렉션 대부분을 이슈 없이 \n        플레이할 수 있습니다. 새로운 Wii 출시품들은 흔히 처음부터 돌핀에서 작동합니다.\n        Wii웨어와 가상 콘솔 게임들 역시 지원됩니다.\n        <a href=\"%(COMPAT_URL)s\">돌핀 호환성 목록</a>\n        혹은 더 자세한 사항은 <a href=\"%(WIKI_URL)s\">돌핀 위키</a>를 확인해 보세요.\n        "
-
-#: homepage/templates/homepage-home.html:126
-msgid "Helpful community"
-msgstr "도움되는 커뮤니티"
-
-#: homepage/templates/homepage-home.html:129
-#, python-format
-msgid ""
-"\n"
-"        Installation issues? Trying to figure out the best settings for a\n"
-"        game? Or just interested in discussion about GameCube and Wii games\n"
-"        you like? If the <a href=\"%(FAQ_URL)s\">Frequently Asked Questions</a>\n"
-"        can't help you, other Dolphin users may be willing to help you over at the\n"
-"        <a href=\"%(FORUM_URL)s\">official discussion forums</a>.\n"
-"        "
-msgstr "\n        설치 문제? 게임 최적 세팅을 알아내기?\n       혹은 단지 좋아하는 게임큐브와 Wii 게임들에 대해 토론하는데에 관심있으세요?\n        <a href=\"%(FAQ_URL)s\">자주 묻는 질문들</a>이 도움이 안된다면,\n        <a href=\"%(FORUM_URL)s\">공식 토론 포럼들</a>. 에서 다른 돌핀 유저들이 기꺼이 도와줄지도 모릅니다.\n        \n        "
-
-#: homepage/templates/homepage-home.html:140
-msgid "Free and Open Source"
-msgstr "프리 오픈 소스"
-
-#: homepage/templates/homepage-home.html:142
-#, python-format
-msgid ""
-"\n"
-"        The Dolphin Emulator is developed by volunteers from all around the\n"
-"        world and distributed free of charge. Want to help the project improve?\n"
-"        Grab the emulator source code from <a href=\"%(GCODE_URL)s\">Google\n"
-"        Code</a> and start hacking!\n"
-"        "
-msgstr "\n        돌핀 에뮬레이터는 세계 곳곳의 자원 봉사자들에 의해 개발되고 무료로 제공됩니다.\n        프로젝트가 향상되는데 도움을 주고 싶으세요?\n        <a href=\"%(GCODE_URL)s\">구글 코드</a>에서 에뮬레이터 소스 코드를 붙잡고 \n        해킹을 시작하세요!\n        "
+msgid "Download %(last_release)s for Windows, Mac and Linux »"
+msgstr ""
 
 #: media/templates/media-all.html:6
 msgid ""
@@ -420,21 +511,9 @@ msgstr "돌핀 에뮬레이터의 사용자-기증된 스크린샷들을 보세�
 msgid "Screenshots gallery"
 msgstr "스크린샷 갤러리"
 
-#: media/templates/media-all.html:21
+#: media/templates/media-all.html:12
 msgid "Media gallery"
 msgstr "미디어 갤러리"
-
-#: media/templates/media-all.html:45
-msgid "Full size"
-msgstr "최대 크기"
-
-#: media/templates/media-all.html:46
-msgid "Previous"
-msgstr "이전"
-
-#: media/templates/media-all.html:47
-msgid "Next"
-msgstr "다음"
 
 #: templates/404.html:5 templates/404.html.py:8
 msgid "Page not found"
@@ -458,30 +537,30 @@ msgstr "이 페이지를 접속하는 동안 에러가 있었습니다. 몇 초�
 msgid "Official Dolphin Emulator Website"
 msgstr "공식 돌핀 에뮬레이터 웹사이트"
 
-#: templates/_base.html:60
+#: templates/_base.html:65
 msgid "Screenshots"
 msgstr "스크린샷"
 
-#: templates/_base.html:61
+#: templates/_base.html:66
 msgid "FAQ"
 msgstr "FAQ"
 
-#: templates/_base.html:64
+#: templates/_base.html:69
 msgid "Forum"
 msgstr "포럼"
 
-#: templates/_base.html:65
+#: templates/_base.html:70
 msgid "Wiki"
 msgstr "위키"
 
-#: templates/_base.html:66
+#: templates/_base.html:71
 msgid "Code"
 msgstr "코드"
 
-#: templates/_base.html:103
+#: templates/_base.html:107
 msgid ""
 "\n"
-"            &copy; 2012 Dolphin Emulator Project -\n"
-"            <a href=\"https://bitbucket.org/delroth/dolphin-web/\">Website source code</a>\n"
+"            &copy; 2013 Dolphin Emulator Project -\n"
+"            <a href=\"https://github.com/dolphin-emu/www/\">Website source code</a>\n"
 "            "
-msgstr "\n            &copy; 2012 돌핀 에뮬레이터 프로젝트 -\n            <a href=\"https://bitbucket.org/delroth/dolphin-web/\">웹사이트 소스 코드</a>\n            "
+msgstr ""

@@ -5,20 +5,199 @@
 # Translators:
 # Sentret_C <sentret_c@sina.cn>, 2013
 # Sentret_C <sentret_c@sina.cn>, 2013
+# lxf2000 <gaoboyuan8@qq.com>, 2013
 # Sentret_C <sentret_c@sina.cn>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-08-16 18:17+0200\n"
-"PO-Revision-Date: 2013-08-18 14:18+0000\n"
-"Last-Translator: Sentret_C <sentret_c@sina.cn>\n"
+"POT-Creation-Date: 2013-09-16 00:56+0200\n"
+"PO-Revision-Date: 2013-09-16 09:37+0000\n"
+"Last-Translator: lxf2000 <gaoboyuan8@qq.com>\n"
 "Language-Team: Chinese (China) (http://www.transifex.com/projects/p/dolphin-emu/language/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: zh_CN\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+
+#: blog/admin.py:17
+msgid "Content"
+msgstr "内容"
+
+#: blog/models.py:16
+msgid "image"
+msgstr "图像"
+
+#: blog/models.py:17
+msgid "Used for illustration."
+msgstr "用于图示。"
+
+#: blog/templates/blog_sidebar.html:6
+#: blog/templates/zinnia/tags/search_form.html:5
+msgid "Search articles"
+msgstr "搜索文章"
+
+#: blog/templates/blog_sidebar.html:17
+msgid "Blog tags"
+msgstr "博客标签"
+
+#: blog/templates/blog_sidebar.html:22
+msgid "Blog series"
+msgstr "博客分类"
+
+#: blog/templates/blog_sidebar.html:24
+msgid "See all"
+msgstr "查看全部"
+
+#: blog/templates/series-index.html:16
+#, python-format
+msgid ""
+"\n"
+"    %(count)s entrie\n"
+"  "
+msgid_plural ""
+"\n"
+"    %(count)s entries\n"
+"  "
+msgstr[0] "\n%(count)s 个项目"
+
+#: blog/templates/series-index.html:29
+msgid "No blog series yet."
+msgstr "没有博客分类。"
+
+#: blog/templates/zinnia/_entry_detail_base.html:18
+msgid "Written by"
+msgstr "作者"
+
+#: blog/templates/zinnia/_entry_detail_base.html:22
+#, python-format
+msgid "Show all %(author)s's entries"
+msgstr "显示所有 %(author)s 的文章"
+
+#: blog/templates/zinnia/_entry_detail_base.html:24
+msgid "on"
+msgstr "在"
+
+#: blog/templates/zinnia/_entry_detail_base.html:26
+msgid "Written on"
+msgstr "写于"
+
+#: blog/templates/zinnia/_entry_detail_base.html:34
+msgid "Last update on"
+msgstr "最后更新于"
+
+#: blog/templates/zinnia/_entry_detail_base.html:36
+#, python-format
+msgid "Short URL to %(object)s"
+msgstr "指向 %(object)s 的短链接"
+
+#: blog/templates/zinnia/_entry_detail_base.html:37
+msgid "Short link"
+msgstr "短链接"
+
+#: blog/templates/zinnia/_entry_detail_base.html:70
+#, python-format
+msgid "Continue reading %(object)s"
+msgstr "继续阅读 %(object)s"
+
+#: blog/templates/zinnia/_entry_detail_base.html:72
+msgid "Continue reading"
+msgstr "继续阅读"
+
+#: blog/templates/zinnia/_entry_detail_base.html:87
+msgid "Tags"
+msgstr "标签"
+
+#: blog/templates/zinnia/_entry_detail_base.html:90
+#, python-format
+msgid "Show all entries tagged by %(tag)s"
+msgstr "显示所有带有 %(tag)s 标签的文章"
+
+#: blog/templates/zinnia/_entry_detail_base.html:93
+msgid "No tags"
+msgstr "没有标签"
+
+#: blog/templates/zinnia/_entry_detail_base.html:99
+msgid "Categories"
+msgstr "分类"
+
+#: blog/templates/zinnia/_entry_detail_base.html:103
+#, python-format
+msgid "Show all entries in %(category)s"
+msgstr "显示所有在 %(category)s 中的文章"
+
+#: blog/templates/zinnia/_entry_detail_base.html:106
+msgid "None"
+msgstr "无"
+
+#: blog/templates/zinnia/_entry_detail_base.html:115
+#, python-format
+msgid ""
+"This article is number %(nth)s within the blog serie\n"
+"    <a href=\"%(url)s\"><em>%(serie)s</em></a>."
+msgstr "这篇文章在 <a href=\"%(url)s\"><em>%(serie)s</em></a> 分类中是第 %(nth)s 个。"
+
+#: blog/templates/zinnia/_entry_detail_base.html:120
+msgid "‹ Previous article in serie"
+msgstr "‹ 该分类中的前一个文章"
+
+#: blog/templates/zinnia/_entry_detail_base.html:122
+msgid "Next article in serie ›"
+msgstr "该分类中的后一个文章 ›"
+
+#: blog/templates/zinnia/entry_detail_base.html:22
+msgid "RSS Feed of discussions on"
+msgstr "在这个讨论中的 RSS 源："
+
+#: blog/templates/zinnia/entry_detail_base.html:24
+msgid "RSS Feed of comments on"
+msgstr "RSS 源评论"
+
+#: blog/templates/zinnia/entry_detail_base.html:26
+msgid "RSS Feed of pingbacks on"
+msgstr "RSS 源广播"
+
+#: blog/templates/zinnia/entry_detail_base.html:28
+msgid "RSS Feed of trackbacks on"
+msgstr "RSS 源引用"
+
+#: blog/templates/zinnia/entry_detail_base.html:46
+msgid "Next entry"
+msgstr "下一个文章"
+
+#: blog/templates/zinnia/entry_detail_base.html:58
+msgid "Previous entry"
+msgstr "上一个文章"
+
+#: blog/templates/zinnia/entry_detail_base.html:70
+msgid "Related entries"
+msgstr "相关文章"
+
+#: blog/templates/zinnia/entry_detail_base.html:82
+msgid "Similar entries"
+msgstr "相似文章"
+
+#: blog/templates/zinnia/entry_detail_base.html:224
+#: blog/templates/zinnia/entry_detail_base.html:225
+msgid "Edit the entry"
+msgstr "编辑该文章"
+
+#: blog/templates/zinnia/skeleton.html:5
+msgid "Latest news for Dolphin Emulator"
+msgstr "Dolphin 模拟器的最新文章"
+
+#: blog/templates/zinnia/skeleton.html:8
+#: blog/templates/zinnia/skeleton.html:13 templates/_base.html:64
+msgid "Articles"
+msgstr "文章"
+
+#: blog/templates/zinnia/tags/search_form.html:16
+msgid ""
+"You can use - to exclude words or phrases, &quot;double quotes&quot; for "
+"exact phrases and the AND/OR boolean operators combined with parenthesis for"
+" complex queries."
+msgstr "你可以用 - 来排除词语，使用 &quot;double quotes&quot; 查找确定的短语，用 AND/OR 逻辑操作符或加上括号来进行复杂的查找。"
 
 #: compat/templates/compat-list.html:8
 msgid ""
@@ -89,7 +268,8 @@ msgstr "统计"
 msgid "Game title (click for details)"
 msgstr "游戏标题（点击查看详情）"
 
-#: compat/templates/compat-list.html:57 templates/_base.html:63
+#: compat/templates/compat-list.html:57
+#: homepage/templates/homepage-home.html:79 templates/_base.html:68
 msgid "Compatibility"
 msgstr "兼容"
 
@@ -139,7 +319,7 @@ msgstr "返回指南列表"
 msgid "See all the guides written by the Dolphin team about the emulator."
 msgstr "查看由 Dolphin 团队所写的关于 Dolphin 模拟器的所有指南。"
 
-#: docs/templates/docs-guides-index.html:7 templates/_base.html:62
+#: docs/templates/docs-guides-index.html:7 templates/_base.html:67
 msgid "Guides"
 msgstr "指南"
 
@@ -187,7 +367,7 @@ msgid ""
 msgstr "从官方网站下载 Dolphin 模拟器的最新版本 (%(ver)s) 。"
 
 #: downloads/templates/downloads-index.html:8
-#: downloads/templates/downloads-index.html:27 templates/_base.html:59
+#: downloads/templates/downloads-index.html:27 templates/_base.html:63
 msgid "Download"
 msgstr "下载"
 
@@ -210,7 +390,7 @@ msgstr "当前仅显示 <tt>master</tt> 分支的版本。"
 
 #: downloads/templates/downloads-index.html:41
 msgid "Show all available branches"
-msgstr "显示所有可用分支。"
+msgstr "显示所有可用分支"
 
 #: downloads/templates/downloads-index.html:64
 msgid "Stable versions"
@@ -268,148 +448,60 @@ msgstr "%(br)s 版本信息"
 msgid "Information for %(br)s"
 msgstr "%(br)s 版本信息"
 
-#: downloads/templates/downloads-view-devrel.html:16
+#: downloads/templates/downloads-view-devrel.html:30
 msgid "Version"
 msgstr "版本"
 
-#: downloads/templates/downloads-view-devrel.html:19
+#: downloads/templates/downloads-view-devrel.html:33
 msgid "Branch"
 msgstr "分支"
 
-#: downloads/templates/downloads-view-devrel.html:22
+#: downloads/templates/downloads-view-devrel.html:36
 msgid "Date"
 msgstr "发布于"
 
-#: downloads/templates/downloads-view-devrel.html:31
+#: downloads/templates/downloads-view-devrel.html:45
 msgid "Commit"
 msgstr "提交（Commit）"
 
-#: downloads/templates/downloads-view-devrel.html:34
+#: downloads/templates/downloads-view-devrel.html:48
 msgid "Change author"
 msgstr "修改者"
 
-#: downloads/templates/downloads-view-devrel.html:37
+#: downloads/templates/downloads-view-devrel.html:51
 msgid "Change description"
 msgstr "修改说明"
 
-#: homepage/templates/homepage-home.html:7
+#: homepage/templates/homepage-home.html:10
 #, python-format
 msgid ""
 "Official website of Dolphin, the GameCube and Wii emulator. Download the "
 "latest version (%(ver)s) now or ask questions on our forums for help."
 msgstr "Dolphin 官方网站。现在下载 GameCube 与 Wii 模拟器 Dolphin 的最新版本 (%(ver)s) 或在我们的论坛提问以寻求帮助。"
 
-#: homepage/templates/homepage-home.html:9
+#: homepage/templates/homepage-home.html:12
 msgid "GameCube/Wii games on PC"
 msgstr "在PC上运行GameCube/Wii游戏"
 
-#: homepage/templates/homepage-home.html:27 templates/_base.html:56
+#: homepage/templates/homepage-home.html:29 templates/_base.html:59
 msgid "Dolphin Emulator"
 msgstr "Dolphin Emulator"
 
-#: homepage/templates/homepage-home.html:29
-msgid "Play GameCube and Wii games in 1080p on your PC."
-msgstr "在您的PC上以1080p运行GameCube和Wii游戏。"
-
-#: homepage/templates/homepage-home.html:32
-#, python-format
-msgid "Download %(last_release)s now for Windows, Mac and Linux »"
-msgstr "现在下载 %(last_release)s (支持Windows, Mac及Linux) »"
-
-#: homepage/templates/homepage-home.html:35
+#: homepage/templates/homepage-home.html:31
 msgid ""
 "\n"
-"                <strong>Minimal requirements</strong>: SSE2 compatible CPU, Shader Model 3.0 GPU, 2GB of RAM, 50MB of disk space\n"
-"                "
-msgstr "\n                <strong>最低系统要求</strong>: 使用SSE2指令集的CPU、支持Shader Model 3.0的GPU、2GB RAM、50MB可用硬盘空间\n                "
+"            <b>Dolphin</b> is an emulator for two recent Nintendo video game\n"
+"            consoles: the <b>GameCube</b> and the <b>Wii</b>. It allows PC\n"
+"            gamers to enjoy games for these two consoles in <b>full HD</b>\n"
+"            (1080p) with several enhancements: compatibility with all PC\n"
+"            controllers, turbo speed, networked multiplayer, and even more!\n"
+"            "
+msgstr "\n<b>Dolphin</b> 是任天堂最近两款游戏平台的模拟器：<b>GameCube</b> 和 <b>Wii</b>。\n它可以让电脑玩家以<b>全高清</b>(1080p)的方式来玩这两个平台的游戏，它\n能兼容所有的 PC 控制器，能够加速，支持多人联网，还有很多其他的\n特性。"
 
 #: homepage/templates/homepage-home.html:40
-msgid "More information about hardware requirements"
-msgstr "查看有关系统要求的更多信息"
-
-#: homepage/templates/homepage-home.html:70
-msgid "Improved graphics"
-msgstr "增强的画质"
-
-#: homepage/templates/homepage-home.html:73
 #, python-format
-msgid ""
-"\n"
-"        The Wii only renders games at a 480p resolution. Dolphin supports\n"
-"        720p, 1080p and even higher definitions for all of your\n"
-"        GameCube and Wii games. <a href=\"%(MEDIA_PAGE_URL)s\">View screenshots\n"
-"        of games played on Dolphin</a>.\n"
-"        "
-msgstr "\n        Wii仅在480p分辨率下渲染游戏，而Dolphin支持在720p、1080p甚至更高分辨率下运行你所有的GameCube和Wii游戏。<a href=\"%(MEDIA_PAGE_URL)s\">查看Dolphin中所运行游戏的截图</a>。\n        "
-
-#: homepage/templates/homepage-home.html:83
-msgid "Use your favorite controller"
-msgstr "使用您最爱的控制器"
-
-#: homepage/templates/homepage-home.html:85
-msgid ""
-"\n"
-"        Not a big fan of the GameCube controller and the Wiimote? You can\n"
-"        play games with your favorite PC controller, or even with keyboard\n"
-"        and mouse! Wiimotes are still supported, including Wii Motion Plus\n"
-"        for games that require it.\n"
-"        "
-msgstr "\n        不是那么喜欢GameCube控制器和Wii遥控器？您可以使用您最喜爱的游戏控制器，或者甚至是键盘和鼠标来玩游戏！Wii遥控器和Wii动感强化器仍受支持，以便运行需要它们的游戏。\n        "
-
-#: homepage/templates/homepage-home.html:95
-msgid "Recent Dolphin news"
-msgstr "最新动态"
-
-#: homepage/templates/homepage-home.html:100
-msgid "by"
-msgstr "发布者"
-
-#: homepage/templates/homepage-home.html:112
-msgid "Great compatibility"
-msgstr "强大的兼容性"
-
-#: homepage/templates/homepage-home.html:115
-#, python-format
-msgid ""
-"\n"
-"        Dolphin can play most of the GameCube and Wii games collection\n"
-"        without issues. New Wii releases often work on Dolphin from day one.\n"
-"        Wiiware and Virtual Console games are also supported. Check out\n"
-"        the <a href=\"%(COMPAT_URL)s\">Dolphin compatibility list</a>\n"
-"        or the <a href=\"%(WIKI_URL)s\">Dolphin wiki</a> for more details.\n"
-"        "
-msgstr "\n        Dolphin可以正确运行大多数GameCube和Wii游戏。新发布的Wii游戏通常发售当天就能在Dolphin上运行。Dolphin同样支持Wiiware和Virtual Console游戏。查看<a href=\"%(COMPAT_URL)s\">Dolphin兼容列表</a>或<a href=\"%(WIKI_URL)s\">Dolphin wiki</a>以获取更多信息。\n        "
-
-#: homepage/templates/homepage-home.html:126
-msgid "Helpful community"
-msgstr "乐于助人的社区"
-
-#: homepage/templates/homepage-home.html:129
-#, python-format
-msgid ""
-"\n"
-"        Installation issues? Trying to figure out the best settings for a\n"
-"        game? Or just interested in discussion about GameCube and Wii games\n"
-"        you like? If the <a href=\"%(FAQ_URL)s\">Frequently Asked Questions</a>\n"
-"        can't help you, other Dolphin users may be willing to help you over at the\n"
-"        <a href=\"%(FORUM_URL)s\">official discussion forums</a>.\n"
-"        "
-msgstr "\n        安装遇到问题？想找出适用于某个游戏的最佳配置？或者只是希望讨论喜欢的GameCube和Wii游戏？如果<a href=\"%(FAQ_URL)s\">常见问题解答</a>没能对你有所帮助，就来我们的<a href=\"%(FORUM_URL)s\">官方论坛</a>吧，其他Dolphin用户将随时伸出援手。\n        "
-
-#: homepage/templates/homepage-home.html:140
-msgid "Free and Open Source"
-msgstr "自由且开源"
-
-#: homepage/templates/homepage-home.html:142
-#, python-format
-msgid ""
-"\n"
-"        The Dolphin Emulator is developed by volunteers from all around the\n"
-"        world and distributed free of charge. Want to help the project improve?\n"
-"        Grab the emulator source code from <a href=\"%(GCODE_URL)s\">Google\n"
-"        Code</a> and start hacking!\n"
-"        "
-msgstr "\n        Dolphin模拟器由世界各地的志愿者们开发并免费发布。想帮助改进本项目？从<a href=\"%(GCODE_URL)s\">Google代码</a>获取模拟器的源代码开始分析吧！\n        "
+msgid "Download %(last_release)s for Windows, Mac and Linux »"
+msgstr "下载用于 Windows, Mac 和 Linux 的 %(last_release)s >>"
 
 #: media/templates/media-all.html:6
 msgid ""
@@ -421,21 +513,9 @@ msgstr "浏览所有由用户贡献的 Dolphin 模拟器屏幕截图，欣赏高
 msgid "Screenshots gallery"
 msgstr "截图画廊"
 
-#: media/templates/media-all.html:21
+#: media/templates/media-all.html:12
 msgid "Media gallery"
 msgstr "截图相册"
-
-#: media/templates/media-all.html:45
-msgid "Full size"
-msgstr "完整大小"
-
-#: media/templates/media-all.html:46
-msgid "Previous"
-msgstr "上一张"
-
-#: media/templates/media-all.html:47
-msgid "Next"
-msgstr "下一张"
 
 #: templates/404.html:5 templates/404.html.py:8
 msgid "Page not found"
@@ -459,30 +539,30 @@ msgstr "尝试访问此页面时发生错误，请数秒后刷新此页面。"
 msgid "Official Dolphin Emulator Website"
 msgstr "Dolphin 模拟器官方网站"
 
-#: templates/_base.html:60
+#: templates/_base.html:65
 msgid "Screenshots"
 msgstr "截图"
 
-#: templates/_base.html:61
+#: templates/_base.html:66
 msgid "FAQ"
 msgstr "FAQ"
 
-#: templates/_base.html:64
+#: templates/_base.html:69
 msgid "Forum"
 msgstr "论坛"
 
-#: templates/_base.html:65
+#: templates/_base.html:70
 msgid "Wiki"
 msgstr "Wiki"
 
-#: templates/_base.html:66
+#: templates/_base.html:71
 msgid "Code"
 msgstr "源码"
 
-#: templates/_base.html:103
+#: templates/_base.html:107
 msgid ""
 "\n"
-"            &copy; 2012 Dolphin Emulator Project -\n"
-"            <a href=\"https://bitbucket.org/delroth/dolphin-web/\">Website source code</a>\n"
+"            &copy; 2013 Dolphin Emulator Project -\n"
+"            <a href=\"https://github.com/dolphin-emu/www/\">Website source code</a>\n"
 "            "
-msgstr "\n            &copy; 2012 Dolphin Emulator Project -\n            <a href=\"https://bitbucket.org/delroth/dolphin-web/\">Website source code</a>\n            "
+msgstr "\n&copy; 2013 Dolphin 模拟器项目 -\n<a href=\"https://github.com/dolphin-emu/www/\">网站源码</a>"
