@@ -8,5 +8,5 @@
 <a class="btn always-ltr {% if USER_OS == "unknown" or USER_OS == "osx" %}{{ primclass|default:"btn-primary" }}{% endif %} osx" href="{{ ver.osx_url }}"><i class="icon-download-alt {% if USER_OS != "win" and USER_OS != "ubu" %}icon-white{% endif %}"></i> Mac OS X</a>
 {% endif %}
 {% if ver.ubu_url %}
-<a class="btn always-ltr {% if USER_OS == "unknown" or USER_OS == "ubu" %}{{ primclass|default:"btn-primary" }}{% endif %} ubu" href="{{ ver.ubu_url }}"><i class="icon-download-alt {% if USER_OS != "win" and USER_OS != "osx" %}icon-white{% endif %}"></i> Ubuntu 12.10 (amd64 .deb)</a>
+<a class="btn always-ltr {% if USER_OS == "unknown" or USER_OS == "ubu" %}{{ primclass|default:"btn-primary" }}{% endif %} ubu" href="{{ ver.ubu_url }}"><i class="icon-download-alt {% if USER_OS != "win" and USER_OS != "osx" %}icon-white{% endif %}"></i> Ubuntu 13.04 (amd64 .deb)</a>
 {% endif %}
