@@ -407,6 +407,41 @@ a.navbar-logo {
     margin-top: 0;
 }
 
+@media (max-width: 1199px) {
+    .my-hero h1.title {
+        font-size: 35px;
+        background-size: 70px;
+        padding-left: 90px;
+    }
+
+    .download-btn .btn-lg {
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    #navbar-dolphin {
+        font-size: 0.9em;
+    }
+
+    #navbar-dolphin .container {
+        max-width: 1100px;
+    }
+
+    #navbar-dolphin .dropdown-toggle span {
+        display: none;
+    }
+}
+
+@media (max-width: 1000px) {
+    #navbar-dolphin {
+        font-size: 0.7em;
+    }
+
+    #navbar-dolphin .container {
+        max-width: 950px;
+    }
+}
+
 /* Blog */
 p.seemore {
     text-align: right;

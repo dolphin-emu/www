@@ -63,7 +63,7 @@
     </div>
 </div>
 
-<div class="row sshot-row">
+<div class="row sshot-row hidden-sm hidden-xs">
     {% for image in featured_images %}
     <div class="col-md-2 sshot-col">
         {% thumbnail image.image "640x360" crop="center" format="JPEG" quality=80 as big %}
