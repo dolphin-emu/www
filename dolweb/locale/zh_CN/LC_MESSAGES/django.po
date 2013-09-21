@@ -11,9 +11,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-09-16 00:56+0200\n"
-"PO-Revision-Date: 2013-09-16 09:37+0000\n"
-"Last-Translator: lxf2000 <gaoboyuan8@qq.com>\n"
+"POT-Creation-Date: 2013-09-22 00:55+0200\n"
+"PO-Revision-Date: 2013-09-21 22:55+0000\n"
+"Last-Translator: delroth <delroth@gmail.com>\n"
 "Language-Team: Chinese (China) (http://www.transifex.com/projects/p/dolphin-emu/language/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -38,19 +38,19 @@ msgstr "用于图示。"
 msgid "Search articles"
 msgstr "搜索文章"
 
-#: blog/templates/blog_sidebar.html:17
+#: blog/templates/blog_sidebar.html:31
 msgid "Blog tags"
 msgstr "博客标签"
 
-#: blog/templates/blog_sidebar.html:22
+#: blog/templates/blog_sidebar.html:36
 msgid "Blog series"
 msgstr "博客分类"
 
-#: blog/templates/blog_sidebar.html:24
+#: blog/templates/blog_sidebar.html:38
 msgid "See all"
 msgstr "查看全部"
 
-#: blog/templates/series-index.html:16
+#: blog/templates/series-index.html:21
 #, python-format
 msgid ""
 "\n"
@@ -62,89 +62,93 @@ msgid_plural ""
 "  "
 msgstr[0] "\n%(count)s 个项目"
 
-#: blog/templates/series-index.html:29
+#: blog/templates/series-index.html:35
 msgid "No blog series yet."
 msgstr "没有博客分类。"
 
-#: blog/templates/zinnia/_entry_detail_base.html:18
+#: blog/templates/zinnia/_entry_detail_base.html:21
+#: homepage/templates/homepage-home.html:106
 msgid "Written by"
 msgstr "作者"
 
-#: blog/templates/zinnia/_entry_detail_base.html:22
+#: blog/templates/zinnia/_entry_detail_base.html:25
+#: homepage/templates/homepage-home.html:110
 #, python-format
 msgid "Show all %(author)s's entries"
 msgstr "显示所有 %(author)s 的文章"
 
-#: blog/templates/zinnia/_entry_detail_base.html:24
+#: blog/templates/zinnia/_entry_detail_base.html:27
+#: homepage/templates/homepage-home.html:112
 msgid "on"
 msgstr "在"
 
-#: blog/templates/zinnia/_entry_detail_base.html:26
+#: blog/templates/zinnia/_entry_detail_base.html:29
+#: homepage/templates/homepage-home.html:114
 msgid "Written on"
 msgstr "写于"
 
-#: blog/templates/zinnia/_entry_detail_base.html:34
+#: blog/templates/zinnia/_entry_detail_base.html:37
 msgid "Last update on"
 msgstr "最后更新于"
 
-#: blog/templates/zinnia/_entry_detail_base.html:36
+#: blog/templates/zinnia/_entry_detail_base.html:39
 #, python-format
 msgid "Short URL to %(object)s"
 msgstr "指向 %(object)s 的短链接"
 
-#: blog/templates/zinnia/_entry_detail_base.html:37
+#: blog/templates/zinnia/_entry_detail_base.html:40
 msgid "Short link"
 msgstr "短链接"
 
-#: blog/templates/zinnia/_entry_detail_base.html:70
+#: blog/templates/zinnia/_entry_detail_base.html:58
 #, python-format
 msgid "Continue reading %(object)s"
 msgstr "继续阅读 %(object)s"
 
-#: blog/templates/zinnia/_entry_detail_base.html:72
+#: blog/templates/zinnia/_entry_detail_base.html:60
 msgid "Continue reading"
 msgstr "继续阅读"
 
-#: blog/templates/zinnia/_entry_detail_base.html:87
-msgid "Tags"
-msgstr "标签"
-
-#: blog/templates/zinnia/_entry_detail_base.html:90
-#, python-format
-msgid "Show all entries tagged by %(tag)s"
-msgstr "显示所有带有 %(tag)s 标签的文章"
-
-#: blog/templates/zinnia/_entry_detail_base.html:93
-msgid "No tags"
-msgstr "没有标签"
-
-#: blog/templates/zinnia/_entry_detail_base.html:99
-msgid "Categories"
-msgstr "分类"
-
-#: blog/templates/zinnia/_entry_detail_base.html:103
-#, python-format
-msgid "Show all entries in %(category)s"
-msgstr "显示所有在 %(category)s 中的文章"
-
-#: blog/templates/zinnia/_entry_detail_base.html:106
-msgid "None"
-msgstr "无"
-
-#: blog/templates/zinnia/_entry_detail_base.html:115
+#: blog/templates/zinnia/_entry_detail_base.html:78
 #, python-format
 msgid ""
 "This article is number %(nth)s within the blog serie\n"
 "    <a href=\"%(url)s\"><em>%(serie)s</em></a>."
 msgstr "这篇文章在 <a href=\"%(url)s\"><em>%(serie)s</em></a> 分类中是第 %(nth)s 个。"
 
-#: blog/templates/zinnia/_entry_detail_base.html:120
+#: blog/templates/zinnia/_entry_detail_base.html:83
 msgid "‹ Previous article in serie"
 msgstr "‹ 该分类中的前一个文章"
 
-#: blog/templates/zinnia/_entry_detail_base.html:122
+#: blog/templates/zinnia/_entry_detail_base.html:85
 msgid "Next article in serie ›"
 msgstr "该分类中的后一个文章 ›"
+
+#: blog/templates/zinnia/_entry_detail_base.html:135
+msgid "Tags"
+msgstr "标签"
+
+#: blog/templates/zinnia/_entry_detail_base.html:139
+#, python-format
+msgid "Show all entries tagged by %(tag)s"
+msgstr "显示所有带有 %(tag)s 标签的文章"
+
+#: blog/templates/zinnia/_entry_detail_base.html:142
+msgid "No tags"
+msgstr "没有标签"
+
+#: blog/templates/zinnia/_entry_detail_base.html:149
+msgid "Categories"
+msgstr "分类"
+
+#: blog/templates/zinnia/_entry_detail_base.html:153
+#, python-format
+msgid "Show all entries in %(category)s"
+msgstr "显示所有在 %(category)s 中的文章"
+
+#: blog/templates/zinnia/_entry_detail_base.html:156
+msgid "No categories"
+msgstr ""
 
 #: blog/templates/zinnia/entry_detail_base.html:22
 msgid "RSS Feed of discussions on"
@@ -188,7 +192,7 @@ msgid "Latest news for Dolphin Emulator"
 msgstr "Dolphin 模拟器的最新文章"
 
 #: blog/templates/zinnia/skeleton.html:8
-#: blog/templates/zinnia/skeleton.html:13 templates/_base.html:64
+#: blog/templates/zinnia/skeleton.html:13 templates/_base.html:65
 msgid "Articles"
 msgstr "文章"
 
@@ -269,7 +273,7 @@ msgid "Game title (click for details)"
 msgstr "游戏标题（点击查看详情）"
 
 #: compat/templates/compat-list.html:57
-#: homepage/templates/homepage-home.html:79 templates/_base.html:68
+#: homepage/templates/homepage-home.html:80 templates/_base.html:69
 msgid "Compatibility"
 msgstr "兼容"
 
@@ -319,7 +323,7 @@ msgstr "返回指南列表"
 msgid "See all the guides written by the Dolphin team about the emulator."
 msgstr "查看由 Dolphin 团队所写的关于 Dolphin 模拟器的所有指南。"
 
-#: docs/templates/docs-guides-index.html:7 templates/_base.html:67
+#: docs/templates/docs-guides-index.html:7 templates/_base.html:68
 msgid "Guides"
 msgstr "指南"
 
@@ -367,7 +371,7 @@ msgid ""
 msgstr "从官方网站下载 Dolphin 模拟器的最新版本 (%(ver)s) 。"
 
 #: downloads/templates/downloads-index.html:8
-#: downloads/templates/downloads-index.html:27 templates/_base.html:63
+#: downloads/templates/downloads-index.html:27 templates/_base.html:64
 msgid "Download"
 msgstr "下载"
 
@@ -472,22 +476,22 @@ msgstr "修改者"
 msgid "Change description"
 msgstr "修改说明"
 
-#: homepage/templates/homepage-home.html:10
+#: homepage/templates/homepage-home.html:11
 #, python-format
 msgid ""
 "Official website of Dolphin, the GameCube and Wii emulator. Download the "
 "latest version (%(ver)s) now or ask questions on our forums for help."
 msgstr "Dolphin 官方网站。现在下载 GameCube 与 Wii 模拟器 Dolphin 的最新版本 (%(ver)s) 或在我们的论坛提问以寻求帮助。"
 
-#: homepage/templates/homepage-home.html:12
+#: homepage/templates/homepage-home.html:13
 msgid "GameCube/Wii games on PC"
 msgstr "在PC上运行GameCube/Wii游戏"
 
-#: homepage/templates/homepage-home.html:29 templates/_base.html:59
+#: homepage/templates/homepage-home.html:30 templates/_base.html:60
 msgid "Dolphin Emulator"
 msgstr "Dolphin Emulator"
 
-#: homepage/templates/homepage-home.html:31
+#: homepage/templates/homepage-home.html:32
 msgid ""
 "\n"
 "            <b>Dolphin</b> is an emulator for two recent Nintendo video game\n"
@@ -498,10 +502,15 @@ msgid ""
 "            "
 msgstr "\n<b>Dolphin</b> 是任天堂最近两款游戏平台的模拟器：<b>GameCube</b> 和 <b>Wii</b>。\n它可以让电脑玩家以<b>全高清</b>(1080p)的方式来玩这两个平台的游戏，它\n能兼容所有的 PC 控制器，能够加速，支持多人联网，还有很多其他的\n特性。"
 
-#: homepage/templates/homepage-home.html:40
+#: homepage/templates/homepage-home.html:41
 #, python-format
 msgid "Download %(last_release)s for Windows, Mac and Linux »"
 msgstr "下载用于 Windows, Mac 和 Linux 的 %(last_release)s >>"
+
+#: homepage/templates/homepage-home.html:120
+#, python-format
+msgid "/ Part of serie <a href=\"%(url)s\">%(name)s</a>"
+msgstr ""
 
 #: media/templates/media-all.html:6
 msgid ""
@@ -535,31 +544,31 @@ msgid ""
 " in a few seconds."
 msgstr "尝试访问此页面时发生错误，请数秒后刷新此页面。"
 
-#: templates/_base.html:9
+#: templates/_base.html:10
 msgid "Official Dolphin Emulator Website"
 msgstr "Dolphin 模拟器官方网站"
 
-#: templates/_base.html:65
+#: templates/_base.html:66
 msgid "Screenshots"
 msgstr "截图"
 
-#: templates/_base.html:66
+#: templates/_base.html:67
 msgid "FAQ"
 msgstr "FAQ"
 
-#: templates/_base.html:69
+#: templates/_base.html:70
 msgid "Forum"
 msgstr "论坛"
 
-#: templates/_base.html:70
+#: templates/_base.html:71
 msgid "Wiki"
 msgstr "Wiki"
 
-#: templates/_base.html:71
+#: templates/_base.html:72
 msgid "Code"
 msgstr "源码"
 
-#: templates/_base.html:107
+#: templates/_base.html:108
 msgid ""
 "\n"
 "            &copy; 2013 Dolphin Emulator Project -\n"

@@ -12,9 +12,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-09-16 00:56+0200\n"
-"PO-Revision-Date: 2013-09-20 12:13+0000\n"
-"Last-Translator: Petiso_Carambanal <diegoae@gmail.com>\n"
+"POT-Creation-Date: 2013-09-22 00:55+0200\n"
+"PO-Revision-Date: 2013-09-21 22:55+0000\n"
+"Last-Translator: delroth <delroth@gmail.com>\n"
 "Language-Team: Spanish (http://www.transifex.com/projects/p/dolphin-emu/language/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -39,19 +39,19 @@ msgstr ""
 msgid "Search articles"
 msgstr "Buscar artículos"
 
-#: blog/templates/blog_sidebar.html:17
+#: blog/templates/blog_sidebar.html:31
 msgid "Blog tags"
-msgstr ""
+msgstr "Etiquetas del blog"
 
-#: blog/templates/blog_sidebar.html:22
+#: blog/templates/blog_sidebar.html:36
 msgid "Blog series"
-msgstr ""
+msgstr "Serie del blog"
 
-#: blog/templates/blog_sidebar.html:24
+#: blog/templates/blog_sidebar.html:38
 msgid "See all"
 msgstr "Ver todo"
 
-#: blog/templates/series-index.html:16
+#: blog/templates/series-index.html:21
 #, python-format
 msgid ""
 "\n"
@@ -64,89 +64,93 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: blog/templates/series-index.html:29
+#: blog/templates/series-index.html:35
 msgid "No blog series yet."
-msgstr ""
+msgstr "No hay entradas del blog todavía"
 
-#: blog/templates/zinnia/_entry_detail_base.html:18
+#: blog/templates/zinnia/_entry_detail_base.html:21
+#: homepage/templates/homepage-home.html:106
 msgid "Written by"
 msgstr "Escrito por"
 
-#: blog/templates/zinnia/_entry_detail_base.html:22
+#: blog/templates/zinnia/_entry_detail_base.html:25
+#: homepage/templates/homepage-home.html:110
 #, python-format
 msgid "Show all %(author)s's entries"
-msgstr ""
+msgstr "Mostrar todos los entradas de %(author)s"
 
-#: blog/templates/zinnia/_entry_detail_base.html:24
+#: blog/templates/zinnia/_entry_detail_base.html:27
+#: homepage/templates/homepage-home.html:112
 msgid "on"
 msgstr "en"
 
-#: blog/templates/zinnia/_entry_detail_base.html:26
+#: blog/templates/zinnia/_entry_detail_base.html:29
+#: homepage/templates/homepage-home.html:114
 msgid "Written on"
-msgstr ""
+msgstr "Escrito en"
 
-#: blog/templates/zinnia/_entry_detail_base.html:34
+#: blog/templates/zinnia/_entry_detail_base.html:37
 msgid "Last update on"
-msgstr ""
+msgstr "Actualizado el"
 
-#: blog/templates/zinnia/_entry_detail_base.html:36
+#: blog/templates/zinnia/_entry_detail_base.html:39
 #, python-format
 msgid "Short URL to %(object)s"
 msgstr ""
 
-#: blog/templates/zinnia/_entry_detail_base.html:37
+#: blog/templates/zinnia/_entry_detail_base.html:40
 msgid "Short link"
-msgstr ""
+msgstr "Enlace corto"
 
-#: blog/templates/zinnia/_entry_detail_base.html:70
+#: blog/templates/zinnia/_entry_detail_base.html:58
 #, python-format
 msgid "Continue reading %(object)s"
 msgstr ""
 
-#: blog/templates/zinnia/_entry_detail_base.html:72
+#: blog/templates/zinnia/_entry_detail_base.html:60
 msgid "Continue reading"
-msgstr ""
+msgstr "Continuar leyendo"
 
-#: blog/templates/zinnia/_entry_detail_base.html:87
-msgid "Tags"
-msgstr ""
-
-#: blog/templates/zinnia/_entry_detail_base.html:90
-#, python-format
-msgid "Show all entries tagged by %(tag)s"
-msgstr ""
-
-#: blog/templates/zinnia/_entry_detail_base.html:93
-msgid "No tags"
-msgstr ""
-
-#: blog/templates/zinnia/_entry_detail_base.html:99
-msgid "Categories"
-msgstr "Categorías"
-
-#: blog/templates/zinnia/_entry_detail_base.html:103
-#, python-format
-msgid "Show all entries in %(category)s"
-msgstr ""
-
-#: blog/templates/zinnia/_entry_detail_base.html:106
-msgid "None"
-msgstr ""
-
-#: blog/templates/zinnia/_entry_detail_base.html:115
+#: blog/templates/zinnia/_entry_detail_base.html:78
 #, python-format
 msgid ""
 "This article is number %(nth)s within the blog serie\n"
 "    <a href=\"%(url)s\"><em>%(serie)s</em></a>."
 msgstr ""
 
-#: blog/templates/zinnia/_entry_detail_base.html:120
+#: blog/templates/zinnia/_entry_detail_base.html:83
 msgid "‹ Previous article in serie"
 msgstr "‹ Artículo previo en la serie"
 
-#: blog/templates/zinnia/_entry_detail_base.html:122
+#: blog/templates/zinnia/_entry_detail_base.html:85
 msgid "Next article in serie ›"
 msgstr "Artículo siguiente en la serie ›"
+
+#: blog/templates/zinnia/_entry_detail_base.html:135
+msgid "Tags"
+msgstr "Etiquetas"
+
+#: blog/templates/zinnia/_entry_detail_base.html:139
+#, python-format
+msgid "Show all entries tagged by %(tag)s"
+msgstr ""
+
+#: blog/templates/zinnia/_entry_detail_base.html:142
+msgid "No tags"
+msgstr "Sin etiquetas"
+
+#: blog/templates/zinnia/_entry_detail_base.html:149
+msgid "Categories"
+msgstr "Categorías"
+
+#: blog/templates/zinnia/_entry_detail_base.html:153
+#, python-format
+msgid "Show all entries in %(category)s"
+msgstr "Mostrar todas las entradas en la categoría %(category)s"
+
+#: blog/templates/zinnia/_entry_detail_base.html:156
+msgid "No categories"
+msgstr ""
 
 #: blog/templates/zinnia/entry_detail_base.html:22
 msgid "RSS Feed of discussions on"
@@ -183,14 +187,14 @@ msgstr "Entradas similares"
 #: blog/templates/zinnia/entry_detail_base.html:224
 #: blog/templates/zinnia/entry_detail_base.html:225
 msgid "Edit the entry"
-msgstr ""
+msgstr "Editar la entrada"
 
 #: blog/templates/zinnia/skeleton.html:5
 msgid "Latest news for Dolphin Emulator"
 msgstr "Últimas noticias de Dolphin"
 
 #: blog/templates/zinnia/skeleton.html:8
-#: blog/templates/zinnia/skeleton.html:13 templates/_base.html:64
+#: blog/templates/zinnia/skeleton.html:13 templates/_base.html:65
 msgid "Articles"
 msgstr "Artículos"
 
@@ -271,7 +275,7 @@ msgid "Game title (click for details)"
 msgstr "Título del juego (clic para detalles)"
 
 #: compat/templates/compat-list.html:57
-#: homepage/templates/homepage-home.html:79 templates/_base.html:68
+#: homepage/templates/homepage-home.html:80 templates/_base.html:69
 msgid "Compatibility"
 msgstr "Compatibilidad"
 
@@ -321,7 +325,7 @@ msgstr "Volver a la lista de guías"
 msgid "See all the guides written by the Dolphin team about the emulator."
 msgstr "Ver todas las guías escritas por el equipo de Dolphin en el emulador."
 
-#: docs/templates/docs-guides-index.html:7 templates/_base.html:67
+#: docs/templates/docs-guides-index.html:7 templates/_base.html:68
 msgid "Guides"
 msgstr "Guías"
 
@@ -369,7 +373,7 @@ msgid ""
 msgstr "Descargar la última versión del emulador Dolphin (%(ver)s) desde la web oficial."
 
 #: downloads/templates/downloads-index.html:8
-#: downloads/templates/downloads-index.html:27 templates/_base.html:63
+#: downloads/templates/downloads-index.html:27 templates/_base.html:64
 msgid "Download"
 msgstr "Descargar"
 
@@ -474,22 +478,22 @@ msgstr "Autor del cambio"
 msgid "Change description"
 msgstr "Descripción del cambio"
 
-#: homepage/templates/homepage-home.html:10
+#: homepage/templates/homepage-home.html:11
 #, python-format
 msgid ""
 "Official website of Dolphin, the GameCube and Wii emulator. Download the "
 "latest version (%(ver)s) now or ask questions on our forums for help."
 msgstr "Web oficial de Dolphin, el emulador de GameCube y Wii. Descargar la última versión (%(ver)s) ahora o haga preguntas en nuestro foro para obtener ayuda."
 
-#: homepage/templates/homepage-home.html:12
+#: homepage/templates/homepage-home.html:13
 msgid "GameCube/Wii games on PC"
 msgstr "Juegos de GameCube/Wii en PC"
 
-#: homepage/templates/homepage-home.html:29 templates/_base.html:59
+#: homepage/templates/homepage-home.html:30 templates/_base.html:60
 msgid "Dolphin Emulator"
 msgstr "Emulador Dolphin"
 
-#: homepage/templates/homepage-home.html:31
+#: homepage/templates/homepage-home.html:32
 msgid ""
 "\n"
 "            <b>Dolphin</b> is an emulator for two recent Nintendo video game\n"
@@ -498,12 +502,17 @@ msgid ""
 "            (1080p) with several enhancements: compatibility with all PC\n"
 "            controllers, turbo speed, networked multiplayer, and even more!\n"
 "            "
-msgstr ""
+msgstr "\n<b>Dolphin</b> es un emulador para dos consolas recientes de Nintendo: la\n<b>GameCube</b> y la <b>Wii</b>. Permite que los jugadores de PC disfruten de los juegos para estas dos consolas en <b>alta definición</b> (1080p) con varias mejoras: compatibilidad con todos los mandos para PC, velocidad turbo, multijugador en red, ¡e incluso más!"
 
-#: homepage/templates/homepage-home.html:40
+#: homepage/templates/homepage-home.html:41
 #, python-format
 msgid "Download %(last_release)s for Windows, Mac and Linux »"
 msgstr "Descargar ahora %(last_release)s para Windows, Mac y Linux »"
+
+#: homepage/templates/homepage-home.html:120
+#, python-format
+msgid "/ Part of serie <a href=\"%(url)s\">%(name)s</a>"
+msgstr ""
 
 #: media/templates/media-all.html:6
 msgid ""
@@ -537,31 +546,31 @@ msgid ""
 " in a few seconds."
 msgstr "Ha ocurrido un error al intentar acceder a esta página. Actualiza la página en unos segundos."
 
-#: templates/_base.html:9
+#: templates/_base.html:10
 msgid "Official Dolphin Emulator Website"
 msgstr "Página web oficial del emulador Dolphin"
 
-#: templates/_base.html:65
+#: templates/_base.html:66
 msgid "Screenshots"
 msgstr "Capturas de pantalla"
 
-#: templates/_base.html:66
+#: templates/_base.html:67
 msgid "FAQ"
 msgstr "FAQ"
 
-#: templates/_base.html:69
+#: templates/_base.html:70
 msgid "Forum"
 msgstr "Foro"
 
-#: templates/_base.html:70
+#: templates/_base.html:71
 msgid "Wiki"
 msgstr "Wiki"
 
-#: templates/_base.html:71
+#: templates/_base.html:72
 msgid "Code"
 msgstr "Código"
 
-#: templates/_base.html:107
+#: templates/_base.html:108
 msgid ""
 "\n"
 "            &copy; 2013 Dolphin Emulator Project -\n"
