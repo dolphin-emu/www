@@ -6,6 +6,7 @@
 {% load l10n %}
 {% load thumbnail %}
 {% load zinnia_tags %}
+{% load blog_tags %}
 
 {% block "metadescr" %}{% blocktrans with ver=last_master.shortrev %}Official website of Dolphin, the GameCube and Wii emulator. Download the latest version ({{ ver }}) now or ask questions on our forums for help.{% endblocktrans %}{% endblock %}
 
@@ -122,7 +123,7 @@
                </p>
             </div>
             <div class="entry-content">
-                {{ article.html_content|safe|truncatewords:100 }}
+                {{ article.html_content|cuthere_excerpt|safe }}
                 <p><a href="{{ article.get_absolute_url }}#cuthere">Read this article</a></p>
             </div>
         </div>
