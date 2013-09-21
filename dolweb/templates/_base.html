@@ -1,5 +1,6 @@
 {% load i18n %}
 {% load language %}
+{% load static from staticfiles %}
 
 <!DOCTYPE html>
 
@@ -20,10 +21,10 @@
         <link rel="shortcut icon" href="/favicon.ico" />
 
         <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
-        <link href="{{ STATIC_URL }}css/bootstrap.min.css" rel="stylesheet">
-        <link href="{{ STATIC_URL }}css/bootstrap-theme.min.css" rel="stylesheet">
-        <link href="{{ STATIC_URL }}css/dolphin.css" rel="stylesheet">
-        <link href="{{ STATIC_URL }}sprites/nav.css" rel="stylesheet">
+        <link href="{% static "css/bootstrap.min.css" %}" rel="stylesheet">
+        <link href="{% static "css/bootstrap-theme.min.css" %}" rel="stylesheet">
+        <link href="{% static "css/dolphin.css" %}" rel="stylesheet">
+        <link href="{% static "sprites/nav.css" %}" rel="stylesheet">
         {% block "extracss" %}
         {% endblock %}
 
@@ -112,7 +113,7 @@
         </footer>
 
         <script src="//code.jquery.com/jquery.js"></script>
-        <script src="{{ STATIC_URL }}js/bootstrap.min.js"></script>
+        <script src="{% static "js/bootstrap.min.js" %}"></script>
         {% block "extrajs" %}
         {% endblock %}
     </body>
