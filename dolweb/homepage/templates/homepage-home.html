@@ -119,7 +119,7 @@
                   {% url dolweb.blog.views.serie_view uid=article.within_serie.pk as serie_url %}
                   {% blocktrans with url=serie_url name=article.within_serie.name %}/ Part of serie <a href="{{ url }}">{{ name}}</a>{% endblocktrans %}
                   {% endif %}
-                  / <i class="icon-comments"></i> <a href="{{ object.forum_thread.get_absolute_url }}" title="Visit forum thread for this article">Forum thread</a>
+                  / <i class="icon-comments"></i> <a href="{{ article.forum_thread.get_absolute_url }}" title="Visit forum thread for this article">Forum thread</a>
                </p>
             </div>
             <div class="entry-content">
