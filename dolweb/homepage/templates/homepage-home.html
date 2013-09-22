@@ -90,7 +90,7 @@
         {% include "blog_sidebar.html" %}
     </div>
     <div class="col-md-9">
-        <h2 class="latest-articles">Latest articles</h2>
+        <h2 class="latest-articles">{% trans "Latest articles" %}</h2>
         {% for article in home_articles %}
         <div class="well">
             {% thumbnail article.real_image "48x48" crop="center" as im %}
@@ -119,16 +119,16 @@
                   {% url dolweb.blog.views.serie_view uid=article.within_serie.pk as serie_url %}
                   {% blocktrans with url=serie_url name=article.within_serie.name %}/ Part of serie <a href="{{ url }}">{{ name}}</a>{% endblocktrans %}
                   {% endif %}
-                  / <i class="icon-comments"></i> <a href="{{ object.forum_thread.get_absolute_url }}" title="Visit forum thread for this article">Forum thread</a>
+                  / <i class="icon-comments"></i> <a href="{{ object.forum_thread.get_absolute_url }}" title="{% trans "Visit forum thread for this article" %}">{% trans "Forum thread" %}</a>
                </p>
             </div>
             <div class="entry-content">
                 {{ article.html_content|cuthere_excerpt|safe }}
-                <p><a href="{{ article.get_absolute_url }}#cuthere">Read this article</a></p>
+                <p><a href="{{ article.get_absolute_url }}#cuthere">{% trans "Read this article" %}</a></p>
             </div>
         </div>
         {% empty %}
-        <p>No articles yet.</p>
+        <p>{% trans "No articles yet." %}</p>
         {% endfor %}
     </div>
 </div>
