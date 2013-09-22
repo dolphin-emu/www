@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-09-22 00:55+0200\n"
-"PO-Revision-Date: 2013-09-21 22:55+0000\n"
+"POT-Creation-Date: 2013-09-22 15:53+0200\n"
+"PO-Revision-Date: 2013-09-22 13:53+0000\n"
 "Last-Translator: delroth <delroth@gmail.com>\n"
 "Language-Team: Welsh (http://www.transifex.com/projects/p/dolphin-emu/language/cy/)\n"
 "MIME-Version: 1.0\n"
@@ -148,7 +148,7 @@ msgstr "Gweld pob cofnod yn y categori %(category)s"
 
 #: blog/templates/zinnia/_entry_detail_base.html:156
 msgid "No categories"
-msgstr ""
+msgstr "Dim categorïau"
 
 #: blog/templates/zinnia/entry_detail_base.html:22
 msgid "RSS Feed of discussions on"
@@ -351,7 +351,7 @@ msgid "<tt>%(branch)s</tt> branch"
 msgstr "<tt>%(branch)s</tt> fforc"
 
 #: downloads/templates/downloads-branches.html:21
-#: downloads/templates/downloads-index.html:46
+#: downloads/templates/downloads-index.html:91
 msgid "View older versions »"
 msgstr "Fersiynau hŷn"
 
@@ -376,10 +376,26 @@ msgid "Download"
 msgstr "Llawrlwytho"
 
 #: downloads/templates/downloads-index.html:31
+msgid "Stable versions"
+msgstr "Fersiynau cadarn"
+
+#: downloads/templates/downloads-index.html:33
+msgid ""
+"\n"
+"    Stable versions are released after a lot of testing to ensure emulation\n"
+"    performance and stability. However, since they are released less often,\n"
+"    they might be outdated and lacking some new features.\n"
+msgstr "\nRydym yn rhyddhau fersiwn gadarn ar ol profi'r efelychydd yn drylwyr.\nMae'r broses yma'n sicrhau fod Dolphin yn gweithio'n effeithiol. Dylid \ncofio felly bod fersiynau cadarn heb y gwiriadau mwyaf diweddar.\n"
+
+#: downloads/templates/downloads-index.html:55
+msgid "No stable release yet"
+msgstr "Dim fersiwn cadarn ar hyn o bryd"
+
+#: downloads/templates/downloads-index.html:76
 msgid "Development versions"
 msgstr "Fersiwn datblygiadol"
 
-#: downloads/templates/downloads-index.html:33
+#: downloads/templates/downloads-index.html:78
 msgid ""
 "\n"
 "    Development versions are released every time a developer makes a change to\n"
@@ -388,29 +404,13 @@ msgid ""
 "    less tested than stable versions of the emulator.\n"
 msgstr "\nRydym yn rhyddhau fersiwn datblygiadol o Dolphin bob tro mae datblygwr\nyn newid yr efelychydd. Mae'r broses yma'n digwydd yn aml. Mae'r fersiynau\ndatblygiadol yn cynnwys y gwiriadau mwyaf diweddar i'r efelychydd, ond maent\nyn llai dibynadwy na'r fersiynau cadarn.\n"
 
-#: downloads/templates/downloads-index.html:40
+#: downloads/templates/downloads-index.html:85
 msgid "Only displaying the <tt>master</tt> branch versions."
 msgstr "Yn dangos <tt>prif</tt> fersiynau y ffyrc yn unig"
 
-#: downloads/templates/downloads-index.html:41
+#: downloads/templates/downloads-index.html:86
 msgid "Show all available branches"
 msgstr "Dangos pob fforc sydd ar gael"
-
-#: downloads/templates/downloads-index.html:64
-msgid "Stable versions"
-msgstr "Fersiynau cadarn"
-
-#: downloads/templates/downloads-index.html:66
-msgid ""
-"\n"
-"    Stable versions are released after a lot of testing to ensure emulation\n"
-"    performance and stability. However, since they are released less often,\n"
-"    they might be outdated and lacking some new features.\n"
-msgstr "\nRydym yn rhyddhau fersiwn gadarn ar ol profi'r efelychydd yn drylwyr.\nMae'r broses yma'n sicrhau fod Dolphin yn gweithio'n effeithiol. Dylid \ncofio felly bod fersiynau cadarn heb y gwiriadau mwyaf diweddar.\n"
-
-#: downloads/templates/downloads-index.html:88
-msgid "No stable release yet"
-msgstr "Dim fersiwn cadarn ar hyn o bryd"
 
 #: downloads/templates/downloads-index.html:95
 msgid "Source code"
@@ -507,9 +507,29 @@ msgstr "\nEfelychydd ar gyfer dau declyn gemau gan Nintendo yw <b>Dolphin</b>.\n
 msgid "Download %(last_release)s for Windows, Mac and Linux »"
 msgstr "Llawrlwythwch %(last_release)s ar gyfer Windows, Mac a Linux »"
 
+#: homepage/templates/homepage-home.html:93
+msgid "Latest articles"
+msgstr ""
+
 #: homepage/templates/homepage-home.html:120
 #, python-format
 msgid "/ Part of serie <a href=\"%(url)s\">%(name)s</a>"
+msgstr "/ Rhan o gyfres <a href=\"%(url)s\">%(name)s</a>"
+
+#: homepage/templates/homepage-home.html:122
+msgid "Visit forum thread for this article"
+msgstr ""
+
+#: homepage/templates/homepage-home.html:122
+msgid "Forum thread"
+msgstr ""
+
+#: homepage/templates/homepage-home.html:127
+msgid "Read this article"
+msgstr ""
+
+#: homepage/templates/homepage-home.html:131
+msgid "No articles yet."
 msgstr ""
 
 #: media/templates/media-all.html:6

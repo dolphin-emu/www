@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-09-22 00:55+0200\n"
-"PO-Revision-Date: 2013-09-21 22:55+0000\n"
+"POT-Creation-Date: 2013-09-22 15:53+0200\n"
+"PO-Revision-Date: 2013-09-22 13:53+0000\n"
 "Last-Translator: delroth <delroth@gmail.com>\n"
 "Language-Team: Italian (http://www.transifex.com/projects/p/dolphin-emu/language/it/)\n"
 "MIME-Version: 1.0\n"
@@ -147,7 +147,7 @@ msgstr "Mostra tutti gli articoli in %(category)s"
 
 #: blog/templates/zinnia/_entry_detail_base.html:156
 msgid "No categories"
-msgstr ""
+msgstr "Nessuna categoria"
 
 #: blog/templates/zinnia/entry_detail_base.html:22
 msgid "RSS Feed of discussions on"
@@ -350,7 +350,7 @@ msgid "<tt>%(branch)s</tt> branch"
 msgstr "Branch <tt>%(branch)s</tt>"
 
 #: downloads/templates/downloads-branches.html:21
-#: downloads/templates/downloads-index.html:46
+#: downloads/templates/downloads-index.html:91
 msgid "View older versions »"
 msgstr "Versioni precedenti »"
 
@@ -375,10 +375,26 @@ msgid "Download"
 msgstr "Download"
 
 #: downloads/templates/downloads-index.html:31
+msgid "Stable versions"
+msgstr "Versioni stabili"
+
+#: downloads/templates/downloads-index.html:33
+msgid ""
+"\n"
+"    Stable versions are released after a lot of testing to ensure emulation\n"
+"    performance and stability. However, since they are released less often,\n"
+"    they might be outdated and lacking some new features.\n"
+msgstr "\nLe versioni stabili vengono rilasciate dopo un lungo testing per assicurare\nmigliori performance. Tuttavia, siccome vengono rilasciate meno frequentemente, potrebbero essere meno aggiornate e mancare di alcune nuove caratteristiche.\n"
+
+#: downloads/templates/downloads-index.html:55
+msgid "No stable release yet"
+msgstr "Non sono disponibili versioni stabili"
+
+#: downloads/templates/downloads-index.html:76
 msgid "Development versions"
 msgstr "Versioni in sviluppo"
 
-#: downloads/templates/downloads-index.html:33
+#: downloads/templates/downloads-index.html:78
 msgid ""
 "\n"
 "    Development versions are released every time a developer makes a change to\n"
@@ -387,29 +403,13 @@ msgid ""
 "    less tested than stable versions of the emulator.\n"
 msgstr "\nLe versioni di sviluppo vengono rilasciate ogniqualvolta uno sviluppatore\neffettua una modifica al Dolphin. L'utilizzo di versioni di sviluppo ti permette\ndi rimanere al passo con gli ultimi aggiornamenti e miglioramenti al progetto, al costo di una minore stabilità rispetto le versioni canoniche dell'emulatore.\n"
 
-#: downloads/templates/downloads-index.html:40
+#: downloads/templates/downloads-index.html:85
 msgid "Only displaying the <tt>master</tt> branch versions."
 msgstr "In mostra soltanto le versioni branch <tt>master</tt>."
 
-#: downloads/templates/downloads-index.html:41
+#: downloads/templates/downloads-index.html:86
 msgid "Show all available branches"
 msgstr "Mostra tutti i branches disponibili"
-
-#: downloads/templates/downloads-index.html:64
-msgid "Stable versions"
-msgstr "Versioni stabili"
-
-#: downloads/templates/downloads-index.html:66
-msgid ""
-"\n"
-"    Stable versions are released after a lot of testing to ensure emulation\n"
-"    performance and stability. However, since they are released less often,\n"
-"    they might be outdated and lacking some new features.\n"
-msgstr "\nLe versioni stabili vengono rilasciate dopo un lungo testing per assicurare\nmigliori performance. Tuttavia, siccome vengono rilasciate meno frequentemente, potrebbero essere meno aggiornate e mancare di alcune nuove caratteristiche.\n"
-
-#: downloads/templates/downloads-index.html:88
-msgid "No stable release yet"
-msgstr "Non sono disponibili versioni stabili"
 
 #: downloads/templates/downloads-index.html:95
 msgid "Source code"
@@ -506,9 +506,29 @@ msgstr "\n<b>Dolphin</b> è un emulatore per due recenti console Nintendo:\nil <
 msgid "Download %(last_release)s for Windows, Mac and Linux »"
 msgstr "Scarica %(last_release)s per Windows, Mac e Linux »"
 
+#: homepage/templates/homepage-home.html:93
+msgid "Latest articles"
+msgstr ""
+
 #: homepage/templates/homepage-home.html:120
 #, python-format
 msgid "/ Part of serie <a href=\"%(url)s\">%(name)s</a>"
+msgstr "/ Parte della serie <a href=\"%(url)s\">%(name)s</a>"
+
+#: homepage/templates/homepage-home.html:122
+msgid "Visit forum thread for this article"
+msgstr ""
+
+#: homepage/templates/homepage-home.html:122
+msgid "Forum thread"
+msgstr ""
+
+#: homepage/templates/homepage-home.html:127
+msgid "Read this article"
+msgstr ""
+
+#: homepage/templates/homepage-home.html:131
+msgid "No articles yet."
 msgstr ""
 
 #: media/templates/media-all.html:6

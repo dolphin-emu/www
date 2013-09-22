@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-09-22 00:55+0200\n"
-"PO-Revision-Date: 2013-09-21 22:55+0000\n"
+"POT-Creation-Date: 2013-09-22 15:53+0200\n"
+"PO-Revision-Date: 2013-09-22 13:53+0000\n"
 "Last-Translator: delroth <delroth@gmail.com>\n"
 "Language-Team: Korean (http://www.transifex.com/projects/p/dolphin-emu/language/ko/)\n"
 "MIME-Version: 1.0\n"
@@ -349,7 +349,7 @@ msgid "<tt>%(branch)s</tt> branch"
 msgstr "<tt>%(branch)s</tt> 분기"
 
 #: downloads/templates/downloads-branches.html:21
-#: downloads/templates/downloads-index.html:46
+#: downloads/templates/downloads-index.html:91
 msgid "View older versions »"
 msgstr "예전 버전들 보기"
 
@@ -374,10 +374,26 @@ msgid "Download"
 msgstr "다운로드"
 
 #: downloads/templates/downloads-index.html:31
+msgid "Stable versions"
+msgstr "안정된 버전"
+
+#: downloads/templates/downloads-index.html:33
+msgid ""
+"\n"
+"    Stable versions are released after a lot of testing to ensure emulation\n"
+"    performance and stability. However, since they are released less often,\n"
+"    they might be outdated and lacking some new features.\n"
+msgstr "\n안정 버전들은 에뮬레이션 성능과 안정성을 신뢰하기 위해 많은 테스트후에 릴리즈됩니다.\n하지만, 아주 드문 간격으로 릴리즈되기 때문에,\n구식이거나 일부 새로운 것들이 빠질 수도 있습니다.\n"
+
+#: downloads/templates/downloads-index.html:55
+msgid "No stable release yet"
+msgstr "안정된 출시가 아직 없음"
+
+#: downloads/templates/downloads-index.html:76
 msgid "Development versions"
 msgstr "개발자 버전"
 
-#: downloads/templates/downloads-index.html:33
+#: downloads/templates/downloads-index.html:78
 msgid ""
 "\n"
 "    Development versions are released every time a developer makes a change to\n"
@@ -386,29 +402,13 @@ msgid ""
 "    less tested than stable versions of the emulator.\n"
 msgstr "\n개발 버전들은 개발자가 돌핀에 변경을 만들 때마다 매번 릴리즈됩니다, 하루에 여러번! \n개발 버전을 사용하는 것은 당신에게 프로젝트에 가장 최신이면서 뛰어난 향상을\n사용하게 해줍니다. 하지만 그것들은 안정된 에뮬레이터 버전들보다 덜 테스트됩니다.\n"
 
-#: downloads/templates/downloads-index.html:40
+#: downloads/templates/downloads-index.html:85
 msgid "Only displaying the <tt>master</tt> branch versions."
 msgstr "<tt>마스터</tt> 분기 버전들만 보여줍니다."
 
-#: downloads/templates/downloads-index.html:41
+#: downloads/templates/downloads-index.html:86
 msgid "Show all available branches"
 msgstr "모든 유효한 분기들 보여주기"
-
-#: downloads/templates/downloads-index.html:64
-msgid "Stable versions"
-msgstr "안정된 버전"
-
-#: downloads/templates/downloads-index.html:66
-msgid ""
-"\n"
-"    Stable versions are released after a lot of testing to ensure emulation\n"
-"    performance and stability. However, since they are released less often,\n"
-"    they might be outdated and lacking some new features.\n"
-msgstr "\n안정 버전들은 에뮬레이션 성능과 안정성을 신뢰하기 위해 많은 테스트후에 릴리즈됩니다.\n하지만, 아주 드문 간격으로 릴리즈되기 때문에,\n구식이거나 일부 새로운 것들이 빠질 수도 있습니다.\n"
-
-#: downloads/templates/downloads-index.html:88
-msgid "No stable release yet"
-msgstr "안정된 출시가 아직 없음"
 
 #: downloads/templates/downloads-index.html:95
 msgid "Source code"
@@ -505,9 +505,29 @@ msgstr ""
 msgid "Download %(last_release)s for Windows, Mac and Linux »"
 msgstr ""
 
+#: homepage/templates/homepage-home.html:93
+msgid "Latest articles"
+msgstr ""
+
 #: homepage/templates/homepage-home.html:120
 #, python-format
 msgid "/ Part of serie <a href=\"%(url)s\">%(name)s</a>"
+msgstr ""
+
+#: homepage/templates/homepage-home.html:122
+msgid "Visit forum thread for this article"
+msgstr ""
+
+#: homepage/templates/homepage-home.html:122
+msgid "Forum thread"
+msgstr ""
+
+#: homepage/templates/homepage-home.html:127
+msgid "Read this article"
+msgstr ""
+
+#: homepage/templates/homepage-home.html:131
+msgid "No articles yet."
 msgstr ""
 
 #: media/templates/media-all.html:6

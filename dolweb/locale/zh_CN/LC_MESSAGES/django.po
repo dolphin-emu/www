@@ -11,8 +11,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-09-22 00:55+0200\n"
-"PO-Revision-Date: 2013-09-21 22:55+0000\n"
+"POT-Creation-Date: 2013-09-22 15:53+0200\n"
+"PO-Revision-Date: 2013-09-22 13:53+0000\n"
 "Last-Translator: delroth <delroth@gmail.com>\n"
 "Language-Team: Chinese (China) (http://www.transifex.com/projects/p/dolphin-emu/language/zh_CN/)\n"
 "MIME-Version: 1.0\n"
@@ -148,7 +148,7 @@ msgstr "显示所有在 %(category)s 中的文章"
 
 #: blog/templates/zinnia/_entry_detail_base.html:156
 msgid "No categories"
-msgstr ""
+msgstr "无分类"
 
 #: blog/templates/zinnia/entry_detail_base.html:22
 msgid "RSS Feed of discussions on"
@@ -351,7 +351,7 @@ msgid "<tt>%(branch)s</tt> branch"
 msgstr "<tt>%(branch)s</tt> 分支"
 
 #: downloads/templates/downloads-branches.html:21
-#: downloads/templates/downloads-index.html:46
+#: downloads/templates/downloads-index.html:91
 msgid "View older versions »"
 msgstr "查看较早版本 »"
 
@@ -376,10 +376,26 @@ msgid "Download"
 msgstr "下载"
 
 #: downloads/templates/downloads-index.html:31
+msgid "Stable versions"
+msgstr "稳定版本"
+
+#: downloads/templates/downloads-index.html:33
+msgid ""
+"\n"
+"    Stable versions are released after a lot of testing to ensure emulation\n"
+"    performance and stability. However, since they are released less often,\n"
+"    they might be outdated and lacking some new features.\n"
+msgstr "\n稳定版本在发布前经历过许多测试以保证模拟性能与稳定性。然而由于其\n发布频率较低，稳定版本可能已经过时并缺少一些新功能。\n"
+
+#: downloads/templates/downloads-index.html:55
+msgid "No stable release yet"
+msgstr "尚无稳定版本"
+
+#: downloads/templates/downloads-index.html:76
 msgid "Development versions"
 msgstr "开发版本"
 
-#: downloads/templates/downloads-index.html:33
+#: downloads/templates/downloads-index.html:78
 msgid ""
 "\n"
 "    Development versions are released every time a developer makes a change to\n"
@@ -388,29 +404,13 @@ msgid ""
 "    less tested than stable versions of the emulator.\n"
 msgstr "\n每当一位开发者对 Dolphin 做出改动，都将有开发版本发布，因而每天都会发布数个\n开发版本。使用开发版本即可体验本项目最新最大的改进，然而相较于稳定版本的\n模拟器，开发版本所经历的测试尚不够充分。\n"
 
-#: downloads/templates/downloads-index.html:40
+#: downloads/templates/downloads-index.html:85
 msgid "Only displaying the <tt>master</tt> branch versions."
 msgstr "当前仅显示 <tt>master</tt> 分支的版本。"
 
-#: downloads/templates/downloads-index.html:41
+#: downloads/templates/downloads-index.html:86
 msgid "Show all available branches"
 msgstr "显示所有可用分支"
-
-#: downloads/templates/downloads-index.html:64
-msgid "Stable versions"
-msgstr "稳定版本"
-
-#: downloads/templates/downloads-index.html:66
-msgid ""
-"\n"
-"    Stable versions are released after a lot of testing to ensure emulation\n"
-"    performance and stability. However, since they are released less often,\n"
-"    they might be outdated and lacking some new features.\n"
-msgstr "\n稳定版本在发布前经历过许多测试以保证模拟性能与稳定性。然而由于其\n发布频率较低，稳定版本可能已经过时并缺少一些新功能。\n"
-
-#: downloads/templates/downloads-index.html:88
-msgid "No stable release yet"
-msgstr "尚无稳定版本"
 
 #: downloads/templates/downloads-index.html:95
 msgid "Source code"
@@ -507,9 +507,29 @@ msgstr "\n<b>Dolphin</b> 是任天堂最近两款游戏平台的模拟器：<b>G
 msgid "Download %(last_release)s for Windows, Mac and Linux »"
 msgstr "下载用于 Windows, Mac 和 Linux 的 %(last_release)s >>"
 
+#: homepage/templates/homepage-home.html:93
+msgid "Latest articles"
+msgstr ""
+
 #: homepage/templates/homepage-home.html:120
 #, python-format
 msgid "/ Part of serie <a href=\"%(url)s\">%(name)s</a>"
+msgstr "/ <a href=\"%(url)s\">%(name)s</a> 分类的一部分"
+
+#: homepage/templates/homepage-home.html:122
+msgid "Visit forum thread for this article"
+msgstr ""
+
+#: homepage/templates/homepage-home.html:122
+msgid "Forum thread"
+msgstr ""
+
+#: homepage/templates/homepage-home.html:127
+msgid "Read this article"
+msgstr ""
+
+#: homepage/templates/homepage-home.html:131
+msgid "No articles yet."
 msgstr ""
 
 #: media/templates/media-all.html:6
