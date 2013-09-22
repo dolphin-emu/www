@@ -90,7 +90,7 @@
         {% include "blog_sidebar.html" %}
     </div>
     <div class="col-md-9">
-        <h2 class="latest-articles">Latest articles</h2>
+        <h2 class="latest-articles">{% trans "Latest articles" %}</h2>
         {% for article in home_articles %}
         <div class="well">
             {% thumbnail article.real_image "48x48" crop="center" format="PNG" as im %}
@@ -124,11 +124,11 @@
             </div>
             <div class="entry-content">
                 {{ article.html_content|cuthere_excerpt|safe }}
-                <p><a href="{{ article.get_absolute_url }}#cuthere">Read this article</a></p>
+                <p><a href="{{ article.get_absolute_url }}#cuthere">{% trans "Read this article" %}</a></p>
             </div>
         </div>
         {% empty %}
-        <p>No articles yet.</p>
+        <p>{% trans "No articles yet." %}</p>
         {% endfor %}
     </div>
 </div>
