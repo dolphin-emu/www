@@ -111,6 +111,8 @@ STATIC_ROOT = os.path.join(PROJECT_ROOT, 'media', 'static')
 # Example: "http://media.lawrence.com/static/"
 STATIC_URL = '//dolphin-emu.org/m/static/'
 
+STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.CachedStaticFilesStorage'
+
 # Additional locations of static files
 STATICFILES_DIRS = (
     os.path.join(PROJECT_ROOT, 'dolweb', 'static'),

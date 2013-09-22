@@ -12,7 +12,7 @@
 
 <div class="well clearfix serie">
   {% if serie.image %}
-    {% thumbnail serie.image "120x120" crop="center" as im %}
+    {% thumbnail serie.image "120x120" crop="center" format="PNG" as im %}
     <img src="{{ im.url }}" alt="Serie illustration" class="pull-left thumbnail" width="{{ im.width }}" height="{{ im.height }}" />
     {% endthumbnail %}
   {% endif %}

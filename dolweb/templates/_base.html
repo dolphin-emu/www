@@ -1,5 +1,6 @@
 {% load i18n %}
 {% load language %}
+{% load static from staticfiles %}
 
 <!DOCTYPE html>
 
@@ -17,11 +18,13 @@
         <meta property="og:site_name" content="Dolphin Emulator" />
         <meta property="fb:admins" content="1064682820" />
 
+        <link rel="shortcut icon" href="{% static "img/favicon.ico" %}" />
+
         <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
-        <link href="{{ STATIC_URL }}css/bootstrap.min.css" rel="stylesheet">
-        <link href="{{ STATIC_URL }}css/bootstrap-theme.min.css" rel="stylesheet">
-        <link href="{{ STATIC_URL }}css/dolphin.css" rel="stylesheet">
-        <link href="{{ STATIC_URL }}sprites/nav.css" rel="stylesheet">
+        <link href="{% static "css/bootstrap.min.css" %}" rel="stylesheet">
+        <link href="{% static "css/bootstrap-theme.min.css" %}" rel="stylesheet">
+        <link href="{% static "css/dolphin.css" %}" rel="stylesheet">
+        <link href="{% static "sprites/nav.css" %}" rel="stylesheet">
         {% block "extracss" %}
         {% endblock %}
 
@@ -46,7 +49,7 @@
     <body>
         {% block "bodystart" %}{% endblock %}
 
-        <div class="navbar navbar-inverse">
+        <div id="navbar-dolphin" class="navbar navbar-inverse">
             <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -54,7 +57,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="{% url home %}">{% trans "Dolphin Emulator" %}</a>
+                    <a class="navbar-logo" href="{% url home %}"><img src="{% static "img/logo.png" %}" height="32" alt="{% trans "Dolphin Emulator" %}"></a>
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav pull-left">
@@ -70,7 +73,7 @@
                     </ul>
                     <ul class="nav navbar-nav pull-right">
                         <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><div class="flag curr-flag sprite-nav-{{ LANGUAGE_CODE|short }}"></div> {{ LANGUAGE_CODE|langname }} <b class="caret"></b></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><div class="flag curr-flag sprite-nav-{{ LANGUAGE_CODE|short }}"></div> <span>{{ LANGUAGE_CODE|langname }}</span> <b class="caret"></b></a>
                             <ul class="dropdown-menu">
                             {% for langcode, langname in LANGUAGES %}
                                 {% if langcode != LANGUAGE_CODE|short %}
@@ -110,7 +113,7 @@
         </footer>
 
         <script src="//code.jquery.com/jquery.js"></script>
-        <script src="{{ STATIC_URL }}js/bootstrap.min.js"></script>
+        <script src="{% static "js/bootstrap.min.js" %}"></script>
         {% block "extrajs" %}
         {% endblock %}
     </body>

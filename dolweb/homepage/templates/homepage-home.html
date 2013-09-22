@@ -27,14 +27,14 @@
 <div class="jumbotron my-hero">
     <div class="row">
         <div class="col-md-6">
-            <h3>{% trans "Dolphin Emulator: Wii and GameCube on PC" %}</h3>
+            <h1 class="title">{% trans "Dolphin Emulator" %}</h1>
             <p class="intro">
             {% blocktrans %}
-            <b>Dolphin</b> is an emulator for two recent Nintendo consoles: the
-            <b>GameCube</b> and the <b>Wii</b>. It allows PC gamers to enjoy games
-            for these two consoles in <b>full HD</b> (1080p) with several
-            enhancements: compatibility with all PC controllers, turbo speed,
-            networked multiplayer, and even more!
+            <b>Dolphin</b> is an emulator for two recent Nintendo video game
+            consoles: the <b>GameCube</b> and the <b>Wii</b>. It allows PC
+            gamers to enjoy games for these two consoles in <b>full HD</b>
+            (1080p) with several enhancements: compatibility with all PC
+            controllers, turbo speed, networked multiplayer, and even more!
             {% endblocktrans %}
             </p>
 
@@ -64,7 +64,7 @@
     </div>
 </div>
 
-<div class="row sshot-row">
+<div class="row sshot-row hidden-sm hidden-xs">
     {% for image in featured_images %}
     <div class="col-md-2 sshot-col">
         {% thumbnail image.image "640x360" crop="center" format="JPEG" quality=80 as big %}
@@ -93,7 +93,7 @@
         <h2 class="latest-articles">{% trans "Latest articles" %}</h2>
         {% for article in home_articles %}
         <div class="well">
-            {% thumbnail article.real_image "48x48" crop="center" as im %}
+            {% thumbnail article.real_image "48x48" crop="center" format="PNG" as im %}
             <img src="{{ im.url }}" alt="{{ object.title }}" class="side-thumb thumbnail" width="{{ im.width }}" height="{{ im.height }}" />
             {% endthumbnail %}
             <h3><a href="{{ article.get_absolute_url }}" title="{{ article.title }}" rel="bookmark">
@@ -119,7 +119,7 @@
                   {% url dolweb.blog.views.serie_view uid=article.within_serie.pk as serie_url %}
                   {% blocktrans with url=serie_url name=article.within_serie.name %}/ Part of serie <a href="{{ url }}">{{ name}}</a>{% endblocktrans %}
                   {% endif %}
-                  / <i class="icon-comments"></i> <a href="{{ object.forum_thread.get_absolute_url }}" title="{% trans "Visit forum thread for this article" %}">{% trans "Forum thread" %}</a>
+                  / <i class="icon-comments"></i> <a href="{{ article.forum_thread.get_absolute_url }}" title="{% trans "Visit forum thread for this article" %}">{% trans "Forum thread" %}</a>
                </p>
             </div>
             <div class="entry-content">

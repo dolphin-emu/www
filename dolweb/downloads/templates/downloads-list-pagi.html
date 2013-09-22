@@ -1,12 +1,20 @@
-<div class="pagination pagination-centered">
-  <ul>
+<div class="text-center">
+<ul class="pagination">
     {% if page_obj.has_previous %}
     <li><a href="{% url downloads-list branch page_obj.previous_page_number %}">&larr;</a></li>
     {% else %}
     <li class="disabled"><a href="#">&larr;</a></li>
     {% endif %}
 
-    {% for page in pagi.page_range %}
+    {% for page in page_obj.leading_range %}
+    <li><a href="{% url downloads-list branch page %}">{{ page }}</a></li>
+    {% endfor %}
+
+    {% if page_obj.leading_range %}
+    <li class="disabled"><span>&hellip;</span></li>
+    {% endif %}
+
+    {% for page in page_obj.main_range %}
     {% if page == page_obj.number %}
     <li class="active"><a href="#">{{ page }}</a></li>
     {% else %}
@@ -14,10 +22,18 @@
     {% endif %}
     {% endfor %}
 
+    {% if page_obj.trailing_range %}
+    <li class="disabled"><span>&hellip;</span></li>
+    {% endif %}
+
+    {% for page in page_obj.trailing_range %}
+    <li><a href="{% url downloads-list branch page %}">{{ page }}</a></li>
+    {% endfor %}
+
     {% if page_obj.has_next %}
     <li><a href="{% url downloads-list branch page_obj.next_page_number %}">&rarr;</a></li>
     {% else %}
     <li class="disabled"><a href="#">&rarr;</a></li>
     {% endif %}
-  </ul>
+</ul>
 </div>

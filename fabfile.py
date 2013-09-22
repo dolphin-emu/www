@@ -6,8 +6,9 @@ env.hosts = ['ssh.alwaysdata.com']
 def deploy(root, branch):
     activate = "source /home/dolphin-emu/venv/www/bin/activate"
     with cd(root):
-        run("git pull")
+        run("git fetch")
         run("git checkout %s" % branch)
+        run("git reset --hard origin/%s" % branch)
         run(activate + " && pip install -r requirements.txt")
         run(activate + " && python manage.py collectstatic --noinput")
         with cd("dolweb"):
