@@ -42,7 +42,7 @@ class BlogSerie(models.Model):
 
 
 class ForumThreadForEntry(models.Model):
-    entry = models.OneToOneField('zinnia.Entry', related_name='forum_thread', null=True, blank=True)
+    entry = models.OneToOneField('zinnia.Entry', related_name='forum_thread')
     thread_id = models.IntegerField()
 
     def get_absolute_url(self):
