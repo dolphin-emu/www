@@ -90,6 +90,7 @@
         {% include "blog_sidebar.html" %}
     </div>
     <div class="col-md-9">
+        <a href="{% url zinnia_entry_latest_feed %}" class="rss-tag pull-right" title="{% trans "RSS feed of the latest articles" %}"><i class="icon-rss"></i></a>
         <h2 class="latest-articles">{% trans "Latest articles" %}</h2>
         {% for article in home_articles %}
         <div class="well">
@@ -119,7 +120,7 @@
                   {% url dolweb.blog.views.serie_view uid=article.within_serie.pk as serie_url %}
                   {% blocktrans with url=serie_url name=article.within_serie.name %}/ Part of serie <a href="{{ url }}">{{ name}}</a>{% endblocktrans %}
                   {% endif %}
-                  / <i class="icon-comments"></i> <a href="{{ article.forum_thread.get_absolute_url }}" title="{% trans "Visit forum thread for this article" %}">{% trans "Forum thread" %}</a>
+                  {% if article.forum_thread %}/ <i class="icon-comments"></i> <a href="{{ article.forum_thread.get_absolute_url }}" title="{% trans "Visit forum thread for this article" %}">{% trans "Forum thread" %}</a>{% endif %}
                </p>
             </div>
             <div class="entry-content">

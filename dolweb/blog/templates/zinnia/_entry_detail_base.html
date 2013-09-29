@@ -38,7 +38,7 @@
     / <a href="{{ object.short_url }}"
        title="{% blocktrans with object=object.title %}Short URL to {{ object }}{% endblocktrans %}"
        rel="shortlink">{% trans "Short link" %}</a>
-    / <i class="icon-comments"></i> <a href="{{ object.forum_thread.get_absolute_url }}" title="Visit forum thread for this article">Forum thread</a>
+    {% if object.forum_thread %}/ <i class="icon-comments"></i> <a href="{{ object.forum_thread.get_absolute_url }}" title="Visit forum thread for this article">Forum thread</a>{% endif %}
     </p>
     </div>
     {% endblock %}
@@ -65,6 +65,8 @@
 
     </div>
     {% endblock %}
+    {% if object.forum_thread %}
+    <p><i class="icon-comments"></i> {% blocktrans with url=object.forum_thread.get_absolute_url %}You can continue the discussion in the <a href="{{url}}" title="Visit forum thread for this article">forum thread</a> of this article.{% endblocktrans %}</p>{% endif %}
   </div>
   {% endblock %}
 
