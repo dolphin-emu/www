@@ -8,7 +8,7 @@
 
 {% block content %}
 
-{% for serie in page_obj.object_list %}
+{% for serie in series %}
 
 <div class="well clearfix serie">
   {% if serie.image %}
@@ -17,12 +17,14 @@
     {% endthumbnail %}
   {% endif %}
   <div class="innerdiv">
-  <h2><a href="{% url 'dolweb.blog.views.serie_view' uid=serie.pk %}">{{ serie.name }}</a>
+  {# <h2 id="serie-{{ serie.pk }}"><a href="{% url 'dolweb.blog.views.serie_view' uid=serie.pk %}">{{ serie.name }}</a> #}
+  <h2 id="serie-{{ serie.pk }}">{{ serie.name }}
   <small>{% blocktrans count count=serie.entries.count %}
     {{ count }} entrie
   {% plural %}
     {{ count }} entries
   {% endblocktrans %}</small></h2>
+  <p>{% trans "RSS feed:" %} <a href="{% url 'dolweb_blog_serie_feed' pk=serie.pk %}" class="rss-tag"><i class="icon-rss"></i></a></p>
   <ol>
   {% for entry in serie.entries_reversed %}
   <li><a href="{{ entry.get_absolute_url }}">{{ entry.title }}</a></li>

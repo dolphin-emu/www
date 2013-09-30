@@ -10,30 +10,31 @@ from dolweb.blog.models import BlogSerie
 
 @render_to('series-index.html')
 def series_index(request, page=None):
-    if page is None:
-        page = 1
-
     series = BlogSerie.objects.filter(visible=True)
 
-    pagi = Paginator(series, 20)
+    # if page is None:
+    #     page = 1
 
-    try:
-        page_obj = pagi.page(page)
-    except EmptyPage:
-        raise Http404
+    # pagi = Paginator(series, 20)
 
-    return {'page': page, 'page_obj': page_obj, 'pagi': pagi}
+    # try:
+    #     page_obj = pagi.page(page)
+    # except EmptyPage:
+    #     raise Http404
+
+    # return {'page': page, 'page_obj': page_obj, 'pagi': pagi}
+    return {'series': series}
 
 
-@render_to('serie-view.html')
-def serie_view(request, uid=None, slug=None):
-    both = (uid, slug)
-    if not any(both) or all(both):
-        raise Http404
-
-    if uid is not None:
-        serie = get_object_or_404(BlogSerie, pk=uid)
-    else:
-        serie = get_object_or_404(BlogSerie, slug=slug)
-
-    return {'serie': serie}
+# @render_to('serie-view.html')
+# def serie_view(request, uid=None, slug=None):
+#     both = (uid, slug)
+#     if not any(both) or all(both):
+#         raise Http404
+#
+#     if uid is not None:
+#         serie = get_object_or_404(BlogSerie, pk=uid)
+#     else:
+#         serie = get_object_or_404(BlogSerie, slug=slug)
+#
+#     return {'serie': serie}

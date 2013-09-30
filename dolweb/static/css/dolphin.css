@@ -492,3 +492,22 @@ ul.tags a {
 html[dir="rtl"] .side-thumb {
     float: left;
 }
+
+/* rss orange */
+.rss-tag {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    border-radius: 4px;
+    padding: 2px 0;
+    background: #FF6600;
+}
+.rss-tag:hover {
+    color: white;
+    text-decoration: none;
+    background: #ff9100;
+}

@@ -38,7 +38,7 @@
     / <a href="{{ object.short_url }}"
        title="{% blocktrans with object=object.title %}Short URL to {{ object }}{% endblocktrans %}"
        rel="shortlink">{% trans "Short link" %}</a>
-    / <i class="icon-comments"></i> <a href="{{ object.forum_thread.get_absolute_url }}" title="Visit forum thread for this article">Forum thread</a>
+    {% if object.forum_thread %}/ <i class="icon-comments"></i> <a href="{{ object.forum_thread.get_absolute_url }}" title="Visit forum thread for this article">Forum thread</a>{% endif %}
     </p>
     </div>
     {% endblock %}
@@ -65,6 +65,8 @@
 
     </div>
     {% endblock %}
+    {% if object.forum_thread %}
+    <p><i class="icon-comments"></i> {% blocktrans with url=object.forum_thread.get_absolute_url %}You can continue the discussion in the <a href="{{url}}" title="Visit forum thread for this article">forum thread</a> of this article.{% endblocktrans %}</p>{% endif %}
   </div>
   {% endblock %}
 
@@ -73,8 +75,8 @@
     <div class="col-md-6">
     {% block entry-serie %}
     {% if object.within_serie %}
-    <h4>Blog serie</h4>
-    {% url 'dolweb.blog.views.serie_view' uid=object.within_serie.pk as serie_url %}
+    <h4>{% trans "Blog serie" %}</h4>
+    {% url 'dolweb.blog.views.series_index' uid=object.within_serie.pk as serie_url %}
     <p>{% blocktrans with nth=object.serie_index url=serie_url serie=object.within_serie %}This article is number {{ nth }} within the blog serie
     <a href="{{ url }}"><em>{{ serie }}</em></a>.{% endblocktrans %} {# </p> #}
     {% with previous=object.previous_entry_in_serie next=object.next_entry_in_serie %}
