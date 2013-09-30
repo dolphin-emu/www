@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-09-22 15:53+0200\n"
-"PO-Revision-Date: 2013-09-22 13:53+0000\n"
+"POT-Creation-Date: 2013-09-30 18:18+0200\n"
+"PO-Revision-Date: 2013-09-30 16:18+0000\n"
 "Last-Translator: delroth <delroth@gmail.com>\n"
 "Language-Team: Greek (http://www.transifex.com/projects/p/dolphin-emu/language/el/)\n"
 "MIME-Version: 1.0\n"
@@ -22,6 +22,16 @@ msgstr ""
 #: blog/admin.py:17
 msgid "Content"
 msgstr "Περιεχόμενο"
+
+#: blog/feeds.py:24
+#, python-format
+msgid "Entries for the serie %s"
+msgstr ""
+
+#: blog/feeds.py:27
+#, python-format
+msgid "The latest entries for the serie %s"
+msgstr ""
 
 #: blog/models.py:16
 msgid "image"
@@ -48,7 +58,7 @@ msgstr ""
 msgid "See all"
 msgstr "Προβολή όλων"
 
-#: blog/templates/series-index.html:21
+#: blog/templates/series-index.html:22
 #, python-format
 msgid ""
 "\n"
@@ -61,28 +71,32 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: blog/templates/series-index.html:35
+#: blog/templates/series-index.html:27
+msgid "RSS feed:"
+msgstr ""
+
+#: blog/templates/series-index.html:37
 msgid "No blog series yet."
 msgstr ""
 
 #: blog/templates/zinnia/_entry_detail_base.html:21
-#: homepage/templates/homepage-home.html:106
+#: homepage/templates/homepage-home.html:107
 msgid "Written by"
 msgstr "Συντάχθηκε από τον"
 
 #: blog/templates/zinnia/_entry_detail_base.html:25
-#: homepage/templates/homepage-home.html:110
+#: homepage/templates/homepage-home.html:111
 #, python-format
 msgid "Show all %(author)s's entries"
 msgstr "Δείτε όλες τις καταχωρήσεις του %(author)s"
 
 #: blog/templates/zinnia/_entry_detail_base.html:27
-#: homepage/templates/homepage-home.html:112
+#: homepage/templates/homepage-home.html:113
 msgid "on"
 msgstr ""
 
 #: blog/templates/zinnia/_entry_detail_base.html:29
-#: homepage/templates/homepage-home.html:114
+#: homepage/templates/homepage-home.html:115
 msgid "Written on"
 msgstr ""
 
@@ -108,46 +122,57 @@ msgstr "Συνέχεια ανάγνωσης %(object)s"
 msgid "Continue reading"
 msgstr "Συνέχεια ανάγνωσης"
 
+#: blog/templates/zinnia/_entry_detail_base.html:69
+#, python-format
+msgid ""
+"You can continue the discussion in the <a href=\"%(url)s\" title=\"Visit "
+"forum thread for this article\">forum thread</a> of this article."
+msgstr ""
+
 #: blog/templates/zinnia/_entry_detail_base.html:78
+msgid "Blog serie"
+msgstr ""
+
+#: blog/templates/zinnia/_entry_detail_base.html:80
 #, python-format
 msgid ""
 "This article is number %(nth)s within the blog serie\n"
 "    <a href=\"%(url)s\"><em>%(serie)s</em></a>."
 msgstr "Αυτό το άρθρο είναι το νούμερο %(nth)s στην σειρά του blog\n    <a href=\"%(url)s\"><em>%(serie)s</em></a>."
 
-#: blog/templates/zinnia/_entry_detail_base.html:83
+#: blog/templates/zinnia/_entry_detail_base.html:85
 msgid "‹ Previous article in serie"
 msgstr "‹ Προηγούμενο άρθρο στη σειρά"
 
-#: blog/templates/zinnia/_entry_detail_base.html:85
+#: blog/templates/zinnia/_entry_detail_base.html:87
 msgid "Next article in serie ›"
 msgstr "Επόμενο άρθρο στη  σειρά ›"
 
-#: blog/templates/zinnia/_entry_detail_base.html:135
+#: blog/templates/zinnia/_entry_detail_base.html:137
 msgid "Tags"
 msgstr "Ετικέτες"
 
-#: blog/templates/zinnia/_entry_detail_base.html:139
+#: blog/templates/zinnia/_entry_detail_base.html:141
 #, python-format
 msgid "Show all entries tagged by %(tag)s"
 msgstr ""
 
-#: blog/templates/zinnia/_entry_detail_base.html:142
+#: blog/templates/zinnia/_entry_detail_base.html:144
 msgid "No tags"
 msgstr "Καμία ετικέτα"
 
-#: blog/templates/zinnia/_entry_detail_base.html:149
+#: blog/templates/zinnia/_entry_detail_base.html:151
 msgid "Categories"
 msgstr "Κατηγορίες"
 
-#: blog/templates/zinnia/_entry_detail_base.html:153
+#: blog/templates/zinnia/_entry_detail_base.html:155
 #, python-format
 msgid "Show all entries in %(category)s"
 msgstr ""
 
-#: blog/templates/zinnia/_entry_detail_base.html:156
+#: blog/templates/zinnia/_entry_detail_base.html:158
 msgid "No categories"
-msgstr ""
+msgstr "Καμία κατηγορία"
 
 #: blog/templates/zinnia/entry_detail_base.html:22
 msgid "RSS Feed of discussions on"
@@ -186,12 +211,92 @@ msgstr "Παρόμοιες καταχωρήσεις"
 msgid "Edit the entry"
 msgstr "Επεξεργαστείτε την καταχώρηση"
 
+#: blog/templates/zinnia/entry_list.html:5
+msgid "Latest entries for"
+msgstr ""
+
+#: blog/templates/zinnia/entry_list.html:5
+msgid "the category"
+msgstr ""
+
+#: blog/templates/zinnia/entry_list.html:5
+msgid "the tag"
+msgstr ""
+
+#: blog/templates/zinnia/entry_list.html:5
+msgid "the author"
+msgstr ""
+
+#: blog/templates/zinnia/entry_list.html:5
+msgid "page"
+msgstr ""
+
+#: blog/templates/zinnia/entry_list.html:10
+#: blog/templates/zinnia/entry_list.html:13
+#: blog/templates/zinnia/entry_list.html:16
+msgid "RSS Feed"
+msgstr ""
+
+#: blog/templates/zinnia/entry_list.html:20
+msgid "Latest entries"
+msgstr ""
+
+#: blog/templates/zinnia/entry_list.html:20
+msgid "Category"
+msgstr ""
+
+#: blog/templates/zinnia/entry_list.html:20
+msgid "Tag"
+msgstr ""
+
+#: blog/templates/zinnia/entry_list.html:20
+msgid "Author"
+msgstr ""
+
+#: blog/templates/zinnia/entry_list.html:20
+msgid "Page"
+msgstr ""
+
+#: blog/templates/zinnia/entry_list.html:28
+#, python-format
+msgid "Category archives: %(category)s"
+msgstr ""
+
+#: blog/templates/zinnia/entry_list.html:35
+#, python-format
+msgid "Tag archives: %(tag)s"
+msgstr ""
+
+#: blog/templates/zinnia/entry_list.html:39
+#, python-format
+msgid "Author archives: %(author)s"
+msgstr ""
+
+#: blog/templates/zinnia/entry_list.html:48
+msgid "No entries yet."
+msgstr ""
+
+#: blog/templates/zinnia/entry_list.html:67
+#: blog/templates/zinnia/entry_list.html:68
+msgid "Edit the category"
+msgstr ""
+
+#: blog/templates/zinnia/entry_list.html:74
+#: blog/templates/zinnia/entry_list.html:75
+msgid "Edit the tag"
+msgstr ""
+
+#: blog/templates/zinnia/entry_list.html:81
+#: blog/templates/zinnia/entry_list.html:82
+msgid "Edit the author"
+msgstr ""
+
 #: blog/templates/zinnia/skeleton.html:5
 msgid "Latest news for Dolphin Emulator"
 msgstr "Τελευταία νέα για τον Dolphin Εξομοιωτή"
 
 #: blog/templates/zinnia/skeleton.html:8
-#: blog/templates/zinnia/skeleton.html:13 templates/_base.html:65
+#: blog/templates/zinnia/skeleton.html:13 templates/_base.html:67
 msgid "Articles"
 msgstr "Άρθρα"
 
@@ -272,7 +377,7 @@ msgid "Game title (click for details)"
 msgstr "Τίτλος παιχνιδιού (κάντε κλικ για λεπτομέρειες)"
 
 #: compat/templates/compat-list.html:57
-#: homepage/templates/homepage-home.html:80 templates/_base.html:69
+#: homepage/templates/homepage-home.html:80 templates/_base.html:71
 msgid "Compatibility"
 msgstr "Συμβατότητα"
 
@@ -322,7 +427,7 @@ msgstr "Πηγαίνετε πίσω στην λίστα οδηγιών"
 msgid "See all the guides written by the Dolphin team about the emulator."
 msgstr "Δείτε όλους τους οδηγούς που γράφτηκαν από την ομάδα του Dolphin για τον εξομοιωτή."
 
-#: docs/templates/docs-guides-index.html:7 templates/_base.html:68
+#: docs/templates/docs-guides-index.html:7 templates/_base.html:70
 msgid "Guides"
 msgstr "Οδηγίες"
 
@@ -370,7 +475,7 @@ msgid ""
 msgstr "Κατεβάστε την τελευταία έκδοση του Dolphin Εξομοιωτή (%(ver)s) από την επίσημη ιστοσελίδα."
 
 #: downloads/templates/downloads-index.html:8
-#: downloads/templates/downloads-index.html:27 templates/_base.html:64
+#: downloads/templates/downloads-index.html:27 templates/_base.html:66
 msgid "Download"
 msgstr "Κατεβάστε"
 
@@ -486,7 +591,7 @@ msgstr "Επίσημη ιστοσελίδα του Dolphin, εξομοιωτή �
 msgid "GameCube/Wii games on PC"
 msgstr "GameCube/Wii παιχνίδια στο PC"
 
-#: homepage/templates/homepage-home.html:30 templates/_base.html:60
+#: homepage/templates/homepage-home.html:30 templates/_base.html:62
 msgid "Dolphin Emulator"
 msgstr "Dolphin Εξομοιωτής "
 
@@ -507,29 +612,33 @@ msgid "Download %(last_release)s for Windows, Mac and Linux »"
 msgstr "Κατεβάστε το %(last_release)s  για Windows, Mac και Linux »"
 
 #: homepage/templates/homepage-home.html:93
-msgid "Latest articles"
+msgid "RSS feed of the latest articles"
 msgstr ""
 
-#: homepage/templates/homepage-home.html:120
+#: homepage/templates/homepage-home.html:94
+msgid "Latest articles"
+msgstr "Τελευταία άρθρα"
+
+#: homepage/templates/homepage-home.html:121
 #, python-format
 msgid "/ Part of serie <a href=\"%(url)s\">%(name)s</a>"
 msgstr ""
 
-#: homepage/templates/homepage-home.html:122
+#: homepage/templates/homepage-home.html:123
 msgid "Visit forum thread for this article"
-msgstr ""
+msgstr "Επισκεφθείτε το νήμα του forum για αυτό το άρθρο"
 
-#: homepage/templates/homepage-home.html:122
+#: homepage/templates/homepage-home.html:123
 msgid "Forum thread"
 msgstr ""
 
-#: homepage/templates/homepage-home.html:127
+#: homepage/templates/homepage-home.html:128
 msgid "Read this article"
-msgstr ""
+msgstr "Διαβάστε αυτό το άρθρο"
 
-#: homepage/templates/homepage-home.html:131
+#: homepage/templates/homepage-home.html:132
 msgid "No articles yet."
-msgstr ""
+msgstr "Κανένα άρθρο ακόμη."
 
 #: media/templates/media-all.html:6
 msgid ""
@@ -567,27 +676,31 @@ msgstr "Παρουσιάστηκε σφάλμα κατά την προσπάθε
 msgid "Official Dolphin Emulator Website"
 msgstr "Επίσημη Ιστοσελίδα Dolphin Εξομοιωτή"
 
-#: templates/_base.html:66
+#: templates/_base.html:23
+msgid "Latest blog articles"
+msgstr ""
+
+#: templates/_base.html:68
 msgid "Screenshots"
 msgstr "Εικόνες"
 
-#: templates/_base.html:67
+#: templates/_base.html:69
 msgid "FAQ"
 msgstr "Συχνές Ερωτήσεις"
 
-#: templates/_base.html:70
+#: templates/_base.html:72
 msgid "Forum"
 msgstr "Forum"
 
-#: templates/_base.html:71
+#: templates/_base.html:73
 msgid "Wiki"
 msgstr "Wiki"
 
-#: templates/_base.html:72
+#: templates/_base.html:74
 msgid "Code"
 msgstr "Κώδικας"
 
-#: templates/_base.html:108
+#: templates/_base.html:110
 msgid ""
 "\n"
 "            &copy; 2013 Dolphin Emulator Project -\n"

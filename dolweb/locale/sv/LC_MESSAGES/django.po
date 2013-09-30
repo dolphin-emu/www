@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-09-22 15:53+0200\n"
-"PO-Revision-Date: 2013-09-22 13:53+0000\n"
+"POT-Creation-Date: 2013-09-30 18:18+0200\n"
+"PO-Revision-Date: 2013-09-30 16:18+0000\n"
 "Last-Translator: delroth <delroth@gmail.com>\n"
 "Language-Team: Swedish (http://www.transifex.com/projects/p/dolphin-emu/language/sv/)\n"
 "MIME-Version: 1.0\n"
@@ -22,6 +22,16 @@ msgstr ""
 #: blog/admin.py:17
 msgid "Content"
 msgstr "Innehåll"
+
+#: blog/feeds.py:24
+#, python-format
+msgid "Entries for the serie %s"
+msgstr ""
+
+#: blog/feeds.py:27
+#, python-format
+msgid "The latest entries for the serie %s"
+msgstr ""
 
 #: blog/models.py:16
 msgid "image"
@@ -48,7 +58,7 @@ msgstr "Bloggserie"
 msgid "See all"
 msgstr "Se alla"
 
-#: blog/templates/series-index.html:21
+#: blog/templates/series-index.html:22
 #, python-format
 msgid ""
 "\n"
@@ -61,28 +71,32 @@ msgid_plural ""
 msgstr[0] "\n    %(count)s inlägg\n  "
 msgstr[1] "\n    %(count)s inlägg\n  "
 
-#: blog/templates/series-index.html:35
+#: blog/templates/series-index.html:27
+msgid "RSS feed:"
+msgstr ""
+
+#: blog/templates/series-index.html:37
 msgid "No blog series yet."
 msgstr "Inga bloggserier ännu."
 
 #: blog/templates/zinnia/_entry_detail_base.html:21
-#: homepage/templates/homepage-home.html:106
+#: homepage/templates/homepage-home.html:107
 msgid "Written by"
 msgstr "Skriven av"
 
 #: blog/templates/zinnia/_entry_detail_base.html:25
-#: homepage/templates/homepage-home.html:110
+#: homepage/templates/homepage-home.html:111
 #, python-format
 msgid "Show all %(author)s's entries"
 msgstr "Visa alla %(author)ss inlägg"
 
 #: blog/templates/zinnia/_entry_detail_base.html:27
-#: homepage/templates/homepage-home.html:112
+#: homepage/templates/homepage-home.html:113
 msgid "on"
-msgstr "på"
+msgstr "den"
 
 #: blog/templates/zinnia/_entry_detail_base.html:29
-#: homepage/templates/homepage-home.html:114
+#: homepage/templates/homepage-home.html:115
 msgid "Written on"
 msgstr "Skriven den"
 
@@ -108,46 +122,57 @@ msgstr "Fortsätt läsa %(object)s"
 msgid "Continue reading"
 msgstr "Fortsätt läsa"
 
+#: blog/templates/zinnia/_entry_detail_base.html:69
+#, python-format
+msgid ""
+"You can continue the discussion in the <a href=\"%(url)s\" title=\"Visit "
+"forum thread for this article\">forum thread</a> of this article."
+msgstr ""
+
 #: blog/templates/zinnia/_entry_detail_base.html:78
+msgid "Blog serie"
+msgstr ""
+
+#: blog/templates/zinnia/_entry_detail_base.html:80
 #, python-format
 msgid ""
 "This article is number %(nth)s within the blog serie\n"
 "    <a href=\"%(url)s\"><em>%(serie)s</em></a>."
 msgstr "Denna artikel är nummer %(nth)s i bloggserien\n    <a href=\"%(url)s\"><em>%(serie)s</em></a>."
 
-#: blog/templates/zinnia/_entry_detail_base.html:83
+#: blog/templates/zinnia/_entry_detail_base.html:85
 msgid "‹ Previous article in serie"
 msgstr "‹ Föregående artikel i serien"
 
-#: blog/templates/zinnia/_entry_detail_base.html:85
+#: blog/templates/zinnia/_entry_detail_base.html:87
 msgid "Next article in serie ›"
 msgstr "Nästa artikel i serien ›"
 
-#: blog/templates/zinnia/_entry_detail_base.html:135
+#: blog/templates/zinnia/_entry_detail_base.html:137
 msgid "Tags"
 msgstr "Taggar"
 
-#: blog/templates/zinnia/_entry_detail_base.html:139
+#: blog/templates/zinnia/_entry_detail_base.html:141
 #, python-format
 msgid "Show all entries tagged by %(tag)s"
 msgstr "Visa alla inlägg taggade med %(tag)s"
 
-#: blog/templates/zinnia/_entry_detail_base.html:142
+#: blog/templates/zinnia/_entry_detail_base.html:144
 msgid "No tags"
 msgstr "Inga taggar"
 
-#: blog/templates/zinnia/_entry_detail_base.html:149
+#: blog/templates/zinnia/_entry_detail_base.html:151
 msgid "Categories"
 msgstr "Kategorier"
 
-#: blog/templates/zinnia/_entry_detail_base.html:153
+#: blog/templates/zinnia/_entry_detail_base.html:155
 #, python-format
 msgid "Show all entries in %(category)s"
 msgstr "Visa alla inlägg i %(category)s"
 
-#: blog/templates/zinnia/_entry_detail_base.html:156
+#: blog/templates/zinnia/_entry_detail_base.html:158
 msgid "No categories"
-msgstr ""
+msgstr "Inga kategorier"
 
 #: blog/templates/zinnia/entry_detail_base.html:22
 msgid "RSS Feed of discussions on"
@@ -186,12 +211,92 @@ msgstr "Liknande inlägg"
 msgid "Edit the entry"
 msgstr "Redigera inlägget"
 
+#: blog/templates/zinnia/entry_list.html:5
+msgid "Latest entries for"
+msgstr ""
+
+#: blog/templates/zinnia/entry_list.html:5
+msgid "the category"
+msgstr ""
+
+#: blog/templates/zinnia/entry_list.html:5
+msgid "the tag"
+msgstr ""
+
+#: blog/templates/zinnia/entry_list.html:5
+msgid "the author"
+msgstr ""
+
+#: blog/templates/zinnia/entry_list.html:5
+msgid "page"
+msgstr ""
+
+#: blog/templates/zinnia/entry_list.html:10
+#: blog/templates/zinnia/entry_list.html:13
+#: blog/templates/zinnia/entry_list.html:16
+msgid "RSS Feed"
+msgstr ""
+
+#: blog/templates/zinnia/entry_list.html:20
+msgid "Latest entries"
+msgstr ""
+
+#: blog/templates/zinnia/entry_list.html:20
+msgid "Category"
+msgstr ""
+
+#: blog/templates/zinnia/entry_list.html:20
+msgid "Tag"
+msgstr ""
+
+#: blog/templates/zinnia/entry_list.html:20
+msgid "Author"
+msgstr ""
+
+#: blog/templates/zinnia/entry_list.html:20
+msgid "Page"
+msgstr ""
+
+#: blog/templates/zinnia/entry_list.html:28
+#, python-format
+msgid "Category archives: %(category)s"
+msgstr ""
+
+#: blog/templates/zinnia/entry_list.html:35
+#, python-format
+msgid "Tag archives: %(tag)s"
+msgstr ""
+
+#: blog/templates/zinnia/entry_list.html:39
+#, python-format
+msgid "Author archives: %(author)s"
+msgstr ""
+
+#: blog/templates/zinnia/entry_list.html:48
+msgid "No entries yet."
+msgstr ""
+
+#: blog/templates/zinnia/entry_list.html:67
+#: blog/templates/zinnia/entry_list.html:68
+msgid "Edit the category"
+msgstr ""
+
+#: blog/templates/zinnia/entry_list.html:74
+#: blog/templates/zinnia/entry_list.html:75
+msgid "Edit the tag"
+msgstr ""
+
+#: blog/templates/zinnia/entry_list.html:81
+#: blog/templates/zinnia/entry_list.html:82
+msgid "Edit the author"
+msgstr ""
+
 #: blog/templates/zinnia/skeleton.html:5
 msgid "Latest news for Dolphin Emulator"
 msgstr "Senaste nyheterna för emulatorn Dolphin"
 
 #: blog/templates/zinnia/skeleton.html:8
-#: blog/templates/zinnia/skeleton.html:13 templates/_base.html:65
+#: blog/templates/zinnia/skeleton.html:13 templates/_base.html:67
 msgid "Articles"
 msgstr "Artiklar"
 
@@ -272,7 +377,7 @@ msgid "Game title (click for details)"
 msgstr "Speltitel (klicka för detaljer)"
 
 #: compat/templates/compat-list.html:57
-#: homepage/templates/homepage-home.html:80 templates/_base.html:69
+#: homepage/templates/homepage-home.html:80 templates/_base.html:71
 msgid "Compatibility"
 msgstr "Kompatibilitet"
 
@@ -322,7 +427,7 @@ msgstr "Gå tillbaka till listan över guider"
 msgid "See all the guides written by the Dolphin team about the emulator."
 msgstr "Se alla guider som Dolphin-teamet har skrivit om emulatorn."
 
-#: docs/templates/docs-guides-index.html:7 templates/_base.html:68
+#: docs/templates/docs-guides-index.html:7 templates/_base.html:70
 msgid "Guides"
 msgstr "Guider"
 
@@ -370,7 +475,7 @@ msgid ""
 msgstr "Ladda ned den senaste versionen av emulatorn Dolphin (%(ver)s) från den officiella webbplatsen."
 
 #: downloads/templates/downloads-index.html:8
-#: downloads/templates/downloads-index.html:27 templates/_base.html:64
+#: downloads/templates/downloads-index.html:27 templates/_base.html:66
 msgid "Download"
 msgstr "Ladda ned"
 
@@ -384,7 +489,7 @@ msgid ""
 "    Stable versions are released after a lot of testing to ensure emulation\n"
 "    performance and stability. However, since they are released less often,\n"
 "    they might be outdated and lacking some new features.\n"
-msgstr "\n    Stabila versioner släpps efter mycket testande för att säkerställa\n    emulatorns prestanda och stabilitet. Eftersom de släpps ofta\n    kan de vara föråldrade och sakna en del nya funktioner.\n"
+msgstr "\n    Stabila versioner släpps efter mycket testande för att säkerställa\n    emulatorns prestanda och stabilitet. Eftersom de inte släpps så ofta\n    kan de vara föråldrade och sakna en del nya funktioner.\n"
 
 #: downloads/templates/downloads-index.html:55
 msgid "No stable release yet"
@@ -486,7 +591,7 @@ msgstr "Officiell webbplats för Dolphin, emulatorn för GameCube och Wii. Ladda
 msgid "GameCube/Wii games on PC"
 msgstr "GameCube-/Wii-spel på PC"
 
-#: homepage/templates/homepage-home.html:30 templates/_base.html:60
+#: homepage/templates/homepage-home.html:30 templates/_base.html:62
 msgid "Dolphin Emulator"
 msgstr "Emulatorn Dolphin"
 
@@ -507,29 +612,33 @@ msgid "Download %(last_release)s for Windows, Mac and Linux »"
 msgstr "Ladda ned %(last_release)s för Windows, Mac och Linux »"
 
 #: homepage/templates/homepage-home.html:93
-msgid "Latest articles"
+msgid "RSS feed of the latest articles"
 msgstr ""
 
-#: homepage/templates/homepage-home.html:120
+#: homepage/templates/homepage-home.html:94
+msgid "Latest articles"
+msgstr "Senaste artiklarna"
+
+#: homepage/templates/homepage-home.html:121
 #, python-format
 msgid "/ Part of serie <a href=\"%(url)s\">%(name)s</a>"
-msgstr ""
+msgstr "/ Del av serien <a href=\"%(url)s\">%(name)s</a>"
 
-#: homepage/templates/homepage-home.html:122
+#: homepage/templates/homepage-home.html:123
 msgid "Visit forum thread for this article"
-msgstr ""
+msgstr "Besök forumtråden för denna artikel"
 
-#: homepage/templates/homepage-home.html:122
+#: homepage/templates/homepage-home.html:123
 msgid "Forum thread"
-msgstr ""
+msgstr "Forumtråd"
 
-#: homepage/templates/homepage-home.html:127
+#: homepage/templates/homepage-home.html:128
 msgid "Read this article"
-msgstr ""
+msgstr "Läs denna artikel"
 
-#: homepage/templates/homepage-home.html:131
+#: homepage/templates/homepage-home.html:132
 msgid "No articles yet."
-msgstr ""
+msgstr "Inga artiklar ännu."
 
 #: media/templates/media-all.html:6
 msgid ""
@@ -567,27 +676,31 @@ msgstr "Ett fel uppstod när denna sida skulle hämtas. Var god uppdatera sidan 
 msgid "Official Dolphin Emulator Website"
 msgstr "Officiell webbplats för emulatorn Dolphin"
 
-#: templates/_base.html:66
+#: templates/_base.html:23
+msgid "Latest blog articles"
+msgstr ""
+
+#: templates/_base.html:68
 msgid "Screenshots"
 msgstr "Skärmdumpar"
 
-#: templates/_base.html:67
+#: templates/_base.html:69
 msgid "FAQ"
 msgstr "Vanliga frågor"
 
-#: templates/_base.html:70
+#: templates/_base.html:72
 msgid "Forum"
 msgstr "Forum"
 
-#: templates/_base.html:71
+#: templates/_base.html:73
 msgid "Wiki"
 msgstr "Wiki"
 
-#: templates/_base.html:72
+#: templates/_base.html:74
 msgid "Code"
 msgstr "Kod"
 
-#: templates/_base.html:108
+#: templates/_base.html:110
 msgid ""
 "\n"
 "            &copy; 2013 Dolphin Emulator Project -\n"

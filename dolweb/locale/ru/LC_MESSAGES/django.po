@@ -12,8 +12,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-09-22 15:53+0200\n"
-"PO-Revision-Date: 2013-09-22 13:53+0000\n"
+"POT-Creation-Date: 2013-09-30 18:18+0200\n"
+"PO-Revision-Date: 2013-09-30 16:18+0000\n"
 "Last-Translator: delroth <delroth@gmail.com>\n"
 "Language-Team: Russian (http://www.transifex.com/projects/p/dolphin-emu/language/ru/)\n"
 "MIME-Version: 1.0\n"
@@ -24,34 +24,44 @@ msgstr ""
 
 #: blog/admin.py:17
 msgid "Content"
+msgstr "Содержимое"
+
+#: blog/feeds.py:24
+#, python-format
+msgid "Entries for the serie %s"
+msgstr ""
+
+#: blog/feeds.py:27
+#, python-format
+msgid "The latest entries for the serie %s"
 msgstr ""
 
 #: blog/models.py:16
 msgid "image"
-msgstr ""
+msgstr "изображение"
 
 #: blog/models.py:17
 msgid "Used for illustration."
-msgstr ""
+msgstr "Использовать для показа"
 
 #: blog/templates/blog_sidebar.html:6
 #: blog/templates/zinnia/tags/search_form.html:5
 msgid "Search articles"
-msgstr ""
+msgstr "Найти статьи"
 
 #: blog/templates/blog_sidebar.html:31
 msgid "Blog tags"
-msgstr ""
+msgstr "Теги"
 
 #: blog/templates/blog_sidebar.html:36
 msgid "Blog series"
-msgstr ""
+msgstr "Группа блогов"
 
 #: blog/templates/blog_sidebar.html:38
 msgid "See all"
-msgstr ""
+msgstr "Посмотреть всё"
 
-#: blog/templates/series-index.html:21
+#: blog/templates/series-index.html:22
 #, python-format
 msgid ""
 "\n"
@@ -61,150 +71,245 @@ msgid_plural ""
 "\n"
 "    %(count)s entries\n"
 "  "
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "\n%(count)s запись"
+msgstr[1] "\n%(count)s записей"
+msgstr[2] "\n%(count)s записей"
 
-#: blog/templates/series-index.html:35
-msgid "No blog series yet."
+#: blog/templates/series-index.html:27
+msgid "RSS feed:"
 msgstr ""
+
+#: blog/templates/series-index.html:37
+msgid "No blog series yet."
+msgstr "Нету блогов этой группы"
 
 #: blog/templates/zinnia/_entry_detail_base.html:21
-#: homepage/templates/homepage-home.html:106
+#: homepage/templates/homepage-home.html:107
 msgid "Written by"
-msgstr ""
+msgstr "Написано"
 
 #: blog/templates/zinnia/_entry_detail_base.html:25
-#: homepage/templates/homepage-home.html:110
+#: homepage/templates/homepage-home.html:111
 #, python-format
 msgid "Show all %(author)s's entries"
-msgstr ""
+msgstr "Показать все записи этого %(author)s's"
 
 #: blog/templates/zinnia/_entry_detail_base.html:27
-#: homepage/templates/homepage-home.html:112
+#: homepage/templates/homepage-home.html:113
 msgid "on"
-msgstr ""
+msgstr "в"
 
 #: blog/templates/zinnia/_entry_detail_base.html:29
-#: homepage/templates/homepage-home.html:114
+#: homepage/templates/homepage-home.html:115
 msgid "Written on"
-msgstr ""
+msgstr "Написано в"
 
 #: blog/templates/zinnia/_entry_detail_base.html:37
 msgid "Last update on"
-msgstr ""
+msgstr "Последнее обновление в"
 
 #: blog/templates/zinnia/_entry_detail_base.html:39
 #, python-format
 msgid "Short URL to %(object)s"
-msgstr ""
+msgstr "Короткий URL к %(object)s"
 
 #: blog/templates/zinnia/_entry_detail_base.html:40
 msgid "Short link"
-msgstr ""
+msgstr "Короткая ссылка"
 
 #: blog/templates/zinnia/_entry_detail_base.html:58
 #, python-format
 msgid "Continue reading %(object)s"
-msgstr ""
+msgstr "Продолжить чтение %(object)s"
 
 #: blog/templates/zinnia/_entry_detail_base.html:60
 msgid "Continue reading"
+msgstr "Продолжить чтение"
+
+#: blog/templates/zinnia/_entry_detail_base.html:69
+#, python-format
+msgid ""
+"You can continue the discussion in the <a href=\"%(url)s\" title=\"Visit "
+"forum thread for this article\">forum thread</a> of this article."
 msgstr ""
 
 #: blog/templates/zinnia/_entry_detail_base.html:78
+msgid "Blog serie"
+msgstr ""
+
+#: blog/templates/zinnia/_entry_detail_base.html:80
 #, python-format
 msgid ""
 "This article is number %(nth)s within the blog serie\n"
 "    <a href=\"%(url)s\"><em>%(serie)s</em></a>."
-msgstr ""
-
-#: blog/templates/zinnia/_entry_detail_base.html:83
-msgid "‹ Previous article in serie"
-msgstr ""
+msgstr "Эта статья имеет номер %(nth)s и находится в группе блогов\n <a href=\"%(url)s\"><em>%(serie)s</em></a>"
 
 #: blog/templates/zinnia/_entry_detail_base.html:85
+msgid "‹ Previous article in serie"
+msgstr "‹ Предыдущая статья в группе"
+
+#: blog/templates/zinnia/_entry_detail_base.html:87
 msgid "Next article in serie ›"
-msgstr ""
+msgstr "Следующая статья в группе ›"
 
-#: blog/templates/zinnia/_entry_detail_base.html:135
+#: blog/templates/zinnia/_entry_detail_base.html:137
 msgid "Tags"
-msgstr ""
+msgstr "Теги"
 
-#: blog/templates/zinnia/_entry_detail_base.html:139
+#: blog/templates/zinnia/_entry_detail_base.html:141
 #, python-format
 msgid "Show all entries tagged by %(tag)s"
-msgstr ""
+msgstr "Показать все записи по %(tag)s"
 
-#: blog/templates/zinnia/_entry_detail_base.html:142
+#: blog/templates/zinnia/_entry_detail_base.html:144
 msgid "No tags"
-msgstr ""
+msgstr "Нет тегов"
 
-#: blog/templates/zinnia/_entry_detail_base.html:149
+#: blog/templates/zinnia/_entry_detail_base.html:151
 msgid "Categories"
-msgstr ""
+msgstr "Категории"
 
-#: blog/templates/zinnia/_entry_detail_base.html:153
+#: blog/templates/zinnia/_entry_detail_base.html:155
 #, python-format
 msgid "Show all entries in %(category)s"
-msgstr ""
+msgstr "Показать все записи по %(category)s"
 
-#: blog/templates/zinnia/_entry_detail_base.html:156
+#: blog/templates/zinnia/_entry_detail_base.html:158
 msgid "No categories"
-msgstr ""
+msgstr "Нет категорий"
 
 #: blog/templates/zinnia/entry_detail_base.html:22
 msgid "RSS Feed of discussions on"
-msgstr ""
+msgstr "RSS лента обсуждений"
 
 #: blog/templates/zinnia/entry_detail_base.html:24
 msgid "RSS Feed of comments on"
-msgstr ""
+msgstr "RSS лента комментариев"
 
 #: blog/templates/zinnia/entry_detail_base.html:26
 msgid "RSS Feed of pingbacks on"
-msgstr ""
+msgstr "RSS лента пингбэков"
 
 #: blog/templates/zinnia/entry_detail_base.html:28
 msgid "RSS Feed of trackbacks on"
-msgstr ""
+msgstr "RSS лента трекбэков"
 
 #: blog/templates/zinnia/entry_detail_base.html:46
 msgid "Next entry"
-msgstr ""
+msgstr "Следующая запись"
 
 #: blog/templates/zinnia/entry_detail_base.html:58
 msgid "Previous entry"
-msgstr ""
+msgstr "Предыдущие записи"
 
 #: blog/templates/zinnia/entry_detail_base.html:70
 msgid "Related entries"
-msgstr ""
+msgstr "Связанные записи"
 
 #: blog/templates/zinnia/entry_detail_base.html:82
 msgid "Similar entries"
-msgstr ""
+msgstr "Похожие записи"
 
 #: blog/templates/zinnia/entry_detail_base.html:224
 #: blog/templates/zinnia/entry_detail_base.html:225
 msgid "Edit the entry"
+msgstr "Изменить запись"
+
+#: blog/templates/zinnia/entry_list.html:5
+msgid "Latest entries for"
+msgstr ""
+
+#: blog/templates/zinnia/entry_list.html:5
+msgid "the category"
+msgstr ""
+
+#: blog/templates/zinnia/entry_list.html:5
+msgid "the tag"
+msgstr ""
+
+#: blog/templates/zinnia/entry_list.html:5
+msgid "the author"
+msgstr ""
+
+#: blog/templates/zinnia/entry_list.html:5
+msgid "page"
+msgstr ""
+
+#: blog/templates/zinnia/entry_list.html:10
+#: blog/templates/zinnia/entry_list.html:13
+#: blog/templates/zinnia/entry_list.html:16
+msgid "RSS Feed"
+msgstr ""
+
+#: blog/templates/zinnia/entry_list.html:20
+msgid "Latest entries"
+msgstr ""
+
+#: blog/templates/zinnia/entry_list.html:20
+msgid "Category"
+msgstr ""
+
+#: blog/templates/zinnia/entry_list.html:20
+msgid "Tag"
+msgstr ""
+
+#: blog/templates/zinnia/entry_list.html:20
+msgid "Author"
+msgstr ""
+
+#: blog/templates/zinnia/entry_list.html:20
+msgid "Page"
+msgstr ""
+
+#: blog/templates/zinnia/entry_list.html:28
+#, python-format
+msgid "Category archives: %(category)s"
+msgstr ""
+
+#: blog/templates/zinnia/entry_list.html:35
+#, python-format
+msgid "Tag archives: %(tag)s"
+msgstr ""
+
+#: blog/templates/zinnia/entry_list.html:39
+#, python-format
+msgid "Author archives: %(author)s"
+msgstr ""
+
+#: blog/templates/zinnia/entry_list.html:48
+msgid "No entries yet."
+msgstr ""
+
+#: blog/templates/zinnia/entry_list.html:67
+#: blog/templates/zinnia/entry_list.html:68
+msgid "Edit the category"
+msgstr ""
+
+#: blog/templates/zinnia/entry_list.html:74
+#: blog/templates/zinnia/entry_list.html:75
+msgid "Edit the tag"
+msgstr ""
+
+#: blog/templates/zinnia/entry_list.html:81
+#: blog/templates/zinnia/entry_list.html:82
+msgid "Edit the author"
 msgstr ""
 
 #: blog/templates/zinnia/skeleton.html:5
 msgid "Latest news for Dolphin Emulator"
-msgstr ""
+msgstr "Последние новости о Dolphin Emulator"
 
 #: blog/templates/zinnia/skeleton.html:8
-#: blog/templates/zinnia/skeleton.html:13 templates/_base.html:65
+#: blog/templates/zinnia/skeleton.html:13 templates/_base.html:67
 msgid "Articles"
-msgstr ""
+msgstr "Статьи"
 
 #: blog/templates/zinnia/tags/search_form.html:16
 msgid ""
 "You can use - to exclude words or phrases, &quot;double quotes&quot; for "
 "exact phrases and the AND/OR boolean operators combined with parenthesis for"
 " complex queries."
-msgstr ""
+msgstr "Вы можете использовать для исключения слов или фраз \"двойные кавычки\" для определенных фраз и AND/OR бинарныe операторы комбинируя с предложениями для комлексных запросов."
 
 #: compat/templates/compat-list.html:8
 msgid ""
@@ -276,7 +381,7 @@ msgid "Game title (click for details)"
 msgstr "Название игры (кликните для подробностей)"
 
 #: compat/templates/compat-list.html:57
-#: homepage/templates/homepage-home.html:80 templates/_base.html:69
+#: homepage/templates/homepage-home.html:80 templates/_base.html:71
 msgid "Compatibility"
 msgstr "Совместимость"
 
@@ -326,7 +431,7 @@ msgstr "Вернуться к списку руководств"
 msgid "See all the guides written by the Dolphin team about the emulator."
 msgstr "Посмотреть все руководства написанные командой разработчиков об эмуляторе"
 
-#: docs/templates/docs-guides-index.html:7 templates/_base.html:68
+#: docs/templates/docs-guides-index.html:7 templates/_base.html:70
 msgid "Guides"
 msgstr "Инструкции"
 
@@ -374,7 +479,7 @@ msgid ""
 msgstr "Скачать последнюю версию эмулятора Dolphin (%(ver)s) с официального сайта"
 
 #: downloads/templates/downloads-index.html:8
-#: downloads/templates/downloads-index.html:27 templates/_base.html:64
+#: downloads/templates/downloads-index.html:27 templates/_base.html:66
 msgid "Download"
 msgstr "Загрузить"
 
@@ -388,7 +493,7 @@ msgid ""
 "    Stable versions are released after a lot of testing to ensure emulation\n"
 "    performance and stability. However, since they are released less often,\n"
 "    they might be outdated and lacking some new features.\n"
-msgstr ""
+msgstr "\nСтабильные версии выпускаются после долгого периода тестирования, чтобы обеспечить качественную эмуляцию, \n производительность и стабильность. Однако, поскольку они выпускаются реже, \n они могут быть устаревшими и в них может не хватать некоторых новых функций.\n"
 
 #: downloads/templates/downloads-index.html:55
 msgid "No stable release yet"
@@ -405,7 +510,7 @@ msgid ""
 "    Dolphin, several times every day! Using development versions enables you to\n"
 "    use the latest and greatest improvements to the project. They are however\n"
 "    less tested than stable versions of the emulator.\n"
-msgstr ""
+msgstr "\nРазрабатываемые версии выпускаются каждый раз, когда разработчики вносят изменения в эмулятор. Используя последнюю версию, вы получаете самые полезные и современные улучшения в проекте. Однако их меньше, чем в стабильной версии.\n"
 
 #: downloads/templates/downloads-index.html:85
 msgid "Only displaying the <tt>master</tt> branch versions."
@@ -490,7 +595,7 @@ msgstr "Официальный сайт Dolphin, эмулятора GameCube и 
 msgid "GameCube/Wii games on PC"
 msgstr "Игры от GameCube/Wii на ПК"
 
-#: homepage/templates/homepage-home.html:30 templates/_base.html:60
+#: homepage/templates/homepage-home.html:30 templates/_base.html:62
 msgid "Dolphin Emulator"
 msgstr "Dolphin Emulator"
 
@@ -503,37 +608,41 @@ msgid ""
 "            (1080p) with several enhancements: compatibility with all PC\n"
 "            controllers, turbo speed, networked multiplayer, and even more!\n"
 "            "
-msgstr ""
+msgstr "\n<b>Dolphin</b> это эмулятор двух игровых консолей от Nintendo:\n<b>GameCube</b> и <b>Wii</b>. Он позволяет ПК игрокам насладиться играми этих консолей в полном HD (1080p) c различными улучшениями: совместимость со всеми ПК, джойстики, повышение скорости, сетевой мультиплеер и т.д.!"
 
 #: homepage/templates/homepage-home.html:41
 #, python-format
 msgid "Download %(last_release)s for Windows, Mac and Linux »"
-msgstr ""
+msgstr "Загрузить %(last_release)s для Windows, Mac и Linux »"
 
 #: homepage/templates/homepage-home.html:93
-msgid "Latest articles"
+msgid "RSS feed of the latest articles"
 msgstr ""
 
-#: homepage/templates/homepage-home.html:120
+#: homepage/templates/homepage-home.html:94
+msgid "Latest articles"
+msgstr "Последние статьи"
+
+#: homepage/templates/homepage-home.html:121
 #, python-format
 msgid "/ Part of serie <a href=\"%(url)s\">%(name)s</a>"
-msgstr ""
+msgstr "/ Часть группы <a href=\"%(url)s\">%(name)s</a>"
 
-#: homepage/templates/homepage-home.html:122
+#: homepage/templates/homepage-home.html:123
 msgid "Visit forum thread for this article"
-msgstr ""
+msgstr "Тема на форуме для этой статьи"
 
-#: homepage/templates/homepage-home.html:122
+#: homepage/templates/homepage-home.html:123
 msgid "Forum thread"
-msgstr ""
+msgstr "Тема на форуме"
 
-#: homepage/templates/homepage-home.html:127
+#: homepage/templates/homepage-home.html:128
 msgid "Read this article"
-msgstr ""
+msgstr "Прочитать эту статью"
 
-#: homepage/templates/homepage-home.html:131
+#: homepage/templates/homepage-home.html:132
 msgid "No articles yet."
-msgstr ""
+msgstr "Статей нет"
 
 #: media/templates/media-all.html:6
 msgid ""
@@ -571,30 +680,34 @@ msgstr "Возникла ошибка при загрузке этой стра�
 msgid "Official Dolphin Emulator Website"
 msgstr "Официальный сайт эмулятора Dolphin"
 
-#: templates/_base.html:66
+#: templates/_base.html:23
+msgid "Latest blog articles"
+msgstr ""
+
+#: templates/_base.html:68
 msgid "Screenshots"
 msgstr "Скриншоты"
 
-#: templates/_base.html:67
+#: templates/_base.html:69
 msgid "FAQ"
 msgstr "ЧАВО"
 
-#: templates/_base.html:70
+#: templates/_base.html:72
 msgid "Forum"
 msgstr "Форум"
 
-#: templates/_base.html:71
+#: templates/_base.html:73
 msgid "Wiki"
 msgstr "Энциклопедия"
 
-#: templates/_base.html:72
+#: templates/_base.html:74
 msgid "Code"
 msgstr "Код"
 
-#: templates/_base.html:108
+#: templates/_base.html:110
 msgid ""
 "\n"
 "            &copy; 2013 Dolphin Emulator Project -\n"
 "            <a href=\"https://github.com/dolphin-emu/www/\">Website source code</a>\n"
 "            "
-msgstr ""
+msgstr "\n &copy; 2013 Dolphin Emulator Project -\n <a href=\"https://github.com/dolphin-emu/www/\">Исходный код сайта</a>\n "

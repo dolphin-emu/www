@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-09-22 15:53+0200\n"
-"PO-Revision-Date: 2013-09-22 13:53+0000\n"
+"POT-Creation-Date: 2013-09-30 18:18+0200\n"
+"PO-Revision-Date: 2013-09-30 16:18+0000\n"
 "Last-Translator: delroth <delroth@gmail.com>\n"
 "Language-Team: Korean (http://www.transifex.com/projects/p/dolphin-emu/language/ko/)\n"
 "MIME-Version: 1.0\n"
@@ -21,34 +21,44 @@ msgstr ""
 
 #: blog/admin.py:17
 msgid "Content"
+msgstr "컨텐트"
+
+#: blog/feeds.py:24
+#, python-format
+msgid "Entries for the serie %s"
+msgstr ""
+
+#: blog/feeds.py:27
+#, python-format
+msgid "The latest entries for the serie %s"
 msgstr ""
 
 #: blog/models.py:16
 msgid "image"
-msgstr ""
+msgstr "이미지"
 
 #: blog/models.py:17
 msgid "Used for illustration."
-msgstr ""
+msgstr "삽화에 사용되는"
 
 #: blog/templates/blog_sidebar.html:6
 #: blog/templates/zinnia/tags/search_form.html:5
 msgid "Search articles"
-msgstr ""
+msgstr "기사 검색"
 
 #: blog/templates/blog_sidebar.html:31
 msgid "Blog tags"
-msgstr ""
+msgstr "블로그 태그"
 
 #: blog/templates/blog_sidebar.html:36
 msgid "Blog series"
-msgstr ""
+msgstr "블로그 시리즈"
 
 #: blog/templates/blog_sidebar.html:38
 msgid "See all"
-msgstr ""
+msgstr "모두 보기"
 
-#: blog/templates/series-index.html:21
+#: blog/templates/series-index.html:22
 #, python-format
 msgid ""
 "\n"
@@ -58,148 +68,243 @@ msgid_plural ""
 "\n"
 "    %(count)s entries\n"
 "  "
-msgstr[0] ""
+msgstr[0] "\n    %(count)s 엔드리\n  "
 
-#: blog/templates/series-index.html:35
-msgid "No blog series yet."
+#: blog/templates/series-index.html:27
+msgid "RSS feed:"
 msgstr ""
+
+#: blog/templates/series-index.html:37
+msgid "No blog series yet."
+msgstr "블로그 시리즈가 아직 없음."
 
 #: blog/templates/zinnia/_entry_detail_base.html:21
-#: homepage/templates/homepage-home.html:106
+#: homepage/templates/homepage-home.html:107
 msgid "Written by"
-msgstr ""
+msgstr "의해 작성된"
 
 #: blog/templates/zinnia/_entry_detail_base.html:25
-#: homepage/templates/homepage-home.html:110
+#: homepage/templates/homepage-home.html:111
 #, python-format
 msgid "Show all %(author)s's entries"
-msgstr ""
+msgstr "모든 %(author)s's 엔트리 보기"
 
 #: blog/templates/zinnia/_entry_detail_base.html:27
-#: homepage/templates/homepage-home.html:112
+#: homepage/templates/homepage-home.html:113
 msgid "on"
-msgstr ""
+msgstr "활성"
 
 #: blog/templates/zinnia/_entry_detail_base.html:29
-#: homepage/templates/homepage-home.html:114
+#: homepage/templates/homepage-home.html:115
 msgid "Written on"
-msgstr ""
+msgstr "작성 활성"
 
 #: blog/templates/zinnia/_entry_detail_base.html:37
 msgid "Last update on"
-msgstr ""
+msgstr "최근 업데이트 활성"
 
 #: blog/templates/zinnia/_entry_detail_base.html:39
 #, python-format
 msgid "Short URL to %(object)s"
-msgstr ""
+msgstr "짧은 URL to %(object)s"
 
 #: blog/templates/zinnia/_entry_detail_base.html:40
 msgid "Short link"
-msgstr ""
+msgstr "짧은 링크"
 
 #: blog/templates/zinnia/_entry_detail_base.html:58
 #, python-format
 msgid "Continue reading %(object)s"
-msgstr ""
+msgstr "%(object)s 계속 읽기"
 
 #: blog/templates/zinnia/_entry_detail_base.html:60
 msgid "Continue reading"
+msgstr "계속 읽기"
+
+#: blog/templates/zinnia/_entry_detail_base.html:69
+#, python-format
+msgid ""
+"You can continue the discussion in the <a href=\"%(url)s\" title=\"Visit "
+"forum thread for this article\">forum thread</a> of this article."
 msgstr ""
 
 #: blog/templates/zinnia/_entry_detail_base.html:78
+msgid "Blog serie"
+msgstr ""
+
+#: blog/templates/zinnia/_entry_detail_base.html:80
 #, python-format
 msgid ""
 "This article is number %(nth)s within the blog serie\n"
 "    <a href=\"%(url)s\"><em>%(serie)s</em></a>."
-msgstr ""
-
-#: blog/templates/zinnia/_entry_detail_base.html:83
-msgid "‹ Previous article in serie"
-msgstr ""
+msgstr "이 기사는 블로그 시리안에 넘버 %(nth)s 입니다\n    <a href=\"%(url)s\"><em>%(serie)s</em></a>."
 
 #: blog/templates/zinnia/_entry_detail_base.html:85
+msgid "‹ Previous article in serie"
+msgstr "‹ 시리 안에 이전 기사"
+
+#: blog/templates/zinnia/_entry_detail_base.html:87
 msgid "Next article in serie ›"
-msgstr ""
+msgstr "시리안에 다음 기사 ›"
 
-#: blog/templates/zinnia/_entry_detail_base.html:135
+#: blog/templates/zinnia/_entry_detail_base.html:137
 msgid "Tags"
-msgstr ""
+msgstr "태그"
 
-#: blog/templates/zinnia/_entry_detail_base.html:139
+#: blog/templates/zinnia/_entry_detail_base.html:141
 #, python-format
 msgid "Show all entries tagged by %(tag)s"
-msgstr ""
+msgstr "%(tag)s 에 의해 태그된 모든 엔트리들 보기"
 
-#: blog/templates/zinnia/_entry_detail_base.html:142
+#: blog/templates/zinnia/_entry_detail_base.html:144
 msgid "No tags"
-msgstr ""
+msgstr "태그 없음"
 
-#: blog/templates/zinnia/_entry_detail_base.html:149
+#: blog/templates/zinnia/_entry_detail_base.html:151
 msgid "Categories"
-msgstr ""
+msgstr "범주"
 
-#: blog/templates/zinnia/_entry_detail_base.html:153
+#: blog/templates/zinnia/_entry_detail_base.html:155
 #, python-format
 msgid "Show all entries in %(category)s"
-msgstr ""
+msgstr "%(category)s 안에 모든 엔트리 보기"
 
-#: blog/templates/zinnia/_entry_detail_base.html:156
+#: blog/templates/zinnia/_entry_detail_base.html:158
 msgid "No categories"
-msgstr ""
+msgstr "범주가 없음"
 
 #: blog/templates/zinnia/entry_detail_base.html:22
 msgid "RSS Feed of discussions on"
-msgstr ""
+msgstr "RSS Feed 논의들 켜짐"
 
 #: blog/templates/zinnia/entry_detail_base.html:24
 msgid "RSS Feed of comments on"
-msgstr ""
+msgstr "RSS Feed 커멘트 켜짐"
 
 #: blog/templates/zinnia/entry_detail_base.html:26
 msgid "RSS Feed of pingbacks on"
-msgstr ""
+msgstr "RSS Feed 핑백 켜짐"
 
 #: blog/templates/zinnia/entry_detail_base.html:28
 msgid "RSS Feed of trackbacks on"
-msgstr ""
+msgstr "RSS Feed 트랙백 켜짐"
 
 #: blog/templates/zinnia/entry_detail_base.html:46
 msgid "Next entry"
-msgstr ""
+msgstr "다음 엔트리"
 
 #: blog/templates/zinnia/entry_detail_base.html:58
 msgid "Previous entry"
-msgstr ""
+msgstr "이전 엔트리"
 
 #: blog/templates/zinnia/entry_detail_base.html:70
 msgid "Related entries"
-msgstr ""
+msgstr "관련 엔트리들"
 
 #: blog/templates/zinnia/entry_detail_base.html:82
 msgid "Similar entries"
-msgstr ""
+msgstr "비슷한 엔트리들"
 
 #: blog/templates/zinnia/entry_detail_base.html:224
 #: blog/templates/zinnia/entry_detail_base.html:225
 msgid "Edit the entry"
+msgstr "엔트리 수정하기"
+
+#: blog/templates/zinnia/entry_list.html:5
+msgid "Latest entries for"
+msgstr ""
+
+#: blog/templates/zinnia/entry_list.html:5
+msgid "the category"
+msgstr ""
+
+#: blog/templates/zinnia/entry_list.html:5
+msgid "the tag"
+msgstr ""
+
+#: blog/templates/zinnia/entry_list.html:5
+msgid "the author"
+msgstr ""
+
+#: blog/templates/zinnia/entry_list.html:5
+msgid "page"
+msgstr ""
+
+#: blog/templates/zinnia/entry_list.html:10
+#: blog/templates/zinnia/entry_list.html:13
+#: blog/templates/zinnia/entry_list.html:16
+msgid "RSS Feed"
+msgstr ""
+
+#: blog/templates/zinnia/entry_list.html:20
+msgid "Latest entries"
+msgstr ""
+
+#: blog/templates/zinnia/entry_list.html:20
+msgid "Category"
+msgstr ""
+
+#: blog/templates/zinnia/entry_list.html:20
+msgid "Tag"
+msgstr ""
+
+#: blog/templates/zinnia/entry_list.html:20
+msgid "Author"
+msgstr ""
+
+#: blog/templates/zinnia/entry_list.html:20
+msgid "Page"
+msgstr ""
+
+#: blog/templates/zinnia/entry_list.html:28
+#, python-format
+msgid "Category archives: %(category)s"
+msgstr ""
+
+#: blog/templates/zinnia/entry_list.html:35
+#, python-format
+msgid "Tag archives: %(tag)s"
+msgstr ""
+
+#: blog/templates/zinnia/entry_list.html:39
+#, python-format
+msgid "Author archives: %(author)s"
+msgstr ""
+
+#: blog/templates/zinnia/entry_list.html:48
+msgid "No entries yet."
+msgstr ""
+
+#: blog/templates/zinnia/entry_list.html:67
+#: blog/templates/zinnia/entry_list.html:68
+msgid "Edit the category"
+msgstr ""
+
+#: blog/templates/zinnia/entry_list.html:74
+#: blog/templates/zinnia/entry_list.html:75
+msgid "Edit the tag"
+msgstr ""
+
+#: blog/templates/zinnia/entry_list.html:81
+#: blog/templates/zinnia/entry_list.html:82
+msgid "Edit the author"
 msgstr ""
 
 #: blog/templates/zinnia/skeleton.html:5
 msgid "Latest news for Dolphin Emulator"
-msgstr ""
+msgstr "돌핀 에뮬레이터 최신 뉴스들"
 
 #: blog/templates/zinnia/skeleton.html:8
-#: blog/templates/zinnia/skeleton.html:13 templates/_base.html:65
+#: blog/templates/zinnia/skeleton.html:13 templates/_base.html:67
 msgid "Articles"
-msgstr ""
+msgstr "기사들"
 
 #: blog/templates/zinnia/tags/search_form.html:16
 msgid ""
 "You can use - to exclude words or phrases, &quot;double quotes&quot; for "
 "exact phrases and the AND/OR boolean operators combined with parenthesis for"
 " complex queries."
-msgstr ""
+msgstr "사용할 수 있음 - 단어들 어구들을 제외하기위해, &quot;double quotes&quot; 정확한 어구들에 대해 그리고 복잡한 쿼리들에 대해 괄호로 조합된 AND/OR 불리언 오퍼레이터들."
 
 #: compat/templates/compat-list.html:8
 msgid ""
@@ -271,7 +376,7 @@ msgid "Game title (click for details)"
 msgstr "게임 타이틀 (세부사항은 클릭)"
 
 #: compat/templates/compat-list.html:57
-#: homepage/templates/homepage-home.html:80 templates/_base.html:69
+#: homepage/templates/homepage-home.html:80 templates/_base.html:71
 msgid "Compatibility"
 msgstr "호환성"
 
@@ -321,7 +426,7 @@ msgstr "가이드 목록으로 돌아갑니다"
 msgid "See all the guides written by the Dolphin team about the emulator."
 msgstr "에뮬레이터에 대한 돌핀팀에 의해 쓰여진 모든 안내를 보세요."
 
-#: docs/templates/docs-guides-index.html:7 templates/_base.html:68
+#: docs/templates/docs-guides-index.html:7 templates/_base.html:70
 msgid "Guides"
 msgstr "가이드"
 
@@ -369,7 +474,7 @@ msgid ""
 msgstr "공식 홈페이지에서 돌핀 에뮬레이터의 가장 최신 버전 (%(ver)s) 을 다운로드합니다 ."
 
 #: downloads/templates/downloads-index.html:8
-#: downloads/templates/downloads-index.html:27 templates/_base.html:64
+#: downloads/templates/downloads-index.html:27 templates/_base.html:66
 msgid "Download"
 msgstr "다운로드"
 
@@ -485,7 +590,7 @@ msgstr "공식 돌핀 웹사이트, 게임큐브와 Wii 에뮬레이터. 최신 
 msgid "GameCube/Wii games on PC"
 msgstr "PC에서 게임큐브/위 게임"
 
-#: homepage/templates/homepage-home.html:30 templates/_base.html:60
+#: homepage/templates/homepage-home.html:30 templates/_base.html:62
 msgid "Dolphin Emulator"
 msgstr "돌핀 에뮬레이터"
 
@@ -498,37 +603,41 @@ msgid ""
 "            (1080p) with several enhancements: compatibility with all PC\n"
 "            controllers, turbo speed, networked multiplayer, and even more!\n"
 "            "
-msgstr ""
+msgstr "\n            <b>돌핀</b>은 두 최근 닌텐도 비디오 게임 콘솔: <b>게임큐브</b>와 <b>Wii</b>\n            에 대한 에뮬레이터입니다. 이것은 PC 게이머들이 \n            이 두 콘솔들에 대한 게임들을 <b>full HD</b> (1080p) 해상도로 \n            즐기도록해줍니다 몇가지 향상들: 모든 PC 컨트롤러, 터보 스피드, \n            네트워크 멀티플레이어, 더 많은 것들과 호환성을 가지고!\n            "
 
 #: homepage/templates/homepage-home.html:41
 #, python-format
 msgid "Download %(last_release)s for Windows, Mac and Linux »"
-msgstr ""
+msgstr "윈도우, 맥, 리눅스 용 %(last_release)s 다운로드 »"
 
 #: homepage/templates/homepage-home.html:93
-msgid "Latest articles"
+msgid "RSS feed of the latest articles"
 msgstr ""
 
-#: homepage/templates/homepage-home.html:120
+#: homepage/templates/homepage-home.html:94
+msgid "Latest articles"
+msgstr "최근 기사들"
+
+#: homepage/templates/homepage-home.html:121
 #, python-format
 msgid "/ Part of serie <a href=\"%(url)s\">%(name)s</a>"
-msgstr ""
+msgstr "/ 시리의 일부 <a href=\"%(url)s\">%(name)s</a>"
 
-#: homepage/templates/homepage-home.html:122
+#: homepage/templates/homepage-home.html:123
 msgid "Visit forum thread for this article"
-msgstr ""
+msgstr "이 기사에 대해 포럼 쓰레드를 방문합니다"
 
-#: homepage/templates/homepage-home.html:122
+#: homepage/templates/homepage-home.html:123
 msgid "Forum thread"
-msgstr ""
+msgstr "포럼 쓰레드"
 
-#: homepage/templates/homepage-home.html:127
+#: homepage/templates/homepage-home.html:128
 msgid "Read this article"
-msgstr ""
+msgstr "이 기사 읽기"
 
-#: homepage/templates/homepage-home.html:131
+#: homepage/templates/homepage-home.html:132
 msgid "No articles yet."
-msgstr ""
+msgstr "기사가 아직 없음."
 
 #: media/templates/media-all.html:6
 msgid ""
@@ -566,30 +675,34 @@ msgstr "이 페이지를 접속하는 동안 에러가 있었습니다. 몇 초�
 msgid "Official Dolphin Emulator Website"
 msgstr "공식 돌핀 에뮬레이터 웹사이트"
 
-#: templates/_base.html:66
+#: templates/_base.html:23
+msgid "Latest blog articles"
+msgstr ""
+
+#: templates/_base.html:68
 msgid "Screenshots"
 msgstr "스크린샷"
 
-#: templates/_base.html:67
+#: templates/_base.html:69
 msgid "FAQ"
 msgstr "FAQ"
 
-#: templates/_base.html:70
+#: templates/_base.html:72
 msgid "Forum"
 msgstr "포럼"
 
-#: templates/_base.html:71
+#: templates/_base.html:73
 msgid "Wiki"
 msgstr "위키"
 
-#: templates/_base.html:72
+#: templates/_base.html:74
 msgid "Code"
 msgstr "코드"
 
-#: templates/_base.html:108
+#: templates/_base.html:110
 msgid ""
 "\n"
 "            &copy; 2013 Dolphin Emulator Project -\n"
 "            <a href=\"https://github.com/dolphin-emu/www/\">Website source code</a>\n"
 "            "
-msgstr ""
+msgstr "\n            &copy; 2013 돌핀 에뮬레이터 프로젝트 -\n            <a href=\"https://github.com/dolphin-emu/www/\">웹사이트 소스 코드</a>\n            "

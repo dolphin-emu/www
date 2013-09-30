@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-09-22 15:53+0200\n"
-"PO-Revision-Date: 2013-09-22 13:53+0000\n"
+"POT-Creation-Date: 2013-09-30 18:18+0200\n"
+"PO-Revision-Date: 2013-09-30 16:18+0000\n"
 "Last-Translator: delroth <delroth@gmail.com>\n"
 "Language-Team: Dutch (http://www.transifex.com/projects/p/dolphin-emu/language/nl/)\n"
 "MIME-Version: 1.0\n"
@@ -20,34 +20,44 @@ msgstr ""
 
 #: blog/admin.py:17
 msgid "Content"
+msgstr "Inhoud"
+
+#: blog/feeds.py:24
+#, python-format
+msgid "Entries for the serie %s"
+msgstr ""
+
+#: blog/feeds.py:27
+#, python-format
+msgid "The latest entries for the serie %s"
 msgstr ""
 
 #: blog/models.py:16
 msgid "image"
-msgstr ""
+msgstr "afbeelding"
 
 #: blog/models.py:17
 msgid "Used for illustration."
-msgstr ""
+msgstr "Gebruikt voor illustratie."
 
 #: blog/templates/blog_sidebar.html:6
 #: blog/templates/zinnia/tags/search_form.html:5
 msgid "Search articles"
-msgstr ""
+msgstr "Zoek artikelen"
 
 #: blog/templates/blog_sidebar.html:31
 msgid "Blog tags"
-msgstr ""
+msgstr "Blog tags"
 
 #: blog/templates/blog_sidebar.html:36
 msgid "Blog series"
-msgstr ""
+msgstr "Blog series"
 
 #: blog/templates/blog_sidebar.html:38
 msgid "See all"
-msgstr ""
+msgstr "Bekijk alles"
 
-#: blog/templates/series-index.html:21
+#: blog/templates/series-index.html:22
 #, python-format
 msgid ""
 "\n"
@@ -57,149 +67,244 @@ msgid_plural ""
 "\n"
 "    %(count)s entries\n"
 "  "
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "\n    %(count)s inzending\n  "
+msgstr[1] "\n    %(count)s inzendingen\n  "
 
-#: blog/templates/series-index.html:35
-msgid "No blog series yet."
+#: blog/templates/series-index.html:27
+msgid "RSS feed:"
 msgstr ""
+
+#: blog/templates/series-index.html:37
+msgid "No blog series yet."
+msgstr "Geen blog series beschikbaar."
 
 #: blog/templates/zinnia/_entry_detail_base.html:21
-#: homepage/templates/homepage-home.html:106
+#: homepage/templates/homepage-home.html:107
 msgid "Written by"
-msgstr ""
+msgstr "Geschreven door"
 
 #: blog/templates/zinnia/_entry_detail_base.html:25
-#: homepage/templates/homepage-home.html:110
+#: homepage/templates/homepage-home.html:111
 #, python-format
 msgid "Show all %(author)s's entries"
-msgstr ""
+msgstr "Toon alle %(author)s's inzendingen"
 
 #: blog/templates/zinnia/_entry_detail_base.html:27
-#: homepage/templates/homepage-home.html:112
+#: homepage/templates/homepage-home.html:113
 msgid "on"
-msgstr ""
+msgstr "op"
 
 #: blog/templates/zinnia/_entry_detail_base.html:29
-#: homepage/templates/homepage-home.html:114
+#: homepage/templates/homepage-home.html:115
 msgid "Written on"
-msgstr ""
+msgstr "Geschreven op"
 
 #: blog/templates/zinnia/_entry_detail_base.html:37
 msgid "Last update on"
-msgstr ""
+msgstr "Laatst geüpdatet"
 
 #: blog/templates/zinnia/_entry_detail_base.html:39
 #, python-format
 msgid "Short URL to %(object)s"
-msgstr ""
+msgstr "Korte URL naar %(object)s"
 
 #: blog/templates/zinnia/_entry_detail_base.html:40
 msgid "Short link"
-msgstr ""
+msgstr "Korte link"
 
 #: blog/templates/zinnia/_entry_detail_base.html:58
 #, python-format
 msgid "Continue reading %(object)s"
-msgstr ""
+msgstr "Lees verder %(object)s"
 
 #: blog/templates/zinnia/_entry_detail_base.html:60
 msgid "Continue reading"
+msgstr "Lees verder"
+
+#: blog/templates/zinnia/_entry_detail_base.html:69
+#, python-format
+msgid ""
+"You can continue the discussion in the <a href=\"%(url)s\" title=\"Visit "
+"forum thread for this article\">forum thread</a> of this article."
 msgstr ""
 
 #: blog/templates/zinnia/_entry_detail_base.html:78
+msgid "Blog serie"
+msgstr ""
+
+#: blog/templates/zinnia/_entry_detail_base.html:80
 #, python-format
 msgid ""
 "This article is number %(nth)s within the blog serie\n"
 "    <a href=\"%(url)s\"><em>%(serie)s</em></a>."
-msgstr ""
-
-#: blog/templates/zinnia/_entry_detail_base.html:83
-msgid "‹ Previous article in serie"
-msgstr ""
+msgstr "Deze artikel is nummer %(nth)s in de blog serie\n    <a href=\"%(url)s\"><em>%(serie)s</em></a>."
 
 #: blog/templates/zinnia/_entry_detail_base.html:85
+msgid "‹ Previous article in serie"
+msgstr "< Vorige artikel in de serie"
+
+#: blog/templates/zinnia/_entry_detail_base.html:87
 msgid "Next article in serie ›"
-msgstr ""
+msgstr "Volgende artikel in de serie >"
 
-#: blog/templates/zinnia/_entry_detail_base.html:135
+#: blog/templates/zinnia/_entry_detail_base.html:137
 msgid "Tags"
-msgstr ""
+msgstr "Tags"
 
-#: blog/templates/zinnia/_entry_detail_base.html:139
+#: blog/templates/zinnia/_entry_detail_base.html:141
 #, python-format
 msgid "Show all entries tagged by %(tag)s"
-msgstr ""
+msgstr "Toon alle inzendingen getagd door %(tag)s"
 
-#: blog/templates/zinnia/_entry_detail_base.html:142
+#: blog/templates/zinnia/_entry_detail_base.html:144
 msgid "No tags"
-msgstr ""
+msgstr "Geen tags"
 
-#: blog/templates/zinnia/_entry_detail_base.html:149
+#: blog/templates/zinnia/_entry_detail_base.html:151
 msgid "Categories"
-msgstr ""
+msgstr "Categorieën"
 
-#: blog/templates/zinnia/_entry_detail_base.html:153
+#: blog/templates/zinnia/_entry_detail_base.html:155
 #, python-format
 msgid "Show all entries in %(category)s"
-msgstr ""
+msgstr "Toon alle inzendingen in %(category)s"
 
-#: blog/templates/zinnia/_entry_detail_base.html:156
+#: blog/templates/zinnia/_entry_detail_base.html:158
 msgid "No categories"
-msgstr ""
+msgstr "Geen categorieën"
 
 #: blog/templates/zinnia/entry_detail_base.html:22
 msgid "RSS Feed of discussions on"
-msgstr ""
+msgstr "RSS FEED van discussies op"
 
 #: blog/templates/zinnia/entry_detail_base.html:24
 msgid "RSS Feed of comments on"
-msgstr ""
+msgstr "RSS Feed van comments op"
 
 #: blog/templates/zinnia/entry_detail_base.html:26
 msgid "RSS Feed of pingbacks on"
-msgstr ""
+msgstr "RSS Feed van pingbacks op"
 
 #: blog/templates/zinnia/entry_detail_base.html:28
 msgid "RSS Feed of trackbacks on"
-msgstr ""
+msgstr "RSS Feed van trackbacks op"
 
 #: blog/templates/zinnia/entry_detail_base.html:46
 msgid "Next entry"
-msgstr ""
+msgstr "Volgende inzending"
 
 #: blog/templates/zinnia/entry_detail_base.html:58
 msgid "Previous entry"
-msgstr ""
+msgstr "Vorige inzending"
 
 #: blog/templates/zinnia/entry_detail_base.html:70
 msgid "Related entries"
-msgstr ""
+msgstr "Gerelateerde inzendingen"
 
 #: blog/templates/zinnia/entry_detail_base.html:82
 msgid "Similar entries"
-msgstr ""
+msgstr "Soortgelijke inzendingen"
 
 #: blog/templates/zinnia/entry_detail_base.html:224
 #: blog/templates/zinnia/entry_detail_base.html:225
 msgid "Edit the entry"
+msgstr "Bewerk inzending"
+
+#: blog/templates/zinnia/entry_list.html:5
+msgid "Latest entries for"
+msgstr ""
+
+#: blog/templates/zinnia/entry_list.html:5
+msgid "the category"
+msgstr ""
+
+#: blog/templates/zinnia/entry_list.html:5
+msgid "the tag"
+msgstr ""
+
+#: blog/templates/zinnia/entry_list.html:5
+msgid "the author"
+msgstr ""
+
+#: blog/templates/zinnia/entry_list.html:5
+msgid "page"
+msgstr ""
+
+#: blog/templates/zinnia/entry_list.html:10
+#: blog/templates/zinnia/entry_list.html:13
+#: blog/templates/zinnia/entry_list.html:16
+msgid "RSS Feed"
+msgstr ""
+
+#: blog/templates/zinnia/entry_list.html:20
+msgid "Latest entries"
+msgstr ""
+
+#: blog/templates/zinnia/entry_list.html:20
+msgid "Category"
+msgstr ""
+
+#: blog/templates/zinnia/entry_list.html:20
+msgid "Tag"
+msgstr ""
+
+#: blog/templates/zinnia/entry_list.html:20
+msgid "Author"
+msgstr ""
+
+#: blog/templates/zinnia/entry_list.html:20
+msgid "Page"
+msgstr ""
+
+#: blog/templates/zinnia/entry_list.html:28
+#, python-format
+msgid "Category archives: %(category)s"
+msgstr ""
+
+#: blog/templates/zinnia/entry_list.html:35
+#, python-format
+msgid "Tag archives: %(tag)s"
+msgstr ""
+
+#: blog/templates/zinnia/entry_list.html:39
+#, python-format
+msgid "Author archives: %(author)s"
+msgstr ""
+
+#: blog/templates/zinnia/entry_list.html:48
+msgid "No entries yet."
+msgstr ""
+
+#: blog/templates/zinnia/entry_list.html:67
+#: blog/templates/zinnia/entry_list.html:68
+msgid "Edit the category"
+msgstr ""
+
+#: blog/templates/zinnia/entry_list.html:74
+#: blog/templates/zinnia/entry_list.html:75
+msgid "Edit the tag"
+msgstr ""
+
+#: blog/templates/zinnia/entry_list.html:81
+#: blog/templates/zinnia/entry_list.html:82
+msgid "Edit the author"
 msgstr ""
 
 #: blog/templates/zinnia/skeleton.html:5
 msgid "Latest news for Dolphin Emulator"
-msgstr ""
+msgstr "Laatste nieuws voor Dolphin Emulator"
 
 #: blog/templates/zinnia/skeleton.html:8
-#: blog/templates/zinnia/skeleton.html:13 templates/_base.html:65
+#: blog/templates/zinnia/skeleton.html:13 templates/_base.html:67
 msgid "Articles"
-msgstr ""
+msgstr "Artikelen"
 
 #: blog/templates/zinnia/tags/search_form.html:16
 msgid ""
 "You can use - to exclude words or phrases, &quot;double quotes&quot; for "
 "exact phrases and the AND/OR boolean operators combined with parenthesis for"
 " complex queries."
-msgstr ""
+msgstr "Je kunt - gebruiken om woorden of zinnen uit te sluiten, &quot;dubbele quotes&quot; voor exacte zinnen en de AND/OR boolean operatoren gecombineerd met haakjes gebruiken voor complexe vragen."
 
 #: compat/templates/compat-list.html:8
 msgid ""
@@ -271,13 +376,13 @@ msgid "Game title (click for details)"
 msgstr "Spel titel (klik voor details)"
 
 #: compat/templates/compat-list.html:57
-#: homepage/templates/homepage-home.html:80 templates/_base.html:69
+#: homepage/templates/homepage-home.html:80 templates/_base.html:71
 msgid "Compatibility"
 msgstr "Compatibiliteit"
 
 #: compat/templates/compat-list.html:58
 msgid "Last updated"
-msgstr "Laatst geupdatet"
+msgstr "Laatst geüpdatet"
 
 #: compat/templatetags/compat.py:7
 msgid "Unknown"
@@ -321,7 +426,7 @@ msgstr "Ga terug naar het handboek"
 msgid "See all the guides written by the Dolphin team about the emulator."
 msgstr "Bekijk alle handboeken geschreven door de Dolphin team over de emulator."
 
-#: docs/templates/docs-guides-index.html:7 templates/_base.html:68
+#: docs/templates/docs-guides-index.html:7 templates/_base.html:70
 msgid "Guides"
 msgstr "Handboek"
 
@@ -369,7 +474,7 @@ msgid ""
 msgstr "Download de laatste versie van de Dolphin Emulator (%(ver)s) op de officiële website."
 
 #: downloads/templates/downloads-index.html:8
-#: downloads/templates/downloads-index.html:27 templates/_base.html:64
+#: downloads/templates/downloads-index.html:27 templates/_base.html:66
 msgid "Download"
 msgstr "Download"
 
@@ -485,7 +590,7 @@ msgstr "Officiële website van Dolphin, de GameCube en Wii emulator. Download de
 msgid "GameCube/Wii games on PC"
 msgstr "GameCube/Wii spellen op de PC"
 
-#: homepage/templates/homepage-home.html:30 templates/_base.html:60
+#: homepage/templates/homepage-home.html:30 templates/_base.html:62
 msgid "Dolphin Emulator"
 msgstr "Dolphin Emulator"
 
@@ -498,7 +603,7 @@ msgid ""
 "            (1080p) with several enhancements: compatibility with all PC\n"
 "            controllers, turbo speed, networked multiplayer, and even more!\n"
 "            "
-msgstr ""
+msgstr "\n<b>Dolphin</b> is een emulator voor de twee recente Nintendo consoles: de\n<b>GameCube</b> en de <b>Wii</b>. PC gamers kunnen spellen spelen in <b>full HD</b> (1080p) met verschillende verbeteringen: je kunt elke controller gebruiken die je wilt, het spel sneller emuleren dan normaal, multiplayer spelen via het internet en veel meer!\n            "
 
 #: homepage/templates/homepage-home.html:41
 #, python-format
@@ -506,29 +611,33 @@ msgid "Download %(last_release)s for Windows, Mac and Linux »"
 msgstr "Download %(last_release)s nu voor Windows, Mac en Linux »"
 
 #: homepage/templates/homepage-home.html:93
-msgid "Latest articles"
+msgid "RSS feed of the latest articles"
 msgstr ""
 
-#: homepage/templates/homepage-home.html:120
+#: homepage/templates/homepage-home.html:94
+msgid "Latest articles"
+msgstr "Laatste artikelen"
+
+#: homepage/templates/homepage-home.html:121
 #, python-format
 msgid "/ Part of serie <a href=\"%(url)s\">%(name)s</a>"
-msgstr ""
+msgstr "/ deel van serie <a href=\"%(url)s\">%(name)s</a>"
 
-#: homepage/templates/homepage-home.html:122
+#: homepage/templates/homepage-home.html:123
 msgid "Visit forum thread for this article"
-msgstr ""
+msgstr "Bezoek de forum thread voor deze artikel"
 
-#: homepage/templates/homepage-home.html:122
+#: homepage/templates/homepage-home.html:123
 msgid "Forum thread"
-msgstr ""
+msgstr "Forum thread"
 
-#: homepage/templates/homepage-home.html:127
+#: homepage/templates/homepage-home.html:128
 msgid "Read this article"
-msgstr ""
+msgstr "Lees dit artikel"
 
-#: homepage/templates/homepage-home.html:131
+#: homepage/templates/homepage-home.html:132
 msgid "No articles yet."
-msgstr ""
+msgstr "Geen artikelen beschikbaar."
 
 #: media/templates/media-all.html:6
 msgid ""
@@ -566,27 +675,31 @@ msgstr "Er is een error opgekomen tijdens het laden van deze pagina. Refresh de 
 msgid "Official Dolphin Emulator Website"
 msgstr "Officiële Dolphin Emulator Website"
 
-#: templates/_base.html:66
+#: templates/_base.html:23
+msgid "Latest blog articles"
+msgstr ""
+
+#: templates/_base.html:68
 msgid "Screenshots"
 msgstr "Screenshots"
 
-#: templates/_base.html:67
+#: templates/_base.html:69
 msgid "FAQ"
 msgstr "Veelgestelde vragen"
 
-#: templates/_base.html:70
+#: templates/_base.html:72
 msgid "Forum"
 msgstr "Forum"
 
-#: templates/_base.html:71
+#: templates/_base.html:73
 msgid "Wiki"
 msgstr "Wiki"
 
-#: templates/_base.html:72
+#: templates/_base.html:74
 msgid "Code"
 msgstr "Code"
 
-#: templates/_base.html:108
+#: templates/_base.html:110
 msgid ""
 "\n"
 "            &copy; 2013 Dolphin Emulator Project -\n"
