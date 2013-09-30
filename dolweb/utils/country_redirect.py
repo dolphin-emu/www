@@ -1,6 +1,7 @@
 from django.conf import settings
 from django.http import HttpResponseRedirect
 from django.utils.translation.trans_real import parse_accept_lang_header
+from dolweb.utils.monkey import TO_FULL_INVERTED
 
 import datetime
 
@@ -17,9 +18,11 @@ def guess_lang_from_request(request):
 
     accept = request.META.get('HTTP_ACCEPT_LANGUAGE', '')
     for accept_lang, unused in parse_accept_lang_header(accept):
-        if '-' in accept_lang:
-            accept_lang = accept_lang.split('-')[0]
-        elif '_' in accept_lang:
+        normalized_accept_lang = accept_lang.lower().replace('-', '_')
+        if normalized_accept_lang in TO_FULL_INVERTED:
+            return TO_FULL_INVERTED[normalized_accept_lang]
+
+        if '_' in accept_lang:
             accept_lang = accept_lang.split('_')[0]
 
         if accept_lang == settings.LANGUAGE_CODE.split('-')[0]:

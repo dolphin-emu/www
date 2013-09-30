@@ -5,6 +5,7 @@ TO_FULL = {
     'br': 'pt_BR',
     'cn': 'zh_CN',
 }
+TO_FULL_INVERTED = dict((v.lower(), k) for (k, v) in TO_FULL.iteritems())
 
 _accepted = {}
 def get_language_from_request(request, check_path=False):
