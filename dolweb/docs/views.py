@@ -5,6 +5,7 @@ from django.views.decorators.cache import cache_page
 from dolweb.docs.models import FAQCategory, FAQ, Guide
 
 import polib
+import re
 import requests
 
 @render_to('docs-faq.html')
@@ -27,8 +28,8 @@ def guide(request, slug):
     html = requests.get(guide.get_wiki_url(), headers=headers).text
 
     # Hack to rebase the URLs
-    html = html.replace('src="/', 'src="//wiki.dolphin-emu.org/')
-    html = html.replace('href="/', 'href="//wiki.dolphin-emu.org/')
+    html = re.sub('src="/(?!/)', 'src="//wiki.dolphin-emu.org/', html)
+    html = re.sub('href="/(?!/)', 'href="//wiki.dolphin-emu.org/', html)
 
     return { 'title': guide.title, 'guide': html }
 
