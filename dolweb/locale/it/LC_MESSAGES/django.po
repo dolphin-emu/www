@@ -10,8 +10,8 @@ msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-09-30 18:18+0200\n"
-"PO-Revision-Date: 2013-09-30 16:18+0000\n"
-"Last-Translator: delroth <delroth@gmail.com>\n"
+"PO-Revision-Date: 2013-09-30 20:51+0000\n"
+"Last-Translator: Mewster <mewster@libero.it>\n"
 "Language-Team: Italian (http://www.transifex.com/projects/p/dolphin-emu/language/it/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -26,12 +26,12 @@ msgstr "Contenuto"
 #: blog/feeds.py:24
 #, python-format
 msgid "Entries for the serie %s"
-msgstr ""
+msgstr "Articoli della serie %s"
 
 #: blog/feeds.py:27
 #, python-format
 msgid "The latest entries for the serie %s"
-msgstr ""
+msgstr "Gli ultimi articoli della serie %s"
 
 #: blog/models.py:16
 msgid "image"
@@ -73,7 +73,7 @@ msgstr[1] "\n    %(count)s articoli\n  "
 
 #: blog/templates/series-index.html:27
 msgid "RSS feed:"
-msgstr ""
+msgstr "Feed RSS:"
 
 #: blog/templates/series-index.html:37
 msgid "No blog series yet."
@@ -127,11 +127,11 @@ msgstr "Continua a leggere"
 msgid ""
 "You can continue the discussion in the <a href=\"%(url)s\" title=\"Visit "
 "forum thread for this article\">forum thread</a> of this article."
-msgstr ""
+msgstr "Puoi continuare la discussione nel <a href=\"%(url)s\" title=\"Visita il topic del forum su questo articolo\">topic del forum</a> relativo a questo articolo."
 
 #: blog/templates/zinnia/_entry_detail_base.html:78
 msgid "Blog serie"
-msgstr ""
+msgstr "Serie del blog"
 
 #: blog/templates/zinnia/_entry_detail_base.html:80
 #, python-format
@@ -213,83 +213,83 @@ msgstr "Modifica l'articolo"
 
 #: blog/templates/zinnia/entry_list.html:5
 msgid "Latest entries for"
-msgstr ""
+msgstr "Ultimi articoli su"
 
 #: blog/templates/zinnia/entry_list.html:5
 msgid "the category"
-msgstr ""
+msgstr "la categoria"
 
 #: blog/templates/zinnia/entry_list.html:5
 msgid "the tag"
-msgstr ""
+msgstr "il tag"
 
 #: blog/templates/zinnia/entry_list.html:5
 msgid "the author"
-msgstr ""
+msgstr "l'autore"
 
 #: blog/templates/zinnia/entry_list.html:5
 msgid "page"
-msgstr ""
+msgstr "pagina"
 
 #: blog/templates/zinnia/entry_list.html:10
 #: blog/templates/zinnia/entry_list.html:13
 #: blog/templates/zinnia/entry_list.html:16
 msgid "RSS Feed"
-msgstr ""
+msgstr "Feed RSS"
 
 #: blog/templates/zinnia/entry_list.html:20
 msgid "Latest entries"
-msgstr ""
+msgstr "Ultimi articoli"
 
 #: blog/templates/zinnia/entry_list.html:20
 msgid "Category"
-msgstr ""
+msgstr "Categoria"
 
 #: blog/templates/zinnia/entry_list.html:20
 msgid "Tag"
-msgstr ""
+msgstr "Tag"
 
 #: blog/templates/zinnia/entry_list.html:20
 msgid "Author"
-msgstr ""
+msgstr "Autore"
 
 #: blog/templates/zinnia/entry_list.html:20
 msgid "Page"
-msgstr ""
+msgstr "Pagina"
 
 #: blog/templates/zinnia/entry_list.html:28
 #, python-format
 msgid "Category archives: %(category)s"
-msgstr ""
+msgstr "Archivi della categoria: %(category)s"
 
 #: blog/templates/zinnia/entry_list.html:35
 #, python-format
 msgid "Tag archives: %(tag)s"
-msgstr ""
+msgstr "Archivi del tag: %(tag)s"
 
 #: blog/templates/zinnia/entry_list.html:39
 #, python-format
 msgid "Author archives: %(author)s"
-msgstr ""
+msgstr "Archivi dell'autore: %(author)s"
 
 #: blog/templates/zinnia/entry_list.html:48
 msgid "No entries yet."
-msgstr ""
+msgstr "Non c'è ancora nessun articolo."
 
 #: blog/templates/zinnia/entry_list.html:67
 #: blog/templates/zinnia/entry_list.html:68
 msgid "Edit the category"
-msgstr ""
+msgstr "Modifica la categoria"
 
 #: blog/templates/zinnia/entry_list.html:74
 #: blog/templates/zinnia/entry_list.html:75
 msgid "Edit the tag"
-msgstr ""
+msgstr "Modifica il tag"
 
 #: blog/templates/zinnia/entry_list.html:81
 #: blog/templates/zinnia/entry_list.html:82
 msgid "Edit the author"
-msgstr ""
+msgstr "Modifica l'autore"
 
 #: blog/templates/zinnia/skeleton.html:5
 msgid "Latest news for Dolphin Emulator"
@@ -613,7 +613,7 @@ msgstr "Scarica %(last_release)s per Windows, Mac e Linux »"
 
 #: homepage/templates/homepage-home.html:93
 msgid "RSS feed of the latest articles"
-msgstr ""
+msgstr "Feed RSS sugli ultimi articoli"
 
 #: homepage/templates/homepage-home.html:94
 msgid "Latest articles"
@@ -678,7 +678,7 @@ msgstr "Sito Ufficiale di Dolphin"
 
 #: templates/_base.html:23
 msgid "Latest blog articles"
-msgstr ""
+msgstr "Ultimi articoli nel blog"
 
 #: templates/_base.html:68
 msgid "Screenshots"

@@ -10,8 +10,8 @@ msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-09-30 18:18+0200\n"
-"PO-Revision-Date: 2013-09-30 16:18+0000\n"
-"Last-Translator: delroth <delroth@gmail.com>\n"
+"PO-Revision-Date: 2013-09-30 18:06+0000\n"
+"Last-Translator: DolphinPhoenix <anton_r_3@hotmail.com>\n"
 "Language-Team: Swedish (http://www.transifex.com/projects/p/dolphin-emu/language/sv/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -26,12 +26,12 @@ msgstr "Innehåll"
 #: blog/feeds.py:24
 #, python-format
 msgid "Entries for the serie %s"
-msgstr ""
+msgstr "Inlägg för serien %s"
 
 #: blog/feeds.py:27
 #, python-format
 msgid "The latest entries for the serie %s"
-msgstr ""
+msgstr "Det senaste inlägget för serien %s"
 
 #: blog/models.py:16
 msgid "image"
@@ -52,7 +52,7 @@ msgstr "Bloggtaggar"
 
 #: blog/templates/blog_sidebar.html:36
 msgid "Blog series"
-msgstr "Bloggserie"
+msgstr "Bloggserier"
 
 #: blog/templates/blog_sidebar.html:38
 msgid "See all"
@@ -73,7 +73,7 @@ msgstr[1] "\n    %(count)s inlägg\n  "
 
 #: blog/templates/series-index.html:27
 msgid "RSS feed:"
-msgstr ""
+msgstr "RSS-flöde:"
 
 #: blog/templates/series-index.html:37
 msgid "No blog series yet."
@@ -127,11 +127,11 @@ msgstr "Fortsätt läsa"
 msgid ""
 "You can continue the discussion in the <a href=\"%(url)s\" title=\"Visit "
 "forum thread for this article\">forum thread</a> of this article."
-msgstr ""
+msgstr "Du kan fortsätta diskussionen i <a href=\"%(url)s\" title=\"Besök forumtråden för denna artikel\">forumtråden</a> för denna artikel."
 
 #: blog/templates/zinnia/_entry_detail_base.html:78
 msgid "Blog serie"
-msgstr ""
+msgstr "Bloggserie"
 
 #: blog/templates/zinnia/_entry_detail_base.html:80
 #, python-format
@@ -213,83 +213,83 @@ msgstr "Redigera inlägget"
 
 #: blog/templates/zinnia/entry_list.html:5
 msgid "Latest entries for"
-msgstr ""
+msgstr "Senaste inläggen för"
 
 #: blog/templates/zinnia/entry_list.html:5
 msgid "the category"
-msgstr ""
+msgstr "kategorin"
 
 #: blog/templates/zinnia/entry_list.html:5
 msgid "the tag"
-msgstr ""
+msgstr "taggen"
 
 #: blog/templates/zinnia/entry_list.html:5
 msgid "the author"
-msgstr ""
+msgstr "författaren"
 
 #: blog/templates/zinnia/entry_list.html:5
 msgid "page"
-msgstr ""
+msgstr "sida"
 
 #: blog/templates/zinnia/entry_list.html:10
 #: blog/templates/zinnia/entry_list.html:13
 #: blog/templates/zinnia/entry_list.html:16
 msgid "RSS Feed"
-msgstr ""
+msgstr "RSS-flöde"
 
 #: blog/templates/zinnia/entry_list.html:20
 msgid "Latest entries"
-msgstr ""
+msgstr "Senaste inläggen"
 
 #: blog/templates/zinnia/entry_list.html:20
 msgid "Category"
-msgstr ""
+msgstr "Kategori"
 
 #: blog/templates/zinnia/entry_list.html:20
 msgid "Tag"
-msgstr ""
+msgstr "Tagg"
 
 #: blog/templates/zinnia/entry_list.html:20
 msgid "Author"
-msgstr ""
+msgstr "Författare"
 
 #: blog/templates/zinnia/entry_list.html:20
 msgid "Page"
-msgstr ""
+msgstr "Sida"
 
 #: blog/templates/zinnia/entry_list.html:28
 #, python-format
 msgid "Category archives: %(category)s"
-msgstr ""
+msgstr "Kategoriarkiv: %(category)s"
 
 #: blog/templates/zinnia/entry_list.html:35
 #, python-format
 msgid "Tag archives: %(tag)s"
-msgstr ""
+msgstr "Taggarkiv: %(tag)s"
 
 #: blog/templates/zinnia/entry_list.html:39
 #, python-format
 msgid "Author archives: %(author)s"
-msgstr ""
+msgstr "Författararkiv: %(author)s"
 
 #: blog/templates/zinnia/entry_list.html:48
 msgid "No entries yet."
-msgstr ""
+msgstr "Inga inlägg ännu."
 
 #: blog/templates/zinnia/entry_list.html:67
 #: blog/templates/zinnia/entry_list.html:68
 msgid "Edit the category"
-msgstr ""
+msgstr "Redigera kategorin"
 
 #: blog/templates/zinnia/entry_list.html:74
 #: blog/templates/zinnia/entry_list.html:75
 msgid "Edit the tag"
-msgstr ""
+msgstr "Redigera taggen"
 
 #: blog/templates/zinnia/entry_list.html:81
 #: blog/templates/zinnia/entry_list.html:82
 msgid "Edit the author"
-msgstr ""
+msgstr "Redigera författaren"
 
 #: blog/templates/zinnia/skeleton.html:5
 msgid "Latest news for Dolphin Emulator"
@@ -613,7 +613,7 @@ msgstr "Ladda ned %(last_release)s för Windows, Mac och Linux »"
 
 #: homepage/templates/homepage-home.html:93
 msgid "RSS feed of the latest articles"
-msgstr ""
+msgstr "RSS-flöde för de senaste artiklarna"
 
 #: homepage/templates/homepage-home.html:94
 msgid "Latest articles"
@@ -678,7 +678,7 @@ msgstr "Officiell webbplats för emulatorn Dolphin"
 
 #: templates/_base.html:23
 msgid "Latest blog articles"
-msgstr ""
+msgstr "Senaste bloggartiklarna"
 
 #: templates/_base.html:68
 msgid "Screenshots"
