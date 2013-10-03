@@ -38,7 +38,7 @@
     / <a href="{{ object.short_url }}"
        title="{% blocktrans with object=object.title %}Short URL to {{ object }}{% endblocktrans %}"
        rel="shortlink">{% trans "Short link" %}</a>
-    {% if object.forum_thread %}/ <i class="icon-comments"></i> <a href="{{ object.forum_thread.get_absolute_url }}" title="{% trans "Visit forum thread for this article" %}>{% trans "Forum thread" %}"</a>{% endif %}
+    {% if object.forum_thread %}/ <i class="icon-comments"></i> <a href="{{ object.forum_thread.get_absolute_url }}" title="{% trans "Visit forum thread for this article" %}">{% trans "Forum thread" %}</a>{% endif %}
     </p>
     </div>
     {% endblock %}
