@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-09-30 18:18+0200\n"
-"PO-Revision-Date: 2013-10-01 07:15+0000\n"
+"PO-Revision-Date: 2013-10-15 06:08+0000\n"
 "Last-Translator: lxf2000 <gaoboyuan8@qq.com>\n"
 "Language-Team: Chinese (China) (http://www.transifex.com/projects/p/dolphin-emu/language/zh_CN/)\n"
 "MIME-Version: 1.0\n"
@@ -380,7 +380,7 @@ msgstr "游戏标题（点击查看详情）"
 #: compat/templates/compat-list.html:57
 #: homepage/templates/homepage-home.html:80 templates/_base.html:71
 msgid "Compatibility"
-msgstr "兼容"
+msgstr "兼容性"
 
 #: compat/templates/compat-list.html:58
 msgid "Last updated"
@@ -490,7 +490,7 @@ msgid ""
 "    Stable versions are released after a lot of testing to ensure emulation\n"
 "    performance and stability. However, since they are released less often,\n"
 "    they might be outdated and lacking some new features.\n"
-msgstr "\n稳定版本在发布前经历过许多测试以保证模拟性能与稳定性。然而由于其\n发布频率较低，稳定版本可能已经过时并缺少一些新功能。\n"
+msgstr "\n稳定版本在发布前经历过许多测试以保证模拟性能与稳定性。然而由于其发布频率较低，稳定版本可能已经过时并缺少一些新功能。\n"
 
 #: downloads/templates/downloads-index.html:55
 msgid "No stable release yet"
@@ -507,7 +507,7 @@ msgid ""
 "    Dolphin, several times every day! Using development versions enables you to\n"
 "    use the latest and greatest improvements to the project. They are however\n"
 "    less tested than stable versions of the emulator.\n"
-msgstr "\n每当一位开发者对 Dolphin 做出改动，都将有开发版本发布，因而每天都会发布数个\n开发版本。使用开发版本即可体验本项目最新最大的改进，然而相较于稳定版本的\n模拟器，开发版本所经历的测试尚不够充分。\n"
+msgstr "\n每当一位开发者对 Dolphin 做出改动，都将有开发版本发布，因而每天都会发布数个开发版本。使用开发版本即可体验本项目最新最大的改进，然而相较于稳定版本的模拟器，开发版本所经历的测试尚不够充分。\n"
 
 #: downloads/templates/downloads-index.html:85
 msgid "Only displaying the <tt>master</tt> branch versions."
@@ -590,7 +590,7 @@ msgstr "Dolphin 官方网站。现在下载 GameCube 与 Wii 模拟器 Dolphin �
 
 #: homepage/templates/homepage-home.html:13
 msgid "GameCube/Wii games on PC"
-msgstr "在PC上运行GameCube/Wii游戏"
+msgstr "在电脑上玩 GameCube/Wii 游戏"
 
 #: homepage/templates/homepage-home.html:30 templates/_base.html:62
 msgid "Dolphin Emulator"
@@ -605,7 +605,7 @@ msgid ""
 "            (1080p) with several enhancements: compatibility with all PC\n"
 "            controllers, turbo speed, networked multiplayer, and even more!\n"
 "            "
-msgstr "\n<b>Dolphin</b> 是任天堂最近两款游戏平台的模拟器：<b>GameCube</b> 和 <b>Wii</b>。\n它可以让电脑玩家以<b>全高清</b>(1080p)的方式来玩这两个平台的游戏，它能兼容所有的 PC 控制器，能够加速，支持多人联网，还有很多其他的特性。"
+msgstr "\n<b>Dolphin</b> 是任天堂最近两款游戏平台的模拟器：<b>GameCube</b> 和 <b>Wii</b>。它可以让电脑玩家以<b>全高清</b>(1080p)的方式来玩这两个平台的游戏，它能兼容所有的 PC 控制器，能够加速，支持多人联网，还有很多其他的特性。"
 
 #: homepage/templates/homepage-home.html:41
 #, python-format

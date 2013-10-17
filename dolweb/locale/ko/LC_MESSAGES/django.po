@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-09-30 18:18+0200\n"
-"PO-Revision-Date: 2013-10-01 16:07+0000\n"
+"PO-Revision-Date: 2013-10-14 04:54+0000\n"
 "Last-Translator: Siegfried <iori3000@hanafos.com>\n"
 "Language-Team: Korean (http://www.transifex.com/projects/p/dolphin-emu/language/ko/)\n"
 "MIME-Version: 1.0\n"
@@ -92,16 +92,16 @@ msgstr "모든 %(author)s's 엔트리 보기"
 #: blog/templates/zinnia/_entry_detail_base.html:27
 #: homepage/templates/homepage-home.html:113
 msgid "on"
-msgstr "활성"
+msgstr "날짜:"
 
 #: blog/templates/zinnia/_entry_detail_base.html:29
 #: homepage/templates/homepage-home.html:115
 msgid "Written on"
-msgstr "작성 활성"
+msgstr "작성 날짜"
 
 #: blog/templates/zinnia/_entry_detail_base.html:37
 msgid "Last update on"
-msgstr "최근 업데이트 활성"
+msgstr "마지막 업데이트 날짜"
 
 #: blog/templates/zinnia/_entry_detail_base.html:39
 #, python-format
@@ -264,31 +264,31 @@ msgstr "범주 보관소: %(category)s"
 #: blog/templates/zinnia/entry_list.html:35
 #, python-format
 msgid "Tag archives: %(tag)s"
-msgstr ""
+msgstr "태그 보관소: %(tag)s"
 
 #: blog/templates/zinnia/entry_list.html:39
 #, python-format
 msgid "Author archives: %(author)s"
-msgstr ""
+msgstr "저작자 보관소: %(author)s"
 
 #: blog/templates/zinnia/entry_list.html:48
 msgid "No entries yet."
-msgstr ""
+msgstr "엔트리 아직 없음."
 
 #: blog/templates/zinnia/entry_list.html:67
 #: blog/templates/zinnia/entry_list.html:68
 msgid "Edit the category"
-msgstr ""
+msgstr "범주 수정"
 
 #: blog/templates/zinnia/entry_list.html:74
 #: blog/templates/zinnia/entry_list.html:75
 msgid "Edit the tag"
-msgstr ""
+msgstr "태그 수정"
 
 #: blog/templates/zinnia/entry_list.html:81
 #: blog/templates/zinnia/entry_list.html:82
 msgid "Edit the author"
-msgstr ""
+msgstr "저작자 수정"
 
 #: blog/templates/zinnia/skeleton.html:5
 msgid "Latest news for Dolphin Emulator"
@@ -382,7 +382,7 @@ msgstr "호환성"
 
 #: compat/templates/compat-list.html:58
 msgid "Last updated"
-msgstr "최근 업데이트된"
+msgstr "마지막 업데이트"
 
 #: compat/templatetags/compat.py:7
 msgid "Unknown"
@@ -612,7 +612,7 @@ msgstr "윈도우, 맥, 리눅스 용 %(last_release)s 다운로드 »"
 
 #: homepage/templates/homepage-home.html:93
 msgid "RSS feed of the latest articles"
-msgstr ""
+msgstr "최근 기사들의 RSS 피드"
 
 #: homepage/templates/homepage-home.html:94
 msgid "Latest articles"
@@ -677,7 +677,7 @@ msgstr "공식 돌핀 에뮬레이터 웹사이트"
 
 #: templates/_base.html:23
 msgid "Latest blog articles"
-msgstr ""
+msgstr "최근 블로그 기사"
 
 #: templates/_base.html:68
 msgid "Screenshots"

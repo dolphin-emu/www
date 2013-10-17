@@ -13,8 +13,8 @@ msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-09-30 18:18+0200\n"
-"PO-Revision-Date: 2013-09-30 16:18+0000\n"
-"Last-Translator: delroth <delroth@gmail.com>\n"
+"PO-Revision-Date: 2013-10-13 21:23+0000\n"
+"Last-Translator: Petiso_Carambanal <diegoae@gmail.com>\n"
 "Language-Team: Spanish (http://www.transifex.com/projects/p/dolphin-emu/language/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -29,12 +29,12 @@ msgstr "Contenido"
 #: blog/feeds.py:24
 #, python-format
 msgid "Entries for the serie %s"
-msgstr ""
+msgstr "Artículo de la serie %s"
 
 #: blog/feeds.py:27
 #, python-format
 msgid "The latest entries for the serie %s"
-msgstr ""
+msgstr "Los últimos artículos para la serie %s"
 
 #: blog/models.py:16
 msgid "image"
@@ -76,7 +76,7 @@ msgstr[1] ""
 
 #: blog/templates/series-index.html:27
 msgid "RSS feed:"
-msgstr ""
+msgstr "Feed RSS:"
 
 #: blog/templates/series-index.html:37
 msgid "No blog series yet."
@@ -91,7 +91,7 @@ msgstr "Escrito por"
 #: homepage/templates/homepage-home.html:111
 #, python-format
 msgid "Show all %(author)s's entries"
-msgstr "Mostrar todos los entradas de %(author)s"
+msgstr "Mostrar todos los artículos de %(author)s"
 
 #: blog/templates/zinnia/_entry_detail_base.html:27
 #: homepage/templates/homepage-home.html:113
@@ -110,7 +110,7 @@ msgstr "Actualizado el"
 #: blog/templates/zinnia/_entry_detail_base.html:39
 #, python-format
 msgid "Short URL to %(object)s"
-msgstr ""
+msgstr "Enlace corto a %(object)s"
 
 #: blog/templates/zinnia/_entry_detail_base.html:40
 msgid "Short link"
@@ -141,7 +141,7 @@ msgstr ""
 msgid ""
 "This article is number %(nth)s within the blog serie\n"
 "    <a href=\"%(url)s\"><em>%(serie)s</em></a>."
-msgstr ""
+msgstr "Este artículo es el número %(nth)s de la serie del blog\n    <a href=\"%(url)s\"><em>%(serie)s</em></a>."
 
 #: blog/templates/zinnia/_entry_detail_base.html:85
 msgid "‹ Previous article in serie"
@@ -158,7 +158,7 @@ msgstr "Etiquetas"
 #: blog/templates/zinnia/_entry_detail_base.html:141
 #, python-format
 msgid "Show all entries tagged by %(tag)s"
-msgstr "Mostrar todas las entradas etiquetadas con %(tag)s"
+msgstr "Mostrar todos los artículos etiquetados con %(tag)s"
 
 #: blog/templates/zinnia/_entry_detail_base.html:144
 msgid "No tags"
@@ -171,7 +171,7 @@ msgstr "Categorías"
 #: blog/templates/zinnia/_entry_detail_base.html:155
 #, python-format
 msgid "Show all entries in %(category)s"
-msgstr "Mostrar todas las entradas en la categoría %(category)s"
+msgstr "Mostrar todos los artículos en la categoría %(category)s"
 
 #: blog/templates/zinnia/_entry_detail_base.html:158
 msgid "No categories"
@@ -179,11 +179,11 @@ msgstr "Sin categorías"
 
 #: blog/templates/zinnia/entry_detail_base.html:22
 msgid "RSS Feed of discussions on"
-msgstr ""
+msgstr "Feed RSS de la discusión en"
 
 #: blog/templates/zinnia/entry_detail_base.html:24
 msgid "RSS Feed of comments on"
-msgstr ""
+msgstr "Feed RSS de los comentarios en"
 
 #: blog/templates/zinnia/entry_detail_base.html:26
 msgid "RSS Feed of pingbacks on"
@@ -195,70 +195,70 @@ msgstr ""
 
 #: blog/templates/zinnia/entry_detail_base.html:46
 msgid "Next entry"
-msgstr "Entrada siguiente"
+msgstr "Artículo siguiente"
 
 #: blog/templates/zinnia/entry_detail_base.html:58
 msgid "Previous entry"
-msgstr "Entrada anterior"
+msgstr "Artículo anterior"
 
 #: blog/templates/zinnia/entry_detail_base.html:70
 msgid "Related entries"
-msgstr "Entradas relacionadas"
+msgstr "Artículos relacionados"
 
 #: blog/templates/zinnia/entry_detail_base.html:82
 msgid "Similar entries"
-msgstr "Entradas similares"
+msgstr "Artículos similares"
 
 #: blog/templates/zinnia/entry_detail_base.html:224
 #: blog/templates/zinnia/entry_detail_base.html:225
 msgid "Edit the entry"
-msgstr "Editar la entrada"
+msgstr "Editar el artículo"
 
 #: blog/templates/zinnia/entry_list.html:5
 msgid "Latest entries for"
-msgstr ""
+msgstr "Últimas artículos para"
 
 #: blog/templates/zinnia/entry_list.html:5
 msgid "the category"
-msgstr ""
+msgstr "la categoría"
 
 #: blog/templates/zinnia/entry_list.html:5
 msgid "the tag"
-msgstr ""
+msgstr "la etiqueta"
 
 #: blog/templates/zinnia/entry_list.html:5
 msgid "the author"
-msgstr ""
+msgstr "el autor"
 
 #: blog/templates/zinnia/entry_list.html:5
 msgid "page"
-msgstr ""
+msgstr "página"
 
 #: blog/templates/zinnia/entry_list.html:10
 #: blog/templates/zinnia/entry_list.html:13
 #: blog/templates/zinnia/entry_list.html:16
 msgid "RSS Feed"
-msgstr ""
+msgstr "Feed RSS"
 
 #: blog/templates/zinnia/entry_list.html:20
 msgid "Latest entries"
-msgstr ""
+msgstr "Últimos artículos"
 
 #: blog/templates/zinnia/entry_list.html:20
 msgid "Category"
-msgstr ""
+msgstr "Categoría"
 
 #: blog/templates/zinnia/entry_list.html:20
 msgid "Tag"
-msgstr ""
+msgstr "Etiqueta"
 
 #: blog/templates/zinnia/entry_list.html:20
 msgid "Author"
-msgstr ""
+msgstr "Autor"
 
 #: blog/templates/zinnia/entry_list.html:20
 msgid "Page"
-msgstr ""
+msgstr "Página"
 
 #: blog/templates/zinnia/entry_list.html:28
 #, python-format
@@ -277,22 +277,22 @@ msgstr ""
 
 #: blog/templates/zinnia/entry_list.html:48
 msgid "No entries yet."
-msgstr ""
+msgstr "No hay artículos todavía."
 
 #: blog/templates/zinnia/entry_list.html:67
 #: blog/templates/zinnia/entry_list.html:68
 msgid "Edit the category"
-msgstr ""
+msgstr "Editar la categoría"
 
 #: blog/templates/zinnia/entry_list.html:74
 #: blog/templates/zinnia/entry_list.html:75
 msgid "Edit the tag"
-msgstr ""
+msgstr "Editar la etiqueta"
 
 #: blog/templates/zinnia/entry_list.html:81
 #: blog/templates/zinnia/entry_list.html:82
 msgid "Edit the author"
-msgstr ""
+msgstr "Editar el autor"
 
 #: blog/templates/zinnia/skeleton.html:5
 msgid "Latest news for Dolphin Emulator"
@@ -616,7 +616,7 @@ msgstr "Descargar ahora %(last_release)s para Windows, Mac y Linux »"
 
 #: homepage/templates/homepage-home.html:93
 msgid "RSS feed of the latest articles"
-msgstr ""
+msgstr "Feed RSS de los últimos artículos"
 
 #: homepage/templates/homepage-home.html:94
 msgid "Latest articles"
@@ -681,7 +681,7 @@ msgstr "Página web oficial del emulador Dolphin"
 
 #: templates/_base.html:23
 msgid "Latest blog articles"
-msgstr ""
+msgstr "Últimos artículos del blog"
 
 #: templates/_base.html:68
 msgid "Screenshots"

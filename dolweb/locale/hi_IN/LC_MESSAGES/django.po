@@ -3,21 +3,20 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# ppanhh <vietnamesel10n@gmail.com>, 2013
-# ppanhh <vietnamesel10n@gmail.com>, 2013
+# Dilute <aviarora24@gmail.com>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-09-30 18:18+0200\n"
-"PO-Revision-Date: 2013-09-30 16:18+0000\n"
-"Last-Translator: delroth <delroth@gmail.com>\n"
-"Language-Team: Vietnamese (http://www.transifex.com/projects/p/dolphin-emu/language/vi/)\n"
+"PO-Revision-Date: 2013-10-04 16:57+0000\n"
+"Last-Translator: Dilute <aviarora24@gmail.com>\n"
+"Language-Team: Hindi (India) (http://www.transifex.com/projects/p/dolphin-emu/language/hi_IN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: vi\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Language: hi_IN\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: blog/admin.py:17
 msgid "Content"
@@ -69,6 +68,7 @@ msgid_plural ""
 "    %(count)s entries\n"
 "  "
 msgstr[0] ""
+msgstr[1] ""
 
 #: blog/templates/series-index.html:27
 msgid "RSS feed:"
@@ -315,98 +315,98 @@ msgstr ""
 #: compat/templates/compat-list.html:10
 #, python-format
 msgid "Compatibility List - page %(page)s"
-msgstr "Danh sách tương thích - trang %(page)s"
+msgstr ""
 
 #: compat/templates/compat-list.html:22
 msgid "How to read the ratings"
-msgstr "Đọc để biết cách xếp hạng"
+msgstr ""
 
 #: compat/templates/compat-list.html:25
 msgid "5 out of 5"
-msgstr "Đã hết phần 5 của 5"
+msgstr ""
 
 #: compat/templates/compat-list.html:25
 msgid "<strong>Perfect</strong>: No issues at all!"
-msgstr "<strong>Hoàn hảo</strong>: Hoàn toàn không lỗi!"
+msgstr ""
 
 #: compat/templates/compat-list.html:26
 msgid "4 out of 5"
-msgstr "Phần 4 của 5"
+msgstr ""
 
 #: compat/templates/compat-list.html:26
 msgid ""
 "<strong>Playable</strong>: Runs well, only minor graphical or audio "
 "glitches. Games can be played all the way through."
-msgstr "<strong>Có thể chơi được</strong>: Chạy tốt, chỉ gặp một số vấn đề nhỏ về đồ họa và âm thanh. Game có thể được chơi toàn bộ qua các màn."
+msgstr ""
 
 #: compat/templates/compat-list.html:27
 msgid "3 out of 5"
-msgstr "Phần 3 của 5"
+msgstr ""
 
 #: compat/templates/compat-list.html:27
 msgid ""
 "<strong>Starts</strong>: Starts, maybe even plays well, but crashes or major"
 " graphical/audio glitches."
-msgstr "<strong>Bắt đầu</strong>: Bắt đầu, mặc dù khi đã chơi một cách rất Phồng Tôm, nhưng lỗi và một số vấn đề về đồ họa/âm thanh vẫn hay xuất hiện."
+msgstr ""
 
 #: compat/templates/compat-list.html:28
 msgid "2 out of 5"
-msgstr "Phần 2 của 5"
+msgstr ""
 
 #: compat/templates/compat-list.html:28
 msgid ""
 "<strong>Intro/Menu</strong>: Hangs/crashes somewhere between booting and "
 "starting."
-msgstr "<strong>Giới thiệu/Menu</strong>: Bị treo/tắt đột ngột trong quá trình khởi động và chạy."
+msgstr ""
 
 #: compat/templates/compat-list.html:29
 msgid "1 out of 5"
-msgstr "Phần 1 của 5"
+msgstr ""
 
 #: compat/templates/compat-list.html:29
 msgid "<strong>Broken</strong>: Crashes when booting."
-msgstr "<strong>Bị lỗi</strong>: Thường tắt bất chợt khi tải game."
+msgstr ""
 
 #: compat/templates/compat-list.html:36
 msgid "Statistics"
-msgstr "Thống kê"
+msgstr ""
 
 #: compat/templates/compat-list.html:56
 msgid "Game title (click for details)"
-msgstr "Tựa đề game (click để biết thêm chi tiết)"
+msgstr ""
 
 #: compat/templates/compat-list.html:57
 #: homepage/templates/homepage-home.html:80 templates/_base.html:71
 msgid "Compatibility"
-msgstr "Khả năng tương thích"
+msgstr ""
 
 #: compat/templates/compat-list.html:58
 msgid "Last updated"
-msgstr "Lần cập trước"
+msgstr ""
 
 #: compat/templatetags/compat.py:7
 msgid "Unknown"
-msgstr "Chưa rõ"
+msgstr ""
 
 #: compat/templatetags/compat.py:8
 msgid "Broken"
-msgstr "Bị lỗi"
+msgstr ""
 
 #: compat/templatetags/compat.py:9
 msgid "Intro/Menu"
-msgstr "Giới thiệu/Menu"
+msgstr ""
 
 #: compat/templatetags/compat.py:10
 msgid "Starts"
-msgstr "Bắt đầu"
+msgstr ""
 
 #: compat/templatetags/compat.py:11
 msgid "Playable"
-msgstr "Chơi được"
+msgstr ""
 
 #: compat/templatetags/compat.py:12
 msgid "Perfect"
-msgstr "Hoàn hảo"
+msgstr ""
 
 #: docs/templates/docs-faq.html:6
 msgid ""
@@ -416,11 +416,11 @@ msgstr ""
 
 #: docs/templates/docs-faq.html:8
 msgid "Frequently Asked Questions"
-msgstr "Các câu hỏi thường gặp"
+msgstr "अक्सर पूछे जाने वाले प्रश्न"
 
 #: docs/templates/docs-guide.html:11
 msgid "Go back to the guides list"
-msgstr "Quay trở lại danh sách hướng dẫn"
+msgstr ""
 
 #: docs/templates/docs-guides-index.html:5
 msgid "See all the guides written by the Dolphin team about the emulator."
@@ -428,43 +428,43 @@ msgstr ""
 
 #: docs/templates/docs-guides-index.html:7 templates/_base.html:70
 msgid "Guides"
-msgstr "Hướng dẫn"
+msgstr "गाइड"
 
 #: docs/templates/docs-guides-index.html:11
 msgid "Guides and documentation"
-msgstr "Tài liệu hướng dẫn sử dụng"
+msgstr ""
 
 #: docs/templates/docs-guides-index.html:19
 msgid "No published guide available"
-msgstr "Hiện phần này đang được biên soạn"
+msgstr " प्रकाशित गाइड उपलब्ध नहीं"
 
 #: downloads/models.py:32 downloads/models.py:50
 #, python-format
 msgid "Dolphin %s"
-msgstr "Dolphin %s"
+msgstr ""
 
 #: downloads/templates/downloads-branches.html:5
 #: downloads/templates/downloads-branches.html:9
 msgid "Download development builds"
-msgstr "Tải về các bản cài đặt phát triển"
+msgstr "विकास बनाता डाउनलोड"
 
 #: downloads/templates/downloads-branches.html:18
 #, python-format
 msgid "<tt>%(branch)s</tt> branch"
-msgstr "<tt>%(branch)s</tt> nhánh"
+msgstr ""
 
 #: downloads/templates/downloads-branches.html:21
 #: downloads/templates/downloads-index.html:91
 msgid "View older versions »"
-msgstr "Xem các phiên bản cũ hơn »"
+msgstr ""
 
 #: downloads/templates/downloads-branches.html:28
 msgid "Branch list"
-msgstr "Danh sách nhánh"
+msgstr ""
 
 #: downloads/templates/downloads-devrel.html:19
 msgid "No development release yet"
-msgstr "Hiện vẫn chưa công bố phiên bản phát triển"
+msgstr "अभी तक कोई विकास रिहाई"
 
 #: downloads/templates/downloads-index.html:6
 #, python-format
@@ -476,11 +476,11 @@ msgstr ""
 #: downloads/templates/downloads-index.html:8
 #: downloads/templates/downloads-index.html:27 templates/_base.html:66
 msgid "Download"
-msgstr "Tải xuống"
+msgstr " डाउनलोड"
 
 #: downloads/templates/downloads-index.html:31
 msgid "Stable versions"
-msgstr "Phiên bản ổn định"
+msgstr ""
 
 #: downloads/templates/downloads-index.html:33
 msgid ""
@@ -492,11 +492,11 @@ msgstr ""
 
 #: downloads/templates/downloads-index.html:55
 msgid "No stable release yet"
-msgstr "Hiện chưa phát hành phiên bản ổn định"
+msgstr ""
 
 #: downloads/templates/downloads-index.html:76
 msgid "Development versions"
-msgstr "Phiên bản phát triển"
+msgstr ""
 
 #: downloads/templates/downloads-index.html:78
 msgid ""
@@ -509,15 +509,15 @@ msgstr ""
 
 #: downloads/templates/downloads-index.html:85
 msgid "Only displaying the <tt>master</tt> branch versions."
-msgstr "Chỉ hiện thị <tt>phần chính</tt> đối với phiên bản nhánh."
+msgstr ""
 
 #: downloads/templates/downloads-index.html:86
 msgid "Show all available branches"
-msgstr "Hiển thị tất cả các nhánh hiện có"
+msgstr ""
 
 #: downloads/templates/downloads-index.html:95
 msgid "Source code"
-msgstr "Mã nguồn"
+msgstr ""
 
 #: downloads/templates/downloads-index.html:97
 msgid ""
@@ -525,7 +525,7 @@ msgid ""
 "    The latest version of the Dolphin source code can be downloaded from the\n"
 "    project Git repository.\n"
 "    "
-msgstr "\nPhiên bản mã nguồn mới nhất của Dolphin có thể được tải về từ\ntrang web Git."
+msgstr ""
 
 #: downloads/templates/downloads-index.html:105
 msgid ""
@@ -533,51 +533,51 @@ msgid ""
 "    You can also <a href=\"http://code.google.com/p/dolphin-emu/source/browse/\">browse\n"
 "        the current version of the source code</a>.\n"
 "    "
-msgstr "\n   Bạn có thể truy cập <a href=\"http://code.google.com/p/dolphin-emu/source/browse/\">để\n        có được phiên bản mã nguồn mới nhất</a>.\n    "
+msgstr ""
 
 #: downloads/templates/downloads-list.html:5
 #, python-format
 msgid "%(branch)s branch - page %(page)s"
-msgstr "%(branch)s nhánh - trang %(page)s"
+msgstr ""
 
 #: downloads/templates/downloads-list.html:9
 #, python-format
 msgid "<tt>%(branch)s</tt> branch - page %(page)s"
-msgstr "<tt>%(branch)s</tt> nhánh - trang %(page)s"
+msgstr ""
 
 #: downloads/templates/downloads-view-devrel.html:6
 #, python-format
 msgid "Information on %(br)s"
-msgstr "Thông tin trên %(br)s"
+msgstr ""
 
 #: downloads/templates/downloads-view-devrel.html:10
 #, python-format
 msgid "Information for %(br)s"
-msgstr "Thôn tin về %(br)s"
+msgstr ""
 
 #: downloads/templates/downloads-view-devrel.html:30
 msgid "Version"
-msgstr "Phiên bản"
+msgstr ""
 
 #: downloads/templates/downloads-view-devrel.html:33
 msgid "Branch"
-msgstr "Nhánh"
+msgstr ""
 
 #: downloads/templates/downloads-view-devrel.html:36
 msgid "Date"
-msgstr "Ngày"
+msgstr ""
 
 #: downloads/templates/downloads-view-devrel.html:45
 msgid "Commit"
-msgstr "Xác nhận"
+msgstr ""
 
 #: downloads/templates/downloads-view-devrel.html:48
 msgid "Change author"
-msgstr "Thay đổi tác giả"
+msgstr ""
 
 #: downloads/templates/downloads-view-devrel.html:51
 msgid "Change description"
-msgstr "Thay đổi mô tả"
+msgstr ""
 
 #: homepage/templates/homepage-home.html:11
 #, python-format
@@ -588,11 +588,11 @@ msgstr ""
 
 #: homepage/templates/homepage-home.html:13
 msgid "GameCube/Wii games on PC"
-msgstr "GameCube/Wii games trên PC"
+msgstr ""
 
 #: homepage/templates/homepage-home.html:30 templates/_base.html:62
 msgid "Dolphin Emulator"
-msgstr "Trình Giả Lập Dolphin"
+msgstr ""
 
 #: homepage/templates/homepage-home.html:32
 msgid ""
@@ -647,11 +647,11 @@ msgstr ""
 
 #: media/templates/media-all.html:8
 msgid "Screenshots gallery"
-msgstr "Ảnh chụp về chương trình"
+msgstr ""
 
 #: media/templates/media-all.html:12
 msgid "Media gallery"
-msgstr "Thư viện Media"
+msgstr ""
 
 #: templates/404.html:5 templates/404.html.py:8
 msgid "Page not found"
@@ -673,7 +673,7 @@ msgstr ""
 
 #: templates/_base.html:10
 msgid "Official Dolphin Emulator Website"
-msgstr "Website Chính Thức Của Trình Giả Lập Dolphin"
+msgstr ""
 
 #: templates/_base.html:23
 msgid "Latest blog articles"
@@ -681,23 +681,23 @@ msgstr ""
 
 #: templates/_base.html:68
 msgid "Screenshots"
-msgstr "Hình chụp"
+msgstr ""
 
 #: templates/_base.html:69
 msgid "FAQ"
-msgstr "Các câu hỏi thường gặp"
+msgstr ""
 
 #: templates/_base.html:72
 msgid "Forum"
-msgstr "Diễn đàn"
+msgstr ""
 
 #: templates/_base.html:73
 msgid "Wiki"
-msgstr "Wiki"
+msgstr ""
 
 #: templates/_base.html:74
 msgid "Code"
-msgstr "Mã"
+msgstr ""
 
 #: templates/_base.html:110
 msgid ""

@@ -3,21 +3,20 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# ppanhh <vietnamesel10n@gmail.com>, 2013
-# ppanhh <vietnamesel10n@gmail.com>, 2013
+# Hatsen <hatsen2000@gmail.com>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-09-30 18:18+0200\n"
-"PO-Revision-Date: 2013-09-30 16:18+0000\n"
-"Last-Translator: delroth <delroth@gmail.com>\n"
-"Language-Team: Vietnamese (http://www.transifex.com/projects/p/dolphin-emu/language/vi/)\n"
+"PO-Revision-Date: 2013-10-15 10:10+0000\n"
+"Last-Translator: Hatsen <hatsen2000@gmail.com>\n"
+"Language-Team: Danish (Denmark) (http://www.transifex.com/projects/p/dolphin-emu/language/da_DK/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: vi\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Language: da_DK\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: blog/admin.py:17
 msgid "Content"
@@ -35,7 +34,7 @@ msgstr ""
 
 #: blog/models.py:16
 msgid "image"
-msgstr ""
+msgstr "billede"
 
 #: blog/models.py:17
 msgid "Used for illustration."
@@ -44,7 +43,7 @@ msgstr ""
 #: blog/templates/blog_sidebar.html:6
 #: blog/templates/zinnia/tags/search_form.html:5
 msgid "Search articles"
-msgstr ""
+msgstr "Søg artikler"
 
 #: blog/templates/blog_sidebar.html:31
 msgid "Blog tags"
@@ -56,7 +55,7 @@ msgstr ""
 
 #: blog/templates/blog_sidebar.html:38
 msgid "See all"
-msgstr ""
+msgstr "Se alle"
 
 #: blog/templates/series-index.html:22
 #, python-format
@@ -69,6 +68,7 @@ msgid_plural ""
 "    %(count)s entries\n"
 "  "
 msgstr[0] ""
+msgstr[1] ""
 
 #: blog/templates/series-index.html:27
 msgid "RSS feed:"
@@ -81,36 +81,36 @@ msgstr ""
 #: blog/templates/zinnia/_entry_detail_base.html:21
 #: homepage/templates/homepage-home.html:107
 msgid "Written by"
-msgstr ""
+msgstr "Skrevet af"
 
 #: blog/templates/zinnia/_entry_detail_base.html:25
 #: homepage/templates/homepage-home.html:111
 #, python-format
 msgid "Show all %(author)s's entries"
-msgstr ""
+msgstr "Vis alle %(author)ss indlæg"
 
 #: blog/templates/zinnia/_entry_detail_base.html:27
 #: homepage/templates/homepage-home.html:113
 msgid "on"
-msgstr ""
+msgstr "på"
 
 #: blog/templates/zinnia/_entry_detail_base.html:29
 #: homepage/templates/homepage-home.html:115
 msgid "Written on"
-msgstr ""
+msgstr "Skrevet d."
 
 #: blog/templates/zinnia/_entry_detail_base.html:37
 msgid "Last update on"
-msgstr ""
+msgstr "Sidst opdateret d."
 
 #: blog/templates/zinnia/_entry_detail_base.html:39
 #, python-format
 msgid "Short URL to %(object)s"
-msgstr ""
+msgstr "Forkort URL til %(object)s"
 
 #: blog/templates/zinnia/_entry_detail_base.html:40
 msgid "Short link"
-msgstr ""
+msgstr "Forkortet link"
 
 #: blog/templates/zinnia/_entry_detail_base.html:58
 #, python-format
@@ -141,15 +141,15 @@ msgstr ""
 
 #: blog/templates/zinnia/_entry_detail_base.html:85
 msgid "‹ Previous article in serie"
-msgstr ""
+msgstr "‹ Forrige artikel i denne serie"
 
 #: blog/templates/zinnia/_entry_detail_base.html:87
 msgid "Next article in serie ›"
-msgstr ""
+msgstr "Næste artikel i serien ›"
 
 #: blog/templates/zinnia/_entry_detail_base.html:137
 msgid "Tags"
-msgstr ""
+msgstr "Tags"
 
 #: blog/templates/zinnia/_entry_detail_base.html:141
 #, python-format
@@ -158,11 +158,11 @@ msgstr ""
 
 #: blog/templates/zinnia/_entry_detail_base.html:144
 msgid "No tags"
-msgstr ""
+msgstr "Ingen tags"
 
 #: blog/templates/zinnia/_entry_detail_base.html:151
 msgid "Categories"
-msgstr ""
+msgstr "Kategorier"
 
 #: blog/templates/zinnia/_entry_detail_base.html:155
 #, python-format
@@ -171,7 +171,7 @@ msgstr ""
 
 #: blog/templates/zinnia/_entry_detail_base.html:158
 msgid "No categories"
-msgstr ""
+msgstr "Ingen kategorier"
 
 #: blog/templates/zinnia/entry_detail_base.html:22
 msgid "RSS Feed of discussions on"
@@ -216,19 +216,19 @@ msgstr ""
 
 #: blog/templates/zinnia/entry_list.html:5
 msgid "the category"
-msgstr ""
+msgstr "kategorien"
 
 #: blog/templates/zinnia/entry_list.html:5
 msgid "the tag"
-msgstr ""
+msgstr "tagget"
 
 #: blog/templates/zinnia/entry_list.html:5
 msgid "the author"
-msgstr ""
+msgstr "forfatteren"
 
 #: blog/templates/zinnia/entry_list.html:5
 msgid "page"
-msgstr ""
+msgstr "side"
 
 #: blog/templates/zinnia/entry_list.html:10
 #: blog/templates/zinnia/entry_list.html:13
@@ -242,19 +242,19 @@ msgstr ""
 
 #: blog/templates/zinnia/entry_list.html:20
 msgid "Category"
-msgstr ""
+msgstr "Kategori"
 
 #: blog/templates/zinnia/entry_list.html:20
 msgid "Tag"
-msgstr ""
+msgstr "Tag"
 
 #: blog/templates/zinnia/entry_list.html:20
 msgid "Author"
-msgstr ""
+msgstr "Forfatter"
 
 #: blog/templates/zinnia/entry_list.html:20
 msgid "Page"
-msgstr ""
+msgstr "Side"
 
 #: blog/templates/zinnia/entry_list.html:28
 #, python-format
@@ -278,12 +278,12 @@ msgstr ""
 #: blog/templates/zinnia/entry_list.html:67
 #: blog/templates/zinnia/entry_list.html:68
 msgid "Edit the category"
-msgstr ""
+msgstr "Rediger kategorien"
 
 #: blog/templates/zinnia/entry_list.html:74
 #: blog/templates/zinnia/entry_list.html:75
 msgid "Edit the tag"
-msgstr ""
+msgstr "Rediger tagget"
 
 #: blog/templates/zinnia/entry_list.html:81
 #: blog/templates/zinnia/entry_list.html:82
@@ -297,7 +297,7 @@ msgstr ""
 #: blog/templates/zinnia/skeleton.html:8
 #: blog/templates/zinnia/skeleton.html:13 templates/_base.html:67
 msgid "Articles"
-msgstr ""
+msgstr "Artikler"
 
 #: blog/templates/zinnia/tags/search_form.html:16
 msgid ""
@@ -315,98 +315,98 @@ msgstr ""
 #: compat/templates/compat-list.html:10
 #, python-format
 msgid "Compatibility List - page %(page)s"
-msgstr "Danh sách tương thích - trang %(page)s"
+msgstr ""
 
 #: compat/templates/compat-list.html:22
 msgid "How to read the ratings"
-msgstr "Đọc để biết cách xếp hạng"
+msgstr ""
 
 #: compat/templates/compat-list.html:25
 msgid "5 out of 5"
-msgstr "Đã hết phần 5 của 5"
+msgstr "5 ud af 5"
 
 #: compat/templates/compat-list.html:25
 msgid "<strong>Perfect</strong>: No issues at all!"
-msgstr "<strong>Hoàn hảo</strong>: Hoàn toàn không lỗi!"
+msgstr "<strong>Perfekt</strong>: Ingen problemer overhovedet!"
 
 #: compat/templates/compat-list.html:26
 msgid "4 out of 5"
-msgstr "Phần 4 của 5"
+msgstr "4 ud af 5"
 
 #: compat/templates/compat-list.html:26
 msgid ""
 "<strong>Playable</strong>: Runs well, only minor graphical or audio "
 "glitches. Games can be played all the way through."
-msgstr "<strong>Có thể chơi được</strong>: Chạy tốt, chỉ gặp một số vấn đề nhỏ về đồ họa và âm thanh. Game có thể được chơi toàn bộ qua các màn."
+msgstr "<strong>Kan spilles</strong>: Køre fint, kun mindre grafik- og lydproblemer. Spil kan spilles helt til ende."
 
 #: compat/templates/compat-list.html:27
 msgid "3 out of 5"
-msgstr "Phần 3 của 5"
+msgstr "3 ud af 5"
 
 #: compat/templates/compat-list.html:27
 msgid ""
 "<strong>Starts</strong>: Starts, maybe even plays well, but crashes or major"
 " graphical/audio glitches."
-msgstr "<strong>Bắt đầu</strong>: Bắt đầu, mặc dù khi đã chơi một cách rất Phồng Tôm, nhưng lỗi và một số vấn đề về đồ họa/âm thanh vẫn hay xuất hiện."
+msgstr ""
 
 #: compat/templates/compat-list.html:28
 msgid "2 out of 5"
-msgstr "Phần 2 của 5"
+msgstr "2 ud af 5"
 
 #: compat/templates/compat-list.html:28
 msgid ""
 "<strong>Intro/Menu</strong>: Hangs/crashes somewhere between booting and "
 "starting."
-msgstr "<strong>Giới thiệu/Menu</strong>: Bị treo/tắt đột ngột trong quá trình khởi động và chạy."
+msgstr ""
 
 #: compat/templates/compat-list.html:29
 msgid "1 out of 5"
-msgstr "Phần 1 của 5"
+msgstr "1 ud af 5"
 
 #: compat/templates/compat-list.html:29
 msgid "<strong>Broken</strong>: Crashes when booting."
-msgstr "<strong>Bị lỗi</strong>: Thường tắt bất chợt khi tải game."
+msgstr ""
 
 #: compat/templates/compat-list.html:36
 msgid "Statistics"
-msgstr "Thống kê"
+msgstr "Statistikker"
 
 #: compat/templates/compat-list.html:56
 msgid "Game title (click for details)"
-msgstr "Tựa đề game (click để biết thêm chi tiết)"
+msgstr "Spiltitel (klik for detaljer)"
 
 #: compat/templates/compat-list.html:57
 #: homepage/templates/homepage-home.html:80 templates/_base.html:71
 msgid "Compatibility"
-msgstr "Khả năng tương thích"
+msgstr "Kompatibilitet"
 
 #: compat/templates/compat-list.html:58
 msgid "Last updated"
-msgstr "Lần cập trước"
+msgstr "Sidst opdateret"
 
 #: compat/templatetags/compat.py:7
 msgid "Unknown"
-msgstr "Chưa rõ"
+msgstr "Ukendt"
 
 #: compat/templatetags/compat.py:8
 msgid "Broken"
-msgstr "Bị lỗi"
+msgstr ""
 
 #: compat/templatetags/compat.py:9
 msgid "Intro/Menu"
-msgstr "Giới thiệu/Menu"
+msgstr "Intro/Menu"
 
 #: compat/templatetags/compat.py:10
 msgid "Starts"
-msgstr "Bắt đầu"
+msgstr "Starter"
 
 #: compat/templatetags/compat.py:11
 msgid "Playable"
-msgstr "Chơi được"
+msgstr "Kan spilles"
 
 #: compat/templatetags/compat.py:12
 msgid "Perfect"
-msgstr "Hoàn hảo"
+msgstr "Perfekt"
 
 #: docs/templates/docs-faq.html:6
 msgid ""
@@ -416,11 +416,11 @@ msgstr ""
 
 #: docs/templates/docs-faq.html:8
 msgid "Frequently Asked Questions"
-msgstr "Các câu hỏi thường gặp"
+msgstr "Ofte stillede spørgsmål"
 
 #: docs/templates/docs-guide.html:11
 msgid "Go back to the guides list"
-msgstr "Quay trở lại danh sách hướng dẫn"
+msgstr ""
 
 #: docs/templates/docs-guides-index.html:5
 msgid "See all the guides written by the Dolphin team about the emulator."
@@ -428,15 +428,15 @@ msgstr ""
 
 #: docs/templates/docs-guides-index.html:7 templates/_base.html:70
 msgid "Guides"
-msgstr "Hướng dẫn"
+msgstr "Guider"
 
 #: docs/templates/docs-guides-index.html:11
 msgid "Guides and documentation"
-msgstr "Tài liệu hướng dẫn sử dụng"
+msgstr "Guider og dokumentation"
 
 #: docs/templates/docs-guides-index.html:19
 msgid "No published guide available"
-msgstr "Hiện phần này đang được biên soạn"
+msgstr ""
 
 #: downloads/models.py:32 downloads/models.py:50
 #, python-format
@@ -446,25 +446,25 @@ msgstr "Dolphin %s"
 #: downloads/templates/downloads-branches.html:5
 #: downloads/templates/downloads-branches.html:9
 msgid "Download development builds"
-msgstr "Tải về các bản cài đặt phát triển"
+msgstr ""
 
 #: downloads/templates/downloads-branches.html:18
 #, python-format
 msgid "<tt>%(branch)s</tt> branch"
-msgstr "<tt>%(branch)s</tt> nhánh"
+msgstr "<tt>%(branch)s</tt> gren"
 
 #: downloads/templates/downloads-branches.html:21
 #: downloads/templates/downloads-index.html:91
 msgid "View older versions »"
-msgstr "Xem các phiên bản cũ hơn »"
+msgstr "Vis ældre versioner »"
 
 #: downloads/templates/downloads-branches.html:28
 msgid "Branch list"
-msgstr "Danh sách nhánh"
+msgstr "Gren-liste"
 
 #: downloads/templates/downloads-devrel.html:19
 msgid "No development release yet"
-msgstr "Hiện vẫn chưa công bố phiên bản phát triển"
+msgstr ""
 
 #: downloads/templates/downloads-index.html:6
 #, python-format
@@ -476,11 +476,11 @@ msgstr ""
 #: downloads/templates/downloads-index.html:8
 #: downloads/templates/downloads-index.html:27 templates/_base.html:66
 msgid "Download"
-msgstr "Tải xuống"
+msgstr "Download"
 
 #: downloads/templates/downloads-index.html:31
 msgid "Stable versions"
-msgstr "Phiên bản ổn định"
+msgstr "Stabile versioner"
 
 #: downloads/templates/downloads-index.html:33
 msgid ""
@@ -492,11 +492,11 @@ msgstr ""
 
 #: downloads/templates/downloads-index.html:55
 msgid "No stable release yet"
-msgstr "Hiện chưa phát hành phiên bản ổn định"
+msgstr "Ingen stabil udgivelse endnu"
 
 #: downloads/templates/downloads-index.html:76
 msgid "Development versions"
-msgstr "Phiên bản phát triển"
+msgstr ""
 
 #: downloads/templates/downloads-index.html:78
 msgid ""
@@ -509,15 +509,15 @@ msgstr ""
 
 #: downloads/templates/downloads-index.html:85
 msgid "Only displaying the <tt>master</tt> branch versions."
-msgstr "Chỉ hiện thị <tt>phần chính</tt> đối với phiên bản nhánh."
+msgstr ""
 
 #: downloads/templates/downloads-index.html:86
 msgid "Show all available branches"
-msgstr "Hiển thị tất cả các nhánh hiện có"
+msgstr "Vis alle tilgængelige grene"
 
 #: downloads/templates/downloads-index.html:95
 msgid "Source code"
-msgstr "Mã nguồn"
+msgstr "Kildekode"
 
 #: downloads/templates/downloads-index.html:97
 msgid ""
@@ -525,7 +525,7 @@ msgid ""
 "    The latest version of the Dolphin source code can be downloaded from the\n"
 "    project Git repository.\n"
 "    "
-msgstr "\nPhiên bản mã nguồn mới nhất của Dolphin có thể được tải về từ\ntrang web Git."
+msgstr ""
 
 #: downloads/templates/downloads-index.html:105
 msgid ""
@@ -533,51 +533,51 @@ msgid ""
 "    You can also <a href=\"http://code.google.com/p/dolphin-emu/source/browse/\">browse\n"
 "        the current version of the source code</a>.\n"
 "    "
-msgstr "\n   Bạn có thể truy cập <a href=\"http://code.google.com/p/dolphin-emu/source/browse/\">để\n        có được phiên bản mã nguồn mới nhất</a>.\n    "
+msgstr ""
 
 #: downloads/templates/downloads-list.html:5
 #, python-format
 msgid "%(branch)s branch - page %(page)s"
-msgstr "%(branch)s nhánh - trang %(page)s"
+msgstr ""
 
 #: downloads/templates/downloads-list.html:9
 #, python-format
 msgid "<tt>%(branch)s</tt> branch - page %(page)s"
-msgstr "<tt>%(branch)s</tt> nhánh - trang %(page)s"
+msgstr ""
 
 #: downloads/templates/downloads-view-devrel.html:6
 #, python-format
 msgid "Information on %(br)s"
-msgstr "Thông tin trên %(br)s"
+msgstr ""
 
 #: downloads/templates/downloads-view-devrel.html:10
 #, python-format
 msgid "Information for %(br)s"
-msgstr "Thôn tin về %(br)s"
+msgstr "Information om %(br)s"
 
 #: downloads/templates/downloads-view-devrel.html:30
 msgid "Version"
-msgstr "Phiên bản"
+msgstr "Version"
 
 #: downloads/templates/downloads-view-devrel.html:33
 msgid "Branch"
-msgstr "Nhánh"
+msgstr "Gren"
 
 #: downloads/templates/downloads-view-devrel.html:36
 msgid "Date"
-msgstr "Ngày"
+msgstr "Dato"
 
 #: downloads/templates/downloads-view-devrel.html:45
 msgid "Commit"
-msgstr "Xác nhận"
+msgstr ""
 
 #: downloads/templates/downloads-view-devrel.html:48
 msgid "Change author"
-msgstr "Thay đổi tác giả"
+msgstr "Skift forfatter"
 
 #: downloads/templates/downloads-view-devrel.html:51
 msgid "Change description"
-msgstr "Thay đổi mô tả"
+msgstr ""
 
 #: homepage/templates/homepage-home.html:11
 #, python-format
@@ -588,11 +588,11 @@ msgstr ""
 
 #: homepage/templates/homepage-home.html:13
 msgid "GameCube/Wii games on PC"
-msgstr "GameCube/Wii games trên PC"
+msgstr "GameCube/Wii-spil på PC"
 
 #: homepage/templates/homepage-home.html:30 templates/_base.html:62
 msgid "Dolphin Emulator"
-msgstr "Trình Giả Lập Dolphin"
+msgstr "Dolphin Emulator"
 
 #: homepage/templates/homepage-home.html:32
 msgid ""
@@ -608,7 +608,7 @@ msgstr ""
 #: homepage/templates/homepage-home.html:41
 #, python-format
 msgid "Download %(last_release)s for Windows, Mac and Linux »"
-msgstr ""
+msgstr "Download %(last_release)s til Windows, Mac og Linux »"
 
 #: homepage/templates/homepage-home.html:93
 msgid "RSS feed of the latest articles"
@@ -616,12 +616,12 @@ msgstr ""
 
 #: homepage/templates/homepage-home.html:94
 msgid "Latest articles"
-msgstr ""
+msgstr "Seneste artikler"
 
 #: homepage/templates/homepage-home.html:121
 #, python-format
 msgid "/ Part of serie <a href=\"%(url)s\">%(name)s</a>"
-msgstr ""
+msgstr "/ Del af serien <a href=\"%(url)s\">%(name)s</a>"
 
 #: homepage/templates/homepage-home.html:123
 msgid "Visit forum thread for this article"
@@ -633,11 +633,11 @@ msgstr ""
 
 #: homepage/templates/homepage-home.html:128
 msgid "Read this article"
-msgstr ""
+msgstr "Læs denne artikel"
 
 #: homepage/templates/homepage-home.html:132
 msgid "No articles yet."
-msgstr ""
+msgstr "Ingen artikler endnu."
 
 #: media/templates/media-all.html:6
 msgid ""
@@ -647,23 +647,23 @@ msgstr ""
 
 #: media/templates/media-all.html:8
 msgid "Screenshots gallery"
-msgstr "Ảnh chụp về chương trình"
+msgstr "Skærmbillede-galleriet"
 
 #: media/templates/media-all.html:12
 msgid "Media gallery"
-msgstr "Thư viện Media"
+msgstr ""
 
 #: templates/404.html:5 templates/404.html.py:8
 msgid "Page not found"
-msgstr ""
+msgstr "Siden blev ikke fundet"
 
 #: templates/404.html:10
 msgid "The URL you tried to access does not exist."
-msgstr ""
+msgstr "URL'en du indtastede eksistere ikke."
 
 #: templates/500.html:5 templates/500.html.py:8
 msgid "Internal Server Error"
-msgstr ""
+msgstr "Intern serverfejl"
 
 #: templates/500.html:10
 msgid ""
@@ -673,7 +673,7 @@ msgstr ""
 
 #: templates/_base.html:10
 msgid "Official Dolphin Emulator Website"
-msgstr "Website Chính Thức Của Trình Giả Lập Dolphin"
+msgstr ""
 
 #: templates/_base.html:23
 msgid "Latest blog articles"
@@ -681,15 +681,15 @@ msgstr ""
 
 #: templates/_base.html:68
 msgid "Screenshots"
-msgstr "Hình chụp"
+msgstr "Skærmbilleder"
 
 #: templates/_base.html:69
 msgid "FAQ"
-msgstr "Các câu hỏi thường gặp"
+msgstr "FAQ"
 
 #: templates/_base.html:72
 msgid "Forum"
-msgstr "Diễn đàn"
+msgstr "Forum"
 
 #: templates/_base.html:73
 msgid "Wiki"
@@ -697,7 +697,7 @@ msgstr "Wiki"
 
 #: templates/_base.html:74
 msgid "Code"
-msgstr "Mã"
+msgstr "Kode"
 
 #: templates/_base.html:110
 msgid ""

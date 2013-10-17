@@ -10,8 +10,8 @@ msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-09-30 18:18+0200\n"
-"PO-Revision-Date: 2013-09-30 16:18+0000\n"
-"Last-Translator: delroth <delroth@gmail.com>\n"
+"PO-Revision-Date: 2013-10-02 16:40+0000\n"
+"Last-Translator: mustafacan <m.can.elmaci@gmail.com>\n"
 "Language-Team: Turkish (http://www.transifex.com/projects/p/dolphin-emu/language/tr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -21,7 +21,7 @@ msgstr ""
 
 #: blog/admin.py:17
 msgid "Content"
-msgstr ""
+msgstr "İçerik"
 
 #: blog/feeds.py:24
 #, python-format
@@ -35,28 +35,28 @@ msgstr ""
 
 #: blog/models.py:16
 msgid "image"
-msgstr ""
+msgstr "Resim"
 
 #: blog/models.py:17
 msgid "Used for illustration."
-msgstr ""
+msgstr "İllistrasyon için kullanıldı."
 
 #: blog/templates/blog_sidebar.html:6
 #: blog/templates/zinnia/tags/search_form.html:5
 msgid "Search articles"
-msgstr ""
+msgstr "Makaleleri arayın"
 
 #: blog/templates/blog_sidebar.html:31
 msgid "Blog tags"
-msgstr ""
+msgstr "Blog etiketleri"
 
 #: blog/templates/blog_sidebar.html:36
 msgid "Blog series"
-msgstr ""
+msgstr "Blog serileri"
 
 #: blog/templates/blog_sidebar.html:38
 msgid "See all"
-msgstr ""
+msgstr "Hepsini gör"
 
 #: blog/templates/series-index.html:22
 #, python-format
@@ -68,27 +68,27 @@ msgid_plural ""
 "\n"
 "    %(count)s entries\n"
 "  "
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "\n%(count)s yazı"
+msgstr[1] "\n%(count)s yazı"
 
 #: blog/templates/series-index.html:27
 msgid "RSS feed:"
-msgstr ""
+msgstr "RSS beslemesi:"
 
 #: blog/templates/series-index.html:37
 msgid "No blog series yet."
-msgstr ""
+msgstr "Şu anda blog serisi yok."
 
 #: blog/templates/zinnia/_entry_detail_base.html:21
 #: homepage/templates/homepage-home.html:107
 msgid "Written by"
-msgstr ""
+msgstr "Yazar:"
 
 #: blog/templates/zinnia/_entry_detail_base.html:25
 #: homepage/templates/homepage-home.html:111
 #, python-format
 msgid "Show all %(author)s's entries"
-msgstr ""
+msgstr "%(author)s'un bütün yazılarını göster."
 
 #: blog/templates/zinnia/_entry_detail_base.html:27
 #: homepage/templates/homepage-home.html:113
@@ -98,29 +98,29 @@ msgstr ""
 #: blog/templates/zinnia/_entry_detail_base.html:29
 #: homepage/templates/homepage-home.html:115
 msgid "Written on"
-msgstr ""
+msgstr "Tarih:"
 
 #: blog/templates/zinnia/_entry_detail_base.html:37
 msgid "Last update on"
-msgstr ""
+msgstr "Son güncelleme: "
 
 #: blog/templates/zinnia/_entry_detail_base.html:39
 #, python-format
 msgid "Short URL to %(object)s"
-msgstr ""
+msgstr "%(object)s'e kısa URL"
 
 #: blog/templates/zinnia/_entry_detail_base.html:40
 msgid "Short link"
-msgstr ""
+msgstr "Kısa link"
 
 #: blog/templates/zinnia/_entry_detail_base.html:58
 #, python-format
 msgid "Continue reading %(object)s"
-msgstr ""
+msgstr "%(object)s'i okumaya devam et"
 
 #: blog/templates/zinnia/_entry_detail_base.html:60
 msgid "Continue reading"
-msgstr ""
+msgstr "Okumaya devam et"
 
 #: blog/templates/zinnia/_entry_detail_base.html:69
 #, python-format
@@ -131,89 +131,89 @@ msgstr ""
 
 #: blog/templates/zinnia/_entry_detail_base.html:78
 msgid "Blog serie"
-msgstr ""
+msgstr "Blog serisi"
 
 #: blog/templates/zinnia/_entry_detail_base.html:80
 #, python-format
 msgid ""
 "This article is number %(nth)s within the blog serie\n"
 "    <a href=\"%(url)s\"><em>%(serie)s</em></a>."
-msgstr ""
+msgstr "Bu gönderi blog serisinde %(nth)s'nci sırada.⏎\n<a href=\"%(url)s\"><em>%(serie)s</em></a>."
 
 #: blog/templates/zinnia/_entry_detail_base.html:85
 msgid "‹ Previous article in serie"
-msgstr ""
+msgstr "‹ Serideki bir önceki gönderi"
 
 #: blog/templates/zinnia/_entry_detail_base.html:87
 msgid "Next article in serie ›"
-msgstr ""
+msgstr "Serideki bir sonraki gönderi ›"
 
 #: blog/templates/zinnia/_entry_detail_base.html:137
 msgid "Tags"
-msgstr ""
+msgstr "Etiketler"
 
 #: blog/templates/zinnia/_entry_detail_base.html:141
 #, python-format
 msgid "Show all entries tagged by %(tag)s"
-msgstr ""
+msgstr "%(tag)s ile etiketlenen bütün gönderileri göster."
 
 #: blog/templates/zinnia/_entry_detail_base.html:144
 msgid "No tags"
-msgstr ""
+msgstr "Etiket yok"
 
 #: blog/templates/zinnia/_entry_detail_base.html:151
 msgid "Categories"
-msgstr ""
+msgstr "Kategoriler"
 
 #: blog/templates/zinnia/_entry_detail_base.html:155
 #, python-format
 msgid "Show all entries in %(category)s"
-msgstr ""
+msgstr "%(category)s'deki bütün gönderileri göster."
 
 #: blog/templates/zinnia/_entry_detail_base.html:158
 msgid "No categories"
-msgstr ""
+msgstr "Kategori yok"
 
 #: blog/templates/zinnia/entry_detail_base.html:22
 msgid "RSS Feed of discussions on"
-msgstr ""
+msgstr "Tartışmaların RSS beslemesi"
 
 #: blog/templates/zinnia/entry_detail_base.html:24
 msgid "RSS Feed of comments on"
-msgstr ""
+msgstr "Yorumların RSS beslemesi"
 
 #: blog/templates/zinnia/entry_detail_base.html:26
 msgid "RSS Feed of pingbacks on"
-msgstr ""
+msgstr "Pingback'ların RSS beslemesi"
 
 #: blog/templates/zinnia/entry_detail_base.html:28
 msgid "RSS Feed of trackbacks on"
-msgstr ""
+msgstr "Trackback'ların RSS beslemesi"
 
 #: blog/templates/zinnia/entry_detail_base.html:46
 msgid "Next entry"
-msgstr ""
+msgstr "Sonraki gönderi"
 
 #: blog/templates/zinnia/entry_detail_base.html:58
 msgid "Previous entry"
-msgstr ""
+msgstr "Önceki gönderi"
 
 #: blog/templates/zinnia/entry_detail_base.html:70
 msgid "Related entries"
-msgstr ""
+msgstr "İlgili gönderiler"
 
 #: blog/templates/zinnia/entry_detail_base.html:82
 msgid "Similar entries"
-msgstr ""
+msgstr "Benzer gönderiler"
 
 #: blog/templates/zinnia/entry_detail_base.html:224
 #: blog/templates/zinnia/entry_detail_base.html:225
 msgid "Edit the entry"
-msgstr ""
+msgstr "Gönderiyi düzenle"
 
 #: blog/templates/zinnia/entry_list.html:5
 msgid "Latest entries for"
-msgstr ""
+msgstr "Şunun için son gönderiler: "
 
 #: blog/templates/zinnia/entry_list.html:5
 msgid "the category"
@@ -235,7 +235,7 @@ msgstr ""
 #: blog/templates/zinnia/entry_list.html:13
 #: blog/templates/zinnia/entry_list.html:16
 msgid "RSS Feed"
-msgstr ""
+msgstr "RSS beslemesi"
 
 #: blog/templates/zinnia/entry_list.html:20
 msgid "Latest entries"
@@ -293,12 +293,12 @@ msgstr ""
 
 #: blog/templates/zinnia/skeleton.html:5
 msgid "Latest news for Dolphin Emulator"
-msgstr ""
+msgstr "Dolphin Emulator için son haberler"
 
 #: blog/templates/zinnia/skeleton.html:8
 #: blog/templates/zinnia/skeleton.html:13 templates/_base.html:67
 msgid "Articles"
-msgstr ""
+msgstr "Makaleler"
 
 #: blog/templates/zinnia/tags/search_form.html:16
 msgid ""
@@ -311,7 +311,7 @@ msgstr ""
 msgid ""
 "The Dolphin Emulator compatibility list contains all the games we tested, "
 "sorted by how well they work on the emulator."
-msgstr ""
+msgstr "Dolphin Emulator uyumluluk listesi, şu ana kadar test ettiğimiz bütün oyunları içerir."
 
 #: compat/templates/compat-list.html:10
 #, python-format
@@ -413,7 +413,7 @@ msgstr "Mükemmel"
 msgid ""
 "The Official Dolphin FAQ answers all the questions that people often ask "
 "about Dolphin."
-msgstr ""
+msgstr "Resmi Dolphin SSS, insanların Dolphin hakkında sıkça sorduğu bütün soruları içerir."
 
 #: docs/templates/docs-faq.html:8
 msgid "Frequently Asked Questions"
@@ -425,7 +425,7 @@ msgstr "Klavuzlar listesine geri dön"
 
 #: docs/templates/docs-guides-index.html:5
 msgid "See all the guides written by the Dolphin team about the emulator."
-msgstr ""
+msgstr "Emulator hakkında "
 
 #: docs/templates/docs-guides-index.html:7 templates/_base.html:70
 msgid "Guides"
@@ -489,7 +489,7 @@ msgid ""
 "    Stable versions are released after a lot of testing to ensure emulation\n"
 "    performance and stability. However, since they are released less often,\n"
 "    they might be outdated and lacking some new features.\n"
-msgstr ""
+msgstr "\nKararlı sürümler, emulasyon hızı ve kararlılık açısından yapılan testlerden sonra yayınlanan sürümlerdir. Ama bu sürümler daha uzun aralıklarla yayınlandığı için eski olabilir veya en yeni özelliklerden faydalanamayabilirsiniz.\n\n"
 
 #: downloads/templates/downloads-index.html:55
 msgid "No stable release yet"
@@ -506,7 +506,7 @@ msgid ""
 "    Dolphin, several times every day! Using development versions enables you to\n"
 "    use the latest and greatest improvements to the project. They are however\n"
 "    less tested than stable versions of the emulator.\n"
-msgstr ""
+msgstr "\nGeliştirme sürümleri geliştiricilerin yaptığı her yeni değişimde, neredeyse her gün yeniden yayınlanan sürümlerdir. Bu sürümleri kullanmak yapılan en son değişiklikleri ve en yeni özellikleri test etmenize imkan sağlayacaktır. Ama geliştirme sürümleri test edilmediği için stabil olmayabilir.\n"
 
 #: downloads/templates/downloads-index.html:85
 msgid "Only displaying the <tt>master</tt> branch versions."
@@ -609,7 +609,7 @@ msgstr ""
 #: homepage/templates/homepage-home.html:41
 #, python-format
 msgid "Download %(last_release)s for Windows, Mac and Linux »"
-msgstr ""
+msgstr "%(last_release)s 'i Windows, Mac and Linux için indirin »"
 
 #: homepage/templates/homepage-home.html:93
 msgid "RSS feed of the latest articles"
@@ -617,7 +617,7 @@ msgstr ""
 
 #: homepage/templates/homepage-home.html:94
 msgid "Latest articles"
-msgstr ""
+msgstr "Güncel makaleler"
 
 #: homepage/templates/homepage-home.html:121
 #, python-format
@@ -626,19 +626,19 @@ msgstr ""
 
 #: homepage/templates/homepage-home.html:123
 msgid "Visit forum thread for this article"
-msgstr ""
+msgstr "Bu makale için forum konusunu ziyaret edin"
 
 #: homepage/templates/homepage-home.html:123
 msgid "Forum thread"
-msgstr ""
+msgstr "Forum konusu"
 
 #: homepage/templates/homepage-home.html:128
 msgid "Read this article"
-msgstr ""
+msgstr "Makaleyi oku"
 
 #: homepage/templates/homepage-home.html:132
 msgid "No articles yet."
-msgstr ""
+msgstr "Şu anda makale yok."
 
 #: media/templates/media-all.html:6
 msgid ""
@@ -656,21 +656,21 @@ msgstr "Medya Galerisi"
 
 #: templates/404.html:5 templates/404.html.py:8
 msgid "Page not found"
-msgstr ""
+msgstr "Sayfa bulunamadı"
 
 #: templates/404.html:10
 msgid "The URL you tried to access does not exist."
-msgstr ""
+msgstr "Erişmeye çalıştığınız URL geçerli bir adres değil."
 
 #: templates/500.html:5 templates/500.html.py:8
 msgid "Internal Server Error"
-msgstr ""
+msgstr "İç Sunucu Hatası"
 
 #: templates/500.html:10
 msgid ""
 "There was an error while trying to access this page. Please refresh the page"
 " in a few seconds."
-msgstr ""
+msgstr "Bu sayfaya erişirken bir hata meydana geldi. Lütfen birkaç saniye sonra sayfayı yenileyin."
 
 #: templates/_base.html:10
 msgid "Official Dolphin Emulator Website"
@@ -706,4 +706,4 @@ msgid ""
 "            &copy; 2013 Dolphin Emulator Project -\n"
 "            <a href=\"https://github.com/dolphin-emu/www/\">Website source code</a>\n"
 "            "
-msgstr ""
+msgstr "\n&copy; 2013 Dolphin Emulator Projesi -\n<a href=\"https://github.com/dolphin-emu/www/\">Website'nin kaynak kodu</a>"
