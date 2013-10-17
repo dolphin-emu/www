@@ -174,6 +174,10 @@ TEMPLATE_DIRS = (
     os.path.join(PROJECT_ROOT, 'dolweb', 'templates'),
 )
 
+LOCALE_PATHS = (
+    os.path.join(PROJECT_ROOT, 'dolweb', 'locale'),
+)
+
 CACHES = {
     'default': {
         'BACKEND': 'django.core.cache.backends.locmem.LocMemCache',
