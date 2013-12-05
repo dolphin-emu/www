@@ -1,7 +1,7 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# 
+#
 # Translators:
 # mustafacan <m.can.elmaci@gmail.com>, 2013
 # mustafacan <m.can.elmaci@gmail.com>, 2013
@@ -9,14 +9,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-09-30 18:18+0200\n"
-"PO-Revision-Date: 2013-10-02 16:40+0000\n"
+"POT-Creation-Date: 2013-12-05 19:33+0100\n"
+"PO-Revision-Date: 2013-11-20 10:48+0000\n"
 "Last-Translator: mustafacan <m.can.elmaci@gmail.com>\n"
-"Language-Team: Turkish (http://www.transifex.com/projects/p/dolphin-emu/language/tr/)\n"
+"Language-Team: Turkish (http://www.transifex.com/projects/p/dolphin-emu/"
+"language/tr/)\n"
+"Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: tr\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #: blog/admin.py:17
@@ -68,8 +69,12 @@ msgid_plural ""
 "\n"
 "    %(count)s entries\n"
 "  "
-msgstr[0] "\n%(count)s yazı"
-msgstr[1] "\n%(count)s yazı"
+msgstr[0] ""
+"\n"
+"%(count)s yazı"
+msgstr[1] ""
+"\n"
+"%(count)s yazı"
 
 #: blog/templates/series-index.html:27
 msgid "RSS feed:"
@@ -113,6 +118,16 @@ msgstr "%(object)s'e kısa URL"
 msgid "Short link"
 msgstr "Kısa link"
 
+#: blog/templates/zinnia/_entry_detail_base.html:41
+#: homepage/templates/homepage-home.html:123
+msgid "Visit forum thread for this article"
+msgstr "Bu makale için forum konusunu ziyaret edin"
+
+#: blog/templates/zinnia/_entry_detail_base.html:41
+#: homepage/templates/homepage-home.html:123
+msgid "Forum thread"
+msgstr "Forum konusu"
+
 #: blog/templates/zinnia/_entry_detail_base.html:58
 #, python-format
 msgid "Continue reading %(object)s"
@@ -138,7 +153,9 @@ msgstr "Blog serisi"
 msgid ""
 "This article is number %(nth)s within the blog serie\n"
 "    <a href=\"%(url)s\"><em>%(serie)s</em></a>."
-msgstr "Bu gönderi blog serisinde %(nth)s'nci sırada.⏎\n<a href=\"%(url)s\"><em>%(serie)s</em></a>."
+msgstr ""
+"Bu gönderi blog serisinde %(nth)s'nci sırada.⏎\n"
+"<a href=\"%(url)s\"><em>%(serie)s</em></a>."
 
 #: blog/templates/zinnia/_entry_detail_base.html:85
 msgid "‹ Previous article in serie"
@@ -303,15 +320,17 @@ msgstr "Makaleler"
 #: blog/templates/zinnia/tags/search_form.html:16
 msgid ""
 "You can use - to exclude words or phrases, &quot;double quotes&quot; for "
-"exact phrases and the AND/OR boolean operators combined with parenthesis for"
-" complex queries."
+"exact phrases and the AND/OR boolean operators combined with parenthesis for "
+"complex queries."
 msgstr ""
 
 #: compat/templates/compat-list.html:8
 msgid ""
 "The Dolphin Emulator compatibility list contains all the games we tested, "
 "sorted by how well they work on the emulator."
-msgstr "Dolphin Emulator uyumluluk listesi, şu ana kadar test ettiğimiz bütün oyunları içerir."
+msgstr ""
+"Dolphin Emulator uyumluluk listesi, şu ana kadar test ettiğimiz bütün "
+"oyunları içerir."
 
 #: compat/templates/compat-list.html:10
 #, python-format
@@ -338,7 +357,9 @@ msgstr "5 üzerinden 4"
 msgid ""
 "<strong>Playable</strong>: Runs well, only minor graphical or audio "
 "glitches. Games can be played all the way through."
-msgstr "<strong>Oynanabilir</strong>: Çalışıyor, sadece küçük grafik ve ses sorunları var. Oyun sonuna kadar oynanabiliyor."
+msgstr ""
+"<strong>Oynanabilir</strong>: Çalışıyor, sadece küçük grafik ve ses "
+"sorunları var. Oyun sonuna kadar oynanabiliyor."
 
 #: compat/templates/compat-list.html:27
 msgid "3 out of 5"
@@ -346,9 +367,11 @@ msgstr "5 üzerinden 3"
 
 #: compat/templates/compat-list.html:27
 msgid ""
-"<strong>Starts</strong>: Starts, maybe even plays well, but crashes or major"
-" graphical/audio glitches."
-msgstr "<strong>Oyuna giriyor</strong>: Oyuna giriyor, oynanabiliyor, ama ileriki bölümlerde çöküyor veya büyük grafik ve ses sorunları var."
+"<strong>Starts</strong>: Starts, maybe even plays well, but crashes or major "
+"graphical/audio glitches."
+msgstr ""
+"<strong>Oyuna giriyor</strong>: Oyuna giriyor, oynanabiliyor, ama ileriki "
+"bölümlerde çöküyor veya büyük grafik ve ses sorunları var."
 
 #: compat/templates/compat-list.html:28
 msgid "2 out of 5"
@@ -358,7 +381,8 @@ msgstr "5 üzerinden 2"
 msgid ""
 "<strong>Intro/Menu</strong>: Hangs/crashes somewhere between booting and "
 "starting."
-msgstr "<strong>Açılıyor</strong>: Oyuna girerken bir yerde donuyor veya çöküyor."
+msgstr ""
+"<strong>Açılıyor</strong>: Oyuna girerken bir yerde donuyor veya çöküyor."
 
 #: compat/templates/compat-list.html:29
 msgid "1 out of 5"
@@ -413,7 +437,9 @@ msgstr "Mükemmel"
 msgid ""
 "The Official Dolphin FAQ answers all the questions that people often ask "
 "about Dolphin."
-msgstr "Resmi Dolphin SSS, insanların Dolphin hakkında sıkça sorduğu bütün soruları içerir."
+msgstr ""
+"Resmi Dolphin SSS, insanların Dolphin hakkında sıkça sorduğu bütün soruları "
+"içerir."
 
 #: docs/templates/docs-faq.html:8
 msgid "Frequently Asked Questions"
@@ -489,7 +515,13 @@ msgid ""
 "    Stable versions are released after a lot of testing to ensure emulation\n"
 "    performance and stability. However, since they are released less often,\n"
 "    they might be outdated and lacking some new features.\n"
-msgstr "\nKararlı sürümler, emulasyon hızı ve kararlılık açısından yapılan testlerden sonra yayınlanan sürümlerdir. Ama bu sürümler daha uzun aralıklarla yayınlandığı için eski olabilir veya en yeni özelliklerden faydalanamayabilirsiniz.\n\n"
+msgstr ""
+"\n"
+"Kararlı sürümler, emulasyon hızı ve kararlılık açısından yapılan testlerden "
+"sonra yayınlanan sürümlerdir. Ama bu sürümler daha uzun aralıklarla "
+"yayınlandığı için eski olabilir veya en yeni özelliklerden "
+"faydalanamayabilirsiniz.\n"
+"\n"
 
 #: downloads/templates/downloads-index.html:55
 msgid "No stable release yet"
@@ -502,11 +534,19 @@ msgstr "Geliştirme sürümleri"
 #: downloads/templates/downloads-index.html:78
 msgid ""
 "\n"
-"    Development versions are released every time a developer makes a change to\n"
-"    Dolphin, several times every day! Using development versions enables you to\n"
-"    use the latest and greatest improvements to the project. They are however\n"
+"    Development versions are released every time a developer makes a change "
+"to\n"
+"    Dolphin, several times every day! Using development versions enables you "
+"to\n"
+"    use the latest and greatest improvements to the project. They are "
+"however\n"
 "    less tested than stable versions of the emulator.\n"
-msgstr "\nGeliştirme sürümleri geliştiricilerin yaptığı her yeni değişimde, neredeyse her gün yeniden yayınlanan sürümlerdir. Bu sürümleri kullanmak yapılan en son değişiklikleri ve en yeni özellikleri test etmenize imkan sağlayacaktır. Ama geliştirme sürümleri test edilmediği için stabil olmayabilir.\n"
+msgstr ""
+"\n"
+"Geliştirme sürümleri geliştiricilerin yaptığı her yeni değişimde, neredeyse "
+"her gün yeniden yayınlanan sürümlerdir. Bu sürümleri kullanmak yapılan en "
+"son değişiklikleri ve en yeni özellikleri test etmenize imkan sağlayacaktır. "
+"Ama geliştirme sürümleri test edilmediği için stabil olmayabilir.\n"
 
 #: downloads/templates/downloads-index.html:85
 msgid "Only displaying the <tt>master</tt> branch versions."
@@ -523,18 +563,27 @@ msgstr "Kaynak kodu"
 #: downloads/templates/downloads-index.html:97
 msgid ""
 "\n"
-"    The latest version of the Dolphin source code can be downloaded from the\n"
+"    The latest version of the Dolphin source code can be downloaded from "
+"the\n"
 "    project Git repository.\n"
 "    "
-msgstr "\n    Dolphin'in son sürümünün kaynak kodu Git deposundan indirilebilir.\n    "
+msgstr ""
+"\n"
+"    Dolphin'in son sürümünün kaynak kodu Git deposundan indirilebilir.\n"
+"    "
 
 #: downloads/templates/downloads-index.html:105
 msgid ""
 "\n"
-"    You can also <a href=\"http://code.google.com/p/dolphin-emu/source/browse/\">browse\n"
+"    You can also <a href=\"http://code.google.com/p/dolphin-emu/source/"
+"browse/\">browse\n"
 "        the current version of the source code</a>.\n"
 "    "
-msgstr "\n    Ayrıca <a href=\"http://code.google.com/p/dolphin-emu/source/browse/\">şu anki kaynak koduna gözatabilirsiniz.</a>.\n    "
+msgstr ""
+"\n"
+"    Ayrıca <a href=\"http://code.google.com/p/dolphin-emu/source/browse/"
+"\">şu anki kaynak koduna gözatabilirsiniz.</a>.\n"
+"    "
 
 #: downloads/templates/downloads-list.html:5
 #, python-format
@@ -598,7 +647,8 @@ msgstr "Dolphin Emulator"
 #: homepage/templates/homepage-home.html:32
 msgid ""
 "\n"
-"            <b>Dolphin</b> is an emulator for two recent Nintendo video game\n"
+"            <b>Dolphin</b> is an emulator for two recent Nintendo video "
+"game\n"
 "            consoles: the <b>GameCube</b> and the <b>Wii</b>. It allows PC\n"
 "            gamers to enjoy games for these two consoles in <b>full HD</b>\n"
 "            (1080p) with several enhancements: compatibility with all PC\n"
@@ -623,14 +673,6 @@ msgstr "Güncel makaleler"
 #, python-format
 msgid "/ Part of serie <a href=\"%(url)s\">%(name)s</a>"
 msgstr ""
-
-#: homepage/templates/homepage-home.html:123
-msgid "Visit forum thread for this article"
-msgstr "Bu makale için forum konusunu ziyaret edin"
-
-#: homepage/templates/homepage-home.html:123
-msgid "Forum thread"
-msgstr "Forum konusu"
 
 #: homepage/templates/homepage-home.html:128
 msgid "Read this article"
@@ -668,9 +710,11 @@ msgstr "İç Sunucu Hatası"
 
 #: templates/500.html:10
 msgid ""
-"There was an error while trying to access this page. Please refresh the page"
-" in a few seconds."
-msgstr "Bu sayfaya erişirken bir hata meydana geldi. Lütfen birkaç saniye sonra sayfayı yenileyin."
+"There was an error while trying to access this page. Please refresh the page "
+"in a few seconds."
+msgstr ""
+"Bu sayfaya erişirken bir hata meydana geldi. Lütfen birkaç saniye sonra "
+"sayfayı yenileyin."
 
 #: templates/_base.html:10
 msgid "Official Dolphin Emulator Website"
@@ -704,6 +748,10 @@ msgstr "Code"
 msgid ""
 "\n"
 "            &copy; 2013 Dolphin Emulator Project -\n"
-"            <a href=\"https://github.com/dolphin-emu/www/\">Website source code</a>\n"
+"            <a href=\"https://github.com/dolphin-emu/www/\">Website source "
+"code</a>\n"
 "            "
-msgstr "\n&copy; 2013 Dolphin Emulator Projesi -\n<a href=\"https://github.com/dolphin-emu/www/\">Website'nin kaynak kodu</a>"
+msgstr ""
+"\n"
+"&copy; 2013 Dolphin Emulator Projesi -\n"
+"<a href=\"https://github.com/dolphin-emu/www/\">Website'nin kaynak kodu</a>"

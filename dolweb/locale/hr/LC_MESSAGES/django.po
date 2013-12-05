@@ -1,7 +1,7 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# 
+#
 # Translators:
 # Alberto Poljak <albertopoljak@gmail.com>, 2013
 # Poljak_CRO <nbvfrp@gmail.com>, 2013
@@ -9,19 +9,21 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-09-30 18:18+0200\n"
-"PO-Revision-Date: 2013-09-30 16:18+0000\n"
-"Last-Translator: delroth <delroth@gmail.com>\n"
-"Language-Team: Croatian (http://www.transifex.com/projects/p/dolphin-emu/language/hr/)\n"
+"POT-Creation-Date: 2013-12-05 19:33+0100\n"
+"PO-Revision-Date: 2013-11-20 10:48+0000\n"
+"Last-Translator: Alberto Poljak <albertopoljak@gmail.com>\n"
+"Language-Team: Croatian (http://www.transifex.com/projects/p/dolphin-emu/"
+"language/hr/)\n"
+"Language: hr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: hr\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 
 #: blog/admin.py:17
 msgid "Content"
-msgstr ""
+msgstr "Sadržaj"
 
 #: blog/feeds.py:24
 #, python-format
@@ -35,7 +37,7 @@ msgstr ""
 
 #: blog/models.py:16
 msgid "image"
-msgstr ""
+msgstr "slika"
 
 #: blog/models.py:17
 msgid "Used for illustration."
@@ -112,6 +114,16 @@ msgstr ""
 
 #: blog/templates/zinnia/_entry_detail_base.html:40
 msgid "Short link"
+msgstr ""
+
+#: blog/templates/zinnia/_entry_detail_base.html:41
+#: homepage/templates/homepage-home.html:123
+msgid "Visit forum thread for this article"
+msgstr ""
+
+#: blog/templates/zinnia/_entry_detail_base.html:41
+#: homepage/templates/homepage-home.html:123
+msgid "Forum thread"
 msgstr ""
 
 #: blog/templates/zinnia/_entry_detail_base.html:58
@@ -304,15 +316,17 @@ msgstr ""
 #: blog/templates/zinnia/tags/search_form.html:16
 msgid ""
 "You can use - to exclude words or phrases, &quot;double quotes&quot; for "
-"exact phrases and the AND/OR boolean operators combined with parenthesis for"
-" complex queries."
+"exact phrases and the AND/OR boolean operators combined with parenthesis for "
+"complex queries."
 msgstr ""
 
 #: compat/templates/compat-list.html:8
 msgid ""
 "The Dolphin Emulator compatibility list contains all the games we tested, "
 "sorted by how well they work on the emulator."
-msgstr "Dolphin lista kompatibilnosti sadrži sve testirane igre poredane prema tome koliko se dobro izvode."
+msgstr ""
+"Dolphin lista kompatibilnosti sadrži sve testirane igre poredane prema tome "
+"koliko se dobro izvode."
 
 #: compat/templates/compat-list.html:10
 #, python-format
@@ -339,7 +353,9 @@ msgstr "4 od 5"
 msgid ""
 "<strong>Playable</strong>: Runs well, only minor graphical or audio "
 "glitches. Games can be played all the way through."
-msgstr "<strong>Igrivo</strong>: Možete prijeći cijelu igru uz tek poneku vizualnu ili audio grešku."
+msgstr ""
+"<strong>Igrivo</strong>: Možete prijeći cijelu igru uz tek poneku vizualnu "
+"ili audio grešku."
 
 #: compat/templates/compat-list.html:27
 msgid "3 out of 5"
@@ -347,9 +363,11 @@ msgstr "3 od 5"
 
 #: compat/templates/compat-list.html:27
 msgid ""
-"<strong>Starts</strong>: Starts, maybe even plays well, but crashes or major"
-" graphical/audio glitches."
-msgstr "<strong>Pokrene se</strong>: Možda se i može igrati unatoč svim tim vizualnim/audio greškama."
+"<strong>Starts</strong>: Starts, maybe even plays well, but crashes or major "
+"graphical/audio glitches."
+msgstr ""
+"<strong>Pokrene se</strong>: Možda se i može igrati unatoč svim tim "
+"vizualnim/audio greškama."
 
 #: compat/templates/compat-list.html:28
 msgid "2 out of 5"
@@ -359,7 +377,8 @@ msgstr "2 od 5"
 msgid ""
 "<strong>Intro/Menu</strong>: Hangs/crashes somewhere between booting and "
 "starting."
-msgstr "<strong>Uvod/Meni</strong>: Uruši se negdje između pokretanja i menija."
+msgstr ""
+"<strong>Uvod/Meni</strong>: Uruši se negdje između pokretanja i menija."
 
 #: compat/templates/compat-list.html:29
 msgid "1 out of 5"
@@ -414,7 +433,8 @@ msgstr "Savršeno"
 msgid ""
 "The Official Dolphin FAQ answers all the questions that people often ask "
 "about Dolphin."
-msgstr "Službeni Dolphin FAQ ima odgovore na neka od često postavljenih pitanja."
+msgstr ""
+"Službeni Dolphin FAQ ima odgovore na neka od često postavljenih pitanja."
 
 #: docs/templates/docs-faq.html:8
 msgid "Frequently Asked Questions"
@@ -473,7 +493,9 @@ msgstr "Razvojna verzija još nije izdana"
 msgid ""
 "Download the latest version of the Dolphin Emulator (%(ver)s) from the "
 "official website."
-msgstr "Preuzmite najnoviju verziju Dolphin Emulatora (%(ver)s) sa službene web stranice."
+msgstr ""
+"Preuzmite najnoviju verziju Dolphin Emulatora (%(ver)s) sa službene web "
+"stranice."
 
 #: downloads/templates/downloads-index.html:8
 #: downloads/templates/downloads-index.html:27 templates/_base.html:66
@@ -490,7 +512,14 @@ msgid ""
 "    Stable versions are released after a lot of testing to ensure emulation\n"
 "    performance and stability. However, since they are released less often,\n"
 "    they might be outdated and lacking some new features.\n"
-msgstr "\nStabilne verzije se izdaju nakon mnogo testiranja da bi se osigurala brzina \ni stabilnost emulacije.Ako ne znate koju verziju Dolphina da koristite, najnovija \nstabilna verzija je generalno najbolja.\n\n"
+msgstr ""
+"\n"
+"Stabilne verzije se izdaju nakon mnogo testiranja da bi se osigurala "
+"brzina \n"
+"i stabilnost emulacije.Ako ne znate koju verziju Dolphina da koristite, "
+"najnovija \n"
+"stabilna verzija je generalno najbolja.\n"
+"\n"
 
 #: downloads/templates/downloads-index.html:55
 msgid "No stable release yet"
@@ -503,11 +532,21 @@ msgstr "Verzije u izradi"
 #: downloads/templates/downloads-index.html:78
 msgid ""
 "\n"
-"    Development versions are released every time a developer makes a change to\n"
-"    Dolphin, several times every day! Using development versions enables you to\n"
-"    use the latest and greatest improvements to the project. They are however\n"
+"    Development versions are released every time a developer makes a change "
+"to\n"
+"    Dolphin, several times every day! Using development versions enables you "
+"to\n"
+"    use the latest and greatest improvements to the project. They are "
+"however\n"
 "    less tested than stable versions of the emulator.\n"
-msgstr "\nUpozorenje! Razvojne verzije se izdaju svaki put kada\nprogramer napravi promjene na \nDolphinu, to je i do nekoliko puta u danu! Razvojne verzije vam omogućuju da \nkoristite najbolja i najnovija poboljšanja za cijenu smanjene stabilnosti.\n\n"
+msgstr ""
+"\n"
+"Upozorenje! Razvojne verzije se izdaju svaki put kada\n"
+"programer napravi promjene na \n"
+"Dolphinu, to je i do nekoliko puta u danu! Razvojne verzije vam omogućuju "
+"da \n"
+"koristite najbolja i najnovija poboljšanja za cijenu smanjene stabilnosti.\n"
+"\n"
 
 #: downloads/templates/downloads-index.html:85
 msgid "Only displaying the <tt>master</tt> branch versions."
@@ -524,18 +563,27 @@ msgstr "Izvorni Kod"
 #: downloads/templates/downloads-index.html:97
 msgid ""
 "\n"
-"    The latest version of the Dolphin source code can be downloaded from the\n"
+"    The latest version of the Dolphin source code can be downloaded from "
+"the\n"
 "    project Git repository.\n"
 "    "
-msgstr "\nNajnovija verzija Dolphin izvornog koda je dostupna za preuzimanje sa\nskladišta projekta Git."
+msgstr ""
+"\n"
+"Najnovija verzija Dolphin izvornog koda je dostupna za preuzimanje sa\n"
+"skladišta projekta Git."
 
 #: downloads/templates/downloads-index.html:105
 msgid ""
 "\n"
-"    You can also <a href=\"http://code.google.com/p/dolphin-emu/source/browse/\">browse\n"
+"    You can also <a href=\"http://code.google.com/p/dolphin-emu/source/"
+"browse/\">browse\n"
 "        the current version of the source code</a>.\n"
 "    "
-msgstr "\nTakođer možete <a href=\"http://code.google.com/p/dolphin-emu/source/browse/\">pregledati\ntrenutnu verziju izvornog koda</a>."
+msgstr ""
+"\n"
+"Također možete <a href=\"http://code.google.com/p/dolphin-emu/source/browse/"
+"\">pregledati\n"
+"trenutnu verziju izvornog koda</a>."
 
 #: downloads/templates/downloads-list.html:5
 #, python-format
@@ -586,7 +634,9 @@ msgstr "Promjena opisa"
 msgid ""
 "Official website of Dolphin, the GameCube and Wii emulator. Download the "
 "latest version (%(ver)s) now or ask questions on our forums for help."
-msgstr "Službena web stranica Dolphina, Gamecube i Wii emulatora. Preuzmite najnoviju verziju (%(ver)s) ili postavite pitanje na našim forumima."
+msgstr ""
+"Službena web stranica Dolphina, Gamecube i Wii emulatora. Preuzmite "
+"najnoviju verziju (%(ver)s) ili postavite pitanje na našim forumima."
 
 #: homepage/templates/homepage-home.html:13
 msgid "GameCube/Wii games on PC"
@@ -599,7 +649,8 @@ msgstr "Dolphin Emulator"
 #: homepage/templates/homepage-home.html:32
 msgid ""
 "\n"
-"            <b>Dolphin</b> is an emulator for two recent Nintendo video game\n"
+"            <b>Dolphin</b> is an emulator for two recent Nintendo video "
+"game\n"
 "            consoles: the <b>GameCube</b> and the <b>Wii</b>. It allows PC\n"
 "            gamers to enjoy games for these two consoles in <b>full HD</b>\n"
 "            (1080p) with several enhancements: compatibility with all PC\n"
@@ -623,14 +674,6 @@ msgstr ""
 #: homepage/templates/homepage-home.html:121
 #, python-format
 msgid "/ Part of serie <a href=\"%(url)s\">%(name)s</a>"
-msgstr ""
-
-#: homepage/templates/homepage-home.html:123
-msgid "Visit forum thread for this article"
-msgstr ""
-
-#: homepage/templates/homepage-home.html:123
-msgid "Forum thread"
 msgstr ""
 
 #: homepage/templates/homepage-home.html:128
@@ -669,9 +712,11 @@ msgstr "Interna Pogreška Poslužitelja"
 
 #: templates/500.html:10
 msgid ""
-"There was an error while trying to access this page. Please refresh the page"
-" in a few seconds."
-msgstr "Dogodila se pogreška prilikom otvaranja ove stranice. Molimo vas da osvježite stranicu za par sekundi."
+"There was an error while trying to access this page. Please refresh the page "
+"in a few seconds."
+msgstr ""
+"Dogodila se pogreška prilikom otvaranja ove stranice. Molimo vas da "
+"osvježite stranicu za par sekundi."
 
 #: templates/_base.html:10
 msgid "Official Dolphin Emulator Website"
@@ -705,6 +750,7 @@ msgstr "Kod"
 msgid ""
 "\n"
 "            &copy; 2013 Dolphin Emulator Project -\n"
-"            <a href=\"https://github.com/dolphin-emu/www/\">Website source code</a>\n"
+"            <a href=\"https://github.com/dolphin-emu/www/\">Website source "
+"code</a>\n"
 "            "
 msgstr ""
