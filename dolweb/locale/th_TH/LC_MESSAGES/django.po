@@ -1,7 +1,7 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-#
+# 
 # Translators:
 # boatkung <boatkung20@gmail.com>, 2013
 # boatkung <boatkung20@gmail.com>, 2013
@@ -9,15 +9,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-12-05 19:33+0100\n"
+"POT-Creation-Date: 2013-09-30 18:18+0200\n"
 "PO-Revision-Date: 2013-11-20 10:48+0000\n"
 "Last-Translator: delroth <delroth@gmail.com>\n"
-"Language-Team: Thai (Thailand) (http://www.transifex.com/projects/p/dolphin-"
-"emu/language/th_TH/)\n"
-"Language: th_TH\n"
+"Language-Team: Thai (Thailand) (http://www.transifex.com/projects/p/dolphin-emu/language/th_TH/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: th_TH\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: blog/admin.py:17
@@ -111,16 +110,6 @@ msgstr ""
 
 #: blog/templates/zinnia/_entry_detail_base.html:40
 msgid "Short link"
-msgstr ""
-
-#: blog/templates/zinnia/_entry_detail_base.html:41
-#: homepage/templates/homepage-home.html:123
-msgid "Visit forum thread for this article"
-msgstr ""
-
-#: blog/templates/zinnia/_entry_detail_base.html:41
-#: homepage/templates/homepage-home.html:123
-msgid "Forum thread"
 msgstr ""
 
 #: blog/templates/zinnia/_entry_detail_base.html:58
@@ -313,8 +302,8 @@ msgstr ""
 #: blog/templates/zinnia/tags/search_form.html:16
 msgid ""
 "You can use - to exclude words or phrases, &quot;double quotes&quot; for "
-"exact phrases and the AND/OR boolean operators combined with parenthesis for "
-"complex queries."
+"exact phrases and the AND/OR boolean operators combined with parenthesis for"
+" complex queries."
 msgstr ""
 
 #: compat/templates/compat-list.html:8
@@ -348,8 +337,7 @@ msgstr "4 จาก 5"
 msgid ""
 "<strong>Playable</strong>: Runs well, only minor graphical or audio "
 "glitches. Games can be played all the way through."
-msgstr ""
-"<strong>เล่นได้</strong>: รันเกมได้ดี มีปัญหาเล็กน้อยกับกราฟิกหรือเสียง แต่เกมยังคงเล่นต่อไปได้"
+msgstr "<strong>เล่นได้</strong>: รันเกมได้ดี มีปัญหาเล็กน้อยกับกราฟิกหรือเสียง แต่เกมยังคงเล่นต่อไปได้"
 
 #: compat/templates/compat-list.html:27
 msgid "3 out of 5"
@@ -357,11 +345,9 @@ msgstr "3 จาก 5"
 
 #: compat/templates/compat-list.html:27
 msgid ""
-"<strong>Starts</strong>: Starts, maybe even plays well, but crashes or major "
-"graphical/audio glitches."
-msgstr ""
-"<strong>เริ่มเกมได้</strong>: เริ่มเกมได้ "
-"อาจจะเล่นไปได้สักพักแต่จะมีปัญหาการแครชหรือปัญหาใหญ่เกี่ยวกับกราฟิก/เสียง"
+"<strong>Starts</strong>: Starts, maybe even plays well, but crashes or major"
+" graphical/audio glitches."
+msgstr "<strong>เริ่มเกมได้</strong>: เริ่มเกมได้ อาจจะเล่นไปได้สักพักแต่จะมีปัญหาการแครชหรือปัญหาใหญ่เกี่ยวกับกราฟิก/เสียง"
 
 #: compat/templates/compat-list.html:28
 msgid "2 out of 5"
@@ -371,8 +357,7 @@ msgstr "2 จาก 5"
 msgid ""
 "<strong>Intro/Menu</strong>: Hangs/crashes somewhere between booting and "
 "starting."
-msgstr ""
-"<strong>อินโทร/เมนู</strong>: แฮงค์/แครช ในบางจุดระหว่างการบูตเกมไปจนถึงตอนเริ่มเกม"
+msgstr "<strong>อินโทร/เมนู</strong>: แฮงค์/แครช ในบางจุดระหว่างการบูตเกมไปจนถึงตอนเริ่มเกม"
 
 #: compat/templates/compat-list.html:29
 msgid "1 out of 5"
@@ -516,12 +501,9 @@ msgstr "เวอร์ชันที่อยู่ในช่วงพัฒ
 #: downloads/templates/downloads-index.html:78
 msgid ""
 "\n"
-"    Development versions are released every time a developer makes a change "
-"to\n"
-"    Dolphin, several times every day! Using development versions enables you "
-"to\n"
-"    use the latest and greatest improvements to the project. They are "
-"however\n"
+"    Development versions are released every time a developer makes a change to\n"
+"    Dolphin, several times every day! Using development versions enables you to\n"
+"    use the latest and greatest improvements to the project. They are however\n"
 "    less tested than stable versions of the emulator.\n"
 msgstr ""
 
@@ -540,26 +522,18 @@ msgstr "ซอร์สโค้ด"
 #: downloads/templates/downloads-index.html:97
 msgid ""
 "\n"
-"    The latest version of the Dolphin source code can be downloaded from "
-"the\n"
+"    The latest version of the Dolphin source code can be downloaded from the\n"
 "    project Git repository.\n"
 "    "
-msgstr ""
-"\n"
-"เวอร์ชันล่าสุดของ Dolphin ซอร์สโค้ด สามารถดาวน์โหลดได้จาก Git"
+msgstr "\nเวอร์ชันล่าสุดของ Dolphin ซอร์สโค้ด สามารถดาวน์โหลดได้จาก Git"
 
 #: downloads/templates/downloads-index.html:105
 msgid ""
 "\n"
-"    You can also <a href=\"http://code.google.com/p/dolphin-emu/source/"
-"browse/\">browse\n"
+"    You can also <a href=\"http://code.google.com/p/dolphin-emu/source/browse/\">browse\n"
 "        the current version of the source code</a>.\n"
 "    "
-msgstr ""
-"\n"
-"คุณยังสามารถ <a href=\"http://code.google.com/p/dolphin-emu/source/browse/"
-"\">เรียกดู\n"
-"ซอร์สโค้ดเวอร์ชันปัจจุบัน</a>"
+msgstr "\nคุณยังสามารถ <a href=\"http://code.google.com/p/dolphin-emu/source/browse/\">เรียกดู\nซอร์สโค้ดเวอร์ชันปัจจุบัน</a>"
 
 #: downloads/templates/downloads-list.html:5
 #, python-format
@@ -623,8 +597,7 @@ msgstr "Dolphin Emulator"
 #: homepage/templates/homepage-home.html:32
 msgid ""
 "\n"
-"            <b>Dolphin</b> is an emulator for two recent Nintendo video "
-"game\n"
+"            <b>Dolphin</b> is an emulator for two recent Nintendo video game\n"
 "            consoles: the <b>GameCube</b> and the <b>Wii</b>. It allows PC\n"
 "            gamers to enjoy games for these two consoles in <b>full HD</b>\n"
 "            (1080p) with several enhancements: compatibility with all PC\n"
@@ -648,6 +621,14 @@ msgstr ""
 #: homepage/templates/homepage-home.html:121
 #, python-format
 msgid "/ Part of serie <a href=\"%(url)s\">%(name)s</a>"
+msgstr ""
+
+#: homepage/templates/homepage-home.html:123
+msgid "Visit forum thread for this article"
+msgstr ""
+
+#: homepage/templates/homepage-home.html:123
+msgid "Forum thread"
 msgstr ""
 
 #: homepage/templates/homepage-home.html:128
@@ -686,8 +667,8 @@ msgstr ""
 
 #: templates/500.html:10
 msgid ""
-"There was an error while trying to access this page. Please refresh the page "
-"in a few seconds."
+"There was an error while trying to access this page. Please refresh the page"
+" in a few seconds."
 msgstr ""
 
 #: templates/_base.html:10
@@ -722,7 +703,6 @@ msgstr ""
 msgid ""
 "\n"
 "            &copy; 2013 Dolphin Emulator Project -\n"
-"            <a href=\"https://github.com/dolphin-emu/www/\">Website source "
-"code</a>\n"
+"            <a href=\"https://github.com/dolphin-emu/www/\">Website source code</a>\n"
 "            "
 msgstr ""

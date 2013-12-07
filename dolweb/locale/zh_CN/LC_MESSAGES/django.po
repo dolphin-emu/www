@@ -1,7 +1,7 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-#
+# 
 # Translators:
 # Sentret_C <sentret_c@sina.cn>, 2013
 # Sentret_C <sentret_c@sina.cn>, 2013
@@ -11,15 +11,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-12-05 19:33+0100\n"
+"POT-Creation-Date: 2013-09-30 18:18+0200\n"
 "PO-Revision-Date: 2013-11-26 00:50+0000\n"
 "Last-Translator: lxf2000 <gaoboyuan8@qq.com>\n"
-"Language-Team: Chinese (China) (http://www.transifex.com/projects/p/dolphin-"
-"emu/language/zh_CN/)\n"
-"Language: zh_CN\n"
+"Language-Team: Chinese (China) (http://www.transifex.com/projects/p/dolphin-emu/language/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: blog/admin.py:17
@@ -71,9 +70,7 @@ msgid_plural ""
 "\n"
 "    %(count)s entries\n"
 "  "
-msgstr[0] ""
-"\n"
-"%(count)s 个项目"
+msgstr[0] "\n%(count)s 个项目"
 
 #: blog/templates/series-index.html:27
 msgid "RSS feed:"
@@ -117,16 +114,6 @@ msgstr "指向 %(object)s 的短链接"
 msgid "Short link"
 msgstr "短链接"
 
-#: blog/templates/zinnia/_entry_detail_base.html:41
-#: homepage/templates/homepage-home.html:123
-msgid "Visit forum thread for this article"
-msgstr "查看论坛中与该文章有关的主题帖"
-
-#: blog/templates/zinnia/_entry_detail_base.html:41
-#: homepage/templates/homepage-home.html:123
-msgid "Forum thread"
-msgstr "论坛主题帖"
-
 #: blog/templates/zinnia/_entry_detail_base.html:58
 #, python-format
 msgid "Continue reading %(object)s"
@@ -141,9 +128,7 @@ msgstr "继续阅读"
 msgid ""
 "You can continue the discussion in the <a href=\"%(url)s\" title=\"Visit "
 "forum thread for this article\">forum thread</a> of this article."
-msgstr ""
-"你可以在该文章的<a href=\"%(url)s\" title=\"在论坛中查看该文章\">论坛帖子</a>"
-"中继续讨论。"
+msgstr "你可以在该文章的<a href=\"%(url)s\" title=\"在论坛中查看该文章\">论坛帖子</a>中继续讨论。"
 
 #: blog/templates/zinnia/_entry_detail_base.html:78
 msgid "Blog serie"
@@ -154,8 +139,7 @@ msgstr "博客分类"
 msgid ""
 "This article is number %(nth)s within the blog serie\n"
 "    <a href=\"%(url)s\"><em>%(serie)s</em></a>."
-msgstr ""
-"这篇文章在 <a href=\"%(url)s\"><em>%(serie)s</em></a> 分类中是第 %(nth)s 个。"
+msgstr "这篇文章在 <a href=\"%(url)s\"><em>%(serie)s</em></a> 分类中是第 %(nth)s 个。"
 
 #: blog/templates/zinnia/_entry_detail_base.html:85
 msgid "‹ Previous article in serie"
@@ -320,18 +304,15 @@ msgstr "文章"
 #: blog/templates/zinnia/tags/search_form.html:16
 msgid ""
 "You can use - to exclude words or phrases, &quot;double quotes&quot; for "
-"exact phrases and the AND/OR boolean operators combined with parenthesis for "
-"complex queries."
-msgstr ""
-"你可以用 - 来排除词语，使用 &quot;英文双引号&quot; 查找确定的短语，用 AND/OR "
-"逻辑操作符或加上括号来进行复杂的查找。"
+"exact phrases and the AND/OR boolean operators combined with parenthesis for"
+" complex queries."
+msgstr "你可以用 - 来排除词语，使用 &quot;英文双引号&quot; 查找确定的短语，用 AND/OR 逻辑操作符或加上括号来进行复杂的查找。"
 
 #: compat/templates/compat-list.html:8
 msgid ""
 "The Dolphin Emulator compatibility list contains all the games we tested, "
 "sorted by how well they work on the emulator."
-msgstr ""
-"在 Dolphin 模拟器兼容性列表中，所有我们测试过的游戏依据其模拟效果分类显示。"
+msgstr "在 Dolphin 模拟器兼容性列表中，所有我们测试过的游戏依据其模拟效果分类显示。"
 
 #: compat/templates/compat-list.html:10
 #, python-format
@@ -358,9 +339,7 @@ msgstr "4星"
 msgid ""
 "<strong>Playable</strong>: Runs well, only minor graphical or audio "
 "glitches. Games can be played all the way through."
-msgstr ""
-"<strong>尚可</strong>: 运行良好，只有一些图像或声音上的小瑕疵。可完成游戏全过"
-"程。"
+msgstr "<strong>尚可</strong>: 运行良好，只有一些图像或声音上的小瑕疵。可完成游戏全过程。"
 
 #: compat/templates/compat-list.html:27
 msgid "3 out of 5"
@@ -368,11 +347,9 @@ msgstr "3星"
 
 #: compat/templates/compat-list.html:27
 msgid ""
-"<strong>Starts</strong>: Starts, maybe even plays well, but crashes or major "
-"graphical/audio glitches."
-msgstr ""
-"<strong>开始</strong>: 游戏能够开始，甚至可能玩的不错，但会发生崩溃，或者图像"
-"声音有重大错误。"
+"<strong>Starts</strong>: Starts, maybe even plays well, but crashes or major"
+" graphical/audio glitches."
+msgstr "<strong>开始</strong>: 游戏能够开始，甚至可能玩的不错，但会发生崩溃，或者图像声音有重大错误。"
 
 #: compat/templates/compat-list.html:28
 msgid "2 out of 5"
@@ -513,10 +490,7 @@ msgid ""
 "    Stable versions are released after a lot of testing to ensure emulation\n"
 "    performance and stability. However, since they are released less often,\n"
 "    they might be outdated and lacking some new features.\n"
-msgstr ""
-"\n"
-"稳定版本在发布前经历过许多测试以保证模拟性能与稳定性。然而由于其发布频率较"
-"低，稳定版本可能已经过时并缺少一些新功能。\n"
+msgstr "\n稳定版本在发布前经历过许多测试以保证模拟性能与稳定性。然而由于其发布频率较低，稳定版本可能已经过时并缺少一些新功能。\n"
 
 #: downloads/templates/downloads-index.html:55
 msgid "No stable release yet"
@@ -529,18 +503,11 @@ msgstr "开发版本"
 #: downloads/templates/downloads-index.html:78
 msgid ""
 "\n"
-"    Development versions are released every time a developer makes a change "
-"to\n"
-"    Dolphin, several times every day! Using development versions enables you "
-"to\n"
-"    use the latest and greatest improvements to the project. They are "
-"however\n"
+"    Development versions are released every time a developer makes a change to\n"
+"    Dolphin, several times every day! Using development versions enables you to\n"
+"    use the latest and greatest improvements to the project. They are however\n"
 "    less tested than stable versions of the emulator.\n"
-msgstr ""
-"\n"
-"每当一位开发者对 Dolphin 做出改动，都将有开发版本发布，因而每天都会发布数个开"
-"发版本。使用开发版本即可体验本项目最新最大的改进，然而相较于稳定版本的模拟"
-"器，开发版本所经历的测试尚不够充分。\n"
+msgstr "\n每当一位开发者对 Dolphin 做出改动，都将有开发版本发布，因而每天都会发布数个开发版本。使用开发版本即可体验本项目最新最大的改进，然而相较于稳定版本的模拟器，开发版本所经历的测试尚不够充分。\n"
 
 #: downloads/templates/downloads-index.html:85
 msgid "Only displaying the <tt>master</tt> branch versions."
@@ -557,27 +524,18 @@ msgstr "源代码"
 #: downloads/templates/downloads-index.html:97
 msgid ""
 "\n"
-"    The latest version of the Dolphin source code can be downloaded from "
-"the\n"
+"    The latest version of the Dolphin source code can be downloaded from the\n"
 "    project Git repository.\n"
 "    "
-msgstr ""
-"\n"
-"    最新版本的Dolphin源代码可从本项目Git库中下载。\n"
-"    "
+msgstr "\n    最新版本的Dolphin源代码可从本项目Git库中下载。\n    "
 
 #: downloads/templates/downloads-index.html:105
 msgid ""
 "\n"
-"    You can also <a href=\"http://code.google.com/p/dolphin-emu/source/"
-"browse/\">browse\n"
+"    You can also <a href=\"http://code.google.com/p/dolphin-emu/source/browse/\">browse\n"
 "        the current version of the source code</a>.\n"
 "    "
-msgstr ""
-"\n"
-"    您也可以<a href=\"http://code.google.com/p/dolphin-emu/source/browse/\">"
-"浏览当前版本的源代码</a>。\n"
-"    "
+msgstr "\n    您也可以<a href=\"http://code.google.com/p/dolphin-emu/source/browse/\">浏览当前版本的源代码</a>。\n    "
 
 #: downloads/templates/downloads-list.html:5
 #, python-format
@@ -628,9 +586,7 @@ msgstr "修改说明"
 msgid ""
 "Official website of Dolphin, the GameCube and Wii emulator. Download the "
 "latest version (%(ver)s) now or ask questions on our forums for help."
-msgstr ""
-"Dolphin 官方网站。现在下载 GameCube 与 Wii 模拟器 Dolphin 的最新版本 "
-"(%(ver)s) 或在我们的论坛提问以寻求帮助。"
+msgstr "Dolphin 官方网站。现在下载 GameCube 与 Wii 模拟器 Dolphin 的最新版本 (%(ver)s) 或在我们的论坛提问以寻求帮助。"
 
 #: homepage/templates/homepage-home.html:13
 msgid "GameCube/Wii games on PC"
@@ -643,18 +599,13 @@ msgstr "Dolphin Emulator"
 #: homepage/templates/homepage-home.html:32
 msgid ""
 "\n"
-"            <b>Dolphin</b> is an emulator for two recent Nintendo video "
-"game\n"
+"            <b>Dolphin</b> is an emulator for two recent Nintendo video game\n"
 "            consoles: the <b>GameCube</b> and the <b>Wii</b>. It allows PC\n"
 "            gamers to enjoy games for these two consoles in <b>full HD</b>\n"
 "            (1080p) with several enhancements: compatibility with all PC\n"
 "            controllers, turbo speed, networked multiplayer, and even more!\n"
 "            "
-msgstr ""
-"\n"
-"<b>Dolphin</b> 是任天堂两款游戏平台的模拟器：<b>GameCube</b> 和 <b>Wii</b>。"
-"它可以让你在电脑上以<b>全高清</b>(1080p)的方式来玩这两个平台的游戏，它具有兼"
-"容所有 PC 控制器，加速，多人联网等特性。"
+msgstr "\n<b>Dolphin</b> 是任天堂两款游戏平台的模拟器：<b>GameCube</b> 和 <b>Wii</b>。它可以让你在电脑上以<b>全高清</b>(1080p)的方式来玩这两个平台的游戏，它具有兼容所有 PC 控制器，加速，多人联网等特性。"
 
 #: homepage/templates/homepage-home.html:41
 #, python-format
@@ -674,6 +625,14 @@ msgstr "最新文章"
 msgid "/ Part of serie <a href=\"%(url)s\">%(name)s</a>"
 msgstr "/ <a href=\"%(url)s\">%(name)s</a> 分类的一部分"
 
+#: homepage/templates/homepage-home.html:123
+msgid "Visit forum thread for this article"
+msgstr "查看论坛中与该文章有关的主题帖"
+
+#: homepage/templates/homepage-home.html:123
+msgid "Forum thread"
+msgstr "论坛主题帖"
+
 #: homepage/templates/homepage-home.html:128
 msgid "Read this article"
 msgstr "阅读本文"
@@ -686,9 +645,7 @@ msgstr "还没有文章。"
 msgid ""
 "View all the user-contributed screenshots of the Dolphin Emulator: GameCube "
 "and Wii games in HD."
-msgstr ""
-"浏览所有由用户贡献的 Dolphin 模拟器屏幕截图，欣赏高清模式下的 GameCube 与 "
-"Wii 游戏。"
+msgstr "浏览所有由用户贡献的 Dolphin 模拟器屏幕截图，欣赏高清模式下的 GameCube 与 Wii 游戏。"
 
 #: media/templates/media-all.html:8
 msgid "Screenshots gallery"
@@ -712,8 +669,8 @@ msgstr "内部服务器错误"
 
 #: templates/500.html:10
 msgid ""
-"There was an error while trying to access this page. Please refresh the page "
-"in a few seconds."
+"There was an error while trying to access this page. Please refresh the page"
+" in a few seconds."
 msgstr "尝试访问此页面时发生错误，请数秒后刷新此页面。"
 
 #: templates/_base.html:10
@@ -748,10 +705,6 @@ msgstr "源码"
 msgid ""
 "\n"
 "            &copy; 2013 Dolphin Emulator Project -\n"
-"            <a href=\"https://github.com/dolphin-emu/www/\">Website source "
-"code</a>\n"
+"            <a href=\"https://github.com/dolphin-emu/www/\">Website source code</a>\n"
 "            "
-msgstr ""
-"\n"
-"&copy; 2013 Dolphin 模拟器项目 -\n"
-"<a href=\"https://github.com/dolphin-emu/www/\">网站源码</a>"
+msgstr "\n&copy; 2013 Dolphin 模拟器项目 -\n<a href=\"https://github.com/dolphin-emu/www/\">网站源码</a>"
