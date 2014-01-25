@@ -3,13 +3,13 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Zbyněk Schwarz <zbynek.schwarz@gmail.com>, 2013
+# Zbyněk Schwarz <zbynek.schwarz@gmail.com>, 2013-2014
 msgid ""
 msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-09-30 18:18+0200\n"
-"PO-Revision-Date: 2013-11-20 10:48+0000\n"
+"PO-Revision-Date: 2014-01-21 21:06+0000\n"
 "Last-Translator: Zbyněk Schwarz <zbynek.schwarz@gmail.com>\n"
 "Language-Team: Czech (http://www.transifex.com/projects/p/dolphin-emu/language/cs/)\n"
 "MIME-Version: 1.0\n"
@@ -47,7 +47,7 @@ msgstr "Hledat články"
 
 #: blog/templates/blog_sidebar.html:31
 msgid "Blog tags"
-msgstr "Značky blogu"
+msgstr "Štítky blogu"
 
 #: blog/templates/blog_sidebar.html:36
 msgid "Blog series"
@@ -150,7 +150,7 @@ msgstr "Následující článek v řadě ›"
 
 #: blog/templates/zinnia/_entry_detail_base.html:137
 msgid "Tags"
-msgstr "Značky"
+msgstr "Štítky"
 
 #: blog/templates/zinnia/_entry_detail_base.html:141
 #, python-format
@@ -159,7 +159,7 @@ msgstr "Zobrazit všechny položky označené %(tag)s"
 
 #: blog/templates/zinnia/_entry_detail_base.html:144
 msgid "No tags"
-msgstr "Žádné značky"
+msgstr "Žádné štítky"
 
 #: blog/templates/zinnia/_entry_detail_base.html:151
 msgid "Categories"
@@ -221,7 +221,7 @@ msgstr "kategorie"
 
 #: blog/templates/zinnia/entry_list.html:5
 msgid "the tag"
-msgstr "značka"
+msgstr "štítek"
 
 #: blog/templates/zinnia/entry_list.html:5
 msgid "the author"
@@ -247,7 +247,7 @@ msgstr "Kategorie"
 
 #: blog/templates/zinnia/entry_list.html:20
 msgid "Tag"
-msgstr "Značka"
+msgstr "Štítek"
 
 #: blog/templates/zinnia/entry_list.html:20
 msgid "Author"
@@ -265,7 +265,7 @@ msgstr "Archivy kategorie: %(category)s"
 #: blog/templates/zinnia/entry_list.html:35
 #, python-format
 msgid "Tag archives: %(tag)s"
-msgstr "Archivy značky: %(tag)s"
+msgstr "Archivy štítku: %(tag)s"
 
 #: blog/templates/zinnia/entry_list.html:39
 #, python-format
@@ -284,7 +284,7 @@ msgstr "Upravit kategorii"
 #: blog/templates/zinnia/entry_list.html:74
 #: blog/templates/zinnia/entry_list.html:75
 msgid "Edit the tag"
-msgstr "Upravit značku"
+msgstr "Upravit štítek"
 
 #: blog/templates/zinnia/entry_list.html:81
 #: blog/templates/zinnia/entry_list.html:82

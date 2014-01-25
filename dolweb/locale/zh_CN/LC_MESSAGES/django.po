@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-09-30 18:18+0200\n"
-"PO-Revision-Date: 2013-11-26 00:50+0000\n"
+"PO-Revision-Date: 2013-12-26 05:48+0000\n"
 "Last-Translator: lxf2000 <gaoboyuan8@qq.com>\n"
 "Language-Team: Chinese (China) (http://www.transifex.com/projects/p/dolphin-emu/language/zh_CN/)\n"
 "MIME-Version: 1.0\n"
@@ -605,7 +605,7 @@ msgid ""
 "            (1080p) with several enhancements: compatibility with all PC\n"
 "            controllers, turbo speed, networked multiplayer, and even more!\n"
 "            "
-msgstr "\n<b>Dolphin</b> 是任天堂两款游戏平台的模拟器：<b>GameCube</b> 和 <b>Wii</b>。它可以让你在电脑上以<b>全高清</b>(1080p)的方式来玩这两个平台的游戏，它具有兼容所有 PC 控制器，加速，多人联网等特性。"
+msgstr "\n<b>Dolphin</b> 是任天堂两款游戏平台的模拟器：<b>GameCube</b> 和 <b>Wii</b>。它可以让你在电脑上以<b>全高清</b>(1080p)的方式来玩这两个平台的游戏；它具有兼容所有 PC 控制器，加速，多人联网等特性。"
 
 #: homepage/templates/homepage-home.html:41
 #, python-format

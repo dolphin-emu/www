@@ -5,15 +5,15 @@
 # Translators:
 # Bård Spein <baard.spein@gmail.com>, 2013
 # chriztr <chriztr@gmail.com>, 2013
-# KHRZ <e-k-nut@hotmail.com>, 2013
+# KHRZ <e-k-nut@hotmail.com>, 2013-2014
 # KHRZ <e-k-nut@hotmail.com>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-09-30 18:18+0200\n"
-"PO-Revision-Date: 2013-11-20 10:48+0000\n"
-"Last-Translator: Bård Spein <baard.spein@gmail.com>\n"
+"PO-Revision-Date: 2014-01-15 14:27+0000\n"
+"Last-Translator: KHRZ <e-k-nut@hotmail.com>\n"
 "Language-Team: Norwegian Bokmål (http://www.transifex.com/projects/p/dolphin-emu/language/nb/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -28,12 +28,12 @@ msgstr "Innhold"
 #: blog/feeds.py:24
 #, python-format
 msgid "Entries for the serie %s"
-msgstr ""
+msgstr "Oppfølginger for serien %s"
 
 #: blog/feeds.py:27
 #, python-format
 msgid "The latest entries for the serie %s"
-msgstr ""
+msgstr "Siste oppfølginger for serien %s"
 
 #: blog/models.py:16
 msgid "image"
@@ -70,12 +70,12 @@ msgid_plural ""
 "\n"
 "    %(count)s entries\n"
 "  "
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "\n%(count)s oppfølging"
+msgstr[1] "\n\n%(count)s oppfølginger"
 
 #: blog/templates/series-index.html:27
 msgid "RSS feed:"
-msgstr ""
+msgstr "RSS Feed:"
 
 #: blog/templates/series-index.html:37
 msgid "No blog series yet."
@@ -129,26 +129,26 @@ msgstr "Fortsett lesning"
 msgid ""
 "You can continue the discussion in the <a href=\"%(url)s\" title=\"Visit "
 "forum thread for this article\">forum thread</a> of this article."
-msgstr ""
+msgstr "Du kan fortsette diskusjonen i <a href=\"%(url)s\" title=\"Visit forum thread for this article\">forumtråden</a> for denne artikkelen."
 
 #: blog/templates/zinnia/_entry_detail_base.html:78
 msgid "Blog serie"
-msgstr ""
+msgstr "Blogserie"
 
 #: blog/templates/zinnia/_entry_detail_base.html:80
 #, python-format
 msgid ""
 "This article is number %(nth)s within the blog serie\n"
 "    <a href=\"%(url)s\"><em>%(serie)s</em></a>."
-msgstr ""
+msgstr "Denne artikkelen er number%(nth)s i bloggserien\n\n<a href=\"%(url)s\"><em>%(serie)s</em></a>."
 
 #: blog/templates/zinnia/_entry_detail_base.html:85
 msgid "‹ Previous article in serie"
-msgstr ""
+msgstr "‹ Forrige artikkel i serie"
 
 #: blog/templates/zinnia/_entry_detail_base.html:87
 msgid "Next article in serie ›"
-msgstr ""
+msgstr "Neste artikkel i serie ›"
 
 #: blog/templates/zinnia/_entry_detail_base.html:137
 msgid "Tags"
@@ -161,153 +161,153 @@ msgstr "Vis alle innføringer tagget av %(tag)s"
 
 #: blog/templates/zinnia/_entry_detail_base.html:144
 msgid "No tags"
-msgstr ""
+msgstr "Ingen tags"
 
 #: blog/templates/zinnia/_entry_detail_base.html:151
 msgid "Categories"
-msgstr ""
+msgstr "Kategorier"
 
 #: blog/templates/zinnia/_entry_detail_base.html:155
 #, python-format
 msgid "Show all entries in %(category)s"
-msgstr ""
+msgstr "Vis alle innføringer tagget av %(category)s"
 
 #: blog/templates/zinnia/_entry_detail_base.html:158
 msgid "No categories"
-msgstr ""
+msgstr "Ingen kategorier"
 
 #: blog/templates/zinnia/entry_detail_base.html:22
 msgid "RSS Feed of discussions on"
-msgstr ""
+msgstr "RSS Feed av diskusjon på"
 
 #: blog/templates/zinnia/entry_detail_base.html:24
 msgid "RSS Feed of comments on"
-msgstr ""
+msgstr "RSS Feed av kommentarer på"
 
 #: blog/templates/zinnia/entry_detail_base.html:26
 msgid "RSS Feed of pingbacks on"
-msgstr ""
+msgstr "RSS Feed av pingbacks på"
 
 #: blog/templates/zinnia/entry_detail_base.html:28
 msgid "RSS Feed of trackbacks on"
-msgstr ""
+msgstr "RSS Feed av trackbacks på"
 
 #: blog/templates/zinnia/entry_detail_base.html:46
 msgid "Next entry"
-msgstr ""
+msgstr "Neste oppfølging"
 
 #: blog/templates/zinnia/entry_detail_base.html:58
 msgid "Previous entry"
-msgstr ""
+msgstr "Forrige oppfølging"
 
 #: blog/templates/zinnia/entry_detail_base.html:70
 msgid "Related entries"
-msgstr ""
+msgstr "Relaterte oppfølginger"
 
 #: blog/templates/zinnia/entry_detail_base.html:82
 msgid "Similar entries"
-msgstr ""
+msgstr "Liknende oppfølginger"
 
 #: blog/templates/zinnia/entry_detail_base.html:224
 #: blog/templates/zinnia/entry_detail_base.html:225
 msgid "Edit the entry"
-msgstr ""
+msgstr "Endre oppfølging"
 
 #: blog/templates/zinnia/entry_list.html:5
 msgid "Latest entries for"
-msgstr ""
+msgstr "Siste oppfølginger for"
 
 #: blog/templates/zinnia/entry_list.html:5
 msgid "the category"
-msgstr ""
+msgstr "kategorien"
 
 #: blog/templates/zinnia/entry_list.html:5
 msgid "the tag"
-msgstr ""
+msgstr "taggen"
 
 #: blog/templates/zinnia/entry_list.html:5
 msgid "the author"
-msgstr ""
+msgstr "forfatteren"
 
 #: blog/templates/zinnia/entry_list.html:5
 msgid "page"
-msgstr ""
+msgstr "side"
 
 #: blog/templates/zinnia/entry_list.html:10
 #: blog/templates/zinnia/entry_list.html:13
 #: blog/templates/zinnia/entry_list.html:16
 msgid "RSS Feed"
-msgstr ""
+msgstr "RSS Feed"
 
 #: blog/templates/zinnia/entry_list.html:20
 msgid "Latest entries"
-msgstr ""
+msgstr "Siste oppfølginger"
 
 #: blog/templates/zinnia/entry_list.html:20
 msgid "Category"
-msgstr ""
+msgstr "Kategori"
 
 #: blog/templates/zinnia/entry_list.html:20
 msgid "Tag"
-msgstr ""
+msgstr "Tag"
 
 #: blog/templates/zinnia/entry_list.html:20
 msgid "Author"
-msgstr ""
+msgstr "Forfatter"
 
 #: blog/templates/zinnia/entry_list.html:20
 msgid "Page"
-msgstr ""
+msgstr "Side"
 
 #: blog/templates/zinnia/entry_list.html:28
 #, python-format
 msgid "Category archives: %(category)s"
-msgstr ""
+msgstr "Kategori arkiv: %(category)s"
 
 #: blog/templates/zinnia/entry_list.html:35
 #, python-format
 msgid "Tag archives: %(tag)s"
-msgstr ""
+msgstr "Tag-arkiv: %(tag)s"
 
 #: blog/templates/zinnia/entry_list.html:39
 #, python-format
 msgid "Author archives: %(author)s"
-msgstr ""
+msgstr "Forfatterarkiv: %(author)s"
 
 #: blog/templates/zinnia/entry_list.html:48
 msgid "No entries yet."
-msgstr ""
+msgstr "Ingen oppfølginger enda."
 
 #: blog/templates/zinnia/entry_list.html:67
 #: blog/templates/zinnia/entry_list.html:68
 msgid "Edit the category"
-msgstr ""
+msgstr "Endre kategorien"
 
 #: blog/templates/zinnia/entry_list.html:74
 #: blog/templates/zinnia/entry_list.html:75
 msgid "Edit the tag"
-msgstr ""
+msgstr "Endre taggen"
 
 #: blog/templates/zinnia/entry_list.html:81
 #: blog/templates/zinnia/entry_list.html:82
 msgid "Edit the author"
-msgstr ""
+msgstr "Endre forfatteren"
 
 #: blog/templates/zinnia/skeleton.html:5
 msgid "Latest news for Dolphin Emulator"
-msgstr ""
+msgstr "Siste nyheter for Dolphin Emulator"
 
 #: blog/templates/zinnia/skeleton.html:8
 #: blog/templates/zinnia/skeleton.html:13 templates/_base.html:67
 msgid "Articles"
-msgstr ""
+msgstr "Artikler"
 
 #: blog/templates/zinnia/tags/search_form.html:16
 msgid ""
 "You can use - to exclude words or phrases, &quot;double quotes&quot; for "
 "exact phrases and the AND/OR boolean operators combined with parenthesis for"
 " complex queries."
-msgstr ""
+msgstr "Du kan bruke - for å ekskludere ord of fraser, &quot;gåseøyne&quot; for eksakte fraser og AND/OR operatorene kombinert med parantes for komplekse spørringer."
 
 #: compat/templates/compat-list.html:8
 msgid ""
@@ -606,41 +606,41 @@ msgid ""
 "            (1080p) with several enhancements: compatibility with all PC\n"
 "            controllers, turbo speed, networked multiplayer, and even more!\n"
 "            "
-msgstr ""
+msgstr "\n\n<b>Dolphin</b> er en emulator for to nylige Nintendo spill-\n\nkonsoller: <b>GameCube</b> og <b>Wii</b>. Den tillater PC-\n\nspillere å nyte spill for disse konsollene i  <b>full HD</b>\n\n(1080p) med flere forbedringer: Kompabilitet med alle PC-\n\nkontrollere, turbo speed, nettverksflerspilling, og enda mer!"
 
 #: homepage/templates/homepage-home.html:41
 #, python-format
 msgid "Download %(last_release)s for Windows, Mac and Linux »"
-msgstr ""
+msgstr "Last ned %(last_release)s nå for Windows, Mac og Linux »"
 
 #: homepage/templates/homepage-home.html:93
 msgid "RSS feed of the latest articles"
-msgstr ""
+msgstr "RSS Feed for de siste artiklene"
 
 #: homepage/templates/homepage-home.html:94
 msgid "Latest articles"
-msgstr ""
+msgstr "Siste artikler"
 
 #: homepage/templates/homepage-home.html:121
 #, python-format
 msgid "/ Part of serie <a href=\"%(url)s\">%(name)s</a>"
-msgstr ""
+msgstr "/ Del av serie <a href=\"%(url)s\">%(name)s</a>"
 
 #: homepage/templates/homepage-home.html:123
 msgid "Visit forum thread for this article"
-msgstr ""
+msgstr "Besøk forumtråden for denne artikkelen"
 
 #: homepage/templates/homepage-home.html:123
 msgid "Forum thread"
-msgstr ""
+msgstr "Forumtråd"
 
 #: homepage/templates/homepage-home.html:128
 msgid "Read this article"
-msgstr ""
+msgstr "Lese denne artikkelen"
 
 #: homepage/templates/homepage-home.html:132
 msgid "No articles yet."
-msgstr ""
+msgstr "Ingen artikler enda."
 
 #: media/templates/media-all.html:6
 msgid ""
@@ -680,7 +680,7 @@ msgstr "Dolphin Emulators offisielle nettside."
 
 #: templates/_base.html:23
 msgid "Latest blog articles"
-msgstr ""
+msgstr "Siste bloggartikler"
 
 #: templates/_base.html:68
 msgid "Screenshots"
@@ -708,4 +708,4 @@ msgid ""
 "            &copy; 2013 Dolphin Emulator Project -\n"
 "            <a href=\"https://github.com/dolphin-emu/www/\">Website source code</a>\n"
 "            "
-msgstr ""
+msgstr "\n\n&copy; 2013 Dolphin Emulator Project -\n\n<a href=\"https://github.com/dolphin-emu/www/\">Kildekode til websiden</a>\n            "

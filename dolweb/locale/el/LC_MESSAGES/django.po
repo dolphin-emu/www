@@ -3,14 +3,14 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# link_to_the_past <kostamarino@gmail.com>, 2013
+# link_to_the_past <kostamarino@gmail.com>, 2013-2014
 # link_to_the_past <kostamarino@gmail.com>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-09-30 18:18+0200\n"
-"PO-Revision-Date: 2013-11-20 10:48+0000\n"
+"PO-Revision-Date: 2014-01-20 16:06+0000\n"
 "Last-Translator: link_to_the_past <kostamarino@gmail.com>\n"
 "Language-Team: Greek (http://www.transifex.com/projects/p/dolphin-emu/language/el/)\n"
 "MIME-Version: 1.0\n"
@@ -48,7 +48,7 @@ msgstr "Αναζήτηση άρθρων"
 
 #: blog/templates/blog_sidebar.html:31
 msgid "Blog tags"
-msgstr ""
+msgstr "Ετικέτες blog "
 
 #: blog/templates/blog_sidebar.html:36
 msgid "Blog series"
@@ -155,7 +155,7 @@ msgstr "Ετικέτες"
 #: blog/templates/zinnia/_entry_detail_base.html:141
 #, python-format
 msgid "Show all entries tagged by %(tag)s"
-msgstr ""
+msgstr "Δείτε όλες τις καταχωρήσεις με ετικέτα %(tag)s"
 
 #: blog/templates/zinnia/_entry_detail_base.html:144
 msgid "No tags"
@@ -168,7 +168,7 @@ msgstr "Κατηγορίες"
 #: blog/templates/zinnia/_entry_detail_base.html:155
 #, python-format
 msgid "Show all entries in %(category)s"
-msgstr ""
+msgstr "Εμφάνιση όλων των καταχωρήσεων σε  %(category)s"
 
 #: blog/templates/zinnia/_entry_detail_base.html:158
 msgid "No categories"
@@ -678,7 +678,7 @@ msgstr "Επίσημη Ιστοσελίδα Dolphin Εξομοιωτή"
 
 #: templates/_base.html:23
 msgid "Latest blog articles"
-msgstr ""
+msgstr "Τελευταία άρθρα blog"
 
 #: templates/_base.html:68
 msgid "Screenshots"
