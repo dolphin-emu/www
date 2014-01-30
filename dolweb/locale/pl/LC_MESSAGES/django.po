@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-09-30 18:18+0200\n"
-"PO-Revision-Date: 2014-01-15 18:27+0000\n"
+"PO-Revision-Date: 2014-01-28 20:08+0000\n"
 "Last-Translator: M T <michtrz@gmail.com>\n"
 "Language-Team: Polish (http://www.transifex.com/projects/p/dolphin-emu/language/pl/)\n"
 "MIME-Version: 1.0\n"
@@ -24,42 +24,42 @@ msgstr ""
 
 #: blog/admin.py:17
 msgid "Content"
-msgstr ""
+msgstr "Treść"
 
 #: blog/feeds.py:24
 #, python-format
 msgid "Entries for the serie %s"
-msgstr ""
+msgstr "Wpisy dla serii %s"
 
 #: blog/feeds.py:27
 #, python-format
 msgid "The latest entries for the serie %s"
-msgstr ""
+msgstr "Najnowsze wpisy dla serii %s"
 
 #: blog/models.py:16
 msgid "image"
-msgstr ""
+msgstr "obraz"
 
 #: blog/models.py:17
 msgid "Used for illustration."
-msgstr ""
+msgstr "Wykorzystywane do ilustracji."
 
 #: blog/templates/blog_sidebar.html:6
 #: blog/templates/zinnia/tags/search_form.html:5
 msgid "Search articles"
-msgstr ""
+msgstr "Przeszukuj artykuły"
 
 #: blog/templates/blog_sidebar.html:31
 msgid "Blog tags"
-msgstr ""
+msgstr "Tagi bloga"
 
 #: blog/templates/blog_sidebar.html:36
 msgid "Blog series"
-msgstr ""
+msgstr "Serie bloga"
 
 #: blog/templates/blog_sidebar.html:38
 msgid "See all"
-msgstr ""
+msgstr "Zobacz wszystko"
 
 #: blog/templates/series-index.html:22
 #, python-format
@@ -71,245 +71,245 @@ msgid_plural ""
 "\n"
 "    %(count)s entries\n"
 "  "
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "\n    %(count)s wpis\n  "
+msgstr[1] "\n    %(count)s wpisy\n  "
+msgstr[2] "\n    %(count)s wpisów\n  "
 
 #: blog/templates/series-index.html:27
 msgid "RSS feed:"
-msgstr ""
+msgstr "Kanał RSS:"
 
 #: blog/templates/series-index.html:37
 msgid "No blog series yet."
-msgstr ""
+msgstr "Nie ma jeszcze żadnych serii bloga."
 
 #: blog/templates/zinnia/_entry_detail_base.html:21
 #: homepage/templates/homepage-home.html:107
 msgid "Written by"
-msgstr ""
+msgstr "Napisane przez"
 
 #: blog/templates/zinnia/_entry_detail_base.html:25
 #: homepage/templates/homepage-home.html:111
 #, python-format
 msgid "Show all %(author)s's entries"
-msgstr ""
+msgstr "Pokaż wszystkie wpisy %(author)s"
 
 #: blog/templates/zinnia/_entry_detail_base.html:27
 #: homepage/templates/homepage-home.html:113
 msgid "on"
-msgstr ""
+msgstr "dnia"
 
 #: blog/templates/zinnia/_entry_detail_base.html:29
 #: homepage/templates/homepage-home.html:115
 msgid "Written on"
-msgstr ""
+msgstr "Napisane w dniu"
 
 #: blog/templates/zinnia/_entry_detail_base.html:37
 msgid "Last update on"
-msgstr ""
+msgstr "Ostatnia aktualizacja w dniu"
 
 #: blog/templates/zinnia/_entry_detail_base.html:39
 #, python-format
 msgid "Short URL to %(object)s"
-msgstr ""
+msgstr "Krótki adres URL do %(object)s"
 
 #: blog/templates/zinnia/_entry_detail_base.html:40
 msgid "Short link"
-msgstr ""
+msgstr "Krótki link"
 
 #: blog/templates/zinnia/_entry_detail_base.html:58
 #, python-format
 msgid "Continue reading %(object)s"
-msgstr ""
+msgstr "Czytaj dalej %(object)s"
 
 #: blog/templates/zinnia/_entry_detail_base.html:60
 msgid "Continue reading"
-msgstr ""
+msgstr "Czytaj dalej"
 
 #: blog/templates/zinnia/_entry_detail_base.html:69
 #, python-format
 msgid ""
 "You can continue the discussion in the <a href=\"%(url)s\" title=\"Visit "
 "forum thread for this article\">forum thread</a> of this article."
-msgstr ""
+msgstr "Możesz kontynuować dyskusję w <a href=\"%(url)s\" title=\"Odwiedź wątek na forum o tym artykułu\">wątku na forum</a> o tym artykułu."
 
 #: blog/templates/zinnia/_entry_detail_base.html:78
 msgid "Blog serie"
-msgstr ""
+msgstr "Seria bloga"
 
 #: blog/templates/zinnia/_entry_detail_base.html:80
 #, python-format
 msgid ""
 "This article is number %(nth)s within the blog serie\n"
 "    <a href=\"%(url)s\"><em>%(serie)s</em></a>."
-msgstr ""
+msgstr "To jest artykuł numer %(nth)s w serii bloga\n<a href=\"%(url)s\"><em>%(serie)s</em></a>."
 
 #: blog/templates/zinnia/_entry_detail_base.html:85
 msgid "‹ Previous article in serie"
-msgstr ""
+msgstr "‹ Poprzedni artykuł w serii"
 
 #: blog/templates/zinnia/_entry_detail_base.html:87
 msgid "Next article in serie ›"
-msgstr ""
+msgstr "Następny artykuł w serii ›"
 
 #: blog/templates/zinnia/_entry_detail_base.html:137
 msgid "Tags"
-msgstr ""
+msgstr "Tagi"
 
 #: blog/templates/zinnia/_entry_detail_base.html:141
 #, python-format
 msgid "Show all entries tagged by %(tag)s"
-msgstr ""
+msgstr "Pokaż wszystkie wpisy oznaczone z %(tag)s"
 
 #: blog/templates/zinnia/_entry_detail_base.html:144
 msgid "No tags"
-msgstr ""
+msgstr "Brak tagów"
 
 #: blog/templates/zinnia/_entry_detail_base.html:151
 msgid "Categories"
-msgstr ""
+msgstr "Kategorie"
 
 #: blog/templates/zinnia/_entry_detail_base.html:155
 #, python-format
 msgid "Show all entries in %(category)s"
-msgstr ""
+msgstr "Pokaż wszystkie wpisy w %(category)s"
 
 #: blog/templates/zinnia/_entry_detail_base.html:158
 msgid "No categories"
-msgstr ""
+msgstr "Brak kategorii"
 
 #: blog/templates/zinnia/entry_detail_base.html:22
 msgid "RSS Feed of discussions on"
-msgstr ""
+msgstr "Kanał RSS z dyskusjami na temat"
 
 #: blog/templates/zinnia/entry_detail_base.html:24
 msgid "RSS Feed of comments on"
-msgstr ""
+msgstr "Kanał RSS z komentarzami na temat"
 
 #: blog/templates/zinnia/entry_detail_base.html:26
 msgid "RSS Feed of pingbacks on"
-msgstr ""
+msgstr "Kanał RSS z pingbackami na temat"
 
 #: blog/templates/zinnia/entry_detail_base.html:28
 msgid "RSS Feed of trackbacks on"
-msgstr ""
+msgstr "Kanał RSS z trackbackami na temat"
 
 #: blog/templates/zinnia/entry_detail_base.html:46
 msgid "Next entry"
-msgstr ""
+msgstr "Następny wpis"
 
 #: blog/templates/zinnia/entry_detail_base.html:58
 msgid "Previous entry"
-msgstr ""
+msgstr "Poprzedni wpis"
 
 #: blog/templates/zinnia/entry_detail_base.html:70
 msgid "Related entries"
-msgstr ""
+msgstr "Powiązane wpisy"
 
 #: blog/templates/zinnia/entry_detail_base.html:82
 msgid "Similar entries"
-msgstr ""
+msgstr "Podobne wpisy"
 
 #: blog/templates/zinnia/entry_detail_base.html:224
 #: blog/templates/zinnia/entry_detail_base.html:225
 msgid "Edit the entry"
-msgstr ""
+msgstr "Edytuj wpis"
 
 #: blog/templates/zinnia/entry_list.html:5
 msgid "Latest entries for"
-msgstr ""
+msgstr "Najnowsze wpisy dla"
 
 #: blog/templates/zinnia/entry_list.html:5
 msgid "the category"
-msgstr ""
+msgstr "kategoria"
 
 #: blog/templates/zinnia/entry_list.html:5
 msgid "the tag"
-msgstr ""
+msgstr "tag"
 
 #: blog/templates/zinnia/entry_list.html:5
 msgid "the author"
-msgstr ""
+msgstr "autor"
 
 #: blog/templates/zinnia/entry_list.html:5
 msgid "page"
-msgstr ""
+msgstr "strona"
 
 #: blog/templates/zinnia/entry_list.html:10
 #: blog/templates/zinnia/entry_list.html:13
 #: blog/templates/zinnia/entry_list.html:16
 msgid "RSS Feed"
-msgstr ""
+msgstr "Kanał RSS"
 
 #: blog/templates/zinnia/entry_list.html:20
 msgid "Latest entries"
-msgstr ""
+msgstr "Najnowsze wpisy"
 
 #: blog/templates/zinnia/entry_list.html:20
 msgid "Category"
-msgstr ""
+msgstr "Kategoria"
 
 #: blog/templates/zinnia/entry_list.html:20
 msgid "Tag"
-msgstr ""
+msgstr "Tag"
 
 #: blog/templates/zinnia/entry_list.html:20
 msgid "Author"
-msgstr ""
+msgstr "Autor"
 
 #: blog/templates/zinnia/entry_list.html:20
 msgid "Page"
-msgstr ""
+msgstr "Strona"
 
 #: blog/templates/zinnia/entry_list.html:28
 #, python-format
 msgid "Category archives: %(category)s"
-msgstr ""
+msgstr "Archiwum kategorii: %(category)s"
 
 #: blog/templates/zinnia/entry_list.html:35
 #, python-format
 msgid "Tag archives: %(tag)s"
-msgstr ""
+msgstr "Archiwum taga: %(tag)s"
 
 #: blog/templates/zinnia/entry_list.html:39
 #, python-format
 msgid "Author archives: %(author)s"
-msgstr ""
+msgstr "Archiwum autora: %(author)s"
 
 #: blog/templates/zinnia/entry_list.html:48
 msgid "No entries yet."
-msgstr ""
+msgstr "Nie ma jeszcze żadnych wpisów."
 
 #: blog/templates/zinnia/entry_list.html:67
 #: blog/templates/zinnia/entry_list.html:68
 msgid "Edit the category"
-msgstr ""
+msgstr "Edytuj kategorię"
 
 #: blog/templates/zinnia/entry_list.html:74
 #: blog/templates/zinnia/entry_list.html:75
 msgid "Edit the tag"
-msgstr ""
+msgstr "Edytuj taga"
 
 #: blog/templates/zinnia/entry_list.html:81
 #: blog/templates/zinnia/entry_list.html:82
 msgid "Edit the author"
-msgstr ""
+msgstr "Edytuj autora"
 
 #: blog/templates/zinnia/skeleton.html:5
 msgid "Latest news for Dolphin Emulator"
-msgstr ""
+msgstr "Najnowsze wiadomości o emulatorze Dolphin"
 
 #: blog/templates/zinnia/skeleton.html:8
 #: blog/templates/zinnia/skeleton.html:13 templates/_base.html:67
 msgid "Articles"
-msgstr ""
+msgstr "Artykuły"
 
 #: blog/templates/zinnia/tags/search_form.html:16
 msgid ""
 "You can use - to exclude words or phrases, &quot;double quotes&quot; for "
 "exact phrases and the AND/OR boolean operators combined with parenthesis for"
 " complex queries."
-msgstr ""
+msgstr "Możesz użyć - w celu wykluczenia słów lub fraz, &quot;cudzysłów&quot; dla konkretnych fraz i operatorów logicznych I/LUB w połączeniu z nawiasami dla złożonych zapytań."
 
 #: compat/templates/compat-list.html:8
 msgid ""
@@ -417,7 +417,7 @@ msgstr "Perfekcyjne"
 msgid ""
 "The Official Dolphin FAQ answers all the questions that people often ask "
 "about Dolphin."
-msgstr ""
+msgstr "Oficjalny FAQ Dolphina odpowie na wszystkie pytania, które użytkownicy często zadają na temat Dolphina."
 
 #: docs/templates/docs-faq.html:8
 msgid "Frequently Asked Questions"
@@ -429,7 +429,7 @@ msgstr "Wróć do listy przewodników"
 
 #: docs/templates/docs-guides-index.html:5
 msgid "See all the guides written by the Dolphin team about the emulator."
-msgstr ""
+msgstr "Zobacz wszystkie przewodniki napisane przez zespół Dolphina na temat emulatora."
 
 #: docs/templates/docs-guides-index.html:7 templates/_base.html:70
 msgid "Guides"
@@ -476,7 +476,7 @@ msgstr "Brak wydań rozwojowych"
 msgid ""
 "Download the latest version of the Dolphin Emulator (%(ver)s) from the "
 "official website."
-msgstr ""
+msgstr "Pobierz najnowszą wersję emulatora Dolphin (%(ver)s) z oficjalnej strony."
 
 #: downloads/templates/downloads-index.html:8
 #: downloads/templates/downloads-index.html:27 templates/_base.html:66
@@ -493,7 +493,7 @@ msgid ""
 "    Stable versions are released after a lot of testing to ensure emulation\n"
 "    performance and stability. However, since they are released less often,\n"
 "    they might be outdated and lacking some new features.\n"
-msgstr ""
+msgstr "\nWersje stabilne są wydawane po wykonaniu wielu testów, aby zapewnić\nodpowiedni poziom wydajności i stabilności emulacji. Ponieważ są one\nwydawane rzadziej, mogą być nieaktualne i brakuje im kilka nowych funkcji.\n"
 
 #: downloads/templates/downloads-index.html:55
 msgid "No stable release yet"
@@ -510,7 +510,7 @@ msgid ""
 "    Dolphin, several times every day! Using development versions enables you to\n"
 "    use the latest and greatest improvements to the project. They are however\n"
 "    less tested than stable versions of the emulator.\n"
-msgstr ""
+msgstr "\nWersje rozwojowe są wydawane za każdym razem, gdy deweloper dokona zmian w\nkodzie programu, kilka razy dziennie! Używanie najnowszych wersji rozwojowych\npozwala na wykorzystywanie najnowszych i najbardziej istotnych poprawek. Są one\njednak mniej testowane niż stabilne wersje emulatora.\n"
 
 #: downloads/templates/downloads-index.html:85
 msgid "Only displaying the <tt>master</tt> branch versions."
@@ -589,7 +589,7 @@ msgstr "Zmień Opis"
 msgid ""
 "Official website of Dolphin, the GameCube and Wii emulator. Download the "
 "latest version (%(ver)s) now or ask questions on our forums for help."
-msgstr ""
+msgstr "Oficjalna strona internetowa Dolphina, emulatora GameCube i Wii. Pobierz teraz najnowszą wersję (%(ver)s) lub odwiedź nasze forum w poszukiwaniu pomocy."
 
 #: homepage/templates/homepage-home.html:13
 msgid "GameCube/Wii games on PC"
@@ -608,47 +608,47 @@ msgid ""
 "            (1080p) with several enhancements: compatibility with all PC\n"
 "            controllers, turbo speed, networked multiplayer, and even more!\n"
 "            "
-msgstr ""
+msgstr "\n<b>Dolphin</b> to emulator ostatnich dwóch konsoli Nintendo\n<b>GameCube</b> i <b>Wii</b>. Pozwala odtwarzać graczom PC\ngry dla tych dwóch konsoli w <b>full HD</b> (1080p) z kilkoma\nulepszeniami: kompatybilność z wszystkimi kontrolerami dla PC,\nprędkość turbo, gry wieloosobowe przez sieć i wiele więcej!"
 
 #: homepage/templates/homepage-home.html:41
 #, python-format
 msgid "Download %(last_release)s for Windows, Mac and Linux »"
-msgstr ""
+msgstr "Pobierz %(last_release)s na systemy: Windows, Mac i Linux »"
 
 #: homepage/templates/homepage-home.html:93
 msgid "RSS feed of the latest articles"
-msgstr ""
+msgstr "Kanał RSS najnowszych artykułów"
 
 #: homepage/templates/homepage-home.html:94
 msgid "Latest articles"
-msgstr ""
+msgstr "Najnowsze artykuły"
 
 #: homepage/templates/homepage-home.html:121
 #, python-format
 msgid "/ Part of serie <a href=\"%(url)s\">%(name)s</a>"
-msgstr ""
+msgstr "/ Część serii <a href=\"%(url)s\">%(name)s</a>"
 
 #: homepage/templates/homepage-home.html:123
 msgid "Visit forum thread for this article"
-msgstr ""
+msgstr "Odwiedź wątek na forum o tym artykułu"
 
 #: homepage/templates/homepage-home.html:123
 msgid "Forum thread"
-msgstr ""
+msgstr "Wątek na forum"
 
 #: homepage/templates/homepage-home.html:128
 msgid "Read this article"
-msgstr ""
+msgstr "Przeczytaj ten artykuł"
 
 #: homepage/templates/homepage-home.html:132
 msgid "No articles yet."
-msgstr ""
+msgstr "Nie ma jeszcze żadnych artykułów."
 
 #: media/templates/media-all.html:6
 msgid ""
 "View all the user-contributed screenshots of the Dolphin Emulator: GameCube "
 "and Wii games in HD."
-msgstr ""
+msgstr "Zobacz wszystkie zrzuty ekranu użytkowników emulatora Dolphin: Gry GameCube i Wii w HD."
 
 #: media/templates/media-all.html:8
 msgid "Screenshots gallery"
@@ -664,7 +664,7 @@ msgstr "Nie znaleziono strony"
 
 #: templates/404.html:10
 msgid "The URL you tried to access does not exist."
-msgstr ""
+msgstr "Żądany adres URL nie istnieje."
 
 #: templates/500.html:5 templates/500.html.py:8
 msgid "Internal Server Error"
@@ -674,7 +674,7 @@ msgstr "Wewnętrzny błąd serwera"
 msgid ""
 "There was an error while trying to access this page. Please refresh the page"
 " in a few seconds."
-msgstr ""
+msgstr "Wystąpił błąd podczas próby dostępu do tej strony. Proszę odśwież stronę w kilka sekund."
 
 #: templates/_base.html:10
 msgid "Official Dolphin Emulator Website"
@@ -682,7 +682,7 @@ msgstr "Oficjalna strona Emulatora Dolphin"
 
 #: templates/_base.html:23
 msgid "Latest blog articles"
-msgstr ""
+msgstr "Najnowsze artykuły na blogu"
 
 #: templates/_base.html:68
 msgid "Screenshots"
@@ -710,4 +710,4 @@ msgid ""
 "            &copy; 2013 Dolphin Emulator Project -\n"
 "            <a href=\"https://github.com/dolphin-emu/www/\">Website source code</a>\n"
 "            "
-msgstr ""
+msgstr "\n&copy; 2013 Dolphin Emulator Project -\n <a href=\"https://github.com/dolphin-emu/www/\">Kod źródłowy strony</a>"
