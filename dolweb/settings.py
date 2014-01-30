@@ -248,7 +248,7 @@ LOGGING = {
 
 FORUM_URL = "https://forums.dolphin-emu.org/"
 WIKI_URL = "https://wiki.dolphin-emu.org/"
-GCODE_URL = "https://code.google.com/p/dolphin-emu/"
+REPO_URL = "https://github.com/dolphin-emu/dolphin/"
 
 DEFAULT_HOST = "dolphin-emu.org"
 

@@ -4,7 +4,7 @@ def website_urls(request):
     return {
         "FORUM_URL": settings.FORUM_URL,
         "WIKI_URL": settings.WIKI_URL,
-        "GCODE_URL": settings.GCODE_URL,
+        "REPO_URL": settings.REPO_URL,
         "GOOGLE_ANALYTICS_ACCOUNT": settings.GOOGLE_ANALYTICS_ACCOUNT,
         "DEFAULT_HOST": settings.DEFAULT_HOST,
     }
