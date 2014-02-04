@@ -71,7 +71,7 @@
                         <li><a href="{% url compat-index %}">{% trans "Compatibility" %}</a></li>
                         <li><a href="{{ FORUM_URL }}">{% trans "Forum" %}</a></li>
                         <li><a href="{{ WIKI_URL }}">{% trans "Wiki" %}</a></li>
-                        <li><a href="{{ REPO_URL }}">{% trans "Code" %}</a></li>
+                        <li><a href="{{ GIT_BROWSE_URL }}">{% trans "Code" %}</a></li>
                     </ul>
                     <ul class="nav navbar-nav pull-right">
                         <li class="dropdown">
@@ -108,8 +108,8 @@
         <footer>
         <p class="footer-text">
             {% blocktrans %}
-            &copy; 2013 Dolphin Emulator Project -
-            <a href="https://github.com/dolphin-emu/www/">Website source code</a>
+            &copy; 2014 Dolphin Emulator Project -
+            <a href="{{ WEBSITE_GIT_URL }}">Website source code</a>
             {% endblocktrans %}
         </p>
         </footer>
