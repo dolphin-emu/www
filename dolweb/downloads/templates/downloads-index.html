@@ -100,11 +100,20 @@ src="//pagead2.googlesyndication.com/pagead/show_ads.js">
     {% endblocktrans %}</p>
 
     <pre class="always-ltr">
-    $ git clone https://code.google.com/p/dolphin-emu/</pre>
+    $ git clone {{ GIT_CLONE_URL }}</pre>
 
     <p>{% blocktrans %}
-    You can also <a href="http://code.google.com/p/dolphin-emu/source/browse/">browse
-        the current version of the source code</a>.
+    You can also <a href="{{ GIT_BROWSE_URL }}">browse the current version of the source code</a>.
+    {% endblocktrans %}</p>
+
+</div>
+
+<div id="report-bugs">
+    <h1>{% trans "Reporting bugs" %}</h1>
+
+    <p>{% blocktrans %}
+    For reporting bugs please go to <a href="{{ ISSUES_URL }}">the issue tracker on Google Code</a>.
+    Before creating a new issue, make sure to try a recent development build and search the existing issues.
     {% endblocktrans %}</p>
 </div>
 

@@ -43,7 +43,7 @@ src="//pagead2.googlesyndication.com/pagead/show_ads.js">
     <div class="col-md-7">
         <dl>
             <dt>{% trans "Commit" %}
-            <dd class="commithash"><a href="{{ REPO_URL }}commit/{{ ver.hash }}">{{ ver.hash }}</a></dd>
+            <dd class="commithash"><a href="{{ GIT_COMMIT_URL }}{{ ver.hash }}">{{ ver.hash }}</a></dd>
 
             <dt>{% trans "Change author" %}
             <dd>{{ ver.author }}

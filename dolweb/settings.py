@@ -248,7 +248,11 @@ LOGGING = {
 
 FORUM_URL = "https://forums.dolphin-emu.org/"
 WIKI_URL = "https://wiki.dolphin-emu.org/"
-REPO_URL = "https://github.com/dolphin-emu/dolphin/"
+GIT_BROWSE_URL = "https://github.com/dolphin-emu/dolphin"
+GIT_CLONE_URL = "https://github.com/dolphin-emu/dolphin.git"
+GIT_COMMIT_URL = "https://github.com/dolphin-emu/dolphin/commit/"
+WEBSITE_GIT_URL = "https://github.com/dolphin-emu/www"
+ISSUES_URL = "https://code.google.com/p/dolphin-emu/issues/list"
 
 DEFAULT_HOST = "dolphin-emu.org"
 
