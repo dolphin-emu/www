@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-09-30 18:18+0200\n"
-"PO-Revision-Date: 2013-11-20 10:48+0000\n"
+"POT-Creation-Date: 2014-02-08 20:04+0100\n"
+"PO-Revision-Date: 2014-02-08 19:06+0000\n"
 "Last-Translator: delroth <delroth@gmail.com>\n"
 "Language-Team: Arabic (http://www.transifex.com/projects/p/dolphin-emu/language/ar/)\n"
 "MIME-Version: 1.0\n"
@@ -114,6 +114,16 @@ msgstr ""
 
 #: blog/templates/zinnia/_entry_detail_base.html:40
 msgid "Short link"
+msgstr ""
+
+#: blog/templates/zinnia/_entry_detail_base.html:41
+#: homepage/templates/homepage-home.html:123
+msgid "Visit forum thread for this article"
+msgstr ""
+
+#: blog/templates/zinnia/_entry_detail_base.html:41
+#: homepage/templates/homepage-home.html:123
+msgid "Forum thread"
 msgstr ""
 
 #: blog/templates/zinnia/_entry_detail_base.html:58
@@ -532,10 +542,23 @@ msgid ""
 msgstr ""
 
 #: downloads/templates/downloads-index.html:105
+#, python-format
 msgid ""
 "\n"
-"    You can also <a href=\"http://code.google.com/p/dolphin-emu/source/browse/\">browse\n"
-"        the current version of the source code</a>.\n"
+"    You can also <a href=\"%(GIT_BROWSE_URL)s\">browse the current version of the source code</a>.\n"
+"    "
+msgstr ""
+
+#: downloads/templates/downloads-index.html:112
+msgid "Reporting bugs"
+msgstr ""
+
+#: downloads/templates/downloads-index.html:114
+#, python-format
+msgid ""
+"\n"
+"    For reporting bugs please go to <a href=\"%(ISSUES_URL)s\">the issue tracker on Google Code</a>.\n"
+"    Before creating a new issue, make sure to try a recent development build and search the existing issues.\n"
 "    "
 msgstr ""
 
@@ -627,14 +650,6 @@ msgstr ""
 msgid "/ Part of serie <a href=\"%(url)s\">%(name)s</a>"
 msgstr ""
 
-#: homepage/templates/homepage-home.html:123
-msgid "Visit forum thread for this article"
-msgstr ""
-
-#: homepage/templates/homepage-home.html:123
-msgid "Forum thread"
-msgstr ""
-
 #: homepage/templates/homepage-home.html:128
 msgid "Read this article"
 msgstr ""
@@ -704,9 +719,10 @@ msgid "Code"
 msgstr "الرّمز"
 
 #: templates/_base.html:110
+#, python-format
 msgid ""
 "\n"
-"            &copy; 2013 Dolphin Emulator Project -\n"
-"            <a href=\"https://github.com/dolphin-emu/www/\">Website source code</a>\n"
+"            &copy; 2014 Dolphin Emulator Project -\n"
+"            <a href=\"%(WEBSITE_GIT_URL)s\">Website source code</a>\n"
 "            "
 msgstr ""

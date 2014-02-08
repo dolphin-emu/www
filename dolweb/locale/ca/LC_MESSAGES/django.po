@@ -9,9 +9,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-09-30 18:18+0200\n"
-"PO-Revision-Date: 2014-01-22 14:13+0000\n"
-"Last-Translator: Puniasterus <puniasterus@gmail.com>\n"
+"POT-Creation-Date: 2014-02-08 20:04+0100\n"
+"PO-Revision-Date: 2014-02-08 19:06+0000\n"
+"Last-Translator: delroth <delroth@gmail.com>\n"
 "Language-Team: Catalan (http://www.transifex.com/projects/p/dolphin-emu/language/ca/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -112,6 +112,16 @@ msgstr "URL curta a %(object)s"
 #: blog/templates/zinnia/_entry_detail_base.html:40
 msgid "Short link"
 msgstr "Enllaç curt"
+
+#: blog/templates/zinnia/_entry_detail_base.html:41
+#: homepage/templates/homepage-home.html:123
+msgid "Visit forum thread for this article"
+msgstr "Visita el fil del fòrum per aquest article"
+
+#: blog/templates/zinnia/_entry_detail_base.html:41
+#: homepage/templates/homepage-home.html:123
+msgid "Forum thread"
+msgstr "Fil del fòrum"
 
 #: blog/templates/zinnia/_entry_detail_base.html:58
 #, python-format
@@ -529,12 +539,25 @@ msgid ""
 msgstr "\nLa darrera versió del codi font de Dolphin es pot descarregar en el\nprojecte repositori Git."
 
 #: downloads/templates/downloads-index.html:105
+#, python-format
 msgid ""
 "\n"
-"    You can also <a href=\"http://code.google.com/p/dolphin-emu/source/browse/\">browse\n"
-"        the current version of the source code</a>.\n"
+"    You can also <a href=\"%(GIT_BROWSE_URL)s\">browse the current version of the source code</a>.\n"
 "    "
-msgstr "\nTambé pots <a href=\"http://code.google.com/p/dolphin-emu/source/browse/\">veure\nla versió actual del codi font</a>."
+msgstr ""
+
+#: downloads/templates/downloads-index.html:112
+msgid "Reporting bugs"
+msgstr ""
+
+#: downloads/templates/downloads-index.html:114
+#, python-format
+msgid ""
+"\n"
+"    For reporting bugs please go to <a href=\"%(ISSUES_URL)s\">the issue tracker on Google Code</a>.\n"
+"    Before creating a new issue, make sure to try a recent development build and search the existing issues.\n"
+"    "
+msgstr ""
 
 #: downloads/templates/downloads-list.html:5
 #, python-format
@@ -624,14 +647,6 @@ msgstr "Últims articles"
 msgid "/ Part of serie <a href=\"%(url)s\">%(name)s</a>"
 msgstr "/ Part de la sèrie <a href=\"%(url)s\">%(name)s</a>"
 
-#: homepage/templates/homepage-home.html:123
-msgid "Visit forum thread for this article"
-msgstr "Visita el fil del fòrum per aquest article"
-
-#: homepage/templates/homepage-home.html:123
-msgid "Forum thread"
-msgstr "Fil del fòrum"
-
 #: homepage/templates/homepage-home.html:128
 msgid "Read this article"
 msgstr "Llegir aquest article"
@@ -701,9 +716,10 @@ msgid "Code"
 msgstr "Codi"
 
 #: templates/_base.html:110
+#, python-format
 msgid ""
 "\n"
-"            &copy; 2013 Dolphin Emulator Project -\n"
-"            <a href=\"https://github.com/dolphin-emu/www/\">Website source code</a>\n"
+"            &copy; 2014 Dolphin Emulator Project -\n"
+"            <a href=\"%(WEBSITE_GIT_URL)s\">Website source code</a>\n"
 "            "
-msgstr "\n&copy; 2013 Dolphin Emulator Project -\n<a href=\"https://github.com/dolphin-emu/www/\">Codi font de la web</a>"
+msgstr ""

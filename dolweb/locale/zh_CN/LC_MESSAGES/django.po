@@ -11,9 +11,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-09-30 18:18+0200\n"
-"PO-Revision-Date: 2013-12-26 05:48+0000\n"
-"Last-Translator: lxf2000 <gaoboyuan8@qq.com>\n"
+"POT-Creation-Date: 2014-02-08 20:04+0100\n"
+"PO-Revision-Date: 2014-02-08 19:06+0000\n"
+"Last-Translator: delroth <delroth@gmail.com>\n"
 "Language-Team: Chinese (China) (http://www.transifex.com/projects/p/dolphin-emu/language/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -113,6 +113,16 @@ msgstr "指向 %(object)s 的短链接"
 #: blog/templates/zinnia/_entry_detail_base.html:40
 msgid "Short link"
 msgstr "短链接"
+
+#: blog/templates/zinnia/_entry_detail_base.html:41
+#: homepage/templates/homepage-home.html:123
+msgid "Visit forum thread for this article"
+msgstr "查看论坛中与该文章有关的主题帖"
+
+#: blog/templates/zinnia/_entry_detail_base.html:41
+#: homepage/templates/homepage-home.html:123
+msgid "Forum thread"
+msgstr "论坛主题帖"
 
 #: blog/templates/zinnia/_entry_detail_base.html:58
 #, python-format
@@ -530,12 +540,25 @@ msgid ""
 msgstr "\n    最新版本的Dolphin源代码可从本项目Git库中下载。\n    "
 
 #: downloads/templates/downloads-index.html:105
+#, python-format
 msgid ""
 "\n"
-"    You can also <a href=\"http://code.google.com/p/dolphin-emu/source/browse/\">browse\n"
-"        the current version of the source code</a>.\n"
+"    You can also <a href=\"%(GIT_BROWSE_URL)s\">browse the current version of the source code</a>.\n"
 "    "
-msgstr "\n    您也可以<a href=\"http://code.google.com/p/dolphin-emu/source/browse/\">浏览当前版本的源代码</a>。\n    "
+msgstr ""
+
+#: downloads/templates/downloads-index.html:112
+msgid "Reporting bugs"
+msgstr ""
+
+#: downloads/templates/downloads-index.html:114
+#, python-format
+msgid ""
+"\n"
+"    For reporting bugs please go to <a href=\"%(ISSUES_URL)s\">the issue tracker on Google Code</a>.\n"
+"    Before creating a new issue, make sure to try a recent development build and search the existing issues.\n"
+"    "
+msgstr ""
 
 #: downloads/templates/downloads-list.html:5
 #, python-format
@@ -625,14 +648,6 @@ msgstr "最新文章"
 msgid "/ Part of serie <a href=\"%(url)s\">%(name)s</a>"
 msgstr "/ <a href=\"%(url)s\">%(name)s</a> 分类的一部分"
 
-#: homepage/templates/homepage-home.html:123
-msgid "Visit forum thread for this article"
-msgstr "查看论坛中与该文章有关的主题帖"
-
-#: homepage/templates/homepage-home.html:123
-msgid "Forum thread"
-msgstr "论坛主题帖"
-
 #: homepage/templates/homepage-home.html:128
 msgid "Read this article"
 msgstr "阅读本文"
@@ -702,9 +717,10 @@ msgid "Code"
 msgstr "源码"
 
 #: templates/_base.html:110
+#, python-format
 msgid ""
 "\n"
-"            &copy; 2013 Dolphin Emulator Project -\n"
-"            <a href=\"https://github.com/dolphin-emu/www/\">Website source code</a>\n"
+"            &copy; 2014 Dolphin Emulator Project -\n"
+"            <a href=\"%(WEBSITE_GIT_URL)s\">Website source code</a>\n"
 "            "
-msgstr "\n&copy; 2013 Dolphin 模拟器项目 -\n<a href=\"https://github.com/dolphin-emu/www/\">网站源码</a>"
+msgstr ""
