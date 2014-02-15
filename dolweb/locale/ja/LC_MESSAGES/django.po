@@ -11,8 +11,8 @@ msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-02-08 20:04+0100\n"
-"PO-Revision-Date: 2014-02-08 19:06+0000\n"
-"Last-Translator: delroth <delroth@gmail.com>\n"
+"PO-Revision-Date: 2014-02-14 15:31+0000\n"
+"Last-Translator: Lioncash <mathew1800@gmail.com>\n"
 "Language-Team: Japanese (http://www.transifex.com/projects/p/dolphin-emu/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -82,13 +82,13 @@ msgstr "連載はありません。"
 #: blog/templates/zinnia/_entry_detail_base.html:21
 #: homepage/templates/homepage-home.html:107
 msgid "Written by"
-msgstr "Written by"
+msgstr "が書いた"
 
 #: blog/templates/zinnia/_entry_detail_base.html:25
 #: homepage/templates/homepage-home.html:111
 #, python-format
 msgid "Show all %(author)s's entries"
-msgstr "%(author)s による記事をすべて表示"
+msgstr "%(author)sによる記事をすべて表示"
 
 #: blog/templates/zinnia/_entry_detail_base.html:27
 #: homepage/templates/homepage-home.html:113
@@ -98,7 +98,7 @@ msgstr "on"
 #: blog/templates/zinnia/_entry_detail_base.html:29
 #: homepage/templates/homepage-home.html:115
 msgid "Written on"
-msgstr "Written on"
+msgstr "に書かれた"
 
 #: blog/templates/zinnia/_entry_detail_base.html:37
 msgid "Last update on"
@@ -107,7 +107,7 @@ msgstr "最終更新日時"
 #: blog/templates/zinnia/_entry_detail_base.html:39
 #, python-format
 msgid "Short URL to %(object)s"
-msgstr "%(object)s への短縮リンク"
+msgstr "%(object)sへの短縮リンク"
 
 #: blog/templates/zinnia/_entry_detail_base.html:40
 msgid "Short link"
@@ -126,7 +126,7 @@ msgstr "フォーラムの反応"
 #: blog/templates/zinnia/_entry_detail_base.html:58
 #, python-format
 msgid "Continue reading %(object)s"
-msgstr "%(object)s の続きを表示"
+msgstr "%(object)sの続きを表示"
 
 #: blog/templates/zinnia/_entry_detail_base.html:60
 msgid "Continue reading"
@@ -165,7 +165,7 @@ msgstr "タグ"
 #: blog/templates/zinnia/_entry_detail_base.html:141
 #, python-format
 msgid "Show all entries tagged by %(tag)s"
-msgstr "”%(tag)s”が付けられた記事をすべて表示"
+msgstr "\"%(tag)s\"が付けられた記事をすべて表示"
 
 #: blog/templates/zinnia/_entry_detail_base.html:144
 msgid "No tags"
@@ -326,7 +326,7 @@ msgstr "The Dolphin Emulator compatibility list contains all the games we tested
 #: compat/templates/compat-list.html:10
 #, python-format
 msgid "Compatibility List - page %(page)s"
-msgstr "動作リスト - %(page)s ページ"
+msgstr "動作リスト - %(page)sページ"
 
 #: compat/templates/compat-list.html:22
 msgid "How to read the ratings"
@@ -423,7 +423,7 @@ msgstr "カンペキ"
 msgid ""
 "The Official Dolphin FAQ answers all the questions that people often ask "
 "about Dolphin."
-msgstr "The Official Dolphin FAQ answers all the questions that people often ask about Dolphin."
+msgstr "公式DolphinのFAQにはいくつかの一般的な質問への回答が含まれています。 "
 
 #: docs/templates/docs-faq.html:8
 msgid "Frequently Asked Questions"
@@ -435,7 +435,7 @@ msgstr "ガイドリストに戻る"
 
 #: docs/templates/docs-guides-index.html:5
 msgid "See all the guides written by the Dolphin team about the emulator."
-msgstr "See all the guides written by the Dolphin team about the emulator."
+msgstr "Dolphinエミュレータのチームのメンバーによって書かれたガイドを表示。"
 
 #: docs/templates/docs-guides-index.html:7 templates/_base.html:70
 msgid "Guides"
@@ -462,7 +462,7 @@ msgstr "開発版のダウンロード"
 #: downloads/templates/downloads-branches.html:18
 #, python-format
 msgid "<tt>%(branch)s</tt> branch"
-msgstr "<tt>%(branch)s</tt> branch"
+msgstr "<tt>%(branch)s</tt>ブランチ"
 
 #: downloads/templates/downloads-branches.html:21
 #: downloads/templates/downloads-index.html:91
@@ -471,7 +471,7 @@ msgstr "過去のバージョンを入手 »"
 
 #: downloads/templates/downloads-branches.html:28
 msgid "Branch list"
-msgstr "Branch リスト"
+msgstr "ブランチリスト"
 
 #: downloads/templates/downloads-devrel.html:19
 msgid "No development release yet"
@@ -482,7 +482,7 @@ msgstr "現在、開発版のリリースはありません。"
 msgid ""
 "Download the latest version of the Dolphin Emulator (%(ver)s) from the "
 "official website."
-msgstr "Download the latest version of the Dolphin Emulator (%(ver)s) from the official website."
+msgstr "公式サイトからのDolphinエミュレータの最新バージョン (%(ver)s) をダウンロードしてください。"
 
 #: downloads/templates/downloads-index.html:8
 #: downloads/templates/downloads-index.html:27 templates/_base.html:66
@@ -516,15 +516,15 @@ msgid ""
 "    Dolphin, several times every day! Using development versions enables you to\n"
 "    use the latest and greatest improvements to the project. They are however\n"
 "    less tested than stable versions of the emulator.\n"
-msgstr "\n開発版は Dolphin に変更を加えられると自動的にリリースされるものです。その時点のプロジェクトの最新かつ最大の改善点を試すことが可能ですが、必ずしも安定した動作は約束されません。\n"
+msgstr "\n開発版はDolphinに変更を加えられると自動的にリリースされるものです。その時点のプロジェクトの最新かつ最大の改善点を試すことが可能ですが、必ずしも安定した動作は約束されません。\n"
 
 #: downloads/templates/downloads-index.html:85
 msgid "Only displaying the <tt>master</tt> branch versions."
-msgstr "ここには <tt>master</tt> branchのみが表示されています。"
+msgstr "ここには<tt>master</tt>ブランチのみが表示されています。"
 
 #: downloads/templates/downloads-index.html:86
 msgid "Show all available branches"
-msgstr "現在入手可能な branch のリストを確認"
+msgstr "現在入手可能なブランチのリストを確認"
 
 #: downloads/templates/downloads-index.html:95
 msgid "Source code"
@@ -536,7 +536,7 @@ msgid ""
 "    The latest version of the Dolphin source code can be downloaded from the\n"
 "    project Git repository.\n"
 "    "
-msgstr "\n    最新のソースコードは、Git リポジトリより入手することができます。\n    "
+msgstr "\n    最新のソースコードは、Gitリポジトリより入手することができます。\n    "
 
 #: downloads/templates/downloads-index.html:105
 #, python-format
@@ -544,11 +544,11 @@ msgid ""
 "\n"
 "    You can also <a href=\"%(GIT_BROWSE_URL)s\">browse the current version of the source code</a>.\n"
 "    "
-msgstr ""
+msgstr "\n<a href=\"%(GIT_BROWSE_URL)s\">ソースコード</a>の最新バージョンを参照。"
 
 #: downloads/templates/downloads-index.html:112
 msgid "Reporting bugs"
-msgstr ""
+msgstr "バグを報告する"
 
 #: downloads/templates/downloads-index.html:114
 #, python-format
@@ -557,27 +557,27 @@ msgid ""
 "    For reporting bugs please go to <a href=\"%(ISSUES_URL)s\">the issue tracker on Google Code</a>.\n"
 "    Before creating a new issue, make sure to try a recent development build and search the existing issues.\n"
 "    "
-msgstr ""
+msgstr "\nバグを報告するには、Google Codeでの<a href=\"%(ISSUES_URL)s\">バグトラッカー</a>をご覧ください。\n新しいものを作る前に既存のバグレポートをご確認ください。"
 
 #: downloads/templates/downloads-list.html:5
 #, python-format
 msgid "%(branch)s branch - page %(page)s"
-msgstr "%(branch)s branch - %(page)s ページ"
+msgstr "%(branch)sブランチ - %(page)sページ"
 
 #: downloads/templates/downloads-list.html:9
 #, python-format
 msgid "<tt>%(branch)s</tt> branch - page %(page)s"
-msgstr "<tt>%(branch)s</tt> branch - %(page)s ページ"
+msgstr "<tt>%(branch)s</tt>ブランチ - %(page)sページ"
 
 #: downloads/templates/downloads-view-devrel.html:6
 #, python-format
 msgid "Information on %(br)s"
-msgstr "Information on %(br)s"
+msgstr "%(br)sについての情報"
 
 #: downloads/templates/downloads-view-devrel.html:10
 #, python-format
 msgid "Information for %(br)s"
-msgstr "%(br)s に関する情報"
+msgstr "%(br)sに関する情報"
 
 #: downloads/templates/downloads-view-devrel.html:30
 msgid "Version"
@@ -585,7 +585,7 @@ msgstr "バージョン"
 
 #: downloads/templates/downloads-view-devrel.html:33
 msgid "Branch"
-msgstr "Branch"
+msgstr "ブランチ"
 
 #: downloads/templates/downloads-view-devrel.html:36
 msgid "Date"
@@ -593,7 +593,7 @@ msgstr "投稿日時"
 
 #: downloads/templates/downloads-view-devrel.html:45
 msgid "Commit"
-msgstr "Commit"
+msgstr "コミット"
 
 #: downloads/templates/downloads-view-devrel.html:48
 msgid "Change author"
@@ -608,15 +608,15 @@ msgstr "変更点"
 msgid ""
 "Official website of Dolphin, the GameCube and Wii emulator. Download the "
 "latest version (%(ver)s) now or ask questions on our forums for help."
-msgstr "Official website of Dolphin, the GameCube and Wii emulator. Download the latest version (%(ver)s) now or ask questions on our forums for help."
+msgstr "Dolphinの公式サイト、ゲームキューブとWiiエミュレータ。 最新バージョンをダウンロード (%(ver)s)。  支援を得るためにフォーラムで質問をする。"
 
 #: homepage/templates/homepage-home.html:13
 msgid "GameCube/Wii games on PC"
-msgstr "GameCube/Wii games on PC"
+msgstr "PCでゲームキューブ/ Wiiのゲーム"
 
 #: homepage/templates/homepage-home.html:30 templates/_base.html:62
 msgid "Dolphin Emulator"
-msgstr "Dolphin Emulator"
+msgstr "Dolphinエミュレータ"
 
 #: homepage/templates/homepage-home.html:32
 msgid ""
@@ -627,12 +627,12 @@ msgid ""
 "            (1080p) with several enhancements: compatibility with all PC\n"
 "            controllers, turbo speed, networked multiplayer, and even more!\n"
 "            "
-msgstr "\n<b>Dolphin</b> は 任天堂のゲーム機： <b>ゲームキューブ</b> と <b>Wii</b> の\nエミュレータです。Dolphin ではこれらのゲーム機のタイトルの<b>フルHD</b>(1080p)\n化表示に加え、さまざまな機能を使ってゲームを楽しむことができるようになります。\n例えば…PC用コントローラとの互換・ターボスピード・ネットワーク対戦 など\n            "
+msgstr "\n<b>Dolphin</b> は任天堂のゲーム機： <b>ゲームキューブ</b> と <b>Wii</b> の\nエミュレータです。Dolphinではこれらのゲーム機のタイトルの<b>フルHD</b>(1080p)\n化表示に加え、さまざまな機能を使ってゲームを楽しむことができるようになります。\n例えば…PC用コントローラとの互換・ターボスピード・ネットワーク対戦 など\n            "
 
 #: homepage/templates/homepage-home.html:41
 #, python-format
 msgid "Download %(last_release)s for Windows, Mac and Linux »"
-msgstr "今すぐ Windows/Mac/Linux 用の %(last_release)s を入手 »"
+msgstr "今すぐWindows/Mac/Linux用の%(last_release)sを入手 »"
 
 #: homepage/templates/homepage-home.html:93
 msgid "RSS feed of the latest articles"
@@ -645,7 +645,7 @@ msgstr "最新の記事"
 #: homepage/templates/homepage-home.html:121
 #, python-format
 msgid "/ Part of serie <a href=\"%(url)s\">%(name)s</a>"
-msgstr ""
+msgstr "/ シリーズ<a href=\"%(url)s\">%(name)s</a>の一部"
 
 #: homepage/templates/homepage-home.html:128
 msgid "Read this article"
@@ -659,7 +659,7 @@ msgstr "記事はありません"
 msgid ""
 "View all the user-contributed screenshots of the Dolphin Emulator: GameCube "
 "and Wii games in HD."
-msgstr "View all the user-contributed screenshots of the Dolphin Emulator: GameCube and Wii games in HD."
+msgstr "Dolphinエミュレータはユーザー投稿のスクリーンショットを参照。高解像度でのゲームキューブとWiiのゲームを表示。"
 
 #: media/templates/media-all.html:8
 msgid "Screenshots gallery"
@@ -679,7 +679,7 @@ msgstr "アクセスしようとしたページは存在しません。"
 
 #: templates/500.html:5 templates/500.html.py:8
 msgid "Internal Server Error"
-msgstr "Internal Server Error"
+msgstr "内部サーバーエラー"
 
 #: templates/500.html:10
 msgid ""
@@ -689,7 +689,7 @@ msgstr "アクセスしようとしたページでエラーが発生しました
 
 #: templates/_base.html:10
 msgid "Official Dolphin Emulator Website"
-msgstr "Official Dolphin Emulator Website"
+msgstr "公式Dolphinエミュレータサイト"
 
 #: templates/_base.html:23
 msgid "Latest blog articles"
@@ -701,7 +701,7 @@ msgstr "スクリーンショット"
 
 #: templates/_base.html:69
 msgid "FAQ"
-msgstr "FAQ"
+msgstr "よくある質問"
 
 #: templates/_base.html:72
 msgid "Forum"
@@ -709,7 +709,7 @@ msgstr "フォーラム"
 
 #: templates/_base.html:73
 msgid "Wiki"
-msgstr "Wiki"
+msgstr "ウィキ"
 
 #: templates/_base.html:74
 msgid "Code"
@@ -722,4 +722,4 @@ msgid ""
 "            &copy; 2014 Dolphin Emulator Project -\n"
 "            <a href=\"%(WEBSITE_GIT_URL)s\">Website source code</a>\n"
 "            "
-msgstr ""
+msgstr "\n&copy; 2014 Dolphinエミュレータプロジェクト\n<a href=\"%(WEBSITE_GIT_URL)s\">ウェブサイトのソースコード</a>"

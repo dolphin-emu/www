@@ -3,14 +3,14 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# TomosANTIGUATomos <llyrceredig@gmail.com>, 2013
+# TomosANTIGUATomos <llyrceredig@gmail.com>, 2013-2014
 msgid ""
 msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-02-08 20:04+0100\n"
-"PO-Revision-Date: 2014-02-08 19:06+0000\n"
-"Last-Translator: delroth <delroth@gmail.com>\n"
+"PO-Revision-Date: 2014-02-15 00:09+0000\n"
+"Last-Translator: TomosANTIGUATomos <llyrceredig@gmail.com>\n"
 "Language-Team: Welsh (http://www.transifex.com/projects/p/dolphin-emu/language/cy/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -349,7 +349,7 @@ msgstr "4 allan o 5"
 msgid ""
 "<strong>Playable</strong>: Runs well, only minor graphical or audio "
 "glitches. Games can be played all the way through."
-msgstr "<strong>Yn chwarae</strong>: Yn chwarae'n dda, ond rhai problemau bach. Gellir gorffen y gêm."
+msgstr "<strong>Chwarae</strong>: Yn chwarae'n dda, ond rhai problemau bach. Gellir gorffen y gêm."
 
 #: compat/templates/compat-list.html:27
 msgid "3 out of 5"
@@ -359,7 +359,7 @@ msgstr "3 allan o 5"
 msgid ""
 "<strong>Starts</strong>: Starts, maybe even plays well, but crashes or major"
 " graphical/audio glitches."
-msgstr "<strong>Yn dechrau</strong>: Yn dechrau ac yn chwarae'n weddol, ond yn crasio neu â sawl problem mawr."
+msgstr "<strong>Dechrau</strong>: Yn dechrau ac yn chwarae'n weddol, ond yn crasio neu â sawl problem mawr."
 
 #: compat/templates/compat-list.html:28
 msgid "2 out of 5"
@@ -410,11 +410,11 @@ msgstr "Dewislen"
 
 #: compat/templatetags/compat.py:10
 msgid "Starts"
-msgstr "Yn dechrau"
+msgstr "Dechrau"
 
 #: compat/templatetags/compat.py:11
 msgid "Playable"
-msgstr "Yn chwarae"
+msgstr "Chwarae"
 
 #: compat/templatetags/compat.py:12
 msgid "Perfect"
@@ -545,11 +545,11 @@ msgid ""
 "\n"
 "    You can also <a href=\"%(GIT_BROWSE_URL)s\">browse the current version of the source code</a>.\n"
 "    "
-msgstr ""
+msgstr "\nGellir hefyd <a href=\"%(GIT_BROWSE_URL)s\">pori fersiwn gyfredol y côd</a>."
 
 #: downloads/templates/downloads-index.html:112
 msgid "Reporting bugs"
-msgstr ""
+msgstr "Cofnodi namau"
 
 #: downloads/templates/downloads-index.html:114
 #, python-format
@@ -558,7 +558,7 @@ msgid ""
 "    For reporting bugs please go to <a href=\"%(ISSUES_URL)s\">the issue tracker on Google Code</a>.\n"
 "    Before creating a new issue, make sure to try a recent development build and search the existing issues.\n"
 "    "
-msgstr ""
+msgstr "\nI adrodd unrhyw namau, defnyddiwch <a href=\"%(ISSUES_URL)s\">y cofnodwr ar Google Code</a>.\nCyn greu cofnod newydd, defnyddiwch adeiladiad diweddar a porwch y cofnodau i weld os ydyw wedi ei adrodd yn barod."
 
 #: downloads/templates/downloads-list.html:5
 #, python-format
@@ -723,4 +723,4 @@ msgid ""
 "            &copy; 2014 Dolphin Emulator Project -\n"
 "            <a href=\"%(WEBSITE_GIT_URL)s\">Website source code</a>\n"
 "            "
-msgstr ""
+msgstr "\n&copy; 2014 Prosiect Efelychydd Dolphin -\n<a href=\"%(WEBSITE_GIT_URL)s\">Côd gwreiddiol y wefan</a>"

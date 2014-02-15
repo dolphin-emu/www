@@ -3,15 +3,15 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Siegfried <iori3000@hanafos.com>, 2013
+# Siegfried <iori3000@hanafos.com>, 2013-2014
 # Siegfried <iori3000@hanafos.com>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-02-08 20:04+0100\n"
-"PO-Revision-Date: 2014-02-08 19:06+0000\n"
-"Last-Translator: delroth <delroth@gmail.com>\n"
+"PO-Revision-Date: 2014-02-13 04:11+0000\n"
+"Last-Translator: Siegfried <iori3000@hanafos.com>\n"
 "Language-Team: Korean (http://www.transifex.com/projects/p/dolphin-emu/language/ko/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -543,11 +543,11 @@ msgid ""
 "\n"
 "    You can also <a href=\"%(GIT_BROWSE_URL)s\">browse the current version of the source code</a>.\n"
 "    "
-msgstr ""
+msgstr "\n    또한 <a href=\"%(GIT_BROWSE_URL)s\">소스 코드의 현재 버전을 둘러보기</a> 가능.\n    "
 
 #: downloads/templates/downloads-index.html:112
 msgid "Reporting bugs"
-msgstr ""
+msgstr "버그 리포팅"
 
 #: downloads/templates/downloads-index.html:114
 #, python-format
@@ -556,7 +556,7 @@ msgid ""
 "    For reporting bugs please go to <a href=\"%(ISSUES_URL)s\">the issue tracker on Google Code</a>.\n"
 "    Before creating a new issue, make sure to try a recent development build and search the existing issues.\n"
 "    "
-msgstr ""
+msgstr "\n    버그 리포팅을 하려면 여기로 가세요 <a href=\"%(ISSUES_URL)s\">구글 코드에 이슈 트레커</a>.\n    새로운 이슈를 생성하기 전에, 최근 개발 빌드 시도와 존재하는 이슈인지 찾아보세요.\n    "
 
 #: downloads/templates/downloads-list.html:5
 #, python-format
@@ -721,4 +721,4 @@ msgid ""
 "            &copy; 2014 Dolphin Emulator Project -\n"
 "            <a href=\"%(WEBSITE_GIT_URL)s\">Website source code</a>\n"
 "            "
-msgstr ""
+msgstr "\n            &copy; 2014 돌핀 에뮬레이터 프로젝트 -\n            <a href=\"%(WEBSITE_GIT_URL)s\">웹사이트 소스 코드</a>\n            "
