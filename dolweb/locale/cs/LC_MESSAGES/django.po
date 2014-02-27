@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-02-08 20:04+0100\n"
-"PO-Revision-Date: 2014-02-13 07:22+0000\n"
+"PO-Revision-Date: 2014-02-24 08:00+0000\n"
 "Last-Translator: Zbyněk Schwarz <zbynek.schwarz@gmail.com>\n"
 "Language-Team: Czech (http://www.transifex.com/projects/p/dolphin-emu/language/cs/)\n"
 "MIME-Version: 1.0\n"
@@ -557,7 +557,7 @@ msgid ""
 "    For reporting bugs please go to <a href=\"%(ISSUES_URL)s\">the issue tracker on Google Code</a>.\n"
 "    Before creating a new issue, make sure to try a recent development build and search the existing issues.\n"
 "    "
-msgstr ""
+msgstr "\n    Pro nahlášení chyb navštivte prosím <a href=\"%(ISSUES_URL)s\">systém sledování chyb na Google Code</a>.\n    Před vytvořením nové úlohy vyzkoušejte nedávnou vývojářskou verzi a prohledejte existující úlohy.\n    "
 
 #: downloads/templates/downloads-list.html:5
 #, python-format

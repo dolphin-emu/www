@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-02-08 20:04+0100\n"
-"PO-Revision-Date: 2014-02-09 13:40+0000\n"
+"PO-Revision-Date: 2014-02-23 20:33+0000\n"
 "Last-Translator: DolphinPhoenix <anton_r_3@hotmail.com>\n"
 "Language-Team: Swedish (http://www.transifex.com/projects/p/dolphin-emu/language/sv/)\n"
 "MIME-Version: 1.0\n"
@@ -73,7 +73,7 @@ msgstr[1] "\n    %(count)s inlägg\n  "
 
 #: blog/templates/series-index.html:27
 msgid "RSS feed:"
-msgstr "RSS-flöde:"
+msgstr "RSS-matning:"
 
 #: blog/templates/series-index.html:37
 msgid "No blog series yet."
@@ -186,19 +186,19 @@ msgstr "Inga kategorier"
 
 #: blog/templates/zinnia/entry_detail_base.html:22
 msgid "RSS Feed of discussions on"
-msgstr "RSS-flöde av diskussioner på"
+msgstr "RSS-matning av diskussioner på"
 
 #: blog/templates/zinnia/entry_detail_base.html:24
 msgid "RSS Feed of comments on"
-msgstr "RSS-flöde av kommentarer på"
+msgstr "RSS-matning av kommentarer på"
 
 #: blog/templates/zinnia/entry_detail_base.html:26
 msgid "RSS Feed of pingbacks on"
-msgstr "RSS-flöde av pingbacks på"
+msgstr "RSS-matning av pingbacks på"
 
 #: blog/templates/zinnia/entry_detail_base.html:28
 msgid "RSS Feed of trackbacks on"
-msgstr "RSS-flöde av trackbacks på"
+msgstr "RSS-matning av trackbacks på"
 
 #: blog/templates/zinnia/entry_detail_base.html:46
 msgid "Next entry"
@@ -245,7 +245,7 @@ msgstr "sida"
 #: blog/templates/zinnia/entry_list.html:13
 #: blog/templates/zinnia/entry_list.html:16
 msgid "RSS Feed"
-msgstr "RSS-flöde"
+msgstr "RSS-matning"
 
 #: blog/templates/zinnia/entry_list.html:20
 msgid "Latest entries"
@@ -636,7 +636,7 @@ msgstr "Ladda ned %(last_release)s för Windows, Mac och Linux »"
 
 #: homepage/templates/homepage-home.html:93
 msgid "RSS feed of the latest articles"
-msgstr "RSS-flöde för de senaste artiklarna"
+msgstr "RSS-matning för de senaste artiklarna"
 
 #: homepage/templates/homepage-home.html:94
 msgid "Latest articles"

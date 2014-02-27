@@ -3,14 +3,14 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Garteal <garteal@gmail.com>, 2013
+# Garteal <garteal@gmail.com>, 2013-2014
 msgid ""
 msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-02-08 20:04+0100\n"
-"PO-Revision-Date: 2014-02-08 19:06+0000\n"
-"Last-Translator: delroth <delroth@gmail.com>\n"
+"PO-Revision-Date: 2014-02-18 07:25+0000\n"
+"Last-Translator: Garteal <garteal@gmail.com>\n"
 "Language-Team: Dutch (http://www.transifex.com/projects/p/dolphin-emu/language/nl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -25,12 +25,12 @@ msgstr "Inhoud"
 #: blog/feeds.py:24
 #, python-format
 msgid "Entries for the serie %s"
-msgstr ""
+msgstr "Inzendingen voor de serie %s"
 
 #: blog/feeds.py:27
 #, python-format
 msgid "The latest entries for the serie %s"
-msgstr ""
+msgstr "De laatste inzendingen voor de serie %s"
 
 #: blog/models.py:16
 msgid "image"
@@ -72,7 +72,7 @@ msgstr[1] "\n    %(count)s inzendingen\n  "
 
 #: blog/templates/series-index.html:27
 msgid "RSS feed:"
-msgstr ""
+msgstr "RSS feed:"
 
 #: blog/templates/series-index.html:37
 msgid "No blog series yet."
@@ -136,11 +136,11 @@ msgstr "Lees verder"
 msgid ""
 "You can continue the discussion in the <a href=\"%(url)s\" title=\"Visit "
 "forum thread for this article\">forum thread</a> of this article."
-msgstr ""
+msgstr "Je kunt verder discussiëren in de <a href=\"%(url)s\" title=\"Bezoek de forum thread van dit artikel\">forum thread</a> van dit artikel."
 
 #: blog/templates/zinnia/_entry_detail_base.html:78
 msgid "Blog serie"
-msgstr ""
+msgstr "Blog serie"
 
 #: blog/templates/zinnia/_entry_detail_base.html:80
 #, python-format
@@ -222,83 +222,83 @@ msgstr "Bewerk inzending"
 
 #: blog/templates/zinnia/entry_list.html:5
 msgid "Latest entries for"
-msgstr ""
+msgstr "Laatste inzendingen voor"
 
 #: blog/templates/zinnia/entry_list.html:5
 msgid "the category"
-msgstr ""
+msgstr "de categorie"
 
 #: blog/templates/zinnia/entry_list.html:5
 msgid "the tag"
-msgstr ""
+msgstr "de tag"
 
 #: blog/templates/zinnia/entry_list.html:5
 msgid "the author"
-msgstr ""
+msgstr "de auteur"
 
 #: blog/templates/zinnia/entry_list.html:5
 msgid "page"
-msgstr ""
+msgstr "pagina"
 
 #: blog/templates/zinnia/entry_list.html:10
 #: blog/templates/zinnia/entry_list.html:13
 #: blog/templates/zinnia/entry_list.html:16
 msgid "RSS Feed"
-msgstr ""
+msgstr "RSS Feed"
 
 #: blog/templates/zinnia/entry_list.html:20
 msgid "Latest entries"
-msgstr ""
+msgstr "Laatste inzendingen"
 
 #: blog/templates/zinnia/entry_list.html:20
 msgid "Category"
-msgstr ""
+msgstr "Categorie"
 
 #: blog/templates/zinnia/entry_list.html:20
 msgid "Tag"
-msgstr ""
+msgstr "Tag"
 
 #: blog/templates/zinnia/entry_list.html:20
 msgid "Author"
-msgstr ""
+msgstr "Auteur"
 
 #: blog/templates/zinnia/entry_list.html:20
 msgid "Page"
-msgstr ""
+msgstr "Pagina"
 
 #: blog/templates/zinnia/entry_list.html:28
 #, python-format
 msgid "Category archives: %(category)s"
-msgstr ""
+msgstr "Categorie archieven: %(category)s"
 
 #: blog/templates/zinnia/entry_list.html:35
 #, python-format
 msgid "Tag archives: %(tag)s"
-msgstr ""
+msgstr "Tag archieven: %(tag)s"
 
 #: blog/templates/zinnia/entry_list.html:39
 #, python-format
 msgid "Author archives: %(author)s"
-msgstr ""
+msgstr "Auteur archieven: %(author)s"
 
 #: blog/templates/zinnia/entry_list.html:48
 msgid "No entries yet."
-msgstr ""
+msgstr "Geen inzendingen beschikbaar."
 
 #: blog/templates/zinnia/entry_list.html:67
 #: blog/templates/zinnia/entry_list.html:68
 msgid "Edit the category"
-msgstr ""
+msgstr "Bewerk category"
 
 #: blog/templates/zinnia/entry_list.html:74
 #: blog/templates/zinnia/entry_list.html:75
 msgid "Edit the tag"
-msgstr ""
+msgstr "Bewerk tag"
 
 #: blog/templates/zinnia/entry_list.html:81
 #: blog/templates/zinnia/entry_list.html:82
 msgid "Edit the author"
-msgstr ""
+msgstr "Bewerk auteur"
 
 #: blog/templates/zinnia/skeleton.html:5
 msgid "Latest news for Dolphin Emulator"
@@ -543,11 +543,11 @@ msgid ""
 "\n"
 "    You can also <a href=\"%(GIT_BROWSE_URL)s\">browse the current version of the source code</a>.\n"
 "    "
-msgstr ""
+msgstr "\n    Je kunt ook <a href=\"%(GIT_BROWSE_URL)s\">de huidige versie van de source code bekijken</a>.\n    "
 
 #: downloads/templates/downloads-index.html:112
 msgid "Reporting bugs"
-msgstr ""
+msgstr "Bugs melden"
 
 #: downloads/templates/downloads-index.html:114
 #, python-format
@@ -556,7 +556,7 @@ msgid ""
 "    For reporting bugs please go to <a href=\"%(ISSUES_URL)s\">the issue tracker on Google Code</a>.\n"
 "    Before creating a new issue, make sure to try a recent development build and search the existing issues.\n"
 "    "
-msgstr ""
+msgstr "\n    Als je een bug hebt gevonden kun je dit melden op de <a href=\"%(ISSUES_URL)s\"> issue tracker op Google Code</a>.\n    Voordat je een nieuwe issue aanmaakt, zoek je eerst of er een soortgelijke issue bestaat en probeer je de meest recente development build.\n    "
 
 #: downloads/templates/downloads-list.html:5
 #, python-format
@@ -635,7 +635,7 @@ msgstr "Download %(last_release)s nu voor Windows, Mac en Linux »"
 
 #: homepage/templates/homepage-home.html:93
 msgid "RSS feed of the latest articles"
-msgstr ""
+msgstr "RSS feed van de laatste artikelen"
 
 #: homepage/templates/homepage-home.html:94
 msgid "Latest articles"
@@ -692,7 +692,7 @@ msgstr "Officiële Dolphin Emulator Website"
 
 #: templates/_base.html:23
 msgid "Latest blog articles"
-msgstr ""
+msgstr "Laatste blog artikelen"
 
 #: templates/_base.html:68
 msgid "Screenshots"
@@ -721,4 +721,4 @@ msgid ""
 "            &copy; 2014 Dolphin Emulator Project -\n"
 "            <a href=\"%(WEBSITE_GIT_URL)s\">Website source code</a>\n"
 "            "
-msgstr ""
+msgstr "\n            &copy; 2014 Dolphin Emulator Project -\n            <a href=\"%(WEBSITE_GIT_URL)s\">Website source code</a>\n            "
