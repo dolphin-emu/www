@@ -1,5 +1,12 @@
 from django.db import models
+from django.utils.safestring import mark_safe
 from django.utils.translation import ugettext as _
+
+import cgi
+import re
+
+PULL_REQUEST_FIRSTLINE_RE = re.compile(
+    r'^Merge pull request #(\d+) from (\S+?)/(\S+?)$', re.U)
 
 class BranchInfo(models.Model):
     """Used to add metadata to Dolphin Git branches (mostly visible or not)"""
@@ -44,7 +51,6 @@ class DevVersion(DownloadableVersion):
     date = models.DateTimeField(auto_now_add=True)
     author = models.CharField(max_length=128)
     description = models.TextField()
-    description_abbrev = models.CharField(max_length=256)
 
     def __unicode__(self):
         return _("Dolphin %s") % self.revbranch
@@ -60,3 +66,34 @@ class DevVersion(DownloadableVersion):
     @models.permalink
     def get_absolute_url(self):
         return ('downloads-view-devrel', (), { 'hash': self.hash })
+
+    @property
+    def description_abbrev(self):
+        """Returns HTML code that represents a short description of the changes
+        in this commit."""
+        lines = self.description.split(u'\n')
+        match = PULL_REQUEST_FIRSTLINE_RE.match(lines[0])
+        if match:
+            pull_id, author, branch = match.groups()
+            following_lines = [l for l in lines[1:] if l.strip() != u'']
+            if not following_lines:
+                short_descr = _(u'Change with no description')
+            else:
+                short_descr = following_lines[0]
+            additional_html_fmt = _(u'(<a href="%(pr_url)s">PR #%(pr_id)s</a> from <a href="%(author_url)s">%(author)s</a>)')
+            additional_html = additional_html_fmt % {
+                'pr_url': GIT_PR_URL % pull_id,
+                'pr_id': pull_id,
+                'author_url': GIT_AUTHOR_URL % cgi.escape(author),
+                'author': cgi.escape(author),
+            }
+        else:
+            short_descr = lines[0]
+            additional_html = u''
+
+        if len(short_descr) >= 200:
+            short_descr = short_descr[:200] + u"..."
+        short_descr = cgi.escape(short_descr)
+        if additional_html:
+            short_descr = short_descr + u' ' + additional_html
+        return mark_safe(short_descr)

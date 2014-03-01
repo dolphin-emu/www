@@ -101,13 +101,6 @@ def new(request):
             build_obj.author = author
             build_obj.description = description
 
-            # Shorten the description by taking only the first line, truncating it to
-            # 250 chars and adding an ellipsis if truncated
-            descr_abbrev = description.split('\n')[0]
-            if len(descr_abbrev) >= 250:
-                descr_abbrev = descr_abbrev[:250] + "..."
-            build_obj.description_abbrev = descr_abbrev
-
         if build_type == 'win32':
             build_obj.win32_url = build_url
         elif build_type == 'win64':
