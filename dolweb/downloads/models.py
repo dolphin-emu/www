@@ -1,3 +1,4 @@
+from django.conf import settings
 from django.db import models
 from django.utils.safestring import mark_safe
 from django.utils.translation import ugettext as _
@@ -82,9 +83,9 @@ class DevVersion(DownloadableVersion):
                 short_descr = following_lines[0]
             additional_html_fmt = _(u'(<a href="%(pr_url)s">PR #%(pr_id)s</a> from <a href="%(author_url)s">%(author)s</a>)')
             additional_html = additional_html_fmt % {
-                'pr_url': GIT_PR_URL % pull_id,
+                'pr_url': settings.GIT_PR_URL % pull_id,
                 'pr_id': pull_id,
-                'author_url': GIT_AUTHOR_URL % cgi.escape(author),
+                'author_url': settings.GIT_AUTHOR_URL % cgi.escape(author),
                 'author': cgi.escape(author),
             }
         else:
