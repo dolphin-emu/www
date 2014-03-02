@@ -4,6 +4,7 @@
 {% load humanize %}
 {% load i18n %}
 {% load l10n %}
+{% load static from staticfiles %}
 
 {% block "metadescr" %}{% trans "The Dolphin Emulator compatibility list contains all the games we tested, sorted by how well they work on the emulator." %}{% endblock %}
 
@@ -22,11 +23,11 @@
         <h3>{% trans "How to read the ratings" %}</h3>
 
         <ul>
-            <li><img src="{{ STATIC_URL }}img/stars/5.png" alt="{% trans "5 out of 5" %}"> {% trans "<strong>Perfect</strong>: No issues at all!" %}</li>
-            <li><img src="{{ STATIC_URL }}img/stars/4.png" alt="{% trans "4 out of 5" %}"> {% trans "<strong>Playable</strong>: Runs well, only minor graphical or audio glitches. Games can be played all the way through." %}</li>
-            <li><img src="{{ STATIC_URL }}img/stars/3.png" alt="{% trans "3 out of 5" %}"> {% trans "<strong>Starts</strong>: Starts, maybe even plays well, but crashes or major graphical/audio glitches." %}</li>
-            <li><img src="{{ STATIC_URL }}img/stars/2.png" alt="{% trans "2 out of 5" %}"> {% trans "<strong>Intro/Menu</strong>: Hangs/crashes somewhere between booting and starting." %}</li>
-            <li><img src="{{ STATIC_URL }}img/stars/1.png" alt="{% trans "1 out of 5" %}"> {% trans "<strong>Broken</strong>: Crashes when booting." %}</li>
+            <li><img src="{% static "img/stars/5.png" %}" alt="{% trans "5 out of 5" %}"> {% trans "<strong>Perfect</strong>: No issues at all!" %}</li>
+            <li><img src="{% static "img/stars/4.png" %}" alt="{% trans "4 out of 5" %}"> {% trans "<strong>Playable</strong>: Runs well, only minor graphical or audio glitches. Games can be played all the way through." %}</li>
+            <li><img src="{% static "img/stars/3.png" %}" alt="{% trans "3 out of 5" %}"> {% trans "<strong>Starts</strong>: Starts, maybe even plays well, but crashes or major graphical/audio glitches." %}</li>
+            <li><img src="{% static "img/stars/2.png" %}" alt="{% trans "2 out of 5" %}"> {% trans "<strong>Intro/Menu</strong>: Hangs/crashes somewhere between booting and starting." %}</li>
+            <li><img src="{% static "img/stars/1.png" %}" alt="{% trans "1 out of 5" %}"> {% trans "<strong>Broken</strong>: Crashes when booting." %}</li>
         </ul>
         </div>
     </div>
@@ -62,10 +63,10 @@
     <tbody>
         {% for game, cat, ts, hash in games %}
         <tr>
-            <td class="category"><img src="{{ STATIC_URL }}img/platforms/{{ cat }}.png" width="32" height="32" alt="{{ cat|capfirst }}" title="{{ cat|capfirst }}"></td>
+            <td class="category"><img src="{% platform_img_url cat %}" width="32" height="32" alt="{{ cat|capfirst }}" title="{{ cat|capfirst }}"></td>
             <td class="banner"><div class="bnr bnr-{{ hash }}"></div></td>
             <td class="title always-ltr"><a href="{{ game.wiki_url }}">{{ game.title }}</a></td>
-            <td class="rating"><img src="{{ STATIC_URL }}img/stars/{{ game.latest.text.data }}.png" alt="{{ game.latest.text.data|compat_text }}" title="{{ game.latest.text.data|compat_text }}"></td>
+            <td class="rating"><img src="{% compat_img_url game.latest.text.data|compat_text %}" alt="{{ game.latest.text.data|compat_text }}" title="{{ game.latest.text.data|compat_text }}"></td>
             <td class="update">{{ ts|naturaltime }}</td>
         </tr>
         {% endfor %}

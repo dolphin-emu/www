@@ -1,5 +1,7 @@
 {% load i18n %}
 {% load url from future %}
+{% load static from staticfiles %}
+
 <form method="get" action="{% url 'zinnia_entry_search' %}" role="search">
     <div class="input-group">
         <input type="text" placeholder="{% trans "Search articles" %}" name="pattern" class="form-control" />
@@ -12,6 +14,6 @@
 </form>
 
 <p class="alert alert-info" style="margin-top: 1em">
-<img src="{{ STATIC_URL }}zinnia/img/help.png" alt="?" class="help" width="14" height="14" />
+<img src="{% static "zinnia/img/help.png" %}" alt="?" class="help" width="14" height="14" />
 {% trans "You can use - to exclude words or phrases, &quot;double quotes&quot; for exact phrases and the AND/OR boolean operators combined with parenthesis for complex queries." %}
 </p>

@@ -1,10 +1,11 @@
 {% extends "_base.html" %}
 
 {% load i18n %}
+{% load static from staticfiles %}
 
 {% block "title" %}{{ title }}{% endblock %}
 {% block "extracss" %}
-<link href="{{ STATIC_URL }}css/wiki.css" rel="stylesheet">
+<link href="{% static "css/wiki.css" %}" rel="stylesheet">
 {% endblock %}
 
 {% block "body" %}

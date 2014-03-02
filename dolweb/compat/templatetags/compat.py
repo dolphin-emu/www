@@ -1,5 +1,6 @@
 from django import template
 from django.conf import settings
+from django.contrib.staticfiles.storage import staticfiles_storage
 from django.utils.translation import ugettext_lazy as _
 from dolweb.compat.models import get_rating_count, get_rated_games
 
@@ -41,3 +42,11 @@ def rating_class(compat):
         4: 'success',
         5: 'info',
     }[int(compat)]
+
+@register.simple_tag
+def platform_img_url(platform):
+    return staticfiles_storage.url('img/platforms/%s.png' % platform)
+
+@register.simple_tag
+def compat_img_url(compat):
+    return staticfiles_storage.url('img/stars/%s.png' % compat)

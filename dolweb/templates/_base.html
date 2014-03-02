@@ -22,7 +22,7 @@
 
         <link rel="alternate" type="application/rss+xml" title="{% trans "Latest blog articles" %}" href="{% url zinnia_entry_latest_feed %}" />
 
-        <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+        <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
         <link href="{% static "css/bootstrap.min.css" %}" rel="stylesheet">
         <link href="{% static "css/bootstrap-theme.min.css" %}" rel="stylesheet">
         <link href="{% static "css/dolphin.css" %}" rel="stylesheet">
@@ -114,7 +114,7 @@
         </p>
         </footer>
 
-        <script src="//code.jquery.com/jquery.js"></script>
+        <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
         <script src="{% static "js/bootstrap.min.js" %}"></script>
         {% block "extrajs" %}
         {% endblock %}
