@@ -66,7 +66,7 @@
             <td class="category"><img src="{% platform_img_url cat %}" width="32" height="32" alt="{{ cat|capfirst }}" title="{{ cat|capfirst }}"></td>
             <td class="banner"><div class="bnr bnr-{{ hash }}"></div></td>
             <td class="title always-ltr"><a href="{{ game.wiki_url }}">{{ game.title }}</a></td>
-            <td class="rating"><img src="{% compat_img_url game.latest.text.data|compat_text %}" alt="{{ game.latest.text.data|compat_text }}" title="{{ game.latest.text.data|compat_text }}"></td>
+            <td class="rating"><img src="{% compat_img_url game.latest.text.data %}" alt="{{ game.latest.text.data|compat_text }}" title="{{ game.latest.text.data|compat_text }}"></td>
             <td class="update">{{ ts|naturaltime }}</td>
         </tr>
         {% endfor %}
