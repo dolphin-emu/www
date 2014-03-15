@@ -1,10 +1,20 @@
+* Porting to Python 3 and latest Django (currently on old versions).
+
+* Using more of django-annoying where it makes sense, particularly @render_to.
+
+* Making it easier to test changes locally. Dependencies on the Wiki make that
+  a bit hard.
+
+* Download system rework: currently the download types are hardcoded, which was
+  a terrible idea and is now blocking us to add things like Android downloads,
+  updated Ubuntu builds, etc.
+  * Should be a DownloadableItem: {version, url, autodetection_thingy} in DB.
+  * Then need a script to port old data to the new format.
+
 * FAQ i18n support and better design (hard to see the questions list at the
   moment)
 
-* Guides rework: better list page, i18n support, editor access with images
-  upload?
+* Guides rework: better list page, i18n support, better loading time
+  (pre-caching with hooks on the wiki?)
 
-* Compatibility list autocompletion support
-
-* Compatibility stats on the front page? Would be nice imho, but need to find a
-  place to put it
+* Compatibility list search/autocompletion support
