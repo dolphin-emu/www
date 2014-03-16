@@ -21,6 +21,9 @@ CATEGORIES = {
 def list_compat(request, first_char=NOT_ALPHA_CHAR, filter_by=None):
     ratings_start = 'Ratings/'
     gpages_start = ''
+    if not first_char:
+        first_char = NOT_ALPHA_CHAR
+
     if first_char != NOT_ALPHA_CHAR:
         ratings_start += first_char
         gpages_start += first_char

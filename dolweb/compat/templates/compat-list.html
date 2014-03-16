@@ -40,9 +40,9 @@
         {% for rating in all_ratings %}
         <dt>
             {% if filter_by == rating %}
-            <a href="{% url compat-list first_char=page %}" title="{% trans "Remove filter" %}" class="pull-end">{% trans "Show all" %}</a>
+            <a href="{% compat_url page None %}" title="{% trans "Remove filter" %}" class="pull-end">{% trans "Show all" %}</a>
             {% else %}
-            <a href="{% url compat-list first_char=page filter_by=rating %}" title="{% trans "Filter by this rating" %}" class="pull-end"><i class="icon-filter"></i> {% trans "Filter" %}</a>
+            <a href="{% compat_url page rating %}" title="{% trans "Filter by this rating" %}" class="pull-end"><i class="icon-filter"></i> {% trans "Filter" %}</a>
             {% endif %}
             {{ rating|compat_text }}: {{ rating|rating_pct|floatformat }}%
         </dt>

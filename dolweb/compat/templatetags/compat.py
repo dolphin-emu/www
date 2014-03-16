@@ -1,6 +1,7 @@
 from django import template
 from django.conf import settings
 from django.contrib.staticfiles.storage import staticfiles_storage
+from django.core.urlresolvers import reverse
 from django.utils.translation import ugettext_lazy as _
 from dolweb.compat.models import get_rating_count, get_rated_games
 
@@ -50,3 +51,12 @@ def platform_img_url(platform):
 @register.simple_tag
 def compat_img_url(compat):
     return staticfiles_storage.url(u'img/stars/%s.png' % unicode(compat))
+
+@register.simple_tag
+def compat_url(char, rating):
+    kwargs = {}
+    if rating:
+        kwargs['filter_by'] = rating
+    if char and char != '#':
+        kwargs['first_char'] = char
+    return reverse('compat-list', kwargs=kwargs)
