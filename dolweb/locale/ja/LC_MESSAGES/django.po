@@ -11,8 +11,8 @@ msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-02-08 20:04+0100\n"
-"PO-Revision-Date: 2014-02-21 22:30+0000\n"
-"Last-Translator: Lioncash <mathew1800@gmail.com>\n"
+"PO-Revision-Date: 2014-03-07 23:30+0000\n"
+"Last-Translator: DanbSky <smariojp@gmail.com>\n"
 "Language-Team: Japanese (http://www.transifex.com/projects/p/dolphin-emu/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -612,7 +612,7 @@ msgstr "ゲームキューブとWiiのエミュレータ、Dolphinの公式ペ�
 
 #: homepage/templates/homepage-home.html:13
 msgid "GameCube/Wii games on PC"
-msgstr "GameCube/Wii games on PC"
+msgstr "ゲームキューブとWiiのゲームをPCで"
 
 #: homepage/templates/homepage-home.html:30 templates/_base.html:62
 msgid "Dolphin Emulator"
@@ -689,7 +689,7 @@ msgstr "アクセスしようとしたページでエラーが発生しました
 
 #: templates/_base.html:10
 msgid "Official Dolphin Emulator Website"
-msgstr "Official Dolphin Emulator Website"
+msgstr "Dolphinエミュレータ公式サイト"
 
 #: templates/_base.html:23
 msgid "Latest blog articles"
