@@ -5,7 +5,6 @@ from dolweb.compat.models import Page, Namespace, get_category_id, \
 
 import hashlib
 import string
-import urllib
 
 NOT_ALPHA_CHAR = '#'
 
@@ -22,9 +21,6 @@ CATEGORIES = {
 def list_compat(request, first_char=NOT_ALPHA_CHAR, filter_by=None):
     ratings_start = 'Ratings/'
     gpages_start = ''
-    # Translates %23 to #
-    first_char = urllib.unquote(first_char)
-
     if first_char != NOT_ALPHA_CHAR:
         ratings_start += first_char
         gpages_start += first_char
@@ -33,6 +29,9 @@ def list_compat(request, first_char=NOT_ALPHA_CHAR, filter_by=None):
     ratings_list = ('1', '2', '3', '4', '5')
     if filter_by in ratings_list:
         ratings_list = (filter_by,)
+        filter_by = int(filter_by)
+    else:
+        filter_by = None
 
     # Select all the relevant ratings pages
     ratings = (Page.objects.filter(namespace=Namespace.TEMPLATE,
