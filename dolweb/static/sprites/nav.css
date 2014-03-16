@@ -1,4 +1,4 @@
-/* glue: 0.3 hash: 5eadac83fa */
+/* glue: 0.3 hash: 4655ca63f6 */
 .sprite-nav-logo-small,
 .sprite-nav-tr,
 .sprite-nav-sv,
@@ -20,6 +20,7 @@
 .sprite-nav-cy,
 .sprite-nav-cs,
 .sprite-nav-cn,
+.sprite-nav-ca,
 .sprite-nav-br,
 .sprite-nav-ast{background-image:url('nav.png');background-repeat:no-repeat}
 .sprite-nav-logo-small{background-position:0px 0px;width:42px;height:25px;}
@@ -43,5 +44,6 @@
 .sprite-nav-cy{background-position:-60px -85px;width:30px;height:20px;}
 .sprite-nav-cs{background-position:-90px -85px;width:30px;height:20px;}
 .sprite-nav-cn{background-position:0px -105px;width:30px;height:20px;}
-.sprite-nav-br{background-position:-30px -105px;width:30px;height:20px;}
-.sprite-nav-ast{background-position:-60px -105px;width:30px;height:20px;}
+.sprite-nav-ca{background-position:-30px -105px;width:30px;height:20px;}
+.sprite-nav-br{background-position:-60px -105px;width:30px;height:20px;}
+.sprite-nav-ast{background-position:-90px -105px;width:30px;height:20px;}

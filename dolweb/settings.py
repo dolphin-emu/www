@@ -55,6 +55,7 @@ LANGUAGE_CODE = 'en-us'
 LANGUAGES = (
     ('ast', u'Asturianu'),
     ('ms', u'Bahasa Melayu'),
+    ('ca', u'Català'),
     ('cs', u'Česky'),
     ('cy', u'Cymraeg'),
     ('de', u'Deutsch'),
