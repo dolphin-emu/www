@@ -5,6 +5,9 @@ from dolweb.compat.models import Page, Namespace, get_category_id, \
 
 import hashlib
 import string
+import urllib
+
+NOT_ALPHA_CHAR = '#'
 
 CATEGORIES = {
     'GameCube_games': 'gamecube',
@@ -16,10 +19,13 @@ CATEGORIES = {
 
 @cache_page(60 * 5)
 @render_to('compat-list.html')
-def list_compat(request, first_char='#', filter_by=None):
+def list_compat(request, first_char=NOT_ALPHA_CHAR, filter_by=None):
     ratings_start = 'Ratings/'
     gpages_start = ''
-    if first_char != '#':
+    # Translates %23 to #
+    first_char = urllib.unquote(first_char)
+
+    if first_char != NOT_ALPHA_CHAR:
         ratings_start += first_char
         gpages_start += first_char
 
@@ -34,7 +40,7 @@ def list_compat(request, first_char='#', filter_by=None):
                                    len=1,
                                    latest__text__data_raw__in=ratings_list)
                            .exclude(title_url='Ratings/'))
-    if first_char == '#':
+    if first_char == NOT_ALPHA_CHAR:
         ratings = ratings.filter(title_url__iregex=r'^Ratings/[^a-zA-Z].*$')
     ratings = ratings.select_related('latest__text__data_raw', 'latest__timestamp_raw').order_by('title_url')
 
@@ -47,7 +53,7 @@ def list_compat(request, first_char='#', filter_by=None):
     categories = CategoryLink.objects.filter(cat__in=CATEGORIES.keys(),
                                              page__namespace=Namespace.MAIN,
                                              page__title_url__istartswith=gpages_start)
-    if first_char == '#':
+    if first_char == NOT_ALPHA_CHAR:
         categories = categories.filter(page__title_url__iregex=r'^[^a-zA-Z].*$')
     categories = categories.select_related('page__title_url', 'page__latest__timestamp_raw')
 
@@ -65,6 +71,6 @@ def list_compat(request, first_char='#', filter_by=None):
             ts = max(rating.latest.timestamp, cat_dict[title].page.latest.timestamp)
             games.append((rating, CATEGORIES[cat_dict[title].cat], ts, hash))
 
-    return { 'games': games, 'pages': ['#'] + list(string.uppercase),
-            'page': first_char, 'page_css': first_char.replace('#', '%23'),
-            'all_ratings': (5, 4, 3, 2, 1), 'filter_by': filter_by }
+    return { 'games': games, 'pages': [NOT_ALPHA_CHAR] + list(string.uppercase),
+            'page': first_char, 'all_ratings': (5, 4, 3, 2, 1),
+            'filter_by': filter_by }
