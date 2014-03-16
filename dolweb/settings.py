@@ -53,6 +53,7 @@ LANGUAGE_CODE = 'en-us'
 
 # List of supported languages: ('langcode', 'Name of the language')
 LANGUAGES = (
+    ('ast', u'Asturianu'),
     ('ms', u'Bahasa Melayu'),
     ('cs', u'Česky'),
     ('cy', u'Cymraeg'),
