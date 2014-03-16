@@ -23,11 +23,18 @@ def list_compat(request, first_char='#'):
         ratings_start += first_char
         gpages_start += first_char
 
+    # Filter by rating
+    # FIXME: *might* break @cache_page (dunno if request.GET is used in cache key)
+    ratings_list = ('1', '2', '3', '4', '5')
+    filter_rating = request.GET.get('rating')
+    if filter_rating in ratings_list:
+        ratings_list = (filter_rating,)
+
     # Select all the relevant ratings pages
     ratings = (Page.objects.filter(namespace=Namespace.TEMPLATE,
                                    title_url__istartswith=ratings_start,
                                    len=1,
-                                   latest__text__data_raw__in=('1', '2', '3', '4', '5'))
+                                   latest__text__data_raw__in=ratings_list)
                            .exclude(title_url='Ratings/'))
     if first_char == '#':
         ratings = ratings.filter(title_url__iregex=r'^Ratings/[^a-zA-Z].*$')
@@ -62,4 +69,4 @@ def list_compat(request, first_char='#'):
 
     return { 'games': games, 'pages': ['#'] + list(string.uppercase),
             'page': first_char, 'page_css': first_char.replace('#', '%23'),
-            'all_ratings': (5, 4, 3, 2, 1) }
+            'all_ratings': (5, 4, 3, 2, 1), 'filter_by': filter_rating }

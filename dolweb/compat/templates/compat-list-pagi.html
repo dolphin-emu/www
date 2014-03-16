@@ -4,7 +4,7 @@
     {% if p == page %}
     <li class="active"><a href="#">{{ p }}</a></li>
     {% else %}
-    <li><a href="{% url compat-list p %}">{{ p }}</a></li>
+    <li><a href="{% url compat-list p %}{% if filter_by %}?rating={{ filter_by }}{% endif %}">{{ p }}</a></li>
     {% endif %}
 {% endfor %}
 </ul>

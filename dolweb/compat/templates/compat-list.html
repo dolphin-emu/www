@@ -38,7 +38,14 @@
 
         <dl>
         {% for rating in all_ratings %}
-        <dt>{{ rating|compat_text }}: {{ rating|rating_pct|floatformat }}%</dt>
+        <dt>
+            {% if filter_by == rating %}
+            <a href="" title="{% trans "Remove filter" %}" class="pull-end">{% trans "Show all" %}</a>
+            {% else %}
+            <a href="?rating={{ rating }}" title="{% trans "Filter by this rating" %}" class="pull-end"><i class="icon-filter"></i> {% trans "Filter" %}</a>
+            {% endif %}
+            {{ rating|compat_text }}: {{ rating|rating_pct|floatformat }}%
+        </dt>
         <dd><div class="progress"><div class="progress-bar progress-bar-{{ rating|rating_class }}" style="width: {{ rating|rating_pct|unlocalize }}%"></div></div></dd>
         {% endfor %}
         </dl>
