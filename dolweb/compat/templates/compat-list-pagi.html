@@ -5,9 +5,9 @@
     <li class="active"><a href="#">{{ p }}</a></li>
     {% else %}
     {% if filter_by %}
-    <li><a href="{% url compat-list first_char=p|urlencode filter_by=filter_by %}">{{ p }}</a></li>
+    <li><a href="{% url compat-list first_char=p filter_by=filter_by %}">{{ p }}</a></li>
     {% else %}
-    <li><a href="{% url compat-list first_char=p|urlencode %}">{{ p }}</a></li>
+    <li><a href="{% url compat-list first_char=p %}">{{ p }}</a></li>
     {% endif %}
     {% endif %}
 {% endfor %}
