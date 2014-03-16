@@ -22,14 +22,14 @@ def guess_lang_from_request(request):
         if normalized_accept_lang in TO_FULL_INVERTED:
             return TO_FULL_INVERTED[normalized_accept_lang]
 
-        if '_' in accept_lang:
-            accept_lang = accept_lang.split('_')[0]
+        if '_' in normalized_accept_lang:
+            normalized_accept_lang = normalized_accept_lang.split('_')[0]
 
-        if accept_lang == settings.LANGUAGE_CODE.split('-')[0]:
+        if normalized_accept_lang == settings.LANGUAGE_CODE.split('-')[0]:
             break
 
-        if accept_lang in dict(settings.LANGUAGES):
-            return accept_lang
+        if normalized_accept_lang in dict(settings.LANGUAGES):
+            return normalized_accept_lang
 
 class CountryRedirectMiddleware(object):
     def process_request(self, request):
