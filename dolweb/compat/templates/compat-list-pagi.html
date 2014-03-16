@@ -4,7 +4,12 @@
     {% if p == page %}
     <li class="active"><a href="#">{{ p }}</a></li>
     {% else %}
-    <li><a href="{% url compat-list p %}{% if filter_by %}?rating={{ filter_by }}{% endif %}">{{ p }}</a></li>
+    {% if filter_by }
+        {% url compat-list first_char=p filter_by=filter_by as page_url %}
+    {% else %}
+        {% url compat-list first_char=p as page_url %}
+    {% endif %}
+    <li><a href="{{ page_url }}">{{ p }}</a></li>
     {% endif %}
 {% endfor %}
 </ul>
