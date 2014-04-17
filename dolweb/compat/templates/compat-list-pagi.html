@@ -1,10 +1,11 @@
+{% load compat %}
 <div class="text-center">
 <ul class="pagination">
 {% for p in pages %}
     {% if p == page %}
     <li class="active"><a href="#">{{ p }}</a></li>
     {% else %}
-    <li><a href="{% url compat-list p %}">{{ p }}</a></li>
+    <li><a href="{% compat_url p filter_by %}">{{ p }}</a></li>
     {% endif %}
 {% endfor %}
 </ul>

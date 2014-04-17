@@ -24,6 +24,28 @@ html[dir="rtl"] table.compat-list td.title {
     text-align: right;
 }
 
+/* Generic pull-left & pull-right */
+.pull-origin, html[dir="rtl"] .pull-end {
+    float: left;
+}
+
+.pull-end, html[dir="rtl"] .pull-origin {
+    float: right;
+}
+
+/* Fix ratings-stats margins */
+html[dir="rtl"] .ratings-expl ul {
+    padding-right: 0;
+}
+
+html[dir="rtl"] .ratings-stats {
+    margin-right: 20px;
+}
+
+html[dir="rtl"] .ratings-stats dl, html[dir="rtl"] .ratings-stats dd {
+    margin-right: 0;
+}
+
 /* Fix Bootstrap rows in RTL */
 html[dir="rtl"] [class*="span"] {
     float: right;
@@ -45,6 +67,10 @@ html[dir="rtl"] .row-fluid [class*="span"]:first-child {
 html[dir="rtl"] ul.rtl-fixed, html[dir="rtl"] ol.rtl-fixed {
     padding: 0 40px 0 0;
     margin: 0 0 9px 0;
+}
+
+html[dir="rtl"] th {
+    text-align: right;
 }
 
 h1 a.anchor, h3 a.anchor {

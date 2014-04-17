@@ -11,7 +11,7 @@
 {% block "title" %}{% blocktrans %}Compatibility List - page {{ page }}{% endblocktrans %}{% endblock %}
 
 {% block "extracss" %}
-<link href="{{ MEDIA_URL }}bnr/atlas-{{ page_css }}.css" rel="stylesheet">
+<link href="{{ MEDIA_URL }}bnr/atlas-{{ page|urlencode }}.css" rel="stylesheet">
 {% endblock %}
 
 {% block "body" %}
@@ -38,7 +38,14 @@
 
         <dl>
         {% for rating in all_ratings %}
-        <dt>{{ rating|compat_text }}: {{ rating|rating_pct|floatformat }}%</dt>
+        <dt>
+            {% if filter_by == rating %}
+            <a href="{% compat_url page None %}" title="{% trans "Remove filter" %}" class="pull-end">{% trans "Show all" %}</a>
+            {% else %}
+            <a href="{% compat_url page rating %}" title="{% trans "Filter by this rating" %}" class="pull-end"><i class="icon-filter"></i> {% trans "Filter" %}</a>
+            {% endif %}
+            {{ rating|compat_text }}: {{ rating|rating_pct|floatformat }}%
+        </dt>
         <dd><div class="progress"><div class="progress-bar progress-bar-{{ rating|rating_class }}" style="width: {{ rating|rating_pct|unlocalize }}%"></div></div></dd>
         {% endfor %}
         </dl>
@@ -69,6 +76,8 @@
             <td class="rating"><img src="{% compat_img_url game.latest.text.data %}" alt="{{ game.latest.text.data|compat_text }}" title="{{ game.latest.text.data|compat_text }}"></td>
             <td class="update">{{ ts|naturaltime }}</td>
         </tr>
+        {% empty %}
+        <tr><td colspan="5" class="text-center"><em>{% trans "Your query does not match any game." %}</em></td></tr>
         {% endfor %}
     </tbody>
 </table>
