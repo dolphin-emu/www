@@ -1,5 +1,6 @@
 from django import template
 from django.conf import settings
+from dolweb.utils.monkey import TO_FULL
 
 register = template.Library()
 
@@ -38,3 +39,7 @@ def langdir(lang_code):
         return 'rtl'
     else:
         return 'ltr'
+
+@register.filter
+def langcode(short_lang):
+    return TO_FULL.get(short_lang, short_lang)

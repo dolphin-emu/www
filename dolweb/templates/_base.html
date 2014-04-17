@@ -22,6 +22,12 @@
 
         <link rel="alternate" type="application/rss+xml" title="{% trans "Latest blog articles" %}" href="{% url zinnia_entry_latest_feed %}" />
 
+        {% for langshort, langname in LANGUAGES %}
+            {% if langshort != LANGUAGE_CODE|short %}
+            <link rel="alternate" hreflang="{{ langshort|langcode }}" href="//{{ langshort|to_subdomain }}{{ request.path }}" />
+            {% endif %}
+        {% endfor %}
+
         <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
         <link href="{% static "css/bootstrap.min.css" %}" rel="stylesheet">
         <link href="{% static "css/bootstrap-theme.min.css" %}" rel="stylesheet">
@@ -77,9 +83,9 @@
                         <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown"><div class="flag curr-flag sprite-nav-{{ LANGUAGE_CODE|short }}"></div> <span>{{ LANGUAGE_CODE|langname }}</span> <b class="caret"></b></a>
                             <ul class="dropdown-menu">
-                            {% for langcode, langname in LANGUAGES %}
-                                {% if langcode != LANGUAGE_CODE|short %}
-                                <li><a href="//{{ langcode|to_subdomain }}{{ request.path }}?nocr=true"><div class="flag sprite-nav-{{ langcode }}"></div><span dir="{{ langcode|langdir }}">{{ langname }}</span></a></li>
+                            {% for langshort, langname in LANGUAGES %}
+                                {% if langshort != LANGUAGE_CODE|short %}
+                                <li><a href="//{{ langshort|to_subdomain }}{{ request.path }}?nocr=true"><div class="flag sprite-nav-{{ langshort }}"></div><span dir="{{ langshort|langdir }}">{{ langname }}</span></a></li>
                                 {% endif %}
                             {% endfor %}
                             </ul>
