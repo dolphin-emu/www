@@ -24,8 +24,7 @@ class DevVersionAdmin(admin.ModelAdmin):
     ordering = ('-date',)
     fieldsets = (
         ('Revision infos', {
-            'fields': ('branch', 'shortrev', 'hash', 'author',
-                       'description', 'description_abbrev'),
+            'fields': ('branch', 'shortrev', 'hash', 'author', 'description'),
         }),
         ('Download links', {
             'fields': ('win32_url', 'win64_url', 'osx_url', 'ubu_url'),
