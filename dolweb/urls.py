@@ -30,6 +30,9 @@ urlpatterns = patterns('',
 
     # Django administration
     url(r'^admin/', include(admin.site.urls)),
+
+    # Management interface
+    url(r'^mgmt/(?P<cmd>.+)$', 'dolweb.management.views.run_command', name='mgmt-run-command'),
 )
 
 urlpatterns += staticfiles_urlpatterns()

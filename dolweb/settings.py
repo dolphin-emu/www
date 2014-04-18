@@ -212,6 +212,7 @@ INSTALLED_APPS = (
     'dolweb.homepage',
     'dolweb.downloads',
     'dolweb.docs',
+    'dolweb.management',
     'dolweb.media',
     'dolweb.compat',
     'dolweb.localefixes',
@@ -306,6 +307,14 @@ ZINNIA_MAIL_COMMENT_AUTHORS = False
 ZINNIA_ENTRY_BASE_MODEL = 'dolweb.blog.entry_model.BlogEntry'
 ZINNIA_FEEDS_MAX_ITEMS = 20
 ZINNIA_PROTOCOL = 'https'
+
+# Whitelist for the management interface.
+#
+# WARNING: This management interface gives shell access on the web server. TAKE
+# IT SERIOUSLY and do not let untrusted users in the whitelist.
+#
+# This variable is a list of ('username', 'password').
+MGMT_AUTHORIZED_USERS = []
 
 local_settings_file = os.path.join(PROJECT_ROOT, 'dolweb', 'local_settings.py')
 if os.path.exists(local_settings_file):
