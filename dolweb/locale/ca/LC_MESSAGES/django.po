@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-02-08 20:04+0100\n"
-"PO-Revision-Date: 2014-02-15 14:09+0000\n"
+"PO-Revision-Date: 2014-04-02 10:03+0000\n"
 "Last-Translator: Puniasterus <puniasterus@gmail.com>\n"
 "Language-Team: Catalan (http://www.transifex.com/projects/p/dolphin-emu/language/ca/)\n"
 "MIME-Version: 1.0\n"
@@ -315,13 +315,13 @@ msgid ""
 "You can use - to exclude words or phrases, &quot;double quotes&quot; for "
 "exact phrases and the AND/OR boolean operators combined with parenthesis for"
 " complex queries."
-msgstr "Pots fer servir - per exloure paraules o frases, &quot;double quotes&quot; per frases exactes i els operadors booleans AND/OR combinat amb parèntesis per a consultes complexes."
+msgstr "Pots fer servir - per exloure paraules o frases, &quot;double quotes&quot; per frases exactes i els operadors booleans AND/OR conjuntament amb parèntesis per a consultes complexes."
 
 #: compat/templates/compat-list.html:8
 msgid ""
 "The Dolphin Emulator compatibility list contains all the games we tested, "
 "sorted by how well they work on the emulator."
-msgstr "La llista de compatibilitat de l'emulador Dolphin conté tots els jocs que hem provat, segons com funcionen en l'emulador."
+msgstr "La llista de compatibilitat de l'emulador Dolphin conté tots els jocs que hem provat, ordenats segons com funcionen."
 
 #: compat/templates/compat-list.html:10
 #, python-format
@@ -348,7 +348,7 @@ msgstr "4 de 5"
 msgid ""
 "<strong>Playable</strong>: Runs well, only minor graphical or audio "
 "glitches. Games can be played all the way through."
-msgstr "<strong>Jugable</strong>: Funciona bé, només petits errors gràfics o de so. Els jocs juegos poden ser jugats fins al final."
+msgstr "<strong>Jugable</strong>: Funciona bé, només petits errors gràfics o de so. Els jocs poden ser jugats fins al final."
 
 #: compat/templates/compat-list.html:27
 msgid "3 out of 5"
@@ -358,7 +358,7 @@ msgstr "3 de 5"
 msgid ""
 "<strong>Starts</strong>: Starts, maybe even plays well, but crashes or major"
 " graphical/audio glitches."
-msgstr "<strong>Inicia</strong>: Inicia, potser funcioni bé, però pot bloquejar-se o tenir importants errors gràfics/so."
+msgstr "<strong>Inicia</strong>: Inicia, potser funciona bé, però pot bloquejar-se o tenir importants errors gràfics/so."
 
 #: compat/templates/compat-list.html:28
 msgid "2 out of 5"
@@ -544,7 +544,7 @@ msgid ""
 "\n"
 "    You can also <a href=\"%(GIT_BROWSE_URL)s\">browse the current version of the source code</a>.\n"
 "    "
-msgstr "\nTambñe pots <a href=\"%(GIT_BROWSE_URL)s\">mirar la versió actual del codi font</a>."
+msgstr "\nTambé pots <a href=\"%(GIT_BROWSE_URL)s\">mirar la versió actual del codi font</a>."
 
 #: downloads/templates/downloads-index.html:112
 msgid "Reporting bugs"
@@ -627,7 +627,7 @@ msgid ""
 "            (1080p) with several enhancements: compatibility with all PC\n"
 "            controllers, turbo speed, networked multiplayer, and even more!\n"
 "            "
-msgstr "\n<b>Dolphin</b> és un emulador per a les dues consoles recents de Nintendo:\nla <b>GameCube</b> i la <b>Wii</>b. Permet als jugadors de PC disfrutar\ndels jocs d'aquestes consoles en <b>full HD</b> (1080p) amb diverses\nmillores: commpatibilitat amb tots els mandos de PC, velocitat turbo,\nmultijugador en xarxa, i encara més!"
+msgstr "\n<b>Dolphin</b> és un emulador per a les dues consoles recents de Nintendo:\nla <b>GameCube</b> i la <b>Wii</b>. Permet als jugadors de PC disfrutar\ndels jocs d'aquestes consoles en <b>full HD</b> (1080p) amb diverses\nmillores: compatibilitat amb tots els mandos de PC, velocitat turbo,\nmultijugador en xarxa, i encara més!"
 
 #: homepage/templates/homepage-home.html:41
 #, python-format

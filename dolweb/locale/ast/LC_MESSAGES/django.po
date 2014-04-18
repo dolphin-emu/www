@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-02-08 20:04+0100\n"
-"PO-Revision-Date: 2014-02-17 22:59+0000\n"
+"PO-Revision-Date: 2014-03-18 02:35+0000\n"
 "Last-Translator: Tornes Llume <l.lumex03.tornes@gmail.com>\n"
 "Language-Team: Asturian (http://www.transifex.com/projects/p/dolphin-emu/language/ast/)\n"
 "MIME-Version: 1.0\n"
@@ -34,7 +34,7 @@ msgstr "Les caberes entraes pa la serie %s"
 
 #: blog/models.py:16
 msgid "image"
-msgstr "imax"
+msgstr "semeya"
 
 #: blog/models.py:17
 msgid "Used for illustration."
@@ -47,7 +47,7 @@ msgstr "Guetar artículos"
 
 #: blog/templates/blog_sidebar.html:31
 msgid "Blog tags"
-msgstr "etiquestes de blogue"
+msgstr "Marques del blogue"
 
 #: blog/templates/blog_sidebar.html:36
 msgid "Blog series"
@@ -101,7 +101,7 @@ msgstr "Escritu en"
 
 #: blog/templates/zinnia/_entry_detail_base.html:37
 msgid "Last update on"
-msgstr "Cabera anovación el"
+msgstr "Caberu anovamientu'l"
 
 #: blog/templates/zinnia/_entry_detail_base.html:39
 #, python-format
@@ -155,11 +155,11 @@ msgstr "‹ Postrer artículu na serie"
 
 #: blog/templates/zinnia/_entry_detail_base.html:87
 msgid "Next article in serie ›"
-msgstr "Prósimu artículu na serie ›"
+msgstr "Siguiente artículu na serie ›"
 
 #: blog/templates/zinnia/_entry_detail_base.html:137
 msgid "Tags"
-msgstr "Marca"
+msgstr "Marques"
 
 #: blog/templates/zinnia/_entry_detail_base.html:141
 #, python-format
@@ -185,7 +185,7 @@ msgstr "Nun hai estayes"
 
 #: blog/templates/zinnia/entry_detail_base.html:22
 msgid "RSS Feed of discussions on"
-msgstr "Feed RSS de discusiones en"
+msgstr "Feed RSS d'alderiques en"
 
 #: blog/templates/zinnia/entry_detail_base.html:24
 msgid "RSS Feed of comments on"
@@ -201,7 +201,7 @@ msgstr "RSS Feed de trackbacks en"
 
 #: blog/templates/zinnia/entry_detail_base.html:46
 msgid "Next entry"
-msgstr "Siguiente entrada"
+msgstr "Entrada siguiente"
 
 #: blog/templates/zinnia/entry_detail_base.html:58
 msgid "Previous entry"
@@ -283,7 +283,7 @@ msgstr "Archivos d'autor: %(author)s"
 
 #: blog/templates/zinnia/entry_list.html:48
 msgid "No entries yet."
-msgstr "Ta nun hai entraes."
+msgstr "Tá nun hai entraes."
 
 #: blog/templates/zinnia/entry_list.html:67
 #: blog/templates/zinnia/entry_list.html:68
@@ -357,7 +357,7 @@ msgstr "3 de 5"
 msgid ""
 "<strong>Starts</strong>: Starts, maybe even plays well, but crashes or major"
 " graphical/audio glitches."
-msgstr "<strong>Aníciase</strong>: Anicia, quiciabes tamién puea xugase bien, pero blóquiase o pue tener error gráficos o d'audiu mayores."
+msgstr "<strong>Aníciase</strong>: Anicia, quiciabes tamién puea xugase bien, pero blóquiase o pue tener erros gráficos o d'audiu mayores."
 
 #: compat/templates/compat-list.html:28
 msgid "2 out of 5"
@@ -367,7 +367,7 @@ msgstr "2 de 5"
 msgid ""
 "<strong>Intro/Menu</strong>: Hangs/crashes somewhere between booting and "
 "starting."
-msgstr "<strong>Intro/Menú</strong>: Colíngase o blóquiase ayuri ente l'arranque y l'aniciu."
+msgstr "<strong>Intro/Menú</strong>: Colíngase o blóquiase ayuri, ente l'arranque y l'aniciu."
 
 #: compat/templates/compat-list.html:29
 msgid "1 out of 5"
@@ -434,7 +434,7 @@ msgstr "Tornar al llistáu de guíes"
 
 #: docs/templates/docs-guides-index.html:5
 msgid "See all the guides written by the Dolphin team about the emulator."
-msgstr "Agüeya les guíes escrites pel equipu Dolphin alrodiu l'emulador."
+msgstr "Agüeya les guíes escrites pol equipu Dolphin alrodiu l'emulador."
 
 #: docs/templates/docs-guides-index.html:7 templates/_base.html:70
 msgid "Guides"
@@ -446,7 +446,7 @@ msgstr "Guíes ya documentación"
 
 #: docs/templates/docs-guides-index.html:19
 msgid "No published guide available"
-msgstr "Ta nun hai disponible una guía asoleyada"
+msgstr "Nun hai asoleyada un guía disponible"
 
 #: downloads/models.py:32 downloads/models.py:50
 #, python-format
@@ -466,7 +466,7 @@ msgstr "<tt>%(branch)s</tt> gamayu"
 #: downloads/templates/downloads-branches.html:21
 #: downloads/templates/downloads-index.html:91
 msgid "View older versions »"
-msgstr "Ver versiones más vieyes"
+msgstr "Ver versiones más vieyes »"
 
 #: downloads/templates/downloads-branches.html:28
 msgid "Branch list"
@@ -498,7 +498,7 @@ msgid ""
 "    Stable versions are released after a lot of testing to ensure emulation\n"
 "    performance and stability. However, since they are released less often,\n"
 "    they might be outdated and lacking some new features.\n"
-msgstr "\nLes versiones estables son asoleyaes dempués de milenta comprobaciones\npa asegurar el rendimientu d'emulación. Por embargu, tarden n'asoleyase,\npuen tar desanovaes y faltes de nueves carauterístiques.\n"
+msgstr "\nLes versiones estables son asoleyaes dempués de milenta comprobaciones\np'asegurar el rindimientu d'emulación. Por embargu, tarden n'asoleyase,\npuen tar desanovaes y faltes de nueves carauterístiques.\n"
 
 #: downloads/templates/downloads-index.html:55
 msgid "No stable release yet"
@@ -626,12 +626,12 @@ msgid ""
 "            (1080p) with several enhancements: compatibility with all PC\n"
 "            controllers, turbo speed, networked multiplayer, and even more!\n"
 "            "
-msgstr "\n<b>Dolphin</b> ye un emulador pa dos recientes consoles de Nintendo: \nla <b>GameCube</b> y la <b>Wii</b>. Permíte-y al xugador esfrutar\ncolos xuegos d'estes consoles en <b>full HD</b> (1080p) con\nabondes meyores: compatibilidá con tolos mandos de PC, velocidá\nturbo, multixugador en llinia, ¡Ya munchu más!"
+msgstr "\n<b>Dolphin</b> ye un emulador pa dos recientes consoles de Nintendo: \nla <b>GameCube</b> y la <b>Wii</b>. Permíte-y al xugador esfrutar\ncolos xuegos d'estes consoles en <b>full HD</b> (1080p) con\nabondes meyores: compatibilidá con tolos mandos de PC, velocidá\nturbo, multixugador en llinia, ¡Ya milenta más!"
 
 #: homepage/templates/homepage-home.html:41
 #, python-format
 msgid "Download %(last_release)s for Windows, Mac and Linux »"
-msgstr "Baxar %(last_release)s pa Linux, Mac ya WIndows »"
+msgstr "Baxar %(last_release)s pa Linux, Mac ya Windows »"
 
 #: homepage/templates/homepage-home.html:93
 msgid "RSS feed of the latest articles"
@@ -652,7 +652,7 @@ msgstr "Lleer esti artículu"
 
 #: homepage/templates/homepage-home.html:132
 msgid "No articles yet."
-msgstr "Ta nun hai artículos."
+msgstr "Tá nun hai artículos."
 
 #: media/templates/media-all.html:6
 msgid ""
@@ -684,7 +684,7 @@ msgstr "Erru internu del sirvidor"
 msgid ""
 "There was an error while trying to access this page. Please refresh the page"
 " in a few seconds."
-msgstr "Hebo un erru entrín s'intentaba acceder a esta páxina. Por favor anova la páxina nunos segundos."
+msgstr "Hebo un erru entrín s'intentaba acceder a esta páxina. Por favor, anova la páxina nunos segundos."
 
 #: templates/_base.html:10
 msgid "Official Dolphin Emulator Website"
