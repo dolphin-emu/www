@@ -284,8 +284,9 @@ ZINNIA_ENTRY_BASE_MODEL = 'dolweb.blog.entry_model.BlogEntry'
 ZINNIA_FEEDS_MAX_ITEMS = 20
 ZINNIA_PROTOCOL = 'https'
 
-
-try:
-    execfile(os.path.join(PROJECT_ROOT, 'dolweb', 'local_settings.py'), globals(), locals())
-except ImportError:
-    pass
+local_settings_file = os.path.join(PROJECT_ROOT, 'dolweb', 'local_settings.py')
+if os.path.exists(local_settings_file):
+    try:
+        execfile(os.path.join(local_settings_file), globals(), locals())
+    except IOError, ImportError:
+        print 'Warning: could not import dolweb.local_settings'
