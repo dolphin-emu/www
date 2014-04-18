@@ -15,6 +15,7 @@ def deploy(root, branch):
             run("msgfmt localefixes/locale/ko/LC_MESSAGES/django.po -o "
                        "localefixes/locale/ko/LC_MESSAGES/django.mo")
             run(activate + " && django-admin.py compilemessages")
+    run("scripts/restart-apps.sh")
 
 def deploy_stable():
     deploy("/home/dolphin-emu/apps/www", "stable")
