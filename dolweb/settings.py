@@ -197,7 +197,6 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'django.contrib.admin',
     'django.contrib.humanize',
-    'django.contrib.markup',
 
     # External
     'bootstrapform',
@@ -319,6 +318,8 @@ MGMT_AUTHORIZED_USERS = []
 local_settings_file = os.path.join(PROJECT_ROOT, 'dolweb', 'local_settings.py')
 if os.path.exists(local_settings_file):
     try:
-        execfile(os.path.join(local_settings_file), globals(), locals())
-    except IOError, ImportError:
-        print 'Warning: could not import dolweb.local_settings'
+        with open(local_settings_file) as fp:
+            code = compile(fp.read(), local_settings_file, 'exec')
+            exec(code, globals(), locals())
+    except (IOError, ImportError):
+        print('Warning: could not import dolweb.local_settings')

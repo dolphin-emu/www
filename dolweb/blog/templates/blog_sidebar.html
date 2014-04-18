@@ -1,7 +1,7 @@
 {% load i18n zinnia_tags blog_tags %}
 {% load url from future %}
 <div style="margin-bottom: 1em">
-    <form method="get" action="{% url 'zinnia_entry_search' %}" role="search">
+    <form method="get" action="{% url 'zinnia:entry_search' %}" role="search">
         <div class="input-group">
             <input type="text" placeholder="{% trans "Search articles" %}" name="pattern" class="form-control" />
             <span class="input-group-btn">

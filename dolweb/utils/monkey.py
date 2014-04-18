@@ -6,7 +6,7 @@ TO_FULL = {
     'cn': 'zh_CN',
     'ms': 'ms_MY',
 }
-TO_FULL_INVERTED = dict((v.lower(), k) for (k, v) in TO_FULL.iteritems())
+TO_FULL_INVERTED = dict((v.lower(), k) for (k, v) in TO_FULL.items())
 
 _accepted = {}
 def get_language_from_request(request, check_path=False):

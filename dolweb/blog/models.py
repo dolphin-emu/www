@@ -13,8 +13,8 @@ class BlogSerie(models.Model):
     name = models.CharField(max_length=255, db_index=True)
     visible = models.BooleanField(default=True)
     image = models.ImageField(
-        _('image'), blank=True, upload_to=UPLOAD_TO,
-        help_text=_('Used for illustration.'))
+        'image', blank=True, upload_to=UPLOAD_TO,
+        help_text='Used for illustration.')
 
     @property
     def entries_reversed(self):

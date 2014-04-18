@@ -3,7 +3,7 @@ from django.core.urlresolvers import reverse
 from django.http import Http404
 from django.shortcuts import get_object_or_404
 from django.utils.translation import ugettext as _
-from models import BlogSerie
+from dolweb.blog.models import BlogSerie
 from zinnia.feeds import EntryFeed
 
 

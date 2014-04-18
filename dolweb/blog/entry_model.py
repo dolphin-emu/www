@@ -1,8 +1,8 @@
 from django.db import models
-from zinnia.models.entry import EntryAbstractClass
+from zinnia.models_bases.entry import AbstractEntry
 from django.utils.translation import ugettext as _
 
-from models import BlogSerie
+from dolweb.blog.models import BlogSerie
 
 # Why this file?
 # "Do not put your abstract model in a file named models.py, it will not work
@@ -10,7 +10,7 @@ from models import BlogSerie
 # http://django-blog-zinnia.readthedocs.org/en/v0.12.3/how-to/extending_entry_model.html#writing-model-extension
 
 
-class BlogEntry(EntryAbstractClass):
+class BlogEntry(AbstractEntry):
     """
     Represents a blog entry. Adds an optional `serie` field to the default
     Zinnia model.
@@ -51,5 +51,5 @@ class BlogEntry(EntryAbstractClass):
     def previous_entry_in_serie(self):
         return self.relative_entry_in_serie(-1)
 
-    class Meta(EntryAbstractClass.Meta):
+    class Meta(AbstractEntry.Meta):
         abstract = True

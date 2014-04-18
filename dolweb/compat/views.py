@@ -73,6 +73,6 @@ def list_compat(request, first_char=NOT_ALPHA_CHAR, filter_by=None):
             ts = max(rating.latest.timestamp, cat_dict[title].page.latest.timestamp)
             games.append((rating, CATEGORIES[cat_dict[title].cat], ts, hash))
 
-    return { 'games': games, 'pages': [NOT_ALPHA_CHAR] + list(string.uppercase),
+    return { 'games': games, 'pages': [NOT_ALPHA_CHAR] + list(string.ascii_uppercase),
             'page': first_char, 'all_ratings': (5, 4, 3, 2, 1),
             'filter_by': filter_by }

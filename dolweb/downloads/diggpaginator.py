@@ -1,6 +1,7 @@
+from django.core.paginator import Paginator, QuerySetPaginator, Page, InvalidPage
+from functools import reduce
+
 import math
-from django.core.paginator import \
-    Paginator, QuerySetPaginator, Page, InvalidPage
 
 __all__ = (
     'InvalidPage',
@@ -42,7 +43,7 @@ class ExPaginator(Paginator):
     def page(self, number, softlimit=False):
         try:
             return super(ExPaginator, self).page(number)
-        except InvalidPage, e:
+        except InvalidPage as e:
             number = self._ensure_int(number, e)
             if number > self.num_pages and softlimit:
                 return self.page(self.num_pages, softlimit=False)
@@ -201,14 +202,14 @@ class DiggPaginator(ExPaginator):
             self.num_pages, self.body, self.tail, self.padding, self.margin
 
         # put active page in middle of main range
-        main_range = map(int, [
+        main_range = list(map(int, [
             math.floor(number-body/2.0)+1,  # +1 = shift odd body to right
-            math.floor(number+body/2.0)])
+            math.floor(number+body/2.0)]))
         # adjust bounds
         if main_range[0] < 1:
-            main_range = map(abs(main_range[0]-1).__add__, main_range)
+            main_range = list(map(abs(main_range[0]-1).__add__, main_range))
         if main_range[1] > num_pages:
-            main_range = map((num_pages-main_range[1]).__add__, main_range)
+            main_range = list(map((num_pages-main_range[1]).__add__, main_range))
 
         # Determine leading and trailing ranges; if possible and appropriate,
         # combine them with the main range, in which case the resulting main
@@ -230,7 +231,7 @@ class DiggPaginator(ExPaginator):
             main_range = [1, max(body, min(number+padding, main_range[1]))]
             main_range[0] = 1
         else:
-            leading = range(1, tail+1)
+            leading = list(range(1, tail+1))
         # basically same for trailing range, but not in ``left_align`` mode
         if self.align_left:
             trailing = []
@@ -246,7 +247,7 @@ class DiggPaginator(ExPaginator):
                 else:
                     main_range = [min(num_pages-body+1, max(number-padding, main_range[0])), num_pages]
             else:
-                trailing = range(num_pages-tail+1, num_pages+1)
+                trailing = list(range(num_pages-tail+1, num_pages+1))
 
         # finally, normalize values that are out of bound; this basically
         # fixes all the things the above code screwed up in the simple case
@@ -255,7 +256,7 @@ class DiggPaginator(ExPaginator):
 
         # make the result of our calculations available as custom ranges
         # on the ``Page`` instance.
-        page.main_range = range(main_range[0], main_range[1]+1)
+        page.main_range = list(range(main_range[0], main_range[1]+1))
         page.leading_range = leading
         page.trailing_range = trailing
         page.page_range = reduce(lambda x, y: x+((x and y) and [False])+y,
