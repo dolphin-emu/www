@@ -264,6 +264,17 @@ ISSUES_URL = "https://code.google.com/p/dolphin-emu/issues/list"
 # hostname.
 DEFAULT_HOST = "dolphin-emu.org"
 
+# Should the access to the wiki database be read-only. In production, you DO
+# want this enabled since otherwise syncdb might kill the wiki database. In
+# testing, you want to disable this so that syncdb installs a schema on your
+# testing database.
+WIKI_DB_READ_ONLY = True
+
+# Name of the DATABASES entry that contains Wiki tables (page, revision, ...).
+# In production, this has to be the Mediawiki database. In testing, this should
+# be the default database, which is where the tables are syncdb'd.
+WIKI_DB_NAME = 'wiki'
+
 # Google analytics account ID, or '' to disable GA tracking.
 GOOGLE_ANALYTICS_ACCOUNT = ''
 
