@@ -43,6 +43,9 @@ the ``settings.py`` file (in the ``dolweb/`` directory):
 
     WIKI_DB_NAME = 'default'
 
+    MEDIA_URL = '/m/user/'
+    STATIC_URL = '/m/static/'
+
 Then run ``syncdb`` to create a default database. Set up a user when it asks you
 to - this user is required to access the admin part of the website:
 
