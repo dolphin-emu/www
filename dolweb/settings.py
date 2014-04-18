@@ -249,6 +249,7 @@ LOGGING = {
     }
 }
 
+# Links and templates for links to other Dolphin properties.
 FORUM_URL = "https://forums.dolphin-emu.org/"
 WIKI_URL = "https://wiki.dolphin-emu.org/"
 GIT_AUTHOR_URL = "https://github.com/%s"
@@ -259,8 +260,19 @@ GIT_PR_URL = "https://github.com/dolphin-emu/dolphin/pull/%s"
 WEBSITE_GIT_URL = "https://github.com/dolphin-emu/www"
 ISSUES_URL = "https://code.google.com/p/dolphin-emu/issues/list"
 
+# Used for i18n purposes: the language code is prepended to this default
+# hostname.
 DEFAULT_HOST = "dolphin-emu.org"
 
+# Google analytics account ID, or '' to disable GA tracking.
+GOOGLE_ANALYTICS_ACCOUNT = ''
+
+# Social media links information.
+FB_LIKE_PAGE = 'http://www.facebook.com/dolphin.emu'
+GPLUS_LIKE_PAGE = 'http://dolphin-emu.org/'
+
+# Not directly used by the website, but used by one of the management commands
+# (genatlas) that reads banner from MongoDB and turns it into image atlases.
 BNR_MONGO_HOST = ''
 BNR_MONGO_DBNAME = ''
 BNR_MONGO_USER = ''

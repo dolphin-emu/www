@@ -13,6 +13,7 @@
 {% block "title" %}{% trans "GameCube/Wii games on PC" %}{% endblock %}
 
 {% block "bodystart" %}
+    {% if FB_LIKE_PAGE %}
     <div id="fb-root"></div>
     <script>(function(d, s, id) {
       var js, fjs = d.getElementsByTagName(s)[0];
@@ -21,6 +22,7 @@
       js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
+    {% endif %}
 {% endblock %}
 
 {% block "body" %}
@@ -39,8 +41,12 @@
             </p>
 
             <p class="download-btn"><a class="btn btn-primary btn-lg" href="{% url downloads-index %}?ref=btn"><i class="icon-download-alt"></i> {% blocktrans %}Download {{ last_release }} for Windows, Mac and Linux »{% endblocktrans %}</a></p>
-            <div class="fb-like" data-href="http://www.facebook.com/dolphin.emu" data-send="false" data-layout="button_count" data-width="100" data-show-faces="true"></div>
-            <div class="g-plusone" data-size="small" data-href="http://dolphin-emu.org/"></div>
+            {% if FB_LIKE_PAGE %}
+            <div class="fb-like" data-href="{{ FB_LIKE_PAGE }}" data-send="false" data-layout="button_count" data-width="100" data-show-faces="true"></div>
+            {% endif %}
+            {% if GPLUS_LIKE_PAGE %}
+            <div class="g-plusone" data-size="small" data-href="{{ GPLUS_LIKE_PAGE }}"></div>
+            {% endif %}
         </div>
         <div class="col-md-6">
             <div id="carousel-sshot" class="carousel slide">
@@ -138,11 +144,13 @@
 
 {% block "extrajs" %}
 <script>
+    {% if GPLUS_LIKE_PAGE %}
     (function() {
         var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
         po.src = 'https://apis.google.com/js/plusone.js';
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
     })();
+    {% endif %}
 
     $(document).ready(function () {
         $('.carousel').carousel({

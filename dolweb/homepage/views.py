@@ -17,7 +17,10 @@ def home(request):
         last_release = ReleaseVersion.objects.order_by('-date')[0]
     except IndexError:
         last_release = u"Dolphin"
-    last_master = DevVersion.objects.filter(branch='master').order_by('-date')[0]
+    try:
+        last_master = DevVersion.objects.filter(branch='master').order_by('-date')[0]
+    except IndexError:
+        last_master = u"master"
 
     home_articles = Entry.published.all()[:settings.HOMEPAGE_ARTICLES]
 
