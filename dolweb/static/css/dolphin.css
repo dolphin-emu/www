@@ -403,6 +403,7 @@ div.my-hero h3 {
 
 .carousel-caption p {
     font-size: 18px;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.9);
 }
 
 h2.latest-articles {
