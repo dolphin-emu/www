@@ -2,8 +2,7 @@
 
 * Using more of django-annoying where it makes sense, particularly @render_to.
 
-* Making it easier to test changes locally. Dependencies on the Wiki make that
-  a bit hard - might need some stubs.
+* Provide some fake data sets to use as initial database contents.
 
 * Download system rework: currently the download types are hardcoded, which was
   a terrible idea and is now blocking us to add things like Android downloads,
