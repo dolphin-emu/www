@@ -468,7 +468,12 @@ a.navbar-logo {
     }
 
     #navbar-dolphin .container {
+        width: 768px;
         max-width: 950px;
+    }
+
+    #navbar-dolphin .nav > li > a {
+        padding: 15px 10px 15px 10px;
     }
 }
 
