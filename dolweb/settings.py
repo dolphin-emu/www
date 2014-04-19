@@ -305,6 +305,7 @@ FORUM_URL_FOR_THREAD = 'https://forums.dolphin-emu.org/showthread.php?tid={id}'
 ZINNIA_MARKUP_LANGUAGE = 'markdown'
 ZINNIA_MAIL_COMMENT_AUTHORS = False
 ZINNIA_ENTRY_BASE_MODEL = 'dolweb.blog.entry_model.BlogEntry'
+ZINNIA_FEEDS_FORMAT = 'atom'
 ZINNIA_FEEDS_MAX_ITEMS = 20
 ZINNIA_PROTOCOL = 'https'
 
