@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-02-08 20:04+0100\n"
-"PO-Revision-Date: 2014-03-18 02:35+0000\n"
+"PO-Revision-Date: 2014-04-20 22:45+0000\n"
 "Last-Translator: Tornes Llume <l.lumex03.tornes@gmail.com>\n"
 "Language-Team: Asturian (http://www.transifex.com/projects/p/dolphin-emu/language/ast/)\n"
 "MIME-Version: 1.0\n"
@@ -76,7 +76,7 @@ msgstr "Feed RSS:"
 
 #: blog/templates/series-index.html:37
 msgid "No blog series yet."
-msgstr "Tá nun hai series del blogue"
+msgstr "Entá nun hai series del blogue"
 
 #: blog/templates/zinnia/_entry_detail_base.html:21
 #: homepage/templates/homepage-home.html:107
@@ -120,7 +120,7 @@ msgstr "Visitar el filu d'esti artículu nel foru"
 #: blog/templates/zinnia/_entry_detail_base.html:41
 #: homepage/templates/homepage-home.html:123
 msgid "Forum thread"
-msgstr "FIlu"
+msgstr "FIlu del foru"
 
 #: blog/templates/zinnia/_entry_detail_base.html:58
 #, python-format
@@ -136,7 +136,7 @@ msgstr "Siguir en lleendo"
 msgid ""
 "You can continue the discussion in the <a href=\"%(url)s\" title=\"Visit "
 "forum thread for this article\">forum thread</a> of this article."
-msgstr "Pues siguir la discusión nel <a href=\"%(url)s\" title=\"Visita'l filu del artículu nel foru\">filu</a> d'esti artículu."
+msgstr "Pues siguir l'alderique nel <a href=\"%(url)s\" title=\"Visita'l filu del artículu nel foru\">filu</a> d'esti artículu."
 
 #: blog/templates/zinnia/_entry_detail_base.html:78
 msgid "Blog serie"
@@ -283,7 +283,7 @@ msgstr "Archivos d'autor: %(author)s"
 
 #: blog/templates/zinnia/entry_list.html:48
 msgid "No entries yet."
-msgstr "Tá nun hai entraes."
+msgstr "Entá nun hai entraes."
 
 #: blog/templates/zinnia/entry_list.html:67
 #: blog/templates/zinnia/entry_list.html:68
@@ -314,13 +314,13 @@ msgid ""
 "You can use - to exclude words or phrases, &quot;double quotes&quot; for "
 "exact phrases and the AND/OR boolean operators combined with parenthesis for"
 " complex queries."
-msgstr "Pues usar - pa escluyir pallabres o frases, &quot;dobles comines&quot; pa frases esautes  ya los operadores boleanos AND/OR amestaos con paréntesis pa consultes complexes."
+msgstr "Pues usar - pa escluyir pallabres o frases, &quot;comines dubles&quot; pa frases esautes y los operadores boleanos AND/OR amestaos con paréntesis pa consultes complexes."
 
 #: compat/templates/compat-list.html:8
 msgid ""
 "The Dolphin Emulator compatibility list contains all the games we tested, "
 "sorted by how well they work on the emulator."
-msgstr "La llista de compalibilidá de Dolphin Emulator caltien tolos xuegos que nós comprobamos, ordenaos per como furrulen nel emulador."
+msgstr "La llista de compalibilidá de Dolphin Emulator contien tolos xuegos que nós comprobamos, ordenaos per como furrulen nel emulador."
 
 #: compat/templates/compat-list.html:10
 #, python-format
@@ -347,7 +347,7 @@ msgstr "4 de 5"
 msgid ""
 "<strong>Playable</strong>: Runs well, only minor graphical or audio "
 "glitches. Games can be played all the way through."
-msgstr "<strong>Pue xugase</strong>: Execútase bien, solo erros gráficos o d'audiu menores. Los xuegos puen xugase de toes toes."
+msgstr "<strong>Pue xugase</strong>: Execútase bien, namái erros gráficos o d'audiu menores. Los xuegos puen xugase de toes toes."
 
 #: compat/templates/compat-list.html:27
 msgid "3 out of 5"
@@ -412,7 +412,7 @@ msgstr "Aníciase"
 
 #: compat/templatetags/compat.py:11
 msgid "Playable"
-msgstr "Xugable"
+msgstr "Pue xugase"
 
 #: compat/templatetags/compat.py:12
 msgid "Perfect"
@@ -422,7 +422,7 @@ msgstr "Perfeutu"
 msgid ""
 "The Official Dolphin FAQ answers all the questions that people often ask "
 "about Dolphin."
-msgstr "El FAQ oficial de Dolphin respuende a toles entrugues que la xente suel entrugar alrodiu Dolphin."
+msgstr "El FAQ oficial de Dolphin respuende a toles entrugues que la xente suel entrugar tocante Dolphin."
 
 #: docs/templates/docs-faq.html:8
 msgid "Frequently Asked Questions"
@@ -434,7 +434,7 @@ msgstr "Tornar al llistáu de guíes"
 
 #: docs/templates/docs-guides-index.html:5
 msgid "See all the guides written by the Dolphin team about the emulator."
-msgstr "Agüeya les guíes escrites pol equipu Dolphin alrodiu l'emulador."
+msgstr "Mira les guíes escrites pol equipu Dolphin tocante l'emulador."
 
 #: docs/templates/docs-guides-index.html:7 templates/_base.html:70
 msgid "Guides"
@@ -442,11 +442,11 @@ msgstr "Guíes"
 
 #: docs/templates/docs-guides-index.html:11
 msgid "Guides and documentation"
-msgstr "Guíes ya documentación"
+msgstr "Guíes y documentación"
 
 #: docs/templates/docs-guides-index.html:19
 msgid "No published guide available"
-msgstr "Nun hai asoleyada un guía disponible"
+msgstr "Nun hai asoleyada una guía disponible"
 
 #: downloads/models.py:32 downloads/models.py:50
 #, python-format
@@ -474,7 +474,7 @@ msgstr "Llista de gamayos"
 
 #: downloads/templates/downloads-devrel.html:19
 msgid "No development release yet"
-msgstr "Tá nun hai versiones de desendolcu"
+msgstr "Entá nun hai versiones de desendolcu"
 
 #: downloads/templates/downloads-index.html:6
 #, python-format
@@ -502,7 +502,7 @@ msgstr "\nLes versiones estables son asoleyaes dempués de milenta comprobacione
 
 #: downloads/templates/downloads-index.html:55
 msgid "No stable release yet"
-msgstr "Ta nun hai versiones estables"
+msgstr "Entá nun hai versiones estables"
 
 #: downloads/templates/downloads-index.html:76
 msgid "Development versions"
@@ -515,11 +515,11 @@ msgid ""
 "    Dolphin, several times every day! Using development versions enables you to\n"
 "    use the latest and greatest improvements to the project. They are however\n"
 "    less tested than stable versions of the emulator.\n"
-msgstr "\nLes versiones de desendolcu espublízense cada vegada qu'un desendolcador fai una camudancia a \nDolphin, ¡abondes vegaes caldía! N'usando versiones de desendolcu permítete\nusar los caberos ya meyores ameyoramientos del proyeutu. Son, por embargu, menos probaes que les versiones estables del emulador.\n"
+msgstr "\nLes versiones de desendolcu espublízense cada vegada qu'un desendolcador fai una camudancia a \nDolphin, ¡abondes vegaes caldía! N'usando versiones de desendolcu permítete\nusar los caberos y meyores ameyoramientos del proyeutu. Son, por embargu, menos probaes que les versiones estables del emulador.\n"
 
 #: downloads/templates/downloads-index.html:85
 msgid "Only displaying the <tt>master</tt> branch versions."
-msgstr "Amosando solo les versiones del gamayu <tt>master</tt>."
+msgstr "Amosando namái les versiones del gamayu <tt>master</tt>."
 
 #: downloads/templates/downloads-index.html:86
 msgid "Show all available branches"
@@ -556,7 +556,7 @@ msgid ""
 "    For reporting bugs please go to <a href=\"%(ISSUES_URL)s\">the issue tracker on Google Code</a>.\n"
 "    Before creating a new issue, make sure to try a recent development build and search the existing issues.\n"
 "    "
-msgstr "\n    Pa reportar erros por favor vete a <a href=\"%(ISSUES_URL)s\">el siguimientu d'erros en Google Code</a>.\n   Enantes de criar un informe nuevu, tate seguru de probar la cabera versión en construcción ya guetar torgues esistentes.\n    "
+msgstr "\n    Pa reportar erros por favor vete a <a href=\"%(ISSUES_URL)s\">el siguimientu d'erros en Google Code</a>.\n   Enantes de crear un informe nuevu, tate seguru de probar la cabera versión en construcción y guetar torgues esistentes.\n    "
 
 #: downloads/templates/downloads-list.html:5
 #, python-format
@@ -626,7 +626,7 @@ msgid ""
 "            (1080p) with several enhancements: compatibility with all PC\n"
 "            controllers, turbo speed, networked multiplayer, and even more!\n"
 "            "
-msgstr "\n<b>Dolphin</b> ye un emulador pa dos recientes consoles de Nintendo: \nla <b>GameCube</b> y la <b>Wii</b>. Permíte-y al xugador esfrutar\ncolos xuegos d'estes consoles en <b>full HD</b> (1080p) con\nabondes meyores: compatibilidá con tolos mandos de PC, velocidá\nturbo, multixugador en llinia, ¡Ya milenta más!"
+msgstr "\n<b>Dolphin</b> ye un emulador pa dos recientes consoles de Nintendo: \nla <b>GameCube</b> y la <b>Wii</b>. Permíte-y al xugador esfrutar\ncolos xuegos d'estes consoles en <b>full HD</b> (1080p) con\nabondes meyores: compatibilidá con tolos mandos de PC, velocidá\nturbo, multixugador en llinia, ¡Y milenta más!"
 
 #: homepage/templates/homepage-home.html:41
 #, python-format
@@ -652,13 +652,13 @@ msgstr "Lleer esti artículu"
 
 #: homepage/templates/homepage-home.html:132
 msgid "No articles yet."
-msgstr "Tá nun hai artículos."
+msgstr "Entá nun hai artículos."
 
 #: media/templates/media-all.html:6
 msgid ""
 "View all the user-contributed screenshots of the Dolphin Emulator: GameCube "
 "and Wii games in HD."
-msgstr "Ver toles captures de pantalla de usuariu que contribuyeron al Dolphin Emulator: Xuegos de GameCube ya Wii en HD."
+msgstr "Ver toles captures de pantalla d'usuariu que contribuyeron al Dolphin Emulator: Xuegos de GameCube ya Wii en HD."
 
 #: media/templates/media-all.html:8
 msgid "Screenshots gallery"
@@ -670,7 +670,7 @@ msgstr "Galería multimedia"
 
 #: templates/404.html:5 templates/404.html.py:8
 msgid "Page not found"
-msgstr "Páxina non alcontrada"
+msgstr "Nun s'alcontró la páxina"
 
 #: templates/404.html:10
 msgid "The URL you tried to access does not exist."
