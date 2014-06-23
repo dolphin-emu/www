@@ -24,7 +24,7 @@
   {% plural %}
     {{ count }} entries
   {% endblocktrans %}</small></h2>
-  <p>{% trans "RSS feed:" %} <a href="{% url 'dolweb_blog_series_feeds' pk=series.pk %}" class="rss-tag"><i class="icon-rss"></i></a></p>
+  <p>{% trans "RSS feed:" %} <a href="{% url 'dolweb_blog_series_feed' pk=series.pk %}" class="rss-tag"><i class="icon-rss"></i></a></p>
   <ol>
   {% for entry in series.entries_reversed %}
   <li><a href="{{ entry.get_absolute_url }}">{{ entry.title }}</a></li>
