@@ -4,13 +4,13 @@ register = Library()
 from bs4 import BeautifulSoup
 from django.conf import settings
 from django.template import defaultfilters
-from dolweb.blog.models import BlogSerie
+from dolweb.blog.models import BlogSeries
 
 @register.inclusion_tag('blog_chunk_series.html')
-def get_blog_series(number=5):
+def get_recent_blog_series(number=5):
     """Return the most recent visible blog series"""
     return {
-        'series': BlogSerie.objects.filter(visible=True)[:number],
+        'recent_series': BlogSeries.objects.filter(visible=True)[:number],
     }
 
 

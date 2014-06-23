@@ -495,10 +495,10 @@ p.entry-info, p.entry-last-update {
     border-radius: 0;
 }
 
-.serie .thumbnail {
+.series .thumbnail {
     margin: 0 1em 0 0;
 }
-.serie .innerdiv {
+.series .innerdiv {
     display: inline-block;
 }
 

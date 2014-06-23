@@ -5,12 +5,12 @@ from django.http import Http404, HttpResponse
 from django.shortcuts import get_object_or_404
 from django.views.decorators.csrf import csrf_exempt
 
-from dolweb.blog.models import BlogSerie
+from dolweb.blog.models import BlogSeries
 
 
 @render_to('series-index.html')
 def series_index(request, page=None):
-    series = BlogSerie.objects.filter(visible=True)
+    all_series = BlogSeries.objects.filter(visible=True)
 
     # if page is None:
     #     page = 1
@@ -23,7 +23,7 @@ def series_index(request, page=None):
     #     raise Http404
 
     # return {'page': page, 'page_obj': page_obj, 'pagi': pagi}
-    return {'series': series}
+    return {'all_series': all_series}
 
 
 # @render_to('serie-view.html')
