@@ -7,7 +7,7 @@ from zinnia.managers import PUBLISHED
 # from zinnia.models.entry import Entry
 
 
-class BlogSerie(models.Model):
+class BlogSeries(models.Model):
     """Represents a date-ordered sequence of blog entries."""
 
     name = models.CharField(max_length=255, db_index=True)
@@ -21,7 +21,7 @@ class BlogSerie(models.Model):
         return self.entries.order_by('creation_date')
 
     def nth_entry(self, nth, allow_hidden=False):
-        """Returns the 1-indexed nth article in serie."""
+        """Returns the 1-indexed nth article in series."""
         if nth < 1:
             return None
 
@@ -38,7 +38,7 @@ class BlogSerie(models.Model):
         return self.name
 
     def __repr__(self):
-        return '<BlogSerie "%s" (%d entries)>' % (self.name, self.entries.count())
+        return '<BlogSeries "%s" (%d entries)>' % (self.name, self.entries.count())
 
 
 class ForumThreadForEntry(models.Model):

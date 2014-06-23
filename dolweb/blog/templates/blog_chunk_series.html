@@ -1,7 +1,7 @@
 {% load url from future %}
 <ul class="blog-series">
-{% for serie in series %}
-{# <li><a href="{% url 'dolweb.blog.views.serie_view' uid=serie.pk %}">{{ serie.name }}</a></li> #}
-<li><a href="{% url 'dolweb.blog.views.series_index' uid=serie.pk %}">{{ serie.name }}</a></li>
+{% for series in recent_series %}
+{# <li><a href="{% url 'dolweb.blog.views.series_view' uid=series.pk %}">{{ series.name }}</a></li> #}
+<li><a href="{% url 'dolweb.blog.views.series_index' uid=series.pk %}">{{ series.name }}</a></li>
 {% endfor %}
 </ul>
