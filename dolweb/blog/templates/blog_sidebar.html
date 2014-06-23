@@ -34,6 +34,6 @@
 
 <div class="well">
     <h4>{% trans "Blog series" %}</h4>
-    {% get_blog_recent_series 3 %}
+    {% get_recent_blog_series 3 %}
     <p class="seemore"><a href="{% url 'dolweb.blog.views.series_index' %}">{% trans "See all" %} »</a></p>
 </div>
