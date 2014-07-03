@@ -17,15 +17,13 @@ def guess_system_from_ua(request):
     ua = request.META.get('HTTP_USER_AGENT', None)
     if ua is None:
         return { "USER_OS": "unknown" }
-
     if "Windows" in ua:
         return { "USER_OS": "win" }
-    elif "Macintosh" in ua:
+    if "Macintosh" in ua:
         return { "USER_OS": "osx" }
-    elif "Ubuntu" in ua:
+    if "Ubuntu" in ua:
         return { "USER_OS": "ubu" }
-    else:
-        return { "USER_OS": "unknown" }
+    return { "USER_OS": "unknown" }
 
 def check_country_redirect(request):
     if request.GET.get('cr'):
