@@ -56,6 +56,7 @@
 
 {% include "compat-list-pagi.html" %}
 
+{% if games %}
 <table class="compat-list">
     <thead>
         <tr>
@@ -76,11 +77,12 @@
             <td class="rating"><img src="{% compat_img_url game.latest.text.data %}" alt="{{ game.latest.text.data|compat_text }}" title="{{ game.latest.text.data|compat_text }}"></td>
             <td class="update">{{ ts|naturaltime }}</td>
         </tr>
-        {% empty %}
-        <tr><td colspan="5" class="text-center"><em>{% trans "Your query does not match any game." %}</em></td></tr>
         {% endfor %}
     </tbody>
 </table>
+{% else %}
+<p class="text-center"><em>{% trans "Your query does not match any game." %}</em></p>
+{% endif%}
 
 {% include "compat-list-pagi.html" %}
 
