@@ -3,17 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
+# Ryan Zhou <sentret_c@sina.cn>, 2013-2014
 # Ryan Zhou <sentret_c@sina.cn>, 2013
-# Ryan Zhou <sentret_c@sina.cn>, 2013
-# ZHANG Haitao <gaoboyuan8@qq.com>, 2013-2014
+# GAO Boyuan <gaoboyuan8@qq.com>, 2013-2014
 # Ryan Zhou <sentret_c@sina.cn>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-02-08 20:04+0100\n"
-"PO-Revision-Date: 2014-06-16 03:10+0000\n"
-"Last-Translator: ZHANG Haitao <gaoboyuan8@qq.com>\n"
+"POT-Creation-Date: 2014-08-24 12:37+0200\n"
+"PO-Revision-Date: 2014-06-25 08:44+0000\n"
+"Last-Translator: Ryan Zhou <sentret_c@sina.cn>\n"
 "Language-Team: Chinese (China) (http://www.transifex.com/projects/p/dolphin-emu/language/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -27,12 +27,12 @@ msgstr "内容"
 
 #: blog/feeds.py:24
 #, python-format
-msgid "Entries for the serie %s"
+msgid "Entries for the series %s"
 msgstr "%s 分类的文章"
 
 #: blog/feeds.py:27
 #, python-format
-msgid "The latest entries for the serie %s"
+msgid "The latest entries for the series %s"
 msgstr "%s 分类的最新文章"
 
 #: blog/models.py:16
@@ -44,7 +44,7 @@ msgid "Used for illustration."
 msgstr "用于图示。"
 
 #: blog/templates/blog_sidebar.html:6
-#: blog/templates/zinnia/tags/search_form.html:5
+#: blog/templates/zinnia/tags/search_form.html:7
 msgid "Search articles"
 msgstr "搜索文章"
 
@@ -53,6 +53,7 @@ msgid "Blog tags"
 msgstr "博客标签"
 
 #: blog/templates/blog_sidebar.html:36
+#: blog/templates/zinnia/_entry_detail_base.html:78
 msgid "Blog series"
 msgstr "博客分类"
 
@@ -64,13 +65,13 @@ msgstr "查看全部"
 #, python-format
 msgid ""
 "\n"
-"    %(count)s entrie\n"
+"    %(count)s entry\n"
 "  "
 msgid_plural ""
 "\n"
 "    %(count)s entries\n"
 "  "
-msgstr[0] "\n%(count)s 个项目"
+msgstr[0] "\n%(count)s 篇文章"
 
 #: blog/templates/series-index.html:27
 msgid "RSS feed:"
@@ -81,29 +82,29 @@ msgid "No blog series yet."
 msgstr "尚无博客分类。"
 
 #: blog/templates/zinnia/_entry_detail_base.html:21
-#: homepage/templates/homepage-home.html:107
+#: homepage/templates/homepage-home.html:122
 msgid "Written by"
-msgstr "作者"
+msgstr "作者："
 
 #: blog/templates/zinnia/_entry_detail_base.html:25
-#: homepage/templates/homepage-home.html:111
+#: homepage/templates/homepage-home.html:126
 #, python-format
 msgid "Show all %(author)s's entries"
 msgstr "显示 %(author)s 的所有文章"
 
 #: blog/templates/zinnia/_entry_detail_base.html:27
-#: homepage/templates/homepage-home.html:113
+#: homepage/templates/homepage-home.html:128
 msgid "on"
-msgstr "在"
+msgstr "写于："
 
 #: blog/templates/zinnia/_entry_detail_base.html:29
-#: homepage/templates/homepage-home.html:115
+#: homepage/templates/homepage-home.html:130
 msgid "Written on"
-msgstr "写于"
+msgstr "写于："
 
 #: blog/templates/zinnia/_entry_detail_base.html:37
 msgid "Last update on"
-msgstr "最后更新于"
+msgstr "最后更新："
 
 #: blog/templates/zinnia/_entry_detail_base.html:39
 #, python-format
@@ -115,12 +116,12 @@ msgid "Short link"
 msgstr "短链接"
 
 #: blog/templates/zinnia/_entry_detail_base.html:41
-#: homepage/templates/homepage-home.html:123
+#: homepage/templates/homepage-home.html:138
 msgid "Visit forum thread for this article"
 msgstr "查看论坛中与该文章有关的主题帖"
 
 #: blog/templates/zinnia/_entry_detail_base.html:41
-#: homepage/templates/homepage-home.html:123
+#: homepage/templates/homepage-home.html:138
 msgid "Forum thread"
 msgstr "论坛主题帖"
 
@@ -140,23 +141,19 @@ msgid ""
 "forum thread for this article\">forum thread</a> of this article."
 msgstr "你可以在该文章的<a href=\"%(url)s\" title=\"在论坛中查看该文章\">论坛帖子</a>中继续讨论。"
 
-#: blog/templates/zinnia/_entry_detail_base.html:78
-msgid "Blog serie"
-msgstr "博客分类"
-
 #: blog/templates/zinnia/_entry_detail_base.html:80
 #, python-format
 msgid ""
-"This article is number %(nth)s within the blog serie\n"
-"    <a href=\"%(url)s\"><em>%(serie)s</em></a>."
-msgstr "这篇文章在 <a href=\"%(url)s\"><em>%(serie)s</em></a> 分类中是第 %(nth)s 个。"
+"This article is number %(nth)s within the blog series\n"
+"    <a href=\"%(url)s\"><em>%(series)s</em></a>."
+msgstr "这篇文章在 <a href=\"%(url)s\"><em>%(series)s</em></a> 分类中是第 %(nth)s 个。"
 
 #: blog/templates/zinnia/_entry_detail_base.html:85
-msgid "‹ Previous article in serie"
+msgid "‹ Previous article in series"
 msgstr "‹ 该分类中的前一个文章"
 
 #: blog/templates/zinnia/_entry_detail_base.html:87
-msgid "Next article in serie ›"
+msgid "Next article in series ›"
 msgstr "该分类中的后一个文章 ›"
 
 #: blog/templates/zinnia/_entry_detail_base.html:137
@@ -306,117 +303,136 @@ msgstr "编辑作者"
 msgid "Latest news for Dolphin Emulator"
 msgstr "Dolphin 模拟器的最新文章"
 
-#: blog/templates/zinnia/skeleton.html:8
-#: blog/templates/zinnia/skeleton.html:13 templates/_base.html:67
+#: blog/templates/zinnia/skeleton.html:8 templates/_base.html:73
 msgid "Articles"
 msgstr "文章"
 
-#: blog/templates/zinnia/tags/search_form.html:16
+#: blog/templates/zinnia/tags/search_form.html:18
 msgid ""
 "You can use - to exclude words or phrases, &quot;double quotes&quot; for "
 "exact phrases and the AND/OR boolean operators combined with parenthesis for"
 " complex queries."
-msgstr "你可以用 - 来排除词语，使用 &quot;英文双引号&quot; 查找确定的短语，用 AND/OR 逻辑操作符或加上括号来进行复杂的查找。"
+msgstr "你可以用减号 - 来排除词语，使用 &quot;英文双引号&quot; 精确查找指定短语，用 AND/OR 逻辑操作符或加上括号来进行复杂的查找。"
 
-#: compat/templates/compat-list.html:8
+#: compat/templates/compat-list.html:9
 msgid ""
 "The Dolphin Emulator compatibility list contains all the games we tested, "
 "sorted by how well they work on the emulator."
 msgstr "在 Dolphin 模拟器兼容性列表中，所有我们测试过的游戏依据其模拟效果分类显示。"
 
-#: compat/templates/compat-list.html:10
+#: compat/templates/compat-list.html:11
 #, python-format
 msgid "Compatibility List - page %(page)s"
 msgstr "兼容性列表 - 第 %(page)s 页"
 
-#: compat/templates/compat-list.html:22
+#: compat/templates/compat-list.html:23
 msgid "How to read the ratings"
 msgstr "评分标准"
 
-#: compat/templates/compat-list.html:25
+#: compat/templates/compat-list.html:26
 msgid "5 out of 5"
 msgstr "5星(满分)"
 
-#: compat/templates/compat-list.html:25
+#: compat/templates/compat-list.html:26
 msgid "<strong>Perfect</strong>: No issues at all!"
 msgstr "<strong>完美</strong>: 没有任何问题！"
 
-#: compat/templates/compat-list.html:26
+#: compat/templates/compat-list.html:27
 msgid "4 out of 5"
 msgstr "4星"
 
-#: compat/templates/compat-list.html:26
+#: compat/templates/compat-list.html:27
 msgid ""
 "<strong>Playable</strong>: Runs well, only minor graphical or audio "
 "glitches. Games can be played all the way through."
 msgstr "<strong>尚可</strong>: 运行良好，只有一些图像或声音上的小瑕疵。可完成游戏全过程。"
 
-#: compat/templates/compat-list.html:27
+#: compat/templates/compat-list.html:28
 msgid "3 out of 5"
 msgstr "3星"
 
-#: compat/templates/compat-list.html:27
+#: compat/templates/compat-list.html:28
 msgid ""
 "<strong>Starts</strong>: Starts, maybe even plays well, but crashes or major"
 " graphical/audio glitches."
-msgstr "<strong>开始</strong>: 游戏能够开始，甚至可能玩的不错，但会发生崩溃，或者图像声音有重大错误。"
+msgstr "<strong>开始</strong>: 可以进入游戏，甚至可能顺利进行一段。但会发生崩溃，或者图像声音有重大错误。"
 
-#: compat/templates/compat-list.html:28
+#: compat/templates/compat-list.html:29
 msgid "2 out of 5"
 msgstr "2星"
 
-#: compat/templates/compat-list.html:28
+#: compat/templates/compat-list.html:29
 msgid ""
 "<strong>Intro/Menu</strong>: Hangs/crashes somewhere between booting and "
 "starting."
 msgstr "<strong>开场/菜单</strong>: 在游戏启动与正式开始之间崩溃或卡住。"
 
-#: compat/templates/compat-list.html:29
+#: compat/templates/compat-list.html:30
 msgid "1 out of 5"
 msgstr "1星"
 
-#: compat/templates/compat-list.html:29
+#: compat/templates/compat-list.html:30
 msgid "<strong>Broken</strong>: Crashes when booting."
 msgstr "<strong>失败</strong>: 游戏在启动时崩溃。"
 
-#: compat/templates/compat-list.html:36
+#: compat/templates/compat-list.html:37
 msgid "Statistics"
 msgstr "统计"
 
-#: compat/templates/compat-list.html:56
+#: compat/templates/compat-list.html:43
+msgid "Remove filter"
+msgstr "显示所有游戏"
+
+#: compat/templates/compat-list.html:43
+msgid "Show all"
+msgstr "显示全部"
+
+#: compat/templates/compat-list.html:45
+msgid "Filter by this rating"
+msgstr "查看此分级的游戏"
+
+#: compat/templates/compat-list.html:45
+msgid "Filter"
+msgstr "筛选"
+
+#: compat/templates/compat-list.html:65
 msgid "Game title (click for details)"
 msgstr "游戏标题（点击查看详情）"
 
-#: compat/templates/compat-list.html:57
-#: homepage/templates/homepage-home.html:80 templates/_base.html:71
+#: compat/templates/compat-list.html:66
+#: homepage/templates/homepage-home.html:95 templates/_base.html:77
 msgid "Compatibility"
 msgstr "兼容性"
 
-#: compat/templates/compat-list.html:58
+#: compat/templates/compat-list.html:67
 msgid "Last updated"
 msgstr "最后更新于"
 
-#: compat/templatetags/compat.py:7
+#: compat/templates/compat-list.html:84
+msgid "Your query does not match any game."
+msgstr "没有游戏符合你的查询要求。"
+
+#: compat/templatetags/compat.py:9
 msgid "Unknown"
 msgstr "未知"
 
-#: compat/templatetags/compat.py:8
+#: compat/templatetags/compat.py:10
 msgid "Broken"
 msgstr "失败"
 
-#: compat/templatetags/compat.py:9
+#: compat/templatetags/compat.py:11
 msgid "Intro/Menu"
 msgstr "开场/菜单"
 
-#: compat/templatetags/compat.py:10
+#: compat/templatetags/compat.py:12
 msgid "Starts"
 msgstr "开始"
 
-#: compat/templatetags/compat.py:11
+#: compat/templatetags/compat.py:13
 msgid "Playable"
 msgstr "尚可"
 
-#: compat/templatetags/compat.py:12
+#: compat/templatetags/compat.py:14
 msgid "Perfect"
 msgstr "完美"
 
@@ -430,7 +446,7 @@ msgstr "Dolphin 官方 FAQ 为您解答人们经常问到的有关 Dolphin 的�
 msgid "Frequently Asked Questions"
 msgstr "常见问题解答"
 
-#: docs/templates/docs-guide.html:11
+#: docs/templates/docs-guide.html:12
 msgid "Go back to the guides list"
 msgstr "返回指南列表"
 
@@ -438,7 +454,7 @@ msgstr "返回指南列表"
 msgid "See all the guides written by the Dolphin team about the emulator."
 msgstr "查看由 Dolphin 团队所写的关于 Dolphin 模拟器的所有指南。"
 
-#: docs/templates/docs-guides-index.html:7 templates/_base.html:70
+#: docs/templates/docs-guides-index.html:7 templates/_base.html:76
 msgid "Guides"
 msgstr "指南"
 
@@ -450,10 +466,21 @@ msgstr "指南与文档"
 msgid "No published guide available"
 msgstr "尚无用户指南"
 
-#: downloads/models.py:32 downloads/models.py:50
+#: downloads/models.py:40 downloads/models.py:57
 #, python-format
 msgid "Dolphin %s"
 msgstr "Dolphin %s"
+
+#: downloads/models.py:81
+msgid "Change with no description"
+msgstr "该更新没有描述"
+
+#: downloads/models.py:84
+#, python-format
+msgid ""
+"(<a href=\"%(pr_url)s\">PR #%(pr_id)s</a> from <a "
+"href=\"%(author_url)s\">%(author)s</a>)"
+msgstr "(<a href=\"%(pr_url)s\">推送 #%(pr_id)s</a> 来自 <a href=\"%(author_url)s\">%(author)s</a>)"
 
 #: downloads/templates/downloads-branches.html:5
 #: downloads/templates/downloads-branches.html:9
@@ -466,7 +493,7 @@ msgid "<tt>%(branch)s</tt> branch"
 msgstr "<tt>%(branch)s</tt> 分支"
 
 #: downloads/templates/downloads-branches.html:21
-#: downloads/templates/downloads-index.html:91
+#: downloads/templates/downloads-index.html:42
 msgid "View older versions »"
 msgstr "查看较早版本 »"
 
@@ -486,31 +513,15 @@ msgid ""
 msgstr "从官方网站下载 Dolphin 模拟器的最新版本 (%(ver)s) 。"
 
 #: downloads/templates/downloads-index.html:8
-#: downloads/templates/downloads-index.html:27 templates/_base.html:66
+#: downloads/templates/downloads-index.html:27 templates/_base.html:72
 msgid "Download"
 msgstr "下载"
 
 #: downloads/templates/downloads-index.html:31
-msgid "Stable versions"
-msgstr "稳定版本"
-
-#: downloads/templates/downloads-index.html:33
-msgid ""
-"\n"
-"    Stable versions are released after a lot of testing to ensure emulation\n"
-"    performance and stability. However, since they are released less often,\n"
-"    they might be outdated and lacking some new features.\n"
-msgstr "\n稳定版本在发布前经历过许多测试以保证模拟性能与稳定性。然而由于其发布频率较低，稳定版本可能已经过时并缺少一些新功能。\n"
-
-#: downloads/templates/downloads-index.html:55
-msgid "No stable release yet"
-msgstr "尚无稳定版本"
-
-#: downloads/templates/downloads-index.html:76
 msgid "Development versions"
 msgstr "开发版本"
 
-#: downloads/templates/downloads-index.html:78
+#: downloads/templates/downloads-index.html:33
 msgid ""
 "\n"
 "    Development versions are released every time a developer makes a change to\n"
@@ -519,19 +530,27 @@ msgid ""
 "    less tested than stable versions of the emulator.\n"
 msgstr "\n每当一位开发者对 Dolphin 做出改动，都将有开发版本发布，因而每天都会发布数个开发版本。使用开发版本即可体验本项目最新最大的改进，然而相较于稳定版本的模拟器，开发版本所经历的测试尚不够充分。\n"
 
-#: downloads/templates/downloads-index.html:85
-msgid "Only displaying the <tt>master</tt> branch versions."
-msgstr "当前仅显示 <tt>master</tt> 分支的版本。"
+#: downloads/templates/downloads-index.html:60
+msgid "Stable versions"
+msgstr "稳定版本"
 
-#: downloads/templates/downloads-index.html:86
-msgid "Show all available branches"
-msgstr "显示所有可用分支"
+#: downloads/templates/downloads-index.html:62
+msgid ""
+"\n"
+"    Stable versions are released after a lot of testing to ensure emulation\n"
+"    performance and stability. However, since they are released less often,\n"
+"    they might be outdated and lacking some new features.\n"
+msgstr "\n稳定版本在发布前经历过许多测试以保证模拟性能与稳定性。然而由于其发布频率较低，稳定版本可能已经过时并缺少一些新功能。\n"
 
-#: downloads/templates/downloads-index.html:95
+#: downloads/templates/downloads-index.html:84
+msgid "No stable release yet"
+msgstr "尚无稳定版本"
+
+#: downloads/templates/downloads-index.html:91
 msgid "Source code"
 msgstr "源代码"
 
-#: downloads/templates/downloads-index.html:97
+#: downloads/templates/downloads-index.html:93
 msgid ""
 "\n"
 "    The latest version of the Dolphin source code can be downloaded from the\n"
@@ -539,7 +558,7 @@ msgid ""
 "    "
 msgstr "\n    最新版本的Dolphin源代码可从本项目Git库中下载。\n    "
 
-#: downloads/templates/downloads-index.html:105
+#: downloads/templates/downloads-index.html:101
 #, python-format
 msgid ""
 "\n"
@@ -547,11 +566,11 @@ msgid ""
 "    "
 msgstr "\n您也可以<a href=\"%(GIT_BROWSE_URL)s\">浏览最新版本的源代码</a>。"
 
-#: downloads/templates/downloads-index.html:112
+#: downloads/templates/downloads-index.html:108
 msgid "Reporting bugs"
 msgstr "报告 Bug"
 
-#: downloads/templates/downloads-index.html:114
+#: downloads/templates/downloads-index.html:110
 #, python-format
 msgid ""
 "\n"
@@ -604,22 +623,23 @@ msgstr "修改者"
 msgid "Change description"
 msgstr "修改说明"
 
-#: homepage/templates/homepage-home.html:11
+#: homepage/templates/homepage-home.html:12
 #, python-format
 msgid ""
 "Official website of Dolphin, the GameCube and Wii emulator. Download the "
 "latest version (%(ver)s) now or ask questions on our forums for help."
 msgstr "Dolphin 官方网站。现在下载 GameCube 与 Wii 模拟器 Dolphin 的最新版本 (%(ver)s) 或在我们的论坛提问以寻求帮助。"
 
-#: homepage/templates/homepage-home.html:13
+#: homepage/templates/homepage-home.html:14
 msgid "GameCube/Wii games on PC"
 msgstr "在电脑上玩 GameCube/Wii 游戏"
 
-#: homepage/templates/homepage-home.html:30 templates/_base.html:62
+#: homepage/templates/homepage-home.html:37 templates/_base.html:10
+#: templates/_base.html.py:68
 msgid "Dolphin Emulator"
 msgstr "Dolphin Emulator"
 
-#: homepage/templates/homepage-home.html:32
+#: homepage/templates/homepage-home.html:39
 msgid ""
 "\n"
 "            <b>Dolphin</b> is an emulator for two recent Nintendo video game\n"
@@ -630,43 +650,43 @@ msgid ""
 "            "
 msgstr "\n<b>Dolphin</b> 是任天堂两款游戏平台的模拟器：<b>GameCube</b> 和 <b>Wii</b>。它可以让你在电脑上以<b>全高清</b>(1080p)的方式来玩这两个平台的游戏；它具有兼容所有 PC 控制器，加速，多人联网等特性。"
 
-#: homepage/templates/homepage-home.html:41
+#: homepage/templates/homepage-home.html:48
 #, python-format
 msgid "Download %(last_release)s for Windows, Mac and Linux »"
 msgstr "下载用于 Windows, Mac 和 Linux 的 %(last_release)s »"
 
-#: homepage/templates/homepage-home.html:93
+#: homepage/templates/homepage-home.html:108
 msgid "RSS feed of the latest articles"
 msgstr "最新文章的 RSS 源"
 
-#: homepage/templates/homepage-home.html:94
+#: homepage/templates/homepage-home.html:109
 msgid "Latest articles"
 msgstr "最新文章"
 
-#: homepage/templates/homepage-home.html:121
+#: homepage/templates/homepage-home.html:136
 #, python-format
-msgid "/ Part of serie <a href=\"%(url)s\">%(name)s</a>"
+msgid "/ Part of series <a href=\"%(url)s\">%(name)s</a>"
 msgstr "/ <a href=\"%(url)s\">%(name)s</a> 分类的一部分"
 
-#: homepage/templates/homepage-home.html:128
+#: homepage/templates/homepage-home.html:143
 msgid "Read this article"
 msgstr "阅读本文"
 
-#: homepage/templates/homepage-home.html:132
+#: homepage/templates/homepage-home.html:147
 msgid "No articles yet."
 msgstr "还没有文章。"
 
-#: media/templates/media-all.html:6
+#: media/templates/media-all.html:7
 msgid ""
 "View all the user-contributed screenshots of the Dolphin Emulator: GameCube "
 "and Wii games in HD."
 msgstr "浏览所有由用户贡献的 Dolphin 模拟器屏幕截图，欣赏高清模式下的 GameCube 与 Wii 游戏。"
 
-#: media/templates/media-all.html:8
+#: media/templates/media-all.html:9
 msgid "Screenshots gallery"
 msgstr "截图画廊"
 
-#: media/templates/media-all.html:12
+#: media/templates/media-all.html:31
 msgid "Media gallery"
 msgstr "截图画廊"
 
@@ -688,35 +708,31 @@ msgid ""
 " in a few seconds."
 msgstr "尝试访问此页面时发生错误，请数秒后刷新此页面。"
 
-#: templates/_base.html:10
-msgid "Official Dolphin Emulator Website"
-msgstr "Dolphin 模拟器官方网站"
-
 #: templates/_base.html:23
 msgid "Latest blog articles"
 msgstr "最新博客文章"
 
-#: templates/_base.html:68
+#: templates/_base.html:74
 msgid "Screenshots"
 msgstr "截图"
 
-#: templates/_base.html:69
+#: templates/_base.html:75
 msgid "FAQ"
 msgstr "问答"
 
-#: templates/_base.html:72
+#: templates/_base.html:78
 msgid "Forum"
 msgstr "论坛"
 
-#: templates/_base.html:73
+#: templates/_base.html:79
 msgid "Wiki"
 msgstr "百科"
 
-#: templates/_base.html:74
+#: templates/_base.html:80
 msgid "Code"
 msgstr "源码"
 
-#: templates/_base.html:110
+#: templates/_base.html:116
 #, python-format
 msgid ""
 "\n"

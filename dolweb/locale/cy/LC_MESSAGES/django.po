@@ -3,14 +3,14 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# TomosANTIGUATomos <llyrceredig@gmail.com>, 2013-2014
+# Llyr Ceredig <llyrceredig@gmail.com>, 2013-2014
 msgid ""
 msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-02-08 20:04+0100\n"
-"PO-Revision-Date: 2014-02-17 23:58+0000\n"
-"Last-Translator: TomosANTIGUATomos <llyrceredig@gmail.com>\n"
+"POT-Creation-Date: 2014-08-24 12:37+0200\n"
+"PO-Revision-Date: 2014-06-23 02:26+0000\n"
+"Last-Translator: Pierre Bourdon <delroth@gmail.com>\n"
 "Language-Team: Welsh (http://www.transifex.com/projects/p/dolphin-emu/language/cy/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -24,13 +24,13 @@ msgstr "Cynnwys"
 
 #: blog/feeds.py:24
 #, python-format
-msgid "Entries for the serie %s"
-msgstr "Erthyglau yn y gyfres %s"
+msgid "Entries for the series %s"
+msgstr ""
 
 #: blog/feeds.py:27
 #, python-format
-msgid "The latest entries for the serie %s"
-msgstr "Yr erthygl diweddaraf yn y gyfres %s"
+msgid "The latest entries for the series %s"
+msgstr ""
 
 #: blog/models.py:16
 msgid "image"
@@ -41,7 +41,7 @@ msgid "Used for illustration."
 msgstr "Defnyddir er mwyn arddangosi."
 
 #: blog/templates/blog_sidebar.html:6
-#: blog/templates/zinnia/tags/search_form.html:5
+#: blog/templates/zinnia/tags/search_form.html:7
 msgid "Search articles"
 msgstr "Archwilio'r erthyglau"
 
@@ -50,6 +50,7 @@ msgid "Blog tags"
 msgstr "Tagiau blog"
 
 #: blog/templates/blog_sidebar.html:36
+#: blog/templates/zinnia/_entry_detail_base.html:78
 msgid "Blog series"
 msgstr "Cyfres blog"
 
@@ -61,16 +62,16 @@ msgstr "Gweld i gyd"
 #, python-format
 msgid ""
 "\n"
-"    %(count)s entrie\n"
+"    %(count)s entry\n"
 "  "
 msgid_plural ""
 "\n"
 "    %(count)s entries\n"
 "  "
-msgstr[0] "\n%(count)s erthygl"
-msgstr[1] "\n%(count)s erthyglau"
-msgstr[2] "\n%(count)s erthyglau"
-msgstr[3] "\n%(count)s erthyglau"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
 
 #: blog/templates/series-index.html:27
 msgid "RSS feed:"
@@ -81,23 +82,23 @@ msgid "No blog series yet."
 msgstr "Dim cyfresi blog eto."
 
 #: blog/templates/zinnia/_entry_detail_base.html:21
-#: homepage/templates/homepage-home.html:107
+#: homepage/templates/homepage-home.html:122
 msgid "Written by"
 msgstr "Ysgrifennwyd gan"
 
 #: blog/templates/zinnia/_entry_detail_base.html:25
-#: homepage/templates/homepage-home.html:111
+#: homepage/templates/homepage-home.html:126
 #, python-format
 msgid "Show all %(author)s's entries"
 msgstr "Gweld cofnodau %(author)s i gyd"
 
 #: blog/templates/zinnia/_entry_detail_base.html:27
-#: homepage/templates/homepage-home.html:113
+#: homepage/templates/homepage-home.html:128
 msgid "on"
 msgstr "ar"
 
 #: blog/templates/zinnia/_entry_detail_base.html:29
-#: homepage/templates/homepage-home.html:115
+#: homepage/templates/homepage-home.html:130
 msgid "Written on"
 msgstr "Ysgrifennwyd ar"
 
@@ -115,12 +116,12 @@ msgid "Short link"
 msgstr "Cyswllt byr"
 
 #: blog/templates/zinnia/_entry_detail_base.html:41
-#: homepage/templates/homepage-home.html:123
+#: homepage/templates/homepage-home.html:138
 msgid "Visit forum thread for this article"
 msgstr "Ymweld yr edyn yn y fforwm"
 
 #: blog/templates/zinnia/_entry_detail_base.html:41
-#: homepage/templates/homepage-home.html:123
+#: homepage/templates/homepage-home.html:138
 msgid "Forum thread"
 msgstr "Edyn fforwm"
 
@@ -140,24 +141,20 @@ msgid ""
 "forum thread for this article\">forum thread</a> of this article."
 msgstr "Gellir parhau'r drafodaeth yn <a href=\"%(url)s\" title=\"Visit forum thread for this article\">edyn fforwm</a> yr erthygl hon."
 
-#: blog/templates/zinnia/_entry_detail_base.html:78
-msgid "Blog serie"
-msgstr "Cyfres blog"
-
 #: blog/templates/zinnia/_entry_detail_base.html:80
 #, python-format
 msgid ""
-"This article is number %(nth)s within the blog serie\n"
-"    <a href=\"%(url)s\"><em>%(serie)s</em></a>."
-msgstr "Rhif %(nth)s yw'r erthygl hon yn y cyfres blog\n<a href=\"%(url)s\"><em>%(serie)s</em></a>."
+"This article is number %(nth)s within the blog series\n"
+"    <a href=\"%(url)s\"><em>%(series)s</em></a>."
+msgstr ""
 
 #: blog/templates/zinnia/_entry_detail_base.html:85
-msgid "‹ Previous article in serie"
-msgstr "Erthygl diwethaf yn y gyfres"
+msgid "‹ Previous article in series"
+msgstr ""
 
 #: blog/templates/zinnia/_entry_detail_base.html:87
-msgid "Next article in serie ›"
-msgstr "Erthygl nesaf yn y gyfres"
+msgid "Next article in series ›"
+msgstr ""
 
 #: blog/templates/zinnia/_entry_detail_base.html:137
 msgid "Tags"
@@ -306,117 +303,136 @@ msgstr "Golygu'r awdur"
 msgid "Latest news for Dolphin Emulator"
 msgstr "Newyddion ynglŷn â Efelychydd Dolphin"
 
-#: blog/templates/zinnia/skeleton.html:8
-#: blog/templates/zinnia/skeleton.html:13 templates/_base.html:67
+#: blog/templates/zinnia/skeleton.html:8 templates/_base.html:73
 msgid "Articles"
 msgstr "Erthyglau"
 
-#: blog/templates/zinnia/tags/search_form.html:16
+#: blog/templates/zinnia/tags/search_form.html:18
 msgid ""
 "You can use - to exclude words or phrases, &quot;double quotes&quot; for "
 "exact phrases and the AND/OR boolean operators combined with parenthesis for"
 " complex queries."
 msgstr "Gellir defnyddio - i eithrio geiriau, &quot;dyfynodau&quot; am frawddegau penodol a AND/OR mewn cyfuniad â cromfachau ar gyfer ymholiadau mwy cymhleth."
 
-#: compat/templates/compat-list.html:8
+#: compat/templates/compat-list.html:9
 msgid ""
 "The Dolphin Emulator compatibility list contains all the games we tested, "
 "sorted by how well they work on the emulator."
 msgstr "Mae rhestr weithio Efelychydd Dolphin yn cynnwys y gemau rydym wedi profi, yn ôl pa mor dda maent yn gweithio ar yr efelychydd."
 
-#: compat/templates/compat-list.html:10
+#: compat/templates/compat-list.html:11
 #, python-format
 msgid "Compatibility List - page %(page)s"
 msgstr "Rhestr gemau cydnaws - tudalen %(page)s"
 
-#: compat/templates/compat-list.html:22
+#: compat/templates/compat-list.html:23
 msgid "How to read the ratings"
 msgstr "Esboniad sgoriau"
 
-#: compat/templates/compat-list.html:25
+#: compat/templates/compat-list.html:26
 msgid "5 out of 5"
 msgstr "5 allan o 5"
 
-#: compat/templates/compat-list.html:25
+#: compat/templates/compat-list.html:26
 msgid "<strong>Perfect</strong>: No issues at all!"
 msgstr "<strong>Perffaith</strong>: Dim problemau o gwbl."
 
-#: compat/templates/compat-list.html:26
+#: compat/templates/compat-list.html:27
 msgid "4 out of 5"
 msgstr "4 allan o 5"
 
-#: compat/templates/compat-list.html:26
+#: compat/templates/compat-list.html:27
 msgid ""
 "<strong>Playable</strong>: Runs well, only minor graphical or audio "
 "glitches. Games can be played all the way through."
 msgstr "<strong>Chwarae</strong>: Yn chwarae'n dda, ond rhai problemau bach. Gellir gorffen y gêm."
 
-#: compat/templates/compat-list.html:27
+#: compat/templates/compat-list.html:28
 msgid "3 out of 5"
 msgstr "3 allan o 5"
 
-#: compat/templates/compat-list.html:27
+#: compat/templates/compat-list.html:28
 msgid ""
 "<strong>Starts</strong>: Starts, maybe even plays well, but crashes or major"
 " graphical/audio glitches."
 msgstr "<strong>Dechrau</strong>: Yn dechrau ac yn chwarae'n weddol, ond yn crasio neu â sawl problem mawr."
 
-#: compat/templates/compat-list.html:28
+#: compat/templates/compat-list.html:29
 msgid "2 out of 5"
 msgstr "2 allan o 5"
 
-#: compat/templates/compat-list.html:28
+#: compat/templates/compat-list.html:29
 msgid ""
 "<strong>Intro/Menu</strong>: Hangs/crashes somewhere between booting and "
 "starting."
 msgstr "<strong>Dewislen</strong>: Yn llwytho ond yn crasio cyn dechrau'r gêm."
 
-#: compat/templates/compat-list.html:29
+#: compat/templates/compat-list.html:30
 msgid "1 out of 5"
 msgstr "1 allan o 5"
 
-#: compat/templates/compat-list.html:29
+#: compat/templates/compat-list.html:30
 msgid "<strong>Broken</strong>: Crashes when booting."
 msgstr "<strong>Ddim yn gweithio</strong>: Yn crasio tra'n llwytho neu'n pallu llwytho o gwbl."
 
-#: compat/templates/compat-list.html:36
+#: compat/templates/compat-list.html:37
 msgid "Statistics"
 msgstr "Ystadegau"
 
-#: compat/templates/compat-list.html:56
+#: compat/templates/compat-list.html:43
+msgid "Remove filter"
+msgstr ""
+
+#: compat/templates/compat-list.html:43
+msgid "Show all"
+msgstr ""
+
+#: compat/templates/compat-list.html:45
+msgid "Filter by this rating"
+msgstr ""
+
+#: compat/templates/compat-list.html:45
+msgid "Filter"
+msgstr ""
+
+#: compat/templates/compat-list.html:65
 msgid "Game title (click for details)"
 msgstr "Enw'r gêm (cliciwch am fwy o wybodaeth)"
 
-#: compat/templates/compat-list.html:57
-#: homepage/templates/homepage-home.html:80 templates/_base.html:71
+#: compat/templates/compat-list.html:66
+#: homepage/templates/homepage-home.html:95 templates/_base.html:77
 msgid "Compatibility"
 msgstr "Statws"
 
-#: compat/templates/compat-list.html:58
+#: compat/templates/compat-list.html:67
 msgid "Last updated"
 msgstr "Diwerddarwyd diwethaf"
 
-#: compat/templatetags/compat.py:7
+#: compat/templates/compat-list.html:84
+msgid "Your query does not match any game."
+msgstr ""
+
+#: compat/templatetags/compat.py:9
 msgid "Unknown"
 msgstr "Anhysbys"
 
-#: compat/templatetags/compat.py:8
+#: compat/templatetags/compat.py:10
 msgid "Broken"
 msgstr "Ddim yn gweithio"
 
-#: compat/templatetags/compat.py:9
+#: compat/templatetags/compat.py:11
 msgid "Intro/Menu"
 msgstr "Dewislen"
 
-#: compat/templatetags/compat.py:10
+#: compat/templatetags/compat.py:12
 msgid "Starts"
 msgstr "Dechrau"
 
-#: compat/templatetags/compat.py:11
+#: compat/templatetags/compat.py:13
 msgid "Playable"
 msgstr "Chwarae"
 
-#: compat/templatetags/compat.py:12
+#: compat/templatetags/compat.py:14
 msgid "Perfect"
 msgstr "Perffaith"
 
@@ -430,7 +446,7 @@ msgstr "Mae CC swyddogol Dolphin yn medru ateb rhai o'ch cwestiynau cyffredin."
 msgid "Frequently Asked Questions"
 msgstr "Cwestiynau Cyffredin"
 
-#: docs/templates/docs-guide.html:11
+#: docs/templates/docs-guide.html:12
 msgid "Go back to the guides list"
 msgstr "Nôl i'r rhestr o ganllawiau"
 
@@ -438,7 +454,7 @@ msgstr "Nôl i'r rhestr o ganllawiau"
 msgid "See all the guides written by the Dolphin team about the emulator."
 msgstr "Gweld canllawiau a ysgrifennwyd gan dîm Dolphin am yr efelychydd."
 
-#: docs/templates/docs-guides-index.html:7 templates/_base.html:70
+#: docs/templates/docs-guides-index.html:7 templates/_base.html:76
 msgid "Guides"
 msgstr "Canllawiau"
 
@@ -450,10 +466,21 @@ msgstr "Canllawiau a dogfennau"
 msgid "No published guide available"
 msgstr "Dim canllawiau ar gael"
 
-#: downloads/models.py:32 downloads/models.py:50
+#: downloads/models.py:40 downloads/models.py:57
 #, python-format
 msgid "Dolphin %s"
 msgstr "Dolphin %s"
+
+#: downloads/models.py:81
+msgid "Change with no description"
+msgstr ""
+
+#: downloads/models.py:84
+#, python-format
+msgid ""
+"(<a href=\"%(pr_url)s\">PR #%(pr_id)s</a> from <a "
+"href=\"%(author_url)s\">%(author)s</a>)"
+msgstr ""
 
 #: downloads/templates/downloads-branches.html:5
 #: downloads/templates/downloads-branches.html:9
@@ -466,7 +493,7 @@ msgid "<tt>%(branch)s</tt> branch"
 msgstr "<tt>%(branch)s</tt> fforc"
 
 #: downloads/templates/downloads-branches.html:21
-#: downloads/templates/downloads-index.html:91
+#: downloads/templates/downloads-index.html:42
 msgid "View older versions »"
 msgstr "Fersiynau hŷn"
 
@@ -486,31 +513,15 @@ msgid ""
 msgstr "Lawrlwythwch fersiwn mwyaf diweddar Dolphin (%(ver)s) o'r wefan swyddogol."
 
 #: downloads/templates/downloads-index.html:8
-#: downloads/templates/downloads-index.html:27 templates/_base.html:66
+#: downloads/templates/downloads-index.html:27 templates/_base.html:72
 msgid "Download"
 msgstr "Llawrlwytho"
 
 #: downloads/templates/downloads-index.html:31
-msgid "Stable versions"
-msgstr "Fersiynau cadarn"
-
-#: downloads/templates/downloads-index.html:33
-msgid ""
-"\n"
-"    Stable versions are released after a lot of testing to ensure emulation\n"
-"    performance and stability. However, since they are released less often,\n"
-"    they might be outdated and lacking some new features.\n"
-msgstr "\nRydym yn rhyddhau fersiwn gadarn ar ol profi'r efelychydd yn drylwyr.\nMae'r broses yma'n sicrhau fod Dolphin yn gweithio'n effeithiol. Dylid \ncofio felly bod fersiynau cadarn heb y gwiriadau mwyaf diweddar.\n"
-
-#: downloads/templates/downloads-index.html:55
-msgid "No stable release yet"
-msgstr "Dim fersiwn cadarn ar hyn o bryd"
-
-#: downloads/templates/downloads-index.html:76
 msgid "Development versions"
 msgstr "Fersiwn datblygiadol"
 
-#: downloads/templates/downloads-index.html:78
+#: downloads/templates/downloads-index.html:33
 msgid ""
 "\n"
 "    Development versions are released every time a developer makes a change to\n"
@@ -519,19 +530,27 @@ msgid ""
 "    less tested than stable versions of the emulator.\n"
 msgstr "\nRydym yn rhyddhau fersiwn datblygiadol o Dolphin bob tro mae datblygwr\nyn newid yr efelychydd. Mae'r broses yma'n digwydd yn aml. Mae'r fersiynau\ndatblygiadol yn cynnwys y gwiriadau mwyaf diweddar i'r efelychydd, ond maent\nyn llai dibynadwy na'r fersiynau cadarn.\n"
 
-#: downloads/templates/downloads-index.html:85
-msgid "Only displaying the <tt>master</tt> branch versions."
-msgstr "Yn dangos <tt>prif</tt> fersiynau y ffyrc yn unig"
+#: downloads/templates/downloads-index.html:60
+msgid "Stable versions"
+msgstr "Fersiynau cadarn"
 
-#: downloads/templates/downloads-index.html:86
-msgid "Show all available branches"
-msgstr "Dangos pob fforc sydd ar gael"
+#: downloads/templates/downloads-index.html:62
+msgid ""
+"\n"
+"    Stable versions are released after a lot of testing to ensure emulation\n"
+"    performance and stability. However, since they are released less often,\n"
+"    they might be outdated and lacking some new features.\n"
+msgstr "\nRydym yn rhyddhau fersiwn gadarn ar ol profi'r efelychydd yn drylwyr.\nMae'r broses yma'n sicrhau fod Dolphin yn gweithio'n effeithiol. Dylid \ncofio felly bod fersiynau cadarn heb y gwiriadau mwyaf diweddar.\n"
 
-#: downloads/templates/downloads-index.html:95
+#: downloads/templates/downloads-index.html:84
+msgid "No stable release yet"
+msgstr "Dim fersiwn cadarn ar hyn o bryd"
+
+#: downloads/templates/downloads-index.html:91
 msgid "Source code"
 msgstr "Côd gwreiddiol"
 
-#: downloads/templates/downloads-index.html:97
+#: downloads/templates/downloads-index.html:93
 msgid ""
 "\n"
 "    The latest version of the Dolphin source code can be downloaded from the\n"
@@ -539,7 +558,7 @@ msgid ""
 "    "
 msgstr "\nGellir llawrwytho'r fersiwn mwyaf diweddar o gôd gwreiddiol Dolphin yn\nstorfa prosiect Git."
 
-#: downloads/templates/downloads-index.html:105
+#: downloads/templates/downloads-index.html:101
 #, python-format
 msgid ""
 "\n"
@@ -547,11 +566,11 @@ msgid ""
 "    "
 msgstr "\nGellir hefyd <a href=\"%(GIT_BROWSE_URL)s\">pori fersiwn gyfredol y côd</a>."
 
-#: downloads/templates/downloads-index.html:112
+#: downloads/templates/downloads-index.html:108
 msgid "Reporting bugs"
 msgstr "Cofnodi namau"
 
-#: downloads/templates/downloads-index.html:114
+#: downloads/templates/downloads-index.html:110
 #, python-format
 msgid ""
 "\n"
@@ -604,22 +623,23 @@ msgstr "Newid awdur"
 msgid "Change description"
 msgstr "Newid disgrifiad"
 
-#: homepage/templates/homepage-home.html:11
+#: homepage/templates/homepage-home.html:12
 #, python-format
 msgid ""
 "Official website of Dolphin, the GameCube and Wii emulator. Download the "
 "latest version (%(ver)s) now or ask questions on our forums for help."
 msgstr "Gwefan swyddogol Dolphin, efelchydd ar gyfer y GameCube a'r Wii. Llawrlwythwch y fersiwn mwyaf diweddar (%(ver)s) neu gofynnwch gwestiwn yn y fforwm os oes angen cymorth."
 
-#: homepage/templates/homepage-home.html:13
+#: homepage/templates/homepage-home.html:14
 msgid "GameCube/Wii games on PC"
 msgstr "Gemau Gamecube/Wii ar PC"
 
-#: homepage/templates/homepage-home.html:30 templates/_base.html:62
+#: homepage/templates/homepage-home.html:37 templates/_base.html:10
+#: templates/_base.html.py:68
 msgid "Dolphin Emulator"
 msgstr "Efelychydd Dolphin"
 
-#: homepage/templates/homepage-home.html:32
+#: homepage/templates/homepage-home.html:39
 msgid ""
 "\n"
 "            <b>Dolphin</b> is an emulator for two recent Nintendo video game\n"
@@ -630,43 +650,43 @@ msgid ""
 "            "
 msgstr "\nEfelychydd ar gyfer dwy declyn gemau gan Nintendo yw <b>Dolphin</b>.\nMae'r efelychydd yn galluogi defnyddwyr i chwarae gemau <b>Gamecube</b>\na <b>Wii</b> ar PC mewn <b>HD llawn</b> (1080p). Gellir hefyd defnyddio\nnifer o welliannau: rheolyddion PC, amlgemau ar rwydwaith, a mwy!"
 
-#: homepage/templates/homepage-home.html:41
+#: homepage/templates/homepage-home.html:48
 #, python-format
 msgid "Download %(last_release)s for Windows, Mac and Linux »"
 msgstr "Llawrlwythwch %(last_release)s ar gyfer Windows, Mac a Linux »"
 
-#: homepage/templates/homepage-home.html:93
+#: homepage/templates/homepage-home.html:108
 msgid "RSS feed of the latest articles"
 msgstr "Crynodeb RSS yr erthyglau diweddaraf"
 
-#: homepage/templates/homepage-home.html:94
+#: homepage/templates/homepage-home.html:109
 msgid "Latest articles"
 msgstr "Erthyglau diweddar"
 
-#: homepage/templates/homepage-home.html:121
+#: homepage/templates/homepage-home.html:136
 #, python-format
-msgid "/ Part of serie <a href=\"%(url)s\">%(name)s</a>"
-msgstr "/ Rhan o gyfres <a href=\"%(url)s\">%(name)s</a>"
+msgid "/ Part of series <a href=\"%(url)s\">%(name)s</a>"
+msgstr ""
 
-#: homepage/templates/homepage-home.html:128
+#: homepage/templates/homepage-home.html:143
 msgid "Read this article"
 msgstr "Darllen yr erthygl"
 
-#: homepage/templates/homepage-home.html:132
+#: homepage/templates/homepage-home.html:147
 msgid "No articles yet."
 msgstr "Dim erthyglau eto."
 
-#: media/templates/media-all.html:6
+#: media/templates/media-all.html:7
 msgid ""
 "View all the user-contributed screenshots of the Dolphin Emulator: GameCube "
 "and Wii games in HD."
 msgstr "Gweld yr holl sgruniau a gafwyd eu cyfrannu gan y gymuned: Gemau GameCube a WII yn gwiethio ar Efelychydd Dolphin yn HD."
 
-#: media/templates/media-all.html:8
+#: media/templates/media-all.html:9
 msgid "Screenshots gallery"
 msgstr "Oriel sgruniau"
 
-#: media/templates/media-all.html:12
+#: media/templates/media-all.html:31
 msgid "Media gallery"
 msgstr "Oriel"
 
@@ -688,35 +708,31 @@ msgid ""
 " in a few seconds."
 msgstr "Roedd camgymeriad tra'n agor y dudalen. Ceisiwch eto mewn ychydig o eiliadau."
 
-#: templates/_base.html:10
-msgid "Official Dolphin Emulator Website"
-msgstr "Gwefan Swyddogol Efelychydd Dolphin"
-
 #: templates/_base.html:23
 msgid "Latest blog articles"
 msgstr "Erthyglau blog diweddaraf"
 
-#: templates/_base.html:68
+#: templates/_base.html:74
 msgid "Screenshots"
 msgstr "Sgruniau"
 
-#: templates/_base.html:69
+#: templates/_base.html:75
 msgid "FAQ"
 msgstr "CC"
 
-#: templates/_base.html:72
+#: templates/_base.html:78
 msgid "Forum"
 msgstr "Fforwm"
 
-#: templates/_base.html:73
+#: templates/_base.html:79
 msgid "Wiki"
 msgstr "Wici"
 
-#: templates/_base.html:74
+#: templates/_base.html:80
 msgid "Code"
 msgstr "Côd"
 
-#: templates/_base.html:110
+#: templates/_base.html:116
 #, python-format
 msgid ""
 "\n"

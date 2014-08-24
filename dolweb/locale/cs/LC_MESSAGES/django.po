@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-02-08 20:04+0100\n"
-"PO-Revision-Date: 2014-02-24 08:00+0000\n"
+"POT-Creation-Date: 2014-08-24 12:37+0200\n"
+"PO-Revision-Date: 2014-06-23 12:38+0000\n"
 "Last-Translator: Zbyněk Schwarz <zbynek.schwarz@gmail.com>\n"
 "Language-Team: Czech (http://www.transifex.com/projects/p/dolphin-emu/language/cs/)\n"
 "MIME-Version: 1.0\n"
@@ -24,12 +24,12 @@ msgstr "Obsah"
 
 #: blog/feeds.py:24
 #, python-format
-msgid "Entries for the serie %s"
+msgid "Entries for the series %s"
 msgstr "Položky řady %s"
 
 #: blog/feeds.py:27
 #, python-format
-msgid "The latest entries for the serie %s"
+msgid "The latest entries for the series %s"
 msgstr "Nejnovější položky řady %s"
 
 #: blog/models.py:16
@@ -41,7 +41,7 @@ msgid "Used for illustration."
 msgstr "Použito pro ilustraci."
 
 #: blog/templates/blog_sidebar.html:6
-#: blog/templates/zinnia/tags/search_form.html:5
+#: blog/templates/zinnia/tags/search_form.html:7
 msgid "Search articles"
 msgstr "Hledat články"
 
@@ -50,6 +50,7 @@ msgid "Blog tags"
 msgstr "Štítky blogu"
 
 #: blog/templates/blog_sidebar.html:36
+#: blog/templates/zinnia/_entry_detail_base.html:78
 msgid "Blog series"
 msgstr "Řada blogů"
 
@@ -61,7 +62,7 @@ msgstr "Zobrazit vše"
 #, python-format
 msgid ""
 "\n"
-"    %(count)s entrie\n"
+"    %(count)s entry\n"
 "  "
 msgid_plural ""
 "\n"
@@ -80,23 +81,23 @@ msgid "No blog series yet."
 msgstr "Zatím žádná řada blogů."
 
 #: blog/templates/zinnia/_entry_detail_base.html:21
-#: homepage/templates/homepage-home.html:107
+#: homepage/templates/homepage-home.html:122
 msgid "Written by"
 msgstr "Napsal"
 
 #: blog/templates/zinnia/_entry_detail_base.html:25
-#: homepage/templates/homepage-home.html:111
+#: homepage/templates/homepage-home.html:126
 #, python-format
 msgid "Show all %(author)s's entries"
 msgstr "Zobrazit všechny položky od %(author)s"
 
 #: blog/templates/zinnia/_entry_detail_base.html:27
-#: homepage/templates/homepage-home.html:113
+#: homepage/templates/homepage-home.html:128
 msgid "on"
 msgstr "dne"
 
 #: blog/templates/zinnia/_entry_detail_base.html:29
-#: homepage/templates/homepage-home.html:115
+#: homepage/templates/homepage-home.html:130
 msgid "Written on"
 msgstr "Napsáno"
 
@@ -114,12 +115,12 @@ msgid "Short link"
 msgstr "Krátký odkaz"
 
 #: blog/templates/zinnia/_entry_detail_base.html:41
-#: homepage/templates/homepage-home.html:123
+#: homepage/templates/homepage-home.html:138
 msgid "Visit forum thread for this article"
 msgstr "Navštívit vlákno ve fóru pro tento článek"
 
 #: blog/templates/zinnia/_entry_detail_base.html:41
-#: homepage/templates/homepage-home.html:123
+#: homepage/templates/homepage-home.html:138
 msgid "Forum thread"
 msgstr "Vlákno ve fóru"
 
@@ -139,23 +140,19 @@ msgid ""
 "forum thread for this article\">forum thread</a> of this article."
 msgstr "Tento článek můžete probírat v jeho <a href=\"%(url)s\" title=\"Visit forum thread for this article\">vláknu fóra</a>."
 
-#: blog/templates/zinnia/_entry_detail_base.html:78
-msgid "Blog serie"
-msgstr "Řada blogů"
-
 #: blog/templates/zinnia/_entry_detail_base.html:80
 #, python-format
 msgid ""
-"This article is number %(nth)s within the blog serie\n"
-"    <a href=\"%(url)s\"><em>%(serie)s</em></a>."
-msgstr "Tento článek je %(nth)s. v řadě blogů\n<a href=\"%(url)s\"><em>%(serie)s</em></a>."
+"This article is number %(nth)s within the blog series\n"
+"    <a href=\"%(url)s\"><em>%(series)s</em></a>."
+msgstr "Tento článek je %(nth)s. v řadě blogů\n<a href=\"%(url)s\"><em>%(series)s</em></a>."
 
 #: blog/templates/zinnia/_entry_detail_base.html:85
-msgid "‹ Previous article in serie"
+msgid "‹ Previous article in series"
 msgstr "‹ Předchozí článek v řadě"
 
 #: blog/templates/zinnia/_entry_detail_base.html:87
-msgid "Next article in serie ›"
+msgid "Next article in series ›"
 msgstr "Následující článek v řadě ›"
 
 #: blog/templates/zinnia/_entry_detail_base.html:137
@@ -305,117 +302,136 @@ msgstr "Upravit autora"
 msgid "Latest news for Dolphin Emulator"
 msgstr "Poslední novinky emulátoru Dolphin"
 
-#: blog/templates/zinnia/skeleton.html:8
-#: blog/templates/zinnia/skeleton.html:13 templates/_base.html:67
+#: blog/templates/zinnia/skeleton.html:8 templates/_base.html:73
 msgid "Articles"
 msgstr "Články"
 
-#: blog/templates/zinnia/tags/search_form.html:16
+#: blog/templates/zinnia/tags/search_form.html:18
 msgid ""
 "You can use - to exclude words or phrases, &quot;double quotes&quot; for "
 "exact phrases and the AND/OR boolean operators combined with parenthesis for"
 " complex queries."
 msgstr "Pro vyjmutí slov nebo frází můžete použít -, &quot;dvojité uvozovky&quot; pro přesné znění fráze a booleovské operátory AND/OR spolu se závorkami pro složitější dotazy."
 
-#: compat/templates/compat-list.html:8
+#: compat/templates/compat-list.html:9
 msgid ""
 "The Dolphin Emulator compatibility list contains all the games we tested, "
 "sorted by how well they work on the emulator."
 msgstr "Seznam kompatibility emulátoru Dolphin obsahuje všechny vyzkoušené hry, seřazené podle toho, jako dobře fungují v emulátoru."
 
-#: compat/templates/compat-list.html:10
+#: compat/templates/compat-list.html:11
 #, python-format
 msgid "Compatibility List - page %(page)s"
 msgstr "Seznam kompatibility - stránka %(page)s"
 
-#: compat/templates/compat-list.html:22
+#: compat/templates/compat-list.html:23
 msgid "How to read the ratings"
 msgstr "Co hodnocení znamenají"
 
-#: compat/templates/compat-list.html:25
+#: compat/templates/compat-list.html:26
 msgid "5 out of 5"
 msgstr "5 z 5"
 
-#: compat/templates/compat-list.html:25
+#: compat/templates/compat-list.html:26
 msgid "<strong>Perfect</strong>: No issues at all!"
 msgstr "<strong>Skvělé</strong>: Bez problémů!"
 
-#: compat/templates/compat-list.html:26
+#: compat/templates/compat-list.html:27
 msgid "4 out of 5"
 msgstr "4 z 5"
 
-#: compat/templates/compat-list.html:26
+#: compat/templates/compat-list.html:27
 msgid ""
 "<strong>Playable</strong>: Runs well, only minor graphical or audio "
 "glitches. Games can be played all the way through."
 msgstr "<strong>Lze hrát</strong>: Hra běží dobře, pouze drobné grafické nebo zvukové chyby. Hry je možné hrát od začátku do konce."
 
-#: compat/templates/compat-list.html:27
+#: compat/templates/compat-list.html:28
 msgid "3 out of 5"
 msgstr "3 z 5"
 
-#: compat/templates/compat-list.html:27
+#: compat/templates/compat-list.html:28
 msgid ""
 "<strong>Starts</strong>: Starts, maybe even plays well, but crashes or major"
 " graphical/audio glitches."
 msgstr "<strong>Lze spustit</strong>: Hru lze spustit, možná i hrát, po určité době se ale hra zhroutí. nebo má vážné grafické/zvukové chyby."
 
-#: compat/templates/compat-list.html:28
+#: compat/templates/compat-list.html:29
 msgid "2 out of 5"
 msgstr "2 z 5"
 
-#: compat/templates/compat-list.html:28
+#: compat/templates/compat-list.html:29
 msgid ""
 "<strong>Intro/Menu</strong>: Hangs/crashes somewhere between booting and "
 "starting."
 msgstr "<strong>Úvod/Menu</strong>: Hra se zasekne/zhroutí někde mezi načtením a spuštěním."
 
-#: compat/templates/compat-list.html:29
+#: compat/templates/compat-list.html:30
 msgid "1 out of 5"
 msgstr "1 z 5"
 
-#: compat/templates/compat-list.html:29
+#: compat/templates/compat-list.html:30
 msgid "<strong>Broken</strong>: Crashes when booting."
 msgstr "<strong>Nefunkční</strong>: Při načítání dojde ke zhroucení."
 
-#: compat/templates/compat-list.html:36
+#: compat/templates/compat-list.html:37
 msgid "Statistics"
 msgstr "Statistiky"
 
-#: compat/templates/compat-list.html:56
+#: compat/templates/compat-list.html:43
+msgid "Remove filter"
+msgstr "Odstranit filtr"
+
+#: compat/templates/compat-list.html:43
+msgid "Show all"
+msgstr "Zobrazit vše"
+
+#: compat/templates/compat-list.html:45
+msgid "Filter by this rating"
+msgstr "Filtrovat podle tohoto hodnocení"
+
+#: compat/templates/compat-list.html:45
+msgid "Filter"
+msgstr "Filtrovat"
+
+#: compat/templates/compat-list.html:65
 msgid "Game title (click for details)"
 msgstr "Název hry (klikněte pro podrobnosti)"
 
-#: compat/templates/compat-list.html:57
-#: homepage/templates/homepage-home.html:80 templates/_base.html:71
+#: compat/templates/compat-list.html:66
+#: homepage/templates/homepage-home.html:95 templates/_base.html:77
 msgid "Compatibility"
 msgstr "Kompatibilita"
 
-#: compat/templates/compat-list.html:58
+#: compat/templates/compat-list.html:67
 msgid "Last updated"
 msgstr "Poslední aktualizace"
 
-#: compat/templatetags/compat.py:7
+#: compat/templates/compat-list.html:84
+msgid "Your query does not match any game."
+msgstr "Váš dotaz neodpovídá žádné hře."
+
+#: compat/templatetags/compat.py:9
 msgid "Unknown"
 msgstr "Neznámé"
 
-#: compat/templatetags/compat.py:8
+#: compat/templatetags/compat.py:10
 msgid "Broken"
 msgstr "Nefunkční"
 
-#: compat/templatetags/compat.py:9
+#: compat/templatetags/compat.py:11
 msgid "Intro/Menu"
 msgstr "Úvod/Menu"
 
-#: compat/templatetags/compat.py:10
+#: compat/templatetags/compat.py:12
 msgid "Starts"
 msgstr "Lze spustit"
 
-#: compat/templatetags/compat.py:11
+#: compat/templatetags/compat.py:13
 msgid "Playable"
 msgstr "Lze hrát"
 
-#: compat/templatetags/compat.py:12
+#: compat/templatetags/compat.py:14
 msgid "Perfect"
 msgstr "Skvělé"
 
@@ -429,7 +445,7 @@ msgstr "Oficiální seznam nejčastějších otázek pro Dolphin odpovídá na o
 msgid "Frequently Asked Questions"
 msgstr "Nejčastěji kladené otázky"
 
-#: docs/templates/docs-guide.html:11
+#: docs/templates/docs-guide.html:12
 msgid "Go back to the guides list"
 msgstr "Zpět na seznam příruček"
 
@@ -437,7 +453,7 @@ msgstr "Zpět na seznam příruček"
 msgid "See all the guides written by the Dolphin team about the emulator."
 msgstr "Prohlédněte si všechny příručky o emulátoru od týmu Dolphin."
 
-#: docs/templates/docs-guides-index.html:7 templates/_base.html:70
+#: docs/templates/docs-guides-index.html:7 templates/_base.html:76
 msgid "Guides"
 msgstr "Příručky"
 
@@ -449,10 +465,21 @@ msgstr "Příručky a dokumentace"
 msgid "No published guide available"
 msgstr "Žádné zveřejněné příručky"
 
-#: downloads/models.py:32 downloads/models.py:50
+#: downloads/models.py:40 downloads/models.py:57
 #, python-format
 msgid "Dolphin %s"
 msgstr "Dolphin %s"
+
+#: downloads/models.py:81
+msgid "Change with no description"
+msgstr "Změna bez popisu"
+
+#: downloads/models.py:84
+#, python-format
+msgid ""
+"(<a href=\"%(pr_url)s\">PR #%(pr_id)s</a> from <a "
+"href=\"%(author_url)s\">%(author)s</a>)"
+msgstr "(<a href=\"%(pr_url)s\">PR #%(pr_id)s</a> od <a href=\"%(author_url)s\">%(author)s</a>)"
 
 #: downloads/templates/downloads-branches.html:5
 #: downloads/templates/downloads-branches.html:9
@@ -465,7 +492,7 @@ msgid "<tt>%(branch)s</tt> branch"
 msgstr "větev <tt>%(branch)s</tt>"
 
 #: downloads/templates/downloads-branches.html:21
-#: downloads/templates/downloads-index.html:91
+#: downloads/templates/downloads-index.html:42
 msgid "View older versions »"
 msgstr "Zobrazit starší verze »"
 
@@ -485,31 +512,15 @@ msgid ""
 msgstr "Stáhnout nejnovější verzi emulátoru Dolphin (%(ver)s) z oficiálních stránek."
 
 #: downloads/templates/downloads-index.html:8
-#: downloads/templates/downloads-index.html:27 templates/_base.html:66
+#: downloads/templates/downloads-index.html:27 templates/_base.html:72
 msgid "Download"
 msgstr "Stáhnout"
 
 #: downloads/templates/downloads-index.html:31
-msgid "Stable versions"
-msgstr "Stabilní verze"
-
-#: downloads/templates/downloads-index.html:33
-msgid ""
-"\n"
-"    Stable versions are released after a lot of testing to ensure emulation\n"
-"    performance and stability. However, since they are released less often,\n"
-"    they might be outdated and lacking some new features.\n"
-msgstr "\n    Stabilní verze jsou vydávány po mnoha testech zajišťující výkon a stabilitu\n    emulace. Protože jsou tyto verze vydávány po určité době, mohou\n    být zastaralé a bez některých nových funkcí.\n"
-
-#: downloads/templates/downloads-index.html:55
-msgid "No stable release yet"
-msgstr "Zatím žádná stabilní verze"
-
-#: downloads/templates/downloads-index.html:76
 msgid "Development versions"
 msgstr "Vývojové verze"
 
-#: downloads/templates/downloads-index.html:78
+#: downloads/templates/downloads-index.html:33
 msgid ""
 "\n"
 "    Development versions are released every time a developer makes a change to\n"
@@ -518,19 +529,27 @@ msgid ""
 "    less tested than stable versions of the emulator.\n"
 msgstr "\n    Vývojové verze jsou vydávány pokaždé když vývojář provede změny v Dolphin\n    a to i několikrát za den! Použitím vývojových verzí můžete získat\n    nejnovější vylepšení v projektu. Tyto verze ale podstupují méně testů, než\n    stabilní verze emulátoru.\n"
 
-#: downloads/templates/downloads-index.html:85
-msgid "Only displaying the <tt>master</tt> branch versions."
-msgstr "Zobrazovány pouze verze z větve <tt>master</tt>."
+#: downloads/templates/downloads-index.html:60
+msgid "Stable versions"
+msgstr "Stabilní verze"
 
-#: downloads/templates/downloads-index.html:86
-msgid "Show all available branches"
-msgstr "Zobrazit všechny dostupné větve"
+#: downloads/templates/downloads-index.html:62
+msgid ""
+"\n"
+"    Stable versions are released after a lot of testing to ensure emulation\n"
+"    performance and stability. However, since they are released less often,\n"
+"    they might be outdated and lacking some new features.\n"
+msgstr "\n    Stabilní verze jsou vydávány po mnoha testech zajišťující výkon a stabilitu\n    emulace. Protože jsou tyto verze vydávány po určité době, mohou\n    být zastaralé a bez některých nových funkcí.\n"
 
-#: downloads/templates/downloads-index.html:95
+#: downloads/templates/downloads-index.html:84
+msgid "No stable release yet"
+msgstr "Zatím žádná stabilní verze"
+
+#: downloads/templates/downloads-index.html:91
 msgid "Source code"
 msgstr "Zdrojový kód"
 
-#: downloads/templates/downloads-index.html:97
+#: downloads/templates/downloads-index.html:93
 msgid ""
 "\n"
 "    The latest version of the Dolphin source code can be downloaded from the\n"
@@ -538,7 +557,7 @@ msgid ""
 "    "
 msgstr "\n    Nejnovější verze zdrojového kódu Dolphin může být stažena z úložiště\n    projektu Git.\n    "
 
-#: downloads/templates/downloads-index.html:105
+#: downloads/templates/downloads-index.html:101
 #, python-format
 msgid ""
 "\n"
@@ -546,11 +565,11 @@ msgid ""
 "    "
 msgstr "\n    Můžete si také <a href=\"%(GIT_BROWSE_URL)s\">prohlédnout nejnovější verzi zdrojového kódu</a>.\n    "
 
-#: downloads/templates/downloads-index.html:112
+#: downloads/templates/downloads-index.html:108
 msgid "Reporting bugs"
 msgstr "Hlášení chyb"
 
-#: downloads/templates/downloads-index.html:114
+#: downloads/templates/downloads-index.html:110
 #, python-format
 msgid ""
 "\n"
@@ -603,22 +622,23 @@ msgstr "Autor změny"
 msgid "Change description"
 msgstr "Popis změny"
 
-#: homepage/templates/homepage-home.html:11
+#: homepage/templates/homepage-home.html:12
 #, python-format
 msgid ""
 "Official website of Dolphin, the GameCube and Wii emulator. Download the "
 "latest version (%(ver)s) now or ask questions on our forums for help."
 msgstr "Oficiální stránka programu Dolphin, emulátora konzolí GameCube a Wii. Stáhněte si nejnovější verzi (%(ver)s), nebo, pokud máte nějaké otázky, se ptejte na našem fóru."
 
-#: homepage/templates/homepage-home.html:13
+#: homepage/templates/homepage-home.html:14
 msgid "GameCube/Wii games on PC"
 msgstr "Hry GameCube/Wii na PC"
 
-#: homepage/templates/homepage-home.html:30 templates/_base.html:62
+#: homepage/templates/homepage-home.html:37 templates/_base.html:10
+#: templates/_base.html.py:68
 msgid "Dolphin Emulator"
 msgstr "Emulátor Dolphin"
 
-#: homepage/templates/homepage-home.html:32
+#: homepage/templates/homepage-home.html:39
 msgid ""
 "\n"
 "            <b>Dolphin</b> is an emulator for two recent Nintendo video game\n"
@@ -629,43 +649,43 @@ msgid ""
 "            "
 msgstr "\n            <b>Dolphin</b> je emulátor pro dvě nedávné herní konzole od Nintenda:\n            <b>GameCube</b> a <b>Wii</b>. Umožňuje hráčům na PC spouštět\n            hry pro tyto dvě konzole v <b>plném HD rozlišení</b> (1080p) s několika\n            vylepšeními: kompatibilita se všemi ovladači PC, turbo rychlost,\n            hru více hráčů po síti a mnoho dalších!\n            "
 
-#: homepage/templates/homepage-home.html:41
+#: homepage/templates/homepage-home.html:48
 #, python-format
 msgid "Download %(last_release)s for Windows, Mac and Linux »"
 msgstr "Stáhnout %(last_release)s pro Windows, Mac a Linux »"
 
-#: homepage/templates/homepage-home.html:93
+#: homepage/templates/homepage-home.html:108
 msgid "RSS feed of the latest articles"
 msgstr "RSS kanál nejnovějších článků"
 
-#: homepage/templates/homepage-home.html:94
+#: homepage/templates/homepage-home.html:109
 msgid "Latest articles"
 msgstr "Poslední články"
 
-#: homepage/templates/homepage-home.html:121
+#: homepage/templates/homepage-home.html:136
 #, python-format
-msgid "/ Part of serie <a href=\"%(url)s\">%(name)s</a>"
+msgid "/ Part of series <a href=\"%(url)s\">%(name)s</a>"
 msgstr "/ Součástí řady <a href=\"%(url)s\">%(name)s</a>"
 
-#: homepage/templates/homepage-home.html:128
+#: homepage/templates/homepage-home.html:143
 msgid "Read this article"
 msgstr "Přečíst tento článek"
 
-#: homepage/templates/homepage-home.html:132
+#: homepage/templates/homepage-home.html:147
 msgid "No articles yet."
 msgstr "Zatím žádné články."
 
-#: media/templates/media-all.html:6
+#: media/templates/media-all.html:7
 msgid ""
 "View all the user-contributed screenshots of the Dolphin Emulator: GameCube "
 "and Wii games in HD."
 msgstr "Prohlédněte si všechny snímky obrazovky emulátoru Dolphin od uživatelů. Hry na GameCube a Wii v HD rozlišení."
 
-#: media/templates/media-all.html:8
+#: media/templates/media-all.html:9
 msgid "Screenshots gallery"
 msgstr "Galerie snímků obrazovky"
 
-#: media/templates/media-all.html:12
+#: media/templates/media-all.html:31
 msgid "Media gallery"
 msgstr "Galerie médií"
 
@@ -687,35 +707,31 @@ msgid ""
 " in a few seconds."
 msgstr "Při pokusu o přístup na tuto stránku došlo k chybě. Prosím zkuste to za chvíli znovu."
 
-#: templates/_base.html:10
-msgid "Official Dolphin Emulator Website"
-msgstr "Oficiální stránka emulátoru Dolphin"
-
 #: templates/_base.html:23
 msgid "Latest blog articles"
 msgstr "Nejnovější články blogu"
 
-#: templates/_base.html:68
+#: templates/_base.html:74
 msgid "Screenshots"
 msgstr "Snímky obrazovky"
 
-#: templates/_base.html:69
+#: templates/_base.html:75
 msgid "FAQ"
 msgstr "Nejčastější otázky"
 
-#: templates/_base.html:72
+#: templates/_base.html:78
 msgid "Forum"
 msgstr "Fórum"
 
-#: templates/_base.html:73
+#: templates/_base.html:79
 msgid "Wiki"
 msgstr "Wiki"
 
-#: templates/_base.html:74
+#: templates/_base.html:80
 msgid "Code"
 msgstr "Zdrojový kód"
 
-#: templates/_base.html:110
+#: templates/_base.html:116
 #, python-format
 msgid ""
 "\n"

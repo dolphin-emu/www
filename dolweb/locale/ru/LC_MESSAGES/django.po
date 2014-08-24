@@ -3,18 +3,18 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# delroth <delroth@gmail.com>, 2013
-# N69 <nanoposan69@gmail.com>, 2013
-# N69 <nanoposan69@gmail.com>, 2013
-# N69 <nanoposan69@gmail.com>, 2013
-# delroth <delroth@gmail.com>, 2013
+# Pierre Bourdon <delroth@gmail.com>, 2013
+# dffggff <nanoposan69@gmail.com>, 2013
+# dffggff <nanoposan69@gmail.com>, 2013
+# dffggff <nanoposan69@gmail.com>, 2013
+# Pierre Bourdon <delroth@gmail.com>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-02-08 20:04+0100\n"
-"PO-Revision-Date: 2014-02-08 19:06+0000\n"
-"Last-Translator: delroth <delroth@gmail.com>\n"
+"POT-Creation-Date: 2014-08-24 12:37+0200\n"
+"PO-Revision-Date: 2014-06-23 02:26+0000\n"
+"Last-Translator: Pierre Bourdon <delroth@gmail.com>\n"
 "Language-Team: Russian (http://www.transifex.com/projects/p/dolphin-emu/language/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -28,13 +28,13 @@ msgstr "Содержимое"
 
 #: blog/feeds.py:24
 #, python-format
-msgid "Entries for the serie %s"
-msgstr "Записи в этих группах %s"
+msgid "Entries for the series %s"
+msgstr ""
 
 #: blog/feeds.py:27
 #, python-format
-msgid "The latest entries for the serie %s"
-msgstr "Последние записи в этих группах %s"
+msgid "The latest entries for the series %s"
+msgstr ""
 
 #: blog/models.py:16
 msgid "image"
@@ -45,7 +45,7 @@ msgid "Used for illustration."
 msgstr "Использовать для показа"
 
 #: blog/templates/blog_sidebar.html:6
-#: blog/templates/zinnia/tags/search_form.html:5
+#: blog/templates/zinnia/tags/search_form.html:7
 msgid "Search articles"
 msgstr "Найти статьи"
 
@@ -54,6 +54,7 @@ msgid "Blog tags"
 msgstr "Теги"
 
 #: blog/templates/blog_sidebar.html:36
+#: blog/templates/zinnia/_entry_detail_base.html:78
 msgid "Blog series"
 msgstr "Группа блогов"
 
@@ -65,15 +66,15 @@ msgstr "Посмотреть всё"
 #, python-format
 msgid ""
 "\n"
-"    %(count)s entrie\n"
+"    %(count)s entry\n"
 "  "
 msgid_plural ""
 "\n"
 "    %(count)s entries\n"
 "  "
-msgstr[0] "\n%(count)s запись"
-msgstr[1] "\n%(count)s записей"
-msgstr[2] "\n%(count)s записей"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
 
 #: blog/templates/series-index.html:27
 msgid "RSS feed:"
@@ -84,23 +85,23 @@ msgid "No blog series yet."
 msgstr "Нету блогов этой группы"
 
 #: blog/templates/zinnia/_entry_detail_base.html:21
-#: homepage/templates/homepage-home.html:107
+#: homepage/templates/homepage-home.html:122
 msgid "Written by"
 msgstr "Написано"
 
 #: blog/templates/zinnia/_entry_detail_base.html:25
-#: homepage/templates/homepage-home.html:111
+#: homepage/templates/homepage-home.html:126
 #, python-format
 msgid "Show all %(author)s's entries"
 msgstr "Показать все записи этого %(author)s's"
 
 #: blog/templates/zinnia/_entry_detail_base.html:27
-#: homepage/templates/homepage-home.html:113
+#: homepage/templates/homepage-home.html:128
 msgid "on"
 msgstr "в"
 
 #: blog/templates/zinnia/_entry_detail_base.html:29
-#: homepage/templates/homepage-home.html:115
+#: homepage/templates/homepage-home.html:130
 msgid "Written on"
 msgstr "Написано в"
 
@@ -118,12 +119,12 @@ msgid "Short link"
 msgstr "Короткая ссылка"
 
 #: blog/templates/zinnia/_entry_detail_base.html:41
-#: homepage/templates/homepage-home.html:123
+#: homepage/templates/homepage-home.html:138
 msgid "Visit forum thread for this article"
 msgstr "Тема на форуме для этой статьи"
 
 #: blog/templates/zinnia/_entry_detail_base.html:41
-#: homepage/templates/homepage-home.html:123
+#: homepage/templates/homepage-home.html:138
 msgid "Forum thread"
 msgstr "Тема на форуме"
 
@@ -143,24 +144,20 @@ msgid ""
 "forum thread for this article\">forum thread</a> of this article."
 msgstr "Вы можете продолжить обсуждение на <a href=\"%(url)s\" title=\"Посетить тему на форуме\">форуме</a> этой статьи."
 
-#: blog/templates/zinnia/_entry_detail_base.html:78
-msgid "Blog serie"
-msgstr "Группа блогов"
-
 #: blog/templates/zinnia/_entry_detail_base.html:80
 #, python-format
 msgid ""
-"This article is number %(nth)s within the blog serie\n"
-"    <a href=\"%(url)s\"><em>%(serie)s</em></a>."
-msgstr "Эта статья имеет номер %(nth)s и находится в группе блогов\n <a href=\"%(url)s\"><em>%(serie)s</em></a>"
+"This article is number %(nth)s within the blog series\n"
+"    <a href=\"%(url)s\"><em>%(series)s</em></a>."
+msgstr ""
 
 #: blog/templates/zinnia/_entry_detail_base.html:85
-msgid "‹ Previous article in serie"
-msgstr "‹ Предыдущая статья в группе"
+msgid "‹ Previous article in series"
+msgstr ""
 
 #: blog/templates/zinnia/_entry_detail_base.html:87
-msgid "Next article in serie ›"
-msgstr "Следующая статья в группе ›"
+msgid "Next article in series ›"
+msgstr ""
 
 #: blog/templates/zinnia/_entry_detail_base.html:137
 msgid "Tags"
@@ -309,117 +306,136 @@ msgstr "Изменить автора"
 msgid "Latest news for Dolphin Emulator"
 msgstr "Последние новости о Dolphin Emulator"
 
-#: blog/templates/zinnia/skeleton.html:8
-#: blog/templates/zinnia/skeleton.html:13 templates/_base.html:67
+#: blog/templates/zinnia/skeleton.html:8 templates/_base.html:73
 msgid "Articles"
 msgstr "Статьи"
 
-#: blog/templates/zinnia/tags/search_form.html:16
+#: blog/templates/zinnia/tags/search_form.html:18
 msgid ""
 "You can use - to exclude words or phrases, &quot;double quotes&quot; for "
 "exact phrases and the AND/OR boolean operators combined with parenthesis for"
 " complex queries."
 msgstr "Вы можете использовать для исключения слов или фраз \"двойные кавычки\" для определенных фраз и AND/OR бинарныe операторы комбинируя с предложениями для комлексных запросов."
 
-#: compat/templates/compat-list.html:8
+#: compat/templates/compat-list.html:9
 msgid ""
 "The Dolphin Emulator compatibility list contains all the games we tested, "
 "sorted by how well they work on the emulator."
 msgstr "Лист совместимости эмулятора Dolphin, показывает все игры которые были протестированы, и как они работают на нем."
 
-#: compat/templates/compat-list.html:10
+#: compat/templates/compat-list.html:11
 #, python-format
 msgid "Compatibility List - page %(page)s"
 msgstr "Лист совместимости - страница %(page)s"
 
-#: compat/templates/compat-list.html:22
+#: compat/templates/compat-list.html:23
 msgid "How to read the ratings"
 msgstr "Что означают рейтинги"
 
-#: compat/templates/compat-list.html:25
+#: compat/templates/compat-list.html:26
 msgid "5 out of 5"
 msgstr "5 из 5"
 
-#: compat/templates/compat-list.html:25
+#: compat/templates/compat-list.html:26
 msgid "<strong>Perfect</strong>: No issues at all!"
 msgstr "<strong>Отлично</strong>: Никаких проблем в эмуляции!"
 
-#: compat/templates/compat-list.html:26
+#: compat/templates/compat-list.html:27
 msgid "4 out of 5"
 msgstr "4 из 5"
 
-#: compat/templates/compat-list.html:26
+#: compat/templates/compat-list.html:27
 msgid ""
 "<strong>Playable</strong>: Runs well, only minor graphical or audio "
 "glitches. Games can be played all the way through."
 msgstr "<strong>Играбельно</strong>: Игра работает, но могут быть графические или аудио глюки. В такие игры можно поиграть, и даже пройти."
 
-#: compat/templates/compat-list.html:27
+#: compat/templates/compat-list.html:28
 msgid "3 out of 5"
 msgstr "3 из 5"
 
-#: compat/templates/compat-list.html:27
+#: compat/templates/compat-list.html:28
 msgid ""
 "<strong>Starts</strong>: Starts, maybe even plays well, but crashes or major"
 " graphical/audio glitches."
 msgstr "<strong>Запускается</strong>: Запускается, доходя до игрового процесса, однако происходит вылет, или имеются серьезные графические/аудио глюки."
 
-#: compat/templates/compat-list.html:28
+#: compat/templates/compat-list.html:29
 msgid "2 out of 5"
 msgstr "2 из 5"
 
-#: compat/templates/compat-list.html:28
+#: compat/templates/compat-list.html:29
 msgid ""
 "<strong>Intro/Menu</strong>: Hangs/crashes somewhere between booting and "
 "starting."
 msgstr "<strong>Ролики/меню</strong>: Зависает/вылетает обычно после загрузки."
 
-#: compat/templates/compat-list.html:29
+#: compat/templates/compat-list.html:30
 msgid "1 out of 5"
 msgstr "1 из 5"
 
-#: compat/templates/compat-list.html:29
+#: compat/templates/compat-list.html:30
 msgid "<strong>Broken</strong>: Crashes when booting."
 msgstr "<strong>Ничего</strong>: Не запускается"
 
-#: compat/templates/compat-list.html:36
+#: compat/templates/compat-list.html:37
 msgid "Statistics"
 msgstr "Статистика"
 
-#: compat/templates/compat-list.html:56
+#: compat/templates/compat-list.html:43
+msgid "Remove filter"
+msgstr ""
+
+#: compat/templates/compat-list.html:43
+msgid "Show all"
+msgstr ""
+
+#: compat/templates/compat-list.html:45
+msgid "Filter by this rating"
+msgstr ""
+
+#: compat/templates/compat-list.html:45
+msgid "Filter"
+msgstr ""
+
+#: compat/templates/compat-list.html:65
 msgid "Game title (click for details)"
 msgstr "Название игры (кликните для подробностей)"
 
-#: compat/templates/compat-list.html:57
-#: homepage/templates/homepage-home.html:80 templates/_base.html:71
+#: compat/templates/compat-list.html:66
+#: homepage/templates/homepage-home.html:95 templates/_base.html:77
 msgid "Compatibility"
 msgstr "Совместимость"
 
-#: compat/templates/compat-list.html:58
+#: compat/templates/compat-list.html:67
 msgid "Last updated"
 msgstr "Последние обновление"
 
-#: compat/templatetags/compat.py:7
+#: compat/templates/compat-list.html:84
+msgid "Your query does not match any game."
+msgstr ""
+
+#: compat/templatetags/compat.py:9
 msgid "Unknown"
 msgstr "Неизвестно"
 
-#: compat/templatetags/compat.py:8
+#: compat/templatetags/compat.py:10
 msgid "Broken"
 msgstr "Ничего"
 
-#: compat/templatetags/compat.py:9
+#: compat/templatetags/compat.py:11
 msgid "Intro/Menu"
 msgstr "Ролики/меню"
 
-#: compat/templatetags/compat.py:10
+#: compat/templatetags/compat.py:12
 msgid "Starts"
 msgstr "Запускается"
 
-#: compat/templatetags/compat.py:11
+#: compat/templatetags/compat.py:13
 msgid "Playable"
 msgstr "Играбельно"
 
-#: compat/templatetags/compat.py:12
+#: compat/templatetags/compat.py:14
 msgid "Perfect"
 msgstr "Отлично"
 
@@ -433,7 +449,7 @@ msgstr "Официальное ЧАВО эмулятора Dolphin ответи�
 msgid "Frequently Asked Questions"
 msgstr "Часто Задаваемые Вопросы "
 
-#: docs/templates/docs-guide.html:11
+#: docs/templates/docs-guide.html:12
 msgid "Go back to the guides list"
 msgstr "Вернуться к списку руководств"
 
@@ -441,7 +457,7 @@ msgstr "Вернуться к списку руководств"
 msgid "See all the guides written by the Dolphin team about the emulator."
 msgstr "Посмотреть все руководства написанные командой разработчиков об эмуляторе"
 
-#: docs/templates/docs-guides-index.html:7 templates/_base.html:70
+#: docs/templates/docs-guides-index.html:7 templates/_base.html:76
 msgid "Guides"
 msgstr "Инструкции"
 
@@ -453,10 +469,21 @@ msgstr "Руководства"
 msgid "No published guide available"
 msgstr "Нет доступных руководств"
 
-#: downloads/models.py:32 downloads/models.py:50
+#: downloads/models.py:40 downloads/models.py:57
 #, python-format
 msgid "Dolphin %s"
 msgstr "Dolphin %s"
+
+#: downloads/models.py:81
+msgid "Change with no description"
+msgstr ""
+
+#: downloads/models.py:84
+#, python-format
+msgid ""
+"(<a href=\"%(pr_url)s\">PR #%(pr_id)s</a> from <a "
+"href=\"%(author_url)s\">%(author)s</a>)"
+msgstr ""
 
 #: downloads/templates/downloads-branches.html:5
 #: downloads/templates/downloads-branches.html:9
@@ -469,7 +496,7 @@ msgid "<tt>%(branch)s</tt> branch"
 msgstr "<tt>%(branch)s</tt> Ветви"
 
 #: downloads/templates/downloads-branches.html:21
-#: downloads/templates/downloads-index.html:91
+#: downloads/templates/downloads-index.html:42
 msgid "View older versions »"
 msgstr "Посмотреть предыдущие версии »"
 
@@ -489,31 +516,15 @@ msgid ""
 msgstr "Скачать последнюю версию эмулятора Dolphin (%(ver)s) с официального сайта"
 
 #: downloads/templates/downloads-index.html:8
-#: downloads/templates/downloads-index.html:27 templates/_base.html:66
+#: downloads/templates/downloads-index.html:27 templates/_base.html:72
 msgid "Download"
 msgstr "Загрузить"
 
 #: downloads/templates/downloads-index.html:31
-msgid "Stable versions"
-msgstr "Стабильные версии"
-
-#: downloads/templates/downloads-index.html:33
-msgid ""
-"\n"
-"    Stable versions are released after a lot of testing to ensure emulation\n"
-"    performance and stability. However, since they are released less often,\n"
-"    they might be outdated and lacking some new features.\n"
-msgstr "\nСтабильные версии выпускаются после долгого периода тестирования, чтобы обеспечить качественную эмуляцию, \n производительность и стабильность. Однако, поскольку они выпускаются реже, \n они могут быть устаревшими и в них может не хватать некоторых новых функций.\n"
-
-#: downloads/templates/downloads-index.html:55
-msgid "No stable release yet"
-msgstr "Стабильных версий сейчас нет"
-
-#: downloads/templates/downloads-index.html:76
 msgid "Development versions"
 msgstr "Разрабатываемые версии "
 
-#: downloads/templates/downloads-index.html:78
+#: downloads/templates/downloads-index.html:33
 msgid ""
 "\n"
 "    Development versions are released every time a developer makes a change to\n"
@@ -522,19 +533,27 @@ msgid ""
 "    less tested than stable versions of the emulator.\n"
 msgstr "\nРазрабатываемые версии выпускаются каждый раз, когда разработчики вносят изменения в эмулятор. Используя последнюю версию, вы получаете самые полезные и современные улучшения в проекте. Однако их меньше, чем в стабильной версии.\n"
 
-#: downloads/templates/downloads-index.html:85
-msgid "Only displaying the <tt>master</tt> branch versions."
-msgstr "Показывать только  <tt>основную</tt> ветвь версий"
+#: downloads/templates/downloads-index.html:60
+msgid "Stable versions"
+msgstr "Стабильные версии"
 
-#: downloads/templates/downloads-index.html:86
-msgid "Show all available branches"
-msgstr "Показать все доступные ветви"
+#: downloads/templates/downloads-index.html:62
+msgid ""
+"\n"
+"    Stable versions are released after a lot of testing to ensure emulation\n"
+"    performance and stability. However, since they are released less often,\n"
+"    they might be outdated and lacking some new features.\n"
+msgstr "\nСтабильные версии выпускаются после долгого периода тестирования, чтобы обеспечить качественную эмуляцию, \n производительность и стабильность. Однако, поскольку они выпускаются реже, \n они могут быть устаревшими и в них может не хватать некоторых новых функций.\n"
 
-#: downloads/templates/downloads-index.html:95
+#: downloads/templates/downloads-index.html:84
+msgid "No stable release yet"
+msgstr "Стабильных версий сейчас нет"
+
+#: downloads/templates/downloads-index.html:91
 msgid "Source code"
 msgstr "Исходный код"
 
-#: downloads/templates/downloads-index.html:97
+#: downloads/templates/downloads-index.html:93
 msgid ""
 "\n"
 "    The latest version of the Dolphin source code can be downloaded from the\n"
@@ -542,7 +561,7 @@ msgid ""
 "    "
 msgstr "\n Последнюю версию исходного кода Dolphin, вы можете  загрузить с\n Git repository."
 
-#: downloads/templates/downloads-index.html:105
+#: downloads/templates/downloads-index.html:101
 #, python-format
 msgid ""
 "\n"
@@ -550,11 +569,11 @@ msgid ""
 "    "
 msgstr ""
 
-#: downloads/templates/downloads-index.html:112
+#: downloads/templates/downloads-index.html:108
 msgid "Reporting bugs"
 msgstr ""
 
-#: downloads/templates/downloads-index.html:114
+#: downloads/templates/downloads-index.html:110
 #, python-format
 msgid ""
 "\n"
@@ -607,22 +626,23 @@ msgstr "Изменить автора"
 msgid "Change description"
 msgstr "Изменить описание"
 
-#: homepage/templates/homepage-home.html:11
+#: homepage/templates/homepage-home.html:12
 #, python-format
 msgid ""
 "Official website of Dolphin, the GameCube and Wii emulator. Download the "
 "latest version (%(ver)s) now or ask questions on our forums for help."
 msgstr "Официальный сайт Dolphin, эмулятора GameCube и Wii. Скачать последнюю версию (%(ver)s) сейчас, или вы можете задать свой вопрос на форуме для получения помощи."
 
-#: homepage/templates/homepage-home.html:13
+#: homepage/templates/homepage-home.html:14
 msgid "GameCube/Wii games on PC"
 msgstr "Игры от GameCube/Wii на ПК"
 
-#: homepage/templates/homepage-home.html:30 templates/_base.html:62
+#: homepage/templates/homepage-home.html:37 templates/_base.html:10
+#: templates/_base.html.py:68
 msgid "Dolphin Emulator"
 msgstr "Dolphin Emulator"
 
-#: homepage/templates/homepage-home.html:32
+#: homepage/templates/homepage-home.html:39
 msgid ""
 "\n"
 "            <b>Dolphin</b> is an emulator for two recent Nintendo video game\n"
@@ -633,43 +653,43 @@ msgid ""
 "            "
 msgstr "\n<b>Dolphin</b> это эмулятор двух игровых консолей от Nintendo:\n<b>GameCube</b> и <b>Wii</b>. Он позволяет ПК игрокам насладиться играми этих консолей в полном HD (1080p) c различными улучшениями: совместимость со всеми ПК, джойстики, повышение скорости, сетевой мультиплеер и т.д.!"
 
-#: homepage/templates/homepage-home.html:41
+#: homepage/templates/homepage-home.html:48
 #, python-format
 msgid "Download %(last_release)s for Windows, Mac and Linux »"
 msgstr "Загрузить %(last_release)s для Windows, Mac и Linux »"
 
-#: homepage/templates/homepage-home.html:93
+#: homepage/templates/homepage-home.html:108
 msgid "RSS feed of the latest articles"
 msgstr "RSS фид последних статей"
 
-#: homepage/templates/homepage-home.html:94
+#: homepage/templates/homepage-home.html:109
 msgid "Latest articles"
 msgstr "Последние статьи"
 
-#: homepage/templates/homepage-home.html:121
+#: homepage/templates/homepage-home.html:136
 #, python-format
-msgid "/ Part of serie <a href=\"%(url)s\">%(name)s</a>"
-msgstr "/ Часть группы <a href=\"%(url)s\">%(name)s</a>"
+msgid "/ Part of series <a href=\"%(url)s\">%(name)s</a>"
+msgstr ""
 
-#: homepage/templates/homepage-home.html:128
+#: homepage/templates/homepage-home.html:143
 msgid "Read this article"
 msgstr "Прочитать эту статью"
 
-#: homepage/templates/homepage-home.html:132
+#: homepage/templates/homepage-home.html:147
 msgid "No articles yet."
 msgstr "Статей нет"
 
-#: media/templates/media-all.html:6
+#: media/templates/media-all.html:7
 msgid ""
 "View all the user-contributed screenshots of the Dolphin Emulator: GameCube "
 "and Wii games in HD."
 msgstr "Посмотреть все пользовательские скриншоты из эмулятора Dolphin: Игры от GameCube и Wii в HD."
 
-#: media/templates/media-all.html:8
+#: media/templates/media-all.html:9
 msgid "Screenshots gallery"
 msgstr "Галерея скриншотов"
 
-#: media/templates/media-all.html:12
+#: media/templates/media-all.html:31
 msgid "Media gallery"
 msgstr "Галерея"
 
@@ -691,35 +711,31 @@ msgid ""
 " in a few seconds."
 msgstr "Возникла ошибка при загрузке этой страницы. Пожалуйста, обновите страницу через несколько секунд."
 
-#: templates/_base.html:10
-msgid "Official Dolphin Emulator Website"
-msgstr "Официальный сайт эмулятора Dolphin"
-
 #: templates/_base.html:23
 msgid "Latest blog articles"
 msgstr "Последние статьи в блогах"
 
-#: templates/_base.html:68
+#: templates/_base.html:74
 msgid "Screenshots"
 msgstr "Скриншоты"
 
-#: templates/_base.html:69
+#: templates/_base.html:75
 msgid "FAQ"
 msgstr "ЧАВО"
 
-#: templates/_base.html:72
+#: templates/_base.html:78
 msgid "Forum"
 msgstr "Форум"
 
-#: templates/_base.html:73
+#: templates/_base.html:79
 msgid "Wiki"
 msgstr "Энциклопедия"
 
-#: templates/_base.html:74
+#: templates/_base.html:80
 msgid "Code"
 msgstr "Код"
 
-#: templates/_base.html:110
+#: templates/_base.html:116
 #, python-format
 msgid ""
 "\n"

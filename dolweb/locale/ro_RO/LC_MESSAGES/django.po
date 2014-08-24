@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-02-08 20:04+0100\n"
-"PO-Revision-Date: 2014-05-30 07:22+0000\n"
+"POT-Creation-Date: 2014-08-24 12:37+0200\n"
+"PO-Revision-Date: 2014-06-25 08:20+0000\n"
 "Last-Translator: Arian - Cazare Muncitori <arianserv@gmail.com>\n"
 "Language-Team: Romanian (Romania) (http://www.transifex.com/projects/p/dolphin-emu/language/ro_RO/)\n"
 "MIME-Version: 1.0\n"
@@ -24,12 +24,12 @@ msgstr "Conținut"
 
 #: blog/feeds.py:24
 #, python-format
-msgid "Entries for the serie %s"
+msgid "Entries for the series %s"
 msgstr "Înregistrări pentru seria %s"
 
 #: blog/feeds.py:27
 #, python-format
-msgid "The latest entries for the serie %s"
+msgid "The latest entries for the series %s"
 msgstr "Ultimele înregistrări pentru seria %s"
 
 #: blog/models.py:16
@@ -41,7 +41,7 @@ msgid "Used for illustration."
 msgstr "Folosit pentru ilustrare"
 
 #: blog/templates/blog_sidebar.html:6
-#: blog/templates/zinnia/tags/search_form.html:5
+#: blog/templates/zinnia/tags/search_form.html:7
 msgid "Search articles"
 msgstr "Caută articole"
 
@@ -50,6 +50,7 @@ msgid "Blog tags"
 msgstr "Etichete blog"
 
 #: blog/templates/blog_sidebar.html:36
+#: blog/templates/zinnia/_entry_detail_base.html:78
 msgid "Blog series"
 msgstr "Serii blog"
 
@@ -61,7 +62,7 @@ msgstr "Vezi toate"
 #, python-format
 msgid ""
 "\n"
-"    %(count)s entrie\n"
+"    %(count)s entry\n"
 "  "
 msgid_plural ""
 "\n"
@@ -80,23 +81,23 @@ msgid "No blog series yet."
 msgstr "Nici-o serie de blog momentan"
 
 #: blog/templates/zinnia/_entry_detail_base.html:21
-#: homepage/templates/homepage-home.html:107
+#: homepage/templates/homepage-home.html:122
 msgid "Written by"
 msgstr "Scris de către"
 
 #: blog/templates/zinnia/_entry_detail_base.html:25
-#: homepage/templates/homepage-home.html:111
+#: homepage/templates/homepage-home.html:126
 #, python-format
 msgid "Show all %(author)s's entries"
 msgstr "Afișează toate înregistrările făcute de %(author)s"
 
 #: blog/templates/zinnia/_entry_detail_base.html:27
-#: homepage/templates/homepage-home.html:113
+#: homepage/templates/homepage-home.html:128
 msgid "on"
 msgstr "în"
 
 #: blog/templates/zinnia/_entry_detail_base.html:29
-#: homepage/templates/homepage-home.html:115
+#: homepage/templates/homepage-home.html:130
 msgid "Written on"
 msgstr "Scris în"
 
@@ -114,12 +115,12 @@ msgid "Short link"
 msgstr "Legătură Scurtă"
 
 #: blog/templates/zinnia/_entry_detail_base.html:41
-#: homepage/templates/homepage-home.html:123
+#: homepage/templates/homepage-home.html:138
 msgid "Visit forum thread for this article"
 msgstr "Vizitează tema de conversație de pe forum pentru acest articol"
 
 #: blog/templates/zinnia/_entry_detail_base.html:41
-#: homepage/templates/homepage-home.html:123
+#: homepage/templates/homepage-home.html:138
 msgid "Forum thread"
 msgstr "Temă de conversație forum"
 
@@ -139,23 +140,19 @@ msgid ""
 "forum thread for this article\">forum thread</a> of this article."
 msgstr "Poţi continua discuţia în <a href=\"%(url)s\" title=\"Visit forum thread for this article\">tema de pe forum</a> a acestui articol."
 
-#: blog/templates/zinnia/_entry_detail_base.html:78
-msgid "Blog serie"
-msgstr "Serie blog"
-
 #: blog/templates/zinnia/_entry_detail_base.html:80
 #, python-format
 msgid ""
-"This article is number %(nth)s within the blog serie\n"
-"    <a href=\"%(url)s\"><em>%(serie)s</em></a>."
-msgstr "Prezentul articol este numărul %(nth)s în cadrul seriei de blog \n<a href=\"%(url)s\"><em>%(serie)s</em></a>."
+"This article is number %(nth)s within the blog series\n"
+"    <a href=\"%(url)s\"><em>%(series)s</em></a>."
+msgstr "Prezentul articol este numărul %(nth)s  din cadrul seriei\n    <a href=\"%(url)s\"><em>%(series)s</em></a>."
 
 #: blog/templates/zinnia/_entry_detail_base.html:85
-msgid "‹ Previous article in serie"
-msgstr "‹ Articolul Precedent din serie"
+msgid "‹ Previous article in series"
+msgstr "‹ Articolul precedent din serie"
 
 #: blog/templates/zinnia/_entry_detail_base.html:87
-msgid "Next article in serie ›"
+msgid "Next article in series ›"
 msgstr "Următorul articol din serie ›"
 
 #: blog/templates/zinnia/_entry_detail_base.html:137
@@ -305,117 +302,136 @@ msgstr "Editează autorul"
 msgid "Latest news for Dolphin Emulator"
 msgstr "Ultimele noutăți despre Dolphin Emulator"
 
-#: blog/templates/zinnia/skeleton.html:8
-#: blog/templates/zinnia/skeleton.html:13 templates/_base.html:67
+#: blog/templates/zinnia/skeleton.html:8 templates/_base.html:73
 msgid "Articles"
 msgstr "Articole"
 
-#: blog/templates/zinnia/tags/search_form.html:16
+#: blog/templates/zinnia/tags/search_form.html:18
 msgid ""
 "You can use - to exclude words or phrases, &quot;double quotes&quot; for "
 "exact phrases and the AND/OR boolean operators combined with parenthesis for"
 " complex queries."
 msgstr "Poţi utiliza - pentru a exclude cuvinte sau fraze, &quot;ghilimele duble&quot; pentru fraze exacte ŞI/SAU operatorii de tip boolean combinat cu paranteze, pentru interogări complexe."
 
-#: compat/templates/compat-list.html:8
+#: compat/templates/compat-list.html:9
 msgid ""
 "The Dolphin Emulator compatibility list contains all the games we tested, "
 "sorted by how well they work on the emulator."
 msgstr "Lista de compatibilitate a Dolphin Emulator, conține toate jocurile testate de noi, sortate după cât de bine funcționează ele pe emulator."
 
-#: compat/templates/compat-list.html:10
+#: compat/templates/compat-list.html:11
 #, python-format
 msgid "Compatibility List - page %(page)s"
 msgstr "Lista de Compatibilitate - pagina %(page)s"
 
-#: compat/templates/compat-list.html:22
+#: compat/templates/compat-list.html:23
 msgid "How to read the ratings"
 msgstr "Cum să interpretezi clasificarea"
 
-#: compat/templates/compat-list.html:25
+#: compat/templates/compat-list.html:26
 msgid "5 out of 5"
 msgstr "5 din 5"
 
-#: compat/templates/compat-list.html:25
+#: compat/templates/compat-list.html:26
 msgid "<strong>Perfect</strong>: No issues at all!"
 msgstr "<strong>Perfect</strong>: Nu există nici-o problemă!"
 
-#: compat/templates/compat-list.html:26
+#: compat/templates/compat-list.html:27
 msgid "4 out of 5"
 msgstr "4 din 5"
 
-#: compat/templates/compat-list.html:26
+#: compat/templates/compat-list.html:27
 msgid ""
 "<strong>Playable</strong>: Runs well, only minor graphical or audio "
 "glitches. Games can be played all the way through."
 msgstr "<strong>Se poate juca</strong>: Funcţionează bine, are doar câteva defecte minore grafice sau audio. Jocurile pot fi totuși jucate până la capăt."
 
-#: compat/templates/compat-list.html:27
+#: compat/templates/compat-list.html:28
 msgid "3 out of 5"
 msgstr "3 din 5"
 
-#: compat/templates/compat-list.html:27
+#: compat/templates/compat-list.html:28
 msgid ""
 "<strong>Starts</strong>: Starts, maybe even plays well, but crashes or major"
 " graphical/audio glitches."
 msgstr "<strong>Porneşte</strong>: Porneşte, se poate chiar juca bine, dar se blochează sau are scăpări grafice/audio majore."
 
-#: compat/templates/compat-list.html:28
+#: compat/templates/compat-list.html:29
 msgid "2 out of 5"
 msgstr "2 din 5"
 
-#: compat/templates/compat-list.html:28
+#: compat/templates/compat-list.html:29
 msgid ""
 "<strong>Intro/Menu</strong>: Hangs/crashes somewhere between booting and "
 "starting."
 msgstr "<strong>Intro/Meniu </strong>: Se suspendă/blochează undeva între lansare şi pornire."
 
-#: compat/templates/compat-list.html:29
+#: compat/templates/compat-list.html:30
 msgid "1 out of 5"
 msgstr "1 din 5"
 
-#: compat/templates/compat-list.html:29
+#: compat/templates/compat-list.html:30
 msgid "<strong>Broken</strong>: Crashes when booting."
 msgstr "<strong>Defect</strong>: Are avarii la pornire."
 
-#: compat/templates/compat-list.html:36
+#: compat/templates/compat-list.html:37
 msgid "Statistics"
 msgstr "Statistici"
 
-#: compat/templates/compat-list.html:56
+#: compat/templates/compat-list.html:43
+msgid "Remove filter"
+msgstr "Elimină filtrul"
+
+#: compat/templates/compat-list.html:43
+msgid "Show all"
+msgstr "Afișează tot"
+
+#: compat/templates/compat-list.html:45
+msgid "Filter by this rating"
+msgstr "Filtrare după această evaluare"
+
+#: compat/templates/compat-list.html:45
+msgid "Filter"
+msgstr "Filtrare"
+
+#: compat/templates/compat-list.html:65
 msgid "Game title (click for details)"
 msgstr "Titlu Joc (apasă pentru detalii)"
 
-#: compat/templates/compat-list.html:57
-#: homepage/templates/homepage-home.html:80 templates/_base.html:71
+#: compat/templates/compat-list.html:66
+#: homepage/templates/homepage-home.html:95 templates/_base.html:77
 msgid "Compatibility"
 msgstr "Compatibilitate"
 
-#: compat/templates/compat-list.html:58
+#: compat/templates/compat-list.html:67
 msgid "Last updated"
 msgstr "Ultima actualizare"
 
-#: compat/templatetags/compat.py:7
+#: compat/templates/compat-list.html:84
+msgid "Your query does not match any game."
+msgstr "Căutarea ta nu se potrivește cu nici un joc."
+
+#: compat/templatetags/compat.py:9
 msgid "Unknown"
 msgstr "Necunoscut"
 
-#: compat/templatetags/compat.py:8
+#: compat/templatetags/compat.py:10
 msgid "Broken"
 msgstr "Defect"
 
-#: compat/templatetags/compat.py:9
+#: compat/templatetags/compat.py:11
 msgid "Intro/Menu"
 msgstr "Intro/Meniu"
 
-#: compat/templatetags/compat.py:10
+#: compat/templatetags/compat.py:12
 msgid "Starts"
 msgstr "Pornește"
 
-#: compat/templatetags/compat.py:11
+#: compat/templatetags/compat.py:13
 msgid "Playable"
 msgstr "Se poate juca"
 
-#: compat/templatetags/compat.py:12
+#: compat/templatetags/compat.py:14
 msgid "Perfect"
 msgstr "Perfect"
 
@@ -429,7 +445,7 @@ msgstr "Situl Oficial Dolphin de Întrebări Frecvente, răspunde la toate într
 msgid "Frequently Asked Questions"
 msgstr "Întrebări Frecvente"
 
-#: docs/templates/docs-guide.html:11
+#: docs/templates/docs-guide.html:12
 msgid "Go back to the guides list"
 msgstr "Mergi înapoi la lista de ghiduri"
 
@@ -437,7 +453,7 @@ msgstr "Mergi înapoi la lista de ghiduri"
 msgid "See all the guides written by the Dolphin team about the emulator."
 msgstr "Consultă toate ghidurile scrise, de echipa Dolphin, despre de emulator."
 
-#: docs/templates/docs-guides-index.html:7 templates/_base.html:70
+#: docs/templates/docs-guides-index.html:7 templates/_base.html:76
 msgid "Guides"
 msgstr "Ghiduri"
 
@@ -449,10 +465,21 @@ msgstr "Ghiduri şi documentaţie"
 msgid "No published guide available"
 msgstr "Nu există disponibile ghiduri publicate"
 
-#: downloads/models.py:32 downloads/models.py:50
+#: downloads/models.py:40 downloads/models.py:57
 #, python-format
 msgid "Dolphin %s"
 msgstr "Dolphin %s"
+
+#: downloads/models.py:81
+msgid "Change with no description"
+msgstr "Modificări fără descriere"
+
+#: downloads/models.py:84
+#, python-format
+msgid ""
+"(<a href=\"%(pr_url)s\">PR #%(pr_id)s</a> from <a "
+"href=\"%(author_url)s\">%(author)s</a>)"
+msgstr "(<a href=\"%(pr_url)s\">PR #%(pr_id)s</a> from <a href=\"%(author_url)s\">%(author)s</a>)"
 
 #: downloads/templates/downloads-branches.html:5
 #: downloads/templates/downloads-branches.html:9
@@ -465,7 +492,7 @@ msgid "<tt>%(branch)s</tt> branch"
 msgstr "<tt>%(branch)s</tt> revizuirea"
 
 #: downloads/templates/downloads-branches.html:21
-#: downloads/templates/downloads-index.html:91
+#: downloads/templates/downloads-index.html:42
 msgid "View older versions »"
 msgstr "Vezi versiunile mai vechi »"
 
@@ -485,31 +512,15 @@ msgid ""
 msgstr "Descarcă cea mai recentă versiune a Dolphin Emulator (%(ver)s) de pe site-ul web oficial."
 
 #: downloads/templates/downloads-index.html:8
-#: downloads/templates/downloads-index.html:27 templates/_base.html:66
+#: downloads/templates/downloads-index.html:27 templates/_base.html:72
 msgid "Download"
 msgstr "Descarcă"
 
 #: downloads/templates/downloads-index.html:31
-msgid "Stable versions"
-msgstr "Versiuni stabile"
-
-#: downloads/templates/downloads-index.html:33
-msgid ""
-"\n"
-"    Stable versions are released after a lot of testing to ensure emulation\n"
-"    performance and stability. However, since they are released less often,\n"
-"    they might be outdated and lacking some new features.\n"
-msgstr "\n    Versiunile Stabile sunt lansate după testări amănunțite, pentru a asigura\n    performanţă şi stabilitate la emulare. Totuşi, deoarece acestea sunt lansate\n     mai rar, ar putea fi depăşite şi lipsite de unele caracteristici noi.\n"
-
-#: downloads/templates/downloads-index.html:55
-msgid "No stable release yet"
-msgstr "Nu există încă nici-o versiune stabilă"
-
-#: downloads/templates/downloads-index.html:76
 msgid "Development versions"
 msgstr "Versiuni în dezvoltare"
 
-#: downloads/templates/downloads-index.html:78
+#: downloads/templates/downloads-index.html:33
 msgid ""
 "\n"
 "    Development versions are released every time a developer makes a change to\n"
@@ -518,19 +529,27 @@ msgid ""
 "    less tested than stable versions of the emulator.\n"
 msgstr "\n   Versiunile în dezvoltare sunt lansate de fiecare dată când un dezvoltator face o \n   modificare în aplicația Dolphin, de câteva ori, în fiecare zi! Folosind versiunile aflate\n    în dezvoltare, îti permite să folosești cele mai recente şi mai bune îmbunătăţiri din\n   proiect. Ele sunt totuşi mai puţin testate decât versiunile stabile ale emulatorului.\n"
 
-#: downloads/templates/downloads-index.html:85
-msgid "Only displaying the <tt>master</tt> branch versions."
-msgstr "Se afișează numai versiunile revizuirii <tt>principale</tt>"
+#: downloads/templates/downloads-index.html:60
+msgid "Stable versions"
+msgstr "Versiuni stabile"
 
-#: downloads/templates/downloads-index.html:86
-msgid "Show all available branches"
-msgstr "Afișează toate revizuirile disponibile"
+#: downloads/templates/downloads-index.html:62
+msgid ""
+"\n"
+"    Stable versions are released after a lot of testing to ensure emulation\n"
+"    performance and stability. However, since they are released less often,\n"
+"    they might be outdated and lacking some new features.\n"
+msgstr "\n    Versiunile Stabile sunt lansate după testări amănunțite, pentru a asigura\n    performanţă şi stabilitate la emulare. Totuşi, deoarece acestea sunt lansate\n     mai rar, ar putea fi depăşite şi lipsite de unele caracteristici noi.\n"
 
-#: downloads/templates/downloads-index.html:95
+#: downloads/templates/downloads-index.html:84
+msgid "No stable release yet"
+msgstr "Nu există încă nici-o versiune stabilă"
+
+#: downloads/templates/downloads-index.html:91
 msgid "Source code"
 msgstr "Cod sursă"
 
-#: downloads/templates/downloads-index.html:97
+#: downloads/templates/downloads-index.html:93
 msgid ""
 "\n"
 "    The latest version of the Dolphin source code can be downloaded from the\n"
@@ -538,7 +557,7 @@ msgid ""
 "    "
 msgstr "\n    Ultima versiune a codului sursă Dolphin, poate fi descărcată din arhiva\n     proiectului Git.\n\\v"
 
-#: downloads/templates/downloads-index.html:105
+#: downloads/templates/downloads-index.html:101
 #, python-format
 msgid ""
 "\n"
@@ -546,11 +565,11 @@ msgid ""
 "    "
 msgstr "\n    Poţi, de asemenea, <a href=\"%(GIT_BROWSE_URL)s\">să răsfoiești versiunea curentă a codului sursă</a>.\n    "
 
-#: downloads/templates/downloads-index.html:112
+#: downloads/templates/downloads-index.html:108
 msgid "Reporting bugs"
 msgstr "Raportarea erorilor"
 
-#: downloads/templates/downloads-index.html:114
+#: downloads/templates/downloads-index.html:110
 #, python-format
 msgid ""
 "\n"
@@ -603,22 +622,23 @@ msgstr "Schimbă autorul"
 msgid "Change description"
 msgstr "Schimbă descrierea"
 
-#: homepage/templates/homepage-home.html:11
+#: homepage/templates/homepage-home.html:12
 #, python-format
 msgid ""
 "Official website of Dolphin, the GameCube and Wii emulator. Download the "
 "latest version (%(ver)s) now or ask questions on our forums for help."
 msgstr "Site-ul oficial Dolphin, emulatorul GameCube și Wi. Descarcă cea mai recentă versiune (%(ver)s) acum, sau pune întrebări pe forumurile noastre pentru a primi ajutor."
 
-#: homepage/templates/homepage-home.html:13
+#: homepage/templates/homepage-home.html:14
 msgid "GameCube/Wii games on PC"
 msgstr "Jocuri GameCube/Wii pe PC"
 
-#: homepage/templates/homepage-home.html:30 templates/_base.html:62
+#: homepage/templates/homepage-home.html:37 templates/_base.html:10
+#: templates/_base.html.py:68
 msgid "Dolphin Emulator"
 msgstr "Dolphin Emulator"
 
-#: homepage/templates/homepage-home.html:32
+#: homepage/templates/homepage-home.html:39
 msgid ""
 "\n"
 "            <b>Dolphin</b> is an emulator for two recent Nintendo video game\n"
@@ -629,43 +649,43 @@ msgid ""
 "            "
 msgstr "\n<b>Dolphin</b> este un emulator pentru cele două console recente\nde jocuri video Nintendo: <b>GameCube</b> și <b>Wii</b>. Permite\njucătorilor pe PC să se bucure de jocurile pentru aceste două console,\nîn <b>full HD</b> (1080p) cu mai multe îmbunătăţiri: compatibilitatea cu toate\ncontrolerele de PC, viteza turbo, rularea multiplayer în reţea, şi chiar mai multe!!\n            "
 
-#: homepage/templates/homepage-home.html:41
+#: homepage/templates/homepage-home.html:48
 #, python-format
 msgid "Download %(last_release)s for Windows, Mac and Linux »"
 msgstr "Descarcă %(last_release)s pentru Windows, Mac and Linux »"
 
-#: homepage/templates/homepage-home.html:93
+#: homepage/templates/homepage-home.html:108
 msgid "RSS feed of the latest articles"
 msgstr "Flux RSS cu cele mai recente articole"
 
-#: homepage/templates/homepage-home.html:94
+#: homepage/templates/homepage-home.html:109
 msgid "Latest articles"
 msgstr "Cele mai recente articole"
 
-#: homepage/templates/homepage-home.html:121
+#: homepage/templates/homepage-home.html:136
 #, python-format
-msgid "/ Part of serie <a href=\"%(url)s\">%(name)s</a>"
+msgid "/ Part of series <a href=\"%(url)s\">%(name)s</a>"
 msgstr "/ Parte a seriei <a href=\"%(url)s\">%(name)s</a>"
 
-#: homepage/templates/homepage-home.html:128
+#: homepage/templates/homepage-home.html:143
 msgid "Read this article"
 msgstr "Citește acest articol"
 
-#: homepage/templates/homepage-home.html:132
+#: homepage/templates/homepage-home.html:147
 msgid "No articles yet."
 msgstr "Nici-un articol momentan"
 
-#: media/templates/media-all.html:6
+#: media/templates/media-all.html:7
 msgid ""
 "View all the user-contributed screenshots of the Dolphin Emulator: GameCube "
 "and Wii games in HD."
 msgstr "Vizualizează toate capturi de ecran Dolphin Emulator ale utilizatorilor contributori: jocuri GameCube și Wii în format HD."
 
-#: media/templates/media-all.html:8
+#: media/templates/media-all.html:9
 msgid "Screenshots gallery"
 msgstr "Galerie Capturi de Ecran"
 
-#: media/templates/media-all.html:12
+#: media/templates/media-all.html:31
 msgid "Media gallery"
 msgstr "Galerie media"
 
@@ -687,35 +707,31 @@ msgid ""
 " in a few seconds."
 msgstr "A survenit o eroare în timp ce încercai să accesezi această pagină. Te rugăm să reîmprospătezi pagina după câteva secunde."
 
-#: templates/_base.html:10
-msgid "Official Dolphin Emulator Website"
-msgstr "Situl Oficial Dolphin Emulator"
-
 #: templates/_base.html:23
 msgid "Latest blog articles"
 msgstr "Cele mai recente articole"
 
-#: templates/_base.html:68
+#: templates/_base.html:74
 msgid "Screenshots"
 msgstr "Capturi de ecran"
 
-#: templates/_base.html:69
+#: templates/_base.html:75
 msgid "FAQ"
 msgstr "Întrebări frecvente"
 
-#: templates/_base.html:72
+#: templates/_base.html:78
 msgid "Forum"
 msgstr "Forum"
 
-#: templates/_base.html:73
+#: templates/_base.html:79
 msgid "Wiki"
 msgstr "Wiki"
 
-#: templates/_base.html:74
+#: templates/_base.html:80
 msgid "Code"
 msgstr "Cod"
 
-#: templates/_base.html:110
+#: templates/_base.html:116
 #, python-format
 msgid ""
 "\n"

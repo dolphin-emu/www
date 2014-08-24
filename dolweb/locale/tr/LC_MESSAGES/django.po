@@ -3,15 +3,15 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# mustafacan <m.can.elmaci@gmail.com>, 2013
-# mustafacan <m.can.elmaci@gmail.com>, 2013
+# Mustafa Can <m.can.elmaci@gmail.com>, 2013
+# Mustafa Can <m.can.elmaci@gmail.com>, 2013-2014
 msgid ""
 msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-02-08 20:04+0100\n"
-"PO-Revision-Date: 2014-02-08 19:06+0000\n"
-"Last-Translator: delroth <delroth@gmail.com>\n"
+"POT-Creation-Date: 2014-08-24 12:37+0200\n"
+"PO-Revision-Date: 2014-07-25 14:40+0000\n"
+"Last-Translator: Mustafa Can <m.can.elmaci@gmail.com>\n"
 "Language-Team: Turkish (http://www.transifex.com/projects/p/dolphin-emu/language/tr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -25,13 +25,13 @@ msgstr "İçerik"
 
 #: blog/feeds.py:24
 #, python-format
-msgid "Entries for the serie %s"
-msgstr ""
+msgid "Entries for the series %s"
+msgstr "%s serileri için son gönderiler"
 
 #: blog/feeds.py:27
 #, python-format
-msgid "The latest entries for the serie %s"
-msgstr ""
+msgid "The latest entries for the series %s"
+msgstr "%s serileri için son gönderiler"
 
 #: blog/models.py:16
 msgid "image"
@@ -42,7 +42,7 @@ msgid "Used for illustration."
 msgstr "İllistrasyon için kullanıldı."
 
 #: blog/templates/blog_sidebar.html:6
-#: blog/templates/zinnia/tags/search_form.html:5
+#: blog/templates/zinnia/tags/search_form.html:7
 msgid "Search articles"
 msgstr "Makaleleri arayın"
 
@@ -51,6 +51,7 @@ msgid "Blog tags"
 msgstr "Blog etiketleri"
 
 #: blog/templates/blog_sidebar.html:36
+#: blog/templates/zinnia/_entry_detail_base.html:78
 msgid "Blog series"
 msgstr "Blog serileri"
 
@@ -62,14 +63,14 @@ msgstr "Hepsini gör"
 #, python-format
 msgid ""
 "\n"
-"    %(count)s entrie\n"
+"    %(count)s entry\n"
 "  "
 msgid_plural ""
 "\n"
 "    %(count)s entries\n"
 "  "
 msgstr[0] "\n%(count)s yazı"
-msgstr[1] "\n%(count)s yazı"
+msgstr[1] "\n%(count)s yazılar"
 
 #: blog/templates/series-index.html:27
 msgid "RSS feed:"
@@ -80,23 +81,23 @@ msgid "No blog series yet."
 msgstr "Şu anda blog serisi yok."
 
 #: blog/templates/zinnia/_entry_detail_base.html:21
-#: homepage/templates/homepage-home.html:107
+#: homepage/templates/homepage-home.html:122
 msgid "Written by"
 msgstr "Yazar:"
 
 #: blog/templates/zinnia/_entry_detail_base.html:25
-#: homepage/templates/homepage-home.html:111
+#: homepage/templates/homepage-home.html:126
 #, python-format
 msgid "Show all %(author)s's entries"
 msgstr "%(author)s'un bütün yazılarını göster."
 
 #: blog/templates/zinnia/_entry_detail_base.html:27
-#: homepage/templates/homepage-home.html:113
+#: homepage/templates/homepage-home.html:128
 msgid "on"
-msgstr ""
+msgstr "ile"
 
 #: blog/templates/zinnia/_entry_detail_base.html:29
-#: homepage/templates/homepage-home.html:115
+#: homepage/templates/homepage-home.html:130
 msgid "Written on"
 msgstr "Tarih:"
 
@@ -114,12 +115,12 @@ msgid "Short link"
 msgstr "Kısa link"
 
 #: blog/templates/zinnia/_entry_detail_base.html:41
-#: homepage/templates/homepage-home.html:123
+#: homepage/templates/homepage-home.html:138
 msgid "Visit forum thread for this article"
 msgstr "Bu makale için forum konusunu ziyaret edin"
 
 #: blog/templates/zinnia/_entry_detail_base.html:41
-#: homepage/templates/homepage-home.html:123
+#: homepage/templates/homepage-home.html:138
 msgid "Forum thread"
 msgstr "Forum konusu"
 
@@ -137,26 +138,22 @@ msgstr "Okumaya devam et"
 msgid ""
 "You can continue the discussion in the <a href=\"%(url)s\" title=\"Visit "
 "forum thread for this article\">forum thread</a> of this article."
-msgstr ""
-
-#: blog/templates/zinnia/_entry_detail_base.html:78
-msgid "Blog serie"
-msgstr "Blog serisi"
+msgstr "Bu konu hakkındaki tartışmaya <a href=\"%(url)s\" title=\"Bu konu için forum'u ziyaret et\">forum konusu</a> üzerinden devam edebilirsiniz."
 
 #: blog/templates/zinnia/_entry_detail_base.html:80
 #, python-format
 msgid ""
-"This article is number %(nth)s within the blog serie\n"
-"    <a href=\"%(url)s\"><em>%(serie)s</em></a>."
-msgstr "Bu gönderi blog serisinde %(nth)s'nci sırada.⏎\n<a href=\"%(url)s\"><em>%(serie)s</em></a>."
+"This article is number %(nth)s within the blog series\n"
+"    <a href=\"%(url)s\"><em>%(series)s</em></a>."
+msgstr "Bu gönderi blog serilerinde %(nth)s'nci sırada.\n<a href=\"%(url)s\"><em>%(series)s</em></a>."
 
 #: blog/templates/zinnia/_entry_detail_base.html:85
-msgid "‹ Previous article in serie"
-msgstr "‹ Serideki bir önceki gönderi"
+msgid "‹ Previous article in series"
+msgstr "‹ Serilerdeki bir önceki gönderi"
 
 #: blog/templates/zinnia/_entry_detail_base.html:87
-msgid "Next article in serie ›"
-msgstr "Serideki bir sonraki gönderi ›"
+msgid "Next article in series ›"
+msgstr "Serilerdeki bir sonraki gönderi ›"
 
 #: blog/templates/zinnia/_entry_detail_base.html:137
 msgid "Tags"
@@ -227,19 +224,19 @@ msgstr "Şunun için son gönderiler: "
 
 #: blog/templates/zinnia/entry_list.html:5
 msgid "the category"
-msgstr ""
+msgstr "kategori"
 
 #: blog/templates/zinnia/entry_list.html:5
 msgid "the tag"
-msgstr ""
+msgstr "etiket"
 
 #: blog/templates/zinnia/entry_list.html:5
 msgid "the author"
-msgstr ""
+msgstr "yazar"
 
 #: blog/templates/zinnia/entry_list.html:5
 msgid "page"
-msgstr ""
+msgstr "sayfa"
 
 #: blog/templates/zinnia/entry_list.html:10
 #: blog/templates/zinnia/entry_list.html:13
@@ -249,173 +246,192 @@ msgstr "RSS beslemesi"
 
 #: blog/templates/zinnia/entry_list.html:20
 msgid "Latest entries"
-msgstr ""
+msgstr "Son gönderiler"
 
 #: blog/templates/zinnia/entry_list.html:20
 msgid "Category"
-msgstr ""
+msgstr "Kategori"
 
 #: blog/templates/zinnia/entry_list.html:20
 msgid "Tag"
-msgstr ""
+msgstr "Etiket"
 
 #: blog/templates/zinnia/entry_list.html:20
 msgid "Author"
-msgstr ""
+msgstr "Yazar"
 
 #: blog/templates/zinnia/entry_list.html:20
 msgid "Page"
-msgstr ""
+msgstr "Sayfa"
 
 #: blog/templates/zinnia/entry_list.html:28
 #, python-format
 msgid "Category archives: %(category)s"
-msgstr ""
+msgstr "Kategori arşivleri: %(category)s"
 
 #: blog/templates/zinnia/entry_list.html:35
 #, python-format
 msgid "Tag archives: %(tag)s"
-msgstr ""
+msgstr "Etiket arşivleri: %(tag)s"
 
 #: blog/templates/zinnia/entry_list.html:39
 #, python-format
 msgid "Author archives: %(author)s"
-msgstr ""
+msgstr "Yazar arşivleri: %(author)s"
 
 #: blog/templates/zinnia/entry_list.html:48
 msgid "No entries yet."
-msgstr ""
+msgstr "Şu anda giriş yok."
 
 #: blog/templates/zinnia/entry_list.html:67
 #: blog/templates/zinnia/entry_list.html:68
 msgid "Edit the category"
-msgstr ""
+msgstr "Kategoriyi düzenle"
 
 #: blog/templates/zinnia/entry_list.html:74
 #: blog/templates/zinnia/entry_list.html:75
 msgid "Edit the tag"
-msgstr ""
+msgstr "Etiketi düzenle"
 
 #: blog/templates/zinnia/entry_list.html:81
 #: blog/templates/zinnia/entry_list.html:82
 msgid "Edit the author"
-msgstr ""
+msgstr "Yazarı düzenle"
 
 #: blog/templates/zinnia/skeleton.html:5
 msgid "Latest news for Dolphin Emulator"
 msgstr "Dolphin Emulator için son haberler"
 
-#: blog/templates/zinnia/skeleton.html:8
-#: blog/templates/zinnia/skeleton.html:13 templates/_base.html:67
+#: blog/templates/zinnia/skeleton.html:8 templates/_base.html:73
 msgid "Articles"
 msgstr "Makaleler"
 
-#: blog/templates/zinnia/tags/search_form.html:16
+#: blog/templates/zinnia/tags/search_form.html:18
 msgid ""
 "You can use - to exclude words or phrases, &quot;double quotes&quot; for "
 "exact phrases and the AND/OR boolean operators combined with parenthesis for"
 " complex queries."
-msgstr ""
+msgstr "Bir kelime veya cümleyi hariç tutmak için -, birebir arama için &quot;çift tırnak&quot;, AND/OR boolean operatörleri ve parantezler kullanarak karmaşık sorgular kullanabilirsiniz."
 
-#: compat/templates/compat-list.html:8
+#: compat/templates/compat-list.html:9
 msgid ""
 "The Dolphin Emulator compatibility list contains all the games we tested, "
 "sorted by how well they work on the emulator."
 msgstr "Dolphin Emulator uyumluluk listesi, şu ana kadar test ettiğimiz bütün oyunları içerir."
 
-#: compat/templates/compat-list.html:10
+#: compat/templates/compat-list.html:11
 #, python-format
 msgid "Compatibility List - page %(page)s"
 msgstr "Uyumluluk listesi - sayfa %(page)s"
 
-#: compat/templates/compat-list.html:22
+#: compat/templates/compat-list.html:23
 msgid "How to read the ratings"
 msgstr "Sıralamalar nasıl okunur"
 
-#: compat/templates/compat-list.html:25
+#: compat/templates/compat-list.html:26
 msgid "5 out of 5"
 msgstr "5 üzerinden 5"
 
-#: compat/templates/compat-list.html:25
+#: compat/templates/compat-list.html:26
 msgid "<strong>Perfect</strong>: No issues at all!"
 msgstr "<strong>Mükemmel</strong>: Hiçbir sorun yok!"
 
-#: compat/templates/compat-list.html:26
+#: compat/templates/compat-list.html:27
 msgid "4 out of 5"
 msgstr "5 üzerinden 4"
 
-#: compat/templates/compat-list.html:26
+#: compat/templates/compat-list.html:27
 msgid ""
 "<strong>Playable</strong>: Runs well, only minor graphical or audio "
 "glitches. Games can be played all the way through."
 msgstr "<strong>Oynanabilir</strong>: Çalışıyor, sadece küçük grafik ve ses sorunları var. Oyun sonuna kadar oynanabiliyor."
 
-#: compat/templates/compat-list.html:27
+#: compat/templates/compat-list.html:28
 msgid "3 out of 5"
 msgstr "5 üzerinden 3"
 
-#: compat/templates/compat-list.html:27
+#: compat/templates/compat-list.html:28
 msgid ""
 "<strong>Starts</strong>: Starts, maybe even plays well, but crashes or major"
 " graphical/audio glitches."
 msgstr "<strong>Oyuna giriyor</strong>: Oyuna giriyor, oynanabiliyor, ama ileriki bölümlerde çöküyor veya büyük grafik ve ses sorunları var."
 
-#: compat/templates/compat-list.html:28
+#: compat/templates/compat-list.html:29
 msgid "2 out of 5"
 msgstr "5 üzerinden 2"
 
-#: compat/templates/compat-list.html:28
+#: compat/templates/compat-list.html:29
 msgid ""
 "<strong>Intro/Menu</strong>: Hangs/crashes somewhere between booting and "
 "starting."
 msgstr "<strong>Açılıyor</strong>: Oyuna girerken bir yerde donuyor veya çöküyor."
 
-#: compat/templates/compat-list.html:29
+#: compat/templates/compat-list.html:30
 msgid "1 out of 5"
 msgstr "5 üzerinden 1"
 
-#: compat/templates/compat-list.html:29
+#: compat/templates/compat-list.html:30
 msgid "<strong>Broken</strong>: Crashes when booting."
 msgstr "<strong>Bozuk</strong>: Oyunu açarken çöküyor."
 
-#: compat/templates/compat-list.html:36
+#: compat/templates/compat-list.html:37
 msgid "Statistics"
 msgstr "İstatistikler"
 
-#: compat/templates/compat-list.html:56
+#: compat/templates/compat-list.html:43
+msgid "Remove filter"
+msgstr "Filtreyi kaldır"
+
+#: compat/templates/compat-list.html:43
+msgid "Show all"
+msgstr "Hepsini göster"
+
+#: compat/templates/compat-list.html:45
+msgid "Filter by this rating"
+msgstr "Bu sıralama için filtrele."
+
+#: compat/templates/compat-list.html:45
+msgid "Filter"
+msgstr "Filtre"
+
+#: compat/templates/compat-list.html:65
 msgid "Game title (click for details)"
 msgstr "Oyunun adı (ayrıntılar için tıklayın)"
 
-#: compat/templates/compat-list.html:57
-#: homepage/templates/homepage-home.html:80 templates/_base.html:71
+#: compat/templates/compat-list.html:66
+#: homepage/templates/homepage-home.html:95 templates/_base.html:77
 msgid "Compatibility"
 msgstr "Uyumluluk"
 
-#: compat/templates/compat-list.html:58
+#: compat/templates/compat-list.html:67
 msgid "Last updated"
 msgstr "Son güncelleme"
 
-#: compat/templatetags/compat.py:7
+#: compat/templates/compat-list.html:84
+msgid "Your query does not match any game."
+msgstr "Sorgunuz hiçbir oyun ile eşleşmiyor."
+
+#: compat/templatetags/compat.py:9
 msgid "Unknown"
 msgstr "Bilinmiyor"
 
-#: compat/templatetags/compat.py:8
+#: compat/templatetags/compat.py:10
 msgid "Broken"
 msgstr "Bozuk"
 
-#: compat/templatetags/compat.py:9
+#: compat/templatetags/compat.py:11
 msgid "Intro/Menu"
 msgstr "Açılıyor"
 
-#: compat/templatetags/compat.py:10
+#: compat/templatetags/compat.py:12
 msgid "Starts"
 msgstr "Oyuna giriyor"
 
-#: compat/templatetags/compat.py:11
+#: compat/templatetags/compat.py:13
 msgid "Playable"
 msgstr "Oynanabilir"
 
-#: compat/templatetags/compat.py:12
+#: compat/templatetags/compat.py:14
 msgid "Perfect"
 msgstr "Mükemmel"
 
@@ -429,7 +445,7 @@ msgstr "Resmi Dolphin SSS, insanların Dolphin hakkında sıkça sorduğu bütü
 msgid "Frequently Asked Questions"
 msgstr "Sıkça Sorulan Sorular"
 
-#: docs/templates/docs-guide.html:11
+#: docs/templates/docs-guide.html:12
 msgid "Go back to the guides list"
 msgstr "Klavuzlar listesine geri dön"
 
@@ -437,7 +453,7 @@ msgstr "Klavuzlar listesine geri dön"
 msgid "See all the guides written by the Dolphin team about the emulator."
 msgstr "Emulator hakkında "
 
-#: docs/templates/docs-guides-index.html:7 templates/_base.html:70
+#: docs/templates/docs-guides-index.html:7 templates/_base.html:76
 msgid "Guides"
 msgstr "Klavuzlar"
 
@@ -449,10 +465,21 @@ msgstr "Kılavuzlar ve belgeler"
 msgid "No published guide available"
 msgstr "Yayınlanmış hiç klavuz yok"
 
-#: downloads/models.py:32 downloads/models.py:50
+#: downloads/models.py:40 downloads/models.py:57
 #, python-format
 msgid "Dolphin %s"
 msgstr "Dolphin %s"
+
+#: downloads/models.py:81
+msgid "Change with no description"
+msgstr "Açıklama olmadan değiştir"
+
+#: downloads/models.py:84
+#, python-format
+msgid ""
+"(<a href=\"%(pr_url)s\">PR #%(pr_id)s</a> from <a "
+"href=\"%(author_url)s\">%(author)s</a>)"
+msgstr "(<a href=\"%(pr_url)s\">PR #%(pr_id)s</a> itibaren <a href=\"%(author_url)s\">%(author)s</a>)"
 
 #: downloads/templates/downloads-branches.html:5
 #: downloads/templates/downloads-branches.html:9
@@ -465,7 +492,7 @@ msgid "<tt>%(branch)s</tt> branch"
 msgstr "<tt>%(branch)s</tt> dalı"
 
 #: downloads/templates/downloads-branches.html:21
-#: downloads/templates/downloads-index.html:91
+#: downloads/templates/downloads-index.html:42
 msgid "View older versions »"
 msgstr "Eski sürümleri göster »"
 
@@ -482,34 +509,18 @@ msgstr "Şu anda geliştirme sürümü yok"
 msgid ""
 "Download the latest version of the Dolphin Emulator (%(ver)s) from the "
 "official website."
-msgstr ""
+msgstr " Dolphin Emulator'ün son sürümü (%(ver)s)'yi resmi sitesinden indirin."
 
 #: downloads/templates/downloads-index.html:8
-#: downloads/templates/downloads-index.html:27 templates/_base.html:66
+#: downloads/templates/downloads-index.html:27 templates/_base.html:72
 msgid "Download"
 msgstr "İndir"
 
 #: downloads/templates/downloads-index.html:31
-msgid "Stable versions"
-msgstr "Kararlı sürümler"
-
-#: downloads/templates/downloads-index.html:33
-msgid ""
-"\n"
-"    Stable versions are released after a lot of testing to ensure emulation\n"
-"    performance and stability. However, since they are released less often,\n"
-"    they might be outdated and lacking some new features.\n"
-msgstr "\nKararlı sürümler, emulasyon hızı ve kararlılık açısından yapılan testlerden sonra yayınlanan sürümlerdir. Ama bu sürümler daha uzun aralıklarla yayınlandığı için eski olabilir veya en yeni özelliklerden faydalanamayabilirsiniz.\n\n"
-
-#: downloads/templates/downloads-index.html:55
-msgid "No stable release yet"
-msgstr "Şu anda kararlı sürüm yok"
-
-#: downloads/templates/downloads-index.html:76
 msgid "Development versions"
 msgstr "Geliştirme sürümleri"
 
-#: downloads/templates/downloads-index.html:78
+#: downloads/templates/downloads-index.html:33
 msgid ""
 "\n"
 "    Development versions are released every time a developer makes a change to\n"
@@ -518,19 +529,27 @@ msgid ""
 "    less tested than stable versions of the emulator.\n"
 msgstr "\nGeliştirme sürümleri geliştiricilerin yaptığı her yeni değişimde, neredeyse her gün yeniden yayınlanan sürümlerdir. Bu sürümleri kullanmak yapılan en son değişiklikleri ve en yeni özellikleri test etmenize imkan sağlayacaktır. Ama geliştirme sürümleri test edilmediği için stabil olmayabilir.\n"
 
-#: downloads/templates/downloads-index.html:85
-msgid "Only displaying the <tt>master</tt> branch versions."
-msgstr "Sadece <tt>master</tt> dalının sürümleri gösteriliyor."
+#: downloads/templates/downloads-index.html:60
+msgid "Stable versions"
+msgstr "Kararlı sürümler"
 
-#: downloads/templates/downloads-index.html:86
-msgid "Show all available branches"
-msgstr "Bütün dalları göster."
+#: downloads/templates/downloads-index.html:62
+msgid ""
+"\n"
+"    Stable versions are released after a lot of testing to ensure emulation\n"
+"    performance and stability. However, since they are released less often,\n"
+"    they might be outdated and lacking some new features.\n"
+msgstr "\nKararlı sürümler, emulasyon hızı ve kararlılık açısından yapılan testlerden sonra yayınlanan sürümlerdir. Ama bu sürümler daha uzun aralıklarla yayınlandığı için eski olabilir veya en yeni özelliklerden faydalanamayabilirsiniz.\n\n"
 
-#: downloads/templates/downloads-index.html:95
+#: downloads/templates/downloads-index.html:84
+msgid "No stable release yet"
+msgstr "Şu anda kararlı sürüm yok"
+
+#: downloads/templates/downloads-index.html:91
 msgid "Source code"
 msgstr "Kaynak kodu"
 
-#: downloads/templates/downloads-index.html:97
+#: downloads/templates/downloads-index.html:93
 msgid ""
 "\n"
 "    The latest version of the Dolphin source code can be downloaded from the\n"
@@ -538,26 +557,26 @@ msgid ""
 "    "
 msgstr "\n    Dolphin'in son sürümünün kaynak kodu Git deposundan indirilebilir.\n    "
 
-#: downloads/templates/downloads-index.html:105
+#: downloads/templates/downloads-index.html:101
 #, python-format
 msgid ""
 "\n"
 "    You can also <a href=\"%(GIT_BROWSE_URL)s\">browse the current version of the source code</a>.\n"
 "    "
-msgstr ""
+msgstr "\nAyrıca <a href=\"%(GIT_BROWSE_URL)s\">şu anki kaynak koduna gözatabilirsiniz.</a>.\n    "
 
-#: downloads/templates/downloads-index.html:112
+#: downloads/templates/downloads-index.html:108
 msgid "Reporting bugs"
-msgstr ""
+msgstr "Hataları raporlamak"
 
-#: downloads/templates/downloads-index.html:114
+#: downloads/templates/downloads-index.html:110
 #, python-format
 msgid ""
 "\n"
 "    For reporting bugs please go to <a href=\"%(ISSUES_URL)s\">the issue tracker on Google Code</a>.\n"
 "    Before creating a new issue, make sure to try a recent development build and search the existing issues.\n"
 "    "
-msgstr ""
+msgstr "\nHataları bildirmek için <a href=\"%(ISSUES_URL)s\">Google Code'daki hata tracker'imizi</a> ziyaret edin.\nYeni bildirim yapmadan önce, son geliştirme sürümününde hatanın düzeltilmediğini ve hatanın daha önce bildirilmediğini kontrol edin."
 
 #: downloads/templates/downloads-list.html:5
 #, python-format
@@ -603,22 +622,23 @@ msgstr "Yazarı değiştir."
 msgid "Change description"
 msgstr "Açıklamayı değiştir"
 
-#: homepage/templates/homepage-home.html:11
+#: homepage/templates/homepage-home.html:12
 #, python-format
 msgid ""
 "Official website of Dolphin, the GameCube and Wii emulator. Download the "
 "latest version (%(ver)s) now or ask questions on our forums for help."
-msgstr ""
+msgstr "GameCube ve Wii emulator'ü Dolphin'in resmi websitesi. Şimdi son sürümü (%(ver)s) indirin veya forumlarımızda sorularınızı sorun veya yardım alın."
 
-#: homepage/templates/homepage-home.html:13
+#: homepage/templates/homepage-home.html:14
 msgid "GameCube/Wii games on PC"
 msgstr "GameCube/Wii oyunlarını PC'de oynayın"
 
-#: homepage/templates/homepage-home.html:30 templates/_base.html:62
+#: homepage/templates/homepage-home.html:37 templates/_base.html:10
+#: templates/_base.html.py:68
 msgid "Dolphin Emulator"
 msgstr "Dolphin Emulator"
 
-#: homepage/templates/homepage-home.html:32
+#: homepage/templates/homepage-home.html:39
 msgid ""
 "\n"
 "            <b>Dolphin</b> is an emulator for two recent Nintendo video game\n"
@@ -627,45 +647,45 @@ msgid ""
 "            (1080p) with several enhancements: compatibility with all PC\n"
 "            controllers, turbo speed, networked multiplayer, and even more!\n"
 "            "
-msgstr ""
+msgstr "\n<b>Dolphin</b>, Nintendo'nun son iki konsolu için üretilen bir emulatördür: <b>GameCube</b> ve <b>Wii</b>. Bu emulatör, PC oyuncularına <b>GameCube</b> ve <b>Wii</b> oyunlarını <b>full HD</b> (1080p) ve birçok geliştirme ile oynamanızı sağlar. Bütün PC kumandaları ile uyumluluk, turbo hız, ağ üzerinden multiplayer ve daha fazlası!"
 
-#: homepage/templates/homepage-home.html:41
+#: homepage/templates/homepage-home.html:48
 #, python-format
 msgid "Download %(last_release)s for Windows, Mac and Linux »"
 msgstr "%(last_release)s 'i Windows, Mac and Linux için indirin »"
 
-#: homepage/templates/homepage-home.html:93
+#: homepage/templates/homepage-home.html:108
 msgid "RSS feed of the latest articles"
-msgstr ""
+msgstr "Son makalelerin RSS beslemesi"
 
-#: homepage/templates/homepage-home.html:94
+#: homepage/templates/homepage-home.html:109
 msgid "Latest articles"
 msgstr "Güncel makaleler"
 
-#: homepage/templates/homepage-home.html:121
+#: homepage/templates/homepage-home.html:136
 #, python-format
-msgid "/ Part of serie <a href=\"%(url)s\">%(name)s</a>"
-msgstr ""
+msgid "/ Part of series <a href=\"%(url)s\">%(name)s</a>"
+msgstr "/ Serilerin parçası <a href=\"%(url)s\">%(name)s</a>"
 
-#: homepage/templates/homepage-home.html:128
+#: homepage/templates/homepage-home.html:143
 msgid "Read this article"
 msgstr "Makaleyi oku"
 
-#: homepage/templates/homepage-home.html:132
+#: homepage/templates/homepage-home.html:147
 msgid "No articles yet."
 msgstr "Şu anda makale yok."
 
-#: media/templates/media-all.html:6
+#: media/templates/media-all.html:7
 msgid ""
 "View all the user-contributed screenshots of the Dolphin Emulator: GameCube "
 "and Wii games in HD."
-msgstr ""
+msgstr "Bütün Dolphin Emulator: GameCube ve Wii oyunları ekran görüntüleri arşivimizi HD olarak görüntüleyin."
 
-#: media/templates/media-all.html:8
+#: media/templates/media-all.html:9
 msgid "Screenshots gallery"
 msgstr "Ekran Görüntüleri Galerisi"
 
-#: media/templates/media-all.html:12
+#: media/templates/media-all.html:31
 msgid "Media gallery"
 msgstr "Medya Galerisi"
 
@@ -687,39 +707,35 @@ msgid ""
 " in a few seconds."
 msgstr "Bu sayfaya erişirken bir hata meydana geldi. Lütfen birkaç saniye sonra sayfayı yenileyin."
 
-#: templates/_base.html:10
-msgid "Official Dolphin Emulator Website"
-msgstr "Dolphin Emulator Resmi Sitesi"
-
 #: templates/_base.html:23
 msgid "Latest blog articles"
-msgstr ""
+msgstr "Güncel blog makaleleri"
 
-#: templates/_base.html:68
+#: templates/_base.html:74
 msgid "Screenshots"
 msgstr "Ekran Görüntüleri"
 
-#: templates/_base.html:69
+#: templates/_base.html:75
 msgid "FAQ"
 msgstr "SSS"
 
-#: templates/_base.html:72
+#: templates/_base.html:78
 msgid "Forum"
 msgstr "Forum"
 
-#: templates/_base.html:73
+#: templates/_base.html:79
 msgid "Wiki"
 msgstr "Wiki"
 
-#: templates/_base.html:74
+#: templates/_base.html:80
 msgid "Code"
 msgstr "Code"
 
-#: templates/_base.html:110
+#: templates/_base.html:116
 #, python-format
 msgid ""
 "\n"
 "            &copy; 2014 Dolphin Emulator Project -\n"
 "            <a href=\"%(WEBSITE_GIT_URL)s\">Website source code</a>\n"
 "            "
-msgstr ""
+msgstr "\n&copy; 2014 Dolphin Emulator Projesi -\n<a href=\"%(WEBSITE_GIT_URL)s\">Website'nin kaynak kodu</a>"

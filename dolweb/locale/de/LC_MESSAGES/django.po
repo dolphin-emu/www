@@ -3,26 +3,27 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# DasD aus der Spree <Dan_krug@gmx.de>, 2013
+# Danny Krug <Dan_krug@gmx.de>, 2013
 # DefenderX <darkmodx@gmail.com>, 2013
-# DasD aus der Spree <Dan_krug@gmx.de>, 2013
+# Danny Krug <Dan_krug@gmx.de>, 2013
 # DefenderX <darkmodx@gmail.com>, 2013
-# Ghabry <gabelk@web.de>, 2013
-# Ghabry <gabelk@web.de>, 2013
-# wickmarkus <wickmarkus@web.de>, 2013
+# Gabriel <gabelk@web.de>, 2013
+# Gabriel <gabelk@web.de>, 2013
+# Markus Wick <wickmarkus@web.de>, 2013
+# M T <michtrz@gmail.com>, 2014
 # no_cluez <neobrainx@gmail.com>, 2012
 # no_cluez <neobrainx@gmail.com>, 2013
 # no_cluez <neobrainx@gmail.com>, 2013
 # Shinrai, 2013
-# Tilka <tilkax@gmail.com>, 2014
-# wickmarkus <wickmarkus@web.de>, 2013
+# Tillmann Karras <tilkax@gmail.com>, 2014
+# Markus Wick <wickmarkus@web.de>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-02-08 20:04+0100\n"
-"PO-Revision-Date: 2014-02-08 19:57+0000\n"
-"Last-Translator: Tilka <tilkax@gmail.com>\n"
+"POT-Creation-Date: 2014-08-24 12:37+0200\n"
+"PO-Revision-Date: 2014-06-23 14:44+0000\n"
+"Last-Translator: M T <michtrz@gmail.com>\n"
 "Language-Team: German (http://www.transifex.com/projects/p/dolphin-emu/language/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -36,12 +37,12 @@ msgstr "Inhalt"
 
 #: blog/feeds.py:24
 #, python-format
-msgid "Entries for the serie %s"
+msgid "Entries for the series %s"
 msgstr "Beiträge für Serie %s"
 
 #: blog/feeds.py:27
 #, python-format
-msgid "The latest entries for the serie %s"
+msgid "The latest entries for the series %s"
 msgstr "Die neuesten Beiträge für die Serie %s"
 
 #: blog/models.py:16
@@ -53,7 +54,7 @@ msgid "Used for illustration."
 msgstr "Zur Veranschaulichung"
 
 #: blog/templates/blog_sidebar.html:6
-#: blog/templates/zinnia/tags/search_form.html:5
+#: blog/templates/zinnia/tags/search_form.html:7
 msgid "Search articles"
 msgstr "Artikel suchen"
 
@@ -62,6 +63,7 @@ msgid "Blog tags"
 msgstr "Blog-Tags"
 
 #: blog/templates/blog_sidebar.html:36
+#: blog/templates/zinnia/_entry_detail_base.html:78
 msgid "Blog series"
 msgstr "Blogserien"
 
@@ -73,7 +75,7 @@ msgstr "Alle anzeigen"
 #, python-format
 msgid ""
 "\n"
-"    %(count)s entrie\n"
+"    %(count)s entry\n"
 "  "
 msgid_plural ""
 "\n"
@@ -91,23 +93,23 @@ msgid "No blog series yet."
 msgstr "Bisher keine Blogserien."
 
 #: blog/templates/zinnia/_entry_detail_base.html:21
-#: homepage/templates/homepage-home.html:107
+#: homepage/templates/homepage-home.html:122
 msgid "Written by"
 msgstr "Geschrieben von"
 
 #: blog/templates/zinnia/_entry_detail_base.html:25
-#: homepage/templates/homepage-home.html:111
+#: homepage/templates/homepage-home.html:126
 #, python-format
 msgid "Show all %(author)s's entries"
 msgstr "Alle Beiträge von %(author)s anzeigen"
 
 #: blog/templates/zinnia/_entry_detail_base.html:27
-#: homepage/templates/homepage-home.html:113
+#: homepage/templates/homepage-home.html:128
 msgid "on"
 msgstr "am"
 
 #: blog/templates/zinnia/_entry_detail_base.html:29
-#: homepage/templates/homepage-home.html:115
+#: homepage/templates/homepage-home.html:130
 msgid "Written on"
 msgstr "Geschrieben am"
 
@@ -125,12 +127,12 @@ msgid "Short link"
 msgstr "Kurzlink"
 
 #: blog/templates/zinnia/_entry_detail_base.html:41
-#: homepage/templates/homepage-home.html:123
+#: homepage/templates/homepage-home.html:138
 msgid "Visit forum thread for this article"
 msgstr "Forenthread dieses Artikels aufrufen"
 
 #: blog/templates/zinnia/_entry_detail_base.html:41
-#: homepage/templates/homepage-home.html:123
+#: homepage/templates/homepage-home.html:138
 msgid "Forum thread"
 msgstr "Forenthread"
 
@@ -150,24 +152,20 @@ msgid ""
 "forum thread for this article\">forum thread</a> of this article."
 msgstr "Die Diskussion kann im <a href=\"%(url)s\" title=\"Forenthread dieses Artikels\">Forenthread</a> des Artikels fortgeführt werden."
 
-#: blog/templates/zinnia/_entry_detail_base.html:78
-msgid "Blog serie"
-msgstr "Blogserie"
-
 #: blog/templates/zinnia/_entry_detail_base.html:80
 #, python-format
 msgid ""
-"This article is number %(nth)s within the blog serie\n"
-"    <a href=\"%(url)s\"><em>%(serie)s</em></a>."
-msgstr "Dies ist Artikel Nummer %(nth)s in der Blogserie\n<a href=\"%(url)s\"><em>%(serie)s</em></a>."
+"This article is number %(nth)s within the blog series\n"
+"    <a href=\"%(url)s\"><em>%(series)s</em></a>."
+msgstr "Dieser Artikel ist Nummer %(nth)s in der Blogserie\n<a href=\"%(url)s\"><em>%(series)s</em></a>."
 
 #: blog/templates/zinnia/_entry_detail_base.html:85
-msgid "‹ Previous article in serie"
-msgstr "Vorheriger Artikel dieser Serie"
+msgid "‹ Previous article in series"
+msgstr "‹ Vorheriger Artikel der Serie"
 
 #: blog/templates/zinnia/_entry_detail_base.html:87
-msgid "Next article in serie ›"
-msgstr "Nächster Artikel dieser Serie"
+msgid "Next article in series ›"
+msgstr "Nächster Artikel der Serie ›"
 
 #: blog/templates/zinnia/_entry_detail_base.html:137
 msgid "Tags"
@@ -316,117 +314,136 @@ msgstr "Autor bearbeiten"
 msgid "Latest news for Dolphin Emulator"
 msgstr "Neueste Nachrichten vom Dolphin Emulator"
 
-#: blog/templates/zinnia/skeleton.html:8
-#: blog/templates/zinnia/skeleton.html:13 templates/_base.html:67
+#: blog/templates/zinnia/skeleton.html:8 templates/_base.html:73
 msgid "Articles"
 msgstr "Artikel"
 
-#: blog/templates/zinnia/tags/search_form.html:16
+#: blog/templates/zinnia/tags/search_form.html:18
 msgid ""
 "You can use - to exclude words or phrases, &quot;double quotes&quot; for "
 "exact phrases and the AND/OR boolean operators combined with parenthesis for"
 " complex queries."
 msgstr "Verwende - um Wörter oder Sätze auszuschließen, &quot;Anführungszeichen&quot; für exakte Treffer und die boolschen Operatoren AND/OR in Kombination mit Klammern für komplexe Abfragen."
 
-#: compat/templates/compat-list.html:8
+#: compat/templates/compat-list.html:9
 msgid ""
 "The Dolphin Emulator compatibility list contains all the games we tested, "
 "sorted by how well they work on the emulator."
 msgstr "Die Dolphin-Kompatibilitätsliste enthält alle Spiele, die wir getestet haben, sortiert danach, wie gut sie auf dem Emulator laufen."
 
-#: compat/templates/compat-list.html:10
+#: compat/templates/compat-list.html:11
 #, python-format
 msgid "Compatibility List - page %(page)s"
 msgstr "Kompatibilitätsliste - Seite %(page)s"
 
-#: compat/templates/compat-list.html:22
+#: compat/templates/compat-list.html:23
 msgid "How to read the ratings"
 msgstr "Was die verschiedenen Bewertungen aussagen"
 
-#: compat/templates/compat-list.html:25
+#: compat/templates/compat-list.html:26
 msgid "5 out of 5"
 msgstr "5 von 5"
 
-#: compat/templates/compat-list.html:25
+#: compat/templates/compat-list.html:26
 msgid "<strong>Perfect</strong>: No issues at all!"
 msgstr "<strong>Perfekt</strong>: Keinerlei Probleme!"
 
-#: compat/templates/compat-list.html:26
+#: compat/templates/compat-list.html:27
 msgid "4 out of 5"
 msgstr "4 von 5"
 
-#: compat/templates/compat-list.html:26
+#: compat/templates/compat-list.html:27
 msgid ""
 "<strong>Playable</strong>: Runs well, only minor graphical or audio "
 "glitches. Games can be played all the way through."
 msgstr "<strong>Spielbar</strong>: Kleine Grafikfehler oder Knacksen im Ton, aber kann komplett gespielt werden."
 
-#: compat/templates/compat-list.html:27
+#: compat/templates/compat-list.html:28
 msgid "3 out of 5"
 msgstr "3 von 5"
 
-#: compat/templates/compat-list.html:27
+#: compat/templates/compat-list.html:28
 msgid ""
 "<strong>Starts</strong>: Starts, maybe even plays well, but crashes or major"
 " graphical/audio glitches."
 msgstr "<strong>Startet</strong>: Startet und mag teils spielbar sein, hat aber starke Grafik- und Soundfehler oder stürzt manchmal ab."
 
-#: compat/templates/compat-list.html:28
+#: compat/templates/compat-list.html:29
 msgid "2 out of 5"
 msgstr "2 von 5"
 
-#: compat/templates/compat-list.html:28
+#: compat/templates/compat-list.html:29
 msgid ""
 "<strong>Intro/Menu</strong>: Hangs/crashes somewhere between booting and "
 "starting."
 msgstr "<strong>Intro/Menü</strong>: Aufgrund von Einfrieren/Abstürzen kann nicht mehr als das Hauptmenü erreicht werden."
 
-#: compat/templates/compat-list.html:29
+#: compat/templates/compat-list.html:30
 msgid "1 out of 5"
 msgstr "1 von 5"
 
-#: compat/templates/compat-list.html:29
+#: compat/templates/compat-list.html:30
 msgid "<strong>Broken</strong>: Crashes when booting."
 msgstr "<strong>Defekt</strong>: Stürzt beim Starten ab."
 
-#: compat/templates/compat-list.html:36
+#: compat/templates/compat-list.html:37
 msgid "Statistics"
 msgstr "Verteilung"
 
-#: compat/templates/compat-list.html:56
+#: compat/templates/compat-list.html:43
+msgid "Remove filter"
+msgstr "Filter entfernen"
+
+#: compat/templates/compat-list.html:43
+msgid "Show all"
+msgstr "Alles anzeigen"
+
+#: compat/templates/compat-list.html:45
+msgid "Filter by this rating"
+msgstr "Nach dieser Bewertung filtern"
+
+#: compat/templates/compat-list.html:45
+msgid "Filter"
+msgstr "Filter"
+
+#: compat/templates/compat-list.html:65
 msgid "Game title (click for details)"
 msgstr "Spieltitel (für weitere Details anklicken)"
 
-#: compat/templates/compat-list.html:57
-#: homepage/templates/homepage-home.html:80 templates/_base.html:71
+#: compat/templates/compat-list.html:66
+#: homepage/templates/homepage-home.html:95 templates/_base.html:77
 msgid "Compatibility"
 msgstr "Kompatibilität"
 
-#: compat/templates/compat-list.html:58
+#: compat/templates/compat-list.html:67
 msgid "Last updated"
 msgstr "Letzte Änderung"
 
-#: compat/templatetags/compat.py:7
+#: compat/templates/compat-list.html:84
+msgid "Your query does not match any game."
+msgstr "Deine Suchanfrage passt zu keinem Spiel."
+
+#: compat/templatetags/compat.py:9
 msgid "Unknown"
 msgstr "Unbekannt"
 
-#: compat/templatetags/compat.py:8
+#: compat/templatetags/compat.py:10
 msgid "Broken"
 msgstr "Defekt"
 
-#: compat/templatetags/compat.py:9
+#: compat/templatetags/compat.py:11
 msgid "Intro/Menu"
 msgstr "Intro/Menü"
 
-#: compat/templatetags/compat.py:10
+#: compat/templatetags/compat.py:12
 msgid "Starts"
 msgstr "Startet"
 
-#: compat/templatetags/compat.py:11
+#: compat/templatetags/compat.py:13
 msgid "Playable"
 msgstr "Spielbar"
 
-#: compat/templatetags/compat.py:12
+#: compat/templatetags/compat.py:14
 msgid "Perfect"
 msgstr "Perfekt"
 
@@ -440,7 +457,7 @@ msgstr "Die offizielle Dolphin-FAQ beantworten die Fragen, die häufig über Dol
 msgid "Frequently Asked Questions"
 msgstr "Häufig gestellte Fragen"
 
-#: docs/templates/docs-guide.html:11
+#: docs/templates/docs-guide.html:12
 msgid "Go back to the guides list"
 msgstr "Zurück zur Liste der Anleitungen"
 
@@ -448,7 +465,7 @@ msgstr "Zurück zur Liste der Anleitungen"
 msgid "See all the guides written by the Dolphin team about the emulator."
 msgstr "Lies dir alle Anleitungen durch, die das Dolphin-Team zum Emulator geschrieben hat."
 
-#: docs/templates/docs-guides-index.html:7 templates/_base.html:70
+#: docs/templates/docs-guides-index.html:7 templates/_base.html:76
 msgid "Guides"
 msgstr "Anleitungen"
 
@@ -460,10 +477,21 @@ msgstr "Anleitungen und Dokumentation"
 msgid "No published guide available"
 msgstr "Keine veröffentlichte Anleitung verfügbar"
 
-#: downloads/models.py:32 downloads/models.py:50
+#: downloads/models.py:40 downloads/models.py:57
 #, python-format
 msgid "Dolphin %s"
 msgstr "Dolphin %s"
+
+#: downloads/models.py:81
+msgid "Change with no description"
+msgstr "Ändern ohne einer Beschreibung"
+
+#: downloads/models.py:84
+#, python-format
+msgid ""
+"(<a href=\"%(pr_url)s\">PR #%(pr_id)s</a> from <a "
+"href=\"%(author_url)s\">%(author)s</a>)"
+msgstr "(<a href=\"%(pr_url)s\">PR #%(pr_id)s</a> von <a href=\"%(author_url)s\">%(author)s</a>)"
 
 #: downloads/templates/downloads-branches.html:5
 #: downloads/templates/downloads-branches.html:9
@@ -476,7 +504,7 @@ msgid "<tt>%(branch)s</tt> branch"
 msgstr "Entwicklungszweig <tt>%(branch)s</tt>"
 
 #: downloads/templates/downloads-branches.html:21
-#: downloads/templates/downloads-index.html:91
+#: downloads/templates/downloads-index.html:42
 msgid "View older versions »"
 msgstr "Ältere Versionen »"
 
@@ -496,31 +524,15 @@ msgid ""
 msgstr "Lade die aktuellste Version des Dolphin-Emulators (%(ver)s) von der offiziellen Seite herunter."
 
 #: downloads/templates/downloads-index.html:8
-#: downloads/templates/downloads-index.html:27 templates/_base.html:66
+#: downloads/templates/downloads-index.html:27 templates/_base.html:72
 msgid "Download"
 msgstr "Downloads"
 
 #: downloads/templates/downloads-index.html:31
-msgid "Stable versions"
-msgstr "Stabile Versionen"
-
-#: downloads/templates/downloads-index.html:33
-msgid ""
-"\n"
-"    Stable versions are released after a lot of testing to ensure emulation\n"
-"    performance and stability. However, since they are released less often,\n"
-"    they might be outdated and lacking some new features.\n"
-msgstr "\nStabile Versionen werden nach langen Testphasen veröffentlicht, um eine hohe Emulationsleistung und Stabilität zu gewährleisten.\nWeil sie jedoch nicht so häufig veröffentlicht werden, können sie bereits veraltet sein und es fehlen neue Funktionen.\n"
-
-#: downloads/templates/downloads-index.html:55
-msgid "No stable release yet"
-msgstr "Noch keine stabile Version verfügbar"
-
-#: downloads/templates/downloads-index.html:76
 msgid "Development versions"
 msgstr "Entwicklerversionen"
 
-#: downloads/templates/downloads-index.html:78
+#: downloads/templates/downloads-index.html:33
 msgid ""
 "\n"
 "    Development versions are released every time a developer makes a change to\n"
@@ -529,19 +541,27 @@ msgid ""
 "    less tested than stable versions of the emulator.\n"
 msgstr "\nEntwicklerversionen werden nach jeder Änderung an Dolphin veröffentlicht, mehrmals am Tag! Die Entwicklerversionen stellen die neuesten Verbesserungen zur Verfügung, sind aber weniger getestet als stabile Versionen des Emulators.\n"
 
-#: downloads/templates/downloads-index.html:85
-msgid "Only displaying the <tt>master</tt> branch versions."
-msgstr "Es werden nur Versionen aus dem Entwicklungszweig <tt>master</tt> angezeigt."
+#: downloads/templates/downloads-index.html:60
+msgid "Stable versions"
+msgstr "Stabile Versionen"
 
-#: downloads/templates/downloads-index.html:86
-msgid "Show all available branches"
-msgstr "Alle verfügbaren Entwicklungszweige anzeigen"
+#: downloads/templates/downloads-index.html:62
+msgid ""
+"\n"
+"    Stable versions are released after a lot of testing to ensure emulation\n"
+"    performance and stability. However, since they are released less often,\n"
+"    they might be outdated and lacking some new features.\n"
+msgstr "\nStabile Versionen werden nach langen Testphasen veröffentlicht, um eine hohe Emulationsleistung und Stabilität zu gewährleisten.\nWeil sie jedoch nicht so häufig veröffentlicht werden, können sie bereits veraltet sein und es fehlen neue Funktionen.\n"
 
-#: downloads/templates/downloads-index.html:95
+#: downloads/templates/downloads-index.html:84
+msgid "No stable release yet"
+msgstr "Noch keine stabile Version verfügbar"
+
+#: downloads/templates/downloads-index.html:91
 msgid "Source code"
 msgstr "Quelltext"
 
-#: downloads/templates/downloads-index.html:97
+#: downloads/templates/downloads-index.html:93
 msgid ""
 "\n"
 "    The latest version of the Dolphin source code can be downloaded from the\n"
@@ -549,7 +569,7 @@ msgid ""
 "    "
 msgstr "\n    Die neueste Version des Quelltextes von Dolphin kann von unserem Git-Projektarchiv heruntergeladen werden.\n    "
 
-#: downloads/templates/downloads-index.html:105
+#: downloads/templates/downloads-index.html:101
 #, python-format
 msgid ""
 "\n"
@@ -557,11 +577,11 @@ msgid ""
 "    "
 msgstr "\nDu kannst dich auch <a href=\"%(GIT_BROWSE_URL)s\">in der aktuellen Version des Quelltextes umsehen</a>.\n    "
 
-#: downloads/templates/downloads-index.html:112
+#: downloads/templates/downloads-index.html:108
 msgid "Reporting bugs"
 msgstr "Probleme melden"
 
-#: downloads/templates/downloads-index.html:114
+#: downloads/templates/downloads-index.html:110
 #, python-format
 msgid ""
 "\n"
@@ -614,22 +634,23 @@ msgstr "Author der Änderung"
 msgid "Change description"
 msgstr "Beschreibung der Änderung"
 
-#: homepage/templates/homepage-home.html:11
+#: homepage/templates/homepage-home.html:12
 #, python-format
 msgid ""
 "Official website of Dolphin, the GameCube and Wii emulator. Download the "
 "latest version (%(ver)s) now or ask questions on our forums for help."
 msgstr "Die offizielle Seite von Dolphin, dem GameCube- und Wii-Emulator.\nLade die aktuellste Version (%(ver)s) herunter oder besuche bei Fragen dazu unsere Foren."
 
-#: homepage/templates/homepage-home.html:13
+#: homepage/templates/homepage-home.html:14
 msgid "GameCube/Wii games on PC"
 msgstr "GameCube/Wii-Spiele auf dem PC"
 
-#: homepage/templates/homepage-home.html:30 templates/_base.html:62
+#: homepage/templates/homepage-home.html:37 templates/_base.html:10
+#: templates/_base.html.py:68
 msgid "Dolphin Emulator"
 msgstr "Dolphin Emulator"
 
-#: homepage/templates/homepage-home.html:32
+#: homepage/templates/homepage-home.html:39
 msgid ""
 "\n"
 "            <b>Dolphin</b> is an emulator for two recent Nintendo video game\n"
@@ -640,43 +661,43 @@ msgid ""
 "            "
 msgstr "\n<b>Dolphin</b> ist ein Emulator für die beiden jungen Nintendo-Konsolen <b>Gamecube</b> und <b>Wii</b>. Er ermöglicht PC-Spielern die Spiele dieser beiden Konsolen auf dem PC in <b>Full HD</b> (1080p) mit zahlreichen Verbesserungen zu genießen:\nUnterstützung für alle PC-Gamecontroller, Turbo-Modus für erhöhte Spielgeschwindigkeit, Mehrspielermodus übers Netzwerk und vieles mehr!"
 
-#: homepage/templates/homepage-home.html:41
+#: homepage/templates/homepage-home.html:48
 #, python-format
 msgid "Download %(last_release)s for Windows, Mac and Linux »"
 msgstr "%(last_release)s für Windows, Mac und Linux herunterladen »"
 
-#: homepage/templates/homepage-home.html:93
+#: homepage/templates/homepage-home.html:108
 msgid "RSS feed of the latest articles"
 msgstr "Neueste Artikel als RSS-Feed"
 
-#: homepage/templates/homepage-home.html:94
+#: homepage/templates/homepage-home.html:109
 msgid "Latest articles"
 msgstr "Neueste Artikel"
 
-#: homepage/templates/homepage-home.html:121
+#: homepage/templates/homepage-home.html:136
 #, python-format
-msgid "/ Part of serie <a href=\"%(url)s\">%(name)s</a>"
+msgid "/ Part of series <a href=\"%(url)s\">%(name)s</a>"
 msgstr "/ Teil der Serie <a href=\"%(url)s\">%(name)s</a>"
 
-#: homepage/templates/homepage-home.html:128
+#: homepage/templates/homepage-home.html:143
 msgid "Read this article"
 msgstr "Weiterlesen"
 
-#: homepage/templates/homepage-home.html:132
+#: homepage/templates/homepage-home.html:147
 msgid "No articles yet."
 msgstr "Bisher keine Artikel."
 
-#: media/templates/media-all.html:6
+#: media/templates/media-all.html:7
 msgid ""
 "View all the user-contributed screenshots of the Dolphin Emulator: GameCube "
 "and Wii games in HD."
 msgstr "Sieh dir alle Screenshots von Nutzern des Dolphin-Emulators an: GameCube- und Wii-Spiele in HD."
 
-#: media/templates/media-all.html:8
+#: media/templates/media-all.html:9
 msgid "Screenshots gallery"
 msgstr "Screenshot-Galerie"
 
-#: media/templates/media-all.html:12
+#: media/templates/media-all.html:31
 msgid "Media gallery"
 msgstr "Bildergallerie"
 
@@ -698,35 +719,31 @@ msgid ""
 " in a few seconds."
 msgstr "Beim Aufrufen der Seite ist ein Fehler aufgetreten. Bitte lade die Seite in ein paar Sekunden neu."
 
-#: templates/_base.html:10
-msgid "Official Dolphin Emulator Website"
-msgstr "Offizielle Seite des Dolphin-Emulators"
-
 #: templates/_base.html:23
 msgid "Latest blog articles"
 msgstr "Neueste Blog-Artikel"
 
-#: templates/_base.html:68
+#: templates/_base.html:74
 msgid "Screenshots"
 msgstr "Screenshots"
 
-#: templates/_base.html:69
+#: templates/_base.html:75
 msgid "FAQ"
 msgstr "FAQ"
 
-#: templates/_base.html:72
+#: templates/_base.html:78
 msgid "Forum"
 msgstr "Forum"
 
-#: templates/_base.html:73
+#: templates/_base.html:79
 msgid "Wiki"
 msgstr "Wiki"
 
-#: templates/_base.html:74
+#: templates/_base.html:80
 msgid "Code"
 msgstr "Code"
 
-#: templates/_base.html:110
+#: templates/_base.html:116
 #, python-format
 msgid ""
 "\n"
