@@ -15,7 +15,7 @@ html[dir="rtl"] .default-dir {
     direction: rtl;
 }
 
-/* Align some table text cells to the right (always english ltr text) */
+/* Align some table text cells to the right (always English ltr text) */
 html[dir="rtl"] table.versions-list td.description {
     text-align: right;
 }
