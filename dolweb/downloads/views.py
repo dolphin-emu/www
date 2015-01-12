@@ -45,6 +45,12 @@ def view_dev_release(request, hash):
 
     return { 'ver': release }
 
+@render_to('downloads-view-devrel.html')
+def view_dev_release_by_name(request, branch, name):
+    release = get_object_or_404(DevVersion, branch=branch, shortrev=name)
+
+    return { 'ver': release }
+
 @render_to('downloads-list.html')
 def list(request, branch, page):
     if page is None:
