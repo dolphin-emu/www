@@ -22,6 +22,11 @@ def home(request):
     except IndexError:
         last_master = u"master"
 
+    # HACK: Since 5.0 is still a long way away, show dev versions on the
+    # homepage. We do it here instead of in the templates to avoid invalidating
+    # translations.
+    last_release = last_master
+
     home_articles = Entry.published.all()[:settings.HOMEPAGE_ARTICLES]
 
     return { 'featured_images': featured, 'last_release': last_release,
