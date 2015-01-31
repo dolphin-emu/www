@@ -18,7 +18,7 @@
                 <h1>{% blocktrans %}<tt>{{ branch }}</tt> branch{% endblocktrans %}</h1>
                 {% include "downloads-devrel.html" %}
 
-                <p><a class="btn" href="{% url downloads-list branch 1 %}">{% trans "View older versions »" %}</a></p>
+                <p><a class="btn" href="{% url 'downloads-list' branch 1 %}">{% trans "View older versions »" %}</a></p>
                 </div>
             {% endfor %}
         </div>

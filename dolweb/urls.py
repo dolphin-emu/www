@@ -32,7 +32,7 @@ urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls)),
 
     # Management interface
-    url(r'^mgmt/(?P<cmd>.+)$', 'dolweb.management.views.run_command', name='mgmt-run-command'),
+    url(r'^mgmt/(?P<cmd>.+)$', 'dolweb.management.views.run_command', name='mgmt_run_command'),
 )
 
 urlpatterns += staticfiles_urlpatterns()

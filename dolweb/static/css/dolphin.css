@@ -502,16 +502,16 @@ p.entry-info, p.entry-last-update {
     display: inline-block;
 }
 
-ul.tags {
+ul.tag-cloud {
     margin: 0;
     padding: 0;
     list-style-type: none;
 }
-ul.tags li {
+ul.tag-cloud li {
     display: inline-block;
     margin: 0 0 0.3em 0;
 }
-ul.tags a {
+ul.tag-cloud a {
     background: #5bc0de;
     border-radius: 2px;
     padding: 2px 5px;

@@ -136,7 +136,7 @@
       <h4>{% trans "Tags" %}</h4>
       <ul class="tags">
       {% for tag in object.tags_list %}
-      <li><a href="{% url 'zinnia_tag_detail' tag %}"
+      <li><a href="{% url 'zinnia:tag_detail' tag %}"
          title="{% blocktrans %}Show all entries tagged by {{ tag }}{% endblocktrans %}"
          rel="tag">{{ tag }}</a></li>
       {% empty %}

@@ -41,7 +41,7 @@ class ReleaseVersion(DownloadableVersion):
 
     @models.permalink
     def get_absolute_url(self):
-        return ('downloads-view-release', [self.version])
+        return ('downloads_view_release', [self.version])
 
 class DevVersion(DownloadableVersion):
     """Download infos for a developement/nightly release"""
@@ -66,7 +66,7 @@ class DevVersion(DownloadableVersion):
 
     @models.permalink
     def get_absolute_url(self):
-        return ('downloads-view-devrel', (), { 'hash': self.hash })
+        return ('downloads_view_devrel', (), { 'hash': self.hash })
 
     @property
     def description_abbrev(self):

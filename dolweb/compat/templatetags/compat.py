@@ -59,4 +59,4 @@ def compat_url(char, rating):
         kwargs['filter_by'] = rating
     if char and char != '#':
         kwargs['first_char'] = char
-    return reverse('compat-list', kwargs=kwargs)
+    return reverse('compat_list', kwargs=kwargs)

@@ -21,4 +21,4 @@ class NewsArticle(models.Model):
 
     @models.permalink
     def get_absolute_url(self):
-        return ('news-article', [self.slug])
+        return ('news_article', [self.slug])

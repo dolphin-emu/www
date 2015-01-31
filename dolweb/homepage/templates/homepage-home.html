@@ -7,7 +7,7 @@
 {% load l10n %}
 {% load staticfiles %}
 {% load thumbnail %}
-{% load zinnia_tags %}
+{% load zinnia %}
 
 {% block "metadescr" %}{% blocktrans with ver=last_master.shortrev %}Official website of Dolphin, the GameCube and Wii emulator. Download the latest version ({{ ver }}) now or ask questions on our forums for help.{% endblocktrans %}{% endblock %}
 
@@ -45,7 +45,7 @@
             {% endblocktrans %}
             </p>
 
-            <p class="download-btn"><a class="btn btn-primary btn-lg" href="{% url downloads-index %}?ref=btn"><i class="icon-download-alt"></i> {% blocktrans %}Download {{ last_release }} for Windows, Mac and Linux »{% endblocktrans %}</a></p>
+            <p class="download-btn"><a class="btn btn-primary btn-lg" href="{% url 'downloads_index' %}?ref=btn"><i class="icon-download-alt"></i> {% blocktrans %}Download {{ last_release }} for Windows, Mac and Linux »{% endblocktrans %}</a></p>
             {% if FB_LIKE_PAGE %}
             <div class="fb-like" data-href="{{ FB_LIKE_PAGE }}" data-send="false" data-layout="button_count" data-width="100" data-show-faces="true"></div>
             {% endif %}
@@ -92,7 +92,7 @@
 <div class="row" style="margin-top: 1em">
     <div class="col-md-3">
         <div class="realign ratings-stats well">
-            <h4><a href="{% url compat-index %}">{% trans "Compatibility" %} »</a></h4>
+            <h4><a href="{% url 'compat_index' %}">{% trans "Compatibility" %} »</a></h4>
 
             <dl>
             {% for rating in all_ratings %}
@@ -105,7 +105,7 @@
         {% include "blog_sidebar.html" %}
     </div>
     <div class="col-md-9">
-        <a href="{% url zinnia_entry_latest_feed %}" class="rss-tag pull-right" title="{% trans "RSS feed of the latest articles" %}"><i class="icon-rss"></i></a>
+        <a href="{% url 'zinnia:entry_latest_feed' %}" class="rss-tag pull-right" title="{% trans "RSS feed of the latest articles" %}"><i class="icon-rss"></i></a>
         <h2 class="latest-articles">{% trans "Latest articles" %}</h2>
         {% for article in home_articles %}
         <div class="well">
@@ -132,7 +132,7 @@
                   {% endwith %}
                   <abbr class="published" title="{{ article.creation_date|date:"c" }}">{{ article.creation_date|date:"DATE_FORMAT" }}</abbr>
                   {% if article.within_series %}
-                  {% url dolweb.blog.views.series_index uid=article.within_series.pk as series_url %}
+                  {% url 'dolweb.blog.views.series_index' uid=article.within_series.pk as series_url %}
                   {% blocktrans with url=series_url name=article.within_series.name %}/ Part of series <a href="{{ url }}">{{ name}}</a>{% endblocktrans %}
                   {% endif %}
                   {% if article.forum_thread %}/ <i class="icon-comments"></i> <a href="{{ article.forum_thread.get_absolute_url }}" title="{% trans "Visit forum thread for this article" %}">{% trans "Forum thread" %}</a>{% endif %}

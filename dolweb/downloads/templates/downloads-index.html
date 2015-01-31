@@ -39,7 +39,7 @@ src="//pagead2.googlesyndication.com/pagead/show_ads.js">
 
 {% include "downloads-devrel.html" with builds=master_builds primclass='btn-info' %}
 
-<p><a class="btn" href="{% url downloads-list "master" 1 %}">{% trans "View older versions »" %}</a></p>
+<p><a class="btn" href="{% url 'downloads_list' "master" 1 %}">{% trans "View older versions »" %}</a></p>
 </div>
 
 <div style="text-align: center;">

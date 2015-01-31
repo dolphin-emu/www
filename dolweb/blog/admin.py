@@ -19,10 +19,6 @@ class BlogEntryAdmin(EntryAdmin):
     EntryAdmin.fieldsets[1:]
 
 
-# Unregister the default EntryAdmin
-admin.site.unregister(Entry)
-# then register our own
 admin.site.register(Entry, BlogEntryAdmin)
-
 admin.site.register(BlogSeries, BlogSeriesAdmin)
 admin.site.register(ForumThreadForEntry, ForumThreadForEntryAdmin)

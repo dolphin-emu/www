@@ -20,7 +20,7 @@
 
         <link rel="shortcut icon" href="{% static "img/favicon.ico" %}" />
 
-        <link rel="alternate" type="application/atom+xml" title="{% trans "Latest blog articles" %}" href="{% url zinnia_entry_latest_feed %}" />
+        <link rel="alternate" type="application/atom+xml" title="{% trans "Latest blog articles" %}" href="{% url 'zinnia:entry_latest_feed' %}" />
 
         {% for langshort, langname in LANGUAGES %}
             {% if langshort != LANGUAGE_CODE|short %}
@@ -65,16 +65,16 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-logo" href="{% url home %}"><img src="{% static "img/logo.png" %}" height="32" alt="{% trans "Dolphin Emulator" %}"></a>
+                    <a class="navbar-logo" href="{% url 'home' %}"><img src="{% static "img/logo.png" %}" height="32" alt="{% trans "Dolphin Emulator" %}"></a>
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav pull-left">
-                        <li><a href="{% url downloads-index %}">{% trans "Download" %}</a></li>
-                        <li><a href="{% url zinnia_entry_archive_index %}">{% trans "Articles" %}</a></li>
-                        <li><a href="{% url media-all %}">{% trans "Screenshots" %}</a></li>
-                        <li><a href="{% url docs-faq %}">{% trans "FAQ" %}</a></li>
-                        <li><a href="{% url docs-guides-index %}">{% trans "Guides" %}</a></li>
-                        <li><a href="{% url compat-index %}">{% trans "Compatibility" %}</a></li>
+                        <li><a href="{% url 'downloads_index' %}">{% trans "Download" %}</a></li>
+                        <li><a href="{% url 'zinnia:entry_archive_index' %}">{% trans "Articles" %}</a></li>
+                        <li><a href="{% url 'media_all' %}">{% trans "Screenshots" %}</a></li>
+                        <li><a href="{% url 'docs_faq' %}">{% trans "FAQ" %}</a></li>
+                        <li><a href="{% url 'docs_guides_index' %}">{% trans "Guides" %}</a></li>
+                        <li><a href="{% url 'compat_index' %}">{% trans "Compatibility" %}</a></li>
                         <li><a href="{{ FORUM_URL }}">{% trans "Forum" %}</a></li>
                         <li><a href="{{ WIKI_URL }}">{% trans "Wiki" %}</a></li>
                         <li><a href="{{ GIT_BROWSE_URL }}">{% trans "Code" %}</a></li>

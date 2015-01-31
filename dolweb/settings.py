@@ -197,14 +197,14 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'django.contrib.admin',
     'django.contrib.humanize',
-    'django.contrib.markup',
 
     # External
     'bootstrapform',
     'debug_toolbar',
     'sorl.thumbnail',
+    'markup_deprecated',
     # Blog dependencies
-    'django.contrib.comments',
+    'django_comments',
     'tagging',
     'mptt',
 
@@ -244,6 +244,8 @@ LOGGING = {
         },
     }
 }
+
+TEST_RUNNER = 'django.test.runner.DiscoverRunner'
 
 # Links and templates for links to other Dolphin properties.
 FORUM_URL = "https://forums.dolphin-emu.org/"
@@ -299,7 +301,7 @@ HOMEPAGE_ARTICLES = 3
 FORUM_URL_FOR_THREAD = 'https://forums.dolphin-emu.org/showthread.php?tid={id}'
 ZINNIA_MARKUP_LANGUAGE = 'markdown'
 ZINNIA_MAIL_COMMENT_AUTHORS = False
-ZINNIA_ENTRY_BASE_MODEL = 'dolweb.blog.entry_model.BlogEntry'
+ZINNIA_ENTRY_BASE_MODEL = 'dolweb.blog.models.BlogEntry'
 ZINNIA_FEEDS_FORMAT = 'atom'
 ZINNIA_FEEDS_MAX_ITEMS = 20
 ZINNIA_PROTOCOL = 'https'

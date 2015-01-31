@@ -2,7 +2,7 @@
 {% load url from future %}
 {% load static from staticfiles %}
 
-<form method="get" action="{% url 'zinnia_entry_search' %}" role="search">
+<form method="get" action="{% url 'zinnia:entry_search' %}" role="search">
     <div class="input-group">
         <input type="text" placeholder="{% trans "Search articles" %}" name="pattern" class="form-control" />
         <span class="input-group-btn">
