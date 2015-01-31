@@ -4,7 +4,7 @@ env.user = 'dolphin-emu'
 env.hosts = ['ssh.alwaysdata.com']
 
 def deploy(root, branch):
-    activate = "source /home/dolphin-emu/venv/www/bin/activate"
+    activate = "source /home/dolphin-emu/venv/new-www/bin/activate"
     with cd(root):
         run("git fetch")
         run("git checkout %s" % branch)
