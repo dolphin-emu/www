@@ -1,13 +1,13 @@
 <div class="text-center">
 <ul class="pagination">
     {% if page_obj.has_previous %}
-    <li><a href="{% url 'downloads-list' branch page_obj.previous_page_number %}">&larr;</a></li>
+    <li><a href="{% url 'downloads_list' branch page_obj.previous_page_number %}">&larr;</a></li>
     {% else %}
     <li class="disabled"><a href="#">&larr;</a></li>
     {% endif %}
 
     {% for page in page_obj.leading_range %}
-    <li><a href="{% url 'downloads-list' branch page %}">{{ page }}</a></li>
+    <li><a href="{% url 'downloads_list' branch page %}">{{ page }}</a></li>
     {% endfor %}
 
     {% if page_obj.leading_range %}
@@ -18,7 +18,7 @@
     {% if page == page_obj.number %}
     <li class="active"><a href="#">{{ page }}</a></li>
     {% else %}
-    <li><a href="{% url 'downloads-list' branch page %}">{{ page }}</a></li>
+    <li><a href="{% url 'downloads_list' branch page %}">{{ page }}</a></li>
     {% endif %}
     {% endfor %}
 
@@ -27,11 +27,11 @@
     {% endif %}
 
     {% for page in page_obj.trailing_range %}
-    <li><a href="{% url 'downloads-list' branch page %}">{{ page }}</a></li>
+    <li><a href="{% url 'downloads_list' branch page %}">{{ page }}</a></li>
     {% endfor %}
 
     {% if page_obj.has_next %}
-    <li><a href="{% url 'downloads-list' branch page_obj.next_page_number %}">&rarr;</a></li>
+    <li><a href="{% url 'downloads_list' branch page_obj.next_page_number %}">&rarr;</a></li>
     {% else %}
     <li class="disabled"><a href="#">&rarr;</a></li>
     {% endif %}
