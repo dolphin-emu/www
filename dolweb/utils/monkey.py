@@ -2,9 +2,9 @@ from django.utils.translation.trans_real import *
 from django.utils.translation import trans_real
 
 TO_FULL = {
-    'br': 'pt_BR',
-    'cn': 'zh_CN',
-    'ms': 'ms_MY',
+    'br': 'pt-BR',
+    'cn': 'zh-CN',
+    'ms': 'ms-MY',
 }
 TO_FULL_INVERTED = dict((v.lower(), k) for (k, v) in TO_FULL.iteritems())
 
