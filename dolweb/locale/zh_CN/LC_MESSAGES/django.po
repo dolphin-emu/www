@@ -3,17 +3,20 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
+# Scarlet White <gaoboyuan8@qq.com>, 2014
+# Pierre Bourdon <delroth@gmail.com>, 2015
 # Ryan Zhou <sentret_c@sina.cn>, 2013-2014
+# Scarlet White <gaoboyuan8@qq.com>, 2015
 # Ryan Zhou <sentret_c@sina.cn>, 2013
-# GAO Boyuan <gaoboyuan8@qq.com>, 2013-2014
+# Scarlet White <gaoboyuan8@qq.com>, 2013-2014
 # Ryan Zhou <sentret_c@sina.cn>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-08-24 12:37+0200\n"
-"PO-Revision-Date: 2014-06-25 08:44+0000\n"
-"Last-Translator: Ryan Zhou <sentret_c@sina.cn>\n"
+"PO-Revision-Date: 2015-02-06 01:24+0000\n"
+"Last-Translator: Pierre Bourdon <delroth@gmail.com>\n"
 "Language-Team: Chinese (China) (http://www.transifex.com/projects/p/dolphin-emu/language/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -556,7 +559,7 @@ msgid ""
 "    The latest version of the Dolphin source code can be downloaded from the\n"
 "    project Git repository.\n"
 "    "
-msgstr "\n    最新版本的Dolphin源代码可从本项目Git库中下载。\n    "
+msgstr "\n最新版本的 Dolphin 源代码可从本项目 Git 库中下载。"
 
 #: downloads/templates/downloads-index.html:101
 #, python-format
@@ -648,7 +651,7 @@ msgid ""
 "            (1080p) with several enhancements: compatibility with all PC\n"
 "            controllers, turbo speed, networked multiplayer, and even more!\n"
 "            "
-msgstr "\n<b>Dolphin</b> 是任天堂两款游戏平台的模拟器：<b>GameCube</b> 和 <b>Wii</b>。它可以让你在电脑上以<b>全高清</b>(1080p)的方式来玩这两个平台的游戏；它具有兼容所有 PC 控制器，加速，多人联网等特性。"
+msgstr "\n<b>Dolphin</b> 是任天堂两款游戏平台的模拟器：<b>GameCube</b> 和 <b>Wii</b>。它可以让你在电脑上以<b>全高清</b> (1080p) 的方式来玩这两个平台的游戏；它具有兼容所有 PC 控制器，加速，多人联网等特性。"
 
 #: homepage/templates/homepage-home.html:48
 #, python-format
@@ -739,4 +742,4 @@ msgid ""
 "            &copy; 2014 Dolphin Emulator Project -\n"
 "            <a href=\"%(WEBSITE_GIT_URL)s\">Website source code</a>\n"
 "            "
-msgstr "\n&copy; 2014 Dolphin 模拟器项目 -\n<a href=\"%(WEBSITE_GIT_URL)s\">网站源码</a> - <a href=\"http://tieba.baidu.com/f?kw=wii模拟器\">去贴吧讨论</a>"
+msgstr "\n&copy; 2014 Dolphin 模拟器项目 - <a href=\"%(WEBSITE_GIT_URL)s\">网站源码</a>"
