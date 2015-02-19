@@ -4,6 +4,7 @@ from django.core.paginator import Paginator, EmptyPage
 from django.http import Http404, HttpResponse
 from django.shortcuts import get_object_or_404
 from django.views.decorators.csrf import csrf_exempt
+from zinnia.views.mixins.entry_preview import EntryPreviewMixin
 
 from dolweb.blog.models import BlogSeries
 
@@ -38,3 +39,7 @@ def series_index(request, page=None):
 #         serie = get_object_or_404(BlogSerie, slug=slug)
 #
 #     return {'serie': serie}
+
+# TODO(delroth): Ugly. Should really authenticate these requests, but we don't
+# have a nice SSO story at the moment.
+del EntryPreviewMixin.get_object
