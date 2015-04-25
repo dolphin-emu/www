@@ -75,6 +75,7 @@ html[dir="rtl"] th {
 
 h1 a.headerlink, h2 a.headerlink,
 h3 a.headerlink, h4 a.headerlink {
+    margin-left: 0.5em;
     font-size: 60%;
     visibility: hidden;
 }
