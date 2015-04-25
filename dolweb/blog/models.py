@@ -76,7 +76,13 @@ class BlogEntry(AbstractEntry):
         Returns the "content" field formatted in HTML.
         """
         if MARKUP_LANGUAGE == 'markdown':
-            return markdown(self.content)
+            # TODO: Remove when Zinnia supports non-string Markdown exts.
+            import markdown
+            from zinnia.settings import MARKDOWN_EXTENSIONS
+            from django.utils.encoding import force_text
+            return markdown.markdown(force_text(self.content),
+                                     extensions=MARKDOWN_EXTENSIONS,
+                                     safe_mode=False)
         elif MARKUP_LANGUAGE == 'textile':
             return textile(self.content)
         elif MARKUP_LANGUAGE == 'restructuredtext':
