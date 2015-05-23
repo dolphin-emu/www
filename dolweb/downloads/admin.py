@@ -14,7 +14,7 @@ class ReleaseVersionAdmin(admin.ModelAdmin):
             'fields': ('version',),
         }),
         ('Download links', {
-            'fields': ('win32_url', 'win64_url', 'osx_url', 'ubu_url'),
+            'fields': ('win32_url', 'win64_url', 'osx_url', 'ubu_url', 'ubu_ver'),
         }),
     )
 admin.site.register(ReleaseVersion, ReleaseVersionAdmin)
@@ -27,7 +27,7 @@ class DevVersionAdmin(admin.ModelAdmin):
             'fields': ('branch', 'shortrev', 'hash', 'author', 'description'),
         }),
         ('Download links', {
-            'fields': ('win32_url', 'win64_url', 'osx_url', 'ubu_url'),
+            'fields': ('win32_url', 'win64_url', 'osx_url', 'ubu_url', 'ubu_ver'),
         }),
     )
 admin.site.register(DevVersion, DevVersionAdmin)
