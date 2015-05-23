@@ -26,6 +26,7 @@ class DownloadableVersion(models.Model):
     win64_url = models.URLField(null=True)
     osx_url = models.URLField(null=True)
     ubu_url = models.URLField(null=True)
+    ubu_ver =  models.CharField(max_length=64, default='13.04', null=True)
 
     class Meta:
         abstract = True

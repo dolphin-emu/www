@@ -83,11 +83,13 @@ def new(request):
     description = request.POST['description']
     build_type = request.POST['build_type']
     build_url = request.POST['build_url']
-    msg = "%d|%d|%d|%d|%d|%d|%d|%s|%s|%s|%s|%s|%s|%s" % (
+    builder_ver = request.POST['builder_ver']
+    msg = "%d|%d|%d|%d|%d|%d|%d|%d|%s|%s|%s|%s|%s|%s|%s|%s" % (
         len(branch), len(shortrev), len(hash), len(author), len(description),
-        len(build_type), len(build_url),
+        len(build_type), len(build_url), len(builder_ver),
 
-        branch, shortrev, hash, author, description, build_type, build_url
+        branch, shortrev, hash, author, description, build_type, build_url,
+        builder_ver
     )
     hm = hmac.new(settings.DOWNLOADS_CREATE_KEY, msg, hashlib.sha1)
     if hm.hexdigest() != request.POST['hmac']:
@@ -115,6 +117,7 @@ def new(request):
             build_obj.osx_url = build_url
         elif build_type == 'ubu':
             build_obj.ubu_url = build_url
+            build_obj.ubu_ver = builder_ver
         else:
             return HttpResponse('Wrong build type', status=400)
 
