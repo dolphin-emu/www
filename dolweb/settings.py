@@ -311,6 +311,9 @@ from markdown.extensions.toc import TocExtension
 ZINNIA_MARKUP_LANGUAGE = 'markdown'
 ZINNIA_MARKDOWN_EXTENSIONS = [TocExtension(permalink=True)]
 
+BLOG_ETHERPAD_URL = ''
+BLOG_ETHERPAD_HMAC_KEY = ''
+
 # Whitelist for the management interface.
 #
 # WARNING: This management interface gives shell access on the web server. TAKE
