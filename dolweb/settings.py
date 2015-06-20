@@ -312,6 +312,7 @@ ZINNIA_MARKUP_LANGUAGE = 'markdown'
 ZINNIA_MARKDOWN_EXTENSIONS = [TocExtension(permalink=True)]
 
 BLOG_ETHERPAD_URL = ''
+BLOG_ETHERPAD_API_KEY = ''
 BLOG_ETHERPAD_HMAC_KEY = ''
 
 # Whitelist for the management interface.
