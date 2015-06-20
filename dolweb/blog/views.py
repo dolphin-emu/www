@@ -2,11 +2,16 @@ from annoying.decorators import render_to
 from django.conf import settings
 from django.core.paginator import Paginator, EmptyPage
 from django.http import Http404, HttpResponse
-from django.shortcuts import get_object_or_404
+from zinnia.managers import PUBLISHED
+from zinnia.models.entry import Entry
 from django.views.decorators.csrf import csrf_exempt
 from zinnia.views.mixins.entry_preview import EntryPreviewMixin
 
 from dolweb.blog.models import BlogSeries
+
+import hashlib
+import hmac
+import json
 
 
 @render_to('series-index.html')
@@ -43,3 +48,35 @@ def series_index(request, page=None):
 # TODO(delroth): Ugly. Should really authenticate these requests, but we don't
 # have a nice SSO story at the moment.
 del EntryPreviewMixin.get_object
+
+@csrf_exempt
+def etherpad_event(request):
+    if request.method != 'POST':
+        raise Http404
+
+    if ' ' not in request.body:
+        return HttpResponse('Invalid format', status=400)
+
+    request_hmac, content = request.body.split(' ', 1)
+    hm = hmac.new(settings.BLOG_ETHERPAD_HMAC_KEY, content, hashlib.sha256)
+    if hm.hexdigest() != request_hmac:
+        return HttpResponse('Invalid signature', status=403)
+    events = json.loads(content)
+
+    last_updates = {}
+    for evt in events:
+        if evt.get('type') != 'pad_update':
+            continue
+        last_updates[evt.get('id')] = evt.get('text')
+
+    for pad_id, text in last_updates.iteritems():
+        try:
+            entry = Entry.objects.get(etherpad_id=pad_id)
+            if entry.status == PUBLISHED:
+                continue  # Do not auto-sync published articles.
+            entry.content = text
+            entry.save()
+        except Entry.DoesNotExist:
+            continue
+
+    return HttpResponse('OK')

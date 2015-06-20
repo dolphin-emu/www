@@ -1,3 +1,4 @@
+from django.conf import settings
 from django.conf.urls import patterns, url, include
 from dolweb.blog.feeds import SeriesFeed
 
@@ -13,3 +14,8 @@ urlpatterns += patterns('dolweb.blog.views',
     url(r'^series#series-(?P<uid>[0-9]+)$', 'series_index'),
     url(r'^series$', 'series_index'),
 )
+
+if settings.BLOG_ETHERPAD_URL:
+    urlpatterns += patterns('dolweb.blog.views',
+        url(r'^etherpad/event$', 'etherpad_event'),
+    )

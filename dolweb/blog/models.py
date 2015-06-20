@@ -66,6 +66,7 @@ class BlogEntry(AbstractEntry):
     Zinnia model.
     """
     within_series = models.ForeignKey(BlogSeries, null=True, blank=True, related_name='entries')
+    etherpad_id = models.CharField(max_length=256, null=True, blank=True, unique=True)
 
     # The default Zinnia implementation of this does stupid content sniffing,
     # assuming that if something contains </p> it is raw HTML. That's not true,
