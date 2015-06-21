@@ -68,6 +68,10 @@ class BlogEntry(AbstractEntry):
     within_series = models.ForeignKey(BlogSeries, null=True, blank=True, related_name='entries')
     etherpad_id = models.CharField(max_length=256, null=True, blank=True, unique=True)
 
+    @property
+    def use_collaborative_editing(self):
+        return self.etherpad_id and self.status != PUBLISHED
+
     # The default Zinnia implementation of this does stupid content sniffing,
     # assuming that if something contains </p> it is raw HTML. That's not true,
     # since Markdown can contain HTML.
