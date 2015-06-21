@@ -66,7 +66,7 @@ class BlogEntry(AbstractEntry):
     Zinnia model.
     """
     within_series = models.ForeignKey(BlogSeries, null=True, blank=True, related_name='entries')
-    etherpad_id = models.CharField(max_length=256, null=True, blank=True, unique=True)
+    etherpad_id = models.CharField(max_length=256, null=True, blank=True)
 
     @property
     def use_collaborative_editing(self):
