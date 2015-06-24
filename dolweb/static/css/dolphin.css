@@ -527,6 +527,16 @@ ul.tag-cloud a {
 html[dir="rtl"] .side-thumb {
     float: left;
 }
+.entry-body table th {
+    text-align: center;
+}
+.entry-body table th, .entry-body table td {
+    padding: 6px 13px;
+    border: 1px solid #ddd;
+}
+.entry-body table tr:nth-child(2n) {
+    background-color: #f8f8f8;
+}
 
 /* rss orange */
 .rss-tag {
