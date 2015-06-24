@@ -309,7 +309,10 @@ ZINNIA_PROTOCOL = 'https'
 
 from markdown.extensions.toc import TocExtension
 ZINNIA_MARKUP_LANGUAGE = 'markdown'
-ZINNIA_MARKDOWN_EXTENSIONS = [TocExtension(permalink=True)]
+ZINNIA_MARKDOWN_EXTENSIONS = [
+    TocExtension(permalink=True),
+    'markdown.extensions.tables',
+]
 
 BLOG_ETHERPAD_URL = ''
 BLOG_ETHERPAD_API_KEY = ''
