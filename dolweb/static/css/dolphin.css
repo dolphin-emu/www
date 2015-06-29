@@ -457,10 +457,6 @@ a.navbar-logo {
         font-size: 0.9em;
     }
 
-    #navbar-dolphin .container {
-        max-width: 1100px;
-    }
-
     #navbar-dolphin .dropdown-toggle span {
         display: none;
     }
@@ -469,11 +465,6 @@ a.navbar-logo {
 @media (max-width: 1000px) {
     #navbar-dolphin {
         font-size: 0.7em;
-    }
-
-    #navbar-dolphin .container {
-        width: 768px;
-        max-width: 950px;
     }
 
     #navbar-dolphin .nav > li > a {
