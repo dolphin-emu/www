@@ -472,7 +472,7 @@ a.navbar-logo {
     }
 
     #navbar-dolphin .container {
-        width: 768px;
+        width: 100%;
         max-width: 950px;
     }
 
