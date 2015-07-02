@@ -451,6 +451,7 @@ a.navbar-logo {
     .download-btn .btn-lg {
         font-size: 15px;
         font-weight: bold;
+        white-space: normal;
     }
 
     #navbar-dolphin {
@@ -482,13 +483,6 @@ a.navbar-logo {
 
 }
 
-@media (max-width: 470px) {
-     .download-btn > a {
-            width: 100%;
-            overflow: hidden;
-            text-overflow: ellipsis;
-    }
-}
 /* Blog */
 p.seemore {
     text-align: right;
