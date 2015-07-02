@@ -451,6 +451,7 @@ a.navbar-logo {
     .download-btn .btn-lg {
         font-size: 15px;
         font-weight: bold;
+        white-space: normal;
     }
 
     #navbar-dolphin {
@@ -472,7 +473,7 @@ a.navbar-logo {
     }
 
     #navbar-dolphin .container {
-        width: 768px;
+        width: 100%;
         max-width: 950px;
     }
 
