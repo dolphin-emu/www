@@ -479,8 +479,16 @@ a.navbar-logo {
     #navbar-dolphin .nav > li > a {
         padding: 15px 10px 15px 10px;
     }
+
 }
 
+@media (max-width: 470px) {
+     .download-btn > a {
+            width: 100%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+    }
+}
 /* Blog */
 p.seemore {
     text-align: right;
