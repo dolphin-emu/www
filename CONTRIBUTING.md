@@ -51,12 +51,14 @@ to - this user is required to access the admin part of the website:
 
     python manage.py syncdb
 
-After you've done this, you need to update the database models and apply those updates with the two following commands:
-    
-        python manage.py makemigrations 
-    
-        python manage.py migrate
-        
+After you've done this, you need to update the database models:
+
+    python manage.py makemigrations 
+
+And then apply those updates:
+
+    python manage.py migrate
+
 Then run a local web server, and browse to http://localhost:8000/ :
 
     python manage.py runserver
