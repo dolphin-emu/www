@@ -539,6 +539,22 @@ html[dir="rtl"] .side-thumb {
     background-color: #f8f8f8;
 }
 
+div.draft-warning {
+  background-color: yellow;
+  color: red;
+  text-decoration: blink;
+  font-size: 200%;
+}
+
+@keyframes blink {
+    0% { opacity: 100%; }
+    50% { opacity: 0; }
+    100% { opacity: 100%; }
+}
+.blink {
+    animation: blink 1.5s step-start 0s infinite;
+}
+
 /* rss orange */
 .rss-tag {
     display: inline-block;

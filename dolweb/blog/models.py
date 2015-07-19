@@ -70,7 +70,11 @@ class BlogEntry(AbstractEntry):
 
     @property
     def use_collaborative_editing(self):
-        return self.etherpad_id and self.status != PUBLISHED
+        return self.etherpad_id and self.draft
+
+    @property
+    def draft(self):
+        return self.status != PUBLISHED
 
     # The default Zinnia implementation of this does stupid content sniffing,
     # assuming that if something contains </p> it is raw HTML. That's not true,
