@@ -18,11 +18,12 @@ def index(request):
     """Displays the downloads index"""
 
     releases = ReleaseVersion.objects.order_by('-date')
-    master_builds = DevVersion.objects.filter(branch='master').order_by('-date')[:10]
+    master_builds = DevVersion.objects.filter(branch='master').order_by('-date')[:5]
+    stable_builds = DevVersion.objects.filter(branch='stable').filter(shortrev__istartswith='5.0-rc').order_by('-date')[:3]
     last_master = master_builds[0] if len(master_builds) else None
 
     return { 'releases': releases, 'master_builds': master_builds,
-             'last_master': last_master }
+             'last_master': last_master, 'stable_builds': stable_builds }
 
 @render_to('downloads-branches.html')
 def branches(request):
