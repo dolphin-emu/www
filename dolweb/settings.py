@@ -301,12 +301,22 @@ TRANSIFEX_FAQ_RESOURCE = ''
 # Blog settings
 HOMEPAGE_ARTICLES = 3
 FORUM_URL_FOR_THREAD = 'https://forums.dolphin-emu.org/showthread.php?tid={id}'
-ZINNIA_MARKUP_LANGUAGE = 'markdown'
 ZINNIA_MAIL_COMMENT_AUTHORS = False
 ZINNIA_ENTRY_BASE_MODEL = 'dolweb.blog.models.BlogEntry'
 ZINNIA_FEEDS_FORMAT = 'atom'
 ZINNIA_FEEDS_MAX_ITEMS = 20
 ZINNIA_PROTOCOL = 'https'
+
+from markdown.extensions.toc import TocExtension
+ZINNIA_MARKUP_LANGUAGE = 'markdown'
+ZINNIA_MARKDOWN_EXTENSIONS = [
+    TocExtension(permalink=True),
+    'markdown.extensions.tables',
+]
+
+BLOG_ETHERPAD_URL = ''
+BLOG_ETHERPAD_API_KEY = ''
+BLOG_ETHERPAD_HMAC_KEY = ''
 
 # Whitelist for the management interface.
 #

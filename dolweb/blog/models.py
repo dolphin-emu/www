@@ -66,6 +66,15 @@ class BlogEntry(AbstractEntry):
     Zinnia model.
     """
     within_series = models.ForeignKey(BlogSeries, null=True, blank=True, related_name='entries')
+    etherpad_id = models.CharField(max_length=256, null=True, blank=True)
+
+    @property
+    def use_collaborative_editing(self):
+        return self.etherpad_id and self.draft
+
+    @property
+    def draft(self):
+        return self.status != PUBLISHED
 
     # The default Zinnia implementation of this does stupid content sniffing,
     # assuming that if something contains </p> it is raw HTML. That's not true,
@@ -76,7 +85,13 @@ class BlogEntry(AbstractEntry):
         Returns the "content" field formatted in HTML.
         """
         if MARKUP_LANGUAGE == 'markdown':
-            return markdown(self.content)
+            # TODO: Remove when Zinnia supports non-string Markdown exts.
+            import markdown
+            from zinnia.settings import MARKDOWN_EXTENSIONS
+            from django.utils.encoding import force_text
+            return markdown.markdown(force_text(self.content),
+                                     extensions=MARKDOWN_EXTENSIONS,
+                                     safe_mode=False)
         elif MARKUP_LANGUAGE == 'textile':
             return textile(self.content)
         elif MARKUP_LANGUAGE == 'restructuredtext':

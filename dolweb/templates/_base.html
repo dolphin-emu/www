@@ -24,7 +24,7 @@
 
         {% for langshort, langname in LANGUAGES %}
             {% if langshort != LANGUAGE_CODE|short %}
-            <link rel="alternate" hreflang="{{ langshort|langcode }}" href="//{{ langshort|to_subdomain }}{{ request.path }}" />
+            <link rel="alternate" hreflang="{{ langshort|langcode }}" href="//{{ langshort|to_subdomain }}{{ request.path }}{% if request.META.QUERY_STRING %}?{{ request.META.QUERY_STRING }}{% endif %}" />
             {% endif %}
         {% endfor %}
 
@@ -70,7 +70,7 @@
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav pull-left">
                         <li><a href="{% url 'downloads_index' %}">{% trans "Download" %}</a></li>
-                        <li><a href="{% url 'zinnia:entry_archive_index' %}">{% trans "Articles" %}</a></li>
+                        <li><a href="{% url 'zinnia:entry_archive_index' %}">{% trans "Blog" %}</a></li>
                         <li><a href="{% url 'media_all' %}">{% trans "Screenshots" %}</a></li>
                         <li><a href="{% url 'docs_faq' %}">{% trans "FAQ" %}</a></li>
                         <li><a href="{% url 'docs_guides_index' %}">{% trans "Guides" %}</a></li>
@@ -104,7 +104,7 @@
                 <button type="button" class="close" data-dismiss="alert">&times;</button>
                 You have been redirected to the <strong>{{ LANGUAGE_CODE|langname }}</strong>
                 version of the website based on your browser language preferences.
-                If you prefer the english version, <a href="//{{ DEFAULT_HOST }}{{ request.path }}?nocr=true">click here to go back</a>.
+                If you prefer the English version, <a href="//{{ DEFAULT_HOST }}{{ request.path }}?nocr=true">click here to go back</a>.
             </div>
             {% endif %}
             {% block "body" %}

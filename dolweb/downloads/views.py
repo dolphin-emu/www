@@ -18,11 +18,12 @@ def index(request):
     """Displays the downloads index"""
 
     releases = ReleaseVersion.objects.order_by('-date')
-    master_builds = DevVersion.objects.filter(branch='master').order_by('-date')[:10]
+    master_builds = DevVersion.objects.filter(branch='master').order_by('-date')[:5]
+    stable_builds = DevVersion.objects.filter(branch='stable').filter(shortrev__istartswith='5.0-rc').order_by('-date')[:3]
     last_master = master_builds[0] if len(master_builds) else None
 
     return { 'releases': releases, 'master_builds': master_builds,
-             'last_master': last_master }
+             'last_master': last_master, 'stable_builds': stable_builds }
 
 @render_to('downloads-branches.html')
 def branches(request):
@@ -83,11 +84,13 @@ def new(request):
     description = request.POST['description']
     build_type = request.POST['build_type']
     build_url = request.POST['build_url']
-    msg = "%d|%d|%d|%d|%d|%d|%d|%s|%s|%s|%s|%s|%s|%s" % (
+    builder_ver = request.POST['builder_ver']
+    msg = "%d|%d|%d|%d|%d|%d|%d|%d|%s|%s|%s|%s|%s|%s|%s|%s" % (
         len(branch), len(shortrev), len(hash), len(author), len(description),
-        len(build_type), len(build_url),
+        len(build_type), len(build_url), len(builder_ver),
 
-        branch, shortrev, hash, author, description, build_type, build_url
+        branch, shortrev, hash, author, description, build_type, build_url,
+        builder_ver
     )
     hm = hmac.new(settings.DOWNLOADS_CREATE_KEY, msg, hashlib.sha1)
     if hm.hexdigest() != request.POST['hmac']:
@@ -115,6 +118,7 @@ def new(request):
             build_obj.osx_url = build_url
         elif build_type == 'ubu':
             build_obj.ubu_url = build_url
+            build_obj.ubu_ver = builder_ver
         else:
             return HttpResponse('Wrong build type', status=400)
 

@@ -15,7 +15,7 @@ html[dir="rtl"] .default-dir {
     direction: rtl;
 }
 
-/* Align some table text cells to the right (always english ltr text) */
+/* Align some table text cells to the right (always English ltr text) */
 html[dir="rtl"] table.versions-list td.description {
     text-align: right;
 }
@@ -73,12 +73,15 @@ html[dir="rtl"] th {
     text-align: right;
 }
 
-h1 a.anchor, h3 a.anchor {
+h1 a.headerlink, h2 a.headerlink,
+h3 a.headerlink, h4 a.headerlink {
+    margin-left: 0.5em;
     font-size: 60%;
     visibility: hidden;
 }
 
-h1:hover a.anchor, h3:hover a.anchor {
+h1:hover a.headerlink, h2:hover a.headerlink,
+h3:hover a.headerlink, h4:hover a.headerlink {
     visibility: visible;
 }
 
@@ -448,6 +451,7 @@ a.navbar-logo {
     .download-btn .btn-lg {
         font-size: 15px;
         font-weight: bold;
+        white-space: normal;
     }
 
     #navbar-dolphin {
@@ -469,7 +473,7 @@ a.navbar-logo {
     }
 
     #navbar-dolphin .container {
-        width: 768px;
+        width: 100%;
         max-width: 950px;
     }
 
@@ -523,6 +527,32 @@ ul.tag-cloud a {
 }
 html[dir="rtl"] .side-thumb {
     float: left;
+}
+.entry-body table th {
+    text-align: center;
+}
+.entry-body table th, .entry-body table td {
+    padding: 6px 13px;
+    border: 1px solid #ddd;
+}
+.entry-body table tr:nth-child(2n) {
+    background-color: #f8f8f8;
+}
+
+div.draft-warning {
+  background-color: yellow;
+  color: red;
+  text-decoration: blink;
+  font-size: 200%;
+}
+
+@keyframes blink {
+    0% { opacity: 100%; }
+    50% { opacity: 0; }
+    100% { opacity: 100%; }
+}
+.blink {
+    animation: blink 1.5s step-start 0s infinite;
 }
 
 /* rss orange */

@@ -42,6 +42,17 @@ src="//pagead2.googlesyndication.com/pagead/show_ads.js">
 <p><a class="btn" href="{% url 'downloads_list' "master" 1 %}">{% trans "View older versions »" %}</a></p>
 </div>
 
+<div id="download-stable">
+<h1>{% trans "Release Candidate versions" %}</h1>
+
+<div class="alert alert-info">{% blocktrans %}
+    Release candidate versions are released to test an upcoming stable release of
+    Dolphin. They are generally more stable than the Development versions, but may still have known bugs.
+{% endblocktrans %}</div>
+
+{% include "downloads-devrel.html" with builds=stable_builds primclass='btn-info' %}
+</div>
+
 <div style="text-align: center;">
 <script type="text/javascript"><!--
 google_ad_client = "ca-pub-8646203626363069";
@@ -86,6 +97,15 @@ src="//pagead2.googlesyndication.com/pagead/show_ads.js">
     </tbody>
 </table>
 </div>
+
+<div id="other-linux">
+    <h1>{% trans "Older Ubuntu (< 15.04) and users of other Linux distributions" %}</h1>
+    <p>{% blocktrans %}Ubuntu 14.10 and older users can install a PPA 
+    for development and stable versions of Dolphin here: <a href="https://wiki.dolphin-emu.org/index.php?title=Installing_Dolphin#Ubuntu">Installing Dolphin</a>
+    {% endblocktrans %}</p>
+    <p>{% blocktrans %}Users of other Linux distributions can look here to compile Dolphin: <a href="https://wiki.dolphin-emu.org/index.php?title=Building_Dolphin_on_Linux">Building Dolphin on Linux</a>
+    {% endblocktrans %}</p>
+</div>   
 
 <div id="download-source">
     <h1>{% trans "Source code" %}</h1>
