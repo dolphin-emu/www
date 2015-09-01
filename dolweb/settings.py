@@ -258,7 +258,7 @@ GIT_CLONE_URL = "https://github.com/dolphin-emu/dolphin.git"
 GIT_COMMIT_URL = "https://github.com/dolphin-emu/dolphin/commit/"
 GIT_PR_URL = "https://github.com/dolphin-emu/dolphin/pull/%s"
 WEBSITE_GIT_URL = "https://github.com/dolphin-emu/www"
-ISSUES_URL = "https://code.google.com/p/dolphin-emu/issues/list"
+ISSUES_URL = "https://bugs.dolphin-emu.org/projects/redmine/issues"
 
 # Used for i18n purposes: the language code is prepended to this default
 # hostname.
