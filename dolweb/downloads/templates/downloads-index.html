@@ -31,10 +31,13 @@ src="//pagead2.googlesyndication.com/pagead/show_ads.js">
 <h1>{% trans "Development versions" %}</h1>
 
 <div class="alert">{% blocktrans %}
-    Development versions are released every time a developer makes a change to
+    <p>Development versions are released every time a developer makes a change to
     Dolphin, several times every day! Using development versions enables you to
     use the latest and greatest improvements to the project. They are however
-    less tested than stable versions of the emulator.
+    less tested than stable versions of the emulator.</p>
+
+    <p>The development versions require the <a href="https://www.microsoft.com/en-us/download/details.aspx?id=48145">64-bit Visual C++ redistributable for Visual Studio 2015</a>
+    to be installed.</p>
 {% endblocktrans %}</div>
 
 {% include "downloads-devrel.html" with builds=master_builds primclass='btn-info' %}
