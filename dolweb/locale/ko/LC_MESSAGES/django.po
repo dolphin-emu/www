@@ -3,16 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Siegfried <iori3000@hanafos.com>, 2013-2014
+# Siegfried <iori3000@hanafos.com>, 2013-2015
+# itstake <bexco2010@gmail.com>, 2015
 # Siegfried <iori3000@hanafos.com>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-08-24 12:37+0200\n"
-"PO-Revision-Date: 2014-08-01 23:25+0000\n"
+"PO-Revision-Date: 2015-08-23 12:35+0000\n"
 "Last-Translator: Siegfried <iori3000@hanafos.com>\n"
-"Language-Team: Korean (http://www.transifex.com/projects/p/dolphin-emu/language/ko/)\n"
+"Language-Team: Korean (http://www.transifex.com/delroth/dolphin-emu/language/ko/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -26,12 +27,12 @@ msgstr "컨텐트"
 #: blog/feeds.py:24
 #, python-format
 msgid "Entries for the series %s"
-msgstr "%s 시리즈에 대한 엔트리"
+msgstr "%s 시리즈에 대한 게시글"
 
 #: blog/feeds.py:27
 #, python-format
 msgid "The latest entries for the series %s"
-msgstr "시리즈 %s 에 대한 최근 엔트리"
+msgstr "시리즈 %s 에 대한 최근 게시글"
 
 #: blog/models.py:16
 msgid "image"
@@ -39,7 +40,7 @@ msgstr "이미지"
 
 #: blog/models.py:17
 msgid "Used for illustration."
-msgstr "삽화에 사용되는"
+msgstr "삽화에 사용됨."
 
 #: blog/templates/blog_sidebar.html:6
 #: blog/templates/zinnia/tags/search_form.html:7
@@ -69,7 +70,7 @@ msgid_plural ""
 "\n"
 "    %(count)s entries\n"
 "  "
-msgstr[0] "\n    %(count)s 엔트리\n  "
+msgstr[0] "\n    %(count)s 게시글\n  "
 
 #: blog/templates/series-index.html:27
 msgid "RSS feed:"
@@ -88,7 +89,7 @@ msgstr "작성자:"
 #: homepage/templates/homepage-home.html:126
 #, python-format
 msgid "Show all %(author)s's entries"
-msgstr "모든 %(author)s's 엔트리 보기"
+msgstr "모든 %(author)s 의 게시글 보기"
 
 #: blog/templates/zinnia/_entry_detail_base.html:27
 #: homepage/templates/homepage-home.html:128
@@ -98,16 +99,16 @@ msgstr "날짜:"
 #: blog/templates/zinnia/_entry_detail_base.html:29
 #: homepage/templates/homepage-home.html:130
 msgid "Written on"
-msgstr "작성 날짜"
+msgstr "작성 날짜:"
 
 #: blog/templates/zinnia/_entry_detail_base.html:37
 msgid "Last update on"
-msgstr "마지막 업데이트 날짜"
+msgstr "마지막 업데이트:"
 
 #: blog/templates/zinnia/_entry_detail_base.html:39
 #, python-format
 msgid "Short URL to %(object)s"
-msgstr "짧은 URL to %(object)s"
+msgstr "%(object)s 의 짧은 URL"
 
 #: blog/templates/zinnia/_entry_detail_base.html:40
 msgid "Short link"
@@ -116,7 +117,7 @@ msgstr "짧은 링크"
 #: blog/templates/zinnia/_entry_detail_base.html:41
 #: homepage/templates/homepage-home.html:138
 msgid "Visit forum thread for this article"
-msgstr "이 기사에 대해 포럼 쓰레드를 방문합니다"
+msgstr "이 기사에 대한 포럼 쓰레드를 방문합니다"
 
 #: blog/templates/zinnia/_entry_detail_base.html:41
 #: homepage/templates/homepage-home.html:138
@@ -144,15 +145,15 @@ msgstr "이 기사의 <a href=\"%(url)s\" title=\"Visit forum thread for this ar
 msgid ""
 "This article is number %(nth)s within the blog series\n"
 "    <a href=\"%(url)s\"><em>%(series)s</em></a>."
-msgstr "이 기사는 블로그 시리즈안에 %(nth)s 번째 입니다\n    <a href=\"%(url)s\"><em>%(series)s</em></a>."
+msgstr "이 기사는 <a href=\"%(url)s\"><em>%(series)s</em></a>\n블로그 시리즈의 %(nth)s 번째 글 입니다.\n    ."
 
 #: blog/templates/zinnia/_entry_detail_base.html:85
 msgid "‹ Previous article in series"
-msgstr "‹ 시리즈 안에 이전 기사"
+msgstr "‹ 이 시리즈의 이전 글"
 
 #: blog/templates/zinnia/_entry_detail_base.html:87
 msgid "Next article in series ›"
-msgstr "시리즈안에 다음 기사 ›"
+msgstr "이 시리즈의 다음 글 ›"
 
 #: blog/templates/zinnia/_entry_detail_base.html:137
 msgid "Tags"
@@ -161,7 +162,7 @@ msgstr "태그"
 #: blog/templates/zinnia/_entry_detail_base.html:141
 #, python-format
 msgid "Show all entries tagged by %(tag)s"
-msgstr "%(tag)s 에 의해 태그된 모든 엔트리들 보기"
+msgstr "%(tag)s 가 태그된 모든 게시글들 보기"
 
 #: blog/templates/zinnia/_entry_detail_base.html:144
 msgid "No tags"
@@ -174,7 +175,7 @@ msgstr "범주"
 #: blog/templates/zinnia/_entry_detail_base.html:155
 #, python-format
 msgid "Show all entries in %(category)s"
-msgstr "%(category)s 안에 모든 엔트리 보기"
+msgstr "%(category)s 에 속한 모든 게시글 보기"
 
 #: blog/templates/zinnia/_entry_detail_base.html:158
 msgid "No categories"
@@ -182,44 +183,44 @@ msgstr "범주가 없음"
 
 #: blog/templates/zinnia/entry_detail_base.html:22
 msgid "RSS Feed of discussions on"
-msgstr "RSS Feed 논의들 켜짐"
+msgstr "RSS 피드에서 글 보이기"
 
 #: blog/templates/zinnia/entry_detail_base.html:24
 msgid "RSS Feed of comments on"
-msgstr "RSS Feed 커멘트 켜짐"
+msgstr "RSS 피드에서 댓글 보이기"
 
 #: blog/templates/zinnia/entry_detail_base.html:26
 msgid "RSS Feed of pingbacks on"
-msgstr "RSS Feed 핑백 켜짐"
+msgstr "RSS 피드에서 핑백 보이기"
 
 #: blog/templates/zinnia/entry_detail_base.html:28
 msgid "RSS Feed of trackbacks on"
-msgstr "RSS Feed 트랙백 켜짐"
+msgstr "RSS 피드에서 트랙백 보이기"
 
 #: blog/templates/zinnia/entry_detail_base.html:46
 msgid "Next entry"
-msgstr "다음 엔트리"
+msgstr "다음 게시글"
 
 #: blog/templates/zinnia/entry_detail_base.html:58
 msgid "Previous entry"
-msgstr "이전 엔트리"
+msgstr "이전 게시글"
 
 #: blog/templates/zinnia/entry_detail_base.html:70
 msgid "Related entries"
-msgstr "관련 엔트리들"
+msgstr "관련 게시글들"
 
 #: blog/templates/zinnia/entry_detail_base.html:82
 msgid "Similar entries"
-msgstr "비슷한 엔트리들"
+msgstr "비슷한 게시글들"
 
 #: blog/templates/zinnia/entry_detail_base.html:224
 #: blog/templates/zinnia/entry_detail_base.html:225
 msgid "Edit the entry"
-msgstr "엔트리 수정하기"
+msgstr "게시글 수정하기"
 
 #: blog/templates/zinnia/entry_list.html:5
 msgid "Latest entries for"
-msgstr "최근 엔트리 for"
+msgstr "최근 게시글:"
 
 #: blog/templates/zinnia/entry_list.html:5
 msgid "the category"
@@ -227,11 +228,11 @@ msgstr "범주"
 
 #: blog/templates/zinnia/entry_list.html:5
 msgid "the tag"
-msgstr "테그"
+msgstr "태그"
 
 #: blog/templates/zinnia/entry_list.html:5
 msgid "the author"
-msgstr "저작자"
+msgstr "작성자"
 
 #: blog/templates/zinnia/entry_list.html:5
 msgid "page"
@@ -245,7 +246,7 @@ msgstr "RSS 피드"
 
 #: blog/templates/zinnia/entry_list.html:20
 msgid "Latest entries"
-msgstr "최근 엔트리"
+msgstr "최근 게시글"
 
 #: blog/templates/zinnia/entry_list.html:20
 msgid "Category"
@@ -257,7 +258,7 @@ msgstr "태그"
 
 #: blog/templates/zinnia/entry_list.html:20
 msgid "Author"
-msgstr "저작자"
+msgstr "작성자"
 
 #: blog/templates/zinnia/entry_list.html:20
 msgid "Page"
@@ -280,7 +281,7 @@ msgstr "저작자 보관소: %(author)s"
 
 #: blog/templates/zinnia/entry_list.html:48
 msgid "No entries yet."
-msgstr "엔트리 아직 없음."
+msgstr "아직 게시글이 없습니다."
 
 #: blog/templates/zinnia/entry_list.html:67
 #: blog/templates/zinnia/entry_list.html:68
@@ -295,11 +296,11 @@ msgstr "태그 수정"
 #: blog/templates/zinnia/entry_list.html:81
 #: blog/templates/zinnia/entry_list.html:82
 msgid "Edit the author"
-msgstr "저작자 수정"
+msgstr "작성자 수정"
 
 #: blog/templates/zinnia/skeleton.html:5
 msgid "Latest news for Dolphin Emulator"
-msgstr "돌핀 에뮬레이터 최신 뉴스들"
+msgstr "돌핀 에뮬레이터의 최신 뉴스들"
 
 #: blog/templates/zinnia/skeleton.html:8 templates/_base.html:73
 msgid "Articles"
@@ -316,7 +317,7 @@ msgstr "사용할 수 있음 - 단어들 어구들을 제외하기위해, &quot;
 msgid ""
 "The Dolphin Emulator compatibility list contains all the games we tested, "
 "sorted by how well they work on the emulator."
-msgstr "돌핀 에뮬레이터 호환성 리스트는 우리가 테스트한 모든 게임을 포함합니다, 에뮬레이터에서 얼마나 잘 작동하냐에 따라 정렬되어 있습니다."
+msgstr "돌핀 에뮬레이터의 호환성 리스트에는 잘 작동하는 순으로 정렬된 우리가 테스트한 모든 게임들이 있습니다."
 
 #: compat/templates/compat-list.html:11
 #, python-format
@@ -333,7 +334,7 @@ msgstr "5 중에 5"
 
 #: compat/templates/compat-list.html:26
 msgid "<strong>Perfect</strong>: No issues at all!"
-msgstr "<strong>완벽한</strong>: 이슈가 전혀 없음!"
+msgstr "<strong>완벽함</strong>: 문제가 전혀 없어요!"
 
 #: compat/templates/compat-list.html:27
 msgid "4 out of 5"
@@ -343,7 +344,7 @@ msgstr "5 중에 4"
 msgid ""
 "<strong>Playable</strong>: Runs well, only minor graphical or audio "
 "glitches. Games can be played all the way through."
-msgstr "<strong>플레이가능</strong>: 잘 구동됨, 단지 그래픽이나 오디오의 작은 문제들. 게임을 쭉 플레이 가능."
+msgstr "<strong>플레이 가능</strong>: 잘 구동됨, 단지 그래픽이나 오디오의 작은 문제들. 게임을 쭉 플레이 가능."
 
 #: compat/templates/compat-list.html:28
 msgid "3 out of 5"
@@ -353,7 +354,7 @@ msgstr "5 중에 3"
 msgid ""
 "<strong>Starts</strong>: Starts, maybe even plays well, but crashes or major"
 " graphical/audio glitches."
-msgstr "<strong>시작</strong>: 시작, 심지어 플레이가 잘 될 지도 모른다, 깨지거나 주요 그래픽/오디오 문제들 외에."
+msgstr "<strong>시작 가능</strong>: 시작 가능,  플레이가 잘 될지도 모르지만, 크래시가 발생하거나 주요 그래픽/오디오 결함이 발생합니다."
 
 #: compat/templates/compat-list.html:29
 msgid "2 out of 5"
@@ -371,7 +372,7 @@ msgstr "5 중에 1"
 
 #: compat/templates/compat-list.html:30
 msgid "<strong>Broken</strong>: Crashes when booting."
-msgstr "<strong>고장난</strong>: 부팅할 때 깨짐."
+msgstr "<strong>고장남</strong>: 부팅할 때 깨짐."
 
 #: compat/templates/compat-list.html:37
 msgid "Statistics"
@@ -395,7 +396,7 @@ msgstr "필터"
 
 #: compat/templates/compat-list.html:65
 msgid "Game title (click for details)"
-msgstr "게임 타이틀 (세부사항은 클릭)"
+msgstr "게임 타이틀 (클릭하여 세부사항 보기)"
 
 #: compat/templates/compat-list.html:66
 #: homepage/templates/homepage-home.html:95 templates/_base.html:77
@@ -408,15 +409,15 @@ msgstr "마지막 업데이트"
 
 #: compat/templates/compat-list.html:84
 msgid "Your query does not match any game."
-msgstr "쿼리가 어느 게임과도 매치되지 않습니다."
+msgstr "당신의 질의에 해당하는 게임이 없습니다."
 
 #: compat/templatetags/compat.py:9
 msgid "Unknown"
-msgstr "알려지지 않은"
+msgstr "알려지지 않음"
 
 #: compat/templatetags/compat.py:10
 msgid "Broken"
-msgstr "고장난"
+msgstr "고장남"
 
 #: compat/templatetags/compat.py:11
 msgid "Intro/Menu"
@@ -424,15 +425,15 @@ msgstr "도입부/메뉴"
 
 #: compat/templatetags/compat.py:12
 msgid "Starts"
-msgstr "시작"
+msgstr "시작 가능"
 
 #: compat/templatetags/compat.py:13
 msgid "Playable"
-msgstr "플레이가능한"
+msgstr "플레이 가능"
 
 #: compat/templatetags/compat.py:14
 msgid "Perfect"
-msgstr "완벽한"
+msgstr "완벽함"
 
 #: docs/templates/docs-faq.html:6
 msgid ""
@@ -450,7 +451,7 @@ msgstr "가이드 목록으로 돌아갑니다"
 
 #: docs/templates/docs-guides-index.html:5
 msgid "See all the guides written by the Dolphin team about the emulator."
-msgstr "에뮬레이터에 대한 돌핀팀에 의해 쓰여진 모든 안내를 보세요."
+msgstr "돌핀 팀이 작성한 에뮬레이터에 대한 모든 안내를 보세요."
 
 #: docs/templates/docs-guides-index.html:7 templates/_base.html:76
 msgid "Guides"
@@ -483,7 +484,7 @@ msgstr "(<a href=\"%(pr_url)s\">PR #%(pr_id)s</a> 저자 <a href=\"%(author_url)
 #: downloads/templates/downloads-branches.html:5
 #: downloads/templates/downloads-branches.html:9
 msgid "Download development builds"
-msgstr "개발자 빌드 다운로드"
+msgstr "개발 빌드 다운로드"
 
 #: downloads/templates/downloads-branches.html:18
 #, python-format
@@ -493,7 +494,7 @@ msgstr "<tt>%(branch)s</tt> 분기"
 #: downloads/templates/downloads-branches.html:21
 #: downloads/templates/downloads-index.html:42
 msgid "View older versions »"
-msgstr "예전 버전들 보기"
+msgstr "예전 버전들 보기 »"
 
 #: downloads/templates/downloads-branches.html:28
 msgid "Branch list"
@@ -501,7 +502,7 @@ msgstr "분기 목록"
 
 #: downloads/templates/downloads-devrel.html:19
 msgid "No development release yet"
-msgstr "개발자 릴리즈가 아직 없습니다"
+msgstr "개발 릴리즈가 아직 없습니다"
 
 #: downloads/templates/downloads-index.html:6
 #, python-format
@@ -517,7 +518,7 @@ msgstr "다운로드"
 
 #: downloads/templates/downloads-index.html:31
 msgid "Development versions"
-msgstr "개발자 버전"
+msgstr "개발 버전"
 
 #: downloads/templates/downloads-index.html:33
 msgid ""
@@ -526,7 +527,7 @@ msgid ""
 "    Dolphin, several times every day! Using development versions enables you to\n"
 "    use the latest and greatest improvements to the project. They are however\n"
 "    less tested than stable versions of the emulator.\n"
-msgstr "\n개발 버전들은 개발자가 돌핀에 변경을 만들 때마다 매번 릴리즈됩니다, 하루에 여러번! \n개발 버전을 사용하는 것은 당신에게 프로젝트에 가장 최신이면서 뛰어난 향상을\n사용하게 해줍니다. 하지만 그것들은 안정된 에뮬레이터 버전들보다 덜 테스트됩니다.\n"
+msgstr "\n개발 버전들은 하루에 여러 번 개발자가 돌핀에 변경을 만들 때마다\n매번 릴리즈 됩니다. 개발 버전을 사용하는 것은 프로젝트의 \n가장 최신이며 뛰어난 향상들을 사용할 수 있게 해줍니다. 하지만 \n안정된 에뮬레이터 버전들보다 덜 테스트됩니다.\n"
 
 #: downloads/templates/downloads-index.html:60
 msgid "Stable versions"
@@ -538,11 +539,11 @@ msgid ""
 "    Stable versions are released after a lot of testing to ensure emulation\n"
 "    performance and stability. However, since they are released less often,\n"
 "    they might be outdated and lacking some new features.\n"
-msgstr "\n안정 버전들은 에뮬레이션 성능과 안정성을 신뢰하기 위해 많은 테스트후에 릴리즈됩니다.\n하지만, 아주 드문 간격으로 릴리즈되기 때문에,\n구식이거나 일부 새로운 것들이 빠질 수도 있습니다.\n"
+msgstr "\n안정된 버전들은 에뮬레이션 성능과 안정성을 신뢰하기 위해 많은 테스트 후에 \n릴리즈됩니다. 하지만, 아주 드문 간격으로 릴리즈되기 때문에,\n최신 기능들이 빠질 수도 있습니다.\n"
 
 #: downloads/templates/downloads-index.html:84
 msgid "No stable release yet"
-msgstr "안정된 출시가 아직 없음"
+msgstr "아직 안정된 출시 버전이 없음"
 
 #: downloads/templates/downloads-index.html:91
 msgid "Source code"
@@ -562,11 +563,11 @@ msgid ""
 "\n"
 "    You can also <a href=\"%(GIT_BROWSE_URL)s\">browse the current version of the source code</a>.\n"
 "    "
-msgstr "\n    또한 <a href=\"%(GIT_BROWSE_URL)s\">소스 코드의 현재 버전을 둘러보기</a> 가능.\n    "
+msgstr "\n    또한 <a href=\"%(GIT_BROWSE_URL)s\">소스 코드의 현재 버전을 둘러볼 수 있습니다</a>.\n    "
 
 #: downloads/templates/downloads-index.html:108
 msgid "Reporting bugs"
-msgstr "버그 리포팅"
+msgstr "버그 신고"
 
 #: downloads/templates/downloads-index.html:110
 #, python-format
@@ -575,7 +576,7 @@ msgid ""
 "    For reporting bugs please go to <a href=\"%(ISSUES_URL)s\">the issue tracker on Google Code</a>.\n"
 "    Before creating a new issue, make sure to try a recent development build and search the existing issues.\n"
 "    "
-msgstr "\n    버그 리포팅을 하려면 여기로 가세요 <a href=\"%(ISSUES_URL)s\">구글 코드에 이슈 트레커</a>.\n    새로운 이슈를 생성하기 전에, 최근 개발 빌드 시도와 존재하는 이슈인지 찾아보세요.\n    "
+msgstr "\n<a href=\"%(ISSUES_URL)s\">구글 코드의 이슈 트레커</a>. 에서 버그를 신고할 수 있습니다.\n새로운 이슈를 생성하기 전에, 최근 개발 빌드로 테스트하기와 존재하는 이슈인지 찾아보기를 확인하세요.\n    "
 
 #: downloads/templates/downloads-list.html:5
 #, python-format
@@ -615,22 +616,22 @@ msgstr "커밋"
 
 #: downloads/templates/downloads-view-devrel.html:48
 msgid "Change author"
-msgstr "만든이를 변경하세요"
+msgstr "만든이 변경"
 
 #: downloads/templates/downloads-view-devrel.html:51
 msgid "Change description"
-msgstr "설명을 변경하세요"
+msgstr "설명 변경"
 
 #: homepage/templates/homepage-home.html:12
 #, python-format
 msgid ""
 "Official website of Dolphin, the GameCube and Wii emulator. Download the "
 "latest version (%(ver)s) now or ask questions on our forums for help."
-msgstr "공식 돌핀 웹사이트, 게임큐브와 Wii 에뮬레이터. 최신 버전 (%(ver)s) 을 지금 다운받으시거나 도움을 위해 우리 포럼에서 질문 하세요."
+msgstr "게임큐브 및 Wii 에뮬레이터인 돌핀의 공식 웹사이트입니다. 최신 버전 (%(ver)s) 을 다운받으시거나 도움이 필요하시면 포럼에서 질문해 주세요."
 
 #: homepage/templates/homepage-home.html:14
 msgid "GameCube/Wii games on PC"
-msgstr "PC에서 게임큐브/위 게임"
+msgstr "PC에서 게임큐브/Wii 게임"
 
 #: homepage/templates/homepage-home.html:37 templates/_base.html:10
 #: templates/_base.html.py:68
@@ -646,7 +647,7 @@ msgid ""
 "            (1080p) with several enhancements: compatibility with all PC\n"
 "            controllers, turbo speed, networked multiplayer, and even more!\n"
 "            "
-msgstr "\n<b>돌핀</b>은 두 최근 닌텐도 비디오 게임 콘솔: <b>게임큐브</b>와 <b>Wii</b>에 \n대한 에뮬레이터입니다. 이것은 PC 게이머들이 \n이 두 콘솔들에 대한 게임들을 <b>full HD</b>(1080p) 해상도로 \n여러가지 향상들: 모든 PC 컨트롤러 호환, 터보 스피드, \n네트워크 멀티플레이어, 그리고 더욱 더 많은 것들과 함께 즐기도록해줍니다 !"
+msgstr "\n            <b>돌핀</b>은 두 최근 닌텐도 비디오 게임 콘솔: <b>게임큐브</b>와 <b>Wii</b>에 대한 \n            에뮬레이터입니다. 이것은 PC 게이머들이 이 두 콘솔들에 대한 게임들을 \n            <b>full HD</b>(1080p) 해상도로 여러가지 향상들과 함께 즐기도록 해줍니다: \n            모든 PC 컨트롤러 호환, 터보 스피드, 네트워크 멀티플레이, \n            그리고 더 많은 기능이 있습니다!\n            "
 
 #: homepage/templates/homepage-home.html:48
 #, python-format
@@ -664,7 +665,7 @@ msgstr "최근 기사들"
 #: homepage/templates/homepage-home.html:136
 #, python-format
 msgid "/ Part of series <a href=\"%(url)s\">%(name)s</a>"
-msgstr "/ 시리즈의 일부 <a href=\"%(url)s\">%(name)s</a>"
+msgstr "/ 시리즈 파트: <a href=\"%(url)s\">%(name)s</a>"
 
 #: homepage/templates/homepage-home.html:143
 msgid "Read this article"
@@ -678,7 +679,7 @@ msgstr "기사가 아직 없음."
 msgid ""
 "View all the user-contributed screenshots of the Dolphin Emulator: GameCube "
 "and Wii games in HD."
-msgstr "돌핀 에뮬레이터의 사용자-기증된 스크린샷들을 보세요: HD로 게임큐브와 Wii 게임들."
+msgstr "돌핀 에뮬레이터의 사용자-기증된 스크린샷들을 보세요: HD로 돌린 게임큐브 및 Wii 게임들"
 
 #: media/templates/media-all.html:9
 msgid "Screenshots gallery"
@@ -704,7 +705,7 @@ msgstr "내부 서버 에러"
 msgid ""
 "There was an error while trying to access this page. Please refresh the page"
 " in a few seconds."
-msgstr "이 페이지를 접속하는 동안 에러가 있었습니다. 몇 초사이에 페이지를 새로고침하세요."
+msgstr "이 페이지를 접속하는 동안 에러가 있었습니다. 잠시 후에 페이지를 새로고침하세요."
 
 #: templates/_base.html:23
 msgid "Latest blog articles"

@@ -4,15 +4,15 @@
 # 
 # Translators:
 # João Frade <100nome.portugal@gmail.com>, 2013
-# João Frade <100nome.portugal@gmail.com>, 2013-2014
+# João Frade <100nome.portugal@gmail.com>, 2013-2015
 msgid ""
 msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-08-24 12:37+0200\n"
-"PO-Revision-Date: 2014-06-25 09:21+0000\n"
+"PO-Revision-Date: 2015-06-08 12:29+0000\n"
 "Last-Translator: João Frade <100nome.portugal@gmail.com>\n"
-"Language-Team: Portuguese (http://www.transifex.com/projects/p/dolphin-emu/language/pt/)\n"
+"Language-Team: Portuguese (http://www.transifex.com/delroth/dolphin-emu/language/pt/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -48,12 +48,12 @@ msgstr "Procurar artigos"
 
 #: blog/templates/blog_sidebar.html:31
 msgid "Blog tags"
-msgstr "Etiquetas do blog"
+msgstr "Etiquetas do blogue"
 
 #: blog/templates/blog_sidebar.html:36
 #: blog/templates/zinnia/_entry_detail_base.html:78
 msgid "Blog series"
-msgstr "Séries do blog"
+msgstr "Séries do blogue"
 
 #: blog/templates/blog_sidebar.html:38
 msgid "See all"
@@ -78,7 +78,7 @@ msgstr "Feed RSS:"
 
 #: blog/templates/series-index.html:37
 msgid "No blog series yet."
-msgstr "Sem séries do blog de momento."
+msgstr "Sem séries do blogue de momento."
 
 #: blog/templates/zinnia/_entry_detail_base.html:21
 #: homepage/templates/homepage-home.html:122
@@ -94,12 +94,12 @@ msgstr "Mostrar todas as entradas de %(author)s"
 #: blog/templates/zinnia/_entry_detail_base.html:27
 #: homepage/templates/homepage-home.html:128
 msgid "on"
-msgstr "ativo"
+msgstr "a"
 
 #: blog/templates/zinnia/_entry_detail_base.html:29
 #: homepage/templates/homepage-home.html:130
 msgid "Written on"
-msgstr "Escrito em"
+msgstr "Escrito a"
 
 #: blog/templates/zinnia/_entry_detail_base.html:37
 msgid "Last update on"
@@ -108,11 +108,11 @@ msgstr "Última atualização a"
 #: blog/templates/zinnia/_entry_detail_base.html:39
 #, python-format
 msgid "Short URL to %(object)s"
-msgstr "URL incompleto para %(object)s"
+msgstr "URL curto para %(object)s"
 
 #: blog/templates/zinnia/_entry_detail_base.html:40
 msgid "Short link"
-msgstr "Ligação incompleta"
+msgstr "Ligação curta"
 
 #: blog/templates/zinnia/_entry_detail_base.html:41
 #: homepage/templates/homepage-home.html:138
@@ -354,7 +354,7 @@ msgstr "3 de 5"
 msgid ""
 "<strong>Starts</strong>: Starts, maybe even plays well, but crashes or major"
 " graphical/audio glitches."
-msgstr "<strong>Inicia</strong>: Inicia, talvez até se jogue bem, mas falha ou tem maiores falhas gráficas/de áudio."
+msgstr "<strong>Inicia</strong>: Inicia, talvez até se jogue bem, mas falha ou tem falhas maiores gráficas/de áudio."
 
 #: compat/templates/compat-list.html:29
 msgid "2 out of 5"

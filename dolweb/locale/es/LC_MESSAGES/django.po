@@ -3,8 +3,8 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Petiso_Carambanal <diegoae@gmail.com>, 2013-2014
-# Puniasterus <puniasterus@gmail.com>, 2013-2014
+# Petiso_Carambanal <diegoae@gmail.com>, 2013-2015
+# Puniasterus <puniasterus@gmail.com>, 2013-2015
 # Puniasterus <puniasterus@gmail.com>, 2013
 # Puniasterus <puniasterus@gmail.com>, 2013
 # Sithdown <afdezmnez@gmail.com>, 2013
@@ -14,9 +14,9 @@ msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-08-24 12:37+0200\n"
-"PO-Revision-Date: 2014-07-21 12:07+0000\n"
-"Last-Translator: Swyter <Swyterzone@gmail.com>\n"
-"Language-Team: Spanish (http://www.transifex.com/projects/p/dolphin-emu/language/es/)\n"
+"PO-Revision-Date: 2015-06-04 11:52+0000\n"
+"Last-Translator: Puniasterus <puniasterus@gmail.com>\n"
+"Language-Team: Spanish (http://www.transifex.com/delroth/dolphin-emu/language/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -73,8 +73,8 @@ msgid_plural ""
 "\n"
 "    %(count)s entries\n"
 "  "
-msgstr[0] "\n entrada %(count)s"
-msgstr[1] "\nentradas %(count)s"
+msgstr[0] "\n%(count)s artículo"
+msgstr[1] "\n%(count)s artículos"
 
 #: blog/templates/series-index.html:27
 msgid "RSS feed:"
@@ -82,7 +82,7 @@ msgstr "Feed RSS:"
 
 #: blog/templates/series-index.html:37
 msgid "No blog series yet."
-msgstr "No hay entradas del blog todavía"
+msgstr "No hay series del blog todavía."
 
 #: blog/templates/zinnia/_entry_detail_base.html:21
 #: homepage/templates/homepage-home.html:122
@@ -443,7 +443,7 @@ msgstr "Perfecto"
 msgid ""
 "The Official Dolphin FAQ answers all the questions that people often ask "
 "about Dolphin."
-msgstr "La FAQ oficial de Dolphin responde a todas las preguntas que la gente suele preguntar acerca de Dolphin."
+msgstr "La FAQ oficial de Dolphin responde a todas las preguntas que la gente suele hacerse acerca de Dolphin."
 
 #: docs/templates/docs-faq.html:8
 msgid "Frequently Asked Questions"
@@ -543,7 +543,7 @@ msgid ""
 "    Stable versions are released after a lot of testing to ensure emulation\n"
 "    performance and stability. However, since they are released less often,\n"
 "    they might be outdated and lacking some new features.\n"
-msgstr "\nLas versiones estables se publican tras un perido intensivo de prueba\npara asegurar el rendimiento de la emulación y su estabilidad.\nSin embargo, ya que se publican con menos frecuencia,\npodrían estar ya desfasadas y falte alguna que otra característica nuevas.\n"
+msgstr "\nLas versiones estables son publicadas tras un período intensivo de pruebas, para asegurar el rendimiento y la estabilidad de la emulación. Sin embargo, ya que se publican con menos frecuencia, podrían estar ya desfasadas y carentes de algunas características nuevas.\n"
 
 #: downloads/templates/downloads-index.html:84
 msgid "No stable release yet"
@@ -580,7 +580,7 @@ msgid ""
 "    For reporting bugs please go to <a href=\"%(ISSUES_URL)s\">the issue tracker on Google Code</a>.\n"
 "    Before creating a new issue, make sure to try a recent development build and search the existing issues.\n"
 "    "
-msgstr "\nPara avisar de bugs ve al <a href=\"%(ISSUES_URL)s\">gestor de incidencias en Google Code</a>.\nAntes de vrear una nueva incidencia, asegúrate de probar una versión de desarrollo reciente y de buscar en las incidencias existentes. \n    "
+msgstr "\nPara avisar de bugs ve al <a href=\"%(ISSUES_URL)s\">gestor de incidencias en Google Code</a>.\nAntes de crear una nueva incidencia, asegúrate de probar una versión de desarrollo reciente y de buscar en las incidencias existentes. \n    "
 
 #: downloads/templates/downloads-list.html:5
 #, python-format
@@ -631,7 +631,7 @@ msgstr "Descripción del cambio"
 msgid ""
 "Official website of Dolphin, the GameCube and Wii emulator. Download the "
 "latest version (%(ver)s) now or ask questions on our forums for help."
-msgstr "Web oficial de Dolphin, el emulador de GameCube y Wii. Descargar la última versión (%(ver)s) ahora o haga preguntas en nuestro foro para obtener ayuda."
+msgstr "Web oficial de Dolphin, el emulador de GameCube y Wii. Descarga la última versión (%(ver)s) ahora o haz preguntas en nuestro foro para obtener ayuda."
 
 #: homepage/templates/homepage-home.html:14
 msgid "GameCube/Wii games on PC"

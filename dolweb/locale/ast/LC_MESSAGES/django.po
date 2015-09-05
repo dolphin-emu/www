@@ -5,14 +5,15 @@
 # Translators:
 # Ḷḷumex03 <tornes@opmbx.org>, 2013-2014
 # Ḷḷumex03 <tornes@opmbx.org>, 2014
+# Ḷḷumex03 <tornes@opmbx.org>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-08-24 12:37+0200\n"
-"PO-Revision-Date: 2014-07-16 17:51+0000\n"
+"PO-Revision-Date: 2015-02-22 02:36+0000\n"
 "Last-Translator: Ḷḷumex03 <tornes@opmbx.org>\n"
-"Language-Team: Asturian (http://www.transifex.com/projects/p/dolphin-emu/language/ast/)\n"
+"Language-Team: Asturian (http://www.transifex.com/delroth/dolphin-emu/language/ast/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -108,7 +109,7 @@ msgstr "Caberu anovamientu'l"
 #: blog/templates/zinnia/_entry_detail_base.html:39
 #, python-format
 msgid "Short URL to %(object)s"
-msgstr "Enllaz curtiu a %(object)s"
+msgstr "URL curtia a %(object)s"
 
 #: blog/templates/zinnia/_entry_detail_base.html:40
 msgid "Short link"
@@ -334,7 +335,7 @@ msgstr "5 de 5"
 
 #: compat/templates/compat-list.html:26
 msgid "<strong>Perfect</strong>: No issues at all!"
-msgstr "<strong>Perfeuto</strong>: ¡Nun hai cuasi torgues!"
+msgstr "<strong>Perfeuto</strong>: ¡Nun hai denguna torga!"
 
 #: compat/templates/compat-list.html:27
 msgid "4 out of 5"
@@ -344,7 +345,7 @@ msgstr "4 de 5"
 msgid ""
 "<strong>Playable</strong>: Runs well, only minor graphical or audio "
 "glitches. Games can be played all the way through."
-msgstr "<strong>Pue xugase</strong>: Execútase bien, namái erros gráficos o d'audiu menores. Los xuegos puen xugase de toes toes."
+msgstr "<strong>Pue xugase</strong>: Execútase bien, namái fallos gráficos o d'audiu menores. Los xuegos puen xugase de toes toes."
 
 #: compat/templates/compat-list.html:28
 msgid "3 out of 5"
@@ -354,7 +355,7 @@ msgstr "3 de 5"
 msgid ""
 "<strong>Starts</strong>: Starts, maybe even plays well, but crashes or major"
 " graphical/audio glitches."
-msgstr "<strong>Aníciase</strong>: Anicia, quiciabes tamién puea xugase bien, pero blóquiase o pue tener erros gráficos o d'audiu mayores."
+msgstr "<strong>Aníciase</strong>: Anicia, seique puea xugase bien tamién, pero blóquiase o pue tener fallos d'audiu/gráficos mayores."
 
 #: compat/templates/compat-list.html:29
 msgid "2 out of 5"
@@ -364,7 +365,7 @@ msgstr "2 de 5"
 msgid ""
 "<strong>Intro/Menu</strong>: Hangs/crashes somewhere between booting and "
 "starting."
-msgstr "<strong>Intro/Menú</strong>: Colíngase o blóquiase ayuri, ente l'arranque y l'aniciu."
+msgstr "<strong>Intro/Menú</strong>: Cuélgase o blóquiase ayuri, ente l'arranque y l'aniciu."
 
 #: compat/templates/compat-list.html:30
 msgid "1 out of 5"
@@ -489,7 +490,7 @@ msgstr "Baxar versiones en desendolcu"
 #: downloads/templates/downloads-branches.html:18
 #, python-format
 msgid "<tt>%(branch)s</tt> branch"
-msgstr "<tt>%(branch)s</tt> gamayu"
+msgstr "<tt>%(branch)s</tt> rama"
 
 #: downloads/templates/downloads-branches.html:21
 #: downloads/templates/downloads-index.html:42
@@ -498,7 +499,7 @@ msgstr "Ver versiones más vieyes »"
 
 #: downloads/templates/downloads-branches.html:28
 msgid "Branch list"
-msgstr "Llista de gamayos"
+msgstr "Llista de rames"
 
 #: downloads/templates/downloads-devrel.html:19
 msgid "No development release yet"
@@ -539,7 +540,7 @@ msgid ""
 "    Stable versions are released after a lot of testing to ensure emulation\n"
 "    performance and stability. However, since they are released less often,\n"
 "    they might be outdated and lacking some new features.\n"
-msgstr "\nLes versiones estables asoléyense dempués de milenta comprobaciones p'asegurar el rindimientu y estabilidá na emulación. Por embargu, tarden n'asoleyase, puen tar desanovaes y faltes de carauterístiques nueves.\n"
+msgstr "\nLes versiones estables asoléyense dempués de milenta comprobaciones p'asegurar el rindimientu y estabilidá na emulación. Por embargu, tarden n'asoleyase, puen tar ensin anovar y faltes de carauterístiques nueves.\n"
 
 #: downloads/templates/downloads-index.html:84
 msgid "No stable release yet"
@@ -576,17 +577,17 @@ msgid ""
 "    For reporting bugs please go to <a href=\"%(ISSUES_URL)s\">the issue tracker on Google Code</a>.\n"
 "    Before creating a new issue, make sure to try a recent development build and search the existing issues.\n"
 "    "
-msgstr "\nPa informar fallos, por favor vete <a href=\"%(ISSUES_URL)s\">al siguimientu d'erros en Google Code</a>.\nEnantes de crear un informe nuevu, tate seguru de probar la cabera versión en construcción y guetar torgues esistentes.\n    "
+msgstr "\nPa informar fallos, por favor vete <a href=\"%(ISSUES_URL)s\">al siguimientu de fallos en Google Code</a>.\nEnantes de crear un informe nuevu, tate seguru de probar la cabera versión en construcción y guetar torgues esistentes.\n    "
 
 #: downloads/templates/downloads-list.html:5
 #, python-format
 msgid "%(branch)s branch - page %(page)s"
-msgstr "%(branch)s gamayu - páxina %(page)s"
+msgstr "%(branch)s rama - páxina %(page)s"
 
 #: downloads/templates/downloads-list.html:9
 #, python-format
 msgid "<tt>%(branch)s</tt> branch - page %(page)s"
-msgstr "<tt>%(branch)s</tt> gamayu - páxina %(page)s"
+msgstr "<tt>%(branch)s</tt> rama - páxina %(page)s"
 
 #: downloads/templates/downloads-view-devrel.html:6
 #, python-format
@@ -604,7 +605,7 @@ msgstr "Versión"
 
 #: downloads/templates/downloads-view-devrel.html:33
 msgid "Branch"
-msgstr "Gamayu"
+msgstr "Rama"
 
 #: downloads/templates/downloads-view-devrel.html:36
 msgid "Date"
@@ -699,13 +700,13 @@ msgstr "L'enllaz al qu'intentes acceder nun esiste."
 
 #: templates/500.html:5 templates/500.html.py:8
 msgid "Internal Server Error"
-msgstr "Erru internu del sirvidor"
+msgstr "Fallu internu del sirvidor"
 
 #: templates/500.html:10
 msgid ""
 "There was an error while trying to access this page. Please refresh the page"
 " in a few seconds."
-msgstr "Hebo un erru entrín s'intentaba acceder a esta páxina. Por favor, anova la páxina nunos segundos."
+msgstr "Hebo un fallu entrín s'intentaba acceder a esta páxina. Por favor, refresca la páxina nunos segundos."
 
 #: templates/_base.html:23
 msgid "Latest blog articles"

@@ -3,16 +3,16 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Mewster <mewster@libero.it>, 2013-2014
+# Mewster <mewster@libero.it>, 2013-2015
 # Mewster <mewster@libero.it>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-08-24 12:37+0200\n"
-"PO-Revision-Date: 2014-06-25 11:02+0000\n"
+"PO-Revision-Date: 2015-06-26 13:35+0000\n"
 "Last-Translator: Mewster <mewster@libero.it>\n"
-"Language-Team: Italian (http://www.transifex.com/projects/p/dolphin-emu/language/it/)\n"
+"Language-Team: Italian (http://www.transifex.com/delroth/dolphin-emu/language/it/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -108,7 +108,7 @@ msgstr "Ultimo aggiornamento il"
 #: blog/templates/zinnia/_entry_detail_base.html:39
 #, python-format
 msgid "Short URL to %(object)s"
-msgstr "Short URL per %(object)s"
+msgstr "URL breve per %(object)s"
 
 #: blog/templates/zinnia/_entry_detail_base.html:40
 msgid "Short link"
@@ -145,7 +145,7 @@ msgstr "Puoi continuare la discussione nel <a href=\"%(url)s\" title=\"Visita il
 msgid ""
 "This article is number %(nth)s within the blog series\n"
 "    <a href=\"%(url)s\"><em>%(series)s</em></a>."
-msgstr "Questo articolo è il numero %(nth)s nelle serie\n<a href=\"%(url)s\"><em>%(series)s</em></a>."
+msgstr "Questo articolo è il numero %(nth)s nella serie\n<a href=\"%(url)s\"><em>%(series)s</em></a>."
 
 #: blog/templates/zinnia/_entry_detail_base.html:85
 msgid "‹ Previous article in series"
