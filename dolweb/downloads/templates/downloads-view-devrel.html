@@ -34,7 +34,7 @@ src="//pagead2.googlesyndication.com/pagead/show_ads.js">
             <dd>{{ ver.branch }}
 
             <dt>{% trans "Date" %}
-            <dd>{{ ver.date|naturaltime }}
+            <dd title="{{ ver.date|date:"c" }}">{{ ver.date|naturaltime }}
 
         </dl>
 

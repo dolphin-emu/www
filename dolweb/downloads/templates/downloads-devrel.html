@@ -6,7 +6,7 @@
     {% for ver in builds %}
         <tr class="infos">
             <td class="version always-ltr"><a href="{{ ver.get_absolute_url }}">{{ ver.shortrev }}</a></td>
-            <td class="reldate">{{ ver.date|naturaltime }}</td>
+            <td class="reldate" title="{{ ver.date|date:"c" }}">{{ ver.date|naturaltime }}</td>
             <td class="description always-ltr">{{ ver.description_abbrev }}</td>
         </tr>
         <tr class="download">
