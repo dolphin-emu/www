@@ -45,17 +45,6 @@ src="//pagead2.googlesyndication.com/pagead/show_ads.js">
 <p><a class="btn" href="{% url 'downloads_list' "master" 1 %}">{% trans "View older versions »" %}</a></p>
 </div>
 
-<div id="download-stable">
-<h1>{% trans "Release Candidate versions" %}</h1>
-
-<div class="alert alert-info">{% blocktrans %}
-    Release candidate versions are released to test an upcoming stable release of
-    Dolphin. They are generally more stable than the Development versions, but may still have known bugs.
-{% endblocktrans %}</div>
-
-{% include "downloads-devrel.html" with builds=stable_builds primclass='btn-info' %}
-</div>
-
 <div style="text-align: center;">
 <script type="text/javascript"><!--
 google_ad_client = "ca-pub-8646203626363069";
