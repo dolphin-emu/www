@@ -2,6 +2,7 @@ from django.conf import settings
 from django.db import models
 from django.utils.safestring import mark_safe
 from django.utils.translation import ugettext as _
+from dolweb.utils import models_utils
 
 import cgi
 import re
@@ -19,23 +20,17 @@ class BranchInfo(models.Model):
         return self.name
 
 class DownloadableVersion(models.Model):
-    """Abstract model definining the download links for a downloadable version
+    """Base model definining the download links for a downloadable version
     of Dolphin."""
 
-    win32_url = models.URLField(null=True)
-    win64_url = models.URLField(null=True)
-    osx_url = models.URLField(null=True)
-    ubu_url = models.URLField(null=True)
-    ubu_ver =  models.CharField(max_length=64, default='13.04', null=True)
-
-    class Meta:
-        abstract = True
+    date = models.DateTimeField(auto_now_add=True)
 
 class ReleaseVersion(DownloadableVersion):
     """Download infos for a release version (2.0, 3.0, ...)"""
 
+    objects = models_utils.DefaultSelectOrPrefetchManager(prefetch_related=['artifacts'])
+
     version = models.CharField(max_length=64)
-    date = models.DateTimeField(auto_now_add=True)
 
     def __unicode__(self):
         return _("Dolphin %s") % self.version
@@ -47,10 +42,11 @@ class ReleaseVersion(DownloadableVersion):
 class DevVersion(DownloadableVersion):
     """Download infos for a developement/nightly release"""
 
+    objects = models_utils.DefaultSelectOrPrefetchManager(prefetch_related=['artifacts'])
+
     branch = models.CharField(max_length=64, db_index=True)
     shortrev = models.CharField(max_length=64)
     hash = models.CharField(max_length=64, unique=True, db_index=True)
-    date = models.DateTimeField(auto_now_add=True)
     author = models.CharField(max_length=128)
     description = models.TextField()
 
@@ -99,3 +95,19 @@ class DevVersion(DownloadableVersion):
         if additional_html:
             short_descr = short_descr + u' ' + additional_html
         return mark_safe(short_descr)
+
+class Artifact(models.Model):
+    """Represents a downloadable object attached to a version."""
+
+    # Shown to users. TODO: dyni18n.
+    version = models.ForeignKey(DownloadableVersion, db_index=True, related_name='artifacts')
+    target_system = models.CharField(max_length=64, db_index=True)
+    url = models.URLField(null=True)
+
+    # Should match possible values from utils/context_processors.py.
+    # TODO: define a known set of constants.
+    user_os_matcher = models.CharField(max_length=64)
+
+    class Meta:
+        unique_together = ('version', 'target_system')
+        index_together = ('version', 'target_system')

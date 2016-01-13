@@ -18,7 +18,9 @@ def index(request):
     """Displays the downloads index"""
 
     releases = ReleaseVersion.objects.order_by('-date')
-    master_builds = DevVersion.objects.filter(branch='master').order_by('-date')[:10]
+    master_builds = (DevVersion.objects.filter(branch='master')
+                                       .order_by('-date')
+                                       [:10])
     last_master = master_builds[0] if len(master_builds) else None
 
     return { 'releases': releases, 'master_builds': master_builds,
@@ -33,8 +35,9 @@ def branches(request):
 
     for info in infos:
         branches.append((
-            info.name,
-            DevVersion.objects.filter(branch=info.name).order_by('-date')[:5]
+            info.name, DevVersion.objects.filter(branch=info.name)
+                                         .order_by('-date')
+                                         [:5]
         ))
 
     return { 'branches': branches }
@@ -81,15 +84,15 @@ def new(request):
     hash = request.POST['hash']
     author = request.POST['author']
     description = request.POST['description']
-    build_type = request.POST['build_type']
+    target_system = request.POST['target_system']
     build_url = request.POST['build_url']
-    builder_ver = request.POST['builder_ver']
+    user_os_matcher = request.POST['user_os_matcher']
     msg = "%d|%d|%d|%d|%d|%d|%d|%d|%s|%s|%s|%s|%s|%s|%s|%s" % (
         len(branch), len(shortrev), len(hash), len(author), len(description),
-        len(build_type), len(build_url), len(builder_ver),
+        len(target_system), len(build_url), len(user_os_matcher),
 
-        branch, shortrev, hash, author, description, build_type, build_url,
-        builder_ver
+        branch, shortrev, hash, author, description, target_system, build_url,
+        user_os_matcher
     )
     hm = hmac.new(settings.DOWNLOADS_CREATE_KEY, msg, hashlib.sha1)
     if hm.hexdigest() != request.POST['hmac']:
@@ -98,7 +101,7 @@ def new(request):
     # Lock to avoid race conditions
     try:
         _addbuild_lock.acquire()
-        # Check if we already have a commit with the same hash
+
         try:
             build_obj = DevVersion.objects.get(hash=hash)
         except DevVersion.DoesNotExist:
@@ -108,23 +111,22 @@ def new(request):
             build_obj.hash = hash
             build_obj.author = author
             build_obj.description = description
-
-        if build_type == 'win32':
-            build_obj.win32_url = build_url
-        elif build_type == 'win64':
-            build_obj.win64_url = build_url
-        elif build_type == 'osx':
-            build_obj.osx_url = build_url
-        elif build_type == 'ubu':
-            build_obj.ubu_url = build_url
-            build_obj.ubu_ver = builder_ver
-        else:
-            return HttpResponse('Wrong build type', status=400)
-
         build_obj.save()
-        return HttpResponse('OK')
+
+        try:
+            artifact_obj = Artifact.objects.get(
+                    version=build_obj, target_system=build_type)
+        except Artifact.DoesNotExist:
+            artifact_obj = Artifact()
+            artifact_obj.version = build_obj
+            artifact_obj.target_system = target_system
+            artifact_obj.user_os_matcher = user_os_matcher
+        artifact_obj.url = build_url
+        artifact_obj.save()
     finally:
         _addbuild_lock.release()
+
+    return HttpResponse('OK')
 
 def get_latest(request, branch):
     """Callback used by the emulator to get the latest version on a branch."""
