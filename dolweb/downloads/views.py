@@ -5,7 +5,7 @@ from django.http import Http404, HttpResponse
 from django.shortcuts import get_object_or_404
 from django.views.decorators.csrf import csrf_exempt
 from dolweb.downloads.diggpaginator import DiggPaginator
-from dolweb.downloads.models import BranchInfo, DevVersion, ReleaseVersion
+from dolweb.downloads.models import Artifact, BranchInfo, DevVersion, ReleaseVersion
 
 import hashlib
 import hmac
