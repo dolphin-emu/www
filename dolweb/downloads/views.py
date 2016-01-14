@@ -111,11 +111,11 @@ def new(request):
             build_obj.hash = hash
             build_obj.author = author
             build_obj.description = description
-        build_obj.save()
+            build_obj.save()
 
         try:
             artifact_obj = Artifact.objects.get(
-                    version=build_obj, target_system=build_type)
+                    version=build_obj, target_system=target_system)
         except Artifact.DoesNotExist:
             artifact_obj = Artifact()
             artifact_obj.version = build_obj
