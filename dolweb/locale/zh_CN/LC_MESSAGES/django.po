@@ -3,28 +3,29 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Scarlet White <gaoboyuan8@qq.com>, 2014
+# Nisen <gaoboyuan8@qq.com>, 2014
+# Nisen <gaoboyuan8@qq.com>, 2015
 # Pierre Bourdon <delroth@gmail.com>, 2015
 # Ryan Zhou <sentret_c@sina.cn>, 2013-2014
-# Scarlet White <gaoboyuan8@qq.com>, 2015
+# Nisen <gaoboyuan8@qq.com>, 2015
 # Ryan Zhou <sentret_c@sina.cn>, 2013
-# Scarlet White <gaoboyuan8@qq.com>, 2013-2014
+# Nisen <gaoboyuan8@qq.com>, 2013-2014
 # Ryan Zhou <sentret_c@sina.cn>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-08-24 12:37+0200\n"
-"PO-Revision-Date: 2015-02-06 01:24+0000\n"
-"Last-Translator: Pierre Bourdon <delroth@gmail.com>\n"
-"Language-Team: Chinese (China) (http://www.transifex.com/projects/p/dolphin-emu/language/zh_CN/)\n"
+"POT-Creation-Date: 2015-09-05 23:27+0200\n"
+"PO-Revision-Date: 2015-09-08 02:39+0000\n"
+"Last-Translator: Nisen <gaoboyuan8@qq.com>\n"
+"Language-Team: Chinese (China) (http://www.transifex.com/delroth/dolphin-emu/language/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: zh_CN\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: blog/admin.py:17
+#: blog/admin.py:45
 msgid "Content"
 msgstr "内容"
 
@@ -38,11 +39,11 @@ msgstr "%s 分类的文章"
 msgid "The latest entries for the series %s"
 msgstr "%s 分类的最新文章"
 
-#: blog/models.py:16
+#: blog/models.py:20
 msgid "image"
 msgstr "图像"
 
-#: blog/models.py:17
+#: blog/models.py:21
 msgid "Used for illustration."
 msgstr "用于图示。"
 
@@ -56,7 +57,7 @@ msgid "Blog tags"
 msgstr "博客标签"
 
 #: blog/templates/blog_sidebar.html:36
-#: blog/templates/zinnia/_entry_detail_base.html:78
+#: blog/templates/zinnia/_entry_detail_base.html:83
 msgid "Blog series"
 msgstr "博客分类"
 
@@ -84,104 +85,104 @@ msgstr "RSS 源"
 msgid "No blog series yet."
 msgstr "尚无博客分类。"
 
-#: blog/templates/zinnia/_entry_detail_base.html:21
+#: blog/templates/zinnia/_entry_detail_base.html:26
 #: homepage/templates/homepage-home.html:122
 msgid "Written by"
 msgstr "作者："
 
-#: blog/templates/zinnia/_entry_detail_base.html:25
+#: blog/templates/zinnia/_entry_detail_base.html:30
 #: homepage/templates/homepage-home.html:126
 #, python-format
 msgid "Show all %(author)s's entries"
 msgstr "显示 %(author)s 的所有文章"
 
-#: blog/templates/zinnia/_entry_detail_base.html:27
+#: blog/templates/zinnia/_entry_detail_base.html:32
 #: homepage/templates/homepage-home.html:128
 msgid "on"
 msgstr "写于："
 
-#: blog/templates/zinnia/_entry_detail_base.html:29
+#: blog/templates/zinnia/_entry_detail_base.html:34
 #: homepage/templates/homepage-home.html:130
 msgid "Written on"
 msgstr "写于："
 
-#: blog/templates/zinnia/_entry_detail_base.html:37
+#: blog/templates/zinnia/_entry_detail_base.html:42
 msgid "Last update on"
 msgstr "最后更新："
 
-#: blog/templates/zinnia/_entry_detail_base.html:39
+#: blog/templates/zinnia/_entry_detail_base.html:44
 #, python-format
 msgid "Short URL to %(object)s"
 msgstr "指向 %(object)s 的短链接"
 
-#: blog/templates/zinnia/_entry_detail_base.html:40
+#: blog/templates/zinnia/_entry_detail_base.html:45
 msgid "Short link"
 msgstr "短链接"
 
-#: blog/templates/zinnia/_entry_detail_base.html:41
+#: blog/templates/zinnia/_entry_detail_base.html:46
 #: homepage/templates/homepage-home.html:138
 msgid "Visit forum thread for this article"
 msgstr "查看论坛中与该文章有关的主题帖"
 
-#: blog/templates/zinnia/_entry_detail_base.html:41
+#: blog/templates/zinnia/_entry_detail_base.html:46
 #: homepage/templates/homepage-home.html:138
 msgid "Forum thread"
 msgstr "论坛主题帖"
 
-#: blog/templates/zinnia/_entry_detail_base.html:58
+#: blog/templates/zinnia/_entry_detail_base.html:63
 #, python-format
 msgid "Continue reading %(object)s"
 msgstr "继续阅读 %(object)s"
 
-#: blog/templates/zinnia/_entry_detail_base.html:60
+#: blog/templates/zinnia/_entry_detail_base.html:65
 msgid "Continue reading"
 msgstr "继续阅读"
 
-#: blog/templates/zinnia/_entry_detail_base.html:69
+#: blog/templates/zinnia/_entry_detail_base.html:74
 #, python-format
 msgid ""
 "You can continue the discussion in the <a href=\"%(url)s\" title=\"Visit "
 "forum thread for this article\">forum thread</a> of this article."
 msgstr "你可以在该文章的<a href=\"%(url)s\" title=\"在论坛中查看该文章\">论坛帖子</a>中继续讨论。"
 
-#: blog/templates/zinnia/_entry_detail_base.html:80
+#: blog/templates/zinnia/_entry_detail_base.html:85
 #, python-format
 msgid ""
 "This article is number %(nth)s within the blog series\n"
 "    <a href=\"%(url)s\"><em>%(series)s</em></a>."
 msgstr "这篇文章在 <a href=\"%(url)s\"><em>%(series)s</em></a> 分类中是第 %(nth)s 个。"
 
-#: blog/templates/zinnia/_entry_detail_base.html:85
+#: blog/templates/zinnia/_entry_detail_base.html:90
 msgid "‹ Previous article in series"
 msgstr "‹ 该分类中的前一个文章"
 
-#: blog/templates/zinnia/_entry_detail_base.html:87
+#: blog/templates/zinnia/_entry_detail_base.html:92
 msgid "Next article in series ›"
 msgstr "该分类中的后一个文章 ›"
 
-#: blog/templates/zinnia/_entry_detail_base.html:137
+#: blog/templates/zinnia/_entry_detail_base.html:142
 msgid "Tags"
 msgstr "标签"
 
-#: blog/templates/zinnia/_entry_detail_base.html:141
+#: blog/templates/zinnia/_entry_detail_base.html:146
 #, python-format
 msgid "Show all entries tagged by %(tag)s"
 msgstr "显示所有带有 %(tag)s 标签的文章"
 
-#: blog/templates/zinnia/_entry_detail_base.html:144
+#: blog/templates/zinnia/_entry_detail_base.html:149
 msgid "No tags"
 msgstr "没有标签"
 
-#: blog/templates/zinnia/_entry_detail_base.html:151
+#: blog/templates/zinnia/_entry_detail_base.html:156
 msgid "Categories"
 msgstr "分类"
 
-#: blog/templates/zinnia/_entry_detail_base.html:155
+#: blog/templates/zinnia/_entry_detail_base.html:160
 #, python-format
 msgid "Show all entries in %(category)s"
 msgstr "显示所有在 %(category)s 中的文章"
 
-#: blog/templates/zinnia/_entry_detail_base.html:158
+#: blog/templates/zinnia/_entry_detail_base.html:163
 msgid "No categories"
 msgstr "无分类"
 
@@ -224,7 +225,7 @@ msgstr "编辑该文章"
 
 #: blog/templates/zinnia/entry_list.html:5
 msgid "Latest entries for"
-msgstr "最新文章 for"
+msgstr "该分类的最新文章"
 
 #: blog/templates/zinnia/entry_list.html:5
 msgid "the category"
@@ -306,7 +307,7 @@ msgstr "编辑作者"
 msgid "Latest news for Dolphin Emulator"
 msgstr "Dolphin 模拟器的最新文章"
 
-#: blog/templates/zinnia/skeleton.html:8 templates/_base.html:73
+#: blog/templates/zinnia/skeleton.html:8
 msgid "Articles"
 msgstr "文章"
 
@@ -469,21 +470,21 @@ msgstr "指南与文档"
 msgid "No published guide available"
 msgstr "尚无用户指南"
 
-#: downloads/models.py:40 downloads/models.py:57
+#: downloads/models.py:41 downloads/models.py:58
 #, python-format
 msgid "Dolphin %s"
 msgstr "Dolphin %s"
 
-#: downloads/models.py:81
+#: downloads/models.py:82
 msgid "Change with no description"
 msgstr "该更新没有描述"
 
-#: downloads/models.py:84
+#: downloads/models.py:85
 #, python-format
 msgid ""
 "(<a href=\"%(pr_url)s\">PR #%(pr_id)s</a> from <a "
 "href=\"%(author_url)s\">%(author)s</a>)"
-msgstr "(<a href=\"%(pr_url)s\">推送 #%(pr_id)s</a> 来自 <a href=\"%(author_url)s\">%(author)s</a>)"
+msgstr "(<a href=\"%(pr_url)s\">PR #%(pr_id)s</a> 来自 <a href=\"%(author_url)s\">%(author)s</a>)"
 
 #: downloads/templates/downloads-branches.html:5
 #: downloads/templates/downloads-branches.html:9
@@ -496,7 +497,7 @@ msgid "<tt>%(branch)s</tt> branch"
 msgstr "<tt>%(branch)s</tt> 分支"
 
 #: downloads/templates/downloads-branches.html:21
-#: downloads/templates/downloads-index.html:42
+#: downloads/templates/downloads-index.html:45
 msgid "View older versions »"
 msgstr "查看较早版本 »"
 
@@ -527,17 +528,31 @@ msgstr "开发版本"
 #: downloads/templates/downloads-index.html:33
 msgid ""
 "\n"
-"    Development versions are released every time a developer makes a change to\n"
+"    <p>Development versions are released every time a developer makes a change to\n"
 "    Dolphin, several times every day! Using development versions enables you to\n"
 "    use the latest and greatest improvements to the project. They are however\n"
-"    less tested than stable versions of the emulator.\n"
-msgstr "\n每当一位开发者对 Dolphin 做出改动，都将有开发版本发布，因而每天都会发布数个开发版本。使用开发版本即可体验本项目最新最大的改进，然而相较于稳定版本的模拟器，开发版本所经历的测试尚不够充分。\n"
+"    less tested than stable versions of the emulator.</p>\n"
+"\n"
+"    <p>The development versions require the <a href=\"https://www.microsoft.com/en-us/download/details.aspx?id=48145\">64-bit Visual C++ redistributable for Visual Studio 2015</a>\n"
+"    to be installed.</p>\n"
+msgstr "\n<p>每当一位开发者对 Dolphin 做出改动，都将有开发版本发布，因而每天都会发布数个开发版本。使用开发版本即可体验本项目最新最大的改进，然而相较于稳定版本的模拟器，开发版本所经历的测试尚不够充分。</p>\n\n<p>开发版本需要安装<a href=\"https://www.microsoft.com/zh-cn/download/details.aspx?id=48145\">用于 Visual Studio 2015 的 Visual C++ 可再发行组件</a>。\n"
 
-#: downloads/templates/downloads-index.html:60
+#: downloads/templates/downloads-index.html:49
+msgid "Release Candidate versions"
+msgstr "发行候选版"
+
+#: downloads/templates/downloads-index.html:51
+msgid ""
+"\n"
+"    Release candidate versions are released to test an upcoming stable release of\n"
+"    Dolphin. They are generally more stable than the Development versions, but may still have known bugs.\n"
+msgstr "\n发行候选版是为了测试即将发布的 Dolphin 稳定版而发布的。它们通常比开发版本更稳定，但仍然可能会有一些小的 bug.\n"
+
+#: downloads/templates/downloads-index.html:74
 msgid "Stable versions"
 msgstr "稳定版本"
 
-#: downloads/templates/downloads-index.html:62
+#: downloads/templates/downloads-index.html:76
 msgid ""
 "\n"
 "    Stable versions are released after a lot of testing to ensure emulation\n"
@@ -545,15 +560,32 @@ msgid ""
 "    they might be outdated and lacking some new features.\n"
 msgstr "\n稳定版本在发布前经历过许多测试以保证模拟性能与稳定性。然而由于其发布频率较低，稳定版本可能已经过时并缺少一些新功能。\n"
 
-#: downloads/templates/downloads-index.html:84
+#: downloads/templates/downloads-index.html:98
 msgid "No stable release yet"
 msgstr "尚无稳定版本"
 
-#: downloads/templates/downloads-index.html:91
+#: downloads/templates/downloads-index.html:105
+msgid "Older Ubuntu (< 15.04) and users of other Linux distributions"
+msgstr "较早版本的 Ubuntu (< 15.04) 和其他 Linux 发行版"
+
+#: downloads/templates/downloads-index.html:106
+msgid ""
+"Ubuntu 14.10 and older users can install a PPA \n"
+"    for development and stable versions of Dolphin here: <a href=\"https://wiki.dolphin-emu.org/index.php?title=Installing_Dolphin#Ubuntu\">Installing Dolphin</a>\n"
+"    "
+msgstr "Ubuntu 14.10 及以前版本的用户可以到这里安装 PPA 来运行 Dolphin: <a href=\"https://wiki.dolphin-emu.org/index.php?title=Installing_Dolphin#Ubuntu\">安装 Dolphin</a>"
+
+#: downloads/templates/downloads-index.html:109
+msgid ""
+"Users of other Linux distributions can look here to compile Dolphin: <a href=\"https://wiki.dolphin-emu.org/index.php?title=Building_Dolphin_on_Linux\">Building Dolphin on Linux</a>\n"
+"    "
+msgstr "如要在 Linux 中编译 Dolphin 请参考：<a href=\"https://wiki.dolphin-emu.org/index.php?title=Building_Dolphin_on_Linux\">在 Linux 中编译 Dolphin</a>"
+
+#: downloads/templates/downloads-index.html:114
 msgid "Source code"
 msgstr "源代码"
 
-#: downloads/templates/downloads-index.html:93
+#: downloads/templates/downloads-index.html:116
 msgid ""
 "\n"
 "    The latest version of the Dolphin source code can be downloaded from the\n"
@@ -561,7 +593,7 @@ msgid ""
 "    "
 msgstr "\n最新版本的 Dolphin 源代码可从本项目 Git 库中下载。"
 
-#: downloads/templates/downloads-index.html:101
+#: downloads/templates/downloads-index.html:124
 #, python-format
 msgid ""
 "\n"
@@ -569,18 +601,18 @@ msgid ""
 "    "
 msgstr "\n您也可以<a href=\"%(GIT_BROWSE_URL)s\">浏览最新版本的源代码</a>。"
 
-#: downloads/templates/downloads-index.html:108
+#: downloads/templates/downloads-index.html:131
 msgid "Reporting bugs"
 msgstr "报告 Bug"
 
-#: downloads/templates/downloads-index.html:110
+#: downloads/templates/downloads-index.html:133
 #, python-format
 msgid ""
 "\n"
-"    For reporting bugs please go to <a href=\"%(ISSUES_URL)s\">the issue tracker on Google Code</a>.\n"
+"    For reporting bugs please go to <a href=\"%(ISSUES_URL)s\">the issue tracker</a>.\n"
 "    Before creating a new issue, make sure to try a recent development build and search the existing issues.\n"
 "    "
-msgstr "\n要报告 Bug 请去 <a href=\"%(ISSUES_URL)s\">Google Code 的问题跟踪页</a>。\n报告新问题之前，请先使用最近的开发版本并尝试在问题列表中搜索你遇到的问题。"
+msgstr "\n要报告 Bug 请去 <a href=\"%(ISSUES_URL)s\">问题跟踪页</a>。\n报告新问题之前，请先使用最近的开发版本并尝试在问题列表中搜索你遇到的问题。"
 
 #: downloads/templates/downloads-list.html:5
 #, python-format
@@ -714,6 +746,10 @@ msgstr "尝试访问此页面时发生错误，请数秒后刷新此页面。"
 #: templates/_base.html:23
 msgid "Latest blog articles"
 msgstr "最新博客文章"
+
+#: templates/_base.html:73
+msgid "Blog"
+msgstr "博客"
 
 #: templates/_base.html:74
 msgid "Screenshots"

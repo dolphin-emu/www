@@ -4,23 +4,23 @@
 # 
 # Translators:
 # firespin <dartworldgr@hotmail.com>, 2014
-# link_to_the_past <kostamarino@gmail.com>, 2013-2014
+# link_to_the_past <kostamarino@gmail.com>, 2013-2015
 # link_to_the_past <kostamarino@gmail.com>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-08-24 12:37+0200\n"
-"PO-Revision-Date: 2014-07-10 01:58+0000\n"
-"Last-Translator: firespin <dartworldgr@hotmail.com>\n"
-"Language-Team: Greek (http://www.transifex.com/projects/p/dolphin-emu/language/el/)\n"
+"POT-Creation-Date: 2015-09-05 23:27+0200\n"
+"PO-Revision-Date: 2015-09-11 19:47+0000\n"
+"Last-Translator: link_to_the_past <kostamarino@gmail.com>\n"
+"Language-Team: Greek (http://www.transifex.com/delroth/dolphin-emu/language/el/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: el\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: blog/admin.py:17
+#: blog/admin.py:45
 msgid "Content"
 msgstr "Περιεχόμενο"
 
@@ -34,11 +34,11 @@ msgstr "Καταχωρήσεις για τη σειρά %s"
 msgid "The latest entries for the series %s"
 msgstr "Οι τελευταίες καταχωρήσεις για τη σειρά %s"
 
-#: blog/models.py:16
+#: blog/models.py:20
 msgid "image"
 msgstr "εικόνα"
 
-#: blog/models.py:17
+#: blog/models.py:21
 msgid "Used for illustration."
 msgstr "Χρησιμοποιούνται για απεικόνιση."
 
@@ -52,7 +52,7 @@ msgid "Blog tags"
 msgstr "Ετικέτες blog "
 
 #: blog/templates/blog_sidebar.html:36
-#: blog/templates/zinnia/_entry_detail_base.html:78
+#: blog/templates/zinnia/_entry_detail_base.html:83
 msgid "Blog series"
 msgstr "Blog σειράς"
 
@@ -81,104 +81,104 @@ msgstr "Pοές RSS:"
 msgid "No blog series yet."
 msgstr "Δεν υπάρχει blog σειρά ακόμα."
 
-#: blog/templates/zinnia/_entry_detail_base.html:21
+#: blog/templates/zinnia/_entry_detail_base.html:26
 #: homepage/templates/homepage-home.html:122
 msgid "Written by"
 msgstr "Συντάχθηκε από τον"
 
-#: blog/templates/zinnia/_entry_detail_base.html:25
+#: blog/templates/zinnia/_entry_detail_base.html:30
 #: homepage/templates/homepage-home.html:126
 #, python-format
 msgid "Show all %(author)s's entries"
 msgstr "Δείτε όλες τις καταχωρήσεις του %(author)s"
 
-#: blog/templates/zinnia/_entry_detail_base.html:27
+#: blog/templates/zinnia/_entry_detail_base.html:32
 #: homepage/templates/homepage-home.html:128
 msgid "on"
 msgstr "στις"
 
-#: blog/templates/zinnia/_entry_detail_base.html:29
+#: blog/templates/zinnia/_entry_detail_base.html:34
 #: homepage/templates/homepage-home.html:130
 msgid "Written on"
 msgstr "Γράφτηκε στις"
 
-#: blog/templates/zinnia/_entry_detail_base.html:37
+#: blog/templates/zinnia/_entry_detail_base.html:42
 msgid "Last update on"
 msgstr "Τελευταία ενημέρωση στις"
 
-#: blog/templates/zinnia/_entry_detail_base.html:39
+#: blog/templates/zinnia/_entry_detail_base.html:44
 #, python-format
 msgid "Short URL to %(object)s"
 msgstr "Σύντομο URL για %(object)s"
 
-#: blog/templates/zinnia/_entry_detail_base.html:40
+#: blog/templates/zinnia/_entry_detail_base.html:45
 msgid "Short link"
 msgstr "Σύντομος σύνδεσμος"
 
-#: blog/templates/zinnia/_entry_detail_base.html:41
+#: blog/templates/zinnia/_entry_detail_base.html:46
 #: homepage/templates/homepage-home.html:138
 msgid "Visit forum thread for this article"
 msgstr "Επισκεφθείτε το νήμα του forum για αυτό το άρθρο"
 
-#: blog/templates/zinnia/_entry_detail_base.html:41
+#: blog/templates/zinnia/_entry_detail_base.html:46
 #: homepage/templates/homepage-home.html:138
 msgid "Forum thread"
 msgstr "Νήμα στο forum"
 
-#: blog/templates/zinnia/_entry_detail_base.html:58
+#: blog/templates/zinnia/_entry_detail_base.html:63
 #, python-format
 msgid "Continue reading %(object)s"
 msgstr "Συνέχεια ανάγνωσης %(object)s"
 
-#: blog/templates/zinnia/_entry_detail_base.html:60
+#: blog/templates/zinnia/_entry_detail_base.html:65
 msgid "Continue reading"
 msgstr "Συνέχεια ανάγνωσης"
 
-#: blog/templates/zinnia/_entry_detail_base.html:69
+#: blog/templates/zinnia/_entry_detail_base.html:74
 #, python-format
 msgid ""
 "You can continue the discussion in the <a href=\"%(url)s\" title=\"Visit "
 "forum thread for this article\">forum thread</a> of this article."
 msgstr "Μπορείτε να συνεχίσετε την συζήτηση στο αντίστοιχο  <a href=\"%(url)s\" title=\"Επισκεφθείτε το νήμα του φόρουμ αυτού του άρθρου\">νήμα του φόρουμ</a> αυτού του άρθρου."
 
-#: blog/templates/zinnia/_entry_detail_base.html:80
+#: blog/templates/zinnia/_entry_detail_base.html:85
 #, python-format
 msgid ""
 "This article is number %(nth)s within the blog series\n"
 "    <a href=\"%(url)s\"><em>%(series)s</em></a>."
 msgstr "Αυτό το άρθρο είναι το νούμερο %(nth)s μέσα στην σειρά του blog\n<a href=\"%(url)s\"><em>%(series)s</em></a>."
 
-#: blog/templates/zinnia/_entry_detail_base.html:85
+#: blog/templates/zinnia/_entry_detail_base.html:90
 msgid "‹ Previous article in series"
 msgstr "‹ Προηγούμενο άρθρο στη σειρά"
 
-#: blog/templates/zinnia/_entry_detail_base.html:87
+#: blog/templates/zinnia/_entry_detail_base.html:92
 msgid "Next article in series ›"
 msgstr "Επόμενο άρθρο στη σειρά ›"
 
-#: blog/templates/zinnia/_entry_detail_base.html:137
+#: blog/templates/zinnia/_entry_detail_base.html:142
 msgid "Tags"
 msgstr "Ετικέτες"
 
-#: blog/templates/zinnia/_entry_detail_base.html:141
+#: blog/templates/zinnia/_entry_detail_base.html:146
 #, python-format
 msgid "Show all entries tagged by %(tag)s"
 msgstr "Δείτε όλες τις καταχωρήσεις με ετικέτα %(tag)s"
 
-#: blog/templates/zinnia/_entry_detail_base.html:144
+#: blog/templates/zinnia/_entry_detail_base.html:149
 msgid "No tags"
 msgstr "Καμία ετικέτα"
 
-#: blog/templates/zinnia/_entry_detail_base.html:151
+#: blog/templates/zinnia/_entry_detail_base.html:156
 msgid "Categories"
 msgstr "Κατηγορίες"
 
-#: blog/templates/zinnia/_entry_detail_base.html:155
+#: blog/templates/zinnia/_entry_detail_base.html:160
 #, python-format
 msgid "Show all entries in %(category)s"
 msgstr "Εμφάνιση όλων των καταχωρήσεων σε  %(category)s"
 
-#: blog/templates/zinnia/_entry_detail_base.html:158
+#: blog/templates/zinnia/_entry_detail_base.html:163
 msgid "No categories"
 msgstr "Καμία κατηγορία"
 
@@ -303,7 +303,7 @@ msgstr "Επεξεργασία του συγγραφέα"
 msgid "Latest news for Dolphin Emulator"
 msgstr "Τελευταία νέα για τον Dolphin Εξομοιωτή"
 
-#: blog/templates/zinnia/skeleton.html:8 templates/_base.html:73
+#: blog/templates/zinnia/skeleton.html:8
 msgid "Articles"
 msgstr "Άρθρα"
 
@@ -466,16 +466,16 @@ msgstr "Οδηγίες και εγχειρίδια "
 msgid "No published guide available"
 msgstr "Δεν υπάρχουν διαθέσιμοι οδηγοί για δημοσίευση"
 
-#: downloads/models.py:40 downloads/models.py:57
+#: downloads/models.py:41 downloads/models.py:58
 #, python-format
 msgid "Dolphin %s"
 msgstr "Dolphin %s"
 
-#: downloads/models.py:81
+#: downloads/models.py:82
 msgid "Change with no description"
 msgstr "Αλλαγή χωρίς περιγραφή"
 
-#: downloads/models.py:84
+#: downloads/models.py:85
 #, python-format
 msgid ""
 "(<a href=\"%(pr_url)s\">PR #%(pr_id)s</a> from <a "
@@ -493,7 +493,7 @@ msgid "<tt>%(branch)s</tt> branch"
 msgstr "<tt>%(branch)s</tt> διακλάδωση"
 
 #: downloads/templates/downloads-branches.html:21
-#: downloads/templates/downloads-index.html:42
+#: downloads/templates/downloads-index.html:45
 msgid "View older versions »"
 msgstr "Προβολή παλαιότερων εκδόσεων »"
 
@@ -524,17 +524,31 @@ msgstr "Δοκιμαστικές εκδόσεις"
 #: downloads/templates/downloads-index.html:33
 msgid ""
 "\n"
-"    Development versions are released every time a developer makes a change to\n"
+"    <p>Development versions are released every time a developer makes a change to\n"
 "    Dolphin, several times every day! Using development versions enables you to\n"
 "    use the latest and greatest improvements to the project. They are however\n"
-"    less tested than stable versions of the emulator.\n"
-msgstr "\nΟι δοκιμαστικές εκδόσεις κυκλοφορούν κάθε φορά που ένας\nπρογραμματιστής κάνει μια αλλαγή στο Dolphin, πολλές φορές σε \nκαθημερινή βάση! Η χρησιμοποίηση των δοκιμαστικών εκδόσεων \nσας δίνει την δυνατότητα να χρησιμοποιήσετε τις τελευταίες και μεγαλύτερες βελτιώσεις στο project. Έχουν ελεγχθεί όμως λιγότερο \nαπ' ότι οι σταθερές εκδόσεις του εξομοιωτή.\n"
+"    less tested than stable versions of the emulator.</p>\n"
+"\n"
+"    <p>The development versions require the <a href=\"https://www.microsoft.com/en-us/download/details.aspx?id=48145\">64-bit Visual C++ redistributable for Visual Studio 2015</a>\n"
+"    to be installed.</p>\n"
+msgstr "\n    <p>Οι δοκιμαστικές εκδόσεις κυκλοφορούν κάθε φορά που ένας προγραμματιστής κάνει μια αλλαγή στο Dolphin, πολλές φορές σε καθημερινή βάση! Η χρησιμοποίηση των δοκιμαστικών εκδόσεων σας δίνει την δυνατότητα να χρησιμοποιήσετε τις τελευταίες και μεγαλύτερες βελτιώσεις στο project. Έχουν ελεγχθεί όμως λιγότερο απ' ότι οι σταθερές εκδόσεις του εξομοιωτή. </p>\n\n    <p>Οι δοκιμαστικές εκδόσεις απαιτούν το <a href=\"https://www.microsoft.com/en-us/download/details.aspx?id=48145\">64-bit Visual C++ redistributable for Visual Studio 2015</a>\n    να είναι εγκατεστημένο.</p>\n"
 
-#: downloads/templates/downloads-index.html:60
+#: downloads/templates/downloads-index.html:49
+msgid "Release Candidate versions"
+msgstr "Υποψήφιες Σταθερές εκδόσεις"
+
+#: downloads/templates/downloads-index.html:51
+msgid ""
+"\n"
+"    Release candidate versions are released to test an upcoming stable release of\n"
+"    Dolphin. They are generally more stable than the Development versions, but may still have known bugs.\n"
+msgstr "\n    Οι υποψήφιες σταθερές εκδόσεις δημοσιοποιούνται για να εξεταστεί μια επερχόμενη σταθερή έκδοση του \nDolphin. Σε γενικές γραμμές είναι πιο σταθερές από τις δοκιμαστικές εκδόσεις, αλλά μπορεί να έχουν παρόλα αυτά γνωστά ελαττώματα.\n"
+
+#: downloads/templates/downloads-index.html:74
 msgid "Stable versions"
 msgstr "Σταθερές εκδόσεις"
 
-#: downloads/templates/downloads-index.html:62
+#: downloads/templates/downloads-index.html:76
 msgid ""
 "\n"
 "    Stable versions are released after a lot of testing to ensure emulation\n"
@@ -542,15 +556,32 @@ msgid ""
 "    they might be outdated and lacking some new features.\n"
 msgstr "\nΟι σταθερές εκδόσεις κυκλοφορούν μετά από πολλές δοκιμές για να \nδιασφαλιστεί η ταχύτητα και η σταθερότητα της εξομοίωσης. Παρόλα αυτά, \nκαθότι γίνονται διαθέσιμες πιο σπάνια, μπορεί να έχουν ξεπεραστεί και να \nυπολείπονται ορισμένα νέα χαρακτηριστικά.\n"
 
-#: downloads/templates/downloads-index.html:84
+#: downloads/templates/downloads-index.html:98
 msgid "No stable release yet"
 msgstr "Δεν έχει εκδοθεί σταθερή έκδοση ακόμα"
 
-#: downloads/templates/downloads-index.html:91
+#: downloads/templates/downloads-index.html:105
+msgid "Older Ubuntu (< 15.04) and users of other Linux distributions"
+msgstr "Χρήστες Ubuntu παλαιότερων εκδόσεων (< 15.04) και χρήστες από άλλες διανομές Linux"
+
+#: downloads/templates/downloads-index.html:106
+msgid ""
+"Ubuntu 14.10 and older users can install a PPA \n"
+"    for development and stable versions of Dolphin here: <a href=\"https://wiki.dolphin-emu.org/index.php?title=Installing_Dolphin#Ubuntu\">Installing Dolphin</a>\n"
+"    "
+msgstr "Χρήστες Ubuntu 14.10 και παλαιότερων μπορούν να εγκαταστήσουν ένα PPA \nγια τις δοκιμαστικές και τις σταθερές εκδόσεις του Dolphin εδώ: <a href=\"https://wiki.dolphin-emu.org/index.php?title=Installing_Dolphin#Ubuntu\">Installing Dolphin</a>\n    "
+
+#: downloads/templates/downloads-index.html:109
+msgid ""
+"Users of other Linux distributions can look here to compile Dolphin: <a href=\"https://wiki.dolphin-emu.org/index.php?title=Building_Dolphin_on_Linux\">Building Dolphin on Linux</a>\n"
+"    "
+msgstr "Χρήστες από άλλες διανομές του Linux μπορούν να κοιτάξουν εδώ για να κάνουν compile το Dolphin: <a href=\"https://wiki.dolphin-emu.org/index.php?title=Building_Dolphin_on_Linux\">Building Dolphin on Linux</a>\n    "
+
+#: downloads/templates/downloads-index.html:114
 msgid "Source code"
 msgstr "Πηγαίος κώδικας"
 
-#: downloads/templates/downloads-index.html:93
+#: downloads/templates/downloads-index.html:116
 msgid ""
 "\n"
 "    The latest version of the Dolphin source code can be downloaded from the\n"
@@ -558,7 +589,7 @@ msgid ""
 "    "
 msgstr "\nΗ τελευταία έκδοση του πηγαίου κώδικα του Dolphin μπορεί να κατεβεί από το \nproject Git repository.\n    "
 
-#: downloads/templates/downloads-index.html:101
+#: downloads/templates/downloads-index.html:124
 #, python-format
 msgid ""
 "\n"
@@ -566,18 +597,18 @@ msgid ""
 "    "
 msgstr "\n    Μπορείτε επίσης <a href=\"%(GIT_BROWSE_URL)s\">να περιηγηθείτε στην τρέχουσα έκδοση του πηγαίου κώδικα</a>.\n    "
 
-#: downloads/templates/downloads-index.html:108
+#: downloads/templates/downloads-index.html:131
 msgid "Reporting bugs"
 msgstr "Υποβολή σφαλμάτων"
 
-#: downloads/templates/downloads-index.html:110
+#: downloads/templates/downloads-index.html:133
 #, python-format
 msgid ""
 "\n"
-"    For reporting bugs please go to <a href=\"%(ISSUES_URL)s\">the issue tracker on Google Code</a>.\n"
+"    For reporting bugs please go to <a href=\"%(ISSUES_URL)s\">the issue tracker</a>.\n"
 "    Before creating a new issue, make sure to try a recent development build and search the existing issues.\n"
 "    "
-msgstr "\n    Για υποβολή σφαλμάτων παρακαλώ πηγαίνετε στον <a href=\"%(ISSUES_URL)s\">issue tracker στο Google Code</a>.\n    Πριν να δημιουργήσετε μια νέα αναφορά σφάλματος, βεβαιωθείτε πως χρησιμοποιείτε την πιο πρόσφατη δοκιμαστική έκδοση και έχετε ψάξει τα υπάρχοντα σφάλματα.\n    "
+msgstr "\n    Για υποβολή σφαλμάτων παρακαλώ πηγαίνετε στον <a href=\"%(ISSUES_URL)s\">the issue tracker</a>.\n    Πριν να δημιουργήσετε μια νέα αναφορά σφάλματος, βεβαιωθείτε πως χρησιμοποιείτε την πιο πρόσφατη δοκιμαστική έκδοση και έχετε ψάξει τα υπάρχοντα σφάλματα.\n    "
 
 #: downloads/templates/downloads-list.html:5
 #, python-format
@@ -711,6 +742,10 @@ msgstr "Παρουσιάστηκε σφάλμα κατά την προσπάθε
 #: templates/_base.html:23
 msgid "Latest blog articles"
 msgstr "Τελευταία άρθρα blog"
+
+#: templates/_base.html:73
+msgid "Blog"
+msgstr "Blog"
 
 #: templates/_base.html:74
 msgid "Screenshots"
