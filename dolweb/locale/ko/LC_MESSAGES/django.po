@@ -4,15 +4,15 @@
 # 
 # Translators:
 # Siegfried <iori3000@hanafos.com>, 2013-2015
-# itstake <bexco2010@gmail.com>, 2015
+# its take <bexco2010@gmail.com>, 2015
 # Siegfried <iori3000@hanafos.com>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-08-24 12:37+0200\n"
-"PO-Revision-Date: 2015-08-23 12:35+0000\n"
-"Last-Translator: Siegfried <iori3000@hanafos.com>\n"
+"POT-Creation-Date: 2016-04-11 23:51+0200\n"
+"PO-Revision-Date: 2016-04-11 21:51+0000\n"
+"Last-Translator: Pierre Bourdon <delroth@gmail.com>\n"
 "Language-Team: Korean (http://www.transifex.com/delroth/dolphin-emu/language/ko/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Language: ko\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: blog/admin.py:17
+#: blog/admin.py:45
 msgid "Content"
 msgstr "컨텐트"
 
@@ -34,11 +34,11 @@ msgstr "%s 시리즈에 대한 게시글"
 msgid "The latest entries for the series %s"
 msgstr "시리즈 %s 에 대한 최근 게시글"
 
-#: blog/models.py:16
+#: blog/models.py:20
 msgid "image"
 msgstr "이미지"
 
-#: blog/models.py:17
+#: blog/models.py:21
 msgid "Used for illustration."
 msgstr "삽화에 사용됨."
 
@@ -52,7 +52,7 @@ msgid "Blog tags"
 msgstr "블로그 태그"
 
 #: blog/templates/blog_sidebar.html:36
-#: blog/templates/zinnia/_entry_detail_base.html:78
+#: blog/templates/zinnia/_entry_detail_base.html:83
 msgid "Blog series"
 msgstr "블로그 시리즈"
 
@@ -80,104 +80,104 @@ msgstr "RSS 피드:"
 msgid "No blog series yet."
 msgstr "블로그 시리즈가 아직 없음."
 
-#: blog/templates/zinnia/_entry_detail_base.html:21
+#: blog/templates/zinnia/_entry_detail_base.html:26
 #: homepage/templates/homepage-home.html:122
 msgid "Written by"
 msgstr "작성자:"
 
-#: blog/templates/zinnia/_entry_detail_base.html:25
+#: blog/templates/zinnia/_entry_detail_base.html:30
 #: homepage/templates/homepage-home.html:126
 #, python-format
 msgid "Show all %(author)s's entries"
 msgstr "모든 %(author)s 의 게시글 보기"
 
-#: blog/templates/zinnia/_entry_detail_base.html:27
+#: blog/templates/zinnia/_entry_detail_base.html:32
 #: homepage/templates/homepage-home.html:128
 msgid "on"
 msgstr "날짜:"
 
-#: blog/templates/zinnia/_entry_detail_base.html:29
+#: blog/templates/zinnia/_entry_detail_base.html:34
 #: homepage/templates/homepage-home.html:130
 msgid "Written on"
 msgstr "작성 날짜:"
 
-#: blog/templates/zinnia/_entry_detail_base.html:37
+#: blog/templates/zinnia/_entry_detail_base.html:42
 msgid "Last update on"
 msgstr "마지막 업데이트:"
 
-#: blog/templates/zinnia/_entry_detail_base.html:39
+#: blog/templates/zinnia/_entry_detail_base.html:44
 #, python-format
 msgid "Short URL to %(object)s"
 msgstr "%(object)s 의 짧은 URL"
 
-#: blog/templates/zinnia/_entry_detail_base.html:40
+#: blog/templates/zinnia/_entry_detail_base.html:45
 msgid "Short link"
 msgstr "짧은 링크"
 
-#: blog/templates/zinnia/_entry_detail_base.html:41
+#: blog/templates/zinnia/_entry_detail_base.html:46
 #: homepage/templates/homepage-home.html:138
 msgid "Visit forum thread for this article"
 msgstr "이 기사에 대한 포럼 쓰레드를 방문합니다"
 
-#: blog/templates/zinnia/_entry_detail_base.html:41
+#: blog/templates/zinnia/_entry_detail_base.html:46
 #: homepage/templates/homepage-home.html:138
 msgid "Forum thread"
 msgstr "포럼 쓰레드"
 
-#: blog/templates/zinnia/_entry_detail_base.html:58
+#: blog/templates/zinnia/_entry_detail_base.html:63
 #, python-format
 msgid "Continue reading %(object)s"
 msgstr "%(object)s 계속 읽기"
 
-#: blog/templates/zinnia/_entry_detail_base.html:60
+#: blog/templates/zinnia/_entry_detail_base.html:65
 msgid "Continue reading"
 msgstr "계속 읽기"
 
-#: blog/templates/zinnia/_entry_detail_base.html:69
+#: blog/templates/zinnia/_entry_detail_base.html:74
 #, python-format
 msgid ""
 "You can continue the discussion in the <a href=\"%(url)s\" title=\"Visit "
 "forum thread for this article\">forum thread</a> of this article."
 msgstr "이 기사의 <a href=\"%(url)s\" title=\"Visit forum thread for this article\">포럼 쓰레드</a>에서 토론을 계속할 수 있습니다."
 
-#: blog/templates/zinnia/_entry_detail_base.html:80
+#: blog/templates/zinnia/_entry_detail_base.html:85
 #, python-format
 msgid ""
 "This article is number %(nth)s within the blog series\n"
 "    <a href=\"%(url)s\"><em>%(series)s</em></a>."
 msgstr "이 기사는 <a href=\"%(url)s\"><em>%(series)s</em></a>\n블로그 시리즈의 %(nth)s 번째 글 입니다.\n    ."
 
-#: blog/templates/zinnia/_entry_detail_base.html:85
+#: blog/templates/zinnia/_entry_detail_base.html:90
 msgid "‹ Previous article in series"
 msgstr "‹ 이 시리즈의 이전 글"
 
-#: blog/templates/zinnia/_entry_detail_base.html:87
+#: blog/templates/zinnia/_entry_detail_base.html:92
 msgid "Next article in series ›"
 msgstr "이 시리즈의 다음 글 ›"
 
-#: blog/templates/zinnia/_entry_detail_base.html:137
+#: blog/templates/zinnia/_entry_detail_base.html:142
 msgid "Tags"
 msgstr "태그"
 
-#: blog/templates/zinnia/_entry_detail_base.html:141
+#: blog/templates/zinnia/_entry_detail_base.html:146
 #, python-format
 msgid "Show all entries tagged by %(tag)s"
 msgstr "%(tag)s 가 태그된 모든 게시글들 보기"
 
-#: blog/templates/zinnia/_entry_detail_base.html:144
+#: blog/templates/zinnia/_entry_detail_base.html:149
 msgid "No tags"
 msgstr "태그 없음"
 
-#: blog/templates/zinnia/_entry_detail_base.html:151
+#: blog/templates/zinnia/_entry_detail_base.html:156
 msgid "Categories"
 msgstr "범주"
 
-#: blog/templates/zinnia/_entry_detail_base.html:155
+#: blog/templates/zinnia/_entry_detail_base.html:160
 #, python-format
 msgid "Show all entries in %(category)s"
 msgstr "%(category)s 에 속한 모든 게시글 보기"
 
-#: blog/templates/zinnia/_entry_detail_base.html:158
+#: blog/templates/zinnia/_entry_detail_base.html:163
 msgid "No categories"
 msgstr "범주가 없음"
 
@@ -302,7 +302,7 @@ msgstr "작성자 수정"
 msgid "Latest news for Dolphin Emulator"
 msgstr "돌핀 에뮬레이터의 최신 뉴스들"
 
-#: blog/templates/zinnia/skeleton.html:8 templates/_base.html:73
+#: blog/templates/zinnia/skeleton.html:8
 msgid "Articles"
 msgstr "기사들"
 
@@ -465,16 +465,16 @@ msgstr "가이드와 문서"
 msgid "No published guide available"
 msgstr "제공된 유효한 가이드가 없습니다"
 
-#: downloads/models.py:40 downloads/models.py:57
+#: downloads/models.py:36 downloads/models.py:54
 #, python-format
 msgid "Dolphin %s"
 msgstr "돌핀 %s"
 
-#: downloads/models.py:81
+#: downloads/models.py:78
 msgid "Change with no description"
 msgstr "설명없는 변경"
 
-#: downloads/models.py:84
+#: downloads/models.py:81
 #, python-format
 msgid ""
 "(<a href=\"%(pr_url)s\">PR #%(pr_id)s</a> from <a "
@@ -492,7 +492,7 @@ msgid "<tt>%(branch)s</tt> branch"
 msgstr "<tt>%(branch)s</tt> 분기"
 
 #: downloads/templates/downloads-branches.html:21
-#: downloads/templates/downloads-index.html:42
+#: downloads/templates/downloads-index.html:45
 msgid "View older versions »"
 msgstr "예전 버전들 보기 »"
 
@@ -523,17 +523,20 @@ msgstr "개발 버전"
 #: downloads/templates/downloads-index.html:33
 msgid ""
 "\n"
-"    Development versions are released every time a developer makes a change to\n"
+"    <p>Development versions are released every time a developer makes a change to\n"
 "    Dolphin, several times every day! Using development versions enables you to\n"
 "    use the latest and greatest improvements to the project. They are however\n"
-"    less tested than stable versions of the emulator.\n"
-msgstr "\n개발 버전들은 하루에 여러 번 개발자가 돌핀에 변경을 만들 때마다\n매번 릴리즈 됩니다. 개발 버전을 사용하는 것은 프로젝트의 \n가장 최신이며 뛰어난 향상들을 사용할 수 있게 해줍니다. 하지만 \n안정된 에뮬레이터 버전들보다 덜 테스트됩니다.\n"
+"    less tested than stable versions of the emulator.</p>\n"
+"\n"
+"    <p>The development versions require the <a href=\"https://www.microsoft.com/en-us/download/details.aspx?id=48145\">64-bit Visual C++ redistributable for Visual Studio 2015</a>\n"
+"    to be installed.</p>\n"
+msgstr "\n<p>개발 버전은 개발자가 돌핀에 변경을 만들 때마다\n하루에 몇번씩 릴리즈 됩니다. 개발 버전을 사용함으로써\n놀라운 최신 기능들을 사용할 수 있게 해줍니다.\n하지만 안정 버전에 비해 테스트가 더 적게 됩니다.</p>\n\n<p>개발자 버전은 <a href=\"https://www.microsoft.com/en-us/download/details.aspx?id=48145\">64-비트 Visual Studio 2015용 Visual C++ 재배포 가능 패키지</a> 가 설치되어 있어야 합니다.</p>\n"
 
-#: downloads/templates/downloads-index.html:60
+#: downloads/templates/downloads-index.html:63
 msgid "Stable versions"
 msgstr "안정된 버전"
 
-#: downloads/templates/downloads-index.html:62
+#: downloads/templates/downloads-index.html:65
 msgid ""
 "\n"
 "    Stable versions are released after a lot of testing to ensure emulation\n"
@@ -541,15 +544,32 @@ msgid ""
 "    they might be outdated and lacking some new features.\n"
 msgstr "\n안정된 버전들은 에뮬레이션 성능과 안정성을 신뢰하기 위해 많은 테스트 후에 \n릴리즈됩니다. 하지만, 아주 드문 간격으로 릴리즈되기 때문에,\n최신 기능들이 빠질 수도 있습니다.\n"
 
-#: downloads/templates/downloads-index.html:84
+#: downloads/templates/downloads-index.html:87
 msgid "No stable release yet"
 msgstr "아직 안정된 출시 버전이 없음"
 
-#: downloads/templates/downloads-index.html:91
+#: downloads/templates/downloads-index.html:94
+msgid "Older Ubuntu (< 15.04) and users of other Linux distributions"
+msgstr "오래된 우분투(< 15.04) 및 다른 리눅스 배포판 사용자"
+
+#: downloads/templates/downloads-index.html:95
+msgid ""
+"Ubuntu 14.10 and older users can install a PPA \n"
+"    for development and stable versions of Dolphin here: <a href=\"https://wiki.dolphin-emu.org/index.php?title=Installing_Dolphin#Ubuntu\">Installing Dolphin</a>\n"
+"    "
+msgstr "우분투 14.10 이하 버전 사용자들은 여기에서\n돌핀의 개발 및 안정 버전에 대한 PPA를 설치할 수 있습니다: <a href=\"https://wiki.dolphin-emu.org/index.php?title=Installing_Dolphin#Ubuntu\">돌핀 설치</a>"
+
+#: downloads/templates/downloads-index.html:98
+msgid ""
+"Users of other Linux distributions can look here to compile Dolphin: <a href=\"https://wiki.dolphin-emu.org/index.php?title=Building_Dolphin_on_Linux\">Building Dolphin on Linux</a>\n"
+"    "
+msgstr "다른 리눅스 배포판 사용자들은 돌핀을 컴파일하려면 여기를 보시면 됩니다: <a href=\"https://wiki.dolphin-emu.org/index.php?title=Building_Dolphin_on_Linux\">리눅스에서 돌핀을 빌드하기</a>"
+
+#: downloads/templates/downloads-index.html:103
 msgid "Source code"
 msgstr "소스 코드"
 
-#: downloads/templates/downloads-index.html:93
+#: downloads/templates/downloads-index.html:105
 msgid ""
 "\n"
 "    The latest version of the Dolphin source code can be downloaded from the\n"
@@ -557,7 +577,7 @@ msgid ""
 "    "
 msgstr "\n    프로젝트 Git(분산 버전 관리 시스템) 저장소에서    \n가장 최신 버전의 돌핀 소스 코드를 다운로드 할 수 있습니다.\n   "
 
-#: downloads/templates/downloads-index.html:101
+#: downloads/templates/downloads-index.html:113
 #, python-format
 msgid ""
 "\n"
@@ -565,18 +585,18 @@ msgid ""
 "    "
 msgstr "\n    또한 <a href=\"%(GIT_BROWSE_URL)s\">소스 코드의 현재 버전을 둘러볼 수 있습니다</a>.\n    "
 
-#: downloads/templates/downloads-index.html:108
+#: downloads/templates/downloads-index.html:120
 msgid "Reporting bugs"
 msgstr "버그 신고"
 
-#: downloads/templates/downloads-index.html:110
+#: downloads/templates/downloads-index.html:122
 #, python-format
 msgid ""
 "\n"
-"    For reporting bugs please go to <a href=\"%(ISSUES_URL)s\">the issue tracker on Google Code</a>.\n"
+"    For reporting bugs please go to <a href=\"%(ISSUES_URL)s\">the issue tracker</a>.\n"
 "    Before creating a new issue, make sure to try a recent development build and search the existing issues.\n"
 "    "
-msgstr "\n<a href=\"%(ISSUES_URL)s\">구글 코드의 이슈 트레커</a>. 에서 버그를 신고할 수 있습니다.\n새로운 이슈를 생성하기 전에, 최근 개발 빌드로 테스트하기와 존재하는 이슈인지 찾아보기를 확인하세요.\n    "
+msgstr "\n버그를 신고하시려면 <a href=\"%(ISSUES_URL)s\">이슈 트래커</a> 를 이용해 주세요.\n새 이슈를 만들기 전에, 최근 개발 빌드를 사용해 보시거나 이미 이슈가 있는지 검색해 보세요."
 
 #: downloads/templates/downloads-list.html:5
 #, python-format
@@ -710,6 +730,10 @@ msgstr "이 페이지를 접속하는 동안 에러가 있었습니다. 잠시 �
 #: templates/_base.html:23
 msgid "Latest blog articles"
 msgstr "최근 블로그 기사"
+
+#: templates/_base.html:73
+msgid "Blog"
+msgstr "블로그"
 
 #: templates/_base.html:74
 msgid "Screenshots"
