@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-04-11 23:51+0200\n"
-"PO-Revision-Date: 2016-05-20 19:05+0000\n"
+"PO-Revision-Date: 2016-05-21 21:08+0000\n"
 "Last-Translator: Evin <tomevin1@gmail.com>\n"
 "Language-Team: Hungarian (http://www.transifex.com/delroth/dolphin-emu/language/hu/)\n"
 "MIME-Version: 1.0\n"
@@ -27,20 +27,20 @@ msgstr "Tartalom"
 #: blog/feeds.py:24
 #, python-format
 msgid "Entries for the series %s"
-msgstr ""
+msgstr "A(z) %s sorozat bejegyzései"
 
 #: blog/feeds.py:27
 #, python-format
 msgid "The latest entries for the series %s"
-msgstr ""
+msgstr "A(z) %s sorozat utolsó bejegyzései"
 
 #: blog/models.py:20
 msgid "image"
-msgstr ""
+msgstr "kép"
 
 #: blog/models.py:21
 msgid "Used for illustration."
-msgstr ""
+msgstr "Illusztrációhoz használva."
 
 #: blog/templates/blog_sidebar.html:6
 #: blog/templates/zinnia/tags/search_form.html:7
@@ -95,12 +95,12 @@ msgstr "%(author)s minden bejegyzése"
 #: blog/templates/zinnia/_entry_detail_base.html:32
 #: homepage/templates/homepage-home.html:128
 msgid "on"
-msgstr ""
+msgstr "-"
 
 #: blog/templates/zinnia/_entry_detail_base.html:34
 #: homepage/templates/homepage-home.html:130
 msgid "Written on"
-msgstr ""
+msgstr "Megírva:"
 
 #: blog/templates/zinnia/_entry_detail_base.html:42
 msgid "Last update on"
@@ -109,11 +109,11 @@ msgstr "Utoljára frissítve:"
 #: blog/templates/zinnia/_entry_detail_base.html:44
 #, python-format
 msgid "Short URL to %(object)s"
-msgstr ""
+msgstr "%(object)s rövid linkje"
 
 #: blog/templates/zinnia/_entry_detail_base.html:45
 msgid "Short link"
-msgstr ""
+msgstr "Rövid link"
 
 #: blog/templates/zinnia/_entry_detail_base.html:46
 #: homepage/templates/homepage-home.html:138
@@ -139,14 +139,14 @@ msgstr "Olvasás folytatása"
 msgid ""
 "You can continue the discussion in the <a href=\"%(url)s\" title=\"Visit "
 "forum thread for this article\">forum thread</a> of this article."
-msgstr ""
+msgstr "A cikkhez tartozó <a href=\"%(url)s\" title=”A cikk fórumbejegyzésére ugrás”>fórumbejegyzésben</a> hozzászólhatsz a cikkhez."
 
 #: blog/templates/zinnia/_entry_detail_base.html:85
 #, python-format
 msgid ""
 "This article is number %(nth)s within the blog series\n"
 "    <a href=\"%(url)s\"><em>%(series)s</em></a>."
-msgstr ""
+msgstr "Ez a cikk a(z) %(nth)s. a(z) <a href=\"%(url)s”><em>%(series)s</em></a> blogsorozaton belül."
 
 #: blog/templates/zinnia/_entry_detail_base.html:90
 msgid "‹ Previous article in series"
@@ -184,19 +184,19 @@ msgstr "Nincs kategória"
 
 #: blog/templates/zinnia/entry_detail_base.html:22
 msgid "RSS Feed of discussions on"
-msgstr ""
+msgstr "Beszélgetések RSS-hírcsatornája:"
 
 #: blog/templates/zinnia/entry_detail_base.html:24
 msgid "RSS Feed of comments on"
-msgstr ""
+msgstr "Megjegyzések RSS-hírcsatornája:"
 
 #: blog/templates/zinnia/entry_detail_base.html:26
 msgid "RSS Feed of pingbacks on"
-msgstr ""
+msgstr "Pingback RSS-hírcsatornája:"
 
 #: blog/templates/zinnia/entry_detail_base.html:28
 msgid "RSS Feed of trackbacks on"
-msgstr ""
+msgstr "Trackback RSS-hírcsatornája:"
 
 #: blog/templates/zinnia/entry_detail_base.html:46
 msgid "Next entry"
@@ -221,7 +221,7 @@ msgstr "Bejegyzés szerkesztése"
 
 #: blog/templates/zinnia/entry_list.html:5
 msgid "Latest entries for"
-msgstr ""
+msgstr "Utolsó bejegyzése:"
 
 #: blog/templates/zinnia/entry_list.html:5
 msgid "the category"
@@ -268,17 +268,17 @@ msgstr "Oldal"
 #: blog/templates/zinnia/entry_list.html:28
 #, python-format
 msgid "Category archives: %(category)s"
-msgstr ""
+msgstr "Kategória archívum: %(category)s"
 
 #: blog/templates/zinnia/entry_list.html:35
 #, python-format
 msgid "Tag archives: %(tag)s"
-msgstr ""
+msgstr "Címke archívum: %(tag)s"
 
 #: blog/templates/zinnia/entry_list.html:39
 #, python-format
 msgid "Author archives: %(author)s"
-msgstr ""
+msgstr "Szerző archívum: %(author)s"
 
 #: blog/templates/zinnia/entry_list.html:48
 msgid "No entries yet."
@@ -312,7 +312,7 @@ msgid ""
 "You can use - to exclude words or phrases, &quot;double quotes&quot; for "
 "exact phrases and the AND/OR boolean operators combined with parenthesis for"
 " complex queries."
-msgstr ""
+msgstr "A - használatával kizárhatsz szavakat vagy kifejezéseket, &quot;idézőjelekkel&quot; pontos kifejezéseket kereshetsz, és az AND/OR logikai műveletekkel és zárójelekkel együtt összetett lekérdezéseket alkothatsz."
 
 #: compat/templates/compat-list.html:9
 msgid ""
@@ -597,7 +597,7 @@ msgid ""
 "    For reporting bugs please go to <a href=\"%(ISSUES_URL)s\">the issue tracker</a>.\n"
 "    Before creating a new issue, make sure to try a recent development build and search the existing issues.\n"
 "    "
-msgstr "\nHibajelentéshez, kérlek menj <a href=”%(ISSUES_URL)s”>hibajegy kezelőbe</a>. Mielőtt új hibajegyet nyitsz, mindenképp próbáld ki a legfrissebb kiadást és mindenképp nézd át a létező hibajegyeket.\n    "
+msgstr "\nHibajelentéshez, kérlek menj a <a href=”%(ISSUES_URL)s”>hibajegy kezelőbe</a>. Mielőtt új hibajegyet nyitsz, mindenképp próbáld ki a legfrissebb kiadást és mindenképp nézd át a létező hibajegyeket.\n    "
 
 #: downloads/templates/downloads-list.html:5
 #, python-format
@@ -607,12 +607,12 @@ msgstr "%(branch)s ág - %(page)s. oldal"
 #: downloads/templates/downloads-list.html:9
 #, python-format
 msgid "<tt>%(branch)s</tt> branch - page %(page)s"
-msgstr "<tt>%(branch)s</tt> ág - %(page)s.oldal"
+msgstr "<tt>%(branch)s</tt> ág - %(page)s. oldal"
 
 #: downloads/templates/downloads-view-devrel.html:6
 #, python-format
 msgid "Information on %(br)s"
-msgstr "Information on %(br)s"
+msgstr "Információk: %(br)s"
 
 #: downloads/templates/downloads-view-devrel.html:10
 #, python-format
@@ -673,7 +673,7 @@ msgstr "\nA <b>Dolphin</b> egy emulátor két friss Nintendo videojáték konzol
 #: homepage/templates/homepage-home.html:48
 #, python-format
 msgid "Download %(last_release)s for Windows, Mac and Linux »"
-msgstr "%(last_release)s letöltése Windows, Mac és Linux rendszerre »"
+msgstr "%(last_release)s letöltése Windows, Mac, Linux rendszerre »"
 
 #: homepage/templates/homepage-home.html:108
 msgid "RSS feed of the latest articles"
