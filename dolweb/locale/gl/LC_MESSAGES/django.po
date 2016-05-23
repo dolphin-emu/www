@@ -3,15 +3,15 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Rubén <feiticeiro2010@hotmail.es>, 2014
+# Rubén <feiticeiro2010@hotmail.es>, 2014,2016
 # Toño Calo <enfeitizador@gmail.com>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-05 23:27+0200\n"
-"PO-Revision-Date: 2015-09-05 21:27+0000\n"
-"Last-Translator: Pierre Bourdon <delroth@gmail.com>\n"
+"POT-Creation-Date: 2016-04-11 23:51+0200\n"
+"PO-Revision-Date: 2016-05-22 20:53+0000\n"
+"Last-Translator: Rubén <feiticeiro2010@hotmail.es>\n"
 "Language-Team: Galician (http://www.transifex.com/delroth/dolphin-emu/language/gl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -465,16 +465,16 @@ msgstr "Guías e documentación"
 msgid "No published guide available"
 msgstr "Non hai guías dispoñibles"
 
-#: downloads/models.py:41 downloads/models.py:58
+#: downloads/models.py:36 downloads/models.py:54
 #, python-format
 msgid "Dolphin %s"
 msgstr "Dolphin %s"
 
-#: downloads/models.py:82
+#: downloads/models.py:78
 msgid "Change with no description"
 msgstr "Cambio sen descrición"
 
-#: downloads/models.py:85
+#: downloads/models.py:81
 #, python-format
 msgid ""
 "(<a href=\"%(pr_url)s\">PR #%(pr_id)s</a> from <a "
@@ -532,22 +532,11 @@ msgid ""
 "    to be installed.</p>\n"
 msgstr ""
 
-#: downloads/templates/downloads-index.html:49
-msgid "Release Candidate versions"
-msgstr ""
-
-#: downloads/templates/downloads-index.html:51
-msgid ""
-"\n"
-"    Release candidate versions are released to test an upcoming stable release of\n"
-"    Dolphin. They are generally more stable than the Development versions, but may still have known bugs.\n"
-msgstr ""
-
-#: downloads/templates/downloads-index.html:74
+#: downloads/templates/downloads-index.html:63
 msgid "Stable versions"
 msgstr "Versións estables"
 
-#: downloads/templates/downloads-index.html:76
+#: downloads/templates/downloads-index.html:65
 msgid ""
 "\n"
 "    Stable versions are released after a lot of testing to ensure emulation\n"
@@ -555,32 +544,32 @@ msgid ""
 "    they might be outdated and lacking some new features.\n"
 msgstr "\n    As versións estables publícanse logo dun período de proba para asegurar\n    o rendemento e estabilidade da emulación. Porén, xa que se publican con\n    menos frecuencia, poderían estar desfasadas e faltarlles novas características.\n"
 
-#: downloads/templates/downloads-index.html:98
+#: downloads/templates/downloads-index.html:87
 msgid "No stable release yet"
 msgstr "Aínda non hai versións estables"
 
-#: downloads/templates/downloads-index.html:105
+#: downloads/templates/downloads-index.html:94
 msgid "Older Ubuntu (< 15.04) and users of other Linux distributions"
 msgstr ""
 
-#: downloads/templates/downloads-index.html:106
+#: downloads/templates/downloads-index.html:95
 msgid ""
 "Ubuntu 14.10 and older users can install a PPA \n"
 "    for development and stable versions of Dolphin here: <a href=\"https://wiki.dolphin-emu.org/index.php?title=Installing_Dolphin#Ubuntu\">Installing Dolphin</a>\n"
 "    "
 msgstr ""
 
-#: downloads/templates/downloads-index.html:109
+#: downloads/templates/downloads-index.html:98
 msgid ""
 "Users of other Linux distributions can look here to compile Dolphin: <a href=\"https://wiki.dolphin-emu.org/index.php?title=Building_Dolphin_on_Linux\">Building Dolphin on Linux</a>\n"
 "    "
 msgstr ""
 
-#: downloads/templates/downloads-index.html:114
+#: downloads/templates/downloads-index.html:103
 msgid "Source code"
 msgstr "Código fonte"
 
-#: downloads/templates/downloads-index.html:116
+#: downloads/templates/downloads-index.html:105
 msgid ""
 "\n"
 "    The latest version of the Dolphin source code can be downloaded from the\n"
@@ -588,7 +577,7 @@ msgid ""
 "    "
 msgstr "\n    A última versión do código fonte de Dolphin pode ser descargada no\n    repositorio Git do proxecto.\n "
 
-#: downloads/templates/downloads-index.html:124
+#: downloads/templates/downloads-index.html:113
 #, python-format
 msgid ""
 "\n"
@@ -596,11 +585,11 @@ msgid ""
 "    "
 msgstr "\n    Tamén podes <a href=\"%(GIT_BROWSE_URL)s\">ver a versión actual do código fonte</a>.\n    "
 
-#: downloads/templates/downloads-index.html:131
+#: downloads/templates/downloads-index.html:120
 msgid "Reporting bugs"
 msgstr "Avisar de erros"
 
-#: downloads/templates/downloads-index.html:133
+#: downloads/templates/downloads-index.html:122
 #, python-format
 msgid ""
 "\n"
@@ -744,7 +733,7 @@ msgstr "Últimos artigos do blogue"
 
 #: templates/_base.html:73
 msgid "Blog"
-msgstr ""
+msgstr "Blogue"
 
 #: templates/_base.html:74
 msgid "Screenshots"
