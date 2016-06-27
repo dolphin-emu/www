@@ -16,6 +16,7 @@
 # M T <michtrz@gmail.com>, 2014
 # no_cluez <neobrainx@gmail.com>, 2012
 # no_cluez <neobrainx@gmail.com>, 2013
+# Neui, 2016
 # no_cluez <neobrainx@gmail.com>, 2013
 # Shinrai, 2013
 # Tillmann Karras <tilkax@gmail.com>, 2014
@@ -24,9 +25,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-05 23:27+0200\n"
-"PO-Revision-Date: 2015-10-03 16:00+0000\n"
-"Last-Translator: Moritz Bruder <muesli4@gmail.com>\n"
+"POT-Creation-Date: 2016-04-11 23:51+0200\n"
+"PO-Revision-Date: 2016-06-26 20:01+0000\n"
+"Last-Translator: Neui\n"
 "Language-Team: German (http://www.transifex.com/delroth/dolphin-emu/language/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -480,16 +481,16 @@ msgstr "Anleitungen und Dokumentation"
 msgid "No published guide available"
 msgstr "Keine veröffentlichte Anleitung verfügbar"
 
-#: downloads/models.py:41 downloads/models.py:58
+#: downloads/models.py:36 downloads/models.py:54
 #, python-format
 msgid "Dolphin %s"
 msgstr "Dolphin %s"
 
-#: downloads/models.py:82
+#: downloads/models.py:78
 msgid "Change with no description"
 msgstr "Ändern ohne einer Beschreibung"
 
-#: downloads/models.py:85
+#: downloads/models.py:81
 #, python-format
 msgid ""
 "(<a href=\"%(pr_url)s\">PR #%(pr_id)s</a> from <a "
@@ -545,24 +546,13 @@ msgid ""
 "\n"
 "    <p>The development versions require the <a href=\"https://www.microsoft.com/en-us/download/details.aspx?id=48145\">64-bit Visual C++ redistributable for Visual Studio 2015</a>\n"
 "    to be installed.</p>\n"
-msgstr "\n    <p>Entwicklerversionen werden jedes mal veröffentlicht wenn ein Entwickler eine Änderung an Dolphin vornimmt, mehrmals pro Tag!\n    Das Verwenden von Entwicklerversionen ermöglicht dir die neusten und besten Verbesserungen zum Projekt zu verwenden.\n    Diese sind jedoch weniger getestet als stabile Versionen des Emulators.</p>\n\n    <p>Die Entwicklerversionen setzen voraus, dass das <a href=\"https://www.microsoft.com/en-us/download/details.aspx?id=48145\">64-bit Visual C++ redistributable für Visual Studio 2015</a>\n    installiert ist.</p>\n"
+msgstr "\n    <p>Entwicklerversionen werden jedes mal veröffentlicht wenn ein Entwickler eine Änderung an Dolphin vornimmt, mehrmals pro Tag!\n    Das Verwenden von Entwicklerversionen ermöglicht dir die neusten und besten Verbesserungen zum Projekt zu verwenden.\n    Diese sind jedoch weniger getestet als stabile Versionen des Emulators.</p>\n\n    <p>Die Entwicklerversionen setzen voraus, dass das <a href=\"https://www.microsoft.com/de-de/download/details.aspx?id=48145\">64-bit Visual C++ Redistributable für Visual Studio 2015</a>\n    installiert ist.</p>\n"
 
-#: downloads/templates/downloads-index.html:49
-msgid "Release Candidate versions"
-msgstr "Release Candidate Versionen"
-
-#: downloads/templates/downloads-index.html:51
-msgid ""
-"\n"
-"    Release candidate versions are released to test an upcoming stable release of\n"
-"    Dolphin. They are generally more stable than the Development versions, but may still have known bugs.\n"
-msgstr "\nRelease Candidate Versionen werden veröffentlicht um die nächste stabile Version von Dolphin zu testen. Sie sind generell stabiler als Entwicklerversionen, können aber noch bekannte Fehler beinhalten.\n"
-
-#: downloads/templates/downloads-index.html:74
+#: downloads/templates/downloads-index.html:63
 msgid "Stable versions"
 msgstr "Stabile Versionen"
 
-#: downloads/templates/downloads-index.html:76
+#: downloads/templates/downloads-index.html:65
 msgid ""
 "\n"
 "    Stable versions are released after a lot of testing to ensure emulation\n"
@@ -570,32 +560,32 @@ msgid ""
 "    they might be outdated and lacking some new features.\n"
 msgstr "\nStabile Versionen werden nach langen Testphasen veröffentlicht, um eine hohe Emulationsleistung und Stabilität zu gewährleisten.\nWeil sie jedoch nicht so häufig veröffentlicht werden, können sie bereits veraltet sein und es fehlen neue Funktionen.\n"
 
-#: downloads/templates/downloads-index.html:98
+#: downloads/templates/downloads-index.html:87
 msgid "No stable release yet"
 msgstr "Noch keine stabile Version verfügbar"
 
-#: downloads/templates/downloads-index.html:105
+#: downloads/templates/downloads-index.html:94
 msgid "Older Ubuntu (< 15.04) and users of other Linux distributions"
 msgstr "Ältere Ubuntu-Versionen (< 15.04) und Anwender von anderen Linux-Distributionen"
 
-#: downloads/templates/downloads-index.html:106
+#: downloads/templates/downloads-index.html:95
 msgid ""
 "Ubuntu 14.10 and older users can install a PPA \n"
 "    for development and stable versions of Dolphin here: <a href=\"https://wiki.dolphin-emu.org/index.php?title=Installing_Dolphin#Ubuntu\">Installing Dolphin</a>\n"
 "    "
 msgstr "Benutzer von Ubuntu 14.10 und älter, können hier ein PPA\n    für Entwicklungs- und stabile Versionen hinzufügen: <a href=\"https://wiki.dolphin-emu.org/index.php?title=Installing_Dolphin#Ubuntu\">Dolphin installieren</a>\n    "
 
-#: downloads/templates/downloads-index.html:109
+#: downloads/templates/downloads-index.html:98
 msgid ""
 "Users of other Linux distributions can look here to compile Dolphin: <a href=\"https://wiki.dolphin-emu.org/index.php?title=Building_Dolphin_on_Linux\">Building Dolphin on Linux</a>\n"
 "    "
 msgstr "Benutzer anderer Linux-Distributionen können hier schauen, um Dolphin zu kompilieren: <a href=\"https://wiki.dolphin-emu.org/index.php?title=Building_Dolphin_on_Linux\">Dolphin unter Linux kompilieren</a>\n    "
 
-#: downloads/templates/downloads-index.html:114
+#: downloads/templates/downloads-index.html:103
 msgid "Source code"
 msgstr "Quelltext"
 
-#: downloads/templates/downloads-index.html:116
+#: downloads/templates/downloads-index.html:105
 msgid ""
 "\n"
 "    The latest version of the Dolphin source code can be downloaded from the\n"
@@ -603,7 +593,7 @@ msgid ""
 "    "
 msgstr "\n    Die neueste Version des Quelltextes von Dolphin kann von unserem Git-Projektarchiv heruntergeladen werden.\n    "
 
-#: downloads/templates/downloads-index.html:124
+#: downloads/templates/downloads-index.html:113
 #, python-format
 msgid ""
 "\n"
@@ -611,11 +601,11 @@ msgid ""
 "    "
 msgstr "\nDu kannst dich auch <a href=\"%(GIT_BROWSE_URL)s\">in der aktuellen Version des Quelltextes umsehen</a>.\n    "
 
-#: downloads/templates/downloads-index.html:131
+#: downloads/templates/downloads-index.html:120
 msgid "Reporting bugs"
 msgstr "Probleme melden"
 
-#: downloads/templates/downloads-index.html:133
+#: downloads/templates/downloads-index.html:122
 #, python-format
 msgid ""
 "\n"
