@@ -7,14 +7,14 @@
 # Filip Grabowski <filipianosol@outlook.com>, 2016
 # M T <michtrz@gmail.com>, 2014,2016
 # Pierre Bourdon <delroth@gmail.com>, 2013
-# Robert <Robert@10g.pl>, 2013
-# Robert <Robert@10g.pl>, 2013
+# Robert Romanowski <Robert@10g.pl>, 2013
+# Robert Romanowski <Robert@10g.pl>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-04-11 23:51+0200\n"
-"PO-Revision-Date: 2016-07-12 18:20+0000\n"
+"PO-Revision-Date: 2016-07-15 23:51+0000\n"
 "Last-Translator: Filip Grabowski <filipianosol@outlook.com>\n"
 "Language-Team: Polish (http://www.transifex.com/delroth/dolphin-emu/language/pl/)\n"
 "MIME-Version: 1.0\n"
@@ -401,7 +401,7 @@ msgstr "Filtr"
 
 #: compat/templates/compat-list.html:65
 msgid "Game title (click for details)"
-msgstr "Tytuł gry (Naciśnij aby zobaczyć szczegóły)"
+msgstr "Tytuł gry (naciśnij, aby zobaczyć szczegóły)"
 
 #: compat/templates/compat-list.html:66
 #: homepage/templates/homepage-home.html:95 templates/_base.html:77
@@ -444,7 +444,7 @@ msgstr "Perfekcyjne"
 msgid ""
 "The Official Dolphin FAQ answers all the questions that people often ask "
 "about Dolphin."
-msgstr "Oficjalny FAQ Dolphina odpowie na wszystkie pytania, które użytkownicy często zadają na temat Dolphina."
+msgstr "Oficjalny FAQ Dolphin'a odpowiada na wszystkie pytania, które ludzie często zadają na temat Dolphin'a."
 
 #: docs/templates/docs-faq.html:8
 msgid "Frequently Asked Questions"
