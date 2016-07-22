@@ -129,14 +129,6 @@ h3:hover a.headerlink, h4:hover a.headerlink {
     padding-bottom: 0.5em;
 }
 
-div#download-stable, div#download-dev {
-    margin-bottom: 3em;
-}
-
-div#download-stable h1, div#download-dev h1, div#download-source h1 {
-    margin-bottom: 0.5em;
-}
-
 .versions-list tr:first-child {
     border-top: 1px solid #CCC;
 }
