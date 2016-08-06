@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-04-11 23:51+0200\n"
-"PO-Revision-Date: 2016-07-02 15:54+0000\n"
+"PO-Revision-Date: 2016-08-05 13:46+0000\n"
 "Last-Translator: Garteal <garteal@gmail.com>\n"
 "Language-Team: Dutch (http://www.transifex.com/delroth/dolphin-emu/language/nl/)\n"
 "MIME-Version: 1.0\n"
@@ -25,12 +25,12 @@ msgstr "Inhoud"
 #: blog/feeds.py:24
 #, python-format
 msgid "Entries for the series %s"
-msgstr "Inzendingen voor series %s"
+msgstr "Inzendingen voor reeks %s"
 
 #: blog/feeds.py:27
 #, python-format
 msgid "The latest entries for the series %s"
-msgstr "Laatste inzendingen voor series %s"
+msgstr "Laatste inzendingen voor reeks %s"
 
 #: blog/models.py:20
 msgid "image"
@@ -52,7 +52,7 @@ msgstr "Blog tags"
 #: blog/templates/blog_sidebar.html:36
 #: blog/templates/zinnia/_entry_detail_base.html:83
 msgid "Blog series"
-msgstr "Blog series"
+msgstr "Blogreeks"
 
 #: blog/templates/blog_sidebar.html:38
 msgid "See all"
@@ -102,7 +102,7 @@ msgstr "Geschreven op"
 
 #: blog/templates/zinnia/_entry_detail_base.html:42
 msgid "Last update on"
-msgstr "Laatst geüpdatet"
+msgstr "Laatst geüpdatet op"
 
 #: blog/templates/zinnia/_entry_detail_base.html:44
 #, python-format
@@ -144,15 +144,15 @@ msgstr "U kunt verder discussiëren in de <a href=\"%(url)s\" title=\"Bezoek de 
 msgid ""
 "This article is number %(nth)s within the blog series\n"
 "    <a href=\"%(url)s\"><em>%(series)s</em></a>."
-msgstr "Dit artikel is nummer %(nth)s in the blog series\n<a href=\"%(url)s\"><em>%(series)s</em></a>."
+msgstr "Dit artikel is nummer %(nth)s in the blogreeks\n<a href=\"%(url)s\"><em>%(series)s</em></a>."
 
 #: blog/templates/zinnia/_entry_detail_base.html:90
 msgid "‹ Previous article in series"
-msgstr "‹ Vorige artikel in de series"
+msgstr "‹ Vorige artikel in deze reeks"
 
 #: blog/templates/zinnia/_entry_detail_base.html:92
 msgid "Next article in series ›"
-msgstr "Volgende artikel in de series ›"
+msgstr "Volgende artikel in deze reeks ›"
 
 #: blog/templates/zinnia/_entry_detail_base.html:142
 msgid "Tags"
@@ -408,7 +408,7 @@ msgstr "Laatst geüpdatet"
 
 #: compat/templates/compat-list.html:84
 msgid "Your query does not match any game."
-msgstr "Uw zoekopdracht heeft geen spellen opgeleverd"
+msgstr "Uw zoekopdracht heeft geen spellen opgeleverd."
 
 #: compat/templatetags/compat.py:9
 msgid "Unknown"
@@ -438,7 +438,7 @@ msgstr "Perfect"
 msgid ""
 "The Official Dolphin FAQ answers all the questions that people often ask "
 "about Dolphin."
-msgstr "De officiële Dolphin veelgestelde vragenlijst beantwoord vragen die men het meest stelt over Dolphin."
+msgstr "De officiële Dolphin veelgestelde vragenlijst beantwoord vragen die men het vaakst stelt over Dolphin."
 
 #: docs/templates/docs-faq.html:8
 msgid "Frequently Asked Questions"
@@ -529,7 +529,7 @@ msgid ""
 "\n"
 "    <p>The development versions require the <a href=\"https://www.microsoft.com/en-us/download/details.aspx?id=48145\">64-bit Visual C++ redistributable for Visual Studio 2015</a>\n"
 "    to be installed.</p>\n"
-msgstr "\n<p>Development versies worden telkens uitgebracht als een ontwikkelaar een verandering aanbrengt aan Dolphin. Als je development builds gebruikt krijg je toegang tot de laatste verbeteringen aan het project. Deze zijn minder betrouwbaar en stabiel dan de stabiele versies.</p>\n\n<p>Development versies vereisen dat <a href=\"https://www.microsoft.com/en-us/download/details.aspx?id=48145\">64-bit Visual C++ redistributable voor Visual Studio 2015</a> geïnstalleerd is.</p>\n"
+msgstr "\n<p>Development versies worden telkens uitgebracht als een ontwikkelaar een verandering aanbrengt aan Dolphin. Als je development builds gebruikt, krijg je toegang tot de laatste verbeteringen aan het project. Let wel op dat deze over het algemeen minder betrouwbaar zijn dan de stabiele versies.</p>\n\n<p>Development versies vereisen dat <a href=\"https://www.microsoft.com/en-us/download/details.aspx?id=48145\">64-bit Visual C++ redistributable voor Visual Studio 2015</a> is geïnstalleerd.</p>\n"
 
 #: downloads/templates/downloads-index.html:63
 msgid "Stable versions"
@@ -541,7 +541,7 @@ msgid ""
 "    Stable versions are released after a lot of testing to ensure emulation\n"
 "    performance and stability. However, since they are released less often,\n"
 "    they might be outdated and lacking some new features.\n"
-msgstr "\nStabiele versies worden pas vrijgegeven na het veelvuldig testen om goede emulatie, prestaties en stabiliteit te garanderen. Deze worden daarom minder vaak uitgebracht. Hierdoor zijn deze versies snel verouderd omdat deze de nieuwste features missen.\n"
+msgstr "\nStabiele versies worden pas vrijgegeven na het veelvuldig testen om goede emulatie, prestaties en stabiliteit te garanderen. Deze worden daarom minder vaak uitgebracht. Hierdoor zijn deze versies snel verouderd omdat de nieuwste features ontbreken.\n"
 
 #: downloads/templates/downloads-index.html:87
 msgid "No stable release yet"
@@ -562,7 +562,7 @@ msgstr "Ubuntu 14.10 en oudere gebruikers kunnen een <a href=\"https://wiki.dolp
 msgid ""
 "Users of other Linux distributions can look here to compile Dolphin: <a href=\"https://wiki.dolphin-emu.org/index.php?title=Building_Dolphin_on_Linux\">Building Dolphin on Linux</a>\n"
 "    "
-msgstr "Gebruiks van andere Linux distributies kunnen <a href=\"https://wiki.dolphin-emu.org/index.php?title=Building_Dolphin_on_Linux\">hier</a> lezen hoe Dolphin gecompiled moet worden."
+msgstr "Gebruikers van andere Linux distributies kunnen <a href=\"https://wiki.dolphin-emu.org/index.php?title=Building_Dolphin_on_Linux\">hier</a> lezen hoe Dolphin gecompiled moet worden."
 
 #: downloads/templates/downloads-index.html:103
 msgid "Source code"
@@ -666,12 +666,12 @@ msgid ""
 "            (1080p) with several enhancements: compatibility with all PC\n"
 "            controllers, turbo speed, networked multiplayer, and even more!\n"
 "            "
-msgstr "\n<b>Dolphin</b> is een emulator voor de twee recente Nintendo consoles: de\n<b>GameCube</b> en de <b>Wii</b>. PC gamers kunnen spellen spelen in <b>full HD</b> (1080p) met verschillende verbeteringen: je kunt elke controller gebruiken die je wilt, het spel sneller emuleren dan normaal, multiplayer spelen via het internet en veel meer!\n            "
+msgstr "\n<b>Dolphin</b> is een emulator voor de twee recente Nintendo consoles: de\n<b>GameCube</b> en de <b>Wii</b>. PC gamers kunnen spellen spelen in <b>full HD</b> (1080p) met verschillende verbeteringen: je kunt elke controller gebruiken die je wilt, het spel sneller emuleren dan normaal, online multiplayer spelen via het internet en nog veel meer!\n            "
 
 #: homepage/templates/homepage-home.html:48
 #, python-format
 msgid "Download %(last_release)s for Windows, Mac and Linux »"
-msgstr "Download %(last_release)s nu voor Windows, Mac en Linux »"
+msgstr "Download %(last_release)s voor Windows, Mac en Linux »"
 
 #: homepage/templates/homepage-home.html:108
 msgid "RSS feed of the latest articles"
@@ -684,7 +684,7 @@ msgstr "Laatste artikelen"
 #: homepage/templates/homepage-home.html:136
 #, python-format
 msgid "/ Part of series <a href=\"%(url)s\">%(name)s</a>"
-msgstr "/ Deel van series <a href=\"%(url)s\">%(name)s</a>"
+msgstr "/ Onderdeel van <a href=\"%(url)s\">%(name)s</a>"
 
 #: homepage/templates/homepage-home.html:143
 msgid "Read this article"
@@ -724,7 +724,7 @@ msgstr "Interne Server Error"
 msgid ""
 "There was an error while trying to access this page. Please refresh the page"
 " in a few seconds."
-msgstr "Er is een error opgedoken tijdens het laden van deze pagina. Refresh de pagina over een paar seconden."
+msgstr "Er is een error opgekomen tijdens het laden van deze pagina. Probeer het later opnieuw."
 
 #: templates/_base.html:23
 msgid "Latest blog articles"
