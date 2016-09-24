@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-04-11 23:51+0200\n"
-"PO-Revision-Date: 2016-09-21 14:35+0000\n"
+"PO-Revision-Date: 2016-09-23 09:37+0000\n"
 "Last-Translator: mansoor <asseryma@hotmail.com>\n"
 "Language-Team: Arabic (http://www.transifex.com/delroth/dolphin-emu/language/ar/)\n"
 "MIME-Version: 1.0\n"
@@ -338,7 +338,7 @@ msgstr "5 من 5"
 
 #: compat/templates/compat-list.html:26
 msgid "<strong>Perfect</strong>: No issues at all!"
-msgstr ""
+msgstr "<strong>مثالي</strong>: لا مشاكل على الإطلاق"
 
 #: compat/templates/compat-list.html:27
 msgid "4 out of 5"
@@ -358,7 +358,7 @@ msgstr "3 من 5"
 msgid ""
 "<strong>Starts</strong>: Starts, maybe even plays well, but crashes or major"
 " graphical/audio glitches."
-msgstr ""
+msgstr "<strong>يبدأ</strong>:يبدأ، وربما حتى يلعب بشكل جيد، ولكن تعطل أو خلل في الصوت / الرسومية الرئيسية."
 
 #: compat/templates/compat-list.html:29
 msgid "2 out of 5"
@@ -368,7 +368,7 @@ msgstr "2 من 5"
 msgid ""
 "<strong>Intro/Menu</strong>: Hangs/crashes somewhere between booting and "
 "starting."
-msgstr ""
+msgstr "<strong>مقدمة / القائمة</strong>: توقف / تعطل في مكان ما بين التشغيل و البداية."
 
 #: compat/templates/compat-list.html:30
 msgid "1 out of 5"
@@ -376,7 +376,7 @@ msgstr "1 من 5"
 
 #: compat/templates/compat-list.html:30
 msgid "<strong>Broken</strong>: Crashes when booting."
-msgstr ""
+msgstr "<strong>معطل</strong>: تعطل عند التشغيل"
 
 #: compat/templates/compat-list.html:37
 msgid "Statistics"
