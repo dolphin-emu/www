@@ -3,15 +3,16 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
+# Hoàng Hải <boly456@gmail.com>, 2016
 # Anh Phan <vietnamesel10n@gmail.com>, 2013
 # Anh Phan <vietnamesel10n@gmail.com>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-05 23:27+0200\n"
-"PO-Revision-Date: 2015-09-05 21:27+0000\n"
-"Last-Translator: Pierre Bourdon <delroth@gmail.com>\n"
+"POT-Creation-Date: 2016-04-11 23:51+0200\n"
+"PO-Revision-Date: 2016-10-20 13:03+0000\n"
+"Last-Translator: Hoàng Hải <boly456@gmail.com>\n"
 "Language-Team: Vietnamese (http://www.transifex.com/delroth/dolphin-emu/language/vi/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -21,7 +22,7 @@ msgstr ""
 
 #: blog/admin.py:45
 msgid "Content"
-msgstr ""
+msgstr "Nội dung"
 
 #: blog/feeds.py:24
 #, python-format
@@ -35,7 +36,7 @@ msgstr ""
 
 #: blog/models.py:20
 msgid "image"
-msgstr ""
+msgstr "ảnh"
 
 #: blog/models.py:21
 msgid "Used for illustration."
@@ -82,7 +83,7 @@ msgstr ""
 #: blog/templates/zinnia/_entry_detail_base.html:26
 #: homepage/templates/homepage-home.html:122
 msgid "Written by"
-msgstr ""
+msgstr "Được viết bởi"
 
 #: blog/templates/zinnia/_entry_detail_base.html:30
 #: homepage/templates/homepage-home.html:126
@@ -156,7 +157,7 @@ msgstr ""
 
 #: blog/templates/zinnia/_entry_detail_base.html:142
 msgid "Tags"
-msgstr ""
+msgstr "Tags"
 
 #: blog/templates/zinnia/_entry_detail_base.html:146
 #, python-format
@@ -165,11 +166,11 @@ msgstr ""
 
 #: blog/templates/zinnia/_entry_detail_base.html:149
 msgid "No tags"
-msgstr ""
+msgstr "Không thẻ"
 
 #: blog/templates/zinnia/_entry_detail_base.html:156
 msgid "Categories"
-msgstr ""
+msgstr "Thể loại"
 
 #: blog/templates/zinnia/_entry_detail_base.html:160
 #, python-format
@@ -223,19 +224,19 @@ msgstr ""
 
 #: blog/templates/zinnia/entry_list.html:5
 msgid "the category"
-msgstr ""
+msgstr "Thể loại"
 
 #: blog/templates/zinnia/entry_list.html:5
 msgid "the tag"
-msgstr ""
+msgstr "Thẻ"
 
 #: blog/templates/zinnia/entry_list.html:5
 msgid "the author"
-msgstr ""
+msgstr "Tác giả"
 
 #: blog/templates/zinnia/entry_list.html:5
 msgid "page"
-msgstr ""
+msgstr "trang"
 
 #: blog/templates/zinnia/entry_list.html:10
 #: blog/templates/zinnia/entry_list.html:13
@@ -245,65 +246,65 @@ msgstr ""
 
 #: blog/templates/zinnia/entry_list.html:20
 msgid "Latest entries"
-msgstr ""
+msgstr "Mục cuối cùng"
 
 #: blog/templates/zinnia/entry_list.html:20
 msgid "Category"
-msgstr ""
+msgstr "Thể loại"
 
 #: blog/templates/zinnia/entry_list.html:20
 msgid "Tag"
-msgstr ""
+msgstr "Tag"
 
 #: blog/templates/zinnia/entry_list.html:20
 msgid "Author"
-msgstr ""
+msgstr "Tác giả"
 
 #: blog/templates/zinnia/entry_list.html:20
 msgid "Page"
-msgstr ""
+msgstr "Trang"
 
 #: blog/templates/zinnia/entry_list.html:28
 #, python-format
 msgid "Category archives: %(category)s"
-msgstr ""
+msgstr "Thể loại lưu trữ: %(category)s"
 
 #: blog/templates/zinnia/entry_list.html:35
 #, python-format
 msgid "Tag archives: %(tag)s"
-msgstr ""
+msgstr "Tag lưu trữ: %(tag)s"
 
 #: blog/templates/zinnia/entry_list.html:39
 #, python-format
 msgid "Author archives: %(author)s"
-msgstr ""
+msgstr "Tác giả bài viết: %(author)s"
 
 #: blog/templates/zinnia/entry_list.html:48
 msgid "No entries yet."
-msgstr ""
+msgstr "Không có mục nào."
 
 #: blog/templates/zinnia/entry_list.html:67
 #: blog/templates/zinnia/entry_list.html:68
 msgid "Edit the category"
-msgstr ""
+msgstr "Thay đổi thể loại"
 
 #: blog/templates/zinnia/entry_list.html:74
 #: blog/templates/zinnia/entry_list.html:75
 msgid "Edit the tag"
-msgstr ""
+msgstr "Thay đổi tag"
 
 #: blog/templates/zinnia/entry_list.html:81
 #: blog/templates/zinnia/entry_list.html:82
 msgid "Edit the author"
-msgstr ""
+msgstr "Thay đổi tác giả"
 
 #: blog/templates/zinnia/skeleton.html:5
 msgid "Latest news for Dolphin Emulator"
-msgstr ""
+msgstr "Tin mới nhất của Giả lập Dolphin"
 
 #: blog/templates/zinnia/skeleton.html:8
 msgid "Articles"
-msgstr ""
+msgstr "Bài viết"
 
 #: blog/templates/zinnia/tags/search_form.html:18
 msgid ""
@@ -387,11 +388,11 @@ msgstr ""
 
 #: compat/templates/compat-list.html:45
 msgid "Filter by this rating"
-msgstr ""
+msgstr "Lọc bởi đánh giá này"
 
 #: compat/templates/compat-list.html:45
 msgid "Filter"
-msgstr ""
+msgstr "Lọc"
 
 #: compat/templates/compat-list.html:65
 msgid "Game title (click for details)"
@@ -464,16 +465,16 @@ msgstr "Tài liệu hướng dẫn sử dụng"
 msgid "No published guide available"
 msgstr "Hiện phần này đang được biên soạn"
 
-#: downloads/models.py:41 downloads/models.py:58
+#: downloads/models.py:36 downloads/models.py:54
 #, python-format
 msgid "Dolphin %s"
 msgstr "Dolphin %s"
 
-#: downloads/models.py:82
+#: downloads/models.py:78
 msgid "Change with no description"
-msgstr ""
+msgstr "Thay đổi với không mô tả nào"
 
-#: downloads/models.py:85
+#: downloads/models.py:81
 #, python-format
 msgid ""
 "(<a href=\"%(pr_url)s\">PR #%(pr_id)s</a> from <a "
@@ -508,7 +509,7 @@ msgstr "Hiện vẫn chưa công bố phiên bản phát triển"
 msgid ""
 "Download the latest version of the Dolphin Emulator (%(ver)s) from the "
 "official website."
-msgstr ""
+msgstr "Tải bản mới nhất của Giả lập Dolphin (%(ver)s) từ website chính thức."
 
 #: downloads/templates/downloads-index.html:8
 #: downloads/templates/downloads-index.html:27 templates/_base.html:72
@@ -531,22 +532,11 @@ msgid ""
 "    to be installed.</p>\n"
 msgstr ""
 
-#: downloads/templates/downloads-index.html:49
-msgid "Release Candidate versions"
-msgstr ""
-
-#: downloads/templates/downloads-index.html:51
-msgid ""
-"\n"
-"    Release candidate versions are released to test an upcoming stable release of\n"
-"    Dolphin. They are generally more stable than the Development versions, but may still have known bugs.\n"
-msgstr ""
-
-#: downloads/templates/downloads-index.html:74
+#: downloads/templates/downloads-index.html:63
 msgid "Stable versions"
 msgstr "Phiên bản ổn định"
 
-#: downloads/templates/downloads-index.html:76
+#: downloads/templates/downloads-index.html:65
 msgid ""
 "\n"
 "    Stable versions are released after a lot of testing to ensure emulation\n"
@@ -554,32 +544,32 @@ msgid ""
 "    they might be outdated and lacking some new features.\n"
 msgstr ""
 
-#: downloads/templates/downloads-index.html:98
+#: downloads/templates/downloads-index.html:87
 msgid "No stable release yet"
 msgstr "Hiện chưa phát hành phiên bản ổn định"
 
-#: downloads/templates/downloads-index.html:105
+#: downloads/templates/downloads-index.html:94
 msgid "Older Ubuntu (< 15.04) and users of other Linux distributions"
 msgstr ""
 
-#: downloads/templates/downloads-index.html:106
+#: downloads/templates/downloads-index.html:95
 msgid ""
 "Ubuntu 14.10 and older users can install a PPA \n"
 "    for development and stable versions of Dolphin here: <a href=\"https://wiki.dolphin-emu.org/index.php?title=Installing_Dolphin#Ubuntu\">Installing Dolphin</a>\n"
 "    "
 msgstr ""
 
-#: downloads/templates/downloads-index.html:109
+#: downloads/templates/downloads-index.html:98
 msgid ""
 "Users of other Linux distributions can look here to compile Dolphin: <a href=\"https://wiki.dolphin-emu.org/index.php?title=Building_Dolphin_on_Linux\">Building Dolphin on Linux</a>\n"
 "    "
 msgstr ""
 
-#: downloads/templates/downloads-index.html:114
+#: downloads/templates/downloads-index.html:103
 msgid "Source code"
 msgstr "Mã nguồn"
 
-#: downloads/templates/downloads-index.html:116
+#: downloads/templates/downloads-index.html:105
 msgid ""
 "\n"
 "    The latest version of the Dolphin source code can be downloaded from the\n"
@@ -587,7 +577,7 @@ msgid ""
 "    "
 msgstr "\nPhiên bản mã nguồn mới nhất của Dolphin có thể được tải về từ\ntrang web Git."
 
-#: downloads/templates/downloads-index.html:124
+#: downloads/templates/downloads-index.html:113
 #, python-format
 msgid ""
 "\n"
@@ -595,18 +585,18 @@ msgid ""
 "    "
 msgstr ""
 
-#: downloads/templates/downloads-index.html:131
+#: downloads/templates/downloads-index.html:120
 msgid "Reporting bugs"
-msgstr ""
+msgstr "Báo cáo lỗi"
 
-#: downloads/templates/downloads-index.html:133
+#: downloads/templates/downloads-index.html:122
 #, python-format
 msgid ""
 "\n"
 "    For reporting bugs please go to <a href=\"%(ISSUES_URL)s\">the issue tracker</a>.\n"
 "    Before creating a new issue, make sure to try a recent development build and search the existing issues.\n"
 "    "
-msgstr ""
+msgstr "\nNếu bạn báo lỗi xin hãy đi đến <a href=\"%(ISSUES_URL)s\">theo dõi lỗi</a>.\nTrước khi báo cáo một lỗi, xin hãy dùng phiên bản thử nghiệm mới nhất và xem có tồn tại lỗi trên đó không."
 
 #: downloads/templates/downloads-list.html:5
 #, python-format
@@ -657,7 +647,7 @@ msgstr "Thay đổi mô tả"
 msgid ""
 "Official website of Dolphin, the GameCube and Wii emulator. Download the "
 "latest version (%(ver)s) now or ask questions on our forums for help."
-msgstr ""
+msgstr "Website chỉnh thức của Dolphin, giả lập GameCude và Wii. Tải bản mới nhất (%(ver)s) ngay bây giờ hoặc hỏi trên diễn đàn của chúng tôi để nhận được sự giúp đỡ."
 
 #: homepage/templates/homepage-home.html:14
 msgid "GameCube/Wii games on PC"
@@ -690,7 +680,7 @@ msgstr ""
 
 #: homepage/templates/homepage-home.html:109
 msgid "Latest articles"
-msgstr ""
+msgstr "Bài viết mới nhất"
 
 #: homepage/templates/homepage-home.html:136
 #, python-format
@@ -699,11 +689,11 @@ msgstr ""
 
 #: homepage/templates/homepage-home.html:143
 msgid "Read this article"
-msgstr ""
+msgstr "Đọc bài viết này"
 
 #: homepage/templates/homepage-home.html:147
 msgid "No articles yet."
-msgstr ""
+msgstr "Không có bài viết nào."
 
 #: media/templates/media-all.html:7
 msgid ""
@@ -721,11 +711,11 @@ msgstr "Thư viện Media"
 
 #: templates/404.html:5 templates/404.html.py:8
 msgid "Page not found"
-msgstr ""
+msgstr "Không tìm thấy trang"
 
 #: templates/404.html:10
 msgid "The URL you tried to access does not exist."
-msgstr ""
+msgstr "URL bạn muốn truy cập không tồn tại"
 
 #: templates/500.html:5 templates/500.html.py:8
 msgid "Internal Server Error"
@@ -743,7 +733,7 @@ msgstr ""
 
 #: templates/_base.html:73
 msgid "Blog"
-msgstr ""
+msgstr "Blog"
 
 #: templates/_base.html:74
 msgid "Screenshots"
@@ -772,4 +762,4 @@ msgid ""
 "            &copy; 2014 Dolphin Emulator Project -\n"
 "            <a href=\"%(WEBSITE_GIT_URL)s\">Website source code</a>\n"
 "            "
-msgstr ""
+msgstr "\n&copy; 2014 Dự án Giả lập Dolphin -\n<a href=\"%(WEBSITE_GIT_URL)s\">Mã nguồn website</a>"
