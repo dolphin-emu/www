@@ -16,7 +16,7 @@ msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-04-11 23:51+0200\n"
-"PO-Revision-Date: 2016-10-10 13:48+0000\n"
+"PO-Revision-Date: 2016-11-02 23:47+0000\n"
 "Last-Translator: Swyter <Swyterzone@gmail.com>\n"
 "Language-Team: Spanish (http://www.transifex.com/delroth/dolphin-emu/language/es/)\n"
 "MIME-Version: 1.0\n"
@@ -536,7 +536,7 @@ msgid ""
 "\n"
 "    <p>The development versions require the <a href=\"https://www.microsoft.com/en-us/download/details.aspx?id=48145\">64-bit Visual C++ redistributable for Visual Studio 2015</a>\n"
 "    to be installed.</p>\n"
-msgstr "\n<p>Las versiones de desarrollo se publican cada vez que los desarrolladores realizan cambios a\nDolphin, ¡varias veces al día! Utilizar las versiones de desarrollo te permite\nusar las últimas mejoras del proyecto. Sin embargo,\nestán menos probadas que las versiones estables del emulador.<p>\n\n<p>Las versiones de desarrollo requieren que esté instalada la\n<a href=\"https://www.microsoft.com/en-us/download/details.aspx?id=48145\">versión distribuida de Visual C++ 64-bit para Visual Studio 2015</a></p>\n"
+msgstr "\n<p>Las versiones de desarrollo se publican cada vez que los desarrolladores realizan cambios en\nDolphin, lo que suele ser varias veces al día. Utilizar las versiones de desarrollo te permite\nexperimentar las últimas mejoras y características del proyecto. Pero ten en cuenta que\nestán algo menos pulidas que las versiones estables del emulador.<p>\n\n<p>Las versiones de desarrollo requieren que esté instalada la\n<a href=\"https://www.microsoft.com/en-us/download/details.aspx?id=48145\">versión distribuida de Visual C++ 64-bit para Visual Studio 2015</a></p>\n"
 
 #: downloads/templates/downloads-index.html:63
 msgid "Stable versions"
@@ -563,13 +563,13 @@ msgid ""
 "Ubuntu 14.10 and older users can install a PPA \n"
 "    for development and stable versions of Dolphin here: <a href=\"https://wiki.dolphin-emu.org/index.php?title=Installing_Dolphin#Ubuntu\">Installing Dolphin</a>\n"
 "    "
-msgstr "Los usuarios de Ubuntu 14.10 y anteriores pueden instalar un PPA para el desarollo y las versiones estables de Dolphin aquí: <a href=\"https://wiki.dolphin-emu.org/index.php?title=Installing_Dolphin#Ubuntu\">Instalando Dolphin</a>"
+msgstr "Los usuarios de Ubuntu 14.10 y anteriores pueden instalar un PPA con las versiones tanto estables como en desarrollo de Dolphin desde aquí: <a href=\"https://wiki.dolphin-emu.org/index.php?title=Installing_Dolphin#Ubuntu\">Instalando Dolphin (en inglés)</a>"
 
 #: downloads/templates/downloads-index.html:98
 msgid ""
 "Users of other Linux distributions can look here to compile Dolphin: <a href=\"https://wiki.dolphin-emu.org/index.php?title=Building_Dolphin_on_Linux\">Building Dolphin on Linux</a>\n"
 "    "
-msgstr "Los usuarios de otras distribuciones Linux pueden mirar aquí para compilar Dolphin: <a href=\"https://wiki.dolphin-emu.org/index.php?title=Building_Dolphin_on_Linux\">Construyedo Dophin en Linux</a>\n    "
+msgstr "Los usuarios de otras distribuciones Linux pueden mirar aquí para compilar Dolphin: <a href=\"https://wiki.dolphin-emu.org/index.php?title=Building_Dolphin_on_Linux\">Compilando Dophin en Linux (en inglés)</a>\n    "
 
 #: downloads/templates/downloads-index.html:103
 msgid "Source code"
@@ -602,7 +602,7 @@ msgid ""
 "    For reporting bugs please go to <a href=\"%(ISSUES_URL)s\">the issue tracker</a>.\n"
 "    Before creating a new issue, make sure to try a recent development build and search the existing issues.\n"
 "    "
-msgstr "\n    Para reportar errores, por favor ve al <a href=\"%(ISSUES_URL)s\">gestor de incidencias</a>.\n    Antes de crear un nuevo problema, asegúrate de probar una compilación de desarrollo reciente y buscar los problemas existentes.\n    "
+msgstr "\nPara informar de errores dirígete al <a href=\"%(ISSUES_URL)s\">gestor de incidencias</a>.\nAntes de informar de un problema nuevo prueba una versión en desarrollo reciente y asegúrate de que el problema todavía exista."
 
 #: downloads/templates/downloads-list.html:5
 #, python-format
