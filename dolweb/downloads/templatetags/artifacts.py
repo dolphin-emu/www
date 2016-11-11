@@ -7,7 +7,7 @@ def artifact_sort(artifacts):
     """Sorts an iterable of artifacts by target system."""
     matchers = (
         ('Windows', 0x8000),
-        ('Mac OS X', 0x4000),
+        ('macOS', 0x4000),
         ('Android', 0x2000),
         ('Ubuntu', 0x1000),
         ('x64', 0x8),
