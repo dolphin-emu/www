@@ -7,7 +7,11 @@
 <html dir="{{ LANGUAGE_CODE|langdir }}">
     <head>
         <meta charset="utf-8">
-        <title>{% trans "Dolphin Emulator" %} - {% block "title" %}{% endblock %}</title>
+        <title>
+        {% if request.path == "/" %}{% trans "Dolphin Emulator" %} - {% endif %}
+        {% block "title" %}{% endblock %}
+        {% if request.path != "/" %} - {% trans "Dolphin Emulator" %}{% endif %}
+        </title>
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="{% block "metadescr" %}{% endblock %}">
