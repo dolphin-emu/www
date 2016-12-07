@@ -27,6 +27,13 @@ src="//pagead2.googlesyndication.com/pagead/show_ads.js">
     <h1>{% trans "Download" %}</h1>
 </div>
 
+{% if USER_OS == "win" %}
+<div class="alert alert-warning">{% blocktrans %}
+    You appear to be running a 32-bit version of Windows. Dolphin no longer
+    supports such operating systems, please update to a 64-bit version.
+{% endblocktrans %}</div>
+{% endif %}
+
 <div id="download-dev">
 <h1>{% trans "Development versions" %}</h1>
 

@@ -19,7 +19,10 @@ def guess_system_from_ua(request):
         return { "USER_OS": "unknown" }
 
     if "Windows" in ua:
-        return { "USER_OS": "win" }
+        if "WOW64" in ua or "Win64" in ua or "x64" in ua:
+            return { "USER_OS": "win64" }
+        else:
+            return { "USER_OS": "win" }
     elif "Macintosh" in ua:
         return { "USER_OS": "osx" }
     elif "Ubuntu" in ua:
