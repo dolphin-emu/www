@@ -30,6 +30,7 @@ def guide(request, slug):
     # Hack to rebase the URLs
     html = re.sub('src="/(?!/)', 'src="//wiki.dolphin-emu.org/', html)
     html = re.sub('href="/(?!/)', 'href="//wiki.dolphin-emu.org/', html)
+    html = re.sub(r'srcset="/([^/].*) 1\.5x, /(?!/)', r'srcset="//wiki.dolphin-emu.org/\1 1.5x, //wiki.dolphin-emu.org/', html)
 
     return { 'title': guide.title, 'guide': html }
 
