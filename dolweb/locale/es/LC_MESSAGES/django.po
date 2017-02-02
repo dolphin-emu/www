@@ -10,13 +10,13 @@
 # Puniasterus <puniasterus@gmail.com>, 2013
 # Puniasterus <puniasterus@gmail.com>, 2013
 # Sithdown <afdezmnez@gmail.com>, 2013
-# Swyter <Swyterzone@gmail.com>, 2014-2016
+# Swyter <Swyterzone@gmail.com>, 2014-2017
 msgid ""
 msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-04-11 23:51+0200\n"
-"PO-Revision-Date: 2016-11-02 23:47+0000\n"
+"PO-Revision-Date: 2017-02-02 00:03+0000\n"
 "Last-Translator: Swyter <Swyterzone@gmail.com>\n"
 "Language-Team: Spanish (http://www.transifex.com/delroth/dolphin-emu/language/es/)\n"
 "MIME-Version: 1.0\n"
@@ -151,7 +151,7 @@ msgstr "Puedes continuar la discusión en <a href=\"%(url)s\" title=\"Visita el 
 msgid ""
 "This article is number %(nth)s within the blog series\n"
 "    <a href=\"%(url)s\"><em>%(series)s</em></a>."
-msgstr "Este artículo es el número %(nth)s de las series del blog\n<a href=\"%(url)s\"><em>%(series)s</em></a>."
+msgstr "Este artículo es el número %(nth)s de la serie del blog\n<a href=\"%(url)s\"><em>%(series)s</em></a>."
 
 #: blog/templates/zinnia/_entry_detail_base.html:90
 msgid "‹ Previous article in series"
