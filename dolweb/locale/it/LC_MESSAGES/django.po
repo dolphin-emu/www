@@ -3,15 +3,15 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Mewster <mewster@libero.it>, 2013-2015
+# Mewster <mewster@libero.it>, 2013-2015,2017
 # Mewster <mewster@libero.it>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-04-11 23:51+0200\n"
-"PO-Revision-Date: 2016-04-11 21:51+0000\n"
-"Last-Translator: Pierre Bourdon <delroth@gmail.com>\n"
+"PO-Revision-Date: 2017-02-09 08:21+0000\n"
+"Last-Translator: Mewster <mewster@libero.it>\n"
 "Language-Team: Italian (http://www.transifex.com/delroth/dolphin-emu/language/it/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -183,19 +183,19 @@ msgstr "Nessuna categoria"
 
 #: blog/templates/zinnia/entry_detail_base.html:22
 msgid "RSS Feed of discussions on"
-msgstr "Feed RSS delle discussioni del"
+msgstr "Feed RSS delle discussioni di"
 
 #: blog/templates/zinnia/entry_detail_base.html:24
 msgid "RSS Feed of comments on"
-msgstr "Feed RSS dei commenti del"
+msgstr "Feed RSS dei commenti di"
 
 #: blog/templates/zinnia/entry_detail_base.html:26
 msgid "RSS Feed of pingbacks on"
-msgstr "Feed RSS di pingback del"
+msgstr "Feed RSS di pingback di"
 
 #: blog/templates/zinnia/entry_detail_base.html:28
 msgid "RSS Feed of trackbacks on"
-msgstr "Feed RSS dei trackback del"
+msgstr "Feed RSS dei trackback di"
 
 #: blog/templates/zinnia/entry_detail_base.html:46
 msgid "Next entry"
