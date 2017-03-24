@@ -1,7 +1,7 @@
 from annoying.decorators import render_to
 from django.conf import settings
 from django.core.paginator import EmptyPage
-from django.http import Http404, HttpResponse
+from django.http import Http404, HttpResponse, JsonResponse
 from django.shortcuts import get_object_or_404
 from django.views.decorators.csrf import csrf_exempt
 from dolweb.downloads.diggpaginator import DiggPaginator
@@ -39,6 +39,11 @@ def branches(request):
         ))
 
     return { 'branches': branches }
+
+def buildlist(request):
+    """Displays a list of builds from buildbot for the bisect tool"""
+    master_builds = DevVersion.objects.filter(branch='master').order_by('-date')
+    return JsonResponse(master_builds, safe=True)
 
 @render_to('downloads-view-devrel.html')
 def view_dev_release(request, hash):

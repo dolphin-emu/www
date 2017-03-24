@@ -13,4 +13,5 @@ urlpatterns = patterns('dolweb.downloads.views',
         name='downloads_view_devrel_by_name'),
 
     url(r'^latest/(?P<branch>[a-zA-Z0-9_-]+)/$', 'get_latest', name='downloads_get_latest'),
+    url(r'^buildlist$', 'buildlist', name='buildlist_index'),
 )
