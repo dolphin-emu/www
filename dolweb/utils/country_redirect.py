@@ -18,12 +18,12 @@ def guess_lang_from_request(request):
 
     accept = request.META.get('HTTP_ACCEPT_LANGUAGE', '')
     for accept_lang, unused in parse_accept_lang_header(accept):
-        normalized_accept_lang = accept_lang.lower().replace('-', '_')
+        normalized_accept_lang = accept_lang.lower()
         if normalized_accept_lang in TO_FULL_INVERTED:
             return TO_FULL_INVERTED[normalized_accept_lang]
 
-        if '_' in normalized_accept_lang:
-            normalized_accept_lang = normalized_accept_lang.split('_')[0]
+        if '-' in normalized_accept_lang:
+            normalized_accept_lang = normalized_accept_lang.split('-')[0]
 
         if normalized_accept_lang == settings.LANGUAGE_CODE.split('-')[0]:
             break
