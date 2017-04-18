@@ -4,13 +4,13 @@
 # 
 # Translators:
 # Mustafa Can <m.can.elmaci@gmail.com>, 2013
-# Mustafa Can <m.can.elmaci@gmail.com>, 2013-2016
+# Mustafa Can <m.can.elmaci@gmail.com>, 2013-2017
 msgid ""
 msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-05 23:27+0200\n"
-"PO-Revision-Date: 2016-01-03 15:04+0000\n"
+"POT-Creation-Date: 2016-04-11 23:51+0200\n"
+"PO-Revision-Date: 2017-04-18 00:15+0000\n"
 "Last-Translator: Mustafa Can <m.can.elmaci@gmail.com>\n"
 "Language-Team: Turkish (http://www.transifex.com/delroth/dolphin-emu/language/tr/)\n"
 "MIME-Version: 1.0\n"
@@ -35,7 +35,7 @@ msgstr "%s serileri için son gönderiler"
 
 #: blog/models.py:20
 msgid "image"
-msgstr "Resim"
+msgstr "resim"
 
 #: blog/models.py:21
 msgid "Used for illustration."
@@ -117,7 +117,7 @@ msgstr "Kısa link"
 #: blog/templates/zinnia/_entry_detail_base.html:46
 #: homepage/templates/homepage-home.html:138
 msgid "Visit forum thread for this article"
-msgstr "Bu makale için forum konusunu ziyaret edin"
+msgstr "Bu makale için forum konusunu ziyaret et"
 
 #: blog/templates/zinnia/_entry_detail_base.html:46
 #: homepage/templates/homepage-home.html:138
@@ -138,7 +138,7 @@ msgstr "Okumaya devam et"
 msgid ""
 "You can continue the discussion in the <a href=\"%(url)s\" title=\"Visit "
 "forum thread for this article\">forum thread</a> of this article."
-msgstr "Bu konu hakkındaki tartışmaya <a href=\"%(url)s\" title=\"Bu konu için forum'u ziyaret et\">forum konusu</a> üzerinden devam edebilirsiniz."
+msgstr "Bu konu hakkındaki tartışmaya <a href=\"%(url)s\" title=\"Bu makale için forum konusunu ziyaret et\">forum konusu</a> üzerinden devam edebilirsiniz."
 
 #: blog/templates/zinnia/_entry_detail_base.html:85
 #, python-format
@@ -191,11 +191,11 @@ msgstr "Yorumların RSS beslemesi"
 
 #: blog/templates/zinnia/entry_detail_base.html:26
 msgid "RSS Feed of pingbacks on"
-msgstr "Pingback'ların RSS beslemesi"
+msgstr "Pingback'lerın RSS beslemesi"
 
 #: blog/templates/zinnia/entry_detail_base.html:28
 msgid "RSS Feed of trackbacks on"
-msgstr "Trackback'ların RSS beslemesi"
+msgstr "Trackback'lerın RSS beslemesi"
 
 #: blog/templates/zinnia/entry_detail_base.html:46
 msgid "Next entry"
@@ -281,7 +281,7 @@ msgstr "Yazar arşivleri: %(author)s"
 
 #: blog/templates/zinnia/entry_list.html:48
 msgid "No entries yet."
-msgstr "Şu anda giriş yok."
+msgstr "Şu anda gönderi yok."
 
 #: blog/templates/zinnia/entry_list.html:67
 #: blog/templates/zinnia/entry_list.html:68
@@ -451,7 +451,7 @@ msgstr "Klavuzlar listesine geri dön"
 
 #: docs/templates/docs-guides-index.html:5
 msgid "See all the guides written by the Dolphin team about the emulator."
-msgstr "Emulator hakkında "
+msgstr "Dolphin takımı tarafından emulator hakkında yazılan bütün klavuzları gör."
 
 #: docs/templates/docs-guides-index.html:7 templates/_base.html:76
 msgid "Guides"
@@ -465,16 +465,16 @@ msgstr "Kılavuzlar ve belgeler"
 msgid "No published guide available"
 msgstr "Yayınlanmış hiç klavuz yok"
 
-#: downloads/models.py:41 downloads/models.py:58
+#: downloads/models.py:36 downloads/models.py:54
 #, python-format
 msgid "Dolphin %s"
 msgstr "Dolphin %s"
 
-#: downloads/models.py:82
+#: downloads/models.py:78
 msgid "Change with no description"
 msgstr "Açıklama olmadan değiştir"
 
-#: downloads/models.py:85
+#: downloads/models.py:81
 #, python-format
 msgid ""
 "(<a href=\"%(pr_url)s\">PR #%(pr_id)s</a> from <a "
@@ -509,7 +509,7 @@ msgstr "Şu anda geliştirme sürümü yok"
 msgid ""
 "Download the latest version of the Dolphin Emulator (%(ver)s) from the "
 "official website."
-msgstr " Dolphin Emulator'ün son sürümü (%(ver)s)'yi resmi sitesinden indirin."
+msgstr " Dolphin Emulator'ün son sürümünü (%(ver)s) resmi sitesinden indirin."
 
 #: downloads/templates/downloads-index.html:8
 #: downloads/templates/downloads-index.html:27 templates/_base.html:72
@@ -532,22 +532,11 @@ msgid ""
 "    to be installed.</p>\n"
 msgstr "\n<p>Geliştirme sürümleri geliştiricilerin yaptığı her yeni değişimde, neredeyse her gün yeniden yayınlanan sürümlerdir. Bu sürümleri kullanmak yapılan en son değişiklikleri ve en yeni özellikleri test etmenize imkan sağlayacaktır. Ama geliştirme sürümleri test edilmediği için stabil olmayabilir. </p>\n\n<p>Geliştirme sürümleri bilgisayarınızda<a href=\"https://www.microsoft.com/tr-TR/download/details.aspx?id=48145\">64-bit Visual Studio 2015 için Visual C++ Yeniden Dağıtılabilir</a> bileşeninin kurulu olmasını gerektirir.</p>\n"
 
-#: downloads/templates/downloads-index.html:49
-msgid "Release Candidate versions"
-msgstr "Kararlı sürüm adayları"
-
-#: downloads/templates/downloads-index.html:51
-msgid ""
-"\n"
-"    Release candidate versions are released to test an upcoming stable release of\n"
-"    Dolphin. They are generally more stable than the Development versions, but may still have known bugs.\n"
-msgstr "\nKararlı sürüm adayları, bir sonraki kararlı sürümü belirlemek için test amacı ile yayınlanan sürümlerdir. Bu sürümler, geliştirme sürümlerinden daha kararlıdır ama hala bazı bilinen hatalara sahiptir.\n"
-
-#: downloads/templates/downloads-index.html:74
+#: downloads/templates/downloads-index.html:63
 msgid "Stable versions"
 msgstr "Kararlı sürümler"
 
-#: downloads/templates/downloads-index.html:76
+#: downloads/templates/downloads-index.html:65
 msgid ""
 "\n"
 "    Stable versions are released after a lot of testing to ensure emulation\n"
@@ -555,32 +544,32 @@ msgid ""
 "    they might be outdated and lacking some new features.\n"
 msgstr "\nKararlı sürümler, emulasyon hızı ve kararlılık açısından yapılan testlerden sonra yayınlanan sürümlerdir. Ama bu sürümler daha uzun aralıklarla yayınlandığı için eski olabilir veya en yeni özelliklerden faydalanamayabilirsiniz.\n\n"
 
-#: downloads/templates/downloads-index.html:98
+#: downloads/templates/downloads-index.html:87
 msgid "No stable release yet"
 msgstr "Şu anda kararlı sürüm yok"
 
-#: downloads/templates/downloads-index.html:105
+#: downloads/templates/downloads-index.html:94
 msgid "Older Ubuntu (< 15.04) and users of other Linux distributions"
 msgstr "Eski Ubuntu (< 15.04) ve diğer Linux distrolarının kullanıcıları"
 
-#: downloads/templates/downloads-index.html:106
+#: downloads/templates/downloads-index.html:95
 msgid ""
 "Ubuntu 14.10 and older users can install a PPA \n"
 "    for development and stable versions of Dolphin here: <a href=\"https://wiki.dolphin-emu.org/index.php?title=Installing_Dolphin#Ubuntu\">Installing Dolphin</a>\n"
 "    "
 msgstr "Ubuntu 14.10 ve eski sürümlerin kullanıcıları geliştirme ve stabil sürümlerini PPA ile yükleyebilir. Bilgi için Wiki'deki <a href=\"https://wiki.dolphin-emu.org/index.php?title=Installing_Dolphin#Ubuntu\">Installing Dolphin</a> başlığına bakınız."
 
-#: downloads/templates/downloads-index.html:109
+#: downloads/templates/downloads-index.html:98
 msgid ""
 "Users of other Linux distributions can look here to compile Dolphin: <a href=\"https://wiki.dolphin-emu.org/index.php?title=Building_Dolphin_on_Linux\">Building Dolphin on Linux</a>\n"
 "    "
 msgstr "Diğer Linux distrolarının kullanıcıları Dolphin'i derlemek için Wiki'deki <a href=\"https://wiki.dolphin-emu.org/index.php?title=Building_Dolphin_on_Linux\">Building Dolphin on Linux</a> başlığına bakabilir."
 
-#: downloads/templates/downloads-index.html:114
+#: downloads/templates/downloads-index.html:103
 msgid "Source code"
 msgstr "Kaynak kodu"
 
-#: downloads/templates/downloads-index.html:116
+#: downloads/templates/downloads-index.html:105
 msgid ""
 "\n"
 "    The latest version of the Dolphin source code can be downloaded from the\n"
@@ -588,7 +577,7 @@ msgid ""
 "    "
 msgstr "\n    Dolphin'in son sürümünün kaynak kodu Git deposundan indirilebilir.\n    "
 
-#: downloads/templates/downloads-index.html:124
+#: downloads/templates/downloads-index.html:113
 #, python-format
 msgid ""
 "\n"
@@ -596,11 +585,11 @@ msgid ""
 "    "
 msgstr "\nAyrıca <a href=\"%(GIT_BROWSE_URL)s\">şu anki kaynak koduna gözatabilirsiniz.</a>.\n    "
 
-#: downloads/templates/downloads-index.html:131
+#: downloads/templates/downloads-index.html:120
 msgid "Reporting bugs"
 msgstr "Hataları raporlamak"
 
-#: downloads/templates/downloads-index.html:133
+#: downloads/templates/downloads-index.html:122
 #, python-format
 msgid ""
 "\n"
