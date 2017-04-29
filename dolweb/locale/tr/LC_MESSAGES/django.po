@@ -3,6 +3,7 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
+# Bahadır Usta <demirherif@hotmail.com.tr>, 2017
 # Mustafa Can <m.can.elmaci@gmail.com>, 2013
 # Mustafa Can <m.can.elmaci@gmail.com>, 2013-2017
 msgid ""
@@ -10,8 +11,8 @@ msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-04-11 23:51+0200\n"
-"PO-Revision-Date: 2017-04-18 00:15+0000\n"
-"Last-Translator: Mustafa Can <m.can.elmaci@gmail.com>\n"
+"PO-Revision-Date: 2017-04-28 16:39+0000\n"
+"Last-Translator: Bahadır Usta <demirherif@hotmail.com.tr>\n"
 "Language-Team: Turkish (http://www.transifex.com/delroth/dolphin-emu/language/tr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -447,15 +448,15 @@ msgstr "Sıkça Sorulan Sorular"
 
 #: docs/templates/docs-guide.html:12
 msgid "Go back to the guides list"
-msgstr "Klavuzlar listesine geri dön"
+msgstr "Kılavuzlar listesine geri dön"
 
 #: docs/templates/docs-guides-index.html:5
 msgid "See all the guides written by the Dolphin team about the emulator."
-msgstr "Dolphin takımı tarafından emulator hakkında yazılan bütün klavuzları gör."
+msgstr "Dolphin takımı tarafından emülatör hakkında yazılan bütün kılavuzları gör."
 
 #: docs/templates/docs-guides-index.html:7 templates/_base.html:76
 msgid "Guides"
-msgstr "Klavuzlar"
+msgstr "Kılavuzlar"
 
 #: docs/templates/docs-guides-index.html:11
 msgid "Guides and documentation"
@@ -463,7 +464,7 @@ msgstr "Kılavuzlar ve belgeler"
 
 #: docs/templates/docs-guides-index.html:19
 msgid "No published guide available"
-msgstr "Yayınlanmış hiç klavuz yok"
+msgstr "Hiç yayınlanmış kılavuz yok"
 
 #: downloads/models.py:36 downloads/models.py:54
 #, python-format
@@ -753,7 +754,7 @@ msgstr "Wiki"
 
 #: templates/_base.html:80
 msgid "Code"
-msgstr "Code"
+msgstr "Kod"
 
 #: templates/_base.html:116
 #, python-format
