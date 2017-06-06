@@ -45,7 +45,10 @@ def branches(request):
 def buildlist(request):
     """Displays a list of builds from buildbot for the bisect tool"""
     master_builds = DevVersion.objects.filter(branch='master').order_by('-date')
-    return JsonResponse(master_builds, safe=True)
+    shortrev_list = []
+    for build in master_builds:
+        shortrev_list.append(build.shortrev)
+    return JsonResponse(shortrev_list, safe=False)
 
 @render_to('downloads-view-devrel.html')
 def view_dev_release(request, hash):
