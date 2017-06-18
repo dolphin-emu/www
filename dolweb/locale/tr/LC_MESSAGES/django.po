@@ -3,7 +3,7 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Bahadır Usta <demirherif@hotmail.com.tr>, 2017
+# Bahadır Usta <bahadirusta@hotmail.com.tr>, 2017
 # Mustafa Can <m.can.elmaci@gmail.com>, 2013
 # Mustafa Can <m.can.elmaci@gmail.com>, 2013-2017
 msgid ""
@@ -11,8 +11,8 @@ msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-04-11 23:51+0200\n"
-"PO-Revision-Date: 2017-05-03 11:40+0000\n"
-"Last-Translator: Bahadır Usta <demirherif@hotmail.com.tr>\n"
+"PO-Revision-Date: 2017-06-17 11:44+0000\n"
+"Last-Translator: Bahadır Usta <bahadirusta@hotmail.com.tr>\n"
 "Language-Team: Turkish (http://www.transifex.com/delroth/dolphin-emu/language/tr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -490,7 +490,7 @@ msgstr "Geliştirme sürümlerini indir"
 #: downloads/templates/downloads-branches.html:18
 #, python-format
 msgid "<tt>%(branch)s</tt> branch"
-msgstr "<tt>%(branch)s</tt> dalı"
+msgstr "<tt>%(branch)s</tt> sürümü"
 
 #: downloads/templates/downloads-branches.html:21
 #: downloads/templates/downloads-index.html:45
@@ -499,7 +499,7 @@ msgstr "Eski sürümleri göster »"
 
 #: downloads/templates/downloads-branches.html:28
 msgid "Branch list"
-msgstr "Dal listesi"
+msgstr "Sürüm listesi"
 
 #: downloads/templates/downloads-devrel.html:19
 msgid "No development release yet"
@@ -602,12 +602,12 @@ msgstr "\nHataları bildirmek için <a href=\"%(ISSUES_URL)s\">hata trackerimizi
 #: downloads/templates/downloads-list.html:5
 #, python-format
 msgid "%(branch)s branch - page %(page)s"
-msgstr "%(branch)s dalı - sayfa %(page)s"
+msgstr "%(branch)s sürümü - sayfa %(page)s"
 
 #: downloads/templates/downloads-list.html:9
 #, python-format
 msgid "<tt>%(branch)s</tt> branch - page %(page)s"
-msgstr "<tt>%(branch)s</tt> dalı - sayfa %(page)s"
+msgstr "<tt>%(branch)s</tt> sürümü - sayfa %(page)s"
 
 #: downloads/templates/downloads-view-devrel.html:6
 #, python-format
@@ -625,7 +625,7 @@ msgstr "Sürüm"
 
 #: downloads/templates/downloads-view-devrel.html:33
 msgid "Branch"
-msgstr "Dal"
+msgstr "Sürüm"
 
 #: downloads/templates/downloads-view-devrel.html:36
 msgid "Date"
