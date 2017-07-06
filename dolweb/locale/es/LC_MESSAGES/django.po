@@ -16,7 +16,7 @@ msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-04-11 23:51+0200\n"
-"PO-Revision-Date: 2017-02-02 00:03+0000\n"
+"PO-Revision-Date: 2017-07-05 13:29+0000\n"
 "Last-Translator: Swyter <Swyterzone@gmail.com>\n"
 "Language-Team: Spanish (http://www.transifex.com/delroth/dolphin-emu/language/es/)\n"
 "MIME-Version: 1.0\n"
@@ -80,7 +80,7 @@ msgstr[1] "\n%(count)s artículos"
 
 #: blog/templates/series-index.html:27
 msgid "RSS feed:"
-msgstr "Feed RSS:"
+msgstr "Fuente RSS:"
 
 #: blog/templates/series-index.html:37
 msgid "No blog series yet."
@@ -123,7 +123,7 @@ msgstr "Enlace corto"
 #: blog/templates/zinnia/_entry_detail_base.html:46
 #: homepage/templates/homepage-home.html:138
 msgid "Visit forum thread for this article"
-msgstr "Visita el foro para leer este artículo"
+msgstr "Visita el foro para opinar sobre este artículo"
 
 #: blog/templates/zinnia/_entry_detail_base.html:46
 #: homepage/templates/homepage-home.html:138
@@ -144,7 +144,7 @@ msgstr "Seguir leyendo"
 msgid ""
 "You can continue the discussion in the <a href=\"%(url)s\" title=\"Visit "
 "forum thread for this article\">forum thread</a> of this article."
-msgstr "Puedes continuar la discusión en <a href=\"%(url)s\" title=\"Visita el hilo del foro para este artículo\">el hilo del foro</a> de este artículo."
+msgstr "Puedes continuar la conversación en <a href=\"%(url)s\" title=\"Visita el hilo del foro para este artículo\">el hilo del foro</a> de este artículo."
 
 #: blog/templates/zinnia/_entry_detail_base.html:85
 #, python-format
@@ -189,11 +189,11 @@ msgstr "Sin categorías"
 
 #: blog/templates/zinnia/entry_detail_base.html:22
 msgid "RSS Feed of discussions on"
-msgstr "Feed RSS de la discusión en"
+msgstr "Fuente RSS de la conversación en"
 
 #: blog/templates/zinnia/entry_detail_base.html:24
 msgid "RSS Feed of comments on"
-msgstr "Feed RSS de los comentarios en"
+msgstr "Fuente RSS de los comentarios en"
 
 #: blog/templates/zinnia/entry_detail_base.html:26
 msgid "RSS Feed of pingbacks on"
@@ -248,7 +248,7 @@ msgstr "página"
 #: blog/templates/zinnia/entry_list.html:13
 #: blog/templates/zinnia/entry_list.html:16
 msgid "RSS Feed"
-msgstr "Feed RSS"
+msgstr "Fuente RSS"
 
 #: blog/templates/zinnia/entry_list.html:20
 msgid "Latest entries"
@@ -682,7 +682,7 @@ msgstr "Descargar %(last_release)s para Windows, Mac y Linux »"
 
 #: homepage/templates/homepage-home.html:108
 msgid "RSS feed of the latest articles"
-msgstr "Feed RSS de los últimos artículos"
+msgstr "Fuente RSS de los últimos artículos"
 
 #: homepage/templates/homepage-home.html:109
 msgid "Latest articles"
@@ -768,4 +768,4 @@ msgid ""
 "            &copy; 2014 Dolphin Emulator Project -\n"
 "            <a href=\"%(WEBSITE_GIT_URL)s\">Website source code</a>\n"
 "            "
-msgstr "\n&copy; 2014 Dolphin Emulator Project -\n<a href=\"%(WEBSITE_GIT_URL)s\">Código fuente de la Web</a>\n            "
+msgstr "\n&copy; 2014 El equipo de Dolphin -\n<a href=\"%(WEBSITE_GIT_URL)s\">Código fuente de la Web</a>\n            "
