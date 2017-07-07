@@ -4,14 +4,14 @@
 # 
 # Translators:
 # Pierre Bourdon <delroth@gmail.com>, 2013
-# Pascal <pascal2j-language@yahoo.com>, 2014-2015
+# Pascal <pascal2j-language@yahoo.com>, 2014-2015,2017
 # Pierre Bourdon <delroth@gmail.com>, 2013-2014
 msgid ""
 msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-05 23:27+0200\n"
-"PO-Revision-Date: 2015-09-05 22:13+0000\n"
+"POT-Creation-Date: 2016-04-11 23:51+0200\n"
+"PO-Revision-Date: 2017-07-06 11:59+0000\n"
 "Last-Translator: Pascal <pascal2j-language@yahoo.com>\n"
 "Language-Team: French (http://www.transifex.com/delroth/dolphin-emu/language/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -466,16 +466,16 @@ msgstr "Guides et documentation"
 msgid "No published guide available"
 msgstr "Aucun guide n'a été publié"
 
-#: downloads/models.py:41 downloads/models.py:58
+#: downloads/models.py:36 downloads/models.py:54
 #, python-format
 msgid "Dolphin %s"
 msgstr "Dolphin %s"
 
-#: downloads/models.py:82
+#: downloads/models.py:78
 msgid "Change with no description"
 msgstr "Changement sans description"
 
-#: downloads/models.py:85
+#: downloads/models.py:81
 #, python-format
 msgid ""
 "(<a href=\"%(pr_url)s\">PR #%(pr_id)s</a> from <a "
@@ -495,7 +495,7 @@ msgstr "Branche <tt>%(branch)s</tt>"
 #: downloads/templates/downloads-branches.html:21
 #: downloads/templates/downloads-index.html:45
 msgid "View older versions »"
-msgstr "Anciennes versions »"
+msgstr "Versions précédentes »"
 
 #: downloads/templates/downloads-branches.html:28
 msgid "Branch list"
@@ -533,22 +533,11 @@ msgid ""
 "    to be installed.</p>\n"
 msgstr "\n<p>Chaque fois qu'un développeur réalise un changement ou une amélioration dans Dolphin (plusieurs fois par jour !),\n une nouvelle version de développement est disponible.\nUtiliser ces versions de développement vous permet d'être toujours à la pointe et de profiter des dernières améliorations du projet au plus vite.\nElles sont cependant moins testées que les versions stables de l'émulateur.</p>\n\n<p>Les versions de développement requièrent l'installation du <a href=\"https://www.microsoft.com/en-us/download/details.aspx?id=48145\">redistribuable 64-bit de Visual C++ pour Visual Studio 2015</a>.</p>\n"
 
-#: downloads/templates/downloads-index.html:49
-msgid "Release Candidate versions"
-msgstr "Versions Release Candidate"
-
-#: downloads/templates/downloads-index.html:51
-msgid ""
-"\n"
-"    Release candidate versions are released to test an upcoming stable release of\n"
-"    Dolphin. They are generally more stable than the Development versions, but may still have known bugs.\n"
-msgstr "\nLes versions Release Candidate sont faites pour tester une future version stable de Dolphin.\nElles sont généralement plus stables que les versions de Développement, mais peuvent encore contenir des bugs.\n"
-
-#: downloads/templates/downloads-index.html:74
+#: downloads/templates/downloads-index.html:63
 msgid "Stable versions"
 msgstr "Versions stables"
 
-#: downloads/templates/downloads-index.html:76
+#: downloads/templates/downloads-index.html:65
 msgid ""
 "\n"
 "    Stable versions are released after a lot of testing to ensure emulation\n"
@@ -556,32 +545,32 @@ msgid ""
 "    they might be outdated and lacking some new features.\n"
 msgstr "\nLes versions stables sont publiées uniquement après une longue période de test afin d'assurer la stabilité et la performance de l'émulation.\nCependant, comme elles sont moins souvent mises à jour que les versions de développement, les nouvelles fonctionnalités n'y sont pas toujours présentes.\n"
 
-#: downloads/templates/downloads-index.html:98
+#: downloads/templates/downloads-index.html:87
 msgid "No stable release yet"
 msgstr "Pas de version stable disponible"
 
-#: downloads/templates/downloads-index.html:105
+#: downloads/templates/downloads-index.html:94
 msgid "Older Ubuntu (< 15.04) and users of other Linux distributions"
 msgstr "Anciens Ubuntu (< 15.04) et autres distributions Linux"
 
-#: downloads/templates/downloads-index.html:106
+#: downloads/templates/downloads-index.html:95
 msgid ""
 "Ubuntu 14.10 and older users can install a PPA \n"
 "    for development and stable versions of Dolphin here: <a href=\"https://wiki.dolphin-emu.org/index.php?title=Installing_Dolphin#Ubuntu\">Installing Dolphin</a>\n"
 "    "
 msgstr "Les utilisateurs des versions 14.10 et précédentes d'Ubuntu peuvent installer un PPA \npour les versions de développement et stables ici : <a href=\"https://wiki.dolphin-emu.org/index.php?title=Installing_Dolphin#Ubuntu\">Installation de Dolphin</a>"
 
-#: downloads/templates/downloads-index.html:109
+#: downloads/templates/downloads-index.html:98
 msgid ""
 "Users of other Linux distributions can look here to compile Dolphin: <a href=\"https://wiki.dolphin-emu.org/index.php?title=Building_Dolphin_on_Linux\">Building Dolphin on Linux</a>\n"
 "    "
 msgstr "Les utilisateurs d'autres distributions de Linux peuvent regarder ici pour compiler Dolphin : <a href=\"https://wiki.dolphin-emu.org/index.php?title=Building_Dolphin_on_Linux\">Compiler Dolphin sur Linux</a>"
 
-#: downloads/templates/downloads-index.html:114
+#: downloads/templates/downloads-index.html:103
 msgid "Source code"
 msgstr "Code source"
 
-#: downloads/templates/downloads-index.html:116
+#: downloads/templates/downloads-index.html:105
 msgid ""
 "\n"
 "    The latest version of the Dolphin source code can be downloaded from the\n"
@@ -589,7 +578,7 @@ msgid ""
 "    "
 msgstr "\n    La dernière version du code source de Dolphin peut être téléchargée depuis     le dépot Git du projet.\n    "
 
-#: downloads/templates/downloads-index.html:124
+#: downloads/templates/downloads-index.html:113
 #, python-format
 msgid ""
 "\n"
@@ -597,11 +586,11 @@ msgid ""
 "    "
 msgstr "\n    Vous pouvez également <a href=\"%(GIT_BROWSE_URL)s\">parcourir la version actuelle du code source</a>.\n    "
 
-#: downloads/templates/downloads-index.html:131
+#: downloads/templates/downloads-index.html:120
 msgid "Reporting bugs"
 msgstr "Signaler des bugs"
 
-#: downloads/templates/downloads-index.html:133
+#: downloads/templates/downloads-index.html:122
 #, python-format
 msgid ""
 "\n"
