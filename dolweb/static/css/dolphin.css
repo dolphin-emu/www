@@ -557,6 +557,28 @@ div.draft-warning {
     animation: blink 1.5s step-start 0s infinite;
 }
 
+.entry-content header {
+    margin-bottom: 2em;
+}
+
+.entry-content header img {
+    width: 100%;
+}
+
+/* Variant of the banner that is only visible on small screens */
+.entry-content header img.mini {
+    display: none;
+}
+
+@media (max-width: 640px) {
+    .entry-content header img {
+        display: none;
+    }
+    .entry-content header img.mini {
+        display: block;
+    }
+}
+
 .entry-body .media-block {
     margin-top: 2em;
     margin-bottom: 2em;
