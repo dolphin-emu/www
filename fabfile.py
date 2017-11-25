@@ -1,7 +1,7 @@
 from fabric.api import *
 
 env.user = 'dolphin-emu'
-env.hosts = ['ssh.alwaysdata.com']
+env.hosts = ['ssh-dolphin-emu.alwaysdata.net']
 
 def deploy(root, branch):
     activate = "source /home/dolphin-emu/venv/new-www/bin/activate"
