@@ -33,6 +33,9 @@ urlpatterns = patterns('',
 
     # Management interface
     url(r'^mgmt/(?P<cmd>.+)$', 'dolweb.management.views.run_command', name='mgmt_run_command'),
+
+    # Auto-update checking.
+    url(r'^update/', include('dolweb.update.urls')),
 )
 
 urlpatterns += staticfiles_urlpatterns()

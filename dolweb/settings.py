@@ -218,6 +218,7 @@ INSTALLED_APPS = (
     'dolweb.media',
     'dolweb.compat',
     'dolweb.localefixes',
+    'dolweb.update',
     # External blog, after 'dolweb.blog' for template overwriting
     'dolweb.blog',
     'zinnia',
@@ -259,6 +260,7 @@ GIT_COMMIT_URL = "https://github.com/dolphin-emu/dolphin/commit/"
 GIT_PR_URL = "https://github.com/dolphin-emu/dolphin/pull/%s"
 WEBSITE_GIT_URL = "https://github.com/dolphin-emu/www"
 ISSUES_URL = "https://bugs.dolphin-emu.org/projects/emulator/issues"
+UPDATE_MANIFEST_URL = "https://update.dolphin-emu.org/manifest/%s/%s/%s.manifest"
 
 # Used for i18n purposes: the language code is prepended to this default
 # hostname.
@@ -325,6 +327,12 @@ BLOG_ETHERPAD_HMAC_KEY = ''
 #
 # This variable is a list of ('username', 'password').
 MGMT_AUTHORIZED_USERS = []
+
+# Names of the automatically maintained auto-update tracks and what branch they
+# follow.
+AUTO_MAINTAINED_UPDATE_TRACKS = {
+    'dev': 'master',
+}
 
 local_settings_file = os.path.join(PROJECT_ROOT, 'dolweb', 'local_settings.py')
 if os.path.exists(local_settings_file):

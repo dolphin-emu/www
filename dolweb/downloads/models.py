@@ -66,32 +66,51 @@ class DevVersion(DownloadableVersion):
         return ('downloads_view_devrel', (), { 'hash': self.hash })
 
     @property
-    def description_abbrev(self):
-        """Returns HTML code that represents a short description of the changes
-        in this commit."""
-        lines = self.description.split(u'\n')
+    def description_data(self):
+        """Returns data that describes the changes in this commit."""
+        lines = map(unicode.strip, self.description.split(u'\n'))
         match = PULL_REQUEST_FIRSTLINE_RE.match(lines[0])
         if match:
             pull_id, author, branch = match.groups()
             following_lines = [l for l in lines[1:] if l.strip() != u'']
             if not following_lines:
-                short_descr = _(u'Change with no description')
+                short_descr = u'Change with no description'
             else:
                 short_descr = following_lines[0]
-            additional_html_fmt = _(u'(<a href="%(pr_url)s">PR #%(pr_id)s</a> from <a href="%(author_url)s">%(author)s</a>)')
-            additional_html = additional_html_fmt % {
+            additional_data = {
+                'short_descr': short_descr,
                 'pr_url': settings.GIT_PR_URL % pull_id,
                 'pr_id': pull_id,
-                'author_url': settings.GIT_AUTHOR_URL % cgi.escape(author),
-                'author': cgi.escape(author),
+                'author_url': settings.GIT_AUTHOR_URL % author,
+                'author': author,
             }
         else:
-            short_descr = lines[0]
+            additional_data = {
+                'short_descr': lines[0],
+                'author': self.author,
+                'author_url': settings.GIT_AUTHOR_URL % self.author,
+            }
+        if len(additional_data['short_descr']) >= 200:
+            additional_data['short_descr'] = additional_data['short_descr'][:200] + u"..."
+        return additional_data
+
+    @property
+    def description_abbrev(self):
+        """Returns HTML code that represents a short description of the changes
+        in this commit."""
+        data = self.description_data
+        if 'pr_id' in data:
+            additional_html_fmt = _(u'(<a href="%(pr_url)s">PR #%(pr_id)s</a> from <a href="%(author_url)s">%(author)s</a>)')
+            additional_html = additional_html_fmt % {
+                'pr_url': data['pr_url'],
+                'pr_id': data['pr_id'],
+                'author_url': cgi.escape(data['author_url']),
+                'author': cgi.escape(data['author']),
+            }
+        else:
             additional_html = u''
 
-        if len(short_descr) >= 200:
-            short_descr = short_descr[:200] + u"..."
-        short_descr = cgi.escape(short_descr)
+        short_descr = cgi.escape(data['short_descr'])
         if additional_html:
             short_descr = short_descr + u' ' + additional_html
         return mark_safe(short_descr)
