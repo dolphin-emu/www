@@ -95,14 +95,15 @@ def new(request):
     target_system = request.POST['target_system']
     build_url = request.POST['build_url']
     user_os_matcher = request.POST['user_os_matcher']
-    msg = "%d|%d|%d|%d|%d|%d|%d|%d|%s|%s|%s|%s|%s|%s|%s|%s" % (
+    msg = u"%d|%d|%d|%d|%d|%d|%d|%d|%s|%s|%s|%s|%s|%s|%s|%s" % (
         len(branch), len(shortrev), len(hash), len(author), len(description),
         len(target_system), len(build_url), len(user_os_matcher),
 
         branch, shortrev, hash, author, description, target_system, build_url,
         user_os_matcher
     )
-    hm = hmac.new(settings.DOWNLOADS_CREATE_KEY, msg, hashlib.sha1)
+    hm = hmac.new(settings.DOWNLOADS_CREATE_KEY,
+                  msg.encode("utf-8"), hashlib.sha1)
     if hm.hexdigest() != request.POST['hmac']:
         return HttpResponse('Invalid HMAC', status=403)
 
