@@ -49,6 +49,7 @@ def _serialize_version(version):
 def _make_outdated_response(old_version, new_version, changelog):
     return JsonResponse({
         "status": "outdated",
+        "content-store": settings.UPDATE_CONTENT_STORE_URL,
         "old": _serialize_version(old_version),
         "new": _serialize_version(new_version),
         "changelog": changelog,

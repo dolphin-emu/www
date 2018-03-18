@@ -334,6 +334,9 @@ AUTO_MAINTAINED_UPDATE_TRACKS = {
     'dev': 'master',
 }
 
+# URL of the update content store.
+UPDATE_CONTENT_STORE_URL = 'https://update.dolphin-emu.org/content/'
+
 local_settings_file = os.path.join(PROJECT_ROOT, 'dolweb', 'local_settings.py')
 if os.path.exists(local_settings_file):
     try:
