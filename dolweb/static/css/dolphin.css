@@ -579,58 +579,58 @@ div.draft-warning {
     }
 }
 
-.entry-body .media-block {
+.entry-content .media-block {
     margin-top: 2em;
     margin-bottom: 2em;
 }
 
 @media (min-width: 768px) {
-    .entry-body .media-block {
+    .entry-content .media-block {
         max-width: 600px;
         margin-left: auto;
         margin-right: auto;
     }
 
     /* Modifiers, because the embed size depends on what is getting embedded */
-    .entry-body .media-block.narrower {
+    .entry-content .media-block.narrower {
         max-width: 510px;
     }
-    .entry-body .media-block.wide {
+    .entry-content .media-block.wide {
         max-width: 680px;
     }
-    .entry-body .media-block.wider {
+    .entry-content .media-block.wider {
         max-width: 720px;
     }
-    .entry-body .media-block.full-width {
+    .entry-content .media-block.full-width {
         max-width: 90%;
     }
 }
 
-.entry-body figure {
+.entry-content figure {
     text-align: center;
     margin-bottom: 1em;
 }
 
-.entry-body figure a {
+.entry-content figure a {
     text-decoration: none;
 }
 
-.entry-body figure figcaption {
+.entry-content figure figcaption {
     margin-top: 0.5em;
 }
 
-.entry-body figure img {
+.entry-content figure img {
     max-width: 100%;
     border-style: none;
 }
 
 @media (min-width: 1200px) {
-    .entry-body .row.more-padding {
+    .entry-content .row.more-padding {
         margin-right: -25px;
         margin-left: -25px;
     }
-    .entry-body .row.more-padding > [class^="col-"],
-    .entry-body .row.more-padding > [class^=" col-"] {
+    .entry-content .row.more-padding > [class^="col-"],
+    .entry-content .row.more-padding > [class^=" col-"] {
         padding-right: 25px;
         padding-left: 25px;
     }
@@ -638,12 +638,12 @@ div.draft-warning {
 
 /* Reduce the amount of wasted space on small screens */
 @media (max-width: 768px) {
-    .entry-body .row {
+    .entry-content .row {
         margin-right: -8px;
         margin-left: -8px;
     }
-    .entry-body .row > [class^="col-"],
-    .entry-body .row > [class^=" col-"] {
+    .entry-content .row > [class^="col-"],
+    .entry-content .row > [class^=" col-"] {
         padding-right: 8px;
         padding-left: 8px;
     }
