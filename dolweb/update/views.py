@@ -77,8 +77,11 @@ def _check_on_auto_maintained_track(request, track, version):
         return _error_response(404, "No version %r on track %r (branch: %r)" %
                                (version, track, branch))
 
+    # TODO(delroth): We only support Windows for now.
     newer_versions = DevVersion.objects.filter(
-        branch=branch, date__gt=version.date).order_by('-date')
+        branch=branch,
+        date__gt=version.date,
+        artifacts__target_system='Windows x64').order_by('-date')
     if len(newer_versions) == 0:
         return _make_up_to_date_response()
     new_version = newer_versions[0]
