@@ -2,8 +2,9 @@ from django.conf import settings
 from django.core.management.base import BaseCommand, CommandError
 from dolweb.compat.models import Page
 from PIL import Image
-from StringIO import StringIO
+from io import BytesIO
 
+import binascii
 import collections
 import hashlib
 import os
@@ -93,7 +94,7 @@ def get_gameids(letter):
         else:
             # "Fuzzy" match: bruteforce the region
             pattern = gids[0][:3] + "%s" + gids[0][4:]
-            for l in string.uppercase:
+            for l in string.ascii_uppercase:
                 gid = pattern % l
                 if gid in bnr_gameids:
                     matching_gid = gid
@@ -106,7 +107,7 @@ def get_gameids(letter):
 
 def download_all_banners(gameids):
     res = {}
-    gameids_ord = [map(ord, gid) for gid in gameids]
+    gameids_ord = [[ord(c) for c in gid] for gid in gameids]
     for blob in db.blobs.find({ 'unique_id': { '$in': gameids_ord }}):
         gid = ''.join(map(chr, blob['unique_id']))
         img = blob['image']
@@ -157,7 +158,7 @@ def generate_image_map(size, coords):
     gameids = coords.keys()
     banners = download_all_banners(gameids)
 
-    sio = StringIO(PLACEHOLDER.decode('base64'))
+    sio = BytesIO(binascii.a2b_base64(PLACEHOLDER))
     sio.seek(0)
     placeholder = Image.open(sio)
     im.paste(placeholder, (0, 0, 96, 32))
@@ -165,7 +166,7 @@ def generate_image_map(size, coords):
     pix = im.load()
 
     for gid, (ox, oy) in coords.items():
-        data = map(ord, banners[gid])
+        data = iter(banners[gid])
         for y in range(32):
             for x in range(96):
                 pix[x + ox, y + oy] = (next(data), next(data), next(data), 255)
@@ -195,6 +196,6 @@ def generate_atlas(ident, gameids):
 
 class Command(BaseCommand):
     def handle(self, *args, **options):
-        for l in '#' + string.uppercase:
-            print 'Generating atlas for: %r' % l
+        for l in '#' + string.ascii_uppercase:
+            print('Generating atlas for: %r' % l)
             generate_atlas(l, get_gameids(l))
