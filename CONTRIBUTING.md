@@ -25,7 +25,7 @@ require more involved staging.
 Running a testing instance locally
 ----------------------------------
 
-First of all, create a Python 2.6 or 2.7 virtual environment and make sure you
+First of all, create a Python 3.6+ virtual environment and make sure you
 are in it (``echo $VIRTUAL_ENV``). Then install all the required dependencies
 with ``pip``:
 
@@ -46,16 +46,7 @@ the ``settings.py`` file (in the ``dolweb/`` directory):
     MEDIA_URL = '/m/user/'
     STATIC_URL = '/m/static/'
 
-Then run ``syncdb`` to create a default database. Set up a user when it asks you
-to - this user is required to access the admin part of the website:
-
-    python manage.py syncdb
-
-After you've done this, you need to update the database models:
-
-    python manage.py makemigrations 
-
-And then apply those updates:
+Then run ``migrate`` to create a default database.
 
     python manage.py migrate
 

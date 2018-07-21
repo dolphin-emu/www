@@ -3,7 +3,7 @@ Dolphin Emulator Official Website
 
 https://dolphin-emu.org/
 
-Technologies: Django (Python 2.x), HTML and CSS, using Twitter Bootstrap.
+Technologies: Django (Python 3), HTML and CSS, using Twitter Bootstrap.
 
 Author: mostly Pierre Bourdon (delroth@dolphin-emu.org).
 
@@ -24,6 +24,7 @@ Quick overview
    translation layer) and the guides (stored in the Dolphin Wiki).
  * Media: serves the screenshot gallery.
  * Homepage: serves the homepage.
+ * Update: serves update metadata information to users.
 
 Licensing
 ---------

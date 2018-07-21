@@ -1,14 +1,6 @@
-* Porting to Python 3 and latest Django (currently on old versions).
-
 * Using more of django-annoying where it makes sense, particularly @render_to.
 
 * Provide some fake data sets to use as initial database contents.
-
-* Download system rework: currently the download types are hardcoded, which was
-  a terrible idea and is now blocking us to add things like Android downloads,
-  updated Ubuntu builds, etc.
-  * Should be a DownloadableItem: {version, url, autodetection_thingy} in DB.
-  * Then need a script to port old data to the new format.
 
 * Download UI: too confusing for users, way too many versions displayed on the
   downloads page. Simplify the view with two side by side options: stable or
