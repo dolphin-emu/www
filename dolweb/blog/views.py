@@ -19,7 +19,7 @@ import uuid
 
 
 @render_to('series-index.html')
-def series_index(request, page=None):
+def series_index(request, page=None, uid=None):
     all_series = BlogSeries.objects.filter(visible=True)
 
     # if page is None:
