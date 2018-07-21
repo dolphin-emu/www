@@ -1,51 +1,237 @@
-/* glue: 0.3 hash: ac89031d30 */
-.sprite-nav-logo-small,
+/* glue: 0.13 hash: 045402b2be */
+        .sprite-nav-logo-small,
 .sprite-nav-tr,
 .sprite-nav-sv,
 .sprite-nav-ru,
 .sprite-nav-pt,
 .sprite-nav-pl,
 .sprite-nav-nl,
+.sprite-nav-nb,
 .sprite-nav-ms,
 .sprite-nav-ko,
 .sprite-nav-ja,
 .sprite-nav-it,
 .sprite-nav-hu,
 .sprite-nav-hr,
+.sprite-nav-gl,
 .sprite-nav-fr,
 .sprite-nav-fa,
 .sprite-nav-es,
 .sprite-nav-en,
 .sprite-nav-el,
 .sprite-nav-de,
+.sprite-nav-da,
 .sprite-nav-cy,
 .sprite-nav-cs,
 .sprite-nav-cn,
 .sprite-nav-ca,
 .sprite-nav-br,
-.sprite-nav-ast{background-image:url('nav.png');background-repeat:no-repeat}
-.sprite-nav-logo-small{background-position:0px 0px;width:42px;height:25px;}
-.sprite-nav-tr{background-position:-42px 0px;width:30px;height:20px;}
-.sprite-nav-sv{background-position:0px -25px;width:30px;height:20px;}
-.sprite-nav-ru{background-position:-30px -25px;width:30px;height:20px;}
-.sprite-nav-pt{background-position:0px -45px;width:30px;height:20px;}
-.sprite-nav-pl{background-position:-30px -45px;width:30px;height:20px;}
-.sprite-nav-nl{background-position:-72px 0px;width:30px;height:20px;}
-.sprite-nav-ms{background-position:-72px -20px;width:30px;height:20px;}
-.sprite-nav-ko{background-position:-72px -40px;width:30px;height:20px;}
-.sprite-nav-ja{background-position:0px -65px;width:30px;height:20px;}
-.sprite-nav-it{background-position:-30px -65px;width:30px;height:20px;}
-.sprite-nav-hu{background-position:-60px -65px;width:30px;height:20px;}
-.sprite-nav-hr{background-position:-102px 0px;width:30px;height:20px;}
-.sprite-nav-fr{background-position:-102px -20px;width:30px;height:20px;}
-.sprite-nav-fa{background-position:-102px -40px;width:30px;height:20px;}
-.sprite-nav-es{background-position:-102px -60px;width:30px;height:20px;}
-.sprite-nav-en{background-position:0px -85px;width:30px;height:20px;}
-.sprite-nav-el{background-position:-30px -85px;width:30px;height:20px;}
-.sprite-nav-de{background-position:-60px -85px;width:30px;height:20px;}
-.sprite-nav-cy{background-position:-90px -85px;width:30px;height:20px;}
-.sprite-nav-cs{background-position:0px -105px;width:30px;height:20px;}
-.sprite-nav-cn{background-position:-30px -105px;width:30px;height:20px;}
-.sprite-nav-ca{background-position:-60px -105px;width:30px;height:20px;}
-.sprite-nav-br{background-position:-90px -105px;width:30px;height:20px;}
-.sprite-nav-ast{background-position:-132px 0px;width:30px;height:20px;}
+.sprite-nav-ast {
+            background-image: url('nav.png');
+            background-repeat: no-repeat;
+        }
+        
+        .sprite-nav-logo-small {
+            background-position: -1px -1px;
+            width: 42px;
+            height: 25px;
+        }
+        
+        .sprite-nav-tr {
+            background-position: -45px -1px;
+            width: 27px;
+            height: 20px;
+        }
+        
+        .sprite-nav-sv {
+            background-position: -1px -28px;
+            width: 27px;
+            height: 20px;
+        }
+        
+        .sprite-nav-ru {
+            background-position: -30px -28px;
+            width: 27px;
+            height: 20px;
+        }
+        
+        .sprite-nav-pt {
+            background-position: -1px -50px;
+            width: 27px;
+            height: 20px;
+        }
+        
+        .sprite-nav-pl {
+            background-position: -30px -50px;
+            width: 27px;
+            height: 20px;
+        }
+        
+        .sprite-nav-nl {
+            background-position: -74px -1px;
+            width: 27px;
+            height: 20px;
+        }
+        
+        .sprite-nav-nb {
+            background-position: -74px -23px;
+            width: 27px;
+            height: 20px;
+        }
+        
+        .sprite-nav-ms {
+            background-position: -74px -45px;
+            width: 27px;
+            height: 20px;
+        }
+        
+        .sprite-nav-ko {
+            background-position: -1px -72px;
+            width: 27px;
+            height: 20px;
+        }
+        
+        .sprite-nav-ja {
+            background-position: -30px -72px;
+            width: 27px;
+            height: 20px;
+        }
+        
+        .sprite-nav-it {
+            background-position: -59px -72px;
+            width: 27px;
+            height: 20px;
+        }
+        
+        .sprite-nav-hu {
+            background-position: -103px -1px;
+            width: 27px;
+            height: 20px;
+        }
+        
+        .sprite-nav-hr {
+            background-position: -103px -23px;
+            width: 27px;
+            height: 20px;
+        }
+        
+        .sprite-nav-gl {
+            background-position: -103px -45px;
+            width: 27px;
+            height: 20px;
+        }
+        
+        .sprite-nav-fr {
+            background-position: -103px -67px;
+            width: 27px;
+            height: 20px;
+        }
+        
+        .sprite-nav-fa {
+            background-position: -1px -94px;
+            width: 27px;
+            height: 20px;
+        }
+        
+        .sprite-nav-es {
+            background-position: -30px -94px;
+            width: 27px;
+            height: 20px;
+        }
+        
+        .sprite-nav-en {
+            background-position: -59px -94px;
+            width: 27px;
+            height: 20px;
+        }
+        
+        .sprite-nav-el {
+            background-position: -88px -94px;
+            width: 27px;
+            height: 20px;
+        }
+        
+        .sprite-nav-de {
+            background-position: -132px -1px;
+            width: 27px;
+            height: 20px;
+        }
+        
+        .sprite-nav-da {
+            background-position: -132px -23px;
+            width: 27px;
+            height: 20px;
+        }
+        
+        .sprite-nav-cy {
+            background-position: -132px -45px;
+            width: 27px;
+            height: 20px;
+        }
+        
+        .sprite-nav-cs {
+            background-position: -132px -67px;
+            width: 27px;
+            height: 20px;
+        }
+        
+        .sprite-nav-cn {
+            background-position: -132px -89px;
+            width: 27px;
+            height: 20px;
+        }
+        
+        .sprite-nav-ca {
+            background-position: -1px -116px;
+            width: 27px;
+            height: 20px;
+        }
+        
+        .sprite-nav-br {
+            background-position: -30px -116px;
+            width: 27px;
+            height: 20px;
+        }
+        
+        .sprite-nav-ast {
+            background-position: -59px -116px;
+            width: 27px;
+            height: 20px;
+        }
+        
+        @media screen and (-webkit-min-device-pixel-ratio: 1.0), screen and (min--moz-device-pixel-ratio: 1.0), screen and (-o-min-device-pixel-ratio: 100/100), screen and (min-device-pixel-ratio: 1.0), screen and (min-resolution: 1.0dppx) {
+            .sprite-nav-logo-small,
+    .sprite-nav-tr,
+    .sprite-nav-sv,
+    .sprite-nav-ru,
+    .sprite-nav-pt,
+    .sprite-nav-pl,
+    .sprite-nav-nl,
+    .sprite-nav-nb,
+    .sprite-nav-ms,
+    .sprite-nav-ko,
+    .sprite-nav-ja,
+    .sprite-nav-it,
+    .sprite-nav-hu,
+    .sprite-nav-hr,
+    .sprite-nav-gl,
+    .sprite-nav-fr,
+    .sprite-nav-fa,
+    .sprite-nav-es,
+    .sprite-nav-en,
+    .sprite-nav-el,
+    .sprite-nav-de,
+    .sprite-nav-da,
+    .sprite-nav-cy,
+    .sprite-nav-cs,
+    .sprite-nav-cn,
+    .sprite-nav-ca,
+    .sprite-nav-br,
+    .sprite-nav-ast {
+                background-image: url('nav.png');
+                -webkit-background-size: 160px 137px;
+                -moz-background-size: 160px 137px;
+                background-size: 160px 137px;
+            }
+        }
+        

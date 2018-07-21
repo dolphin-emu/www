@@ -63,15 +63,17 @@ LANGUAGES = (
     ('ca', 'Català'),
     ('cs', 'Česky'),
     ('cy', 'Cymraeg'),
+    ('da', 'Dansk'),
     ('de', 'Deutsch'),
     ('en', 'English'),
     ('es', 'Español'),
     ('el', 'Ελληνικά'),
     ('fr', 'Français'),
+    ('gl', 'Galego'),
     ('it', 'Italiano'),
-    ('hr', 'Hrvatski'),
     ('hu', 'Magyar'),
     ('nl', 'Nederlands'),
+    ('nb', 'Norsk (Bokmål)'),
     ('pl', 'Polski'),
     ('pt', 'Português'),
     ('br', 'Português (Brasil)'),
@@ -81,7 +83,6 @@ LANGUAGES = (
     ('cn', '中文(中国)'),
     ('ja', '日本語'),
     ('ko', '한국어'),
-    ('fa', 'ﻑﺍﺮﺳی'),
 )
 
 # Languages that are read from right to left.
