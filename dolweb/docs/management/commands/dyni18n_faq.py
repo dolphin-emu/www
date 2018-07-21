@@ -27,7 +27,7 @@ def download_translation(lang):
     if not os.path.exists(settings.DYNI18N_PATH):
         os.makedirs(settings.DYNI18N_PATH)
     path = os.path.join(settings.DYNI18N_PATH, 'dolweb.docs.faq.%s.po' % lang)
-    open(path + '.tmp', 'w').write(po['content'].encode('utf-8'))
+    open(path + '.tmp', 'w').write(po['content'])
     os.rename(path + '.tmp', path)
 
 class Command(BaseCommand):
