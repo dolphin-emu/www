@@ -65,7 +65,7 @@ def etherpad_event(request):
     hm = hmac.new(
         settings.BLOG_ETHERPAD_HMAC_KEY.encode('ascii'), content,
         hashlib.sha256)
-    if hm.hexdigest() != request_hmac:
+    if hm.hexdigest().encode('ascii') != request_hmac:
         return HttpResponse('Invalid signature', status=403)
     events = json.loads(content)
 
