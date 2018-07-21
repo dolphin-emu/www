@@ -37,5 +37,5 @@ def check_country_redirect(request):
 def export_languages(request):
     return {
         "LANGUAGES": settings.LANGUAGES,
-        "LANGUAGE_CODE": settings.LANGUAGE_CODE,
+        "LANGUAGE_CODE": request.LANGUAGE_CODE,
     }
