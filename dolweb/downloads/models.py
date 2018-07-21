@@ -68,7 +68,7 @@ class DevVersion(DownloadableVersion):
     @property
     def description_data(self):
         """Returns data that describes the changes in this commit."""
-        lines = map(str.strip, self.description.split(u'\n'))
+        lines = [line.strip() for line in self.description.split(u'\n')]
         match = PULL_REQUEST_FIRSTLINE_RE.match(lines[0])
         if match:
             pull_id, author, branch = match.groups()
