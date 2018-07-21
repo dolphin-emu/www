@@ -4,7 +4,7 @@ env.user = 'dolphin-emu'
 env.hosts = ['ssh-dolphin-emu.alwaysdata.net']
 
 def deploy(root, branch):
-    activate = "source /home/dolphin-emu/venv/new-www/bin/activate"
+    activate = "source /home/dolphin-emu/venv/www/bin/activate"
     with cd(root):
         run("git fetch")
         run("git checkout %s" % branch)
@@ -14,7 +14,7 @@ def deploy(root, branch):
         with cd("dolweb"):
             run("msgfmt localefixes/locale/ko/LC_MESSAGES/django.po -o "
                        "localefixes/locale/ko/LC_MESSAGES/django.mo")
-            run(activate + " && django-admin.py compilemessages")
+            run(activate + " && django-admin compilemessages")
     run("scripts/restart-apps.sh")
 
 def deploy_stable():
