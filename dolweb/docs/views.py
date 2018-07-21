@@ -51,4 +51,4 @@ def faq_dyni18n_po(request):
             po.append(polib.POEntry(msgid=q.short_title, msgstr='',
                                     msgctxt='Question short title (displayed in the left column)'))
             po.append(polib.POEntry(msgid=q.text, msgstr='', msgctxt='Answer'))
-    return HttpResponse(po)
+    return HttpResponse(str(po), content_type='text/plain')
