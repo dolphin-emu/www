@@ -17,6 +17,7 @@ django-tagging==0.4.6
 django-xmlrpc==0.1.8
 ecdsa==0.13
 fabric==2.2.1
+Fabric3==1.14.post1
 idna==2.7
 invoke==1.1.0
 Markdown==2.6.11
@@ -30,10 +31,13 @@ pycparser==2.18
 pymongo==3.7.1
 PyNaCl==1.2.1
 pyparsing==2.2.0
+python-slugify==1.2.5
 pytz==2018.5
 regex==2018.7.11
 requests==2.19.1
 six==1.11.0
 sorl-thumbnail==12.4.1
 sqlparse==0.2.4
+transifex-client==0.13.4
+Unidecode==1.0.22
 urllib3==1.23
