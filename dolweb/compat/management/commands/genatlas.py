@@ -148,8 +148,8 @@ def needs_update(ident, css):
         return True
     prev_css = open(path).read()
 
-    hash = hashlib.sha1(css).hexdigest()
-    prev_hash = hashlib.sha1(prev_css).hexdigest()
+    hash = hashlib.sha1(css.encode('utf-8')).hexdigest()
+    prev_hash = hashlib.sha1(prev_css.encode('utf-8')).hexdigest()
 
     return (hash != prev_hash)
 
