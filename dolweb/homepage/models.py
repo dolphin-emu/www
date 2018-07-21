@@ -12,7 +12,7 @@ class NewsArticle(models.Model):
     text = models.TextField()
     published = models.BooleanField(default=False)
 
-    def __unicode__(self):
+    def __str__(self):
         return self.title
 
     @property

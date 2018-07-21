@@ -11,7 +11,7 @@ class UpdateTrack(models.Model):
     version_name = models.CharField(max_length=64, null=True)
     changelog_text = models.TextField()
 
-    def __unicode__(self):
+    def __str__(self):
         return 'Track %s, version %s' % (self.name, self.version)
 
     class Meta:

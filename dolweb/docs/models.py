@@ -11,7 +11,7 @@ class FAQCategory(models.Model):
     def sorted_questions(self):
         return self.questions.order_by('display_order')
 
-    def __unicode__(self):
+    def __str__(self):
         return self.title
 
     def get_absolute_url(self):
@@ -32,7 +32,7 @@ class FAQ(models.Model):
     text = models.TextField()
     display_order = models.IntegerField()
 
-    def __unicode__(self):
+    def __str__(self):
         return self.title
 
     def get_absolute_url(self):
@@ -53,7 +53,7 @@ class Guide(models.Model):
     listed = models.BooleanField(default=False)
     display_order = models.IntegerField()
 
-    def __unicode__(self):
+    def __str__(self):
         return self.title
 
     @models.permalink

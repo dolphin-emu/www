@@ -38,7 +38,7 @@ class BlogSeries(models.Model):
         except IndexError:
             return None
 
-    def __unicode__(self):
+    def __str__(self):
         return self.name
 
     def __repr__(self):
@@ -52,7 +52,7 @@ class ForumThreadForEntry(models.Model):
     def get_absolute_url(self):
         return settings.FORUM_URL_FOR_THREAD.format(id=self.thread_id)
 
-    def __unicode__(self):
+    def __str__(self):
         return "%s -> %s" % (self.entry, self.get_absolute_url())
 
     def __repr__(self):

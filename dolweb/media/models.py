@@ -11,7 +11,7 @@ class Screenshot(models.Model):
     displayed = models.BooleanField(default=True)
     promoted = models.BooleanField(default=False)
 
-    def __unicode__(self):
+    def __str__(self):
         return self.game_name
 
     def get_absolute_url(self):

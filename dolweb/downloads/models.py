@@ -16,7 +16,7 @@ class BranchInfo(models.Model):
     name = models.CharField(max_length=64, db_index=True)
     visible = models.BooleanField(default=True)
 
-    def __unicode__(self):
+    def __str__(self):
         return self.name
 
 class DownloadableVersion(models.Model):
@@ -32,7 +32,7 @@ class ReleaseVersion(DownloadableVersion):
 
     version = models.CharField(max_length=64)
 
-    def __unicode__(self):
+    def __str__(self):
         return _("Dolphin %s") % self.version
 
     @models.permalink
@@ -50,7 +50,7 @@ class DevVersion(DownloadableVersion):
     author = models.CharField(max_length=128)
     description = models.TextField()
 
-    def __unicode__(self):
+    def __str__(self):
         return _("Dolphin %s") % self.revbranch
 
     @property
