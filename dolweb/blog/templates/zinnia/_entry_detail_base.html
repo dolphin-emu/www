@@ -80,7 +80,7 @@
     {% block entry-series %}
     {% if object.within_series %}
     <h4>{% trans "Blog series" %}</h4>
-    {% url 'dolweb.blog.views.series_index' uid=object.within_series.pk as series_url %}
+    {% url 'dolweb_blog_series' uid=object.within_series.pk as series_url %}
     <p>{% blocktrans with nth=object.series_index url=series_url series=object.within_series %}This article is number {{ nth }} within the blog series
     <a href="{{ url }}"><em>{{ series }}</em></a>.{% endblocktrans %} {# </p> #}
     {% with previous=object.previous_entry_in_series next=object.next_entry_in_series %}

@@ -18,7 +18,7 @@ class SeriesFeed(EntryFeed):
         return obj.entries.all()[:settings.ZINNIA_FEEDS_MAX_ITEMS]
 
     def link(self, obj):
-        return reverse('dolweb.blog.views.series_index', args=[obj.pk])
+        return reverse('dolweb_blog_series', args=[obj.pk])
 
     def get_title(self, obj):
         return _("Entries for the series %s") % obj.name

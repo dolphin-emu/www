@@ -132,7 +132,7 @@
                   {% endwith %}
                   <abbr class="published" title="{{ article.creation_date|date:"c" }}">{{ article.creation_date|date:"DATE_FORMAT" }}</abbr>
                   {% if article.within_series %}
-                  {% url 'dolweb.blog.views.series_index' uid=article.within_series.pk as series_url %}
+                  {% url 'dolweb_blog_series' uid=article.within_series.pk as series_url %}
                   {% blocktrans with url=series_url name=article.within_series.name %}/ Part of series <a href="{{ url }}">{{ name}}</a>{% endblocktrans %}
                   {% endif %}
                   {% if article.forum_thread %}/ <i class="icon-comments"></i> <a href="{{ article.forum_thread.get_absolute_url }}" title="{% trans "Visit forum thread for this article" %}">{% trans "Forum thread" %}</a>{% endif %}
