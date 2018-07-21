@@ -25,4 +25,4 @@ def run_command(request, cmd):
     if tuple(authenticator) not in settings.MGMT_AUTHORIZED_USERS:
         return make_401_response()
 
-    return HttpResponse(subprocess.check_output(cmd), 'text/plain')
+    return HttpResponse(subprocess.check_output(cmd, shell=True), 'text/plain')
