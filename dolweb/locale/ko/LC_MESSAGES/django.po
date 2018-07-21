@@ -3,17 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Siegfried <iori3000@hanafos.com>, 2013-2016
+# Siegfried, 2013-2016
 # its take <bexco2010@gmail.com>, 2016
 # its take <bexco2010@gmail.com>, 2015
-# Siegfried <iori3000@hanafos.com>, 2013
+# Siegfried, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-04-11 23:51+0200\n"
-"PO-Revision-Date: 2016-06-25 20:18+0000\n"
-"Last-Translator: Siegfried <iori3000@hanafos.com>\n"
+"PO-Revision-Date: 2017-09-23 18:43+0000\n"
+"Last-Translator: Siegfried\n"
 "Language-Team: Korean (http://www.transifex.com/delroth/dolphin-emu/language/ko/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"

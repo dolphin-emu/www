@@ -4,14 +4,14 @@
 # 
 # Translators:
 # firespin <dartworldgr@hotmail.com>, 2014
-# link_to_the_past <kostamarino@gmail.com>, 2013-2015
+# link_to_the_past <kostamarino@gmail.com>, 2013-2015,2018
 # link_to_the_past <kostamarino@gmail.com>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-05 23:27+0200\n"
-"PO-Revision-Date: 2015-09-11 19:47+0000\n"
+"POT-Creation-Date: 2016-04-11 23:51+0200\n"
+"PO-Revision-Date: 2018-02-07 15:35+0000\n"
 "Last-Translator: link_to_the_past <kostamarino@gmail.com>\n"
 "Language-Team: Greek (http://www.transifex.com/delroth/dolphin-emu/language/el/)\n"
 "MIME-Version: 1.0\n"
@@ -71,7 +71,7 @@ msgid_plural ""
 "    %(count)s entries\n"
 "  "
 msgstr[0] "\n    %(count)s καταχώρηση\n  "
-msgstr[1] "\n    %(count)s καταχωρίσεις \n  "
+msgstr[1] "\n    %(count)s καταχωρήσεις \n  "
 
 #: blog/templates/series-index.html:27
 msgid "RSS feed:"
@@ -466,16 +466,16 @@ msgstr "Οδηγίες και εγχειρίδια "
 msgid "No published guide available"
 msgstr "Δεν υπάρχουν διαθέσιμοι οδηγοί για δημοσίευση"
 
-#: downloads/models.py:41 downloads/models.py:58
+#: downloads/models.py:36 downloads/models.py:54
 #, python-format
 msgid "Dolphin %s"
 msgstr "Dolphin %s"
 
-#: downloads/models.py:82
+#: downloads/models.py:78
 msgid "Change with no description"
 msgstr "Αλλαγή χωρίς περιγραφή"
 
-#: downloads/models.py:85
+#: downloads/models.py:81
 #, python-format
 msgid ""
 "(<a href=\"%(pr_url)s\">PR #%(pr_id)s</a> from <a "
@@ -533,22 +533,11 @@ msgid ""
 "    to be installed.</p>\n"
 msgstr "\n    <p>Οι δοκιμαστικές εκδόσεις κυκλοφορούν κάθε φορά που ένας προγραμματιστής κάνει μια αλλαγή στο Dolphin, πολλές φορές σε καθημερινή βάση! Η χρησιμοποίηση των δοκιμαστικών εκδόσεων σας δίνει την δυνατότητα να χρησιμοποιήσετε τις τελευταίες και μεγαλύτερες βελτιώσεις στο project. Έχουν ελεγχθεί όμως λιγότερο απ' ότι οι σταθερές εκδόσεις του εξομοιωτή. </p>\n\n    <p>Οι δοκιμαστικές εκδόσεις απαιτούν το <a href=\"https://www.microsoft.com/en-us/download/details.aspx?id=48145\">64-bit Visual C++ redistributable for Visual Studio 2015</a>\n    να είναι εγκατεστημένο.</p>\n"
 
-#: downloads/templates/downloads-index.html:49
-msgid "Release Candidate versions"
-msgstr "Υποψήφιες Σταθερές εκδόσεις"
-
-#: downloads/templates/downloads-index.html:51
-msgid ""
-"\n"
-"    Release candidate versions are released to test an upcoming stable release of\n"
-"    Dolphin. They are generally more stable than the Development versions, but may still have known bugs.\n"
-msgstr "\n    Οι υποψήφιες σταθερές εκδόσεις δημοσιοποιούνται για να εξεταστεί μια επερχόμενη σταθερή έκδοση του \nDolphin. Σε γενικές γραμμές είναι πιο σταθερές από τις δοκιμαστικές εκδόσεις, αλλά μπορεί να έχουν παρόλα αυτά γνωστά ελαττώματα.\n"
-
-#: downloads/templates/downloads-index.html:74
+#: downloads/templates/downloads-index.html:63
 msgid "Stable versions"
 msgstr "Σταθερές εκδόσεις"
 
-#: downloads/templates/downloads-index.html:76
+#: downloads/templates/downloads-index.html:65
 msgid ""
 "\n"
 "    Stable versions are released after a lot of testing to ensure emulation\n"
@@ -556,32 +545,32 @@ msgid ""
 "    they might be outdated and lacking some new features.\n"
 msgstr "\nΟι σταθερές εκδόσεις κυκλοφορούν μετά από πολλές δοκιμές για να \nδιασφαλιστεί η ταχύτητα και η σταθερότητα της εξομοίωσης. Παρόλα αυτά, \nκαθότι γίνονται διαθέσιμες πιο σπάνια, μπορεί να έχουν ξεπεραστεί και να \nυπολείπονται ορισμένα νέα χαρακτηριστικά.\n"
 
-#: downloads/templates/downloads-index.html:98
+#: downloads/templates/downloads-index.html:87
 msgid "No stable release yet"
 msgstr "Δεν έχει εκδοθεί σταθερή έκδοση ακόμα"
 
-#: downloads/templates/downloads-index.html:105
+#: downloads/templates/downloads-index.html:94
 msgid "Older Ubuntu (< 15.04) and users of other Linux distributions"
 msgstr "Χρήστες Ubuntu παλαιότερων εκδόσεων (< 15.04) και χρήστες από άλλες διανομές Linux"
 
-#: downloads/templates/downloads-index.html:106
+#: downloads/templates/downloads-index.html:95
 msgid ""
 "Ubuntu 14.10 and older users can install a PPA \n"
 "    for development and stable versions of Dolphin here: <a href=\"https://wiki.dolphin-emu.org/index.php?title=Installing_Dolphin#Ubuntu\">Installing Dolphin</a>\n"
 "    "
 msgstr "Χρήστες Ubuntu 14.10 και παλαιότερων μπορούν να εγκαταστήσουν ένα PPA \nγια τις δοκιμαστικές και τις σταθερές εκδόσεις του Dolphin εδώ: <a href=\"https://wiki.dolphin-emu.org/index.php?title=Installing_Dolphin#Ubuntu\">Installing Dolphin</a>\n    "
 
-#: downloads/templates/downloads-index.html:109
+#: downloads/templates/downloads-index.html:98
 msgid ""
 "Users of other Linux distributions can look here to compile Dolphin: <a href=\"https://wiki.dolphin-emu.org/index.php?title=Building_Dolphin_on_Linux\">Building Dolphin on Linux</a>\n"
 "    "
 msgstr "Χρήστες από άλλες διανομές του Linux μπορούν να κοιτάξουν εδώ για να κάνουν compile το Dolphin: <a href=\"https://wiki.dolphin-emu.org/index.php?title=Building_Dolphin_on_Linux\">Building Dolphin on Linux</a>\n    "
 
-#: downloads/templates/downloads-index.html:114
+#: downloads/templates/downloads-index.html:103
 msgid "Source code"
 msgstr "Πηγαίος κώδικας"
 
-#: downloads/templates/downloads-index.html:116
+#: downloads/templates/downloads-index.html:105
 msgid ""
 "\n"
 "    The latest version of the Dolphin source code can be downloaded from the\n"
@@ -589,7 +578,7 @@ msgid ""
 "    "
 msgstr "\nΗ τελευταία έκδοση του πηγαίου κώδικα του Dolphin μπορεί να κατεβεί από το \nproject Git repository.\n    "
 
-#: downloads/templates/downloads-index.html:124
+#: downloads/templates/downloads-index.html:113
 #, python-format
 msgid ""
 "\n"
@@ -597,11 +586,11 @@ msgid ""
 "    "
 msgstr "\n    Μπορείτε επίσης <a href=\"%(GIT_BROWSE_URL)s\">να περιηγηθείτε στην τρέχουσα έκδοση του πηγαίου κώδικα</a>.\n    "
 
-#: downloads/templates/downloads-index.html:131
+#: downloads/templates/downloads-index.html:120
 msgid "Reporting bugs"
 msgstr "Υποβολή σφαλμάτων"
 
-#: downloads/templates/downloads-index.html:133
+#: downloads/templates/downloads-index.html:122
 #, python-format
 msgid ""
 "\n"

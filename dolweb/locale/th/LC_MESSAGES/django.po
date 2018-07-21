@@ -3,59 +3,60 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
+# BoatKung <boatkung20@gmail.com>, 2013,2016,2018
 msgid ""
 msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-04-11 23:51+0200\n"
-"PO-Revision-Date: 2017-08-03 15:13+0000\n"
-"Last-Translator: Pierre Bourdon <delroth@gmail.com>\n"
-"Language-Team: Serbian (http://www.transifex.com/delroth/dolphin-emu/language/sr/)\n"
+"PO-Revision-Date: 2018-04-07 23:30+0000\n"
+"Last-Translator: BoatKung <boatkung20@gmail.com>\n"
+"Language-Team: Thai (http://www.transifex.com/delroth/dolphin-emu/language/th/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: sr\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Language: th\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
 #: blog/admin.py:45
 msgid "Content"
-msgstr ""
+msgstr "เนื้อหา"
 
 #: blog/feeds.py:24
 #, python-format
 msgid "Entries for the series %s"
-msgstr ""
+msgstr "บทความสำหรับบทความชุด %s"
 
 #: blog/feeds.py:27
 #, python-format
 msgid "The latest entries for the series %s"
-msgstr ""
+msgstr "บทความสุดท้ายของบทความชุด %s"
 
 #: blog/models.py:20
 msgid "image"
-msgstr ""
+msgstr "รูปภาพ"
 
 #: blog/models.py:21
 msgid "Used for illustration."
-msgstr ""
+msgstr "ใช้สำหรับภาพประกอบ"
 
 #: blog/templates/blog_sidebar.html:6
 #: blog/templates/zinnia/tags/search_form.html:7
 msgid "Search articles"
-msgstr ""
+msgstr "ค้นหาบทความ"
 
 #: blog/templates/blog_sidebar.html:31
 msgid "Blog tags"
-msgstr ""
+msgstr "ป้ายกำกับบล็อก"
 
 #: blog/templates/blog_sidebar.html:36
 #: blog/templates/zinnia/_entry_detail_base.html:83
 msgid "Blog series"
-msgstr ""
+msgstr "บทความชุด"
 
 #: blog/templates/blog_sidebar.html:38
 msgid "See all"
-msgstr ""
+msgstr "ดูทั้งหมด"
 
 #: blog/templates/series-index.html:22
 #, python-format
@@ -67,243 +68,241 @@ msgid_plural ""
 "\n"
 "    %(count)s entries\n"
 "  "
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "\n%(count)s เอนทรี"
 
 #: blog/templates/series-index.html:27
 msgid "RSS feed:"
-msgstr ""
+msgstr "RSS ฟีด:"
 
 #: blog/templates/series-index.html:37
 msgid "No blog series yet."
-msgstr ""
+msgstr "ยังไม่มีบล็อกชุด"
 
 #: blog/templates/zinnia/_entry_detail_base.html:26
 #: homepage/templates/homepage-home.html:122
 msgid "Written by"
-msgstr ""
+msgstr "เขียนโดย"
 
 #: blog/templates/zinnia/_entry_detail_base.html:30
 #: homepage/templates/homepage-home.html:126
 #, python-format
 msgid "Show all %(author)s's entries"
-msgstr ""
+msgstr "แสดงบทความทั้งหมดของ %(author)s"
 
 #: blog/templates/zinnia/_entry_detail_base.html:32
 #: homepage/templates/homepage-home.html:128
 msgid "on"
-msgstr ""
+msgstr "เมื่อ"
 
 #: blog/templates/zinnia/_entry_detail_base.html:34
 #: homepage/templates/homepage-home.html:130
 msgid "Written on"
-msgstr ""
+msgstr "เขียนเมื่อ"
 
 #: blog/templates/zinnia/_entry_detail_base.html:42
 msgid "Last update on"
-msgstr ""
+msgstr "ปรับปรุงครั้งล่าสุดเมื่อ"
 
 #: blog/templates/zinnia/_entry_detail_base.html:44
 #, python-format
 msgid "Short URL to %(object)s"
-msgstr ""
+msgstr "ย่อลิงก์เป็น %(object)s"
 
 #: blog/templates/zinnia/_entry_detail_base.html:45
 msgid "Short link"
-msgstr ""
+msgstr "ย่อลิงก์"
 
 #: blog/templates/zinnia/_entry_detail_base.html:46
 #: homepage/templates/homepage-home.html:138
 msgid "Visit forum thread for this article"
-msgstr ""
+msgstr "เยี่ยมชมฟอรั่มสำหรับหัวข้อนี้"
 
 #: blog/templates/zinnia/_entry_detail_base.html:46
 #: homepage/templates/homepage-home.html:138
 msgid "Forum thread"
-msgstr ""
+msgstr "ฟอรั่ม"
 
 #: blog/templates/zinnia/_entry_detail_base.html:63
 #, python-format
 msgid "Continue reading %(object)s"
-msgstr ""
+msgstr "อ่านต่อ %(object)s"
 
 #: blog/templates/zinnia/_entry_detail_base.html:65
 msgid "Continue reading"
-msgstr ""
+msgstr "อ่านต่อ"
 
 #: blog/templates/zinnia/_entry_detail_base.html:74
 #, python-format
 msgid ""
 "You can continue the discussion in the <a href=\"%(url)s\" title=\"Visit "
 "forum thread for this article\">forum thread</a> of this article."
-msgstr ""
+msgstr "คุณสามารถพูดคุยต่อใน<a href=\"%(url)s\" title=\"ไปยังฟอรั่มสำหรับหัวข้อนี้\">ฟอรั่ม</a>เกี่ยวกับหัวข้อนี้ได้"
 
 #: blog/templates/zinnia/_entry_detail_base.html:85
 #, python-format
 msgid ""
 "This article is number %(nth)s within the blog series\n"
 "    <a href=\"%(url)s\"><em>%(series)s</em></a>."
-msgstr ""
+msgstr "บทความนี้เป็นบทความที่ %(nth)s ของบทความชุด\n<a href=\"%(url)s\"><em>%(series)s</em></a>."
 
 #: blog/templates/zinnia/_entry_detail_base.html:90
 msgid "‹ Previous article in series"
-msgstr ""
+msgstr "‹ บทความก่อนหน้าในซีรีย์นี้"
 
 #: blog/templates/zinnia/_entry_detail_base.html:92
 msgid "Next article in series ›"
-msgstr ""
+msgstr "บทความถัดไปของซีรีย์นี้ ›"
 
 #: blog/templates/zinnia/_entry_detail_base.html:142
 msgid "Tags"
-msgstr ""
+msgstr "ป้ายกำกับ"
 
 #: blog/templates/zinnia/_entry_detail_base.html:146
 #, python-format
 msgid "Show all entries tagged by %(tag)s"
-msgstr ""
+msgstr "แสดงบทความทั้งหมดที่ติดป้ายกำกับ %(tag)s"
 
 #: blog/templates/zinnia/_entry_detail_base.html:149
 msgid "No tags"
-msgstr ""
+msgstr "ไม่มีป้ายกำกับ"
 
 #: blog/templates/zinnia/_entry_detail_base.html:156
 msgid "Categories"
-msgstr ""
+msgstr "หมวดหมู่"
 
 #: blog/templates/zinnia/_entry_detail_base.html:160
 #, python-format
 msgid "Show all entries in %(category)s"
-msgstr ""
+msgstr "แสดงบทความทั้งหมดในหมวด %(category)s"
 
 #: blog/templates/zinnia/_entry_detail_base.html:163
 msgid "No categories"
-msgstr ""
+msgstr "ไม่มีหมวดหมู่"
 
 #: blog/templates/zinnia/entry_detail_base.html:22
 msgid "RSS Feed of discussions on"
-msgstr ""
+msgstr "RSS ฟีดสำหรับการพูดคุยบน"
 
 #: blog/templates/zinnia/entry_detail_base.html:24
 msgid "RSS Feed of comments on"
-msgstr ""
+msgstr "RSS ฟีดสำหรับแสดงความเห็นบน"
 
 #: blog/templates/zinnia/entry_detail_base.html:26
 msgid "RSS Feed of pingbacks on"
-msgstr ""
+msgstr "RSS ฟีดสำหรับ pingbacks บน"
 
 #: blog/templates/zinnia/entry_detail_base.html:28
 msgid "RSS Feed of trackbacks on"
-msgstr ""
+msgstr "RSS ฟีดสำหรับ trackbacks บน"
 
 #: blog/templates/zinnia/entry_detail_base.html:46
 msgid "Next entry"
-msgstr ""
+msgstr "บทความถัดไป"
 
 #: blog/templates/zinnia/entry_detail_base.html:58
 msgid "Previous entry"
-msgstr ""
+msgstr "บทความที่แล้ว"
 
 #: blog/templates/zinnia/entry_detail_base.html:70
 msgid "Related entries"
-msgstr ""
+msgstr "บทความที่เกี่ยวข้อง"
 
 #: blog/templates/zinnia/entry_detail_base.html:82
 msgid "Similar entries"
-msgstr ""
+msgstr "บทความที่คล้ายกัน"
 
 #: blog/templates/zinnia/entry_detail_base.html:224
 #: blog/templates/zinnia/entry_detail_base.html:225
 msgid "Edit the entry"
-msgstr ""
+msgstr "แก้ไขบทความ"
 
 #: blog/templates/zinnia/entry_list.html:5
 msgid "Latest entries for"
-msgstr ""
+msgstr "บทความล่าสุดของ"
 
 #: blog/templates/zinnia/entry_list.html:5
 msgid "the category"
-msgstr ""
+msgstr "หมวดหมู่"
 
 #: blog/templates/zinnia/entry_list.html:5
 msgid "the tag"
-msgstr ""
+msgstr "ป้ายกำกับ"
 
 #: blog/templates/zinnia/entry_list.html:5
 msgid "the author"
-msgstr ""
+msgstr "ผู้เขียน"
 
 #: blog/templates/zinnia/entry_list.html:5
 msgid "page"
-msgstr ""
+msgstr "หน้า"
 
 #: blog/templates/zinnia/entry_list.html:10
 #: blog/templates/zinnia/entry_list.html:13
 #: blog/templates/zinnia/entry_list.html:16
 msgid "RSS Feed"
-msgstr ""
+msgstr "ฟีดข่าว"
 
 #: blog/templates/zinnia/entry_list.html:20
 msgid "Latest entries"
-msgstr ""
+msgstr "บทความล่าสุด"
 
 #: blog/templates/zinnia/entry_list.html:20
 msgid "Category"
-msgstr ""
+msgstr "หมวดหมู่"
 
 #: blog/templates/zinnia/entry_list.html:20
 msgid "Tag"
-msgstr ""
+msgstr "ป้ายกำหับ"
 
 #: blog/templates/zinnia/entry_list.html:20
 msgid "Author"
-msgstr ""
+msgstr "ผู้เขียน"
 
 #: blog/templates/zinnia/entry_list.html:20
 msgid "Page"
-msgstr ""
+msgstr "หน้า"
 
 #: blog/templates/zinnia/entry_list.html:28
 #, python-format
 msgid "Category archives: %(category)s"
-msgstr ""
+msgstr "คลังหมวดหมู่: %(category)s"
 
 #: blog/templates/zinnia/entry_list.html:35
 #, python-format
 msgid "Tag archives: %(tag)s"
-msgstr ""
+msgstr "คลังป้ายกำกับ: %(tag)s"
 
 #: blog/templates/zinnia/entry_list.html:39
 #, python-format
 msgid "Author archives: %(author)s"
-msgstr ""
+msgstr "คลังผู้เขียน: %(author)s"
 
 #: blog/templates/zinnia/entry_list.html:48
 msgid "No entries yet."
-msgstr ""
+msgstr "ยังไม่มีบทความ"
 
 #: blog/templates/zinnia/entry_list.html:67
 #: blog/templates/zinnia/entry_list.html:68
 msgid "Edit the category"
-msgstr ""
+msgstr "แก้ไขหมวดหมู่"
 
 #: blog/templates/zinnia/entry_list.html:74
 #: blog/templates/zinnia/entry_list.html:75
 msgid "Edit the tag"
-msgstr ""
+msgstr "แก้ไขป้ายกำกับ"
 
 #: blog/templates/zinnia/entry_list.html:81
 #: blog/templates/zinnia/entry_list.html:82
 msgid "Edit the author"
-msgstr ""
+msgstr "แก้ไขผู้เขียน"
 
 #: blog/templates/zinnia/skeleton.html:5
 msgid "Latest news for Dolphin Emulator"
-msgstr ""
+msgstr "ข่าวล่าสุดเกี่ยวกับ Dolphin Emulator"
 
 #: blog/templates/zinnia/skeleton.html:8
 msgid "Articles"
-msgstr ""
+msgstr "บทความ"
 
 #: blog/templates/zinnia/tags/search_form.html:18
 msgid ""
@@ -316,162 +315,162 @@ msgstr ""
 msgid ""
 "The Dolphin Emulator compatibility list contains all the games we tested, "
 "sorted by how well they work on the emulator."
-msgstr ""
+msgstr "รายการความเข้ากันได้ของDolphin Emulator และเกมทั้งหมดที่เราได้ทดสอบแล้ว เรียงลำดับจากความเข้ากันได้มากแค่ไหนกับตัว Emulator"
 
 #: compat/templates/compat-list.html:11
 #, python-format
 msgid "Compatibility List - page %(page)s"
-msgstr ""
+msgstr "รายการความเข้ากันได้ - หน้า %(page)s"
 
 #: compat/templates/compat-list.html:23
 msgid "How to read the ratings"
-msgstr ""
+msgstr "วิธีการอ่านค่าเรตติ้ง"
 
 #: compat/templates/compat-list.html:26
 msgid "5 out of 5"
-msgstr ""
+msgstr "5 เต็ม 5"
 
 #: compat/templates/compat-list.html:26
 msgid "<strong>Perfect</strong>: No issues at all!"
-msgstr ""
+msgstr "<strong>สมบูรณ์</strong>: ไม่มีปัญหาอะไรเลย!"
 
 #: compat/templates/compat-list.html:27
 msgid "4 out of 5"
-msgstr ""
+msgstr "4 จาก 5"
 
 #: compat/templates/compat-list.html:27
 msgid ""
 "<strong>Playable</strong>: Runs well, only minor graphical or audio "
 "glitches. Games can be played all the way through."
-msgstr ""
+msgstr "<strong>เล่นได้</strong>: รันเกมได้ดี มีปัญหาเล็กน้อยกับกราฟิกหรือเสียง แต่เกมยังคงเล่นต่อไปได้"
 
 #: compat/templates/compat-list.html:28
 msgid "3 out of 5"
-msgstr ""
+msgstr "3 จาก 5"
 
 #: compat/templates/compat-list.html:28
 msgid ""
 "<strong>Starts</strong>: Starts, maybe even plays well, but crashes or major"
 " graphical/audio glitches."
-msgstr ""
+msgstr "<strong>เริ่มเกมได้</strong>: เริ่มเกมได้ อาจจะเล่นไปได้สักพักแต่จะมีปัญหาการแครชหรือปัญหาใหญ่เกี่ยวกับกราฟิก/เสียง"
 
 #: compat/templates/compat-list.html:29
 msgid "2 out of 5"
-msgstr ""
+msgstr "2 จาก 5"
 
 #: compat/templates/compat-list.html:29
 msgid ""
 "<strong>Intro/Menu</strong>: Hangs/crashes somewhere between booting and "
 "starting."
-msgstr ""
+msgstr "<strong>อินโทร/เมนู</strong>: แฮงค์/แครช ในบางจุดระหว่างการบูตเกมไปจนถึงตอนเริ่มเกม"
 
 #: compat/templates/compat-list.html:30
 msgid "1 out of 5"
-msgstr ""
+msgstr "1 จาก 5"
 
 #: compat/templates/compat-list.html:30
 msgid "<strong>Broken</strong>: Crashes when booting."
-msgstr ""
+msgstr "<strong>เปิดไม่ได้</strong>: แครชเมื่อทำการบูตเกม"
 
 #: compat/templates/compat-list.html:37
 msgid "Statistics"
-msgstr ""
+msgstr "สถิติ"
 
 #: compat/templates/compat-list.html:43
 msgid "Remove filter"
-msgstr ""
+msgstr "นำตัวกรองออก"
 
 #: compat/templates/compat-list.html:43
 msgid "Show all"
-msgstr ""
+msgstr "แสดงทั้งหมด"
 
 #: compat/templates/compat-list.html:45
 msgid "Filter by this rating"
-msgstr ""
+msgstr "กรองโดยความนิยม"
 
 #: compat/templates/compat-list.html:45
 msgid "Filter"
-msgstr ""
+msgstr "ตัวกรอง"
 
 #: compat/templates/compat-list.html:65
 msgid "Game title (click for details)"
-msgstr ""
+msgstr "ชื่อเกม (คลิกดูรายละเอียด)"
 
 #: compat/templates/compat-list.html:66
 #: homepage/templates/homepage-home.html:95 templates/_base.html:77
 msgid "Compatibility"
-msgstr ""
+msgstr "การทำงานร่วมกันได้"
 
 #: compat/templates/compat-list.html:67
 msgid "Last updated"
-msgstr ""
+msgstr "การปรับปรุงล่าสุด"
 
 #: compat/templates/compat-list.html:84
 msgid "Your query does not match any game."
-msgstr ""
+msgstr "การค้นหาไม่ตรงกับผลการค้นหาใดเลย"
 
 #: compat/templatetags/compat.py:9
 msgid "Unknown"
-msgstr ""
+msgstr "ไม่มีข้อมูล"
 
 #: compat/templatetags/compat.py:10
 msgid "Broken"
-msgstr ""
+msgstr "เปิดไม่ได้"
 
 #: compat/templatetags/compat.py:11
 msgid "Intro/Menu"
-msgstr ""
+msgstr "อินโทร/เมนู"
 
 #: compat/templatetags/compat.py:12
 msgid "Starts"
-msgstr ""
+msgstr "เริ่มเกมได้"
 
 #: compat/templatetags/compat.py:13
 msgid "Playable"
-msgstr ""
+msgstr "เล่นได้"
 
 #: compat/templatetags/compat.py:14
 msgid "Perfect"
-msgstr ""
+msgstr "สมบูรณ์"
 
 #: docs/templates/docs-faq.html:6
 msgid ""
 "The Official Dolphin FAQ answers all the questions that people often ask "
 "about Dolphin."
-msgstr ""
+msgstr "The Official Dolphin FAQ คำถาม-คำตอบที่พบบ่อยเกี่ยวกับ Dolphin Emulator"
 
 #: docs/templates/docs-faq.html:8
 msgid "Frequently Asked Questions"
-msgstr ""
+msgstr "คำถามที่พบบ่อย"
 
 #: docs/templates/docs-guide.html:12
 msgid "Go back to the guides list"
-msgstr ""
+msgstr "กลับไปยังรายการคำแนะนำการใช้งาน"
 
 #: docs/templates/docs-guides-index.html:5
 msgid "See all the guides written by the Dolphin team about the emulator."
-msgstr ""
+msgstr "ดูวิธีใช้งานอีมูเลเตอร์ทั้งหมดที่เขียนโดนทีมงาน Dolphin"
 
 #: docs/templates/docs-guides-index.html:7 templates/_base.html:76
 msgid "Guides"
-msgstr ""
+msgstr "คู่มือการใช้"
 
 #: docs/templates/docs-guides-index.html:11
 msgid "Guides and documentation"
-msgstr ""
+msgstr "แนะนำการใช้งานและเอกสารกำกับ"
 
 #: docs/templates/docs-guides-index.html:19
 msgid "No published guide available"
-msgstr ""
+msgstr "ยังไม่มีคู่มือเผยแพร่ที่ใช้ได้"
 
 #: downloads/models.py:36 downloads/models.py:54
 #, python-format
 msgid "Dolphin %s"
-msgstr ""
+msgstr "Dolphin %s"
 
 #: downloads/models.py:78
 msgid "Change with no description"
-msgstr ""
+msgstr "เปลี่ยนโดยไม่มีคำอธิบาย"
 
 #: downloads/models.py:81
 #, python-format
@@ -483,41 +482,41 @@ msgstr ""
 #: downloads/templates/downloads-branches.html:5
 #: downloads/templates/downloads-branches.html:9
 msgid "Download development builds"
-msgstr ""
+msgstr "ดาวน์โหลดเวอร์ชันที่อยู่ในช่วงพัฒนา"
 
 #: downloads/templates/downloads-branches.html:18
 #, python-format
 msgid "<tt>%(branch)s</tt> branch"
-msgstr ""
+msgstr "<tt>%(branch)s</tt> รุ่นต่อยอด"
 
 #: downloads/templates/downloads-branches.html:21
 #: downloads/templates/downloads-index.html:45
 msgid "View older versions »"
-msgstr ""
+msgstr "ดูเวอร์ชันที่เก่ากว่า »"
 
 #: downloads/templates/downloads-branches.html:28
 msgid "Branch list"
-msgstr ""
+msgstr "รายการรุ่นต่อยอด"
 
 #: downloads/templates/downloads-devrel.html:19
 msgid "No development release yet"
-msgstr ""
+msgstr "ยังไม่มีการปล่อยเวอร์ชันที่อยู่ในช่วงพัฒนา"
 
 #: downloads/templates/downloads-index.html:6
 #, python-format
 msgid ""
 "Download the latest version of the Dolphin Emulator (%(ver)s) from the "
 "official website."
-msgstr ""
+msgstr "ดาวน์โหลด Dolphin Emulator เวอร์ชันล่าสุด (%(ver)s) จากเว็บไซต์อย่างเป็นทางการ"
 
 #: downloads/templates/downloads-index.html:8
 #: downloads/templates/downloads-index.html:27 templates/_base.html:72
 msgid "Download"
-msgstr ""
+msgstr "ดาวน์โหลด"
 
 #: downloads/templates/downloads-index.html:31
 msgid "Development versions"
-msgstr ""
+msgstr "เวอร์ชันที่อยู่ในช่วงพัฒนา"
 
 #: downloads/templates/downloads-index.html:33
 msgid ""
@@ -533,7 +532,7 @@ msgstr ""
 
 #: downloads/templates/downloads-index.html:63
 msgid "Stable versions"
-msgstr ""
+msgstr "เวอร์ชันสมบูรณ์"
 
 #: downloads/templates/downloads-index.html:65
 msgid ""
@@ -545,11 +544,11 @@ msgstr ""
 
 #: downloads/templates/downloads-index.html:87
 msgid "No stable release yet"
-msgstr ""
+msgstr "ยังไม่มีการปล่อยเวอร์ชันสมบูรณ์"
 
 #: downloads/templates/downloads-index.html:94
 msgid "Older Ubuntu (< 15.04) and users of other Linux distributions"
-msgstr ""
+msgstr "Ubuntu เวอร์ชันเก่า (ต่ำกว่า 15.04) และผู้ใช้ระบบ Linux อื่น ๆ"
 
 #: downloads/templates/downloads-index.html:95
 msgid ""
@@ -566,7 +565,7 @@ msgstr ""
 
 #: downloads/templates/downloads-index.html:103
 msgid "Source code"
-msgstr ""
+msgstr "ซอร์สโค้ด"
 
 #: downloads/templates/downloads-index.html:105
 msgid ""
@@ -574,7 +573,7 @@ msgid ""
 "    The latest version of the Dolphin source code can be downloaded from the\n"
 "    project Git repository.\n"
 "    "
-msgstr ""
+msgstr "\nเวอร์ชันล่าสุดของ Dolphin ซอร์สโค้ด สามารถดาวน์โหลดได้จาก Git"
 
 #: downloads/templates/downloads-index.html:113
 #, python-format
@@ -582,11 +581,11 @@ msgid ""
 "\n"
 "    You can also <a href=\"%(GIT_BROWSE_URL)s\">browse the current version of the source code</a>.\n"
 "    "
-msgstr ""
+msgstr "\n    คุณสามารถ<a href=\"%(GIT_BROWSE_URL)s\">เรียกดูซอสโค้ดเวอร์ชันปัจจุบันได้ด้วย</a>\n    "
 
 #: downloads/templates/downloads-index.html:120
 msgid "Reporting bugs"
-msgstr ""
+msgstr "รายงานข้อผิดพลาด"
 
 #: downloads/templates/downloads-index.html:122
 #, python-format
@@ -600,62 +599,62 @@ msgstr ""
 #: downloads/templates/downloads-list.html:5
 #, python-format
 msgid "%(branch)s branch - page %(page)s"
-msgstr ""
+msgstr "%(branch)s รุ่นต่อยอด - หน้า %(page)s"
 
 #: downloads/templates/downloads-list.html:9
 #, python-format
 msgid "<tt>%(branch)s</tt> branch - page %(page)s"
-msgstr ""
+msgstr "<tt>%(branch)s</tt> รุ่นต่อยอด - หน้า %(page)s"
 
 #: downloads/templates/downloads-view-devrel.html:6
 #, python-format
 msgid "Information on %(br)s"
-msgstr ""
+msgstr "ข้อมูลเกี่ยวกับ %(br)s"
 
 #: downloads/templates/downloads-view-devrel.html:10
 #, python-format
 msgid "Information for %(br)s"
-msgstr ""
+msgstr "ข้อมูลสำหรับ %(br)s"
 
 #: downloads/templates/downloads-view-devrel.html:30
 msgid "Version"
-msgstr ""
+msgstr "เวอร์ชัน"
 
 #: downloads/templates/downloads-view-devrel.html:33
 msgid "Branch"
-msgstr ""
+msgstr "รุ่นต่อยอด"
 
 #: downloads/templates/downloads-view-devrel.html:36
 msgid "Date"
-msgstr ""
+msgstr "วันที่"
 
 #: downloads/templates/downloads-view-devrel.html:45
 msgid "Commit"
-msgstr ""
+msgstr "มอบหมาย"
 
 #: downloads/templates/downloads-view-devrel.html:48
 msgid "Change author"
-msgstr ""
+msgstr "เปลี่ยนผู้เขียน"
 
 #: downloads/templates/downloads-view-devrel.html:51
 msgid "Change description"
-msgstr ""
+msgstr "เปลี่ยนคำอธิบาย"
 
 #: homepage/templates/homepage-home.html:12
 #, python-format
 msgid ""
 "Official website of Dolphin, the GameCube and Wii emulator. Download the "
 "latest version (%(ver)s) now or ask questions on our forums for help."
-msgstr ""
+msgstr "เว็บไซต์อย่างเป็นทางการของ Dolphin, อีโมูเลเตอร์สำหรับเครื่องเกม GameCube และ Wii ดาวน์โหลดเวอร์ชันล่าสุด (%(ver)s) ได้แล้ววันนี้ หรือสามารถสอบถามข้อสงสัยได้จากฟอรั่มช่วยเหลือ"
 
 #: homepage/templates/homepage-home.html:14
 msgid "GameCube/Wii games on PC"
-msgstr ""
+msgstr "เกม GameCube/Wii บน PC"
 
 #: homepage/templates/homepage-home.html:37 templates/_base.html:10
 #: templates/_base.html.py:68
 msgid "Dolphin Emulator"
-msgstr ""
+msgstr "Dolphin Emulator"
 
 #: homepage/templates/homepage-home.html:39
 msgid ""
@@ -671,15 +670,15 @@ msgstr ""
 #: homepage/templates/homepage-home.html:48
 #, python-format
 msgid "Download %(last_release)s for Windows, Mac and Linux »"
-msgstr ""
+msgstr "ดาวน์โหลด %(last_release)s สำหรับ Windows, Mac และ Linux »"
 
 #: homepage/templates/homepage-home.html:108
 msgid "RSS feed of the latest articles"
-msgstr ""
+msgstr "ฟีดข่าวของบทความล่าสุด"
 
 #: homepage/templates/homepage-home.html:109
 msgid "Latest articles"
-msgstr ""
+msgstr "บทความล่าสุด"
 
 #: homepage/templates/homepage-home.html:136
 #, python-format
@@ -688,11 +687,11 @@ msgstr ""
 
 #: homepage/templates/homepage-home.html:143
 msgid "Read this article"
-msgstr ""
+msgstr "อ่านบทความนี้"
 
 #: homepage/templates/homepage-home.html:147
 msgid "No articles yet."
-msgstr ""
+msgstr "ยังไม่มีบทความ"
 
 #: media/templates/media-all.html:7
 msgid ""
@@ -702,57 +701,57 @@ msgstr ""
 
 #: media/templates/media-all.html:9
 msgid "Screenshots gallery"
-msgstr ""
+msgstr "แกลลอรี่ภาพถ่ายหน้าจอ"
 
 #: media/templates/media-all.html:31
 msgid "Media gallery"
-msgstr ""
+msgstr "คลังสื่อ"
 
 #: templates/404.html:5 templates/404.html.py:8
 msgid "Page not found"
-msgstr ""
+msgstr "ไม่พบหน้าเว็บ"
 
 #: templates/404.html:10
 msgid "The URL you tried to access does not exist."
-msgstr ""
+msgstr "ลิงก์ที่คุณพยายามเข้าชมไม่สามารถเข้าถึงได้"
 
 #: templates/500.html:5 templates/500.html.py:8
 msgid "Internal Server Error"
-msgstr ""
+msgstr "Internal Server Error"
 
 #: templates/500.html:10
 msgid ""
 "There was an error while trying to access this page. Please refresh the page"
 " in a few seconds."
-msgstr ""
+msgstr "มีข้อผิดพลาดบางอย่างขณะพยายามเข้าถึงหน้านี้ กรุณารีเฟรชหน้านี้ใหม่อีกครั้งในอีกสักครู่"
 
 #: templates/_base.html:23
 msgid "Latest blog articles"
-msgstr ""
+msgstr "บทความบล็อกล่าสุด"
 
 #: templates/_base.html:73
 msgid "Blog"
-msgstr ""
+msgstr "บล็อก"
 
 #: templates/_base.html:74
 msgid "Screenshots"
-msgstr ""
+msgstr "ภาพหน้าจอ"
 
 #: templates/_base.html:75
 msgid "FAQ"
-msgstr ""
+msgstr "คำถามที่พบบ่อย"
 
 #: templates/_base.html:78
 msgid "Forum"
-msgstr ""
+msgstr "ฟอรั่ม"
 
 #: templates/_base.html:79
 msgid "Wiki"
-msgstr ""
+msgstr "วิกิ"
 
 #: templates/_base.html:80
 msgid "Code"
-msgstr ""
+msgstr "โค้ด"
 
 #: templates/_base.html:116
 #, python-format
@@ -761,4 +760,4 @@ msgid ""
 "            &copy; 2014 Dolphin Emulator Project -\n"
 "            <a href=\"%(WEBSITE_GIT_URL)s\">Website source code</a>\n"
 "            "
-msgstr ""
+msgstr "\n &copy; 2014 โครงการ Dolphin Emulator -\n<a href=\"%(WEBSITE_GIT_URL)s\">เว็บไซต์ซอร์สโค้ด</a>\n            "

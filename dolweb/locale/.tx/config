@@ -3,5 +3,6 @@ host = https://www.transifex.com
 
 [dolphin-emu.website]
 file_filter = <lang>/LC_MESSAGES/django.po
-source_lang = en_US
 source_file = template.pot
+source_lang = en_US
+

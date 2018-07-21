@@ -5,14 +5,14 @@
 # Translators:
 # mandruis <manuiglesias96@yahoo.es>, 2016
 # Rubén <feiticeiro2010@hotmail.es>, 2014,2016
-# Toño Calo <enfeitizador@gmail.com>, 2015
+# Toño Calo <enfeitizador@gmail.com>, 2015,2018
 msgid ""
 msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-04-11 23:51+0200\n"
-"PO-Revision-Date: 2016-05-27 12:57+0000\n"
-"Last-Translator: mandruis <manuiglesias96@yahoo.es>\n"
+"PO-Revision-Date: 2018-01-10 22:22+0000\n"
+"Last-Translator: Toño Calo <enfeitizador@gmail.com>\n"
 "Language-Team: Galician (http://www.transifex.com/delroth/dolphin-emu/language/gl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -551,7 +551,7 @@ msgstr "Aínda non hai versións estables"
 
 #: downloads/templates/downloads-index.html:94
 msgid "Older Ubuntu (< 15.04) and users of other Linux distributions"
-msgstr "Ubuntu anterior a (< 15.04) y usuarios doutras distribuciós do Linux"
+msgstr "Ubuntu anterior (< 15.04) e usuarios doutras distribucións de Linux"
 
 #: downloads/templates/downloads-index.html:95
 msgid ""
@@ -734,7 +734,7 @@ msgstr "Últimos artigos do blogue"
 
 #: templates/_base.html:73
 msgid "Blog"
-msgstr "Blogue"
+msgstr "Blog"
 
 #: templates/_base.html:74
 msgid "Screenshots"

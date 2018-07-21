@@ -13,20 +13,20 @@
 # Markus Wick <wickmarkus@web.de>, 2013
 # Michael Grauvogl <michael.grauvogl@googlemail.com>, 2015
 # Moritz Bruder <muesli4@gmail.com>, 2015
-# M T <michtrz@gmail.com>, 2014
+# Michał Trzebiatowski <michtrz@gmail.com>, 2014
 # no_cluez <neobrainx@gmail.com>, 2012
 # no_cluez <neobrainx@gmail.com>, 2013
 # Neui, 2016
 # no_cluez <neobrainx@gmail.com>, 2013
 # Shinrai, 2013
-# Tillmann Karras <tilkax@gmail.com>, 2014
+# flacs ​ <tilkax@gmail.com>, 2014
 # Markus Wick <wickmarkus@web.de>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-04-11 23:51+0200\n"
-"PO-Revision-Date: 2016-06-26 20:01+0000\n"
+"PO-Revision-Date: 2017-09-23 18:42+0000\n"
 "Last-Translator: Neui\n"
 "Language-Team: German (http://www.transifex.com/delroth/dolphin-emu/language/de/)\n"
 "MIME-Version: 1.0\n"

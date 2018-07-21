@@ -3,59 +3,60 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
+# Idan bvcs <idan062@gmail.com>, 2017
 msgid ""
 msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-05 23:27+0200\n"
-"PO-Revision-Date: 2015-09-05 21:27+0000\n"
-"Last-Translator: Pierre Bourdon <delroth@gmail.com>\n"
+"POT-Creation-Date: 2016-04-11 23:51+0200\n"
+"PO-Revision-Date: 2017-10-06 09:07+0000\n"
+"Last-Translator: Idan bvcs <idan062@gmail.com>\n"
 "Language-Team: Hebrew (http://www.transifex.com/delroth/dolphin-emu/language/he/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: he\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n == 2 && n % 1 == 0) ? 1: (n % 10 == 0 && n % 1 == 0 && n > 10) ? 2 : 3;\n"
 
 #: blog/admin.py:45
 msgid "Content"
-msgstr ""
+msgstr "תוכן"
 
 #: blog/feeds.py:24
 #, python-format
 msgid "Entries for the series %s"
-msgstr ""
+msgstr "%sרשומות עבור הסדרה"
 
 #: blog/feeds.py:27
 #, python-format
 msgid "The latest entries for the series %s"
-msgstr ""
+msgstr "%sהרשומות האחרונות בסדרה"
 
 #: blog/models.py:20
 msgid "image"
-msgstr ""
+msgstr "תמונה"
 
 #: blog/models.py:21
 msgid "Used for illustration."
-msgstr ""
+msgstr "משמש לאיור."
 
 #: blog/templates/blog_sidebar.html:6
 #: blog/templates/zinnia/tags/search_form.html:7
 msgid "Search articles"
-msgstr ""
+msgstr "חפש מאמרים"
 
 #: blog/templates/blog_sidebar.html:31
 msgid "Blog tags"
-msgstr ""
+msgstr "תגי בלוג"
 
 #: blog/templates/blog_sidebar.html:36
 #: blog/templates/zinnia/_entry_detail_base.html:83
 msgid "Blog series"
-msgstr ""
+msgstr "סדרות בלוג"
 
 #: blog/templates/blog_sidebar.html:38
 msgid "See all"
-msgstr ""
+msgstr "ראה הכל"
 
 #: blog/templates/series-index.html:22
 #, python-format
@@ -69,240 +70,242 @@ msgid_plural ""
 "  "
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
 
 #: blog/templates/series-index.html:27
 msgid "RSS feed:"
-msgstr ""
+msgstr "עדכוני RSS:"
 
 #: blog/templates/series-index.html:37
 msgid "No blog series yet."
-msgstr ""
+msgstr "אין סדרות בלוג כרגע"
 
 #: blog/templates/zinnia/_entry_detail_base.html:26
 #: homepage/templates/homepage-home.html:122
 msgid "Written by"
-msgstr ""
+msgstr "נכתב ע\"י"
 
 #: blog/templates/zinnia/_entry_detail_base.html:30
 #: homepage/templates/homepage-home.html:126
 #, python-format
 msgid "Show all %(author)s's entries"
-msgstr ""
+msgstr "ראה את כל %(author)sשל הרשומות"
 
 #: blog/templates/zinnia/_entry_detail_base.html:32
 #: homepage/templates/homepage-home.html:128
 msgid "on"
-msgstr ""
+msgstr "פועל"
 
 #: blog/templates/zinnia/_entry_detail_base.html:34
 #: homepage/templates/homepage-home.html:130
 msgid "Written on"
-msgstr ""
+msgstr "נכתב על"
 
 #: blog/templates/zinnia/_entry_detail_base.html:42
 msgid "Last update on"
-msgstr ""
+msgstr "עדכון אחרון ב:"
 
 #: blog/templates/zinnia/_entry_detail_base.html:44
 #, python-format
 msgid "Short URL to %(object)s"
-msgstr ""
+msgstr "קישור קצר ל%(object)s"
 
 #: blog/templates/zinnia/_entry_detail_base.html:45
 msgid "Short link"
-msgstr ""
+msgstr "קישור קצר"
 
 #: blog/templates/zinnia/_entry_detail_base.html:46
 #: homepage/templates/homepage-home.html:138
 msgid "Visit forum thread for this article"
-msgstr ""
+msgstr "בקר באשכול בפורום בשביל המאמר"
 
 #: blog/templates/zinnia/_entry_detail_base.html:46
 #: homepage/templates/homepage-home.html:138
 msgid "Forum thread"
-msgstr ""
+msgstr "אשכול פורום"
 
 #: blog/templates/zinnia/_entry_detail_base.html:63
 #, python-format
 msgid "Continue reading %(object)s"
-msgstr ""
+msgstr "המשך לקרוא %(object)s"
 
 #: blog/templates/zinnia/_entry_detail_base.html:65
 msgid "Continue reading"
-msgstr ""
+msgstr "המשך לקרוא"
 
 #: blog/templates/zinnia/_entry_detail_base.html:74
 #, python-format
 msgid ""
 "You can continue the discussion in the <a href=\"%(url)s\" title=\"Visit "
 "forum thread for this article\">forum thread</a> of this article."
-msgstr ""
+msgstr "אתה יכול להמשיך את הדיון ב:<a href=\"%(url)s\" title=\"Visit forum thread for this article\"> באשכול פורום של המאמר הזה"
 
 #: blog/templates/zinnia/_entry_detail_base.html:85
 #, python-format
 msgid ""
 "This article is number %(nth)s within the blog series\n"
 "    <a href=\"%(url)s\"><em>%(series)s</em></a>."
-msgstr ""
+msgstr "המאמר הזה הוא מספר %(nth)sבסדרות הבלוג<a href=\"%(url)s\"><em>%(series)s</em></a>"
 
 #: blog/templates/zinnia/_entry_detail_base.html:90
 msgid "‹ Previous article in series"
-msgstr ""
+msgstr "< מאמר קודם ברשומות "
 
 #: blog/templates/zinnia/_entry_detail_base.html:92
 msgid "Next article in series ›"
-msgstr ""
+msgstr "מאמר הבא ברשומות >"
 
 #: blog/templates/zinnia/_entry_detail_base.html:142
 msgid "Tags"
-msgstr ""
+msgstr "תגים"
 
 #: blog/templates/zinnia/_entry_detail_base.html:146
 #, python-format
 msgid "Show all entries tagged by %(tag)s"
-msgstr ""
+msgstr "ראה את כל הרשומות שהותגו על ידי %(tag)s"
 
 #: blog/templates/zinnia/_entry_detail_base.html:149
 msgid "No tags"
-msgstr ""
+msgstr "אין תגים"
 
 #: blog/templates/zinnia/_entry_detail_base.html:156
 msgid "Categories"
-msgstr ""
+msgstr "קטגוריות"
 
 #: blog/templates/zinnia/_entry_detail_base.html:160
 #, python-format
 msgid "Show all entries in %(category)s"
-msgstr ""
+msgstr "ראה את כל הרשומות ב %(category)s"
 
 #: blog/templates/zinnia/_entry_detail_base.html:163
 msgid "No categories"
-msgstr ""
+msgstr "אין קטגוריות"
 
 #: blog/templates/zinnia/entry_detail_base.html:22
 msgid "RSS Feed of discussions on"
-msgstr ""
+msgstr "עדכוני RSS בדיונים"
 
 #: blog/templates/zinnia/entry_detail_base.html:24
 msgid "RSS Feed of comments on"
-msgstr ""
+msgstr "עדכוני RSS על תגובות"
 
 #: blog/templates/zinnia/entry_detail_base.html:26
 msgid "RSS Feed of pingbacks on"
-msgstr ""
+msgstr "עדכוני RSS על pingbacks"
 
 #: blog/templates/zinnia/entry_detail_base.html:28
 msgid "RSS Feed of trackbacks on"
-msgstr ""
+msgstr "עדכוני RSS על trackbacks"
 
 #: blog/templates/zinnia/entry_detail_base.html:46
 msgid "Next entry"
-msgstr ""
+msgstr "רשומה הבאה"
 
 #: blog/templates/zinnia/entry_detail_base.html:58
 msgid "Previous entry"
-msgstr ""
+msgstr "רשומה קודמת"
 
 #: blog/templates/zinnia/entry_detail_base.html:70
 msgid "Related entries"
-msgstr ""
+msgstr "רשומה קשורה"
 
 #: blog/templates/zinnia/entry_detail_base.html:82
 msgid "Similar entries"
-msgstr ""
+msgstr "רשומה דומה"
 
 #: blog/templates/zinnia/entry_detail_base.html:224
 #: blog/templates/zinnia/entry_detail_base.html:225
 msgid "Edit the entry"
-msgstr ""
+msgstr "ערוך את הרשומה"
 
 #: blog/templates/zinnia/entry_list.html:5
 msgid "Latest entries for"
-msgstr ""
+msgstr "רשומה אחרונה ל"
 
 #: blog/templates/zinnia/entry_list.html:5
 msgid "the category"
-msgstr ""
+msgstr "הקטגוריה"
 
 #: blog/templates/zinnia/entry_list.html:5
 msgid "the tag"
-msgstr ""
+msgstr "התג"
 
 #: blog/templates/zinnia/entry_list.html:5
 msgid "the author"
-msgstr ""
+msgstr "המחבר"
 
 #: blog/templates/zinnia/entry_list.html:5
 msgid "page"
-msgstr ""
+msgstr "עמוד"
 
 #: blog/templates/zinnia/entry_list.html:10
 #: blog/templates/zinnia/entry_list.html:13
 #: blog/templates/zinnia/entry_list.html:16
 msgid "RSS Feed"
-msgstr ""
+msgstr "עדכוני RSS"
 
 #: blog/templates/zinnia/entry_list.html:20
 msgid "Latest entries"
-msgstr ""
+msgstr "רשומות אחרונות"
 
 #: blog/templates/zinnia/entry_list.html:20
 msgid "Category"
-msgstr ""
+msgstr "קטגוריה"
 
 #: blog/templates/zinnia/entry_list.html:20
 msgid "Tag"
-msgstr ""
+msgstr "תג"
 
 #: blog/templates/zinnia/entry_list.html:20
 msgid "Author"
-msgstr ""
+msgstr "מחבר"
 
 #: blog/templates/zinnia/entry_list.html:20
 msgid "Page"
-msgstr ""
+msgstr "עמוד"
 
 #: blog/templates/zinnia/entry_list.html:28
 #, python-format
 msgid "Category archives: %(category)s"
-msgstr ""
+msgstr "ארכיון קטגוריות: %(category)s"
 
 #: blog/templates/zinnia/entry_list.html:35
 #, python-format
 msgid "Tag archives: %(tag)s"
-msgstr ""
+msgstr "ארכיון תגים: %(tag)s"
 
 #: blog/templates/zinnia/entry_list.html:39
 #, python-format
 msgid "Author archives: %(author)s"
-msgstr ""
+msgstr "ארכיון מחברים: %(author)s"
 
 #: blog/templates/zinnia/entry_list.html:48
 msgid "No entries yet."
-msgstr ""
+msgstr "אין עדיין רשומות"
 
 #: blog/templates/zinnia/entry_list.html:67
 #: blog/templates/zinnia/entry_list.html:68
 msgid "Edit the category"
-msgstr ""
+msgstr "ערוך קטגוריה"
 
 #: blog/templates/zinnia/entry_list.html:74
 #: blog/templates/zinnia/entry_list.html:75
 msgid "Edit the tag"
-msgstr ""
+msgstr "ערוך תג"
 
 #: blog/templates/zinnia/entry_list.html:81
 #: blog/templates/zinnia/entry_list.html:82
 msgid "Edit the author"
-msgstr ""
+msgstr "ערוך מחבר"
 
 #: blog/templates/zinnia/skeleton.html:5
 msgid "Latest news for Dolphin Emulator"
-msgstr ""
+msgstr "עדכונים אחרים ל-Dolphin Emulator"
 
 #: blog/templates/zinnia/skeleton.html:8
 msgid "Articles"
-msgstr ""
+msgstr "מאמרים"
 
 #: blog/templates/zinnia/tags/search_form.html:18
 msgid ""
@@ -324,11 +327,11 @@ msgstr ""
 
 #: compat/templates/compat-list.html:23
 msgid "How to read the ratings"
-msgstr ""
+msgstr "איך לקרוא את הדירוגים"
 
 #: compat/templates/compat-list.html:26
 msgid "5 out of 5"
-msgstr ""
+msgstr "5 מתוך 5"
 
 #: compat/templates/compat-list.html:26
 msgid "<strong>Perfect</strong>: No issues at all!"
@@ -336,7 +339,7 @@ msgstr ""
 
 #: compat/templates/compat-list.html:27
 msgid "4 out of 5"
-msgstr ""
+msgstr "4 מתוך 5"
 
 #: compat/templates/compat-list.html:27
 msgid ""
@@ -346,7 +349,7 @@ msgstr ""
 
 #: compat/templates/compat-list.html:28
 msgid "3 out of 5"
-msgstr ""
+msgstr "3 מתוך 5"
 
 #: compat/templates/compat-list.html:28
 msgid ""
@@ -356,7 +359,7 @@ msgstr ""
 
 #: compat/templates/compat-list.html:29
 msgid "2 out of 5"
-msgstr ""
+msgstr "2 מתוך 5"
 
 #: compat/templates/compat-list.html:29
 msgid ""
@@ -366,7 +369,7 @@ msgstr ""
 
 #: compat/templates/compat-list.html:30
 msgid "1 out of 5"
-msgstr ""
+msgstr "1 מתוך 5"
 
 #: compat/templates/compat-list.html:30
 msgid "<strong>Broken</strong>: Crashes when booting."
@@ -374,64 +377,64 @@ msgstr ""
 
 #: compat/templates/compat-list.html:37
 msgid "Statistics"
-msgstr ""
+msgstr "נתונים"
 
 #: compat/templates/compat-list.html:43
 msgid "Remove filter"
-msgstr ""
+msgstr "הסר מסננים"
 
 #: compat/templates/compat-list.html:43
 msgid "Show all"
-msgstr ""
+msgstr "ראה הכח"
 
 #: compat/templates/compat-list.html:45
 msgid "Filter by this rating"
-msgstr ""
+msgstr "מסנן לפי דירוג"
 
 #: compat/templates/compat-list.html:45
 msgid "Filter"
-msgstr ""
+msgstr "מסנן"
 
 #: compat/templates/compat-list.html:65
 msgid "Game title (click for details)"
-msgstr ""
+msgstr "כותרת משחק (לחץ למידע נוסף)"
 
 #: compat/templates/compat-list.html:66
 #: homepage/templates/homepage-home.html:95 templates/_base.html:77
 msgid "Compatibility"
-msgstr ""
+msgstr "תאימות"
 
 #: compat/templates/compat-list.html:67
 msgid "Last updated"
-msgstr ""
+msgstr "עודכן לאחרונה"
 
 #: compat/templates/compat-list.html:84
 msgid "Your query does not match any game."
-msgstr ""
+msgstr "החיפוש שלך לא מתאים לשום משחק"
 
 #: compat/templatetags/compat.py:9
 msgid "Unknown"
-msgstr ""
+msgstr "לא ידוע"
 
 #: compat/templatetags/compat.py:10
 msgid "Broken"
-msgstr ""
+msgstr "הרוס"
 
 #: compat/templatetags/compat.py:11
 msgid "Intro/Menu"
-msgstr ""
+msgstr "פתיח / תפריט"
 
 #: compat/templatetags/compat.py:12
 msgid "Starts"
-msgstr ""
+msgstr "מתחיל"
 
 #: compat/templatetags/compat.py:13
 msgid "Playable"
-msgstr ""
+msgstr "ניתן לשחק"
 
 #: compat/templatetags/compat.py:14
 msgid "Perfect"
-msgstr ""
+msgstr "מושלם"
 
 #: docs/templates/docs-faq.html:6
 msgid ""
@@ -445,7 +448,7 @@ msgstr ""
 
 #: docs/templates/docs-guide.html:12
 msgid "Go back to the guides list"
-msgstr ""
+msgstr "חזור לרשימת המדריכים"
 
 #: docs/templates/docs-guides-index.html:5
 msgid "See all the guides written by the Dolphin team about the emulator."
@@ -453,26 +456,26 @@ msgstr ""
 
 #: docs/templates/docs-guides-index.html:7 templates/_base.html:76
 msgid "Guides"
-msgstr ""
+msgstr "מדריכים"
 
 #: docs/templates/docs-guides-index.html:11
 msgid "Guides and documentation"
-msgstr ""
+msgstr "מדריכים ומסמכים"
 
 #: docs/templates/docs-guides-index.html:19
 msgid "No published guide available"
-msgstr ""
+msgstr "אין מדריכים זמינים"
 
-#: downloads/models.py:41 downloads/models.py:58
+#: downloads/models.py:36 downloads/models.py:54
 #, python-format
 msgid "Dolphin %s"
-msgstr ""
+msgstr "דולפין %s"
 
-#: downloads/models.py:82
+#: downloads/models.py:78
 msgid "Change with no description"
-msgstr ""
+msgstr "שנה בלי התיאור"
 
-#: downloads/models.py:85
+#: downloads/models.py:81
 #, python-format
 msgid ""
 "(<a href=\"%(pr_url)s\">PR #%(pr_id)s</a> from <a "
@@ -530,22 +533,11 @@ msgid ""
 "    to be installed.</p>\n"
 msgstr ""
 
-#: downloads/templates/downloads-index.html:49
-msgid "Release Candidate versions"
-msgstr ""
-
-#: downloads/templates/downloads-index.html:51
-msgid ""
-"\n"
-"    Release candidate versions are released to test an upcoming stable release of\n"
-"    Dolphin. They are generally more stable than the Development versions, but may still have known bugs.\n"
-msgstr ""
-
-#: downloads/templates/downloads-index.html:74
+#: downloads/templates/downloads-index.html:63
 msgid "Stable versions"
 msgstr ""
 
-#: downloads/templates/downloads-index.html:76
+#: downloads/templates/downloads-index.html:65
 msgid ""
 "\n"
 "    Stable versions are released after a lot of testing to ensure emulation\n"
@@ -553,32 +545,32 @@ msgid ""
 "    they might be outdated and lacking some new features.\n"
 msgstr ""
 
-#: downloads/templates/downloads-index.html:98
+#: downloads/templates/downloads-index.html:87
 msgid "No stable release yet"
 msgstr ""
 
-#: downloads/templates/downloads-index.html:105
+#: downloads/templates/downloads-index.html:94
 msgid "Older Ubuntu (< 15.04) and users of other Linux distributions"
 msgstr ""
 
-#: downloads/templates/downloads-index.html:106
+#: downloads/templates/downloads-index.html:95
 msgid ""
 "Ubuntu 14.10 and older users can install a PPA \n"
 "    for development and stable versions of Dolphin here: <a href=\"https://wiki.dolphin-emu.org/index.php?title=Installing_Dolphin#Ubuntu\">Installing Dolphin</a>\n"
 "    "
 msgstr ""
 
-#: downloads/templates/downloads-index.html:109
+#: downloads/templates/downloads-index.html:98
 msgid ""
 "Users of other Linux distributions can look here to compile Dolphin: <a href=\"https://wiki.dolphin-emu.org/index.php?title=Building_Dolphin_on_Linux\">Building Dolphin on Linux</a>\n"
 "    "
 msgstr ""
 
-#: downloads/templates/downloads-index.html:114
+#: downloads/templates/downloads-index.html:103
 msgid "Source code"
 msgstr ""
 
-#: downloads/templates/downloads-index.html:116
+#: downloads/templates/downloads-index.html:105
 msgid ""
 "\n"
 "    The latest version of the Dolphin source code can be downloaded from the\n"
@@ -586,7 +578,7 @@ msgid ""
 "    "
 msgstr ""
 
-#: downloads/templates/downloads-index.html:124
+#: downloads/templates/downloads-index.html:113
 #, python-format
 msgid ""
 "\n"
@@ -594,11 +586,11 @@ msgid ""
 "    "
 msgstr ""
 
-#: downloads/templates/downloads-index.html:131
+#: downloads/templates/downloads-index.html:120
 msgid "Reporting bugs"
 msgstr ""
 
-#: downloads/templates/downloads-index.html:133
+#: downloads/templates/downloads-index.html:122
 #, python-format
 msgid ""
 "\n"

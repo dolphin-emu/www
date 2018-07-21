@@ -11,13 +11,14 @@
 # Ryan Zhou <sentret_c@sina.cn>, 2013
 # Yueyu <gaoboyuan8@qq.com>, 2013-2014
 # Ryan Zhou <sentret_c@sina.cn>, 2013
+# 天绝星 <c.cejhb@gmail.com>, 2017
 msgid ""
 msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-04-11 23:51+0200\n"
-"PO-Revision-Date: 2017-04-17 07:25+0000\n"
-"Last-Translator: Ryan Zhou <sentret_c@sina.cn>\n"
+"PO-Revision-Date: 2017-09-23 18:43+0000\n"
+"Last-Translator: 天绝星 <c.cejhb@gmail.com>\n"
 "Language-Team: Chinese (China) (http://www.transifex.com/delroth/dolphin-emu/language/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -562,7 +563,7 @@ msgid ""
 "Ubuntu 14.10 and older users can install a PPA \n"
 "    for development and stable versions of Dolphin here: <a href=\"https://wiki.dolphin-emu.org/index.php?title=Installing_Dolphin#Ubuntu\">Installing Dolphin</a>\n"
 "    "
-msgstr "Ubuntu 14.10 及以前版本的用户可以到这里安装 PPA 来运行 Dolphin: <a href=\"https://wiki.dolphin-emu.org/index.php?title=Installing_Dolphin#Ubuntu\">安装 Dolphin</a>"
+msgstr "Ubuntu 14.10 及以前版本的用户可以到这里安装 PPA \n来运行开发版或稳定版 Dolphin: <a href=\"https://wiki.dolphin-emu.org/index.php?title=Installing_Dolphin#Ubuntu\">安装 Dolphin</a>"
 
 #: downloads/templates/downloads-index.html:98
 msgid ""

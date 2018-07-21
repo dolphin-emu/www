@@ -9,13 +9,13 @@
 # Christer Hansen <chriztr@gmail.com>, 2013
 # KHRZ <e-k-nut@hotmail.com>, 2013-2014
 # KHRZ <e-k-nut@hotmail.com>, 2013
-# Tokiko <tokikoenai@gmail.com>, 2015
+# Tokiko <inactive+Tokiko@transifex.com>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-04-11 23:51+0200\n"
-"PO-Revision-Date: 2016-05-10 02:45+0000\n"
+"PO-Revision-Date: 2017-09-23 18:51+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål (http://www.transifex.com/delroth/dolphin-emu/language/nb/)\n"
 "MIME-Version: 1.0\n"

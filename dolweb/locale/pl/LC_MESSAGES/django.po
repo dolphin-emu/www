@@ -5,7 +5,7 @@
 # Translators:
 # Pierre Bourdon <delroth@gmail.com>, 2013
 # Filip Grabowski <filipianosol@outlook.com>, 2016
-# M T <michtrz@gmail.com>, 2014,2016
+# Michał Trzebiatowski <michtrz@gmail.com>, 2014,2016
 # Pierre Bourdon <delroth@gmail.com>, 2013
 # Robert Romanowski <Robert@10g.pl>, 2013
 # Robert Romanowski <Robert@10g.pl>, 2013
@@ -14,14 +14,14 @@ msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-04-11 23:51+0200\n"
-"PO-Revision-Date: 2016-07-15 23:51+0000\n"
+"PO-Revision-Date: 2017-09-19 14:59+0000\n"
 "Last-Translator: Filip Grabowski <filipianosol@outlook.com>\n"
 "Language-Team: Polish (http://www.transifex.com/delroth/dolphin-emu/language/pl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: pl\n"
-"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && (n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
 
 #: blog/admin.py:45
 msgid "Content"
@@ -76,6 +76,7 @@ msgid_plural ""
 msgstr[0] "\n    %(count)s wpis\n  "
 msgstr[1] "\n    %(count)s wpisy\n  "
 msgstr[2] "\n    %(count)s wpisów\n  "
+msgstr[3] "\n    %(count)s wpisów\n  "
 
 #: blog/templates/series-index.html:27
 msgid "RSS feed:"
