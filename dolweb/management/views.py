@@ -21,7 +21,7 @@ def run_command(request, cmd):
     if auth[0].lower() != 'basic':
         return make_401_response()
 
-    authenticator = base64.b64decode(auth[1]).split(':')
+    authenticator = base64.b64decode(auth[1]).decode('utf-8').split(':')
     if tuple(authenticator) not in settings.MGMT_AUTHORIZED_USERS:
         return make_401_response()
 
