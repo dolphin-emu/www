@@ -9,7 +9,7 @@ class FAQCategory(models.Model):
     display_order = models.IntegerField()
 
     def sorted_questions(self):
-        return self.questions.order_by('display_order')
+        return sorted(self.questions.all(), key=lambda q: q.display_order)
 
     def __str__(self):
         return self.title
