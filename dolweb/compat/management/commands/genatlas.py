@@ -83,7 +83,7 @@ def get_gameids(letter):
     bnr_gameids = get_all_bnr_gameids()
 
     res = {}
-    for (hash, gids) in title_gameids.iteritems():
+    for (hash, gids) in title_gameids.items():
         # Find first matching gid in gameids
         matching_gid = None
         for gid in gids:
@@ -164,10 +164,10 @@ def generate_image_map(size, coords):
 
     pix = im.load()
 
-    for gid, (ox, oy) in coords.iteritems():
-        data = iter(map(ord, banners[gid]))
-        for y in xrange(32):
-            for x in xrange(96):
+    for gid, (ox, oy) in coords.items():
+        data = map(ord, banners[gid])
+        for y in range(32):
+            for x in range(96):
                 pix[x + ox, y + oy] = (next(data), next(data), next(data), 255)
 
     return im

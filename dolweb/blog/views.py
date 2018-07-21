@@ -75,7 +75,7 @@ def etherpad_event(request):
             continue
         last_updates[evt.get('id')] = evt.get('text')
 
-    for pad_id, text in last_updates.iteritems():
+    for pad_id, text in last_updates.items():
         try:
             entry = Entry.objects.get(etherpad_id=pad_id)
             if entry.status == PUBLISHED:
