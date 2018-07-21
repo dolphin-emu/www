@@ -17,7 +17,7 @@ class NewsArticle(models.Model):
 
     @property
     def forum_url(self):
-        return settings.FORUM_URL + u'showthread.php?tid=%d' % self.forum_pid
+        return settings.FORUM_URL + 'showthread.php?tid=%d' % self.forum_pid
 
     @models.permalink
     def get_absolute_url(self):

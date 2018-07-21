@@ -15,7 +15,7 @@ class FAQCategory(models.Model):
         return self.title
 
     def get_absolute_url(self):
-        return reverse('docs-faq') + u'#%s' % self.slug
+        return reverse('docs-faq') + '#%s' % self.slug
 
     class Meta:
         verbose_name= "FAQ category"
@@ -36,7 +36,7 @@ class FAQ(models.Model):
         return self.title
 
     def get_absolute_url(self):
-        return reverse('docs-faq') + u'#%s' % self.slug
+        return reverse('docs-faq') + '#%s' % self.slug
 
     class Meta:
         verbose_name = "FAQ"

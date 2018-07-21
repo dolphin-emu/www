@@ -68,13 +68,13 @@ class DevVersion(DownloadableVersion):
     @property
     def description_data(self):
         """Returns data that describes the changes in this commit."""
-        lines = [line.strip() for line in self.description.split(u'\n')]
+        lines = [line.strip() for line in self.description.split('\n')]
         match = PULL_REQUEST_FIRSTLINE_RE.match(lines[0])
         if match:
             pull_id, author, branch = match.groups()
-            following_lines = [l for l in lines[1:] if l.strip() != u'']
+            following_lines = [l for l in lines[1:] if l.strip() != '']
             if not following_lines:
-                short_descr = u'Change with no description'
+                short_descr = 'Change with no description'
             else:
                 short_descr = following_lines[0]
             additional_data = {
@@ -100,7 +100,7 @@ class DevVersion(DownloadableVersion):
         in this commit."""
         data = self.description_data
         if 'pr_id' in data:
-            additional_html_fmt = _(u'(<a href="%(pr_url)s">PR #%(pr_id)s</a> from <a href="%(author_url)s">%(author)s</a>)')
+            additional_html_fmt = _('(<a href="%(pr_url)s">PR #%(pr_id)s</a> from <a href="%(author_url)s">%(author)s</a>)')
             additional_html = additional_html_fmt % {
                 'pr_url': data['pr_url'],
                 'pr_id': data['pr_id'],
@@ -108,11 +108,11 @@ class DevVersion(DownloadableVersion):
                 'author': cgi.escape(data['author']),
             }
         else:
-            additional_html = u''
+            additional_html = ''
 
         short_descr = cgi.escape(data['short_descr'])
         if additional_html:
-            short_descr = short_descr + u' ' + additional_html
+            short_descr = short_descr + ' ' + additional_html
         return mark_safe(short_descr)
 
 class Artifact(models.Model):

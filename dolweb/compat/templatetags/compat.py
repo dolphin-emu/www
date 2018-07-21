@@ -46,11 +46,11 @@ def rating_class(compat):
 
 @register.simple_tag
 def platform_img_url(platform):
-    return staticfiles_storage.url(u'img/platforms/%s.png' % platform)
+    return staticfiles_storage.url('img/platforms/%s.png' % platform)
 
 @register.simple_tag
 def compat_img_url(compat):
-    return staticfiles_storage.url(u'img/stars/%s.png' % compat)
+    return staticfiles_storage.url('img/stars/%s.png' % compat)
 
 @register.simple_tag
 def compat_url(char, rating):

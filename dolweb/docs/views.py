@@ -45,10 +45,10 @@ def faq_dyni18n_po(request):
     }
 
     for cat in FAQCategory.objects.order_by('display_order'):
-        po.append(polib.POEntry(msgid=cat.title, msgstr=u'', msgctxt=u'Category title'))
+        po.append(polib.POEntry(msgid=cat.title, msgstr='', msgctxt='Category title'))
         for q in cat.sorted_questions():
-            po.append(polib.POEntry(msgid=q.title, msgstr=u'', msgctxt=u'Question title'))
-            po.append(polib.POEntry(msgid=q.short_title, msgstr=u'',
-                                    msgctxt=u'Question short title (displayed in the left column)'))
-            po.append(polib.POEntry(msgid=q.text, msgstr=u'', msgctxt=u'Answer'))
+            po.append(polib.POEntry(msgid=q.title, msgstr='', msgctxt='Question title'))
+            po.append(polib.POEntry(msgid=q.short_title, msgstr='',
+                                    msgctxt='Question short title (displayed in the left column)'))
+            po.append(polib.POEntry(msgid=q.text, msgstr='', msgctxt='Answer'))
     return HttpResponse(po)
