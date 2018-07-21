@@ -67,7 +67,7 @@ def list(request, branch, page):
     if page is None:
         page = 1
     builds = DevVersion.objects.filter(branch=branch).order_by('-date')
-    if len(builds) == 0 and branch != 'master':
+    if builds.count() == 0 and branch != 'master':
         get_object_or_404(BranchInfo, name=branch)
     pagi = DiggPaginator(builds, 20, body=9, tail=2)
 
