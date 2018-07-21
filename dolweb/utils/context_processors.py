@@ -33,3 +33,9 @@ def check_country_redirect(request):
     if request.GET.get('cr'):
         return { "COUNTRY_REDIRECT": request.GET['cr'] }
     return {}
+
+def export_languages(request):
+    return {
+        "LANGUAGES": settings.LANGUAGES,
+        "LANGUAGE_CODE": settings.LANGUAGE_CODE,
+    }

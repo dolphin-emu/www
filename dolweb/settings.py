@@ -150,6 +150,10 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'dolweb.utils.context_processors.website_urls',
+                'dolweb.utils.context_processors.guess_system_from_ua',
+                'dolweb.utils.context_processors.check_country_redirect',
+                'dolweb.utils.context_processors.export_languages',
             ],
         },
     },
@@ -167,20 +171,6 @@ MIDDLEWARE = (
     'django.middleware.locale.LocaleMiddleware',
     'dolweb.utils.country_redirect.CountryRedirectMiddleware',
     # Uncomment the next line for simple clickjacking protection:
-)
-
-TEMPLATE_CONTEXT_PROCESSORS = (
-    "django.contrib.auth.context_processors.auth",
-    "django.core.context_processors.debug",
-    "django.core.context_processors.i18n",
-    "django.core.context_processors.media",
-    "django.core.context_processors.request",
-    "django.core.context_processors.static",
-    "django.core.context_processors.tz",
-    "django.contrib.messages.context_processors.messages",
-    'dolweb.utils.context_processors.website_urls',
-    'dolweb.utils.context_processors.guess_system_from_ua',
-    'dolweb.utils.context_processors.check_country_redirect',
 )
 
 ROOT_URLCONF = 'dolweb.urls'
