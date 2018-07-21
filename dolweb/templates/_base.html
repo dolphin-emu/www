@@ -57,7 +57,14 @@
         <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/highcharts/6.1.1/highcharts.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/highcharts/6.1.1/modules/data.js"></script>
-          <script>
+        <script>
+          var CHART_ID = 0;
+          function addChart(options) {
+            var this_id = CHART_ID++;
+            document.write('<div id="chart' + CHART_ID + '"></div>');
+            options['credits'] = false;
+            Highcharts.chart("chart" + CHART_ID, options);
+          }
           window.addEventListener("load", function(){
             window.cookieconsent.initialise({
               "content": {
