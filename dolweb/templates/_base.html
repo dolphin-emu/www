@@ -63,6 +63,9 @@
             var this_id = CHART_ID++;
             document.write('<div id="chart' + CHART_ID + '"></div>');
             options['credits'] = false;
+            options['chart'] = options['chart'] || {};
+            options['chart']['style'] = options['chart']['style'] || {};
+            options['chart']['style']['fontFamily'] = 'Helvetica Neue,Helvetica,Arial,sans-serif';
             Highcharts.chart("chart" + CHART_ID, options);
           }
           window.addEventListener("load", function(){
