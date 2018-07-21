@@ -1,5 +1,6 @@
-from django.conf.urls import patterns, url
+from django.conf.urls import url
+from dolweb.media import views
 
-urlpatterns = patterns('dolweb.media.views',
-    url(r'^$', 'all', name='media_all'),
-)
+urlpatterns = [
+    url(r'^$', views.all, name='media_all'),
+]

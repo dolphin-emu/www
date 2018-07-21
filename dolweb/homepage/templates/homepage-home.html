@@ -105,7 +105,7 @@
         {% include "blog_sidebar.html" %}
     </div>
     <div class="col-md-9">
-        <a href="{% url 'zinnia:entry_latest_feed' %}" class="rss-tag pull-right" title="{% trans "RSS feed of the latest articles" %}"><i class="icon-rss"></i></a>
+        <a href="{% url 'zinnia:entry_feed' %}" class="rss-tag pull-right" title="{% trans "RSS feed of the latest articles" %}"><i class="icon-rss"></i></a>
         <h2 class="latest-articles">{% trans "Latest articles" %}</h2>
         {% for article in home_articles %}
         <div class="well">

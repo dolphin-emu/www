@@ -1,21 +1,16 @@
 from django.conf import settings
-from django.conf.urls import patterns, url, include
+from django.conf.urls import url, include
 from dolweb.blog.feeds import SeriesFeed
+from dolweb.blog.views import series_index, etherpad_event
 
-urlpatterns = patterns('',
+urlpatterns = [
     url(r'^', include('zinnia.urls', namespace='zinnia')),
-    # url(r'^comments/', include('django.contrib.comments.urls')),
     url(r'^feeds/series/(?P<pk>[0-9]+)$', SeriesFeed(), name='dolweb_blog_series_feed'),
-)
-
-urlpatterns += patterns('dolweb.blog.views',
-    # url(r'^series/(?P<slug>[-\w]+)$', 'serie_view'),
-    # url(r'^series(/(?P<page>[0-9]+))?$', 'series_index'),
-    url(r'^series#series-(?P<uid>[0-9]+)$', 'series_index'),
-    url(r'^series$', 'series_index'),
-)
+    url(r'^series#series-(?P<uid>[0-9]+)$', series_index, name='dolweb_blog_series'),
+    url(r'^series$', series_index, name='dolweb_blog_series_index'),
+]
 
 if settings.BLOG_ETHERPAD_URL:
-    urlpatterns += patterns('dolweb.blog.views',
-        url(r'^etherpad/event$', 'etherpad_event'),
-    )
+    urlpatterns += [
+        url(r'^etherpad/event$', etherpad_event),
+    ]

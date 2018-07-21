@@ -20,7 +20,7 @@
 
         <link rel="shortcut icon" href="{% static "img/favicon.ico" %}" />
 
-        <link rel="alternate" type="application/atom+xml" title="{% trans "Latest blog articles" %}" href="{% url 'zinnia:entry_latest_feed' %}" />
+        <link rel="alternate" type="application/atom+xml" title="{% trans "Latest blog articles" %}" href="{% url 'zinnia:entry_feed' %}" />
 
         {% for langshort, langname in LANGUAGES %}
             {% if langshort != LANGUAGE_CODE|short %}

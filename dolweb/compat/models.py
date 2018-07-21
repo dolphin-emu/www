@@ -3,7 +3,7 @@ from django.conf import settings
 from django.core.cache import cache
 from django.db import models
 
-import urllib
+import urllib.parse
 
 class Namespace(object):
     MAIN = 0
@@ -31,42 +31,42 @@ class Text(models.Model):
     def data(self):
         return self.data_raw
 
-    def __unicode__(self):
-        return u'Blob %d: %s' % (self.id, self.data[:100])
+    def __str__(self):
+        return 'Blob %d: %s' % (self.id, self.data[:100])
 
     class Meta:
         db_table = 'pagecontent'
-        verbose_name = u'MediaWiki Text Blob'
-        verbose_name_plural = u'MediaWiki Text Blobs'
+        verbose_name = 'MediaWiki Text Blob'
+        verbose_name_plural = 'MediaWiki Text Blobs'
 
 class Revision(models.Model):
     id = models.IntegerField(db_column='rev_id', primary_key=True)
-    page = models.ForeignKey('Page', db_column='rev_page', related_name='+')
-    text = models.ForeignKey('Text', db_column='rev_text_id', related_name='+')
+    page = models.ForeignKey('Page', on_delete=models.PROTECT, db_column='rev_page', related_name='+')
+    text = models.ForeignKey('Text', on_delete=models.PROTECT, db_column='rev_text_id', related_name='+')
     timestamp = models.CharField(db_column='rev_timestamp', max_length=14)
 
-    def __unicode__(self):
-        return u'%s for %s' % (self.timestamp_raw, self.page)
+    def __str__(self):
+        return '%s for %s' % (self.timestamp_raw, self.page)
 
     class Meta:
         db_table = 'revision'
-        verbose_name = u'MediaWiki Revision'
-        verbose_name_plural = u'MediaWiki Revisions'
+        verbose_name = 'MediaWiki Revision'
+        verbose_name_plural = 'MediaWiki Revisions'
 
 class Page(models.Model):
     id = models.IntegerField(db_column='page_id', primary_key=True)
     namespace = models.IntegerField(db_column='page_namespace')
     title_url = models.CharField(db_column='page_title', max_length=255)
     len = models.IntegerField(db_column='page_len')
-    latest = models.ForeignKey('Revision', db_column='page_latest', related_name='+')
+    latest = models.ForeignKey('Revision', on_delete=models.PROTECT, db_column='page_latest', related_name='+')
     is_redirect = models.BooleanField(db_column='page_is_redirect', default=False)
 
     @property
     def wiki_url(self):
-        u = self.title_url.encode('utf-8')
+        u = self.title_url
         if u.startswith('Ratings/'):
             u = u[len('Ratings/'):]
-        return settings.WIKI_URL + 'index.php?title=%s' % urllib.quote(u)
+        return settings.WIKI_URL + 'index.php?title=%s' % urllib.parse.quote(u)
 
     @property
     def title(self):
@@ -75,41 +75,41 @@ class Page(models.Model):
             s = s[len('Ratings/'):]
         return s
 
-    def __unicode__(self):
+    def __str__(self):
         return self.title
 
     class Meta:
         db_table = 'page'
         ordering = ['namespace', 'title_url']
-        verbose_name = u'MediaWiki Page'
-        verbose_name_plural = u'MediaWiki Pages'
+        verbose_name = 'MediaWiki Page'
+        verbose_name_plural = 'MediaWiki Pages'
 
 class Category(models.Model):
     id = models.IntegerField(db_column='cat_id', primary_key=True)
     title = models.CharField(db_column='cat_title', max_length=255)
 
-    def __unicode__(self):
+    def __str__(self):
         return self.title
 
     class Meta:
         db_table = 'category'
         ordering = ['title']
-        verbose_name = u'MediaWiki Category'
-        verbose_name_plural = u'MediaWiki Categories'
+        verbose_name = 'MediaWiki Category'
+        verbose_name_plural = 'MediaWiki Categories'
 
 class CategoryLink(models.Model):
     id = models.IntegerField(primary_key=True, db_column='cl_sortkey') ## UGLY, not PK in DB
-    page = models.ForeignKey('Page', db_column='cl_from', related_name='+')
+    page = models.ForeignKey('Page', on_delete=models.PROTECT, db_column='cl_from', related_name='+')
     cat = models.CharField(db_column='cl_to', max_length=255)
 
-    def __unicode__(self):
-        return u'Link from %s to %s' % (self.page, self.cat)
+    def __str__(self):
+        return 'Link from %s to %s' % (self.page, self.cat)
 
     class Meta:
         db_table = 'categorylinks'
         ordering = ['cat', 'page']
-        verbose_name = u'MediaWiki Category Link'
-        verbose_name_plural = u'MediaWiki Category Links'
+        verbose_name = 'MediaWiki Category Link'
+        verbose_name_plural = 'MediaWiki Category Links'
 
 def get_rated_games():
     count = cache.get('rating_count')

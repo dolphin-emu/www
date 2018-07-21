@@ -2,7 +2,7 @@ from django.conf import settings
 from django.http import Http404, HttpResponse
 
 import base64
-import commands
+import subprocess
 
 def make_401_response():
     response = HttpResponse()
@@ -25,4 +25,4 @@ def run_command(request, cmd):
     if tuple(authenticator) not in settings.MGMT_AUTHORIZED_USERS:
         return make_401_response()
 
-    return HttpResponse(commands.getoutput(cmd), 'text/plain')
+    return HttpResponse(subprocess.check_output(cmd), 'text/plain')

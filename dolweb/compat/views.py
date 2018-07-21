@@ -44,7 +44,7 @@ def list_compat(request, first_char=NOT_ALPHA_CHAR, filter_by=None):
                            .exclude(title_url='Ratings/'))
     if first_char == NOT_ALPHA_CHAR:
         ratings = ratings.filter(title_url__iregex=r'^Ratings/[^a-zA-Z].*$')
-    ratings = ratings.select_related('latest__text__data_raw', 'latest__timestamp_raw').order_by('title_url')
+    ratings = ratings.select_related('latest__text', 'latest').order_by('title_url')
 
     # Re-sort ratings, this time without case taken into account
     ratings = list(ratings)
@@ -57,7 +57,7 @@ def list_compat(request, first_char=NOT_ALPHA_CHAR, filter_by=None):
                                              page__title_url__istartswith=gpages_start)
     if first_char == NOT_ALPHA_CHAR:
         categories = categories.filter(page__title_url__iregex=r'^[^a-zA-Z].*$')
-    categories = categories.select_related('page__title_url', 'page__latest__timestamp_raw')
+    categories = categories.select_related('page', 'page__latest')
 
     # Make a categories dict using the titles
     cat_dict = {}
@@ -73,6 +73,6 @@ def list_compat(request, first_char=NOT_ALPHA_CHAR, filter_by=None):
             ts = max(rating.latest.timestamp, cat_dict[title].page.latest.timestamp)
             games.append((rating, CATEGORIES[cat_dict[title].cat], ts, hash))
 
-    return { 'games': games, 'pages': [NOT_ALPHA_CHAR] + list(string.uppercase),
+    return { 'games': games, 'pages': [NOT_ALPHA_CHAR] + list(string.ascii_uppercase),
             'page': first_char, 'all_ratings': (5, 4, 3, 2, 1),
             'filter_by': filter_by }

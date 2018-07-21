@@ -1,17 +1,19 @@
 from django.conf import settings
-from django.conf.urls import patterns, include, url
+from django.conf.urls import include, url
 from django.conf.urls.static import static
 from django.contrib import admin
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
+from dolweb.homepage.views import home
+from dolweb.management.views import run_command
 
 # Monkey patching ftw...
 import dolweb.utils.monkey
 
 admin.autodiscover()
 
-urlpatterns = patterns('',
+urlpatterns = [
     # Homepage
-    url(r'^$', 'dolweb.homepage.views.home', name='home'),
+    url(r'^$', home, name='home'),
 
     # Media (image gallery, link to videos)
     url(r'^media/', include('dolweb.media.urls')),
@@ -29,14 +31,14 @@ urlpatterns = patterns('',
     url(r'^compat/', include('dolweb.compat.urls')),
 
     # Django administration
-    url(r'^admin/', include(admin.site.urls)),
+    url(r'^admin/', admin.site.urls),
 
     # Management interface
-    url(r'^mgmt/(?P<cmd>.+)$', 'dolweb.management.views.run_command', name='mgmt_run_command'),
+    url(r'^mgmt/(?P<cmd>.+)$', run_command, name='mgmt_run_command'),
 
     # Auto-update checking.
     url(r'^update/', include('dolweb.update.urls')),
-)
+]
 
 urlpatterns += staticfiles_urlpatterns()
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

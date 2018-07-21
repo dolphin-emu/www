@@ -119,7 +119,7 @@ class Artifact(models.Model):
     """Represents a downloadable object attached to a version."""
 
     # Shown to users. TODO: dyni18n.
-    version = models.ForeignKey(DownloadableVersion, db_index=True, related_name='artifacts')
+    version = models.ForeignKey(DownloadableVersion, on_delete=models.CASCADE, db_index=True, related_name='artifacts')
     target_system = models.CharField(max_length=64, db_index=True)
     url = models.URLField(null=True)
 

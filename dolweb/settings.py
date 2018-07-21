@@ -7,6 +7,9 @@ DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 SERVE_MEDIA = DEBUG
 
+SECURE_SSL_REDIRECT = True
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+
 PROJECT_ROOT = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
 
 ADMINS = (
@@ -86,8 +89,6 @@ RTL_LANGUAGES = (
     'fa',
 )
 
-SITE_ID = 1
-
 # If you set this to False, Django will make some optimizations so as not
 # to load the internationalization machinery.
 USE_I18N = True
@@ -136,16 +137,27 @@ STATICFILES_FINDERS = (
 # Make this unique, and don't share it with anybody.
 SECRET_KEY = '#-$yw(*dcl050c6(6v#lz1qa)$f^u001ehe44n@uq_&amp;1%73dnu'
 
-# List of callables that know how to import templates from various sources.
-TEMPLATE_LOADERS = (
-    'django.template.loaders.filesystem.Loader',
-    'django.template.loaders.app_directories.Loader',
-#     'django.template.loaders.eggs.Loader',
-)
+SITE_ID = 1
 
-MIDDLEWARE_CLASSES = (
-    'sslify.middleware.SSLifyMiddleware',
+TEMPLATES = [
+    {
+        'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        'DIRS': [os.path.join(PROJECT_ROOT, 'dolweb', 'templates')],
+        'APP_DIRS': True,
+        'OPTIONS': {
+            'context_processors': [
+                'django.template.context_processors.debug',
+                'django.template.context_processors.request',
+                'django.contrib.auth.context_processors.auth',
+                'django.contrib.messages.context_processors.messages',
+            ],
+        },
+    },
+]
+
+MIDDLEWARE = (
     'django.middleware.http.ConditionalGetMiddleware',
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -205,7 +217,6 @@ INSTALLED_APPS = (
     'bootstrapform',
     'debug_toolbar',
     'sorl.thumbnail',
-    'markup_deprecated',
     # Blog dependencies
     'django_comments',
     'tagging',
@@ -340,7 +351,6 @@ UPDATE_CONTENT_STORE_URL = 'https://update.dolphin-emu.org/content/'
 
 local_settings_file = os.path.join(PROJECT_ROOT, 'dolweb', 'local_settings.py')
 if os.path.exists(local_settings_file):
-    try:
-        execfile(os.path.join(local_settings_file), globals(), locals())
-    except IOError, ImportError:
-        print 'Warning: could not import dolweb.local_settings'
+    local = compile(
+        open(local_settings_file).read(), local_settings_file, 'exec')
+    exec(local, globals(), locals())

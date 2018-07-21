@@ -1,6 +1,7 @@
-from django.conf.urls import patterns, url
+from django.conf.urls import url
+from dolweb.compat.views import list_compat
 
-urlpatterns = patterns('dolweb.compat.views',
-    url(r'^$', 'list_compat', name='compat_index'),
-    url(r'^(?:(?P<first_char>[A-Z#])/)?(?:filter/(?P<filter_by>[12345])/)?$', 'list_compat', name='compat_list'),
-)
+urlpatterns = [
+    url(r'^$', list_compat, name='compat_index'),
+    url(r'^(?:(?P<first_char>[A-Z#])/)?(?:filter/(?P<filter_by>[12345])/)?$', list_compat, name='compat_list'),
+]

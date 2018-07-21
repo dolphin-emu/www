@@ -2,7 +2,6 @@
 
 {% load docs %}
 {% load i18n %}
-{% load markup %}
 {% block "metadescr" %}{% trans "The Official Dolphin FAQ answers all the questions that people often ask about Dolphin." %}{% endblock %}
 
 {% block "title" %}{% trans "Frequently Asked Questions" %}{% endblock %}
@@ -45,7 +44,7 @@
         <h3 id="{{ question.slug }}" {% if not question.title|faq_can_translate %}dir="ltr"{% endif %}>{{ question.title|faq_translate }}<a class="headerlink" href="#{{ question.slug }}">¶</a></h3>
 
         <div class="faq-answer {% if not question.text|faq_can_translate %}always-ltr{% endif %}">
-        {{ question.text|faq_translate|markdown:"safe" }}
+        {{ question.text|faq_translate|faq_markdown }}
         </div>
         {% endfor %}
         </section>

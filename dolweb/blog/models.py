@@ -46,7 +46,7 @@ class BlogSeries(models.Model):
 
 
 class ForumThreadForEntry(models.Model):
-    entry = models.OneToOneField('zinnia.Entry', related_name='forum_thread')
+    entry = models.OneToOneField('zinnia.Entry', on_delete=models.CASCADE, related_name='forum_thread')
     thread_id = models.IntegerField()
 
     def get_absolute_url(self):
@@ -65,7 +65,7 @@ class BlogEntry(AbstractEntry):
     Represents a blog entry. Adds an optional `series` field to the default
     Zinnia model.
     """
-    within_series = models.ForeignKey(BlogSeries, null=True, blank=True, related_name='entries')
+    within_series = models.ForeignKey(BlogSeries, on_delete=models.SET_NULL, null=True, blank=True, related_name='entries')
     etherpad_id = models.CharField(max_length=256, null=True, blank=True)
 
     @property

@@ -1,5 +1,5 @@
-from django.core.urlresolvers import reverse
 from django.db import models
+from django.urls import reverse
 
 class FAQCategory(models.Model):
     """FAQ category and its display order"""
@@ -24,11 +24,11 @@ class FAQCategory(models.Model):
 class FAQ(models.Model):
     """Describes a frequently asked question"""
 
-    category = models.ForeignKey(FAQCategory, related_name='questions')
+    category = models.ForeignKey(FAQCategory, on_delete=models.CASCADE, related_name='questions')
     title = models.CharField(max_length=128)
     short_title = models.CharField(max_length=64)
     slug = models.SlugField()
-    last_updated = models.DateTimeField(auto_now=True, auto_now_add=True)
+    last_updated = models.DateTimeField(auto_now=True)
     text = models.TextField()
     display_order = models.IntegerField()
 

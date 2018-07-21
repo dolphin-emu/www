@@ -1,5 +1,5 @@
 {% load i18n zinnia blog_tags %}
-{% load url from future %}
+
 <div style="margin-bottom: 1em">
     <form method="get" action="{% url 'zinnia:entry_search' %}" role="search">
         <div class="input-group">
@@ -35,5 +35,5 @@
 <div class="well">
     <h4>{% trans "Blog series" %}</h4>
     {% get_recent_blog_series 3 %}
-    <p class="seemore"><a href="{% url 'dolweb.blog.views.series_index' %}">{% trans "See all" %} »</a></p>
+    <p class="seemore"><a href="{% url 'dolweb_blog_series_index' %}">{% trans "See all" %} »</a></p>
 </div>
