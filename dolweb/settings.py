@@ -160,6 +160,7 @@ TEMPLATES = [
 ]
 
 MIDDLEWARE = (
+    'django.middleware.security.SecurityMiddleware',
     'django.middleware.http.ConditionalGetMiddleware',
     'debug_toolbar.middleware.DebugToolbarMiddleware',
     'django.middleware.common.CommonMiddleware',
