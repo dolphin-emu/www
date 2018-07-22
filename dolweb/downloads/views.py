@@ -102,7 +102,7 @@ def new(request):
         branch, shortrev, hash, author, description, target_system, build_url,
         user_os_matcher
     )
-    hm = hmac.new(settings.DOWNLOADS_CREATE_KEY,
+    hm = hmac.new(settings.DOWNLOADS_CREATE_KEY.encode('ascii'),
                   msg.encode("utf-8"), hashlib.sha1)
     if hm.hexdigest() != request.POST['hmac']:
         return HttpResponse('Invalid HMAC', status=403)
