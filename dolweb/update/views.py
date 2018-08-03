@@ -56,6 +56,36 @@ def _make_outdated_response(old_version, new_version, changelog):
     })
 
 
+def latest(request, track):
+    if track in settings.AUTO_MAINTAINED_UPDATE_TRACKS:
+        version = DevVersion.objects.filter(
+            branch=settings.AUTO_MAINTAINED_UPDATE_TRACKS[track]).latest(
+                'date')
+        changelog_html = version.description_data['short_descr']
+    else:
+        track_obj = UpdateTrack.objects.filter(
+            name=track).latest('version__date')
+        if track_obj is None:
+            return _error_response(404, "No track %r" % track)
+        version = track_obj.version
+        changelog_html = track_obj.changelog_text
+
+    if version is None:
+        return _error_response(404,
+                               "No latest version found on track %r" % track)
+
+    artifacts = []
+    for art in version.artifacts.all():
+        artifacts.append({'system': art.target_system, 'url': art.url})
+    data = {
+        'shortrev': version.shortrev,
+        'hash': version.hash,
+        'changelog_html': changelog_html,
+        'artifacts': artifacts
+    }
+    return JsonResponse(data)
+
+
 def check(request, updater_ver, track, version):
     if updater_ver != "0":
         return _error_response(400,
