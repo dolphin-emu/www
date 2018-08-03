@@ -63,7 +63,7 @@ class DevVersion(DownloadableVersion):
 
     @models.permalink
     def get_absolute_url(self):
-        return ('downloads_view_devrel', (), { 'hash': self.hash })
+        return ('downloads_view_devrel_by_name', (), {'branch': self.branch, 'name': self.shortrev})
 
     @property
     def description_data(self):
