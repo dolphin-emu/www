@@ -29,6 +29,6 @@ Quick overview
 Licensing
 ---------
 
-Code is licensed under the MIT license: do whatever you want with it. Images
+Code is licensed under the [Expat license](license.txt): do whatever you want with it. Images
 are licensed under the CC-by-sa license: if you want to use them, please
 attribute them to us and redistribute them under the same license.
