@@ -1,3 +1,6 @@
+# Copyright (c) 2018 Dolphin Emulator Website Contributors
+# SPDX-License-Identifier: MIT
+
 from django.conf import settings
 from django.core.management.base import BaseCommand, CommandError
 from dolweb.compat.models import Page

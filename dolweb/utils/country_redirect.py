@@ -1,3 +1,6 @@
+# Copyright (c) 2018 Dolphin Emulator Website Contributors
+# SPDX-License-Identifier: MIT
+
 from django.conf import settings
 from django.http import HttpResponseRedirect
 from django.utils.translation.trans_real import parse_accept_lang_header

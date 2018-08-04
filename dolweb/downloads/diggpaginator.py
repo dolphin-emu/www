@@ -1,3 +1,6 @@
+# Copyright (c) 2018 Dolphin Emulator Website Contributors
+# SPDX-License-Identifier: MIT
+
 import functools
 import math
 from django.core.paginator import \

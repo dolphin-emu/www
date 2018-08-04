@@ -1,3 +1,6 @@
+# Copyright (c) 2018 Dolphin Emulator Website Contributors
+# SPDX-License-Identifier: MIT
+
 from django.conf import settings
 from django.conf.urls import include, url
 from django.conf.urls.static import static

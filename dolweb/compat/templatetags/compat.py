@@ -1,3 +1,6 @@
+# Copyright (c) 2018 Dolphin Emulator Website Contributors
+# SPDX-License-Identifier: MIT
+
 from django import template
 from django.conf import settings
 from django.contrib.staticfiles.storage import staticfiles_storage

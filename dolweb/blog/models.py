@@ -1,3 +1,6 @@
+# Copyright (c) 2018 Dolphin Emulator Website Contributors
+# SPDX-License-Identifier: MIT
+
 from django.conf import settings
 from django.db import models
 from django.utils.html import linebreaks

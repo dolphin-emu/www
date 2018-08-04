@@ -1,3 +1,6 @@
+# Copyright (c) 2018 Dolphin Emulator Website Contributors
+# SPDX-License-Identifier: MIT
+
 from annoying.decorators import render_to
 from django.http import HttpResponse
 from django.shortcuts import get_object_or_404

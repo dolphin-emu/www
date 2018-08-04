@@ -1,3 +1,6 @@
+# Copyright (c) 2018 Dolphin Emulator Website Contributors
+# SPDX-License-Identifier: MIT
+
 from annoying.decorators import render_to
 from django.views.decorators.cache import cache_page
 from dolweb.compat.models import Page, Namespace, get_category_id, \

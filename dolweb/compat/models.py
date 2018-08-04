@@ -1,3 +1,6 @@
+# Copyright (c) 2018 Dolphin Emulator Website Contributors
+# SPDX-License-Identifier: MIT
+
 from datetime import datetime
 from django.conf import settings
 from django.core.cache import cache

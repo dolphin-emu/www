@@ -1,3 +1,6 @@
+# Copyright (c) 2018 Dolphin Emulator Website Contributors
+# SPDX-License-Identifier: MIT
+
 from django.utils.translation.trans_real import *
 from django.utils.translation import trans_real
 

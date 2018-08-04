@@ -1,3 +1,6 @@
+# Copyright (c) 2018 Dolphin Emulator Website Contributors
+# SPDX-License-Identifier: MIT
+
 from django.db import models
 
 class DefaultSelectOrPrefetchManager(models.Manager):

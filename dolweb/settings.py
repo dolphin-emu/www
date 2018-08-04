@@ -1,3 +1,6 @@
+# Copyright (c) 2018 Dolphin Emulator Website Contributors
+# SPDX-License-Identifier: MIT
+
 # Django settings for dolweb project.
 # -*- encoding: utf-8 -*-
 

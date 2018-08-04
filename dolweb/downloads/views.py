@@ -1,3 +1,6 @@
+# Copyright (c) 2018 Dolphin Emulator Website Contributors
+# SPDX-License-Identifier: MIT
+
 from annoying.decorators import render_to
 from django.conf import settings
 from django.core.paginator import EmptyPage
