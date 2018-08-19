@@ -669,3 +669,25 @@ div.draft-warning {
     text-decoration: none;
     background: #ff9100;
 }
+
+/* "Stolen" from Zinnia's base CSS. */
+.container ul.paginator {
+  margin: 0;
+  padding: 1.5em 0;
+  font-size: 1.2em; }
+  .container ul.paginator li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 0.3em; }
+    .container ul.paginator li.current {
+      font-weight: bold; }
+    .container ul.paginator li.current, .container ul.paginator li.index, .container ul.paginator li.ellipsis, .container ul.paginator li * {
+      padding: 0 0.5em; }
+    .container ul.paginator li.index, .container ul.paginator li.previous, .container ul.paginator li.next, .container ul.paginator li.ellipsis {
+      display: none; }
+    @media (min-width: 480px) {
+      .container ul.paginator li.previous, .container ul.paginator li.next, .container ul.paginator li.ellipsis {
+        display: inline-block; } }
+    @media (min-width: 1024px) {
+      .container ul.paginator li.index {
+        display: inline-block; } }
