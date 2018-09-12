@@ -4,13 +4,14 @@
 # 
 # Translators:
 # Garteal <garteal@gmail.com>, 2013-2014,2016
+# Jos van Mourik, 2018
 msgid ""
 msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-04-11 23:51+0200\n"
-"PO-Revision-Date: 2017-09-23 18:43+0000\n"
-"Last-Translator: Garteal <garteal@gmail.com>\n"
+"PO-Revision-Date: 2018-09-11 19:31+0000\n"
+"Last-Translator: Jos van Mourik\n"
 "Language-Team: Dutch (http://www.transifex.com/delroth/dolphin-emu/language/nl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -182,19 +183,19 @@ msgstr "Geen categorieën"
 
 #: blog/templates/zinnia/entry_detail_base.html:22
 msgid "RSS Feed of discussions on"
-msgstr "RSS Feed van discussies op"
+msgstr "RSS-Feed van discussies op"
 
 #: blog/templates/zinnia/entry_detail_base.html:24
 msgid "RSS Feed of comments on"
-msgstr "RSS Feed van comments op"
+msgstr "RSS-Feed van comments op"
 
 #: blog/templates/zinnia/entry_detail_base.html:26
 msgid "RSS Feed of pingbacks on"
-msgstr "RSS Feed van pingbacks op"
+msgstr "RSS-Feed van pingbacks op"
 
 #: blog/templates/zinnia/entry_detail_base.html:28
 msgid "RSS Feed of trackbacks on"
-msgstr "RSS Feed van trackbacks op"
+msgstr "RSS-Feed van trackbacks op"
 
 #: blog/templates/zinnia/entry_detail_base.html:46
 msgid "Next entry"
@@ -241,7 +242,7 @@ msgstr "pagina"
 #: blog/templates/zinnia/entry_list.html:13
 #: blog/templates/zinnia/entry_list.html:16
 msgid "RSS Feed"
-msgstr "RSS Feed"
+msgstr "RSS-Feed"
 
 #: blog/templates/zinnia/entry_list.html:20
 msgid "Latest entries"
@@ -280,12 +281,12 @@ msgstr "Auteur archieven: %(author)s"
 
 #: blog/templates/zinnia/entry_list.html:48
 msgid "No entries yet."
-msgstr "Geen inzendingen beschikbaar."
+msgstr "Nog Geen inzendingen."
 
 #: blog/templates/zinnia/entry_list.html:67
 #: blog/templates/zinnia/entry_list.html:68
 msgid "Edit the category"
-msgstr "Bewerk category"
+msgstr "Bewerk categorie"
 
 #: blog/templates/zinnia/entry_list.html:74
 #: blog/templates/zinnia/entry_list.html:75
@@ -395,7 +396,7 @@ msgstr "Filter"
 
 #: compat/templates/compat-list.html:65
 msgid "Game title (click for details)"
-msgstr "Spel titel (klik voor details)"
+msgstr "Speltitel (klik voor details)"
 
 #: compat/templates/compat-list.html:66
 #: homepage/templates/homepage-home.html:95 templates/_base.html:77
@@ -442,7 +443,7 @@ msgstr "De officiële Dolphin veelgestelde vragenlijst beantwoord vragen die men
 
 #: docs/templates/docs-faq.html:8
 msgid "Frequently Asked Questions"
-msgstr "Veelgestelde vragen"
+msgstr "Veelgestelde Vragen"
 
 #: docs/templates/docs-guide.html:12
 msgid "Go back to the guides list"
@@ -450,7 +451,7 @@ msgstr "Ga terug naar het handboek"
 
 #: docs/templates/docs-guides-index.html:5
 msgid "See all the guides written by the Dolphin team about the emulator."
-msgstr "Bekijk alle handboeken geschreven door de Dolphin team over de emulator."
+msgstr "Bekijk alle handboeken geschreven door het Dolphin team over de emulator."
 
 #: docs/templates/docs-guides-index.html:7 templates/_base.html:76
 msgid "Guides"
@@ -462,7 +463,7 @@ msgstr "Handboek en documentatie"
 
 #: docs/templates/docs-guides-index.html:19
 msgid "No published guide available"
-msgstr "Geen gepubliceerde handboek beschikbaar"
+msgstr "Geen gepubliceerd handboek beschikbaar"
 
 #: downloads/models.py:36 downloads/models.py:54
 #, python-format
@@ -562,7 +563,7 @@ msgstr "Ubuntu 14.10 en oudere gebruikers kunnen een <a href=\"https://wiki.dolp
 msgid ""
 "Users of other Linux distributions can look here to compile Dolphin: <a href=\"https://wiki.dolphin-emu.org/index.php?title=Building_Dolphin_on_Linux\">Building Dolphin on Linux</a>\n"
 "    "
-msgstr "Gebruikers van andere Linux distributies kunnen <a href=\"https://wiki.dolphin-emu.org/index.php?title=Building_Dolphin_on_Linux\">hier</a> lezen hoe Dolphin gecompiled moet worden."
+msgstr "Gebruikers van andere Linux distributies kunnen <a href=\"https://wiki.dolphin-emu.org/index.php?title=Building_Dolphin_on_Linux\">hier</a> lezen hoe Dolphin gecompileerd moet worden."
 
 #: downloads/templates/downloads-index.html:103
 msgid "Source code"
@@ -675,7 +676,7 @@ msgstr "Download %(last_release)s voor Windows, Mac en Linux »"
 
 #: homepage/templates/homepage-home.html:108
 msgid "RSS feed of the latest articles"
-msgstr "RSS feed van de laatste artikelen"
+msgstr "RSS-feed van de laatste artikelen"
 
 #: homepage/templates/homepage-home.html:109
 msgid "Latest articles"
@@ -692,7 +693,7 @@ msgstr "Lees dit artikel"
 
 #: homepage/templates/homepage-home.html:147
 msgid "No articles yet."
-msgstr "Geen artikelen beschikbaar."
+msgstr "Nog geen artikelen."
 
 #: media/templates/media-all.html:7
 msgid ""
@@ -702,7 +703,7 @@ msgstr "Bekijk de door gebruikers ingestuurde screenshots van Dolphin Emulator: 
 
 #: media/templates/media-all.html:9
 msgid "Screenshots gallery"
-msgstr "Screenshots gallerij"
+msgstr "Screenshotsgalerij"
 
 #: media/templates/media-all.html:31
 msgid "Media gallery"
@@ -718,17 +719,17 @@ msgstr "Het URL dat u probeert te benaderen bestaat niet."
 
 #: templates/500.html:5 templates/500.html.py:8
 msgid "Internal Server Error"
-msgstr "Interne Server Error"
+msgstr "Interne Serverfout"
 
 #: templates/500.html:10
 msgid ""
 "There was an error while trying to access this page. Please refresh the page"
 " in a few seconds."
-msgstr "Er is een error opgekomen tijdens het laden van deze pagina. Probeer het later opnieuw."
+msgstr "Er is een fout opgetreden tijdens het laden van deze pagina. Probeer het later opnieuw."
 
 #: templates/_base.html:23
 msgid "Latest blog articles"
-msgstr "Laatste blog artikelen"
+msgstr "Laatste blogartikelen"
 
 #: templates/_base.html:73
 msgid "Blog"
@@ -740,7 +741,7 @@ msgstr "Screenshots"
 
 #: templates/_base.html:75
 msgid "FAQ"
-msgstr "Veelgestelde vragen"
+msgstr "Veelgestelde Vragen"
 
 #: templates/_base.html:78
 msgid "Forum"
