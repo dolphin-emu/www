@@ -147,8 +147,9 @@
 
         <footer>
         <p class="footer-text">
+            {% now 'Y' as year %}
             {% blocktrans %}
-            &copy; 2014 Dolphin Emulator Project -
+            &copy; {{ year }} Dolphin Emulator Project -
             <a href="{{ WEBSITE_GIT_URL }}">Website source code</a>
             {% endblocktrans %}
         </p>
