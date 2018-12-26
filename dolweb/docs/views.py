@@ -55,3 +55,7 @@ def faq_dyni18n_po(request):
                                     msgctxt='Question short title (displayed in the left column)'))
             po.append(polib.POEntry(msgid=q.text, msgstr='', msgctxt='Answer'))
     return HttpResponse(str(po), content_type='text/plain')
+
+@render_to('docs-privacy.html')
+def privacy(request):
+    return {}

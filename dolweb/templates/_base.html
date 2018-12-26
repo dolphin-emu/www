@@ -147,10 +147,9 @@
 
         <footer>
         <p class="footer-text">
-            {% blocktrans %}
-            &copy; 2014 Dolphin Emulator Project -
-            <a href="{{ WEBSITE_GIT_URL }}">Website source code</a>
-            {% endblocktrans %}
+            {% trans "&copy; Dolphin Emulator Project" %} -
+            <a href="{{ WEBSITE_GIT_URL }}">{% trans "Website Source Code" %}</a> -
+            <a href="{% url 'docs_privacy' %}">{% trans "Privacy Policy" %}</a>
         </p>
         </footer>
 
