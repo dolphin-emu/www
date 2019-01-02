@@ -46,6 +46,13 @@ the ``settings.py`` file (in the ``dolweb/`` directory):
     MEDIA_URL = '/m/user/'
     STATIC_URL = '/m/static/'
 
+Remove the redirection to HTTPS and allow localhost by modifying
+``dolweb/settings.py``:
+
+    SECURE_SSL_REDIRECT = False
+
+    ALLOWED_HOSTS = ['localhost']
+
 Then run ``migrate`` to create a default database.
 
     python manage.py migrate
