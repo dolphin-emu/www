@@ -15,6 +15,7 @@
     <div class="col-md-9">
 
         {% block breadcrumbs %}{% endblock breadcrumbs  %}
+        <a href="{% url 'zinnia:entry_feed' %}" class="rss-tag pull-right" title="{% trans "RSS feed of the latest articles" %}"><i class="icon-rss"></i></a>
         {% block slider %}{% endblock slider %}
 
         {% block content %}{% endblock %}
