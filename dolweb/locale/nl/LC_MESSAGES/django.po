@@ -3,6 +3,7 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
+# Boris Peeters, 2019
 # Garteal <garteal@gmail.com>, 2013-2014,2016
 # Jos van Mourik, 2018
 msgid ""
@@ -10,7 +11,7 @@ msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-04-11 23:51+0200\n"
-"PO-Revision-Date: 2018-10-01 16:34+0000\n"
+"PO-Revision-Date: 2019-01-21 10:51+0000\n"
 "Last-Translator: Boris Peeters\n"
 "Language-Team: Dutch (http://www.transifex.com/delroth/dolphin-emu/language/nl/)\n"
 "MIME-Version: 1.0\n"
@@ -127,7 +128,7 @@ msgstr "Forum thread"
 #: blog/templates/zinnia/_entry_detail_base.html:63
 #, python-format
 msgid "Continue reading %(object)s"
-msgstr "Lees verder %(object)s"
+msgstr "%(object)s verder lezen"
 
 #: blog/templates/zinnia/_entry_detail_base.html:65
 msgid "Continue reading"
@@ -439,7 +440,7 @@ msgstr "Perfect"
 msgid ""
 "The Official Dolphin FAQ answers all the questions that people often ask "
 "about Dolphin."
-msgstr "De officiële Dolphin veelgestelde vragenlijst beantwoord vragen die men het vaakst stelt over Dolphin."
+msgstr "De officiële Dolphin veelgestelde vragen beantwoord vragen die men het vaakst stelt over Dolphin."
 
 #: docs/templates/docs-faq.html:8
 msgid "Frequently Asked Questions"
