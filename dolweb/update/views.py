@@ -15,11 +15,11 @@ def _make_up_to_date_response():
     return JsonResponse({"status": "up-to-date"})
 
 
-def _get_manifest_url(version):
+def _get_manifest_url(version, platform):
     first_hash = version.hash[:2]
     second_hash = version.hash[2:4]
-    return settings.UPDATE_MANIFEST_URL % (version.hash[0:2],
-                                           version.hash[2:4], version.hash[4:])
+    return settings.UPDATE_MANIFEST_URL % (platform,
+                                           version.hash[0:2], version.hash[2:4], version.hash[4:])
 
 
 def _changelog_from_dev_versions_list(versions):
@@ -41,20 +41,20 @@ def _changelog_from_update_track(versions):
     return changelog_entries
 
 
-def _serialize_version(version):
+def _serialize_version(version, platform):
     return {
         "hash": version.hash,
         "name": version.shortrev,
-        "manifest": _get_manifest_url(version),
+        "manifest": _get_manifest_url(version, platform),
     }
 
 
-def _make_outdated_response(old_version, new_version, changelog):
+def _make_outdated_response(old_version, new_version, platform, changelog):
     return JsonResponse({
         "status": "outdated",
         "content-store": settings.UPDATE_CONTENT_STORE_URL,
-        "old": _serialize_version(old_version),
-        "new": _serialize_version(new_version),
+        "old": _serialize_version(old_version, platform),
+        "new": _serialize_version(new_version, platform),
         "changelog": changelog,
     })
 
@@ -89,49 +89,65 @@ def latest(request, track):
     return JsonResponse(data)
 
 
-def check(request, updater_ver, track, version):
-    if updater_ver != "0":
+def check(request, updater_ver, track, version, platform):
+    if updater_ver != "0" and updater_ver != "1":
         return _error_response(400,
                                "Unsupported updater version %r" % updater_ver)
 
-    if track in settings.AUTO_MAINTAINED_UPDATE_TRACKS:
-        return _check_on_auto_maintained_track(request, track, version)
+    # Updater API v0 only supports Windows
+    if updater_ver == "0":
+        platform = "win"
     else:
-        return _check_on_manually_maintained_track(request, track, version)
+        if platform != "win" and platform != "macos":
+            return _error_response(400,
+                                   "Unsupported platform %r" % platform)
+
+    if track in settings.AUTO_MAINTAINED_UPDATE_TRACKS:
+        return _check_on_auto_maintained_track(request, track, version, platform)
+    else:
+        return _check_on_manually_maintained_track(request, track, version, platform)
 
 
-def _check_on_auto_maintained_track(request, track, version):
+def _check_on_auto_maintained_track(request, track, version, platform):
+
+    target_system = ('Windows x64' if platform == 'win' else 'macOS')
+
     # Find the current version and get its release date in order to select all
     # newer versions.
+
     branch = settings.AUTO_MAINTAINED_UPDATE_TRACKS[track]
     try:
         version = DevVersion.objects.get(branch=branch, hash=version)
     except DevVersion.DoesNotExist:
-        return _error_response(404, "No version %r on track %r (branch: %r)" %
-                               (version, track, branch))
+        return _error_response(404, "No version %r on track %r (branch: %r) for platform %r" %
+                               (version, track, branch, platform))
 
-    # TODO(delroth): We only support Windows for now.
     newer_versions = DevVersion.objects.filter(
         branch=branch,
         date__gt=version.date,
-        artifacts__target_system='Windows x64').order_by('-date')
+        artifacts__target_system=target_system).order_by('-date')
     if len(newer_versions) == 0:
         return _make_up_to_date_response()
     new_version = newer_versions[0]
     changelog = _changelog_from_dev_versions_list(newer_versions)
-    return _make_outdated_response(version, new_version, changelog)
+    return _make_outdated_response(version, new_version, platform, changelog)
 
 
-def _check_on_manually_maintained_track(request, track, version):
+def _check_on_manually_maintained_track(request, track, version, platform):
+
+    target_system = ('Windows x64' if platform == 'win' else 'macOS')
+
     try:
         version = DevVersion.objects.get(hash=version)
     except DevVersion.DoesNotExist:
         return _error_response(404, "No version %r exists" % version)
 
     newer_versions = UpdateTrack.objects.filter(
-        name=track, version__date__gt=version.date).order_by('-version__date')
+        name=track,
+        version__date__gt=version.date,
+        artifacts__target_system=target_system).order_by('-version__date')
     if len(newer_versions) == 0:
         return _make_up_to_date_response()
     new_version = newer_versions[0].version
     changelog = _changelog_from_update_track(newer_versions)
-    return _make_outdated_response(version, new_version, changelog)
+    return _make_outdated_response(version, new_version, platform, changelog)
