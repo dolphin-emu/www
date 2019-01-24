@@ -143,11 +143,11 @@ def _check_on_manually_maintained_track(request, track, version, platform):
         return _error_response(404, "No version %r exists" % version)
 
     newer_versions = UpdateTrack.objects.filter(
-        name=track,
-        version__date__gt=version.date,
-        artifacts__target_system=target_system).order_by('-version__date')
+        name=track, version__date__gt=version.date).order_by('-version__date')
     if len(newer_versions) == 0:
         return _make_up_to_date_response()
     new_version = newer_versions[0].version
+    if new_version.artifacts.filter(target_system=target_system).count() == 0:
+        return _make_up_to_date_response()
     changelog = _changelog_from_update_track(newer_versions)
     return _make_outdated_response(version, new_version, platform, changelog)
