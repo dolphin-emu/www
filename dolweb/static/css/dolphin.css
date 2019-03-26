@@ -584,6 +584,7 @@ div.draft-warning {
 .entry-content .media-block {
     margin-top: 2em;
     margin-bottom: 2em;
+    overflow: hidden;
 }
 
 @media (min-width: 768px) {
