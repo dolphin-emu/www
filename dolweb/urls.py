@@ -41,6 +41,9 @@ urlpatterns = [
 
     # Auto-update checking.
     url(r'^update/', include('dolweb.update.urls')),
+
+    # NetPlay Lobby
+    url(r'^lobby/', include('dolweb.lobby.urls'))
 ]
 
 urlpatterns += staticfiles_urlpatterns()

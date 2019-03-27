@@ -345,6 +345,16 @@ AUTO_MAINTAINED_UPDATE_TRACKS = {
 # URL of the update content store.
 UPDATE_CONTENT_STORE_URL = 'https://update.dolphin-emu.org/content/'
 
+# Max. characters in a lobby session name
+SESSION_MAX_NAME_LENGTH = 32
+
+# Amount of seconds after which an inactive session is removed
+SESSION_TIMEOUT_SECONDS = 15
+
+# Interval in which timed out sessions are removed
+SESSION_CLEANUP_INTERVAL = 20
+
+
 local_settings_file = os.path.join(PROJECT_ROOT, 'dolweb', 'local_settings.py')
 if os.path.exists(local_settings_file):
     local = compile(
