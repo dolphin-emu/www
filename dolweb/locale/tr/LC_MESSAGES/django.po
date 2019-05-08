@@ -5,14 +5,14 @@
 # Translators:
 # Bahadır Usta <bahadirusta@hotmail.com.tr>, 2017
 # Mustafa Can <m.can.elmaci@gmail.com>, 2013
-# Mustafa Can <m.can.elmaci@gmail.com>, 2013-2017
+# Mustafa Can <m.can.elmaci@gmail.com>, 2013-2017,2019
 msgid ""
 msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-04-11 23:51+0200\n"
-"PO-Revision-Date: 2017-09-19 15:02+0000\n"
-"Last-Translator: Bahadır Usta <bahadirusta@hotmail.com.tr>\n"
+"PO-Revision-Date: 2019-05-07 18:49+0000\n"
+"Last-Translator: Mustafa Can <m.can.elmaci@gmail.com>\n"
 "Language-Team: Turkish (http://www.transifex.com/delroth/dolphin-emu/language/tr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -318,7 +318,7 @@ msgstr "Bir kelime veya cümleyi hariç tutmak için -, birebir arama için &quo
 msgid ""
 "The Dolphin Emulator compatibility list contains all the games we tested, "
 "sorted by how well they work on the emulator."
-msgstr "Dolphin Emulator uyumluluk listesi, şu ana kadar test ettiğimiz bütün oyunları içerir."
+msgstr "Dolphin Emulator uyumluluk listesi şu ana kadar test ettiğimiz bütün oyunları kadar iyi çalıştıklarına göre sıralanmış şekilde içerir."
 
 #: compat/templates/compat-list.html:11
 #, python-format
@@ -355,7 +355,7 @@ msgstr "5 üzerinden 3"
 msgid ""
 "<strong>Starts</strong>: Starts, maybe even plays well, but crashes or major"
 " graphical/audio glitches."
-msgstr "<strong>Oyuna giriyor</strong>: Oyuna giriyor, oynanabiliyor, ama ileriki bölümlerde çöküyor veya büyük grafik ve ses sorunları var."
+msgstr "<strong>Açılıyor</strong>: Oyuna giriyor, belki de oynanabiliyor, ama çöküyor veya büyük grafik ve ses sorunları var."
 
 #: compat/templates/compat-list.html:29
 msgid "2 out of 5"
@@ -365,7 +365,7 @@ msgstr "5 üzerinden 2"
 msgid ""
 "<strong>Intro/Menu</strong>: Hangs/crashes somewhere between booting and "
 "starting."
-msgstr "<strong>Açılıyor</strong>: Oyuna girerken bir yerde donuyor veya çöküyor."
+msgstr "<strong>Giriş/Menü</strong>: Oyuna girerken bir yerde donuyor veya çöküyor."
 
 #: compat/templates/compat-list.html:30
 msgid "1 out of 5"
@@ -422,11 +422,11 @@ msgstr "Bozuk"
 
 #: compat/templatetags/compat.py:11
 msgid "Intro/Menu"
-msgstr "Açılıyor"
+msgstr "Giriş/Menü"
 
 #: compat/templatetags/compat.py:12
 msgid "Starts"
-msgstr "Oyuna giriyor"
+msgstr "Açılıyor"
 
 #: compat/templatetags/compat.py:13
 msgid "Playable"
@@ -440,7 +440,7 @@ msgstr "Mükemmel"
 msgid ""
 "The Official Dolphin FAQ answers all the questions that people often ask "
 "about Dolphin."
-msgstr "Resmi Dolphin SSS, insanların Dolphin hakkında sıkça sorduğu bütün soruları içerir."
+msgstr "Resmi Dolphin SSS insanların Dolphin hakkında sıkça sorduğu bütün soruları içerir."
 
 #: docs/templates/docs-faq.html:8
 msgid "Frequently Asked Questions"
@@ -531,7 +531,7 @@ msgid ""
 "\n"
 "    <p>The development versions require the <a href=\"https://www.microsoft.com/en-us/download/details.aspx?id=48145\">64-bit Visual C++ redistributable for Visual Studio 2015</a>\n"
 "    to be installed.</p>\n"
-msgstr "\n<p>Geliştirme sürümleri geliştiricilerin yaptığı her yeni değişimde, neredeyse her gün yeniden yayınlanan sürümlerdir. Bu sürümleri kullanmak yapılan en son değişiklikleri ve en yeni özellikleri test etmenize imkan sağlayacaktır. Ama geliştirme sürümleri test edilmediği için stabil olmayabilir. </p>\n\n<p>Geliştirme sürümleri, bilgisayarınızda <a href=\"https://www.microsoft.com/en-us/download/details.aspx?id=48145\">64-bit Visual Studio 2015 için Visual C++ Yeniden Dağıtılabilir</a> bileşeninin kurulu olmasını gerektirir.</p>\n"
+msgstr "\n<p>Geliştirme sürümleri geliştiricilerin yaptığı her yeni değişimde, neredeyse her gün yeniden yayınlanan sürümlerdir. Bu sürümleri kullanmak yapılan en son değişiklikleri ve en yeni özellikleri kullanmanıza imkan sağlayacaktır. Ama geliştirme sürümleri, kararlı sürümden daha az test edilmiştir. </p>\n\n<p>Geliştirme sürümleri, bilgisayarınızda <a href=\"https://www.microsoft.com/en-us/download/details.aspx?id=48145\">64-bit Visual Studio 2015 için Visual C++ Yeniden Dağıtılabilir</a> bileşeninin kurulu olmasını gerektirir.</p>\n"
 
 #: downloads/templates/downloads-index.html:63
 msgid "Stable versions"
@@ -576,7 +576,7 @@ msgid ""
 "    The latest version of the Dolphin source code can be downloaded from the\n"
 "    project Git repository.\n"
 "    "
-msgstr "\n    Dolphin'in son sürümünün kaynak kodu Git deposundan indirilebilir.\n    "
+msgstr "\n    Dolphin'in son sürümünün kaynak kodu projenin Git deposundan indirilebilir.\n    "
 
 #: downloads/templates/downloads-index.html:113
 #, python-format
@@ -588,7 +588,7 @@ msgstr "\nAyrıca <a href=\"%(GIT_BROWSE_URL)s\">şu anki kaynak koduna gözatab
 
 #: downloads/templates/downloads-index.html:120
 msgid "Reporting bugs"
-msgstr "Hataları raporlamak"
+msgstr "Hataları bildirmek"
 
 #: downloads/templates/downloads-index.html:122
 #, python-format
@@ -637,7 +637,7 @@ msgstr "Uygula"
 
 #: downloads/templates/downloads-view-devrel.html:48
 msgid "Change author"
-msgstr "Yazarı değiştir."
+msgstr "Yazarı değiştir"
 
 #: downloads/templates/downloads-view-devrel.html:51
 msgid "Change description"
@@ -668,7 +668,7 @@ msgid ""
 "            (1080p) with several enhancements: compatibility with all PC\n"
 "            controllers, turbo speed, networked multiplayer, and even more!\n"
 "            "
-msgstr "\n<b>Dolphin</b>, Nintendo'nun son iki konsolu için üretilen bir emulatördür: <b>GameCube</b> ve <b>Wii</b>. Bu emulatör, PC oyuncularına <b>GameCube</b> ve <b>Wii</b> oyunlarını <b>full HD</b> (1080p) ve birçok geliştirme ile oynamanızı sağlar. Bütün PC kumandaları ile uyumluluk, turbo hız, ağ üzerinden multiplayer ve daha fazlası!"
+msgstr "\n<b>Dolphin</b>, Nintendo'nun son iki konsolu için üretilen bir emulatördür: <b>GameCube</b> ve <b>Wii</b>. Bu emulatör, PC oyuncularına <b>GameCube</b> ve <b>Wii</b> oyunlarını <b>full HD</b> (1080p) ve birçok geliştirme ile oynamanızı sağlar. Bütün PC kontrolcüleriyle uyumluluk, turbo hız, ağ üzerinden multiplayer ve daha fazlası!"
 
 #: homepage/templates/homepage-home.html:48
 #, python-format
