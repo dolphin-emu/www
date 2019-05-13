@@ -4,14 +4,14 @@
 # 
 # Translators:
 # Pierre Bourdon <delroth@gmail.com>, 2013
-# Pascal <pascal2j-language@yahoo.com>, 2014-2015,2017-2018
+# Pascal <pascal2j-language@yahoo.com>, 2014-2015,2017-2019
 # Pierre Bourdon <delroth@gmail.com>, 2013-2014
 msgid ""
 msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-04-11 23:51+0200\n"
-"PO-Revision-Date: 2018-01-18 20:15+0000\n"
+"PO-Revision-Date: 2019-05-12 19:04+0000\n"
 "Last-Translator: Pascal <pascal2j-language@yahoo.com>\n"
 "Language-Team: French (http://www.transifex.com/delroth/dolphin-emu/language/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -118,12 +118,12 @@ msgstr "URL courte"
 #: blog/templates/zinnia/_entry_detail_base.html:46
 #: homepage/templates/homepage-home.html:138
 msgid "Visit forum thread for this article"
-msgstr "Visiter le thread du forum sur cet article"
+msgstr "Voir la discussion concernant cet article sur le forum"
 
 #: blog/templates/zinnia/_entry_detail_base.html:46
 #: homepage/templates/homepage-home.html:138
 msgid "Forum thread"
-msgstr "Thread sur le forum"
+msgstr "Discussion sur le forum"
 
 #: blog/templates/zinnia/_entry_detail_base.html:63
 #, python-format
