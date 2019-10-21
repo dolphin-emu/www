@@ -15,7 +15,7 @@ django-js-asset==1.1.0
 django-mptt==0.9.0
 django-tagging==0.4.6
 django-xmlrpc==0.1.8
-ecdsa==0.13
+ecdsa==0.13.3
 fabric==2.2.1
 Fabric3==1.14.post1
 idna==2.7
