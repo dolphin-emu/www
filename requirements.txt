@@ -23,7 +23,7 @@ invoke==1.1.0
 Markdown==2.6.11
 mots-vides==2015.5.11
 paramiko==2.4.1
-Pillow==5.2.0
+Pillow==6.2.0
 polib==1.1.0
 psycopg2-binary==2.7.5
 pyasn1==0.4.3
