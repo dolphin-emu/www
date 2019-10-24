@@ -1,27 +1,28 @@
 # Copyright (c) 2018 Dolphin Emulator Website Contributors
 # SPDX-License-Identifier: MIT
 
-from fabric.api import *
+from fabric import task
 
-env.user = 'dolphin-emu'
-env.hosts = ['ssh-dolphin-emu.alwaysdata.net']
+_HOSTS = ["dolphin-emu@ssh-dolphin-emu.alwaysdata.net"]
 
-def deploy(root, branch):
+def deploy(c, root, branch):
     activate = "source /home/dolphin-emu/venv/www/bin/activate"
-    with cd(root):
-        run("git fetch")
-        run("git checkout %s" % branch)
-        run("git reset --hard origin/%s" % branch)
-        run(activate + " && pip install -r requirements.txt")
-        run(activate + " && python manage.py collectstatic --noinput")
-        with cd("dolweb"):
-            run("msgfmt localefixes/locale/ko/LC_MESSAGES/django.po -o "
+    with c.cd(root):
+        c.run("git fetch")
+        c.run("git checkout %s" % branch)
+        c.run("git reset --hard origin/%s" % branch)
+        c.run(activate + " && pip install -r requirements.txt")
+        c.run(activate + " && python manage.py collectstatic --noinput")
+        with c.cd("dolweb"):
+            c.run("msgfmt localefixes/locale/ko/LC_MESSAGES/django.po -o "
                        "localefixes/locale/ko/LC_MESSAGES/django.mo")
-            run(activate + " && django-admin compilemessages")
-    run("scripts/restart-apps.sh")
+            c.run(activate + " && django-admin compilemessages")
+    c.run("scripts/restart-apps.sh")
 
-def deploy_stable():
-    deploy("/home/dolphin-emu/apps/www", "stable")
+@task(hosts=_HOSTS)
+def deploy_stable(c):
+    deploy(c, "/home/dolphin-emu/apps/www", "stable")
 
-def deploy_dev():
-    deploy("/home/dolphin-emu/apps/devwww", "master")
+@task(hosts=_HOSTS)
+def deploy_dev(c):
+    deploy(c, "/home/dolphin-emu/apps/devwww", "master")

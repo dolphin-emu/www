@@ -16,8 +16,6 @@ django-mptt==0.9.0
 django-tagging==0.4.6
 django-xmlrpc==0.1.8
 ecdsa==0.13
-fabric==2.2.1
-Fabric3==1.14.post1
 idna==2.7
 invoke==1.1.0
 Markdown==2.6.11
