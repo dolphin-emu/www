@@ -165,10 +165,10 @@ TEMPLATES = [
 ]
 
 MIDDLEWARE = (
+    'dolweb.utils.cache.DefaultCacheControlMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.middleware.http.ConditionalGetMiddleware',
     'debug_toolbar.middleware.DebugToolbarMiddleware',
-    'dolweb.utils.cache.DefaultCacheControlMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
