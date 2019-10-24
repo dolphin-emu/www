@@ -3,6 +3,7 @@
 
 from django.conf import settings
 from django.db import models
+from django.urls import reverse
 
 class NewsArticle(models.Model):
     """A news article which can be linked to a forum post for comments"""
@@ -22,6 +23,5 @@ class NewsArticle(models.Model):
     def forum_url(self):
         return settings.FORUM_URL + 'showthread.php?tid=%d' % self.forum_pid
 
-    @models.permalink
     def get_absolute_url(self):
-        return ('news_article', [self.slug])
+        return reverse('news_article', args=[self.slug])

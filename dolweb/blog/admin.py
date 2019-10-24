@@ -44,10 +44,9 @@ class BlogEntryAdminForm(EntryAdminForm):
 class BlogEntryAdmin(EntryAdmin):
     form = BlogEntryAdminForm
 
-    # In our case we put the gallery field into the 'Content' fieldset.
-    fieldsets = ((_('Content'), {'fields': (
-        'title', 'content', 'image', 'status', 'within_series')}),) + \
-        EntryAdmin.fieldsets[1:]
+    fieldsets = ((_('Content'), {
+        'fields': (('title', 'status'), 'lead', 'content', 'within_series')
+    }),) + EntryAdmin.fieldsets[1:]
 
 
 admin.site.register(Entry, BlogEntryAdmin)

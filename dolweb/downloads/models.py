@@ -3,6 +3,7 @@
 
 from django.conf import settings
 from django.db import models
+from django.urls import reverse
 from django.utils.safestring import mark_safe
 from django.utils.translation import ugettext as _
 from dolweb.utils import models_utils
@@ -38,9 +39,8 @@ class ReleaseVersion(DownloadableVersion):
     def __str__(self):
         return _("Dolphin %s") % self.version
 
-    @models.permalink
     def get_absolute_url(self):
-        return ('downloads_view_release', [self.version])
+        return reverse('downloads_view_release', args=[self.version])
 
 class DevVersion(DownloadableVersion):
     """Download infos for a developement/nightly release"""
@@ -64,9 +64,8 @@ class DevVersion(DownloadableVersion):
             version = u"%s-%s" % (self.branch, self.shortrev)
         return version
 
-    @models.permalink
     def get_absolute_url(self):
-        return ('downloads_view_devrel', (), { 'hash': self.hash })
+        return reverse('downloads_view_devrel', args=(), kwargs={ 'hash': self.hash })
 
     @property
     def description_data(self):

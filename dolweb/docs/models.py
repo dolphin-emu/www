@@ -59,9 +59,8 @@ class Guide(models.Model):
     def __str__(self):
         return self.title
 
-    @models.permalink
     def get_absolute_url(self):
-        return ('docs_guide', [self.slug])
+        return reverse('docs_guide', args=[self.slug])
 
     def get_wiki_url(self):
         return 'http://wiki.dolphin-emu.org/index.php?title=%s&useskin=guideembed' % self.wiki_page
