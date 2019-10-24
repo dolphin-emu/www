@@ -3,3 +3,4 @@
 local_settings.py
 /media/
 *.mo
+venv
