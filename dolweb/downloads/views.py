@@ -6,7 +6,9 @@ from django.conf import settings
 from django.core.paginator import EmptyPage
 from django.http import Http404, HttpResponse, JsonResponse
 from django.shortcuts import get_object_or_404
+from django.views.decorators.cache import cache_control
 from django.views.decorators.csrf import csrf_exempt
+from django.views.decorators.vary import vary_on_headers
 from dolweb.downloads.diggpaginator import DiggPaginator
 from dolweb.downloads.models import Artifact, BranchInfo, DevVersion, ReleaseVersion
 
@@ -16,6 +18,8 @@ import multiprocessing
 
 _addbuild_lock = multiprocessing.Lock()
 
+@cache_control(max_age=15)
+@vary_on_headers('User-Agent')
 @render_to('downloads-index.html')
 def index(request):
     """Displays the downloads index"""
@@ -29,6 +33,8 @@ def index(request):
     return { 'releases': releases, 'master_builds': master_builds,
              'last_master': last_master }
 
+@cache_control(max_age=15)
+@vary_on_headers('User-Agent')
 @render_to('downloads-branches.html')
 def branches(request):
     """Displays all the visible branches"""
@@ -45,6 +51,7 @@ def branches(request):
 
     return { 'branches': branches }
 
+@cache_control(max_age=15)
 def buildlist(request):
     """Displays a list of builds from buildbot for the bisect tool"""
     master_builds = DevVersion.objects.filter(branch='master').order_by('-date')
@@ -53,18 +60,22 @@ def buildlist(request):
         shortrev_list.append(build.shortrev)
     return JsonResponse(shortrev_list, safe=False)
 
+@vary_on_headers('User-Agent')
 @render_to('downloads-view-devrel.html')
 def view_dev_release(request, hash):
     release = get_object_or_404(DevVersion, hash=hash)
 
     return { 'ver': release }
 
+@vary_on_headers('User-Agent')
 @render_to('downloads-view-devrel.html')
 def view_dev_release_by_name(request, branch, name):
     release = get_object_or_404(DevVersion, branch=branch, shortrev=name)
 
     return { 'ver': release }
 
+@cache_control(max_age=15)
+@vary_on_headers('User-Agent')
 @render_to('downloads-list.html')
 def list(request, branch, page):
     if page is None:
@@ -140,6 +151,7 @@ def new(request):
 
     return HttpResponse('OK')
 
+@cache_control(max_age=15)
 def get_latest(request, branch):
     """Callback used by the emulator to get the latest version on a branch."""
 

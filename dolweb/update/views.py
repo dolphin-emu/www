@@ -3,6 +3,7 @@
 
 from django.conf import settings
 from django.http import HttpResponseBadRequest, HttpResponseNotFound, JsonResponse
+from django.views.decorators.cache import cache_control
 from dolweb.downloads.models import DevVersion
 from dolweb.update.models import UpdateTrack
 
@@ -59,6 +60,7 @@ def _make_outdated_response(old_version, new_version, platform, changelog):
     })
 
 
+@cache_control(max_age=15)
 def latest(request, track):
     if track in settings.AUTO_MAINTAINED_UPDATE_TRACKS:
         version = DevVersion.objects.filter(
@@ -89,6 +91,7 @@ def latest(request, track):
     return JsonResponse(data)
 
 
+@cache_control(max_age=15)
 def check(request, updater_ver, track, version, platform):
     if updater_ver != "0" and updater_ver != "1":
         return _error_response(400,
