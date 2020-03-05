@@ -3,6 +3,7 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
+# enolp <enolp@softastur.org>, 2020
 # Ḷḷumex03 <tornes@opmbx.org>, 2013-2014
 # Ḷḷumex03 <tornes@opmbx.org>, 2014
 # Ḷḷumex03 <tornes@opmbx.org>, 2015
@@ -11,8 +12,8 @@ msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-04-11 23:51+0200\n"
-"PO-Revision-Date: 2017-09-23 19:14+0000\n"
-"Last-Translator: Pierre Bourdon <delroth@gmail.com>\n"
+"PO-Revision-Date: 2020-03-04 12:17+0000\n"
+"Last-Translator: enolp <enolp@softastur.org>\n"
 "Language-Team: Asturian (http://www.transifex.com/delroth/dolphin-emu/language/ast/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -139,7 +140,7 @@ msgstr "Siguir lleendo"
 msgid ""
 "You can continue the discussion in the <a href=\"%(url)s\" title=\"Visit "
 "forum thread for this article\">forum thread</a> of this article."
-msgstr "Pues siguir l'alderique nel <a href=\"%(url)s\" title=\"Visita'l filu l'artículu nel foru\">filu</a> d'esti artículu."
+msgstr "Pues siguir el discutiniu nel <a href=\"%(url)s\" title=\"Visit forum thread for this article\">filu</a> d'esti artículu, nel foru."
 
 #: blog/templates/zinnia/_entry_detail_base.html:85
 #, python-format
@@ -335,7 +336,7 @@ msgstr "5 de 5"
 
 #: compat/templates/compat-list.html:26
 msgid "<strong>Perfect</strong>: No issues at all!"
-msgstr "<strong>Perfeuto</strong>: ¡Nun hai denguna torga!"
+msgstr "<strong>Perfeuto</strong>: ¡Nun hai problemes!"
 
 #: compat/templates/compat-list.html:27
 msgid "4 out of 5"
@@ -726,7 +727,7 @@ msgstr "Fallu internu del sirvidor"
 msgid ""
 "There was an error while trying to access this page. Please refresh the page"
 " in a few seconds."
-msgstr "Hebo un fallu entrín s'intentaba acceder a esta páxina. Por favor, refresca la páxina nunos segundos."
+msgstr "Hebo un fallu mentanto se tentaba d'acceder a esta páxina. Refresca la páxina nun momentu, por favor."
 
 #: templates/_base.html:23
 msgid "Latest blog articles"
@@ -734,7 +735,7 @@ msgstr "Artículos caberos del blogue"
 
 #: templates/_base.html:73
 msgid "Blog"
-msgstr ""
+msgstr "Blogue"
 
 #: templates/_base.html:74
 msgid "Screenshots"
