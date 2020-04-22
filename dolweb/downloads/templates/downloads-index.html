@@ -30,15 +30,17 @@ src="//pagead2.googlesyndication.com/pagead/show_ads.js">
 <div id="download-dev">
 <h1>{% trans "Development versions" %}</h1>
 
-<div class="alert">{% blocktrans %}
-    <p>Development versions are released every time a developer makes a change to
+<div class="alert alert-info">
+    <p>{% blocktrans %}Development versions are released every time a developer makes a change to
     Dolphin, several times every day! Using development versions enables you to
     use the latest and greatest improvements to the project. They are however
-    less tested than stable versions of the emulator.</p>
-{% endblocktrans %}</div>
+    less tested than stable versions of the emulator.{% endblocktrans %}</p>
+</div>
 
-<p style="font-size: 17px">{% blocktrans %}The development versions <b>require</b> the <a href="https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads">64-bit Visual C++ redistributable for Visual Studio 2019</a> to be installed.{% endblocktrans %}</p>
-
+<div class="alert alert-danger">
+    <p>{% blocktrans %}The development versions <b>require</b> the <a href="https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads">64-bit Visual C++ redistributable for Visual Studio 2019</a> to be installed.{% endblocktrans %}</p>
+</div>
+    
 {% include "downloads-devrel.html" with builds=master_builds primclass='btn-info' %}
 
 <p><a class="btn" href="{% url 'downloads_list' "master" 1 %}">{% trans "View older versions »" %}</a></p>
