@@ -27,6 +27,23 @@ src="//pagead2.googlesyndication.com/pagead/show_ads.js">
     <h1>{% trans "Download" %}</h1>
 </div>
 
+<div id="download-beta">
+<h1>{% trans "Beta versions" %}</h1>
+
+<div class="alert">{% blocktrans %}
+    <p>Beta versions are released every month, usually accompanied by a
+    <em>Progress Report</em> article. They are a good balance between the Dolphin
+    <a href="#download-dev">development versions</a> and the
+    <a href="#download-stable">stable versions</a>.</p>
+
+    <div class="alert alert-info">The beta versions require the <a href="https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads">64-bit Visual C++ redistributable for Visual Studio 2019</a>
+    to be installed.</div>
+{% endblocktrans %}</div>
+
+{% include "downloads-devrel.html" with builds=beta_builds primclass='btn-info' %}
+
+</div>
+
 <div id="download-dev">
 <h1>{% trans "Development versions" %}</h1>
 
