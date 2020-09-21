@@ -54,11 +54,12 @@ def branches(request):
 @cache_control(max_age=15)
 def buildlist(request):
     """Displays a list of builds from buildbot for the bisect tool"""
-    master_builds = DevVersion.objects.filter(branch='master').order_by('-date')
-    shortrev_list = []
+    master_builds = Artifact.objects.filter(branch='master').order_by('-date')
+    builds_list = []
     for build in master_builds:
-        shortrev_list.append(build.shortrev)
-    return JsonResponse(shortrev_list, safe=False)
+        rev_info = [build.shortrev,  build.url]
+        builds_list.append(rev_info)
+    return JsonResponse(builds_list, safe=False)
 
 @vary_on_headers('User-Agent')
 @render_to('downloads-view-devrel.html')
