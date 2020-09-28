@@ -8,7 +8,7 @@ from django.utils.safestring import mark_safe
 from django.utils.translation import ugettext as _
 from dolweb.utils import models_utils
 
-import cgi
+import html
 import re
 
 PULL_REQUEST_FIRSTLINE_RE = re.compile(
@@ -106,13 +106,13 @@ class DevVersion(DownloadableVersion):
             additional_html = additional_html_fmt % {
                 'pr_url': data['pr_url'],
                 'pr_id': data['pr_id'],
-                'author_url': cgi.escape(data['author_url']),
-                'author': cgi.escape(data['author']),
+                'author_url': html.escape(data['author_url']),
+                'author': html.escape(data['author']),
             }
         else:
             additional_html = ''
 
-        short_descr = cgi.escape(data['short_descr'])
+        short_descr = html.escape(data['short_descr'])
         if additional_html:
             short_descr = short_descr + ' ' + additional_html
         return mark_safe(short_descr)
