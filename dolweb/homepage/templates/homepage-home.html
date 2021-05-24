@@ -130,7 +130,7 @@
                   {% trans "Written on" %}
                   {% endif %}
                   {% endwith %}
-                  <abbr class="published" title="{{ article.creation_date|date:"c" }}">{{ article.creation_date|date:"DATE_FORMAT" }}</abbr>
+                  <abbr class="published" title="{{ article.publication_date|date:"c" }}">{{ article.publication_date|date:"DATE_FORMAT" }}</abbr>
                   {% if article.within_series %}
                   {% url 'dolweb_blog_series' uid=article.within_series.pk as series_url %}
                   {% blocktrans with url=series_url name=article.within_series.name %}/ Part of series <a href="{{ url }}">{{ name}}</a>{% endblocktrans %}

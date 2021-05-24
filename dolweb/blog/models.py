@@ -25,7 +25,7 @@ class BlogSeries(models.Model):
 
     @property
     def entries_reversed(self):
-        return self.entries.order_by('creation_date')
+        return self.entries.order_by('publication_date')
 
     def nth_entry(self, nth, allow_hidden=False):
         """Returns the 1-indexed nth article in series."""
@@ -37,7 +37,7 @@ class BlogSeries(models.Model):
             qs = qs.filter(status=PUBLISHED)
 
         try:
-            return qs.order_by('creation_date')[nth - 1]
+            return qs.order_by('publication_date')[nth - 1]
         except IndexError:
             return None
 
@@ -117,7 +117,7 @@ class BlogEntry(AbstractEntry):
             return 1
 
         return (self.within_series.entries
-            .filter(creation_date__lt=self.creation_date)
+            .filter(publication_date__lt=self.publication_date)
             .exclude(pk=self.pk)
             .count()) + 1
 
