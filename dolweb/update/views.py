@@ -7,6 +7,14 @@ from django.views.decorators.cache import cache_control
 from dolweb.downloads.models import DevVersion
 from dolweb.update.models import UpdateTrack
 
+# XXX: This is an ugly abstraction break. It should likely be a property of the
+# artifact instead.
+_UPDATE_SYSTEM_TO_ARTIFACT_NAME = {
+    'win': 'Windows x64',
+    'macos': 'macOS (Intel)',
+    'macos-universal': 'macOS (ARM/Intel Universal)',
+}
+
 
 def _error_response(code, msg):
     return JsonResponse({"error": msg}, status=code)
@@ -112,8 +120,10 @@ def check(request, updater_ver, track, version, platform):
 
 
 def _check_on_auto_maintained_track(request, track, version, platform):
-
-    target_system = ('Windows x64' if platform == 'win' else 'macOS')
+    try:
+        target_system = _UPDATE_SYSTEM_TO_ARTIFACT_NAME[platform]
+    except KeyError:
+        return _error_response(404, "Unknown platform %r" % platform)
 
     # Find the current version and get its release date in order to select all
     # newer versions.
@@ -137,8 +147,10 @@ def _check_on_auto_maintained_track(request, track, version, platform):
 
 
 def _check_on_manually_maintained_track(request, track, version, platform):
-
-    target_system = ('Windows x64' if platform == 'win' else 'macOS')
+    try:
+        target_system = _UPDATE_SYSTEM_TO_ARTIFACT_NAME[platform]
+    except KeyError:
+        return _error_response(404, "Unknown platform %r" % platform)
 
     try:
         version = DevVersion.objects.get(hash=version)
