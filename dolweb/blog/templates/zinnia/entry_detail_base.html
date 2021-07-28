@@ -9,6 +9,8 @@
   {% if object.real_image %}
     <meta property="og:image" content="{{ MEDIA_URL }}{{ object.real_image }}">
   {% endif %}
+  <meta property="og:title" content="{{ object.title }}">
+  <meta property="og:type" content="article">
 {% endblock %}
 
 {% block meta-keywords %}{% if object.tags %}{{ object.tags }}{% else %}{{ block.super }}{% endif %}{% endblock %}
