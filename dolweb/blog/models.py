@@ -14,6 +14,22 @@ from zinnia.managers import PUBLISHED
 from zinnia.models_bases.entry import AbstractEntry
 
 
+def render_to_html(content):
+    if MARKUP_LANGUAGE == 'markdown':
+        # TODO: Remove when Zinnia supports non-string Markdown exts.
+        import markdown
+        from zinnia.settings import MARKDOWN_EXTENSIONS
+        from django.utils.encoding import force_text
+        return markdown.markdown(force_text(content),
+                                 extensions=MARKDOWN_EXTENSIONS,
+                                 safe_mode=False)
+    elif MARKUP_LANGUAGE == 'textile':
+        return textile(content)
+    elif MARKUP_LANGUAGE == 'restructuredtext':
+        return restructuredtext(content)
+    return linebreaks(content)
+
+
 class BlogSeries(models.Model):
     """Represents a date-ordered sequence of blog entries."""
 
@@ -87,19 +103,17 @@ class BlogEntry(AbstractEntry):
         """
         Returns the "content" field formatted in HTML.
         """
-        if MARKUP_LANGUAGE == 'markdown':
-            # TODO: Remove when Zinnia supports non-string Markdown exts.
-            import markdown
-            from zinnia.settings import MARKDOWN_EXTENSIONS
-            from django.utils.encoding import force_text
-            return markdown.markdown(force_text(self.content),
-                                     extensions=MARKDOWN_EXTENSIONS,
-                                     safe_mode=False)
-        elif MARKUP_LANGUAGE == 'textile':
-            return textile(self.content)
-        elif MARKUP_LANGUAGE == 'restructuredtext':
-            return restructuredtext(self.content)
-        return linebreaks(self.content)
+        return render_to_html(self.content)
+
+    # While Zinnia provides html_preview for HTML rendered excerpts,
+    # that property doesn't allow custom article excerpts, so we need to roll
+    # our own rendered excerpt property.
+    @property
+    def html_excerpt(self):
+        """
+        Returns the "excerpt" field formatted in HTML.
+        """
+        return render_to_html(self.excerpt)
 
     @property
     def real_image(self):
