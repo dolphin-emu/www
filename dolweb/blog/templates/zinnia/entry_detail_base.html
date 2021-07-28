@@ -1,16 +1,16 @@
 {% extends "zinnia/base.html" %}
-{% load i18n comments zinnia %}
+{% load i18n comments zinnia blog_tags %}
 
 {% block "title" %}{{ object.title }}{% endblock %}
 
-{% block "metadescr" %}{% if object.excerpt %}{{ object.excerpt|striptags }}{% else %}{{ object.content|striptags|truncatewords:100 }}{% endif %}{% endblock %}
+{% block "metadescr" %}{% if object.excerpt %}{{ object.html_preview|striptags|strip }}{% else %}{{ object.html_content|striptags|truncatewords:100 }}{% endif %}{% endblock %}
 
 {% block "extra_og_meta_tags" %}
   {% if object.real_image %}
     <meta property="og:image" content="{{ MEDIA_URL }}{{ object.real_image }}">
   {% endif %}
   <meta property="og:title" content="{{ object.title }}">
-  <meta property="og:description" content="{% if object.excerpt %}{{ object.excerpt|striptags }}{% else %}{{ object.content|striptags|truncatewords:80 }}{% endif %}">
+  <meta property="og:description" content="{% if object.excerpt %}{{ object.html_preview|striptags|strip }}{% else %}{{ object.html_content|striptags|truncatewords:80 }}{% endif %}">
   <meta property="og:type" content="article">
   <meta property="og:article:published_time" content="{{ object.publication_date|date:"c" }}">
 {% endblock %}

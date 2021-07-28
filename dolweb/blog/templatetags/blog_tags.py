@@ -24,3 +24,8 @@ def cuthere_excerpt(content):
         return ''.join(map(str, reversed(cut_here.parent.find_previous_siblings())))
     except AttributeError:
         return defaultfilters.truncatewords(content, 100)
+
+
+@register.filter
+def strip(content):
+    return str(content).strip()
