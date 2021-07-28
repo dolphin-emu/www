@@ -10,7 +10,9 @@
     <meta property="og:image" content="{{ MEDIA_URL }}{{ object.real_image }}">
   {% endif %}
   <meta property="og:title" content="{{ object.title }}">
+  <meta property="og:description" content="{% if object.excerpt %}{{ object.excerpt|striptags }}{% else %}{{ object.content|striptags|truncatewords:80 }}{% endif %}">
   <meta property="og:type" content="article">
+  <meta property="og:article:published_time" content="{{ object.publication_date|date:"c" }}">
 {% endblock %}
 
 {% block meta-keywords %}{% if object.tags %}{{ object.tags }}{% else %}{{ block.super }}{% endif %}{% endblock %}
