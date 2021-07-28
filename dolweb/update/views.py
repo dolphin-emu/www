@@ -109,7 +109,7 @@ def check(request, updater_ver, track, version, platform):
     if updater_ver == "0":
         platform = "win"
     else:
-        if platform != "win" and platform != "macos":
+        if platform != "win" and platform != "macos" and platform != "macos-universal":
             return _error_response(400,
                                    "Unsupported platform %r" % platform)
 
