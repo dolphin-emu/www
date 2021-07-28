@@ -5,6 +5,12 @@
 
 {% block "metadescr" %}{% if object.excerpt %}{{ object.excerpt|striptags }}{% else %}{{ object.content|striptags|truncatewords:100 }}{% endif %}{% endblock %}
 
+{% block "extra_og_meta_tags" %}
+  {% if object.real_image %}
+    <meta property="og:image" content="{{ MEDIA_URL }}{{ object.real_image }}">
+  {% endif %}
+{% endblock %}
+
 {% block meta-keywords %}{% if object.tags %}{{ object.tags }}{% else %}{{ block.super }}{% endif %}{% endblock %}
 
 {% block link %}

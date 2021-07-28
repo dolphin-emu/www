@@ -109,9 +109,6 @@
         <h2 class="latest-articles">{% trans "Latest articles" %}</h2>
         {% for article in home_articles %}
         <div class="well">
-            {% thumbnail article.real_image "48x48" crop="center" format="PNG" as im %}
-            <img src="{{ im.url }}" alt="{{ object.title }}" class="side-thumb thumbnail" width="{{ im.width }}" height="{{ im.height }}" />
-            {% endthumbnail %}
             <h3><a href="{{ article.get_absolute_url }}" title="{{ article.title }}" rel="bookmark">
                 {{ article.title }}
             </a></h3>

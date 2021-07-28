@@ -7,9 +7,6 @@
   {% endif %}
   {% block entry-header %}
   <div class="entry-header">
-    {% thumbnail object.real_image "48x48" crop="center" format="PNG" as im %}
-    <img src="{{ im.url }}" alt="{{ object.title }}" class="side-thumb thumbnail" width="{{ im.width }}" height="{{ im.height }}" />
-    {% endthumbnail %}
     {% block entry-title %}
     <h2 class="entry-title">
       <a href="{{ object.get_absolute_url }}" title="{{ object.title }}" rel="bookmark">
