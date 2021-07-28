@@ -7,6 +7,7 @@ register = Library()
 from bs4 import BeautifulSoup
 from django.conf import settings
 from django.template import defaultfilters
+from django.urls import reverse
 from dolweb.blog.models import BlogSeries
 
 @register.inclusion_tag('blog_chunk_series.html')
@@ -24,3 +25,10 @@ def cuthere_excerpt(content):
         return ''.join(map(str, reversed(cut_here.parent.find_previous_siblings())))
     except AttributeError:
         return defaultfilters.truncatewords(content, 100)
+
+
+@register.simple_tag
+def navactive(request, urls):
+    if request.path in ( reverse(url) for url in urls.split() ):
+        return "active"
+    return ""

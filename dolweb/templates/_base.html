@@ -1,6 +1,7 @@
 {% load i18n %}
 {% load language %}
 {% load static from staticfiles %}
+{% load blog_tags %}
 
 <!DOCTYPE html>
 
@@ -101,15 +102,33 @@
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav pull-left">
-                        <li><a href="{% url 'downloads_index' %}">{% trans "Download" %}</a></li>
-                        <li><a href="{% url 'zinnia:entry_archive_index' %}">{% trans "Blog" %}</a></li>
-                        <li><a href="{% url 'media_all' %}">{% trans "Screenshots" %}</a></li>
-                        <li><a href="{% url 'docs_faq' %}">{% trans "FAQ" %}</a></li>
-                        <li><a href="{% url 'docs_guides_index' %}">{% trans "Guides" %}</a></li>
-                        <li><a href="{% url 'compat_index' %}">{% trans "Compatibility" %}</a></li>
-                        <li><a href="{{ FORUM_URL }}">{% trans "Forum" %}</a></li>
-                        <li><a href="{{ WIKI_URL }}">{% trans "Wiki" %}</a></li>
-                        <li><a href="{{ GIT_BROWSE_URL }}">{% trans "Code" %}</a></li>
+                        <li class="{% navactive request 'downloads_index' %}">
+                          <a href="{% url 'downloads_index' %}">{% trans "Download" %}</a>
+                        </li>
+                        <li class="{% navactive request 'zinnia:entry_archive_index' %}">
+                          <a href="{% url 'zinnia:entry_archive_index' %}">{% trans "Blog" %}</a>
+                        </li>
+                        <li class="{% navactive request 'media_all' %}">
+                          <a href="{% url 'media_all' %}">{% trans "Screenshots" %}</a>
+                        </li>
+                        <li class="{% navactive request 'docs_faq' %}">
+                          <a href="{% url 'docs_faq' %}">{% trans "FAQ" %}</a>
+                        </li>
+                        <li class="{% navactive request 'docs_guides_index' %}">
+                          <a href="{% url 'docs_guides_index' %}">{% trans "Guides" %}</a>
+                        </li>
+                        <li class="{% navactive request 'compat_index' %}">
+                          <a href="{% url 'compat_index' %}">{% trans "Compatibility" %}</a>
+                        </li>
+                        <li>
+                          <a href="{{ FORUM_URL }}">{% trans "Forum" %}</a>
+                        </li>
+                        <li>
+                          <a href="{{ WIKI_URL }}">{% trans "Wiki" %}</a>
+                        </li>
+                        <li>
+                          <a href="{{ GIT_BROWSE_URL }}">{% trans "Code" %}</a>
+                        </li>
                     </ul>
                     <ul class="nav navbar-nav pull-right">
                         <li class="dropdown">
