@@ -8,6 +8,7 @@
 {% block "extra_og_meta_tags" %}
   {% if object.real_image %}
     <meta property="og:image" content="{{ MEDIA_URL }}{{ object.real_image }}">
+    <meta name="twitter:card" content="summary_large_image">
   {% endif %}
   <meta property="og:title" content="{{ object.title }}">
   <meta property="og:description" content="{% if object.excerpt %}{{ object.html_preview|striptags|strip }}{% else %}{{ object.html_content|striptags|truncatewords:80 }}{% endif %}">
