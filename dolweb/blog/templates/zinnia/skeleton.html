@@ -8,11 +8,8 @@
 
 {% block "body" %}
 
-<div class="row" style="margin-top: 1em">
-    <div class="col-md-3">
-        {% include "blog_sidebar.html" %}
-    </div>
-    <div class="col-md-9">
+<div class="row">
+    <div class="col-md-9 col-md-push-3" style="margin-top: 1em">
 
         {% block breadcrumbs %}{% endblock breadcrumbs  %}
         <a href="{% url 'zinnia:entry_feed' %}" class="rss-tag pull-right" title="{% trans "RSS feed of the latest articles" %}"><i class="icon-rss"></i></a>
@@ -20,6 +17,9 @@
 
         {% block content %}{% endblock %}
 
+    </div>
+    <div class="col-md-3 col-md-pull-9" style="margin-top: 1em">
+        {% include "blog_sidebar.html" %}
     </div>
 </div>
 
