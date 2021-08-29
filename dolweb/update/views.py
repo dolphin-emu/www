@@ -58,12 +58,12 @@ def _serialize_version(version, platform):
     }
 
 
-def _make_outdated_response(old_version, new_version, platform, changelog):
+def _make_outdated_response(old_version, new_version, old_platform, new_platform, changelog):
     return JsonResponse({
         "status": "outdated",
         "content-store": settings.UPDATE_CONTENT_STORE_URL,
-        "old": _serialize_version(old_version, platform),
-        "new": _serialize_version(new_version, platform),
+        "old": _serialize_version(old_version, old_platform),
+        "new": _serialize_version(new_version, new_platform),
         "changelog": changelog,
     })
 
@@ -113,17 +113,20 @@ def check(request, updater_ver, track, version, platform):
             return _error_response(400,
                                    "Unsupported platform %r" % platform)
 
+    old_platform = platform
+    new_platform = platform
+
     if track in settings.AUTO_MAINTAINED_UPDATE_TRACKS:
-        return _check_on_auto_maintained_track(request, track, version, platform)
+        return _check_on_auto_maintained_track(request, track, version, old_platform, new_platform)
     else:
-        return _check_on_manually_maintained_track(request, track, version, platform)
+        return _check_on_manually_maintained_track(request, track, version, old_platform, new_platform)
 
 
-def _check_on_auto_maintained_track(request, track, version, platform):
+def _check_on_auto_maintained_track(request, track, version, old_platform, new_platform):
     try:
-        target_system = _UPDATE_SYSTEM_TO_ARTIFACT_NAME[platform]
+        target_system = _UPDATE_SYSTEM_TO_ARTIFACT_NAME[new_platform]
     except KeyError:
-        return _error_response(404, "Unknown platform %r" % platform)
+        return _error_response(404, "Unknown platform %r" % new_platform)
 
     # Find the current version and get its release date in order to select all
     # newer versions.
@@ -133,7 +136,7 @@ def _check_on_auto_maintained_track(request, track, version, platform):
         version = DevVersion.objects.get(branch=branch, hash=version)
     except DevVersion.DoesNotExist:
         return _error_response(404, "No version %r on track %r (branch: %r) for platform %r" %
-                               (version, track, branch, platform))
+                               (version, track, branch, new_platform))
 
     newer_versions = DevVersion.objects.filter(
         branch=branch,
@@ -143,14 +146,14 @@ def _check_on_auto_maintained_track(request, track, version, platform):
         return _make_up_to_date_response()
     new_version = newer_versions[0]
     changelog = _changelog_from_dev_versions_list(newer_versions)
-    return _make_outdated_response(version, new_version, platform, changelog)
+    return _make_outdated_response(version, new_version, old_platform, new_platform, changelog)
 
 
-def _check_on_manually_maintained_track(request, track, version, platform):
+def _check_on_manually_maintained_track(request, track, version, old_platform, new_platform):
     try:
-        target_system = _UPDATE_SYSTEM_TO_ARTIFACT_NAME[platform]
+        target_system = _UPDATE_SYSTEM_TO_ARTIFACT_NAME[new_platform]
     except KeyError:
-        return _error_response(404, "Unknown platform %r" % platform)
+        return _error_response(404, "Unknown platform %r" % new_platform)
 
     try:
         version = DevVersion.objects.get(hash=version)
@@ -165,4 +168,4 @@ def _check_on_manually_maintained_track(request, track, version, platform):
     if new_version.artifacts.filter(target_system=target_system).count() == 0:
         return _make_up_to_date_response()
     changelog = _changelog_from_update_track(newer_versions)
-    return _make_outdated_response(version, new_version, platform, changelog)
+    return _make_outdated_response(version, new_version, old_platform, new_platform, changelog)
