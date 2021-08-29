@@ -116,6 +116,10 @@ def check(request, updater_ver, track, version, platform):
     old_platform = platform
     new_platform = platform
 
+    # Migrate macOS (Intel) users to universal macOS builds.
+    if old_platform == "macos":
+        new_platform = "macos-universal"
+
     if track in settings.AUTO_MAINTAINED_UPDATE_TRACKS:
         return _check_on_auto_maintained_track(request, track, version, old_platform, new_platform)
     else:
