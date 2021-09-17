@@ -79,10 +79,9 @@
     <h4>{% trans "Blog series" %}</h4>
     {% url 'dolweb_blog_series' uid=object.within_series.pk as series_url %}
     <p>{% blocktrans with nth=object.series_index url=series_url series=object.within_series %}This article is number {{ nth }} within the blog series
-    <a href="{{ url }}"><em>{{ series }}</em></a>.{% endblocktrans %} {# </p> #}
+    <a href="{{ url }}"><em>{{ series }}</em></a>.{% endblocktrans %}
     {% with previous=object.previous_entry_in_series next=object.next_entry_in_series %}
     {% if previous or next %}
-    {# <p> #}
       {% if previous %}<a href="{{ previous.get_absolute_url }}">{% trans "‹ Previous article in series" %}</a>{% endif %}
       {% if previous and next %}/{% endif %}
       {% if next %}<a href="{{ next.get_absolute_url }}">{% trans "Next article in series ›" %}</a>{% endif %}
@@ -92,43 +91,6 @@
     {% endif %}
     {% endblock %}
     {% block entry-comments %}
-    {% comment %}
-    <p class="entry-comments">
-      <strong>{% trans "Discussions" %}</strong> :
-      {% with comment_count=object.comment_count %}
-      {% if comment_count %}
-      <a href="{{ object.get_absolute_url }}#comments"
-         title="{% blocktrans with object=object.title %}Comments on {{ object }}{% endblocktrans %}">
-        {% blocktrans count comment_count=comment_count %}{{ comment_count }} comment{% plural %}{{ comment_count }} comments{% endblocktrans %}
-      </a>
-      {% else %}
-      {% if object.comments_are_open %}
-      {% trans "No comments yet." %}
-      <a href="{{ object.get_absolute_url }}#comment-form"
-         title="{% blocktrans with object=object.title %}Leave a comment on {{ object }}{% endblocktrans %}">
-        {% trans "Be first to comment!" %}
-      </a>
-      {% else %}
-      {% trans "Comments are closed." %}
-      {% endif %}
-      {% endif %}
-      {% endwith %}
-      {% with pingback_count=object.pingback_count %}
-      {% if pingback_count %}
-      , <a href="{{ object.get_absolute_url }}#pingbacks" title="{% blocktrans with object=object.title %}Pingbacks on {{ object }}{% endblocktrans %}">
-        {% blocktrans count pingback_count=pingback_count %}{{ pingback_count }} pingback{% plural %}{{ pingback_count }} pingbacks{% endblocktrans %}
-      </a>
-      {% endif %}
-      {% endwith %}
-      {% with trackback_count=object.trackback_count %}
-      {% if trackback_count %}
-      , <a href="{{ object.get_absolute_url }}#trackbacks" title="{% blocktrans with object=object.title %}Trackbacks on {{ object }}{% endblocktrans %}">
-        {% blocktrans count trackback_count=trackback_count %}{{ trackback_count }} trackback{% plural %}{{ trackback_count }} trackbacks{% endblocktrans %}
-      </a>
-      {% endif %}
-      {% endwith %}
-    </p>
-    {% endcomment %}
     {% endblock %}
     </div>
 

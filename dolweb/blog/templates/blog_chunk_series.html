@@ -1,6 +1,5 @@
 <ul class="blog-series">
 {% for series in recent_series %}
-{# <li><a href="{% url 'dolweb.blog.views.series_view' uid=series.pk %}">{{ series.name }}</a></li> #}
 <li><a href="{% url 'dolweb_blog_series' uid=series.pk %}">{{ series.name }}</a></li>
 {% endfor %}
 </ul>
