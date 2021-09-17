@@ -31,10 +31,9 @@ src="//pagead2.googlesyndication.com/pagead/show_ads.js">
 <h1>{% trans "Beta versions" %}</h1>
     
 <div class="alert alert-info">{% blocktrans %}
-    <p>Beta versions are released every month, usually accompanied by a
-    <em>Progress Report</em> article. They are a good balance between the Dolphin
-    <a href="#download-dev">development versions</a> and the
-    <a href="#download-stable">stable versions</a>.</p>
+    <p>Beta versions are released every month, usually accompanied by a <em>Progress Report</em>
+    article. Use the latest beta version if you prefer stability over the newest features in the
+    <a href="#download-dev">development versions</a>.</p>
 {% endblocktrans %}</div>
 
 <div class="alert alert-danger">
@@ -52,7 +51,7 @@ src="//pagead2.googlesyndication.com/pagead/show_ads.js">
     <p>{% blocktrans %}Development versions are released every time a developer makes a change to
     Dolphin, several times every day! Using development versions enables you to
     use the latest and greatest improvements to the project. They are however
-    less tested than stable versions of the emulator.{% endblocktrans %}</p>
+    less tested than <a href="#download-beta">beta versions</a> of the emulator.{% endblocktrans %}</p>
 </div>
 
 <div class="alert alert-danger">
@@ -81,10 +80,12 @@ src="//pagead2.googlesyndication.com/pagead/show_ads.js">
 <div id="download-stable">
 <h1>{% trans "Stable versions" %}</h2>
 
-<div class="alert alert-info">{% blocktrans %}
-    Stable versions are released after a lot of testing to ensure emulation
-    performance and stability. However, since they are released less often,
-    they might be outdated and lacking some new features.
+{# TODO: Update when 6.0 is released #}
+<div class="alert alert-warning">{% blocktrans %}
+    The stable versions below are years out of date and missing countless features and bug fixes.
+    <a href="#download-beta">Beta</a> or <a href="#download-dev">development</a> versions are a
+    better choice for almost all users; the stable versions should only be used if you have
+    a specific need for them.
 {% endblocktrans %}</div>
 
 <table class="versions-list stable-versions">
