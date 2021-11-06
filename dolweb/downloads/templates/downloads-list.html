@@ -5,8 +5,8 @@
 {% block "title" %}{% blocktrans %}{{ branch }} branch - page {{ page }}{% endblocktrans %}{% endblock %}
 
 {% block "body" %}
-<div class="page-header">
-    <h1>{% blocktrans %}<tt>{{ branch }}</tt> branch - page {{ page }}{% endblocktrans %}</h1>
+<div class="page-header border-bottom mb-3">
+    <h1 class="mt-5">{% blocktrans %}<tt>{{ branch }}</tt> branch - page {{ page }}{% endblocktrans %}</h1>
 </div>
 
 {% include "downloads-list-pagi.html" %}

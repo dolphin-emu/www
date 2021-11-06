@@ -4,3 +4,9 @@ local_settings.py
 /media/
 *.mo
 venv
+bin
+lib
+lib64
+.idea
+share
+pyvenv.cfg

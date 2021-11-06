@@ -30,22 +30,47 @@
 <link href="{% static "css/ekko-lightbox.min.css" %}" rel="stylesheet">
 {% endblock %}
 
-{% block "body" %}
+{% block "outerbody" %}
 <div class="jumbotron my-hero">
-    <div class="row">
-        <div class="col-md-6">
-            <h1 class="title">{% trans "Dolphin Emulator" %}</h1>
+    <div id="carousel-sshot" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            {% for image in featured_images %}
+            <div class="carousel-item {% if forloop.counter == 1 %}active{% endif %}">
+                {% thumbnail image.image "1296x512" crop="center" format="JPEG" quality=80 as big %}
+                    <img src="{{ big.url }}" alt="{{ image.game_name }}" class="d-inline">
+                {% endthumbnail %}
+            </div>
+            {% endfor %}
+        </div>
+{#                <button class="carousel-control-prev" type="button" data-bs-target="#carousel-sshot" data-bs-slide="prev">#}
+{#                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>#}
+{#                    <span class="visually-hidden">Previous</span>#}
+{#                </button>#}
+{#                <button class="carousel-control-next" type="button" data-bs-target="#carousel-sshot" data-bs-slide="next">#}
+{#                    <span class="carousel-control-next-icon" aria-hidden="true"></span>#}
+{#                    <span class="visually-hidden">Next</span>#}
+{#                </button>#}
+    </div>
+    <div class="container">
+        <div class="main-header text-light">
+            <h1 class="title">
+                {% trans "Dolphin Emulator" %}
+            </h1>
             <p class="intro">
-            {% blocktrans %}
-            <b>Dolphin</b> is an emulator for two recent Nintendo video game
-            consoles: the <b>GameCube</b> and the <b>Wii</b>. It allows PC
-            gamers to enjoy games for these two consoles in <b>full HD</b>
-            (1080p) with several enhancements: compatibility with all PC
-            controllers, turbo speed, networked multiplayer, and even more!
-            {% endblocktrans %}
+                {% blocktrans %}
+                <b>Dolphin</b> is an emulator for two recent Nintendo video game
+                consoles: the <b>GameCube</b> and the <b>Wii</b>. It allows PC
+                gamers to enjoy games for these two consoles in <b>full HD</b>
+                (1080p) with several enhancements: compatibility with all PC
+                controllers, turbo speed, networked multiplayer, and even more!
+                {% endblocktrans %}
             </p>
 
-            <p class="download-btn"><a class="btn btn-primary btn-lg" href="{% url 'downloads_index' %}?ref=btn"><i class="icon-download-alt"></i> {% blocktrans %}Download {{ last_release }} for Windows, Mac and Linux »{% endblocktrans %}</a></p>
+            <p class="download-btn">
+                <a class="btn btn-primary btn-lg text-start" href="{% url 'downloads_index' %}?ref=btn">
+                    <i class="bi bi-download main-download-icon"></i> {% blocktrans %}Download {{ last_release }} for Windows, Mac and Linux »{% endblocktrans %}
+                </a>
+            </p>
             {% if FB_LIKE_PAGE %}
             <div class="fb-like" data-href="{{ FB_LIKE_PAGE }}" data-send="false" data-layout="button_count" data-width="100" data-show-faces="true"></div>
             {% endif %}
@@ -53,33 +78,16 @@
             <div class="g-plusone" data-size="small" data-href="{{ GPLUS_LIKE_PAGE }}"></div>
             {% endif %}
         </div>
-        <div class="col-md-6">
-            <div id="carousel-sshot" class="carousel slide">
-                <div class="carousel-inner">
-                    {% for image in featured_images %}
-                    <div class="item {% if forloop.counter == 1 %}active{% endif %}">
-                        {% thumbnail image.image "853x480" crop="center" format="JPEG" quality=80 as big %}
-                            <img src="{{ big.url }}" alt="{{ image.game_name }}">
-                        {% endthumbnail %}
-                        <div class="carousel-caption">
-                            <h3>&nbsp;</h3>
-                            <p>{{ image.game_name }}</p>
-                        </div>
-                    </div>
-                    {% endfor %}
-                </div>
-                  <a class="left carousel-control" href="#carousel-sshot" data-slide="prev"><span class="icon-prev"></span></a>
-                  <a class="right carousel-control" href="#carousel-sshot" data-slide="next"><span class="icon-next"></span></a>
-            </div>
-        </div>
     </div>
 </div>
+{% endblock %}
 
-<div class="row sshot-row hidden-sm hidden-xs">
+{% block "body" %}
+<div class="row sshot-row">
     {% for image in featured_images %}
-    <div class="col-md-2 sshot-col">
+    <div class="col-4 col-md-2 sshot-col">
         {% thumbnail image.image "x1080" upscale=False format="JPEG" quality=80 as big %}
-        <a href="{{ big.url }}" data-toggle="lightbox" data-gallery="featured" data-title="{{ image.game_name }}">
+        <a href="#" data-src="{{ big.url }}" data-toggle="lightbox" data-title="{{ image.game_name }}" data-bs-toggle="modal" data-bs-target="#lightbox-modal">
             {% thumbnail image.image "640x360" crop="center" format="JPEG" quality=80 as small %}
             <img src="{{ small.url }}" alt="{{ image.game_name }}" class="fp-sshot">
             {% endthumbnail %}
@@ -91,53 +99,71 @@
 
 <div class="row" style="margin-top: 1em">
     <div class="col-md-3">
-        <div class="realign ratings-stats well">
-            <h4><a href="{% url 'compat_index' %}">{% trans "Compatibility" %} »</a></h4>
-
-            <dl>
-            {% for rating in all_ratings %}
-            <dt>{{ rating|compat_text }}: {{ rating|rating_pct|floatformat }}%</dt>
-            <dd><div class="progress"><div class="progress-bar progress-bar-{{ rating|rating_class }}" style="width: {{ rating|rating_pct|unlocalize }}%"></div></div></dd>
-            {% endfor %}
-            </dl>
+        <h2 class="d-none d-md-block">&nbsp;{# Required for vertical alignment on >= md #}</h2>
+        <div class="card mb-3">
+            <div class="card-header">
+                <a href="{% url 'compat_index' %}">{% trans "Compatibility" %} »</a>
+            </div>
+            <div class="card-body">
+                <dl>
+                    {% for rating in all_ratings %}
+                        <dt>{{ rating|compat_text }}: {{ rating|rating_pct|floatformat }}%</dt>
+                        <dd>
+                            <div class="progress">
+                                <div class="progress-bar bg-{{ rating|rating_class }}"
+                                     style="width: {{ rating|rating_pct|unlocalize }}%"></div>
+                            </div>
+                        </dd>
+                    {% endfor %}
+                </dl>
+            </div>
         </div>
 
         {% include "blog_sidebar.html" %}
     </div>
     <div class="col-md-9">
-        <a href="{% url 'zinnia:entry_feed' %}" class="rss-tag pull-right" title="{% trans "RSS feed of the latest articles" %}"><i class="icon-rss"></i></a>
-        <h2 class="latest-articles">{% trans "Latest articles" %}</h2>
+        <div class="mt-md-auto mt-3">
+            <a href="{% url 'zinnia:entry_feed' %}" class="rss-tag float-end" title="{% trans "RSS feed of the latest articles" %}"><i class="bi bi-rss" role="button" aria-label="RSS"></i></a>
+            <h2 class="latest-articles">{% trans "Latest articles" %}</h2>
+        </div>
+
         {% for article in home_articles %}
-        <div class="well">
-            <h3><a href="{{ article.get_absolute_url }}" title="{{ article.title }}" rel="bookmark">
-                {{ article.title }}
-            </a></h3>
-             <div class="entry-meta-line">
-                <p class="entry-info">
-                  {% with authors=article.authors.all %}
-                  {% if authors|length %}
-                  {% trans "Written by" %}
-                  {% for author in authors %}
-                  <span class="vcard author">
+        <div class="card mb-3">
+            <div class="card-body">
+                <h4 class="card-title">
+                    <a href="{{ article.get_absolute_url }}" title="{{ article.title }}" rel="bookmark">
+                        {{ article.title }}
+                    </a>
+                </h4>
+                <div class="entry-meta-line">
+                    <p class="entry-info">
+                        {% with authors=article.authors.all %}
+                            {% if authors|length %}
+                                {% trans "Written by" %}
+                                {% for author in authors %}
+                                    <span class="vcard author">
                     <a href="{{ author.get_absolute_url }}" class="fn url{% if not author.get_full_name %} nickname{% endif %}" rel="author"
                        title="{% blocktrans %}Show all {{ author }}'s entries{% endblocktrans %}">{{ author }}</a></span>{% if not forloop.last %}, {% endif %}
-                  {% endfor %}
-                  {% trans "on" %}
-                  {% else %}
-                  {% trans "Written on" %}
-                  {% endif %}
-                  {% endwith %}
-                  <abbr class="published" title="{{ article.publication_date|date:"c" }}">{{ article.publication_date|date:"DATE_FORMAT" }}</abbr>
-                  {% if article.within_series %}
-                  {% url 'dolweb_blog_series' uid=article.within_series.pk as series_url %}
-                  {% blocktrans with url=series_url name=article.within_series.name %}/ Part of series <a href="{{ url }}">{{ name}}</a>{% endblocktrans %}
-                  {% endif %}
-                  {% if article.forum_thread %}/ <i class="icon-comments"></i> <a href="{{ article.forum_thread.get_absolute_url }}" title="{% trans "Visit forum thread for this article" %}">{% trans "Forum thread" %}</a>{% endif %}
-               </p>
-            </div>
-            <div class="entry-content">
-                {{ article.html_content|cuthere_excerpt|safe }}
-                <p><a href="{{ article.get_absolute_url }}#cuthere">{% trans "Read this article" %}</a></p>
+                                {% endfor %}
+                                {% trans "on" %}
+                            {% else %}
+                                {% trans "Written on" %}
+                            {% endif %}
+                        {% endwith %}
+                        <abbr class="published" title="{{ article.publication_date|date:"c" }}">{{ article.publication_date|date:"DATE_FORMAT" }}</abbr>
+                        {% if article.within_series %}
+                            {% url 'dolweb_blog_series' uid=article.within_series.pk as series_url %}
+                            {% blocktrans with url=series_url name=article.within_series.name %}/ Part of series <a href="{{ url }}">{{ name}}</a>{% endblocktrans %}
+                        {% endif %}
+                        {% if article.forum_thread %}/ <i class="bi bi-chat-fill"></i> <a href="{{ article.forum_thread.get_absolute_url }}" title="{% trans "Visit forum thread for this article" %}">{% trans "Forum thread" %}</a>{% endif %}
+                    </p>
+                </div>
+                <div class="entry-content">
+                    {{ article.html_content|cuthere_excerpt|safe }}
+                    <div>
+                        <a href="{{ article.get_absolute_url }}#cuthere">{% trans "Read this article" %}</a>
+                    </div>
+                </div>
             </div>
         </div>
         {% empty %}
@@ -145,11 +171,9 @@
         {% endfor %}
     </div>
 </div>
-
 {% endblock %}
 
 {% block "extrajs" %}
-<script src="{% static "js/ekko-lightbox.min.js" %}"></script>
 <script>
     {% if GPLUS_LIKE_PAGE %}
     (function() {
@@ -158,22 +182,5 @@
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
     })();
     {% endif %}
-
-    $(document).ready(function () {
-        $('.carousel').carousel({
-            interval: 7500
-        });
-
-        $('.carousel').carousel('cycle');
-    });
-
-    $(document).ready(function($) {
-        $(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
-            event.preventDefault();
-            return $(this).ekkoLightbox({
-                always_show_close: true
-            });
-        });
-    });
 </script>
 {% endblock %}

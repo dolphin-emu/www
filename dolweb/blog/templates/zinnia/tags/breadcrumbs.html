@@ -1,11 +1,13 @@
-<ol class="breadcrumb">
-  {% for crumb in breadcrumbs %}
-  <li>
-    {% if crumb.url %}
-    <a href="{{ crumb.url }}" title="{{ crumb.name }}">{{ crumb.name }}</a>
-    {% else %}
-    {{ crumb.name }}
-    {% endif %}
-  </li>
-  {% endfor %}
-</ol>
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        {% for crumb in breadcrumbs %}
+            <li class="breadcrumb-item{% if not crumb.url %} active{% endif %}"{% if not crumb.url %} aria-current="page"{% endif %}>
+                {% if crumb.url %}
+                    <a href="{{ crumb.url }}" title="{{ crumb.name }}">{{ crumb.name }}</a>
+                {% else %}
+                    {{ crumb.name }}
+                {% endif %}
+            </li>
+        {% endfor %}
+    </ol>
+</nav>

@@ -1,22 +1,21 @@
 {% load humanize %}
 {% load i18n %}
 
-<table class="versions-list dev-versions">
-    <tbody>
+<div class="row versions-list gy-3">
     {% for ver in builds %}
-        <tr class="infos">
-            <td class="version always-ltr"><a href="{{ ver.get_absolute_url }}">{{ ver.shortrev }}</a></td>
-            <td class="reldate" title="{{ ver.date|date:"c" }}">{{ ver.date|naturaltime }}</td>
-            <td class="description always-ltr">{{ ver.description_abbrev }}</td>
-        </tr>
-        <tr class="download">
-            <td></td>
-            <td class="download-links" colspan="2">
-                {% include "downloads-links.html" with primclass=primclass %}
-            </td>
-        </tr>
+        <div class="col-6 col-md-4 col-lg-3 version always-ltr">
+            <p class="mb-0">
+                <a href="{{ ver.get_absolute_url }}">{{ ver.shortrev }}</a>
+            </p>
+            <span class="badge bg-light text-dark" title="{{ ver.date|date:"c" }}">{{ ver.date|naturaltime }}</span>
+        </div>
+        <div class="col-6 col-md-8 col-lg-9 description always-ltr">
+            <i>{{ ver.description_abbrev }}</i>
+        </div>
+        <div class="col-12 download-links pb-3 border-bottom">
+            {% include "downloads-links.html" with primclass=primclass %}
+        </div>
     {% empty %}
-    <tr><td colspan="3"><em>{% trans "No development release yet" %}</em></td></tr>
+    <div class="col">{% trans "No development release yet" %}</div>
     {% endfor %}
-    </tbody>
-</table>
+</div>

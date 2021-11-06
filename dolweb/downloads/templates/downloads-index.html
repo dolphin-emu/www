@@ -23,12 +23,12 @@ src="//pagead2.googlesyndication.com/pagead/show_ads.js">
 </script>
 </div>
 
-<div class="page-header">
-    <h1>{% trans "Download" %}</h1>
+<div class="page-header border-bottom mb-3">
+    <h1 class="mt-5">{% trans "Download" %}</h1>
 </div>
 
 <div id="download-beta">
-<h1>{% trans "Beta versions" %}</h1>
+<h2>{% trans "Beta versions" %}</h2>
     
 <div class="alert alert-info">{% blocktrans %}
     <p>Beta versions are released every month, usually accompanied by a <em>Progress Report</em>
@@ -45,7 +45,7 @@ src="//pagead2.googlesyndication.com/pagead/show_ads.js">
 </div>
 
 <div id="download-dev">
-<h1>{% trans "Development versions" %}</h1>
+<h2>{% trans "Development versions" %}</h2>
     
 <div class="alert alert-info">
     <p>{% blocktrans %}Development versions are released every time a developer makes a change to
@@ -60,7 +60,7 @@ src="//pagead2.googlesyndication.com/pagead/show_ads.js">
 
 {% include "downloads-devrel.html" with builds=master_builds primclass='btn-info' %}
 
-<p><a class="btn" href="{% url 'downloads_list' "master" 1 %}">{% trans "View older versions »" %}</a></p>
+<p><a class="btn btn-secondary" href="{% url 'downloads_list' "master" 1 %}">{% trans "View older versions »" %}</a></p>
 </div>
 
 <div style="text-align: center;">
@@ -78,40 +78,35 @@ src="//pagead2.googlesyndication.com/pagead/show_ads.js">
 </div>
 
 <div id="download-stable">
-<h1>{% trans "Stable versions" %}</h2>
+    <h2>{% trans "Stable versions" %}</h2>
 
-{# TODO: Update when 6.0 is released #}
-<div class="alert alert-warning">{% blocktrans %}
-    The stable versions below are years out of date and missing countless features and bug fixes.
-    <a href="#download-beta">Beta</a> or <a href="#download-dev">development</a> versions are a
-    better choice for almost all users; the stable versions should only be used if you have
-    a specific need for them.
-{% endblocktrans %}</div>
+    {# TODO: Update when 6.0 is released #}
+    <div class="alert alert-warning">{% blocktrans %}
+        The stable versions below are years out of date and missing countless features and bug fixes.
+        <a href="#download-beta">Beta</a> or <a href="#download-dev">development</a> versions are a
+        better choice for almost all users; the stable versions should only be used if you have
+        a specific need for them.
+    {% endblocktrans %}</div>
 
-<table class="versions-list stable-versions">
-    <tbody>
-    {% for ver in releases %}
-        <tr class="infos">
-            <td class="version always-ltr">Dolphin {{ ver.version }}</td>
-            <td class="reldate">{{ ver.date|naturaltime }}</td>
-            <td class="description"></td>
-        </tr>
-        <tr class="download">
-            <td></td>
-            <td class="download-links" colspan="2">
+    <div class="row versions-list stable-versions gy-3">
+        {% for ver in releases %}
+            <div class="col-6 col-md-4 col-lg-3 version always-ltr">
+                <p class="mb-0">
+                    Dolphin {{ ver.version }}
+                </p>
+                <span class="badge bg-light text-dark" title="{{ ver.date|date:"c" }}">{{ ver.date|naturaltime }}</span>
+            </div>
+            <div class="col-12 download-links pb-3 border-bottom">
                 {% include "downloads-links.html" %}
-            </td>
-        </tr>
-        </li>
-    {% empty %}
-        <tr><td colspan="2"><em>{% trans "No stable release yet" %}</em></td></tr>
-    {% endfor %}
-    </tbody>
-</table>
+            </div>
+        {% empty %}
+            <div class="col">{% trans "No stable release yet" %}</div>
+        {% endfor %}
+    </div>
 </div>
 
 <div id="other-linux">
-    <h1>{% trans "Linux distributions" %}</h1>
+    <h2>{% trans "Linux distributions" %}</h2>
     <p>{% blocktrans %}Ubuntu users can install a PPA
     for development and stable versions of Dolphin here: <a href="https://wiki.dolphin-emu.org/index.php?title=Installing_Dolphin#Ubuntu">Installing Dolphin</a>
     {% endblocktrans %}</p>
@@ -120,7 +115,7 @@ src="//pagead2.googlesyndication.com/pagead/show_ads.js">
 </div>
 
 <div id="download-source">
-    <h1>{% trans "Source code" %}</h1>
+    <h2>{% trans "Source code" %}</h2>
 
     <p>{% blocktrans %}
     The latest version of the Dolphin source code can be downloaded from the
@@ -137,7 +132,7 @@ src="//pagead2.googlesyndication.com/pagead/show_ads.js">
 </div>
 
 <div id="report-bugs">
-    <h1>{% trans "Reporting bugs" %}</h1>
+    <h2>{% trans "Reporting bugs" %}</h2>
 
     <p>{% blocktrans %}
     For reporting bugs please go to <a href="{{ ISSUES_URL }}">the issue tracker</a>.

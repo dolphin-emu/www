@@ -49,7 +49,7 @@ class Revision(models.Model):
     timestamp = models.CharField(db_column='rev_timestamp', max_length=14)
 
     def __str__(self):
-        return '%s for %s' % (self.timestamp_raw, self.page)
+        return '%s for %s' % (self.timestamp, self.page)
 
     class Meta:
         db_table = 'revision'

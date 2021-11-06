@@ -1,39 +1,44 @@
 {% load i18n zinnia blog_tags %}
 
-<div style="margin-bottom: 1em">
-    <form method="get" action="{% url 'zinnia:entry_search' %}" role="search">
-        <div class="input-group">
-            <input type="text" placeholder="{% trans "Search articles" %}" name="pattern" class="form-control" />
-            <span class="input-group-btn">
-                <button type="submit" class="btn">
-                    <i class="icon-search"></i>
+<div class="row row-cols-1">
+    <div class="col">
+        <form method="get" action="{% url 'zinnia:entry_search' %}" role="search">
+            <div class="input-group mb-3">
+                <input type="text" placeholder="{% trans "Search articles" %}" name="pattern" class="form-control" />
+                <button type="submit" class="btn btn-outline-secondary">
+                    <i class="bi bi-search"></i>
                 </button>
-            </span>
+            </div>
+        </form>
+    </div>
+
+    <div class="col">
+        <div class="text-center">
+            <script type="text/javascript"><!--
+            google_ad_client = "ca-pub-8646203626363069";
+            /* Dolphin Blog Sidebar Ad */
+            google_ad_slot = "9795528512";
+            google_ad_width = 200;
+            google_ad_height = 200;
+            //-->
+            </script>
+            <script type="text/javascript"
+                    src="//pagead2.googlesyndication.com/pagead/show_ads.js">
+            </script>
         </div>
-    </form>
-</div>
+    </div>
 
-<div class="well text-center">
-    <script type="text/javascript"><!--
-    google_ad_client = "ca-pub-8646203626363069";
-    /* Dolphin Blog Sidebar Ad */
-    google_ad_slot = "9795528512";
-    google_ad_width = 200;
-    google_ad_height = 200;
-    //-->
-    </script>
-    <script type="text/javascript"
-    src="//pagead2.googlesyndication.com/pagead/show_ads.js">
-    </script>
-</div>
-
-<div class="well">
-    <h4>{% trans "Blog tags" %}</h4>
-    {% get_tag_cloud %}
-</div>
-
-<div class="well">
-    <h4>{% trans "Blog series" %}</h4>
-    {% get_recent_blog_series 3 %}
-    <p class="seemore"><a href="{% url 'dolweb_blog_series_index' %}">{% trans "See all" %} »</a></p>
+    <div class="col">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">{% trans "Blog tags" %}</h5>
+                {% get_tag_cloud %}
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">{% trans "Blog series" %}</h5>
+                {% get_recent_blog_series 3 %}
+                <div class="float-end"><a href="{% url 'dolweb_blog_series_index' %}">{% trans "See all" %} »</a></div>
+            </div>
+        </div>
+    </div>
 </div>

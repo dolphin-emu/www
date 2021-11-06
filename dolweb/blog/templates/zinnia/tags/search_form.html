@@ -1,18 +1,16 @@
 {% load i18n %}
 {% load static from staticfiles %}
 
-<form method="get" action="{% url 'zinnia:entry_search' %}" role="search">
-    <div class="input-group">
+<form method="get" action="{% url 'zinnia:entry_search' %}" role="search" class="d-none d-md-block">
+    <div class="input-group mb-3">
         <input type="text" placeholder="{% trans "Search articles" %}" name="pattern" class="form-control" />
-        <span class="input-group-btn">
-            <button type="submit" class="btn">
-                <i class="icon-search"></i>
-            </button>
-        </span>
+        <button type="submit" class="btn btn-outline-secondary">
+            <i class="bi bi-search"></i>
+        </button>
     </div>
 </form>
 
-<p class="alert alert-info" style="margin-top: 1em">
-<img src="{% static "zinnia/img/help.png" %}" alt="?" class="help" width="14" height="14" />
-{% trans "You can use - to exclude words or phrases, &quot;double quotes&quot; for exact phrases and the AND/OR boolean operators combined with parenthesis for complex queries." %}
+<p class="alert alert-info mt-3">
+    <i class="bi bi-question-circle"></i>
+    {% trans "You can use - to exclude words or phrases, &quot;double quotes&quot; for exact phrases and the AND/OR boolean operators combined with parenthesis for complex queries." %}
 </p>
