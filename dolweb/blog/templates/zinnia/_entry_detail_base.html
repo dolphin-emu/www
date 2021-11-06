@@ -1,98 +1,99 @@
 {% load comments i18n thumbnail %}
-<div id="entry-{{ object.pk }}" class="hentry{% if object.featured %} featured{% endif %}">
-  {% if object.draft %}
-  <div class="draft-warning blink">
-    This article is a draft. Avoid widely sharing this link.
-  </div>
-  {% endif %}
-  {% block entry-header %}
-  <div class="entry-header">
-    {% block entry-title %}
-    <h2 class="entry-title">
-      <a href="{{ object.get_absolute_url }}" title="{{ object.title }}" rel="bookmark">
-        {{ object.title }}
-      </a>
-    </h2>
-    {% endblock %}
-    {% block entry-info %}
-    <div class="entry-meta-line">
-    <p class="entry-info">
-      {% with authors=object.authors.all %}
-      {% if authors|length %}
-      {% trans "Written by" %}
-      {% for author in authors %}
-      <span class="vcard author">
+<div id="entry-{{ object.pk }}" class="card{% if object.featured %} featured{% endif %} mb-3">
+    <div class="card-body">
+        {% block entry-header %}
+            <div class="entry-header">
+                {% block entry-title %}
+                    <h4 class="card-title">
+                        <a href="{{ object.get_absolute_url }}" title="{{ object.title }}" rel="bookmark">
+                            {{ object.title }}
+                        </a>
+                    </h4>
+                {% endblock %}
+                {% if object.draft %}
+                    <div class="draft-warning blink">
+                        This article is a draft. Avoid widely sharing this link.
+                    </div>
+                {% endif %}
+                {% block entry-info %}
+                    <div class="entry-meta-line">
+                    <p class="entry-info">
+                        {% with authors=object.authors.all %}
+                            {% if authors|length %}
+                                {% trans "Written by" %}
+                                {% for author in authors %}
+                                    <span class="vcard author">
         <a href="{{ author.get_absolute_url }}" class="fn url{% if not author.get_full_name %} nickname{% endif %}" rel="author"
            title="{% blocktrans %}Show all {{ author }}'s entries{% endblocktrans %}">{{ author }}</a></span>{% if not forloop.last %}, {% endif %}
-      {% endfor %}
-      {% trans "on" %}
-      {% else %}
-      {% trans "Written on" %}
-      {% endif %}
-      {% endwith %}
-      <abbr class="published" title="{{ object.publication_date|date:"c" }}">{{ object.publication_date|date:"DATE_FORMAT" }}</abbr>
-    </p>
-    {% endblock %}
-    {% block entry-last-update %}
-    <p class="entry-last-update">
-      / {% trans "Last update on" %} <abbr class="updated" title="{{ object.last_update|date:"c" }}">{{ object.last_update|date:"DATE_FORMAT" }}</abbr>
-    / <a href="{{ object.short_url }}"
-       title="{% blocktrans with object=object.title %}Short URL to {{ object }}{% endblocktrans %}"
-       rel="shortlink">{% trans "Short link" %}</a>
-    {% if object.forum_thread %}/ <i class="icon-comments"></i> <a href="{{ object.forum_thread.get_absolute_url }}" title="{% trans "Visit forum thread for this article" %}">{% trans "Forum thread" %}</a>{% endif %}
-    </p>
-    </div>
-    {% endblock %}
-  </div>
-  {% endblock %}
+                                {% endfor %}
+                                {% trans "on" %}
+                            {% else %}
+                                {% trans "Written on" %}
+                            {% endif %}
+                        {% endwith %}
+                        <abbr class="published" title="{{ object.publication_date|date:"c" }}">{{ object.publication_date|date:"DATE_FORMAT" }}</abbr>
+                    </p>
+                {% endblock %}
+                {% block entry-last-update %}
+                    <p class="entry-last-update">
+                        / {% trans "Last update on" %} <abbr class="updated" title="{{ object.last_update|date:"c" }}">{{ object.last_update|date:"DATE_FORMAT" }}</abbr>
+                        / <a href="{{ object.short_url }}"
+                             title="{% blocktrans with object=object.title %}Short URL to {{ object }}{% endblocktrans %}"
+                             rel="shortlink">{% trans "Short link" %}</a>
+                        {% if object.forum_thread %}/ <i class="bi bi-chat-fill"></i> <a href="{{ object.forum_thread.get_absolute_url }}" title="{% trans "Visit forum thread for this article" %}">{% trans "Forum thread" %}</a>{% endif %}
+                    </p>
+                    </div>
+                {% endblock %}
+            </div>
+        {% endblock %}
 
-  {% block entry-body %}
-  <div class="entry-body">
-    {% block entry-content %}
-    <div class="entry-content">
-      {{ object_content }}
+        {% block entry-body %}
+            <div class="entry-body">
+                {% block entry-content %}
+                    <div class="entry-content">
+                        {{ object_content }}
 
-    {% block continue-reading %}
-    {% if continue_reading %}
-    <p class="continue-reading">
-      <a href="{{ object.get_absolute_url }}"
-         title="{% blocktrans with object=object.title %}Continue reading {{ object }}{% endblocktrans %}"
-         rel="bookmark">
-        {% trans "Continue reading" %}
-      </a>
-    </p>
-    {% endif %}
-    {% endblock %}
+                        {% block continue-reading %}
+                            {% if continue_reading %}
+                                <p class="continue-reading">
+                                    <a href="{{ object.get_absolute_url }}"
+                                       title="{% blocktrans with object=object.title %}Continue reading {{ object }}{% endblocktrans %}"
+                                       rel="bookmark">
+                                        {% trans "Continue reading" %}
+                                    </a>
+                                </p>
+                            {% endif %}
+                        {% endblock %}
 
-    </div>
-    {% endblock %}
-    {% if object.forum_thread %}
-    <p><i class="icon-comments"></i> {% blocktrans with url=object.forum_thread.get_absolute_url %}You can continue the discussion in the <a href="{{url}}" title="Visit forum thread for this article">forum thread</a> of this article.{% endblocktrans %}</p>{% endif %}
-  </div>
-  {% endblock %}
+                    </div>
+                {% endblock %}
+                {% if object.forum_thread %}
+                    <p><i class="bi bi-chat-fill"></i> {% blocktrans with url=object.forum_thread.get_absolute_url %}You can continue the discussion in the <a href="{{url}}" title="Visit forum thread for this article">forum thread</a> of this article.{% endblocktrans %}</p>{% endif %}
+            </div>
+        {% endblock %}
 
-  {% block entry-footer %}
-  <div class="entry-footer row">
-    <div class="col-md-6">
-    {% block entry-series %}
-    {% if object.within_series %}
-    <h4>{% trans "Blog series" %}</h4>
-    {% url 'dolweb_blog_series' uid=object.within_series.pk as series_url %}
-    <p>{% blocktrans with nth=object.series_index url=series_url series=object.within_series %}This article is number {{ nth }} within the blog series
-    <a href="{{ url }}"><em>{{ series }}</em></a>.{% endblocktrans %} {# </p> #}
-    {% with previous=object.previous_entry_in_series next=object.next_entry_in_series %}
-    {% if previous or next %}
-    {# <p> #}
-      {% if previous %}<a href="{{ previous.get_absolute_url }}">{% trans "‹ Previous article in series" %}</a>{% endif %}
-      {% if previous and next %}/{% endif %}
-      {% if next %}<a href="{{ next.get_absolute_url }}">{% trans "Next article in series ›" %}</a>{% endif %}
-    </p>
-    {% endif %}
-    {% endwith %}
-    {% endif %}
-    {% endblock %}
-    {% block entry-comments %}
-    {% comment %}
+        {% block entry-footer %}
+            <div class="entry-footer row">
+                <div class="col-md-6">
+                    {% block entry-series %}
+                        {% if object.within_series %}
+                            <h4>{% trans "Blog series" %}</h4>
+                            {% url 'dolweb_blog_series' uid=object.within_series.pk as series_url %}
+                            <p>{% blocktrans with nth=object.series_index url=series_url series=object.within_series %}This article is number {{ nth }} within the blog series
+                                <a href="{{ url }}"><em>{{ series }}</em></a>.{% endblocktrans %} {# </p> #}
+                                {% with previous=object.previous_entry_in_series next=object.next_entry_in_series %}
+                                    {% if previous or next %}
+                                        {# <p> #}
+                                        {% if previous %}<a href="{{ previous.get_absolute_url }}">{% trans "‹ Previous article in series" %}</a>{% endif %}
+                                        {% if previous and next %}/{% endif %}
+                                        {% if next %}<a href="{{ next.get_absolute_url }}">{% trans "Next article in series ›" %}</a>{% endif %}
+                                        </p>
+                                    {% endif %}
+                                {% endwith %}
+                        {% endif %}
+                    {% endblock %}
+                    {% block entry-comments %}
+                        {% comment %}
     <p class="entry-comments">
       <strong>{% trans "Discussions" %}</strong> :
       {% with comment_count=object.comment_count %}
@@ -129,36 +130,37 @@
       {% endwith %}
     </p>
     {% endcomment %}
-    {% endblock %}
-    </div>
+                    {% endblock %}
+                </div>
 
-    {% block entry-tags %}
-    <div class="entry-tags col-md-3">
-      <h4>{% trans "Tags" %}</h4>
-      <ul class="tag-cloud">
-      {% for tag in object.tags_list %}
-      <li><a href="{% url 'zinnia:tag_detail' tag %}"
-         title="{% blocktrans %}Show all entries tagged by {{ tag }}{% endblocktrans %}"
-         rel="tag">{{ tag }}</a></li>
-      {% empty %}
-      <span class="empty">{% trans "No tags" %}</span>
-      {% endfor %}
-      </ul>
+                {% block entry-tags %}
+                    <div class="entry-tags col-md-3">
+                        <h4>{% trans "Tags" %}</h4>
+                        <ul class="tag-cloud">
+                            {% for tag in object.tags_list %}
+                                <li><a href="{% url 'zinnia:tag_detail' tag %}"
+                                       title="{% blocktrans %}Show all entries tagged by {{ tag }}{% endblocktrans %}"
+                                       rel="tag">{{ tag }}</a></li>
+                            {% empty %}
+                                <span class="empty">{% trans "No tags" %}</span>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                {% endblock %}
+                {% block entry-categories %}
+                    <div class="entry-categories col-md-3">
+                        <h4>{% trans "Categories" %}</h4>
+                        {% with categories=object.categories.all %}
+                            {% for category in categories %}
+                                <a href="{{ category.get_absolute_url }}"
+                                   title="{% blocktrans %}Show all entries in {{ category }}{% endblocktrans %}"
+                                   rel="tag category">{{ category }}</a>{% if not forloop.last %}, {% endif %}
+                            {% empty %}
+                                <span class="empty">{% trans "No categories" %}</span>
+                            {% endfor %}{% endwith %}
+                    </div>
+                {% endblock %}
+            </div>
+        {% endblock %}
     </div>
-    {% endblock %}
-    {% block entry-categories %}
-    <div class="entry-categories col-md-3">
-      <h4>{% trans "Categories" %}</h4>
-      {% with categories=object.categories.all %}
-      {% for category in categories %}
-      <a href="{{ category.get_absolute_url }}"
-         title="{% blocktrans %}Show all entries in {{ category }}{% endblocktrans %}"
-         rel="tag category">{{ category }}</a>{% if not forloop.last %}, {% endif %}
-      {% empty %}
-      <span class="empty">{% trans "No categories" %}</span>
-      {% endfor %}{% endwith %}
-    </div>
-    {% endblock %}
-  </div>
-  {% endblock %}
 </div>

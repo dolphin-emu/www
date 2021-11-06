@@ -1,5 +1,14 @@
 {% load artifacts %}
 
 {% for artifact in ver.artifacts.all|artifact_sort %}
-<a href="{{ artifact.url }}" class="btn always-ltr {% if USER_OS == "unknown" or USER_OS == artifact.user_os_matcher %}{{ primclass|default:"btn-primary" }}{% endif %} {{ artifact.user_os_matcher }}"><i class="icon-download-alt"></i> {{ artifact.target_system }}</a>
+    <a href="{{ artifact.url }}" class="btn always-ltr
+        {% if USER_OS == "unknown" or USER_OS == artifact.user_os_matcher %}
+            {{ primclass|default:"btn-primary" }}
+        {% else %}
+            btn-light
+        {% endif %}
+        {{ artifact.user_os_matcher }}">
+        <i class="bi bi-download"></i>
+        {{ artifact.target_system }}
+    </a>
 {% endfor %}

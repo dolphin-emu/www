@@ -9,30 +9,30 @@
 {% block "body" %}
 <div class="row">
     <div class="col-md-3">
-        <div class="well sidebar-nav">
-            <ul class="nav">
+        <div class="sidebar-nav mt-5">
+            <ul class="nav flex-column">
                 {% for category in categories %}
-                <li class="faq-cat">{{ category.title|faq_translate }}</li>
+                <li class="faq-cat nav-item">{{ category.title|faq_translate }}</li>
                 {% for question in category.sorted_questions %}
-                <li class="faq-title"><a href="#{{ question.slug }}">{{ question.short_title|faq_translate }}</a></li>
+                <li class="faq-title nav-item"><a href="#{{ question.slug }}" class="nav-link">{{ question.short_title|faq_translate }}</a></li>
                 {% endfor %}
                 {% endfor %}
             </ul>
         </div>
     </div>
     <div class="col-md-9">
-        <div style="text-align: center;">
-        <script type="text/javascript"><!--
-        google_ad_client = "ca-pub-8646203626363069";
-        /* FAQ page ad */
-        google_ad_slot = "4072573718";
-        google_ad_width = 728;
-        google_ad_height = 90;
-        //-->
-        </script>
-        <script type="text/javascript"
-        src="//pagead2.googlesyndication.com/pagead/show_ads.js">
-        </script>
+        <div class="text-center mt-5">
+            <script type="text/javascript"><!--
+            google_ad_client = "ca-pub-8646203626363069";
+            /* FAQ page ad */
+            google_ad_slot = "4072573718";
+            google_ad_width = 728;
+            google_ad_height = 90;
+            //-->
+            </script>
+            <script type="text/javascript"
+            src="//pagead2.googlesyndication.com/pagead/show_ads.js">
+            </script>
         </div>
     {% for category in categories %}
         <section id="{{ category.slug }}" class="faq-section">

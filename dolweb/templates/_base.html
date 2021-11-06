@@ -27,9 +27,8 @@
             {% endif %}
         {% endfor %}
 
-        <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
-        <link href="{% static "css/bootstrap.min.css" %}" rel="stylesheet">
-        <link href="{% static "css/bootstrap-theme.min.css" %}" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" integrity="sha384-tKLJeE1ALTUwtXlaGjJYM3sejfssWdAaWR2s97axw4xkiAdMzQjtOjgcyw0Y50KU" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
         <link href="{% static "css/dolphin.css" %}" rel="stylesheet">
         <link href="{% static "sprites/nav.css" %}" rel="stylesheet">
         {% block "extracss" %}
@@ -90,35 +89,40 @@
     <body>
         {% block "bodystart" %}{% endblock %}
 
-        <div id="navbar-dolphin" class="navbar navbar-inverse">
+        <nav id="navbar-dolphin" class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-logo" href="{% url 'home' %}"><img src="{% static "img/logo.png" %}" height="32" alt="{% trans "Dolphin Emulator" %}"></a>
-                </div>
-                <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav pull-left">
-                        <li><a href="{% url 'downloads_index' %}">{% trans "Download" %}</a></li>
-                        <li><a href="{% url 'zinnia:entry_archive_index' %}">{% trans "Blog" %}</a></li>
-                        <li><a href="{% url 'media_all' %}">{% trans "Screenshots" %}</a></li>
-                        <li><a href="{% url 'docs_faq' %}">{% trans "FAQ" %}</a></li>
-                        <li><a href="{% url 'docs_guides_index' %}">{% trans "Guides" %}</a></li>
-                        <li><a href="{% url 'compat_index' %}">{% trans "Compatibility" %}</a></li>
-                        <li><a href="{{ FORUM_URL }}">{% trans "Forum" %}</a></li>
-                        <li><a href="{{ WIKI_URL }}">{% trans "Wiki" %}</a></li>
-                        <li><a href="{{ GIT_BROWSE_URL }}">{% trans "Code" %}</a></li>
+                <a class="navbar-brand" href="{% url 'home' %}">
+                    <img src="{% static "img/logo.png" %}" height="32" alt="{% trans "Dolphin Emulator" %}" class="d-inline-block align-text-top">
+                </a>
+                <button class="navbar-toggler pull-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-nav" aria-controls="navbar-nav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse" id="navbar-nav">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item"><a class="nav-link" href="{% url 'downloads_index' %}">{% trans "Download" %}</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{% url 'zinnia:entry_archive_index' %}">{% trans "Blog" %}</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{% url 'media_all' %}">{% trans "Screenshots" %}</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{% url 'docs_faq' %}">{% trans "FAQ" %}</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{% url 'docs_guides_index' %}">{% trans "Guides" %}</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{% url 'compat_index' %}">{% trans "Compatibility" %}</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{ FORUM_URL }}">{% trans "Forum" %}</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{ WIKI_URL }}">{% trans "Wiki" %}</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{ GIT_BROWSE_URL }}">{% trans "Code" %}</a></li>
                     </ul>
-                    <ul class="nav navbar-nav pull-right">
-                        <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><div class="flag curr-flag sprite-nav-{{ LANGUAGE_CODE|short }}"></div> <span>{{ LANGUAGE_CODE|langname }}</span> <b class="caret"></b></a>
-                            <ul class="dropdown-menu">
+                    <ul class="nav navbar-nav mb-2 mb-lg-0 float-lg-end">
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <div class="flag curr-flag sprite-nav-{{ LANGUAGE_CODE|short }}"></div> <span>{{ LANGUAGE_CODE|langname }}</span> <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end" aria-labelledby="navbarDropdown">
                             {% for langshort, langname in LANGUAGES %}
                                 {% if langshort != LANGUAGE_CODE|short %}
-                                <li><a href="//{{ langshort|to_subdomain }}{{ request.path }}?nocr=true"><div class="flag sprite-nav-{{ langshort }}"></div><span dir="{{ langshort|langdir }}">{{ langname }}</span></a></li>
+                                <li>
+                                    <a href="//{{ langshort|to_subdomain }}{{ request.path }}?nocr=true" class="dropdown-item">
+                                        <div class="flag sprite-nav-{{ langshort }}"></div>
+                                        <span dir="{{ langshort|langdir }}">{{ langname }}</span>
+                                    </a>
+                                </li>
                                 {% endif %}
                             {% endfor %}
                             </ul>
@@ -126,7 +130,7 @@
                     </ul>
                 </div>
             </div>
-        </div>
+        </nav>
 
         {% block "outerbody" %}
         {% endblock %}
@@ -144,6 +148,29 @@
             {% endblock %}
         </div>
 
+        <div class="modal fade" id="lightbox-modal" tabindex="-1" aria-labelledby="lightbox-modal-label" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-fullscreen-sm-down">
+                <div class="modal-content overflow-hidden">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="lightbox-modal-label">Image title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body p-0">
+                        <div class="position-absolute top-0 backdrop">
+                            <img class="backdrop-img position-absolute top-50 start-50 translate-middle">
+                        </div>
+                        <div class="d-flex align-items-center h-100">
+                            <img class="img-fluid lightbox-img">
+                        </div>
+                        <div class="arrow-overlay">
+                            <a href="#" class="arrow previous d-none" aria-label="Previous Image"><i class="bi bi-caret-left-fill"></i></a>
+                            <a href="#" class="arrow next d-none" aria-label="Next Image"><i class="bi bi-caret-right-fill"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <footer>
         <p class="footer-text">
             {% trans "&copy; Dolphin Emulator Project" %} -
@@ -153,7 +180,93 @@
         </footer>
 
         <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-        <script src="{% static "js/bootstrap.min.js" %}"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            // Lightbox
+            var lightboxModal = document.getElementById('lightbox-modal');
+            var lightboxModalPrev = lightboxModal.querySelector(".previous");
+            var lightboxModalNext = lightboxModal.querySelector(".next");
+            var modalTitle = lightboxModal.querySelector('.modal-title');
+            var modalImage = lightboxModal.querySelector('.modal-body img.lightbox-img');
+            var modalBackdrop = lightboxModal.querySelector('.modal-body img.backdrop-img');
+
+            var prevElem = null;
+            var nextElem = null;
+
+            lightboxModal.addEventListener('show.bs.modal', function (event) {
+                // Button that triggered the modal
+                var button = event.relatedTarget;
+                loadLightbox(button);
+            });
+
+            lightboxModalPrev.addEventListener('click', function (event) {
+                if(prevElem){
+                    loadLightbox(prevElem);
+                }
+            });
+
+            lightboxModalNext.addEventListener('click', function (event) {
+                if(nextElem){
+                    loadLightbox(nextElem);
+                }
+            });
+
+            function loadLightbox(eventElem) {
+                // Is part of a gallery?
+                var galleryElem = eventElem.closest("div[data-gallery]");
+                if(galleryElem){
+                    // No real reason to get the gallery name right now, but it's there if needed
+                    // var galleryName = galleryElem.getAttribute("data-gallery");
+
+                    // Select all other nodes in this gallery
+                    var galleryItems = galleryElem.querySelectorAll("a[data-toggle='lightbox']");
+
+                    // Get the nodes as an array to get the index
+                    var nodes = Array.prototype.slice.call(galleryItems);
+                    var currentIndex = nodes.indexOf(eventElem);
+
+                    // Get previous element
+                    if(currentIndex - 1 > -1) {
+                        prevElem = galleryItems[currentIndex - 1];
+                    }else{
+                        prevElem = null;
+                    }
+
+                    // Get next element
+                    if(currentIndex + 1 < galleryItems.length) {
+                        nextElem = galleryItems[currentIndex + 1];
+                    }else{
+                        nextElem = null
+                    }
+
+                    // Add prev/next arrows if needed
+                    if(prevElem) {
+                        lightboxModalPrev.classList.remove("d-none");
+                    }else{
+                        lightboxModalPrev.classList.add("d-none");
+                    }
+                    if(nextElem) {
+                        lightboxModalNext.classList.remove("d-none");
+                    }else{
+                        lightboxModalNext.classList.add("d-none");
+                    }
+                }else{
+                    // Remove prev/next arrows
+                    lightboxModalPrev.classList.add("d-none");
+                    lightboxModalNext.classList.add("d-none");
+                    prevElem = null;
+                    nextElem = null;
+                }
+
+                // Extract info from data attributes
+                var imgTitle = eventElem.getAttribute('data-title');
+                var bigImgSrc = eventElem.getAttribute('data-src');
+                // Update the modal's content.
+                modalTitle.textContent = imgTitle;
+                modalImage.src = bigImgSrc;
+                modalBackdrop.src = bigImgSrc;
+            }
+        </script>
         {% block "extrajs" %}
         {% endblock %}
     </body>

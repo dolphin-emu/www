@@ -7,33 +7,36 @@
 
 {% block content %}
 
-{% for series in all_series %}
+    {% for series in all_series %}
 
-<div class="well clearfix series">
-  {% if series.image %}
-    {% thumbnail series.image "120x120" crop="center" format="PNG" as im %}
-    <img src="{{ im.url }}" alt="Series illustration" class="pull-left thumbnail" width="{{ im.width }}" height="{{ im.height }}" />
-    {% endthumbnail %}
-  {% endif %}
-  <div class="innerdiv">
-  {# <h2 id="serie-{{ serie.pk }}"><a href="{% url 'dolweb.blog.views.serie_view' uid=serie.pk %}">{{ serie.name }}</a> #}
-  <h2 id="series-{{ series.pk }}">{{ series.name }}
-  <small>{% blocktrans count count=series.entries.count %}
-    {{ count }} entry
-  {% plural %}
-    {{ count }} entries
-  {% endblocktrans %}</small></h2>
-  <p>{% trans "RSS feed:" %} <a href="{% url 'dolweb_blog_series_feed' pk=series.pk %}" class="rss-tag"><i class="icon-rss"></i></a></p>
-  <ol>
-  {% for entry in series.entries_reversed %}
-  <li><a href="{{ entry.get_absolute_url }}">{{ entry.title }}</a></li>
-  {% endfor %}
-  </ol>
-  </div>
-</div>
+        <div class="mb-5 series">
+            {% if series.image %}
+                {% thumbnail series.image "120x120" crop="center" format="PNG" as im %}
+                    <img src="{{ im.url }}" alt="Series illustration" class="pull-left thumbnail" width="{{ im.width }}" height="{{ im.height }}" />
+                {% endthumbnail %}
+            {% endif %}
+            <div class="innerdiv">
+                {# <h2 id="serie-{{ serie.pk }}"><a href="{% url 'dolweb.blog.views.serie_view' uid=serie.pk %}">{{ serie.name }}</a> #}
+                <h2 id="series-{{ series.pk }}">{{ series.name }}
+                    <small class="text-muted">{% blocktrans count count=series.entries.count %}
+                        {{ count }} entry
+                    {% plural %}
+                        {{ count }} entries
+                    {% endblocktrans %}</small>
+                </h2>
+                <p>
+                    {% trans "RSS feed:" %} <a href="{% url 'dolweb_blog_series_feed' pk=series.pk %}" class="rss-tag"><i class="bi bi-rss" role="button" aria-label="RSS"></i></a>
+                </p>
+                <ol>
+                    {% for entry in series.entries_reversed %}
+                        <li><a href="{{ entry.get_absolute_url }}">{{ entry.title }}</a></li>
+                    {% endfor %}
+                </ol>
+            </div>
+        </div>
 
-{% empty %}
-<p>{% trans "No blog series yet." %}</p>
-{% endfor %}
+    {% empty %}
+        <p>{% trans "No blog series yet." %}</p>
+    {% endfor %}
 
 {% endblock %}

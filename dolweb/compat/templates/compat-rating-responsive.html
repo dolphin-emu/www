@@ -1,0 +1,13 @@
+{% load compat %}
+<span class="d-none d-sm-inline badge bg-{{ rating|rating_class }}" title="{{ rating_text }}">
+    {% for i in '12345'|make_list %}
+        {% if i <= rating %}
+            <i class="bi bi-star-fill"></i>
+        {% else %}
+            <i class="bi bi-star"></i>
+        {% endif %}
+    {% endfor %}
+</span>
+<span class="d-inline d-sm-none badge bg-{{ rating|rating_class }}" title="{{ rating_text }}">
+    <i class="bi bi-star-fill"></i> {{ rating }}/5
+</span>
