@@ -112,8 +112,20 @@ src="//pagead2.googlesyndication.com/pagead/show_ads.js">
 
 <div id="other-linux">
     <h1>{% trans "Linux distributions" %}</h1>
-    <p>{% blocktrans %}Ubuntu users can install a PPA
-    for development and stable versions of Dolphin here: <a href="https://wiki.dolphin-emu.org/index.php?title=Installing_Dolphin#Ubuntu">Installing Dolphin</a>
+    <p>{% blocktrans %}Ubuntu users on 16.04 and 18.04 can install a PPA
+    for development and stable versions of Dolphin here - users on 20.04 or newer (or Linux Mint, Pop OS, Zorin, etc) must compile or use the Flatpak): <a href="https://wiki.dolphin-emu.org/index.php?title=Installing_Dolphin#Ubuntu">Installing Dolphin</a>
+    {% endblocktrans %}</p>
+    <p>{% blocktrans %}
+    Arch Linux users can download Dolphin via <a href="https://archlinux.org/packages/community/x86_64/dolphin-emu/">pacman</a>
+    {% endblocktrans %}</p>
+    <p>{% blocktrans %}
+    Fedora users can install the <a href="https://src.fedoraproject.org/rpms/dolphin-emu">Fedora rpm, which may be slightly out of date - so compiling might be better</a>
+    {% endblocktrans %}</p>
+    <p>{% blocktrans %}
+    openSUSE users can install the <a href="https://software.opensuse.org/package/dolphin-emu">openSUSE rpm, which may be slightly out of date - so compiling might be better</a>
+    {% endblocktrans %}</p>
+    <p>{% blocktrans %}
+    In addition, an unofficial Flatpak package can be downloaded from <a href="https://flathub.org/apps/details/org.DolphinEmu.dolphin-emu">Flathub</a>
     {% endblocktrans %}</p>
     <p>{% blocktrans %}Users of other Linux distributions can look here to compile Dolphin: <a href="https://wiki.dolphin-emu.org/index.php?title=Building_Dolphin_on_Linux">Building Dolphin on Linux</a>
     {% endblocktrans %}</p>
