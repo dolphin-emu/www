@@ -684,6 +684,10 @@ svg.feather:hover {
     stroke: white;
 }
 
+button.navbar-toggle {
+    margin-left: 10px;
+}
+
 /* "Stolen" from Zinnia's base CSS. */
 .container ul.paginator {
   margin: 0;
