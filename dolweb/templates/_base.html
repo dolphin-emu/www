@@ -35,25 +35,6 @@
         {% block "extracss" %}
         {% endblock %}
 
-        {% if GOOGLE_ANALYTICS_ACCOUNT %}
-        <script type="text/javascript">
-          var _gaq = _gaq || [];
-          _gaq.push(['_setAccount', '{{ GOOGLE_ANALYTICS_ACCOUNT }}']);
-          _gaq.push(['_setDomainName', 'dolphin-emu.org']);
-          _gaq.push(['_trackPageview']);
-
-          (function() {
-            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-          })();
-
-          window.google_analytics_uacct = "{{ GOOGLE_ANALYTICS_ACCOUNT }}";
-        </script>
-        {% endif %}
-
-        <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
-        <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/9.3.2/highcharts.js" integrity="sha512-dm3Cn0X6XyRMz52WqL1wag+e2WCNAnggh2+4mv/9Ngd+IhBIH9NEQYUZ4g3A6GJUbhKrGw5hErqcFIyk73lUgA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/9.3.2/modules/data.min.js" integrity="sha512-8b+GXbLsl2QWPgMMRF/q2/fBYSHd/xl0IezPaedR+yNdRtfjhEWPxJ4jaBSMfWmpIm04KJwC2RROO7auA1yxXg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script>
@@ -67,23 +48,6 @@
             options['chart']['style']['fontFamily'] = 'Helvetica Neue,Helvetica,Arial,sans-serif';
             Highcharts.chart("chart" + CHART_ID, options);
           }
-          window.addEventListener("load", function(){
-            window.cookieconsent.initialise({
-              "content": {
-                "message": "{% trans "We use cookies to personalise content and ads, to provide social media features and to analyse our traffic. We also share information about your use of our site with our social media, advertising and analytics partners who may combine it with other information you’ve provided to them or they’ve collected from your use of their services." %}",
-                "link": "Learn more",
-                "href": "https://cookiesandyou.com/",
-              },
-              "palette": {
-                "popup": {
-                  "background": "#000"
-                },
-                "button": {
-                  "background": "#f1d600"
-                }
-              }
-            })
-          });
         </script>
     </head>
 

@@ -12,7 +12,6 @@ def website_urls(request):
         "GIT_COMMIT_URL": settings.GIT_COMMIT_URL,
         "WEBSITE_GIT_URL": settings.WEBSITE_GIT_URL,
         "ISSUES_URL": settings.ISSUES_URL,
-        "GOOGLE_ANALYTICS_ACCOUNT": settings.GOOGLE_ANALYTICS_ACCOUNT,
         "DEFAULT_HOST": settings.DEFAULT_HOST,
     }
 

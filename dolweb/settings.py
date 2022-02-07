@@ -288,9 +288,6 @@ WIKI_DB_READ_ONLY = True
 # be the default database, which is where the tables are syncdb'd.
 WIKI_DB_NAME = 'wiki'
 
-# Google analytics account ID, or '' to disable GA tracking.
-GOOGLE_ANALYTICS_ACCOUNT = ''
-
 # Social media links information.
 FB_LIKE_PAGE = 'http://www.facebook.com/dolphin.emu'
 GPLUS_LIKE_PAGE = 'http://dolphin-emu.org/'
