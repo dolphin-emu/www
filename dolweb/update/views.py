@@ -11,6 +11,7 @@ from dolweb.update.models import UpdateTrack
 # artifact instead.
 _UPDATE_SYSTEM_TO_ARTIFACT_NAME = {
     'win': 'Windows x64',
+    'win-arm64': 'Windows ARM64',
     'macos': 'macOS (Intel)',
     'macos-universal': 'macOS (ARM/Intel Universal)',
 }
@@ -109,7 +110,7 @@ def check(request, updater_ver, track, version, platform):
     if updater_ver == "0":
         platform = "win"
     else:
-        if platform != "win" and platform != "macos" and platform != "macos-universal":
+        if _UPDATE_SYSTEM_TO_ARTIFACT_NAME.get(platform) is None:
             return _error_response(400,
                                    "Unsupported platform %r" % platform)
 
