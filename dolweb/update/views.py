@@ -93,6 +93,7 @@ def latest(request, track):
         artifacts.append({'system': art.target_system, 'url': art.url})
     data = {
         'shortrev': version.shortrev,
+        'date': version.date,
         'hash': version.hash,
         'changelog_html': changelog_html,
         'artifacts': artifacts
