@@ -33,12 +33,34 @@
     margin: 0 0 0 2em;
 }
 
+#mw-content-text h1 {
+    padding-top: .5em;
+    padding-bottom: .17em;
+    border-bottom: 1px solid #aaa;
+    font-size: 180%;
+    margin-bottom: .6em;
+}
+
 #mw-content-text h2 {
     padding-top: .5em;
     padding-bottom: .17em;
     border-bottom: 1px solid #aaa;
     font-size: 150%;
     margin-bottom: .6em;
+}
+
+#mw-content-text h3 {
+    font-size: 120%;
+    font-weight: bold;
+}
+
+#mw-content-text h4 {
+    font-size: 100%;
+    font-weight: bold;
+}
+
+#mw-content-text h5, #mw-content-text h6 {
+    font-size: 100%;
 }
 
 #toc h2, .toc h2 {
