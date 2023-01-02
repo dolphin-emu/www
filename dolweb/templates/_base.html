@@ -32,6 +32,7 @@
         <link href="{% static "css/bootstrap-theme.min.css" %}" rel="stylesheet">
         <link href="{% static "css/dolphin.css" %}" rel="stylesheet">
         <link href="{% static "sprites/nav.css" %}" rel="stylesheet">
+        <link id="theme-link" rel="stylesheet" href="{% static "css/dolphin-light.css" %}" >
         {% block "extracss" %}
         {% endblock %}
 
@@ -62,7 +63,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-logo" href="{% url 'home' %}"><img src="{% static "img/logo.png" %}" height="32" alt="{% trans "Dolphin Emulator" %}"></a>
+                    <a class="navbar-logo" id="hamburger" href="{% url 'home' %}"><img src="{% static "img/logo.png" %}" height="32" alt="{% trans "Dolphin Emulator" %}"></a>
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav pull-left">
@@ -74,7 +75,8 @@
                         <li><a href="{% url 'compat_index' %}">{% trans "Compatibility" %}</a></li>
                         <li><a href="{{ FORUM_URL }}">{% trans "Forum" %}</a></li>
                         <li><a href="{{ WIKI_URL }}">{% trans "Wiki" %}</a></li>
-                        <li><a href="{{ GIT_BROWSE_URL }}">{% trans "Code" %}</a></li>
+                        <li id="lastNavbarLi"><a href="{{ GIT_BROWSE_URL }}">{% trans "Code" %}</a></li>
+                        <span id="sunMoon"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#999" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg></span>
                     </ul>
                     <ul class="nav navbar-nav pull-right">
                         <li class="dropdown">
@@ -120,6 +122,7 @@
 
         <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
         <script src="{% static "js/bootstrap.min.js" %}"></script>
+        <script src="{% static "js/toggle-mode.js" %}"></script>
         {% block "extrajs" %}
         {% endblock %}
     </body>

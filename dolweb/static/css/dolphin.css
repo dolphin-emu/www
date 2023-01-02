@@ -671,6 +671,23 @@ div.draft-warning {
     background: #ff9100;
 }
 
+/*toggle svg*/
+svg.feather{
+    stroke: #999;
+    margin-left: 10px;
+    margin-top: 13px;
+    cursor:pointer;
+    float:right;
+}
+
+svg.feather:hover {
+    stroke: white;
+}
+
+button.navbar-toggle {
+    margin-left: 10px;
+}
+
 /* "Stolen" from Zinnia's base CSS. */
 .container ul.paginator {
   margin: 0;

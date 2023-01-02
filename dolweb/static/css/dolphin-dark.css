@@ -1,0 +1,227 @@
+@media (prefers-color-scheme: dark) {
+    body{
+        background-color: #2b2b2b;
+    /*
+        outer color
+        #2b2b2b
+        or
+        #000000
+        or
+        #111111 / #121212;
+        */
+        color: #fff;
+    }
+
+    .jumbotron{
+    background-color: #1e1e1e;   
+    }
+
+    .well a{
+        color: #07b9ff;
+    }
+
+    .well{
+    /*
+    Inner color
+        #1e1e1e
+
+        inner color background-image gradient
+        linear-gradient(to bottom, #121212 0, #1e1e1e 100%)
+        or 
+        linear-gradient(to bottom, #000000 0, #1e1e1e 100%)
+        border-color
+        #313131
+
+    */
+
+        background-image: linear-gradient(to bottom, #000000 0, #1e1e1e 100%);
+        background-image: -webkit-linear-gradient(top, #000000 0, #1e1e1e 100%);
+        background-image: -o-linear-gradient(top, #000000 0, #1e1e1e 100%);
+        background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #000000), to(#1e1e1e));
+        border-color: #313131
+
+        /*
+        background-image: linear-gradient(to bottom, #1e1e1e 0, #272727 100%);*/
+    }
+
+    /*
+        Carousel edit
+        add border radius of 20px (more like 15px)
+    */
+
+    .carousel-inner, .carousel-control.right, .carousel-control.left{
+        border-radius: 10px;
+    }
+
+    /*
+        carousel gallery
+        add border radius of 5px
+        .img.fp-sshot
+    */
+    .img.fp-sshot{
+        border-radius: 5px;
+    }
+    
+    .form-control{
+        background-color: #000;
+        color: #fff;
+        border: 1px solid #616161;
+    }
+
+    .input-group-btn>.btn{
+        background-color: #66afe9;
+    }
+    .dropdown-menu>li>a{
+        color: #fff;
+    }
+
+    .dropdown-menu{
+        background-color: #000;
+        
+    /* background-color: #1e1e1e;*/
+    }
+        
+    .navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.active>a{
+        background-image: linear-gradient(to bottom, #797979 0, #101010 100%);
+        background-image: -webkit-linear-gradient(top, #797979 0, #101010 100%);
+        background-image: -o-linear-gradient(top, #797979 0, #101010 100%);
+        background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #797979), to(#101010));
+    }
+
+ 
+
+    /*
+        Addition rule when in mobile hamburger mode
+        PLACE BUTTON BELOW HAMBURGER TOGGLE
+        float: right;
+        margin-right: 10px;
+    */
+        
+        
+    /*Implement dark mode css media query*/
+    /*
+    @media (prefers-color-scheme: dark) {
+    body {
+        color: #eee;
+        background: #121212;
+    }
+
+    a {
+        color: #809fff;
+    }
+    }*/
+
+
+    /* Filter (dim) image brightness for better viewing
+    Or apply it via media query */
+    img {
+        filter: brightness(.95);
+    }
+
+    h4.modal-title {
+        color: black;
+    }
+
+    .navbar-logo>img:hover {
+        filter: brightness(2);
+    }
+
+
+    /*Downloads Page*/
+    pre.always-ltr{
+        color: #fff;
+        background-color: #000000;
+    }
+
+    .alert-info{
+        background-image: linear-gradient(to bottom, #353434 0, #1f1f1f 100%);
+        background-image: -webkit-linear-gradient(top, #353434 0, #1f1f1f 100%);
+        background-image: -o-linear-gradient(top, #353434 0, #1f1f1f 100%);
+        background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #353434), to(#1f1f1f));
+        border-width: medium;
+        color: #00b5ff;
+        border-color: #00b5ff;
+    }
+
+    .alert-danger{
+        background-image: linear-gradient(to bottom, #353434 0, #1f1f1f 100%);
+        background-image: -webkit-linear-gradient(top, #353434 0, #1f1f1f 100%);
+        background-image: -o-linear-gradient(top, #353434 0, #1f1f1f 100%);
+        background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #353434), to(#1f1f1f));
+        border-width: medium;
+        color: #ff4040;
+        border-color: #ff4040;
+    }
+
+    .alert-warning{
+        background-image: linear-gradient(to bottom, #353434 0, #1f1f1f 100%);
+        background-image: -webkit-linear-gradient(top, #353434 0, #1f1f1f 100%);
+        background-image: -o-linear-gradient(top, #353434 0, #1f1f1f 100%);
+        background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #353434), to(#1f1f1f));
+        border-width: medium;
+        color: #f5e79e;
+        border-color: #f5e79e;
+    }
+
+
+    /*Blog pages*/
+    .breadcrumb{
+        background-color: #1b1b1b;
+    }
+
+
+    /* compatibility page */
+    td.category>img{
+        filter: invert(1) !important;
+    }
+
+    .compat-list tbody tr:nth-child(2n) {
+        background-color: #0c0c0c;
+    }
+
+    .compat-list tbody tr:nth-child(2n+1) {
+        background-color: #2b2b2b;
+    }
+
+    .pagination>li>a, .pagination>li>span{
+        background-color: #2b2b2b;
+    }
+
+
+    .pagination>li>a:hover, .pagination>li>span:hover, .pagination>li>a:focus, .pagination>li>span:focus{
+        color: af471d;
+    }
+
+
+    /* guide pages */
+    .toc{
+        background-color: #1e1e1e;
+    }
+
+    div.thumbinner{
+        background: #1e1e1e;
+    }
+
+    kbd{
+        color: #000;
+        background-color: #fcfcfc;
+    }
+
+    code{
+        color: #ff0041;
+        background-color: #3c0000;
+    }
+
+    pre{
+        color: #ffffff;
+        background-color: #000000;
+    }
+
+    table.wikitable, table.prettytable{
+        background-color: #2b2b2b;
+    }
+
+    table.wikitable > tr > th, table.wikitable > * > tr > th{
+        background-color: #1e1e1e;
+    }
+} /* End of main media query*/
