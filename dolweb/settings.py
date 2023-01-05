@@ -270,6 +270,7 @@ LOGGING = {
 TEST_RUNNER = 'django.test.runner.DiscoverRunner'
 
 # Links and templates for links to other Dolphin properties.
+DISCORD_URL = "https://discord.dolphin-emu.org/"
 FORUM_URL = "https://forums.dolphin-emu.org/"
 WIKI_URL = "https://wiki.dolphin-emu.org/"
 GIT_AUTHOR_URL = "https://github.com/%s"
