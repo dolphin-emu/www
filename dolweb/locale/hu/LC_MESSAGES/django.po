@@ -5,14 +5,14 @@
 # Translators:
 # Delirious <delirious@freemail.hu>, 2013
 # Delirious <delirious@freemail.hu>, 2013
-# Evin <tomevin1@gmail.com>, 2016
+# Evin, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-04-11 23:51+0200\n"
-"PO-Revision-Date: 2017-09-23 18:48+0000\n"
-"Last-Translator: Evin <tomevin1@gmail.com>\n"
+"PO-Revision-Date: 2013-01-23 05:00+0000\n"
+"Last-Translator: Evin, 2016\n"
 "Language-Team: Hungarian (http://www.transifex.com/delroth/dolphin-emu/language/hu/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"

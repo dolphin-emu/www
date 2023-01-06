@@ -8,20 +8,21 @@
 # Felipefpl, 2015
 # Charles Fernando da Silva <eu.charles@hotmail.com>, 2013
 # Mateus B. Cassiano <jhonn.copperfield@gmail.com>, 2013-2015
-# Mateus B. Cassiano <inactive+Jhonn@transifex.com>, 2013
+# Mateus B. Cassiano <mbc07@live.com>, 2021
+# 0d650e867a64ff3c44c343a4a46f4cc4_0750f19 <ca09cae74bc6c7e28e5c24ed2567e538_49102>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-04-11 23:51+0200\n"
-"PO-Revision-Date: 2018-03-17 20:24+0000\n"
-"Last-Translator: Felipefpl\n"
+"PO-Revision-Date: 2013-01-23 05:00+0000\n"
+"Last-Translator: Mateus B. Cassiano <mbc07@live.com>, 2021\n"
 "Language-Team: Portuguese (Brazil) (http://www.transifex.com/delroth/dolphin-emu/language/pt_BR/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: pt_BR\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
 #: blog/admin.py:45
 msgid "Content"
@@ -75,6 +76,7 @@ msgid_plural ""
 "  "
 msgstr[0] "\n    %(count)s post\n  "
 msgstr[1] "\n    %(count)s posts\n  "
+msgstr[2] "\n    %(count)s posts\n  "
 
 #: blog/templates/series-index.html:27
 msgid "RSS feed:"
@@ -571,7 +573,7 @@ msgstr "Usuários de outras distribuições do Linux podem olhar aqui para compi
 
 #: downloads/templates/downloads-index.html:103
 msgid "Source code"
-msgstr "Código fonte"
+msgstr "Código-fonte"
 
 #: downloads/templates/downloads-index.html:105
 msgid ""
@@ -693,7 +695,7 @@ msgstr "/ Parte da série <a href=\"%(url)s\">%(name)s</a>"
 
 #: homepage/templates/homepage-home.html:143
 msgid "Read this article"
-msgstr "Leir esse artigo"
+msgstr "Ler esse artigo"
 
 #: homepage/templates/homepage-home.html:147
 msgid "No articles yet."
@@ -766,4 +768,4 @@ msgid ""
 "            &copy; 2014 Dolphin Emulator Project -\n"
 "            <a href=\"%(WEBSITE_GIT_URL)s\">Website source code</a>\n"
 "            "
-msgstr "\n&copy; 2015 Projeto Dolphin Emulator - \n<a href=\"%(WEBSITE_GIT_URL)s\">Código fonte do website</a>"
+msgstr "\n&copy; 2014 Projeto Dolphin Emulator - \n<a href=\"%(WEBSITE_GIT_URL)s\">Código-fonte do website</a>"

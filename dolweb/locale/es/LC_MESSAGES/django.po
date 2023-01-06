@@ -3,27 +3,28 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Petiso_Carambanal <diegoae@gmail.com>, 2013-2015
+# Petiso_Carambanal <diegoae@gmail.com>, 2013-2015,2021
 # Jambi <jlarrondobunop@yahoo.es>, 2015
 # Katabi, 2015
-# Puniasterus <puniasterus@gmail.com>, 2013-2016
+# Puniasterus <puniasterus@gmail.com>, 2013-2016,2021
 # Puniasterus <puniasterus@gmail.com>, 2013
 # Puniasterus <puniasterus@gmail.com>, 2013
 # Sithdown <afdezmnez@gmail.com>, 2013
-# Swyter <Swyterzone@gmail.com>, 2014-2017
+# Swyter <Swyterzone@gmail.com>, 2014-2017,2021
+# Víctor González, 2021-2022
 msgid ""
 msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-04-11 23:51+0200\n"
-"PO-Revision-Date: 2017-09-23 18:42+0000\n"
-"Last-Translator: Swyter <Swyterzone@gmail.com>\n"
+"PO-Revision-Date: 2013-01-23 05:00+0000\n"
+"Last-Translator: Víctor González, 2021-2022\n"
 "Language-Team: Spanish (http://www.transifex.com/delroth/dolphin-emu/language/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: es\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
 #: blog/admin.py:45
 msgid "Content"
@@ -45,7 +46,7 @@ msgstr "imagen"
 
 #: blog/models.py:21
 msgid "Used for illustration."
-msgstr "Usado como ilustración."
+msgstr "Usado como ejemplo."
 
 #: blog/templates/blog_sidebar.html:6
 #: blog/templates/zinnia/tags/search_form.html:7
@@ -77,6 +78,7 @@ msgid_plural ""
 "  "
 msgstr[0] "\n%(count)s artículo"
 msgstr[1] "\n%(count)s artículos"
+msgstr[2] "\n%(count)s artículos"
 
 #: blog/templates/series-index.html:27
 msgid "RSS feed:"
@@ -323,7 +325,7 @@ msgstr "Puedes usar - para excluir palabras o frases. &quot;comillas dobles&quot
 msgid ""
 "The Dolphin Emulator compatibility list contains all the games we tested, "
 "sorted by how well they work on the emulator."
-msgstr "La lista de compatibilidad emulador Dolphin contiene todos los juegos que hemos probado, según lo bien que funcionan en el emulador."
+msgstr "La lista de compatibilidad del emulador Dolphin contiene todos los juegos que hemos probado, organizados según lo bien que funcionan en el emulador."
 
 #: compat/templates/compat-list.html:11
 #, python-format
@@ -332,7 +334,7 @@ msgstr "Lista de compatibilidad - página %(page)s"
 
 #: compat/templates/compat-list.html:23
 msgid "How to read the ratings"
-msgstr "Como leer las calificaciones"
+msgstr "Qué significan las calificaciones"
 
 #: compat/templates/compat-list.html:26
 msgid "5 out of 5"
@@ -350,7 +352,7 @@ msgstr "4 de 5"
 msgid ""
 "<strong>Playable</strong>: Runs well, only minor graphical or audio "
 "glitches. Games can be played all the way through."
-msgstr "<strong>Jugable</strong>: Funciona bien, con pequeños errores gráficos o de sonido. Los juegos se pueden jugar hasta el final."
+msgstr "<strong>Jugable</strong>: Funciona bien, con pequeños errores gráficos o de sonido. Se puede jugar hasta el final."
 
 #: compat/templates/compat-list.html:28
 msgid "3 out of 5"
@@ -360,7 +362,7 @@ msgstr "3 de 5"
 msgid ""
 "<strong>Starts</strong>: Starts, maybe even plays well, but crashes or major"
 " graphical/audio glitches."
-msgstr "<strong>Inicia</strong>: Inicia, tal vez funcione bien, pero puede que se bloquee o tenga problemas gráficos o de sonido importantes."
+msgstr "<strong>Inicia</strong>: El juego llega a iniciarse y tal vez funcione bien, pero puede que se bloquee o tenga problemas gráficos o de sonido importantes."
 
 #: compat/templates/compat-list.html:29
 msgid "2 out of 5"
@@ -402,7 +404,7 @@ msgstr "Filtrar"
 
 #: compat/templates/compat-list.html:65
 msgid "Game title (click for details)"
-msgstr "Título del juego (clic para detalles)"
+msgstr "Título del juego (pulsa en él para ver más detalles)"
 
 #: compat/templates/compat-list.html:66
 #: homepage/templates/homepage-home.html:95 templates/_base.html:77
@@ -445,7 +447,7 @@ msgstr "Perfecto"
 msgid ""
 "The Official Dolphin FAQ answers all the questions that people often ask "
 "about Dolphin."
-msgstr "La FAQ oficial de Dolphin responde a todas las preguntas que la gente suele hacerse acerca de Dolphin."
+msgstr "La página oficial de preguntas más frecuentes de Dolphin responde a todas las preguntas que la gente suele hacerse acerca de Dolphin."
 
 #: docs/templates/docs-faq.html:8
 msgid "Frequently Asked Questions"
@@ -457,7 +459,7 @@ msgstr "Volver a la lista de guías"
 
 #: docs/templates/docs-guides-index.html:5
 msgid "See all the guides written by the Dolphin team about the emulator."
-msgstr "Ver todas las guías escritas por el equipo de Dolphin en el emulador."
+msgstr "Ver todas las guías escritas por el equipo de Dolphin (en inglés) sobre el emulador."
 
 #: docs/templates/docs-guides-index.html:7 templates/_base.html:76
 msgid "Guides"
@@ -485,7 +487,7 @@ msgstr "Cambio sin descripción"
 msgid ""
 "(<a href=\"%(pr_url)s\">PR #%(pr_id)s</a> from <a "
 "href=\"%(author_url)s\">%(author)s</a>)"
-msgstr "(<a href=\"%(pr_url)s\">PR #%(pr_id)s</a> de <a href=\"%(author_url)s\">%(author)s</a>)"
+msgstr "(<a href=\"%(pr_url)s\">PR n.º %(pr_id)s</a> de <a href=\"%(author_url)s\">%(author)s</a>)"
 
 #: downloads/templates/downloads-branches.html:5
 #: downloads/templates/downloads-branches.html:9
@@ -602,12 +604,12 @@ msgid ""
 "    For reporting bugs please go to <a href=\"%(ISSUES_URL)s\">the issue tracker</a>.\n"
 "    Before creating a new issue, make sure to try a recent development build and search the existing issues.\n"
 "    "
-msgstr "\nPara informar de errores dirígete al <a href=\"%(ISSUES_URL)s\">gestor de incidencias</a>.\nAntes de informar de un problema nuevo prueba una versión en desarrollo reciente y asegúrate de que el problema todavía exista."
+msgstr "\nPara informar de errores, dirígete al <a href=\"%(ISSUES_URL)s\">gestor de incidencias</a>.\nAntes de informar de un problema nuevo, prueba una versión en desarrollo reciente y asegúrate de que el problema todavía se produzca."
 
 #: downloads/templates/downloads-list.html:5
 #, python-format
 msgid "%(branch)s branch - page %(page)s"
-msgstr "%(branch)s rama - página %(page)s"
+msgstr "Rama %(branch)s - página %(page)s"
 
 #: downloads/templates/downloads-list.html:9
 #, python-format
@@ -653,7 +655,7 @@ msgstr "Descripción del cambio"
 msgid ""
 "Official website of Dolphin, the GameCube and Wii emulator. Download the "
 "latest version (%(ver)s) now or ask questions on our forums for help."
-msgstr "Web oficial de Dolphin, el emulador de GameCube y Wii. Descarga la última versión (%(ver)s) ahora o haz preguntas en nuestro foro para obtener ayuda."
+msgstr "Web oficial de Dolphin, el emulador de GameCube y Wii. Descarga la última versión (%(ver)s) ahora o pregunta en nuestro foro para obtener ayuda."
 
 #: homepage/templates/homepage-home.html:14
 msgid "GameCube/Wii games on PC"
@@ -705,7 +707,7 @@ msgstr "Todavía no hay ningún artículo."
 msgid ""
 "View all the user-contributed screenshots of the Dolphin Emulator: GameCube "
 "and Wii games in HD."
-msgstr "Ver todas las capturas de pantalla que aportan los usuarios del emulador Dolphin: GameCube y Wii en HD."
+msgstr "Ver todas las capturas de pantalla que han aportado los usuarios del emulador Dolphin: GameCube y Wii en HD."
 
 #: media/templates/media-all.html:9
 msgid "Screenshots gallery"

@@ -6,13 +6,14 @@
 # Boris Peeters, 2019
 # Garteal <garteal@gmail.com>, 2013-2014,2016
 # Jos van Mourik, 2018-2019
+# Mike van der Kuijl <kuijlmike@gmail.com>, 2022
 msgid ""
 msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-04-11 23:51+0200\n"
-"PO-Revision-Date: 2019-01-28 11:13+0000\n"
-"Last-Translator: Jos van Mourik\n"
+"PO-Revision-Date: 2013-01-23 05:00+0000\n"
+"Last-Translator: Mike van der Kuijl <kuijlmike@gmail.com>, 2022\n"
 "Language-Team: Dutch (http://www.transifex.com/delroth/dolphin-emu/language/nl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -531,7 +532,7 @@ msgid ""
 "\n"
 "    <p>The development versions require the <a href=\"https://www.microsoft.com/en-us/download/details.aspx?id=48145\">64-bit Visual C++ redistributable for Visual Studio 2015</a>\n"
 "    to be installed.</p>\n"
-msgstr "\n<p>Development versies worden telkens uitgebracht als een ontwikkelaar een verandering aanbrengt aan Dolphin. Als je development builds gebruikt, krijg je toegang tot de laatste verbeteringen aan het project. Let wel op dat deze over het algemeen minder betrouwbaar zijn dan de stabiele versies.</p>\n\n<p>Development versies vereisen dat <a href=\"https://www.microsoft.com/en-us/download/details.aspx?id=48145\">64-bit Visual C++ redistributable voor Visual Studio 2015</a> is geïnstalleerd.</p>\n"
+msgstr "\n<p>Development versies worden telkens uitgebracht als een ontwikkelaar een verandering aanbrengt aan Dolphin. Als u development builds gebruikt, krijgt u toegang tot de laatste verbeteringen aan het project. Let wel op dat deze over het algemeen minder betrouwbaar zijn dan de stabiele versies.</p>\n\n<p>Development versies vereisen dat <a href=\"https://www.microsoft.com/en-us/download/details.aspx?id=48145\">64-bit Visual C++ redistributable voor Visual Studio 2015</a> is geïnstalleerd.</p>\n"
 
 #: downloads/templates/downloads-index.html:63
 msgid "Stable versions"
