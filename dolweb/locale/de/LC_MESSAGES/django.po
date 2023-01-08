@@ -25,7 +25,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-04-11 23:51+0200\n"
+"POT-Creation-Date: 2023-01-06 02:28+0100\n"
 "PO-Revision-Date: 2013-01-23 05:00+0000\n"
 "Last-Translator: Neui, 2016\n"
 "Language-Team: German (http://www.transifex.com/delroth/dolphin-emu/language/de/)\n"
@@ -35,30 +35,30 @@ msgstr ""
 "Language: de\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: blog/admin.py:45
+#: blog/admin.py:47
 msgid "Content"
 msgstr "Inhalt"
 
-#: blog/feeds.py:24
+#: blog/feeds.py:27
 #, python-format
 msgid "Entries for the series %s"
 msgstr "Beiträge für Serie %s"
 
-#: blog/feeds.py:27
+#: blog/feeds.py:30
 #, python-format
 msgid "The latest entries for the series %s"
 msgstr "Die neuesten Beiträge für die Serie %s"
 
-#: blog/models.py:20
+#: blog/models.py:39
 msgid "image"
 msgstr "Bild"
 
-#: blog/models.py:21
+#: blog/models.py:40
 msgid "Used for illustration."
 msgstr "Zur Veranschaulichung"
 
 #: blog/templates/blog_sidebar.html:6
-#: blog/templates/zinnia/tags/search_form.html:7
+#: blog/templates/zinnia/tags/search_form.html:6
 msgid "Search articles"
 msgstr "Artikel suchen"
 
@@ -67,7 +67,7 @@ msgid "Blog tags"
 msgstr "Blog-Tags"
 
 #: blog/templates/blog_sidebar.html:36
-#: blog/templates/zinnia/_entry_detail_base.html:83
+#: blog/templates/zinnia/_entry_detail_base.html:79
 msgid "Blog series"
 msgstr "Blogserien"
 
@@ -75,7 +75,7 @@ msgstr "Blogserien"
 msgid "See all"
 msgstr "Alle anzeigen"
 
-#: blog/templates/series-index.html:22
+#: blog/templates/series-index.html:20
 #, python-format
 msgid ""
 "\n"
@@ -88,241 +88,271 @@ msgid_plural ""
 msgstr[0] "\n%(count)s Eintrag"
 msgstr[1] "\n%(count)s Einträge"
 
-#: blog/templates/series-index.html:27
+#: blog/templates/series-index.html:25
 msgid "RSS feed:"
 msgstr "RSS-Feed:"
 
-#: blog/templates/series-index.html:37
+#: blog/templates/series-index.html:35
 msgid "No blog series yet."
 msgstr "Bisher keine Blogserien."
 
-#: blog/templates/zinnia/_entry_detail_base.html:26
-#: homepage/templates/homepage-home.html:122
+#: blog/templates/zinnia/_entry_detail_base.html:22
+#: homepage/templates/homepage-home.html:119
 msgid "Written by"
 msgstr "Geschrieben von"
 
-#: blog/templates/zinnia/_entry_detail_base.html:30
-#: homepage/templates/homepage-home.html:126
+#: blog/templates/zinnia/_entry_detail_base.html:26
+#: homepage/templates/homepage-home.html:123
 #, python-format
 msgid "Show all %(author)s's entries"
 msgstr "Alle Beiträge von %(author)s anzeigen"
 
-#: blog/templates/zinnia/_entry_detail_base.html:32
-#: homepage/templates/homepage-home.html:128
+#: blog/templates/zinnia/_entry_detail_base.html:28
+#: homepage/templates/homepage-home.html:125
 msgid "on"
 msgstr "am"
 
-#: blog/templates/zinnia/_entry_detail_base.html:34
-#: homepage/templates/homepage-home.html:130
+#: blog/templates/zinnia/_entry_detail_base.html:30
+#: homepage/templates/homepage-home.html:127
 msgid "Written on"
 msgstr "Geschrieben am"
 
-#: blog/templates/zinnia/_entry_detail_base.html:42
+#: blog/templates/zinnia/_entry_detail_base.html:38
 msgid "Last update on"
 msgstr "Letztes Update am"
 
-#: blog/templates/zinnia/_entry_detail_base.html:44
+#: blog/templates/zinnia/_entry_detail_base.html:40
 #, python-format
 msgid "Short URL to %(object)s"
 msgstr "Kurz-URL für %(object)s"
 
-#: blog/templates/zinnia/_entry_detail_base.html:45
+#: blog/templates/zinnia/_entry_detail_base.html:41
 msgid "Short link"
 msgstr "Kurzlink"
 
-#: blog/templates/zinnia/_entry_detail_base.html:46
-#: homepage/templates/homepage-home.html:138
+#: blog/templates/zinnia/_entry_detail_base.html:42
+#: homepage/templates/homepage-home.html:135
 msgid "Visit forum thread for this article"
 msgstr "Forenthread dieses Artikels aufrufen"
 
-#: blog/templates/zinnia/_entry_detail_base.html:46
-#: homepage/templates/homepage-home.html:138
+#: blog/templates/zinnia/_entry_detail_base.html:42
+#: homepage/templates/homepage-home.html:135
 msgid "Forum thread"
 msgstr "Forenthread"
 
-#: blog/templates/zinnia/_entry_detail_base.html:63
+#: blog/templates/zinnia/_entry_detail_base.html:59
 #, python-format
 msgid "Continue reading %(object)s"
 msgstr "%(object)s weiterlesen"
 
-#: blog/templates/zinnia/_entry_detail_base.html:65
+#: blog/templates/zinnia/_entry_detail_base.html:61
 msgid "Continue reading"
 msgstr "Weiterlesen"
 
-#: blog/templates/zinnia/_entry_detail_base.html:74
+#: blog/templates/zinnia/_entry_detail_base.html:70
 #, python-format
 msgid ""
 "You can continue the discussion in the <a href=\"%(url)s\" title=\"Visit "
 "forum thread for this article\">forum thread</a> of this article."
 msgstr "Die Diskussion kann im <a href=\"%(url)s\" title=\"Forenthread dieses Artikels\">Forenthread</a> des Artikels fortgeführt werden."
 
-#: blog/templates/zinnia/_entry_detail_base.html:85
+#: blog/templates/zinnia/_entry_detail_base.html:81
 #, python-format
 msgid ""
 "This article is number %(nth)s within the blog series\n"
 "    <a href=\"%(url)s\"><em>%(series)s</em></a>."
 msgstr "Dieser Artikel ist Nummer %(nth)s in der Blogserie\n<a href=\"%(url)s\"><em>%(series)s</em></a>."
 
-#: blog/templates/zinnia/_entry_detail_base.html:90
+#: blog/templates/zinnia/_entry_detail_base.html:85
 msgid "‹ Previous article in series"
 msgstr "‹ Vorheriger Artikel der Serie"
 
-#: blog/templates/zinnia/_entry_detail_base.html:92
+#: blog/templates/zinnia/_entry_detail_base.html:87
 msgid "Next article in series ›"
 msgstr "Nächster Artikel der Serie ›"
 
-#: blog/templates/zinnia/_entry_detail_base.html:142
+#: blog/templates/zinnia/_entry_detail_base.html:99
 msgid "Tags"
 msgstr "Tags"
 
-#: blog/templates/zinnia/_entry_detail_base.html:146
+#: blog/templates/zinnia/_entry_detail_base.html:103
 #, python-format
 msgid "Show all entries tagged by %(tag)s"
 msgstr "Alle Beiträge mit Tag %(tag)s anzeigen"
 
-#: blog/templates/zinnia/_entry_detail_base.html:149
+#: blog/templates/zinnia/_entry_detail_base.html:106
 msgid "No tags"
 msgstr "Keine Tags"
 
-#: blog/templates/zinnia/_entry_detail_base.html:156
+#: blog/templates/zinnia/_entry_detail_base.html:113
 msgid "Categories"
 msgstr "Kategorien"
 
-#: blog/templates/zinnia/_entry_detail_base.html:160
+#: blog/templates/zinnia/_entry_detail_base.html:117
 #, python-format
 msgid "Show all entries in %(category)s"
 msgstr "Zeige alle Beiträge in %(category)s"
 
-#: blog/templates/zinnia/_entry_detail_base.html:163
+#: blog/templates/zinnia/_entry_detail_base.html:120
 msgid "No categories"
 msgstr "Keine Kategorien"
 
-#: blog/templates/zinnia/entry_detail_base.html:22
+#: blog/templates/zinnia/entry_detail_base.html:33
 msgid "RSS Feed of discussions on"
 msgstr "RSS Feed Diskussion auf"
 
-#: blog/templates/zinnia/entry_detail_base.html:24
+#: blog/templates/zinnia/entry_detail_base.html:35
 msgid "RSS Feed of comments on"
 msgstr "RSS Feed Kommentare auf"
 
-#: blog/templates/zinnia/entry_detail_base.html:26
+#: blog/templates/zinnia/entry_detail_base.html:37
 msgid "RSS Feed of pingbacks on"
 msgstr "RSS Feed Pingbacks auf"
 
-#: blog/templates/zinnia/entry_detail_base.html:28
+#: blog/templates/zinnia/entry_detail_base.html:39
 msgid "RSS Feed of trackbacks on"
 msgstr "RSS Feed Trackbacks auf"
 
-#: blog/templates/zinnia/entry_detail_base.html:46
+#: blog/templates/zinnia/entry_detail_base.html:57
 msgid "Next entry"
 msgstr "Nächster Beitrag"
 
-#: blog/templates/zinnia/entry_detail_base.html:58
+#: blog/templates/zinnia/entry_detail_base.html:69
 msgid "Previous entry"
 msgstr "Vorheriger Beitrag"
 
-#: blog/templates/zinnia/entry_detail_base.html:70
+#: blog/templates/zinnia/entry_detail_base.html:81
 msgid "Related entries"
 msgstr "Verwandte Beiträge"
 
-#: blog/templates/zinnia/entry_detail_base.html:82
+#: blog/templates/zinnia/entry_detail_base.html:93
 msgid "Similar entries"
 msgstr "Ähnliche Beiträge"
 
-#: blog/templates/zinnia/entry_detail_base.html:224
-#: blog/templates/zinnia/entry_detail_base.html:225
+#: blog/templates/zinnia/entry_detail_base.html:235
+#: blog/templates/zinnia/entry_detail_base.html:236
 msgid "Edit the entry"
 msgstr "Beitrag bearbeiten"
 
-#: blog/templates/zinnia/entry_list.html:5
+#: blog/templates/zinnia/entry_list.html:4
 msgid "Latest entries for"
 msgstr "Neueste Beiträge für"
 
-#: blog/templates/zinnia/entry_list.html:5
+#: blog/templates/zinnia/entry_list.html:4
 msgid "the category"
 msgstr "Die Kategorie"
 
-#: blog/templates/zinnia/entry_list.html:5
+#: blog/templates/zinnia/entry_list.html:4
 msgid "the tag"
 msgstr "Der Tag"
 
-#: blog/templates/zinnia/entry_list.html:5
+#: blog/templates/zinnia/entry_list.html:4
 msgid "the author"
 msgstr "Der Autor"
 
-#: blog/templates/zinnia/entry_list.html:5
+#: blog/templates/zinnia/entry_list.html:4
 msgid "page"
 msgstr "Seite"
 
-#: blog/templates/zinnia/entry_list.html:10
-#: blog/templates/zinnia/entry_list.html:13
-#: blog/templates/zinnia/entry_list.html:16
+#: blog/templates/zinnia/entry_list.html:9
+#: blog/templates/zinnia/entry_list.html:12
+#: blog/templates/zinnia/entry_list.html:15
 msgid "RSS Feed"
 msgstr "RSS-Feed"
 
-#: blog/templates/zinnia/entry_list.html:20
+#: blog/templates/zinnia/entry_list.html:19
 msgid "Latest entries"
 msgstr "Neueste Beiträge"
 
-#: blog/templates/zinnia/entry_list.html:20
+#: blog/templates/zinnia/entry_list.html:19
 msgid "Category"
 msgstr "Kategorie"
 
-#: blog/templates/zinnia/entry_list.html:20
+#: blog/templates/zinnia/entry_list.html:19
 msgid "Tag"
 msgstr "Tag"
 
-#: blog/templates/zinnia/entry_list.html:20
+#: blog/templates/zinnia/entry_list.html:19
 msgid "Author"
 msgstr "Autor"
 
-#: blog/templates/zinnia/entry_list.html:20
+#: blog/templates/zinnia/entry_list.html:19
 msgid "Page"
 msgstr "Seite"
 
-#: blog/templates/zinnia/entry_list.html:28
+#: blog/templates/zinnia/entry_list.html:27
 #, python-format
 msgid "Category archives: %(category)s"
 msgstr "Kategorien-Archiv: %(category)s"
 
-#: blog/templates/zinnia/entry_list.html:35
+#: blog/templates/zinnia/entry_list.html:34
 #, python-format
 msgid "Tag archives: %(tag)s"
 msgstr "Tag-Archiv: %(tag)s"
 
-#: blog/templates/zinnia/entry_list.html:39
+#: blog/templates/zinnia/entry_list.html:38
 #, python-format
 msgid "Author archives: %(author)s"
 msgstr "Autoren-Archiv: %(author)s"
 
-#: blog/templates/zinnia/entry_list.html:48
+#: blog/templates/zinnia/entry_list.html:47
 msgid "No entries yet."
 msgstr "Bisher keine Beiträge vorhanden."
 
+#: blog/templates/zinnia/entry_list.html:66
 #: blog/templates/zinnia/entry_list.html:67
-#: blog/templates/zinnia/entry_list.html:68
 msgid "Edit the category"
 msgstr "Kategorie bearbeiten"
 
+#: blog/templates/zinnia/entry_list.html:73
 #: blog/templates/zinnia/entry_list.html:74
-#: blog/templates/zinnia/entry_list.html:75
 msgid "Edit the tag"
 msgstr "Tag bearbeiten"
 
+#: blog/templates/zinnia/entry_list.html:80
 #: blog/templates/zinnia/entry_list.html:81
-#: blog/templates/zinnia/entry_list.html:82
 msgid "Edit the author"
 msgstr "Autor bearbeiten"
 
-#: blog/templates/zinnia/skeleton.html:5
+#: blog/templates/zinnia/entry_search.html:4
+#: blog/templates/zinnia/entry_search.html:6
+#: blog/templates/zinnia/entry_search.html:18
+#, python-format
+msgid "Search results for '%(pattern)s'"
+msgstr ""
+
+#: blog/templates/zinnia/entry_search.html:11
+#: blog/templates/zinnia/entry_search.html:24
+#: blog/templates/zinnia/entry_search.html:25
+#, python-format
+msgid "RSS feed of search results for '%(pattern)s'"
+msgstr ""
+
+#: blog/templates/zinnia/entry_search.html:32
+#, python-format
+msgid "%(entry_count)s entry found"
+msgid_plural "%(entry_count)s entries found"
+msgstr[0] ""
+msgstr[1] ""
+
+#: blog/templates/zinnia/entry_search.html:43
+msgid "Nothing found."
+msgstr ""
+
+#: blog/templates/zinnia/skeleton.html:4
 msgid "Latest news for Dolphin Emulator"
 msgstr "Neueste Nachrichten vom Dolphin Emulator"
 
-#: blog/templates/zinnia/skeleton.html:8
+#: blog/templates/zinnia/skeleton.html:7
 msgid "Articles"
 msgstr "Artikel"
 
-#: blog/templates/zinnia/tags/search_form.html:18
+#: blog/templates/zinnia/skeleton.html:15
+#: homepage/templates/homepage-home.html:108
+msgid "RSS feed of the latest articles"
+msgstr "Neueste Artikel als RSS-Feed"
+
+#: blog/templates/zinnia/tags/search_form.html:17
 msgid ""
 "You can use - to exclude words or phrases, &quot;double quotes&quot; for "
 "exact phrases and the AND/OR boolean operators combined with parenthesis for"
@@ -415,7 +445,7 @@ msgid "Game title (click for details)"
 msgstr "Spieltitel (für weitere Details anklicken)"
 
 #: compat/templates/compat-list.html:66
-#: homepage/templates/homepage-home.html:95 templates/_base.html:77
+#: homepage/templates/homepage-home.html:95 templates/_base.html:74
 msgid "Compatibility"
 msgstr "Kompatibilität"
 
@@ -427,37 +457,37 @@ msgstr "Letzte Änderung"
 msgid "Your query does not match any game."
 msgstr "Deine Suchanfrage passt zu keinem Spiel."
 
-#: compat/templatetags/compat.py:9
+#: compat/templatetags/compat.py:12
 msgid "Unknown"
 msgstr "Unbekannt"
 
-#: compat/templatetags/compat.py:10
+#: compat/templatetags/compat.py:13
 msgid "Broken"
 msgstr "Defekt"
 
-#: compat/templatetags/compat.py:11
+#: compat/templatetags/compat.py:14
 msgid "Intro/Menu"
 msgstr "Intro/Menü"
 
-#: compat/templatetags/compat.py:12
+#: compat/templatetags/compat.py:15
 msgid "Starts"
 msgstr "Startet"
 
-#: compat/templatetags/compat.py:13
+#: compat/templatetags/compat.py:16
 msgid "Playable"
 msgstr "Spielbar"
 
-#: compat/templatetags/compat.py:14
+#: compat/templatetags/compat.py:17
 msgid "Perfect"
 msgstr "Perfekt"
 
-#: docs/templates/docs-faq.html:6
+#: docs/templates/docs-faq.html:5
 msgid ""
 "The Official Dolphin FAQ answers all the questions that people often ask "
 "about Dolphin."
 msgstr "Die offizielle Dolphin-FAQ beantworten die Fragen, die häufig über Dolphin gestellt werden."
 
-#: docs/templates/docs-faq.html:8
+#: docs/templates/docs-faq.html:7
 msgid "Frequently Asked Questions"
 msgstr "Häufig gestellte Fragen"
 
@@ -469,7 +499,7 @@ msgstr "Zurück zur Liste der Anleitungen"
 msgid "See all the guides written by the Dolphin team about the emulator."
 msgstr "Lies dir alle Anleitungen durch, die das Dolphin-Team zum Emulator geschrieben hat."
 
-#: docs/templates/docs-guides-index.html:7 templates/_base.html:76
+#: docs/templates/docs-guides-index.html:7 templates/_base.html:73
 msgid "Guides"
 msgstr "Anleitungen"
 
@@ -481,16 +511,20 @@ msgstr "Anleitungen und Dokumentation"
 msgid "No published guide available"
 msgstr "Keine veröffentlichte Anleitung verfügbar"
 
-#: downloads/models.py:36 downloads/models.py:54
+#: docs/templates/docs-privacy.html:4
+msgid "Privacy Policy for the Dolphin Emulator and its services."
+msgstr ""
+
+#: docs/templates/docs-privacy.html:6 templates/_base.html:121
+msgid "Privacy Policy"
+msgstr ""
+
+#: downloads/models.py:40 downloads/models.py:57
 #, python-format
 msgid "Dolphin %s"
 msgstr "Dolphin %s"
 
-#: downloads/models.py:78
-msgid "Change with no description"
-msgstr "Ändern ohne einer Beschreibung"
-
-#: downloads/models.py:81
+#: downloads/models.py:105
 #, python-format
 msgid ""
 "(<a href=\"%(pr_url)s\">PR #%(pr_id)s</a> from <a "
@@ -508,7 +542,7 @@ msgid "<tt>%(branch)s</tt> branch"
 msgstr "Entwicklungszweig <tt>%(branch)s</tt>"
 
 #: downloads/templates/downloads-branches.html:21
-#: downloads/templates/downloads-index.html:45
+#: downloads/templates/downloads-index.html:63
 msgid "View older versions »"
 msgstr "Ältere Versionen »"
 
@@ -528,64 +562,89 @@ msgid ""
 msgstr "Lade die aktuellste Version des Dolphin-Emulators (%(ver)s) von der offiziellen Seite herunter."
 
 #: downloads/templates/downloads-index.html:8
-#: downloads/templates/downloads-index.html:27 templates/_base.html:72
+#: downloads/templates/downloads-index.html:27 templates/_base.html:69
 msgid "Download"
 msgstr "Downloads"
 
 #: downloads/templates/downloads-index.html:31
-msgid "Development versions"
-msgstr "Entwicklerversionen"
+msgid "Beta versions"
+msgstr ""
 
 #: downloads/templates/downloads-index.html:33
 msgid ""
 "\n"
-"    <p>Development versions are released every time a developer makes a change to\n"
+"    <p>Beta versions are released every month, usually accompanied by a <em>Progress Report</em>\n"
+"    article. Use the latest beta version if you prefer stability over the newest features in the\n"
+"    <a href=\"#download-dev\">development versions</a>.</p>\n"
+msgstr ""
+
+#: downloads/templates/downloads-index.html:40
+msgid ""
+"The Windows beta versions <b>require</b> the <a "
+"href=\"https://support.microsoft.com/en-us/help/2977003/the-latest-"
+"supported-visual-c-downloads\">64-bit Visual C++ redistributable for Visual "
+"Studio 2022</a> to be installed."
+msgstr ""
+
+#: downloads/templates/downloads-index.html:48
+msgid "Development versions"
+msgstr "Entwicklerversionen"
+
+#: downloads/templates/downloads-index.html:51
+msgid ""
+"Development versions are released every time a developer makes a change to\n"
 "    Dolphin, several times every day! Using development versions enables you to\n"
 "    use the latest and greatest improvements to the project. They are however\n"
-"    less tested than stable versions of the emulator.</p>\n"
-"\n"
-"    <p>The development versions require the <a href=\"https://www.microsoft.com/en-us/download/details.aspx?id=48145\">64-bit Visual C++ redistributable for Visual Studio 2015</a>\n"
-"    to be installed.</p>\n"
-msgstr "\n    <p>Entwicklerversionen werden jedes mal veröffentlicht wenn ein Entwickler eine Änderung an Dolphin vornimmt, mehrmals pro Tag!\n    Das Verwenden von Entwicklerversionen ermöglicht dir die neusten und besten Verbesserungen zum Projekt zu verwenden.\n    Diese sind jedoch weniger getestet als stabile Versionen des Emulators.</p>\n\n    <p>Die Entwicklerversionen setzen voraus, dass das <a href=\"https://www.microsoft.com/de-de/download/details.aspx?id=48145\">64-bit Visual C++ Redistributable für Visual Studio 2015</a>\n    installiert ist.</p>\n"
+"    less tested than <a href=\"#download-beta\">beta versions</a> of the emulator."
+msgstr ""
 
-#: downloads/templates/downloads-index.html:63
+#: downloads/templates/downloads-index.html:58
+msgid ""
+"The Windows development versions <b>require</b> the <a "
+"href=\"https://support.microsoft.com/en-us/help/2977003/the-latest-"
+"supported-visual-c-downloads\">64-bit Visual C++ redistributable for Visual "
+"Studio 2022</a> to be installed."
+msgstr ""
+
+#: downloads/templates/downloads-index.html:81
 msgid "Stable versions"
 msgstr "Stabile Versionen"
 
-#: downloads/templates/downloads-index.html:65
+#: downloads/templates/downloads-index.html:84
 msgid ""
 "\n"
-"    Stable versions are released after a lot of testing to ensure emulation\n"
-"    performance and stability. However, since they are released less often,\n"
-"    they might be outdated and lacking some new features.\n"
-msgstr "\nStabile Versionen werden nach langen Testphasen veröffentlicht, um eine hohe Emulationsleistung und Stabilität zu gewährleisten.\nWeil sie jedoch nicht so häufig veröffentlicht werden, können sie bereits veraltet sein und es fehlen neue Funktionen.\n"
+"    The stable versions below are years out of date and missing countless features and bug fixes.\n"
+"    <a href=\"#download-beta\">Beta</a> or <a href=\"#download-dev\">development</a> versions are a\n"
+"    better choice for almost all users; the stable versions should only be used if you have\n"
+"    a specific need for them.\n"
+msgstr ""
 
-#: downloads/templates/downloads-index.html:87
+#: downloads/templates/downloads-index.html:107
 msgid "No stable release yet"
 msgstr "Noch keine stabile Version verfügbar"
 
-#: downloads/templates/downloads-index.html:94
-msgid "Older Ubuntu (< 15.04) and users of other Linux distributions"
-msgstr "Ältere Ubuntu-Versionen (< 15.04) und Anwender von anderen Linux-Distributionen"
+#: downloads/templates/downloads-index.html:114
+msgid "Linux distributions"
+msgstr ""
 
-#: downloads/templates/downloads-index.html:95
+#: downloads/templates/downloads-index.html:115
 msgid ""
-"Ubuntu 14.10 and older users can install a PPA \n"
+"Ubuntu users can install a PPA\n"
 "    for development and stable versions of Dolphin here: <a href=\"https://wiki.dolphin-emu.org/index.php?title=Installing_Dolphin#Ubuntu\">Installing Dolphin</a>\n"
 "    "
-msgstr "Benutzer von Ubuntu 14.10 und älter, können hier ein PPA\n    für Entwicklungs- und stabile Versionen hinzufügen: <a href=\"https://wiki.dolphin-emu.org/index.php?title=Installing_Dolphin#Ubuntu\">Dolphin installieren</a>\n    "
+msgstr ""
 
-#: downloads/templates/downloads-index.html:98
+#: downloads/templates/downloads-index.html:118
 msgid ""
 "Users of other Linux distributions can look here to compile Dolphin: <a href=\"https://wiki.dolphin-emu.org/index.php?title=Building_Dolphin_on_Linux\">Building Dolphin on Linux</a>\n"
 "    "
 msgstr "Benutzer anderer Linux-Distributionen können hier schauen, um Dolphin zu kompilieren: <a href=\"https://wiki.dolphin-emu.org/index.php?title=Building_Dolphin_on_Linux\">Dolphin unter Linux kompilieren</a>\n    "
 
-#: downloads/templates/downloads-index.html:103
+#: downloads/templates/downloads-index.html:123
 msgid "Source code"
 msgstr "Quelltext"
 
-#: downloads/templates/downloads-index.html:105
+#: downloads/templates/downloads-index.html:125
 msgid ""
 "\n"
 "    The latest version of the Dolphin source code can be downloaded from the\n"
@@ -593,7 +652,7 @@ msgid ""
 "    "
 msgstr "\n    Die neueste Version des Quelltextes von Dolphin kann von unserem Git-Projektarchiv heruntergeladen werden.\n    "
 
-#: downloads/templates/downloads-index.html:113
+#: downloads/templates/downloads-index.html:133
 #, python-format
 msgid ""
 "\n"
@@ -601,11 +660,11 @@ msgid ""
 "    "
 msgstr "\nDu kannst dich auch <a href=\"%(GIT_BROWSE_URL)s\">in der aktuellen Version des Quelltextes umsehen</a>.\n    "
 
-#: downloads/templates/downloads-index.html:120
+#: downloads/templates/downloads-index.html:140
 msgid "Reporting bugs"
 msgstr "Probleme melden"
 
-#: downloads/templates/downloads-index.html:122
+#: downloads/templates/downloads-index.html:142
 #, python-format
 msgid ""
 "\n"
@@ -670,7 +729,7 @@ msgid "GameCube/Wii games on PC"
 msgstr "GameCube/Wii-Spiele auf dem PC"
 
 #: homepage/templates/homepage-home.html:37 templates/_base.html:10
-#: templates/_base.html.py:68
+#: templates/_base.html:65
 msgid "Dolphin Emulator"
 msgstr "Dolphin Emulator"
 
@@ -690,24 +749,20 @@ msgstr "\n<b>Dolphin</b> ist ein Emulator für die beiden jungen Nintendo-Konsol
 msgid "Download %(last_release)s for Windows, Mac and Linux »"
 msgstr "%(last_release)s für Windows, Mac und Linux herunterladen »"
 
-#: homepage/templates/homepage-home.html:108
-msgid "RSS feed of the latest articles"
-msgstr "Neueste Artikel als RSS-Feed"
-
 #: homepage/templates/homepage-home.html:109
 msgid "Latest articles"
 msgstr "Neueste Artikel"
 
-#: homepage/templates/homepage-home.html:136
+#: homepage/templates/homepage-home.html:133
 #, python-format
 msgid "/ Part of series <a href=\"%(url)s\">%(name)s</a>"
 msgstr "/ Teil der Serie <a href=\"%(url)s\">%(name)s</a>"
 
-#: homepage/templates/homepage-home.html:143
+#: homepage/templates/homepage-home.html:140
 msgid "Read this article"
 msgstr "Weiterlesen"
 
-#: homepage/templates/homepage-home.html:147
+#: homepage/templates/homepage-home.html:144
 msgid "No articles yet."
 msgstr "Bisher keine Artikel."
 
@@ -725,7 +780,7 @@ msgstr "Screenshot-Galerie"
 msgid "Media gallery"
 msgstr "Bildergallerie"
 
-#: templates/404.html:5 templates/404.html.py:8
+#: templates/404.html:5 templates/404.html:8
 msgid "Page not found"
 msgstr "Seite nicht gefunden"
 
@@ -733,7 +788,7 @@ msgstr "Seite nicht gefunden"
 msgid "The URL you tried to access does not exist."
 msgstr "Die gewünschte URL existiert nicht."
 
-#: templates/500.html:5 templates/500.html.py:8
+#: templates/500.html:5 templates/500.html:8
 msgid "Internal Server Error"
 msgstr "Internal Server Error"
 
@@ -743,39 +798,46 @@ msgid ""
 " in a few seconds."
 msgstr "Beim Aufrufen der Seite ist ein Fehler aufgetreten. Bitte lade die Seite in ein paar Sekunden neu."
 
-#: templates/_base.html:23
+#: templates/_base.html:22
 msgid "Latest blog articles"
 msgstr "Neueste Blog-Artikel"
 
-#: templates/_base.html:73
+#: templates/_base.html:70
 msgid "Blog"
 msgstr "Blog"
 
-#: templates/_base.html:74
+#: templates/_base.html:71
 msgid "Screenshots"
 msgstr "Screenshots"
 
-#: templates/_base.html:75
+#: templates/_base.html:72
 msgid "FAQ"
 msgstr "FAQ"
 
+#: templates/_base.html:76
+msgid "Community"
+msgstr ""
+
 #: templates/_base.html:78
+msgid "Discord"
+msgstr ""
+
+#: templates/_base.html:79
 msgid "Forum"
 msgstr "Forum"
 
-#: templates/_base.html:79
+#: templates/_base.html:80
 msgid "Wiki"
 msgstr "Wiki"
 
-#: templates/_base.html:80
-msgid "Code"
-msgstr "Code"
+#: templates/_base.html:81
+msgid "GitHub"
+msgstr ""
 
-#: templates/_base.html:116
-#, python-format
-msgid ""
-"\n"
-"            &copy; 2014 Dolphin Emulator Project -\n"
-"            <a href=\"%(WEBSITE_GIT_URL)s\">Website source code</a>\n"
-"            "
-msgstr "\n&copy; 2014 Dolphin-Emulator-Projekt -\n<a href=\"%(WEBSITE_GIT_URL)s\">Quelltext der Website</a>\n            "
+#: templates/_base.html:119
+msgid "&copy; Dolphin Emulator Project"
+msgstr ""
+
+#: templates/_base.html:120
+msgid "Website Source Code"
+msgstr ""
