@@ -91,6 +91,17 @@
 
 <div class="row" style="margin-top: 1em">
     <div class="col-md-3">
+        <div class="realign ratings-stats well">
+            <h4><a href="{% url 'compat_index' %}">{% trans "Compatibility" %} »</a></h4>
+
+            <dl>
+            {% for rating in all_ratings %}
+            <dt>{{ rating|compat_text }}: {{ rating|rating_pct|floatformat }}%</dt>
+            <dd><div class="progress"><div class="progress-bar progress-bar-{{ rating|rating_class }}" style="width: {{ rating|rating_pct|unlocalize }}%"></div></div></dd>
+            {% endfor %}
+            </dl>
+        </div>
+
         {% include "blog_sidebar.html" %}
     </div>
     <div class="col-md-9">
