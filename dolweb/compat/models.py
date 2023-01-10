@@ -38,7 +38,7 @@ class Text(models.Model):
         return 'Blob %d: %s' % (self.id, self.data[:100])
 
     class Meta:
-        db_table = 'pagecontent'
+        db_table = 'text'
         verbose_name = 'MediaWiki Text Blob'
         verbose_name_plural = 'MediaWiki Text Blobs'
 
