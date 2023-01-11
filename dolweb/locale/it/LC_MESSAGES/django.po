@@ -3,7 +3,7 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Mewster <mewster@libero.it>, 2013-2015,2017
+# Mewster <mewster@libero.it>, 2013-2015,2017,2023
 # Mewster <mewster@libero.it>, 2013
 msgid ""
 msgstr ""
@@ -11,7 +11,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-06 02:28+0100\n"
 "PO-Revision-Date: 2013-01-23 05:00+0000\n"
-"Last-Translator: Mewster <mewster@libero.it>, 2013-2015,2017\n"
+"Last-Translator: Mewster <mewster@libero.it>, 2013-2015,2017,2023\n"
 "Language-Team: Italian (http://www.transifex.com/delroth/dolphin-emu/language/it/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -304,26 +304,26 @@ msgstr "Modifica l'autore"
 #: blog/templates/zinnia/entry_search.html:18
 #, python-format
 msgid "Search results for '%(pattern)s'"
-msgstr ""
+msgstr "Risultato per la ricerca di '%(pattern)s'"
 
 #: blog/templates/zinnia/entry_search.html:11
 #: blog/templates/zinnia/entry_search.html:24
 #: blog/templates/zinnia/entry_search.html:25
 #, python-format
 msgid "RSS feed of search results for '%(pattern)s'"
-msgstr ""
+msgstr "Feed RSS per il risultato della ricerca di '%(pattern)s'"
 
 #: blog/templates/zinnia/entry_search.html:32
 #, python-format
 msgid "%(entry_count)s entry found"
 msgid_plural "%(entry_count)s entries found"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "%(entry_count)s voce trovata"
+msgstr[1] "%(entry_count)s voci trovate"
+msgstr[2] "%(entry_count)s voci trovate"
 
 #: blog/templates/zinnia/entry_search.html:43
 msgid "Nothing found."
-msgstr ""
+msgstr "Nessun risultato."
 
 #: blog/templates/zinnia/skeleton.html:4
 msgid "Latest news for Dolphin Emulator"
@@ -499,11 +499,11 @@ msgstr "Non sono state pubblicate guide"
 
 #: docs/templates/docs-privacy.html:4
 msgid "Privacy Policy for the Dolphin Emulator and its services."
-msgstr ""
+msgstr "Informativa sulla Privacy per l'Emulatore Dolphin e i suoi servizi."
 
 #: docs/templates/docs-privacy.html:6 templates/_base.html:121
 msgid "Privacy Policy"
-msgstr ""
+msgstr "Informativa sulla Privacy"
 
 #: downloads/models.py:40 downloads/models.py:57
 #, python-format
@@ -554,7 +554,7 @@ msgstr "Download"
 
 #: downloads/templates/downloads-index.html:31
 msgid "Beta versions"
-msgstr ""
+msgstr "Versioni Beta"
 
 #: downloads/templates/downloads-index.html:33
 msgid ""
@@ -562,7 +562,7 @@ msgid ""
 "    <p>Beta versions are released every month, usually accompanied by a <em>Progress Report</em>\n"
 "    article. Use the latest beta version if you prefer stability over the newest features in the\n"
 "    <a href=\"#download-dev\">development versions</a>.</p>\n"
-msgstr ""
+msgstr "\n    <p>Le versioni beta vengono rilasciate ogni mese, di solito accompagnate da un articolo sui\n    <em>Report dei Progressi</em>. Usa la versione beta più recente se preferisci stabilità al prezzo\n    delle feature più recenti presenti nelle <a href=\"#download-dev\">versioni in sviluppo</a>.</p>\n"
 
 #: downloads/templates/downloads-index.html:40
 msgid ""
@@ -570,7 +570,7 @@ msgid ""
 "href=\"https://support.microsoft.com/en-us/help/2977003/the-latest-"
 "supported-visual-c-downloads\">64-bit Visual C++ redistributable for Visual "
 "Studio 2022</a> to be installed."
-msgstr ""
+msgstr "Le versioni beta per Windows <b>richiedono</b> l'installazione dei <a href=\"https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads\">redistribuibili Visual C++ 64-bit per Visual Studio 2022</a>."
 
 #: downloads/templates/downloads-index.html:48
 msgid "Development versions"
@@ -582,7 +582,7 @@ msgid ""
 "    Dolphin, several times every day! Using development versions enables you to\n"
 "    use the latest and greatest improvements to the project. They are however\n"
 "    less tested than <a href=\"#download-beta\">beta versions</a> of the emulator."
-msgstr ""
+msgstr "Le versioni di sviluppo vengono rilasciate ogniqualvolta uno sviluppatore\n    effettua una modifica a Dolphin. L'utilizzo di versioni di sviluppo ti permette\n    di rimanere al passo con gli ultimi aggiornamenti e miglioramenti al\n    progetto. Sono però meno testate delle <a href=\"#download-beta\">versioni beta</a> dell'emulatore."
 
 #: downloads/templates/downloads-index.html:58
 msgid ""
@@ -590,7 +590,7 @@ msgid ""
 "href=\"https://support.microsoft.com/en-us/help/2977003/the-latest-"
 "supported-visual-c-downloads\">64-bit Visual C++ redistributable for Visual "
 "Studio 2022</a> to be installed."
-msgstr ""
+msgstr "Le versioni di sviluppo per Windows <b>richiedono</b> l'installazione dei <a href=\"https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads\">redistribuibili Visual C++ 64-bit per Visual Studio 2022</a>."
 
 #: downloads/templates/downloads-index.html:81
 msgid "Stable versions"
@@ -603,7 +603,7 @@ msgid ""
 "    <a href=\"#download-beta\">Beta</a> or <a href=\"#download-dev\">development</a> versions are a\n"
 "    better choice for almost all users; the stable versions should only be used if you have\n"
 "    a specific need for them.\n"
-msgstr ""
+msgstr "\n    Le versioni stabili qui sotto sono vecchie di anni e mancano di innumerevoli funzionalità e correzioni.\n    Le versioni <a href=\"#download-beta\">beta</a> o <a href=\"#download-dev\">di sviluppo</a> sono una scelta migliore per la maggior parte degli utente; le versioni stabili dovrebbero\n    essere usate solo se hai un bisogno specifico.\n"
 
 #: downloads/templates/downloads-index.html:107
 msgid "No stable release yet"
@@ -611,14 +611,14 @@ msgstr "Non sono disponibili versioni stabili"
 
 #: downloads/templates/downloads-index.html:114
 msgid "Linux distributions"
-msgstr ""
+msgstr "Distribuzioni Linux"
 
 #: downloads/templates/downloads-index.html:115
 msgid ""
 "Ubuntu users can install a PPA\n"
 "    for development and stable versions of Dolphin here: <a href=\"https://wiki.dolphin-emu.org/index.php?title=Installing_Dolphin#Ubuntu\">Installing Dolphin</a>\n"
 "    "
-msgstr ""
+msgstr "Utenti Ubuntu possono installare un PPA\n    per le versioni in sviluppo e stabili di Dolphin qui: <a href=\"https://wiki.dolphin-emu.org/index.php?title=Installing_Dolphin#Ubuntu\">Installing Dolphin</a>"
 
 #: downloads/templates/downloads-index.html:118
 msgid ""
@@ -802,11 +802,11 @@ msgstr "FAQ"
 
 #: templates/_base.html:76
 msgid "Community"
-msgstr ""
+msgstr "Comunità"
 
 #: templates/_base.html:78
 msgid "Discord"
-msgstr ""
+msgstr "Discord"
 
 #: templates/_base.html:79
 msgid "Forum"
@@ -818,12 +818,12 @@ msgstr "Wiki"
 
 #: templates/_base.html:81
 msgid "GitHub"
-msgstr ""
+msgstr "GitHub"
 
 #: templates/_base.html:119
 msgid "&copy; Dolphin Emulator Project"
-msgstr ""
+msgstr "&copy; Dolphin Emulator Project"
 
 #: templates/_base.html:120
 msgid "Website Source Code"
-msgstr ""
+msgstr "Codice Sorgente Sito"
