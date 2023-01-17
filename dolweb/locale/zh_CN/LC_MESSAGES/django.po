@@ -11,14 +11,15 @@
 # Ryan Zhou <sentret_c@sina.cn>, 2013
 # Yueyu <lxfly2000@outlook.com>, 2013-2014
 # Ryan Zhou <sentret_c@sina.cn>, 2013
-# 天绝星 <c.cejhb@gmail.com>, 2017
+# 天绝星 <c.cejhb@gmail.com>, 2017,2023
+# 陈 依云 <c1998lf@qq.com>, 2023
 msgid ""
 msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-06 02:28+0100\n"
 "PO-Revision-Date: 2013-01-23 05:00+0000\n"
-"Last-Translator: 天绝星 <c.cejhb@gmail.com>, 2017\n"
+"Last-Translator: 天绝星 <c.cejhb@gmail.com>, 2017,2023\n"
 "Language-Team: Chinese (China) (http://www.transifex.com/delroth/dolphin-emu/language/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -309,24 +310,24 @@ msgstr "编辑作者"
 #: blog/templates/zinnia/entry_search.html:18
 #, python-format
 msgid "Search results for '%(pattern)s'"
-msgstr ""
+msgstr "“%(pattern)s”的搜索结果"
 
 #: blog/templates/zinnia/entry_search.html:11
 #: blog/templates/zinnia/entry_search.html:24
 #: blog/templates/zinnia/entry_search.html:25
 #, python-format
 msgid "RSS feed of search results for '%(pattern)s'"
-msgstr ""
+msgstr "“%(pattern)s”的 RSS 源搜索结果"
 
 #: blog/templates/zinnia/entry_search.html:32
 #, python-format
 msgid "%(entry_count)s entry found"
 msgid_plural "%(entry_count)s entries found"
-msgstr[0] ""
+msgstr[0] "找到了 %(entry_count)s 的相关内容"
 
 #: blog/templates/zinnia/entry_search.html:43
 msgid "Nothing found."
-msgstr ""
+msgstr "未找到相关内容。"
 
 #: blog/templates/zinnia/skeleton.html:4
 msgid "Latest news for Dolphin Emulator"
@@ -502,11 +503,11 @@ msgstr "尚无使用指南"
 
 #: docs/templates/docs-privacy.html:4
 msgid "Privacy Policy for the Dolphin Emulator and its services."
-msgstr ""
+msgstr "Dolphin 模拟器及其服务的隐私政策。"
 
 #: docs/templates/docs-privacy.html:6 templates/_base.html:121
 msgid "Privacy Policy"
-msgstr ""
+msgstr "隐私政策"
 
 #: downloads/models.py:40 downloads/models.py:57
 #, python-format
@@ -557,7 +558,7 @@ msgstr "下载"
 
 #: downloads/templates/downloads-index.html:31
 msgid "Beta versions"
-msgstr ""
+msgstr "测试版本"
 
 #: downloads/templates/downloads-index.html:33
 msgid ""
@@ -565,7 +566,7 @@ msgid ""
 "    <p>Beta versions are released every month, usually accompanied by a <em>Progress Report</em>\n"
 "    article. Use the latest beta version if you prefer stability over the newest features in the\n"
 "    <a href=\"#download-dev\">development versions</a>.</p>\n"
-msgstr ""
+msgstr "\n    <p>测试版本每月发布，通常附有<em>进度报告</em>。\n如果您喜欢稳定性而不是<a href=\"#download-dev\">开发版本</a>中的最新功能，就请使用最新的测试版本。</p>\n"
 
 #: downloads/templates/downloads-index.html:40
 msgid ""
@@ -573,7 +574,7 @@ msgid ""
 "href=\"https://support.microsoft.com/en-us/help/2977003/the-latest-"
 "supported-visual-c-downloads\">64-bit Visual C++ redistributable for Visual "
 "Studio 2022</a> to be installed."
-msgstr ""
+msgstr "Windows 系统上的测试版本<b>要求</b>安装 <a href=\"https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads\">Visual Studio 2022 的 64 位 Visual C++ 运行时组件</a>。"
 
 #: downloads/templates/downloads-index.html:48
 msgid "Development versions"
@@ -585,7 +586,7 @@ msgid ""
 "    Dolphin, several times every day! Using development versions enables you to\n"
 "    use the latest and greatest improvements to the project. They are however\n"
 "    less tested than <a href=\"#download-beta\">beta versions</a> of the emulator."
-msgstr ""
+msgstr "开发人员每次对 Dolphin 进行更改时都会发布开发版本，每天都会发布几次！\n使用开发版本可获得项目的最新改进。\n但是，它们所做的测试比<a href=\"#download-beta\">测试版本</a>更少。"
 
 #: downloads/templates/downloads-index.html:58
 msgid ""
@@ -593,7 +594,7 @@ msgid ""
 "href=\"https://support.microsoft.com/en-us/help/2977003/the-latest-"
 "supported-visual-c-downloads\">64-bit Visual C++ redistributable for Visual "
 "Studio 2022</a> to be installed."
-msgstr ""
+msgstr "Windows 系统上的开发版本<b>要求</b>安装 <a href=\"https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads\">Visual Studio 2022 的 64 位 Visual C++ 运行时组件</a>。"
 
 #: downloads/templates/downloads-index.html:81
 msgid "Stable versions"
@@ -606,7 +607,7 @@ msgid ""
 "    <a href=\"#download-beta\">Beta</a> or <a href=\"#download-dev\">development</a> versions are a\n"
 "    better choice for almost all users; the stable versions should only be used if you have\n"
 "    a specific need for them.\n"
-msgstr ""
+msgstr "\n    以下的稳定版本已过时多年，缺少许多功能和错误修复。\n    <a href=\"#download-beta\">测试版本</a>或<a href=\"#download-dev\">开发版本</a>是更好的选择；\n只有在您有特定需求时，才应使用稳定版本。\n"
 
 #: downloads/templates/downloads-index.html:107
 msgid "No stable release yet"
@@ -614,14 +615,14 @@ msgstr "尚无稳定版本"
 
 #: downloads/templates/downloads-index.html:114
 msgid "Linux distributions"
-msgstr ""
+msgstr "Linux 发行版"
 
 #: downloads/templates/downloads-index.html:115
 msgid ""
 "Ubuntu users can install a PPA\n"
 "    for development and stable versions of Dolphin here: <a href=\"https://wiki.dolphin-emu.org/index.php?title=Installing_Dolphin#Ubuntu\">Installing Dolphin</a>\n"
 "    "
-msgstr ""
+msgstr "Ubuntu 的用户可以到这里安装 PPA \n来运行开发版或稳定版 Dolphin: <a href=\"https://wiki.dolphin-emu.org/index.php?title=Installing_Dolphin#Ubuntu\">安装 Dolphin</a>"
 
 #: downloads/templates/downloads-index.html:118
 msgid ""
@@ -805,11 +806,11 @@ msgstr "问答"
 
 #: templates/_base.html:76
 msgid "Community"
-msgstr ""
+msgstr "社区"
 
 #: templates/_base.html:78
 msgid "Discord"
-msgstr ""
+msgstr "Discord"
 
 #: templates/_base.html:79
 msgid "Forum"
@@ -821,12 +822,12 @@ msgstr "百科"
 
 #: templates/_base.html:81
 msgid "GitHub"
-msgstr ""
+msgstr "GitHub"
 
 #: templates/_base.html:119
 msgid "&copy; Dolphin Emulator Project"
-msgstr ""
+msgstr "&copy; Dolphin Emulator Project"
 
 #: templates/_base.html:120
 msgid "Website Source Code"
-msgstr ""
+msgstr "网站源代码"
