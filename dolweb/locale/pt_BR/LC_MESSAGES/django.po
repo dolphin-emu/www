@@ -8,7 +8,7 @@
 # Felipefpl, 2015,2023
 # Charles Fernando da Silva <eu.charles@hotmail.com>, 2013
 # Mateus B. Cassiano <jhonn.copperfield@gmail.com>, 2013-2015
-# Mateus B. Cassiano <mbc07@live.com>, 2021
+# Mateus B. Cassiano <mbc07@live.com>, 2021,2023
 # 0d650e867a64ff3c44c343a4a46f4cc4_0750f19 <ca09cae74bc6c7e28e5c24ed2567e538_49102>, 2013
 msgid ""
 msgstr ""
@@ -16,7 +16,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-06 02:28+0100\n"
 "PO-Revision-Date: 2013-01-23 05:00+0000\n"
-"Last-Translator: Felipefpl, 2015,2023\n"
+"Last-Translator: Mateus B. Cassiano <mbc07@live.com>, 2021,2023\n"
 "Language-Team: Portuguese (Brazil) (http://www.transifex.com/delroth/dolphin-emu/language/pt_BR/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -309,14 +309,14 @@ msgstr "Editar o autor"
 #: blog/templates/zinnia/entry_search.html:18
 #, python-format
 msgid "Search results for '%(pattern)s'"
-msgstr "Resultados da busca por '%(pattern)s'"
+msgstr "Resultados da pesquisa por '%(pattern)s'"
 
 #: blog/templates/zinnia/entry_search.html:11
 #: blog/templates/zinnia/entry_search.html:24
 #: blog/templates/zinnia/entry_search.html:25
 #, python-format
 msgid "RSS feed of search results for '%(pattern)s'"
-msgstr "Feed do RSS dos resultados da busca por '%(pattern)s'"
+msgstr "Feed RSS dos resultados da pesquisa por '%(pattern)s'"
 
 #: blog/templates/zinnia/entry_search.html:32
 #, python-format
@@ -324,11 +324,11 @@ msgid "%(entry_count)s entry found"
 msgid_plural "%(entry_count)s entries found"
 msgstr[0] "%(entry_count)s entrada achada"
 msgstr[1] "%(entry_count)s entradas achadas"
-msgstr[2] "%(entry_count)s entradas achadas"
+msgstr[2] "%(entry_count)s artigos encontrados"
 
 #: blog/templates/zinnia/entry_search.html:43
 msgid "Nothing found."
-msgstr "Nada achado."
+msgstr "Nenhum resultado."
 
 #: blog/templates/zinnia/skeleton.html:4
 msgid "Latest news for Dolphin Emulator"
@@ -567,7 +567,7 @@ msgid ""
 "    <p>Beta versions are released every month, usually accompanied by a <em>Progress Report</em>\n"
 "    article. Use the latest beta version if you prefer stability over the newest features in the\n"
 "    <a href=\"#download-dev\">development versions</a>.</p>\n"
-msgstr "\n    <p>As versões beta são lançadas todos os meses, geralmente acompanhadas por um artigo de <em>Relatório de Progresso</em>.\n    Use a versão beta mais recente se você prefere estabilidade aos recursos mais novos nas\n    <a href=\"#download-dev\">versões de desenvolvimento</a>.</p>\n"
+msgstr "\n    <p>Versões beta são lançadas todos os meses, geralmente acompanhadas por um artigo de <em>Relatório de Progresso</em>.\n    Use a versão beta mais recente se você prefere estabilidade em vez dos recursos mais novos presentes nas\n    <a href=\"#download-dev\">versões de desenvolvimento</a>.</p>\n"
 
 #: downloads/templates/downloads-index.html:40
 msgid ""
@@ -575,7 +575,7 @@ msgid ""
 "href=\"https://support.microsoft.com/en-us/help/2977003/the-latest-"
 "supported-visual-c-downloads\">64-bit Visual C++ redistributable for Visual "
 "Studio 2022</a> to be installed."
-msgstr "As versões beta do Windows <b>requerem</b> que o Visual <a href=\"https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads\">C++ redistribuível de 64 bits pro Visual Studio 2022</a> esteja instalado."
+msgstr "As versões beta para Windows <b>exigem</b> que o <a href=\"https://learn.microsoft.com/pt-BR/cpp/windows/latest-supported-vc-redist\">Pacote Redistribuível de 64 bits do Visual C++ para o Visual Studio 2022</a> esteja instalado."
 
 #: downloads/templates/downloads-index.html:48
 msgid "Development versions"
@@ -587,7 +587,7 @@ msgid ""
 "    Dolphin, several times every day! Using development versions enables you to\n"
 "    use the latest and greatest improvements to the project. They are however\n"
 "    less tested than <a href=\"#download-beta\">beta versions</a> of the emulator."
-msgstr "As versões de desenvolvimento são lançadas cada vez que um desenvolvedor faz uma mudança no\n    Dolphin, várias vezes todos os dias! O uso de versões de desenvolvimento habilita você a\n    usar as melhorias mais recentes e maiores para o projeto. Eles são contudo, menos\n    testadas do que <a href=\"#download-beta\">as versões beta</a> do emulador."
+msgstr "Versões de desenvolvimento são lançadas sempre que um desenvolvedor faz \n    uma mudança no Dolphin, várias vezes ao dia! Usar versões de desenvolvimento \n    permite acesso às melhorias mais novas e mais recentes do projeto. Elas são, contudo, \n    menos testadas do que as <a href=\"#download-beta\">versões beta</a> do emulador."
 
 #: downloads/templates/downloads-index.html:58
 msgid ""
@@ -595,7 +595,7 @@ msgid ""
 "href=\"https://support.microsoft.com/en-us/help/2977003/the-latest-"
 "supported-visual-c-downloads\">64-bit Visual C++ redistributable for Visual "
 "Studio 2022</a> to be installed."
-msgstr "As versões de desenvolvimento do Windows <b>requerem</b> que o Visual <a href=\"https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads\">C++ redistribuível de 64 bits pro Visual Studio 2022</a> esteja instalado."
+msgstr "As versões de desenvolvimento para Windows <b>exigem</b> que o <a href=\"https://learn.microsoft.com/pt-BR/cpp/windows/latest-supported-vc-redist\">Pacote Redistribuível de 64 bits do Visual C++ para o Visual Studio 2022</a> esteja instalado."
 
 #: downloads/templates/downloads-index.html:81
 msgid "Stable versions"
@@ -608,7 +608,7 @@ msgid ""
 "    <a href=\"#download-beta\">Beta</a> or <a href=\"#download-dev\">development</a> versions are a\n"
 "    better choice for almost all users; the stable versions should only be used if you have\n"
 "    a specific need for them.\n"
-msgstr "\n    As versões estáveis abaixo estão há anos desatualizadas e faltam incontáveis recursos e consertos de bugs.\n    <a href=\"#download-beta\">As versões beta</a> ou <a href=\"#download-dev\">de desenvolvimento</a> são\n    uma melhor escolha pra quase todos os usuários; as versões estáveis só devem ser usadas se você tiver\n    uma necessidade específica pra elas.\n"
+msgstr "\n    As versões estáveis listadas abaixo não são atualizadas há anos e não possuem diversos recursos e correções de bugs presentes nas versões mais recentes.\n    As <a href=\"#download-beta\">versões beta</a> ou <a href=\"#download-dev\">de desenvolvimento</a> são\n    escolhas melhores para praticamente todos os usuários; versões estáveis só devem ser utilizadas se você tiver\n    um motivo específico para elas.\n"
 
 #: downloads/templates/downloads-index.html:107
 msgid "No stable release yet"
@@ -623,7 +623,7 @@ msgid ""
 "Ubuntu users can install a PPA\n"
 "    for development and stable versions of Dolphin here: <a href=\"https://wiki.dolphin-emu.org/index.php?title=Installing_Dolphin#Ubuntu\">Installing Dolphin</a>\n"
 "    "
-msgstr "Os usuários do Ubuntu podem instalar um PPA\n    pras versões estáveis e de desenvolvimento do Dolphin aqui: <a href=\"https://wiki.dolphin-emu.org/index.php?title=Installing_Dolphin#Ubuntu\">Instalando o Dolphin</a>\n    "
+msgstr "Usuários do Ubuntu podem instalar um PPA\n    para as versões estáveis e de desenvolvimento do Dolphin aqui: <a href=\"https://wiki.dolphin-emu.org/index.php?title=Installing_Dolphin#Ubuntu\">Instalando o Dolphin</a>\n    "
 
 #: downloads/templates/downloads-index.html:118
 msgid ""
@@ -831,4 +831,4 @@ msgstr "&copy; Projeto do Emulador Dolphin"
 
 #: templates/_base.html:120
 msgid "Website Source Code"
-msgstr "Código Fonte do Site da Web"
+msgstr "Código-fonte do Website"

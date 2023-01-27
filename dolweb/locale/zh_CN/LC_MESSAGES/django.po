@@ -323,7 +323,7 @@ msgstr "“%(pattern)s”的 RSS 源搜索结果"
 #, python-format
 msgid "%(entry_count)s entry found"
 msgid_plural "%(entry_count)s entries found"
-msgstr[0] "找到了 %(entry_count)s 的相关内容"
+msgstr[0] "找到了 %(entry_count)s 条相关内容"
 
 #: blog/templates/zinnia/entry_search.html:43
 msgid "Nothing found."
@@ -586,7 +586,7 @@ msgid ""
 "    Dolphin, several times every day! Using development versions enables you to\n"
 "    use the latest and greatest improvements to the project. They are however\n"
 "    less tested than <a href=\"#download-beta\">beta versions</a> of the emulator."
-msgstr "开发人员每次对 Dolphin 进行更改时都会发布开发版本，每天都会发布几次！\n使用开发版本可获得项目的最新改进。\n但是，它们所做的测试比<a href=\"#download-beta\">测试版本</a>更少。"
+msgstr "开发人员每次对 Dolphin 进行更改时都会发布开发版本，每天都会发布几次！\n使用开发版本可获得项目的最新改进。\n但是，它们进行的测试比<a href=\"#download-beta\">测试版本</a>更少。"
 
 #: downloads/templates/downloads-index.html:58
 msgid ""
@@ -622,7 +622,7 @@ msgid ""
 "Ubuntu users can install a PPA\n"
 "    for development and stable versions of Dolphin here: <a href=\"https://wiki.dolphin-emu.org/index.php?title=Installing_Dolphin#Ubuntu\">Installing Dolphin</a>\n"
 "    "
-msgstr "Ubuntu 的用户可以到这里安装 PPA \n来运行开发版或稳定版 Dolphin: <a href=\"https://wiki.dolphin-emu.org/index.php?title=Installing_Dolphin#Ubuntu\">安装 Dolphin</a>"
+msgstr "Ubuntu 的用户可以到这里添加 PPA \n来安装开发版或稳定版 Dolphin: <a href=\"https://wiki.dolphin-emu.org/index.php?title=Installing_Dolphin#Ubuntu\">安装 Dolphin</a>"
 
 #: downloads/templates/downloads-index.html:118
 msgid ""
@@ -826,7 +826,7 @@ msgstr "GitHub"
 
 #: templates/_base.html:119
 msgid "&copy; Dolphin Emulator Project"
-msgstr "&copy; Dolphin Emulator Project"
+msgstr "&copy; Dolphin 模拟器项目"
 
 #: templates/_base.html:120
 msgid "Website Source Code"

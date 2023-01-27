@@ -555,7 +555,7 @@ msgstr "Télécharger"
 
 #: downloads/templates/downloads-index.html:31
 msgid "Beta versions"
-msgstr "Versons bêta"
+msgstr "Versions bêta"
 
 #: downloads/templates/downloads-index.html:33
 msgid ""
