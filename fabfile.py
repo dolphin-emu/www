@@ -21,7 +21,7 @@ def deploy(c, root, branch):
 
 @task(hosts=_HOSTS)
 def deploy_stable(c):
-    deploy(c, "/home/dolphin-emu/apps/www", "stable")
+    deploy(c, "/home/dolphin-emu/apps/www", "legacy")
 
 @task(hosts=_HOSTS)
 def deploy_dev(c):

@@ -1,7 +1,7 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# 
+#
 # Translators:
 # Pierre Bourdon <delroth@gmail.com>, 2013
 # Pascal <pascal2j-language@yahoo.com>, 2014-2015,2017-2019,2023
@@ -594,21 +594,21 @@ msgid ""
 msgstr "Les versions de développement pour Windows <b>requièrent</b> l'installation du <a href=\"https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads\">redistribuable 64-bit de Visual Studio 2022</a>."
 
 #: downloads/templates/downloads-index.html:81
-msgid "Stable versions"
+msgid "Legacy versions"
 msgstr "Versions stables"
 
 #: downloads/templates/downloads-index.html:84
 msgid ""
 "\n"
-"    The stable versions below are years out of date and missing countless features and bug fixes.\n"
+"    The legacy versions below are years out of date and missing countless features and bug fixes.\n"
 "    <a href=\"#download-beta\">Beta</a> or <a href=\"#download-dev\">development</a> versions are a\n"
-"    better choice for almost all users; the stable versions should only be used if you have\n"
+"    better choice for almost all users; the legacy versions should only be used if you have\n"
 "    a specific need for them.\n"
 msgstr "\nLes versions stables ci-dessous ont plusieurs années, ne sont plus à jour, et il leur manquent de nombreuses fonctionnalités et corrections de bugs.\nLes versions <a href=\"#download-beta\">Bêta</a> ou de <a href=\"#download-dev\">développement</a> sont recommandées\npour la plupart des utilisateurs ; les versions stables ne devraient être utilisées que si vous avez un besoin spécifique.\n"
 
 #: downloads/templates/downloads-index.html:107
-msgid "No stable release yet"
-msgstr "Pas de version stable disponible"
+msgid "No legacy release yet"
+msgstr "Pas de version legacy disponible"
 
 #: downloads/templates/downloads-index.html:114
 msgid "Linux distributions"
@@ -617,7 +617,7 @@ msgstr "Distributions Linux"
 #: downloads/templates/downloads-index.html:115
 msgid ""
 "Ubuntu users can install a PPA\n"
-"    for development and stable versions of Dolphin here: <a href=\"https://wiki.dolphin-emu.org/index.php?title=Installing_Dolphin#Ubuntu\">Installing Dolphin</a>\n"
+"    for development and legacy versions of Dolphin here: <a href=\"https://wiki.dolphin-emu.org/index.php?title=Installing_Dolphin#Ubuntu\">Installing Dolphin</a>\n"
 "    "
 msgstr "Les utilisateurs d'Ubuntu peuvent installer un PPA\npour les versions de développement et stables de Dolphin ici : <a href=\"https://wiki.dolphin-emu.org/index.php?title=Installing_Dolphin#Ubuntu\">Installer Dolphin</a>"
 

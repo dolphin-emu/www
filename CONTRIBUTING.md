@@ -16,7 +16,7 @@ Use of Git
 ----------
 
 The Git branch deployed on the main website instance (https://dolphin-emu.org/)
-is the ``stable`` branch. When we do large scale changes that require staging
+is the ``legacy`` branch. When we do large scale changes that require staging
 and more testing, we work in the ``master`` branch, which is deployed on a
 special website instance (https://dev.dolphin-emu.org/). Note that these two
 website instances share their database - as such, database schema changes

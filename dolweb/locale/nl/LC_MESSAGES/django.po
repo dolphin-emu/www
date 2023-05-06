@@ -1,7 +1,7 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# 
+#
 # Translators:
 # Boris Peeters, 2019
 # Garteal <garteal@gmail.com>, 2013-2014,2016
@@ -594,20 +594,20 @@ msgid ""
 msgstr "Voor de Windows ontwikkelings-versies <b>moet</b> de <a href=\"https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads\">64-bit Visual C++ redistributable voor Visual Studio 2022</a> worden geïnstalleerd."
 
 #: downloads/templates/downloads-index.html:81
-msgid "Stable versions"
+msgid "Legacy versions"
 msgstr "Stabiele-versies"
 
 #: downloads/templates/downloads-index.html:84
 msgid ""
 "\n"
-"    The stable versions below are years out of date and missing countless features and bug fixes.\n"
+"    The legacy versions below are years out of date and missing countless features and bug fixes.\n"
 "    <a href=\"#download-beta\">Beta</a> or <a href=\"#download-dev\">development</a> versions are a\n"
-"    better choice for almost all users; the stable versions should only be used if you have\n"
+"    better choice for almost all users; the legacy versions should only be used if you have\n"
 "    a specific need for them.\n"
 msgstr "\n De stabiele versies hieronder zijn jaren verouderd en missen talloze functies en bugfixes.\n<a href=\"#download-beta\">Beta-</a> of <a href=\"#download-dev\">ontwikkelings-versies</a> zijn een\nbetere keuze voor bijna alle gebruikers; de stabiele versies moet u alleen gebruiken als u daarvoor\neen specifieke reden heeft.\n"
 
 #: downloads/templates/downloads-index.html:107
-msgid "No stable release yet"
+msgid "No legacy release yet"
 msgstr "Geen stabiele release beschikbaar"
 
 #: downloads/templates/downloads-index.html:114
@@ -617,7 +617,7 @@ msgstr "Linux distributies"
 #: downloads/templates/downloads-index.html:115
 msgid ""
 "Ubuntu users can install a PPA\n"
-"    for development and stable versions of Dolphin here: <a href=\"https://wiki.dolphin-emu.org/index.php?title=Installing_Dolphin#Ubuntu\">Installing Dolphin</a>\n"
+"    for development and legacy versions of Dolphin here: <a href=\"https://wiki.dolphin-emu.org/index.php?title=Installing_Dolphin#Ubuntu\">Installing Dolphin</a>\n"
 "    "
 msgstr "Ubuntu-gebruikers kunnen een PPA\nvoor ontwikkelings- en stabiele-versies van Dolphin hier installeren: <a href=\"https://wiki.dolphin-emu.org/index.php?title=Installing_Dolphin#Ubuntu\"> Dolphin installeren</a>"
 

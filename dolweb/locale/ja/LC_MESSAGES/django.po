@@ -1,7 +1,7 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# 
+#
 # Translators:
 # DanbSky <danbsky@live.jp>, 2015
 # DanbSky <danbsky@live.jp>, 2013
@@ -591,20 +591,20 @@ msgid ""
 msgstr ""
 
 #: downloads/templates/downloads-index.html:81
-msgid "Stable versions"
+msgid "Legacy versions"
 msgstr "安定版"
 
 #: downloads/templates/downloads-index.html:84
 msgid ""
 "\n"
-"    The stable versions below are years out of date and missing countless features and bug fixes.\n"
+"    The legacy versions below are years out of date and missing countless features and bug fixes.\n"
 "    <a href=\"#download-beta\">Beta</a> or <a href=\"#download-dev\">development</a> versions are a\n"
-"    better choice for almost all users; the stable versions should only be used if you have\n"
+"    better choice for almost all users; the legacy versions should only be used if you have\n"
 "    a specific need for them.\n"
 msgstr ""
 
 #: downloads/templates/downloads-index.html:107
-msgid "No stable release yet"
+msgid "No legacy release yet"
 msgstr "現在、安定版のリリースはありません。"
 
 #: downloads/templates/downloads-index.html:114
@@ -614,7 +614,7 @@ msgstr ""
 #: downloads/templates/downloads-index.html:115
 msgid ""
 "Ubuntu users can install a PPA\n"
-"    for development and stable versions of Dolphin here: <a href=\"https://wiki.dolphin-emu.org/index.php?title=Installing_Dolphin#Ubuntu\">Installing Dolphin</a>\n"
+"    for development and legacy versions of Dolphin here: <a href=\"https://wiki.dolphin-emu.org/index.php?title=Installing_Dolphin#Ubuntu\">Installing Dolphin</a>\n"
 "    "
 msgstr ""
 

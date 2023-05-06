@@ -131,11 +131,11 @@ h5:hover a.headerlink {
     padding-bottom: 0.5em;
 }
 
-div#download-stable, div#download-dev {
+div#download-legacy, div#download-dev {
     margin-bottom: 3em;
 }
 
-div#download-stable h1, div#download-dev h1, div#download-source h1 {
+div#download-legacy h1, div#download-dev h1, div#download-source h1 {
     margin-bottom: 0.5em;
 }
 

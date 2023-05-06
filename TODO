@@ -3,7 +3,7 @@
 * Provide some fake data sets to use as initial database contents.
 
 * Download UI: too confusing for users, way too many versions displayed on the
-  downloads page. Simplify the view with two side by side options: stable or
+  downloads page. Simplify the view with two side by side options: legacy or
   latest. Explain the benefits. Have links to a more complete downloads page
   with older versions.
 

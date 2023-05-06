@@ -29,7 +29,7 @@ src="//pagead2.googlesyndication.com/pagead/show_ads.js">
 
 <div id="download-beta">
 <h1>{% trans "Beta versions" %}</h1>
-    
+
 <div class="alert alert-info">{% blocktrans %}
     <p>Beta versions are released every month, usually accompanied by a <em>Progress Report</em>
     article. Use the latest beta version if you prefer stability over the newest features in the
@@ -46,7 +46,7 @@ src="//pagead2.googlesyndication.com/pagead/show_ads.js">
 
 <div id="download-dev">
 <h1>{% trans "Development versions" %}</h1>
-    
+
 <div class="alert alert-info">
     <p>{% blocktrans %}Development versions are released every time a developer makes a change to
     Dolphin, several times every day! Using development versions enables you to
@@ -77,18 +77,18 @@ src="//pagead2.googlesyndication.com/pagead/show_ads.js">
 </script>
 </div>
 
-<div id="download-stable">
-<h1>{% trans "Stable versions" %}</h2>
+<div id="download-legacy">
+<h1>{% trans "Legacy versions" %}</h2>
 
 {# TODO: Update when 6.0 is released #}
 <div class="alert alert-warning">{% blocktrans %}
-    The stable versions below are years out of date and missing countless features and bug fixes.
+    The legacy versions below are years out of date and missing countless features and bug fixes.
     <a href="#download-beta">Beta</a> or <a href="#download-dev">development</a> versions are a
-    better choice for almost all users; the stable versions should only be used if you have
+    better choice for almost all users; the legacy versions should only be used if you have
     a specific need for them.
 {% endblocktrans %}</div>
 
-<table class="versions-list stable-versions">
+<table class="versions-list legacy-versions">
     <tbody>
     {% for ver in releases %}
         <tr class="infos">
@@ -104,7 +104,7 @@ src="//pagead2.googlesyndication.com/pagead/show_ads.js">
         </tr>
         </li>
     {% empty %}
-        <tr><td colspan="2"><em>{% trans "No stable release yet" %}</em></td></tr>
+        <tr><td colspan="2"><em>{% trans "No legacy release yet" %}</em></td></tr>
     {% endfor %}
     </tbody>
 </table>
@@ -113,7 +113,7 @@ src="//pagead2.googlesyndication.com/pagead/show_ads.js">
 <div id="other-linux">
     <h1>{% trans "Linux distributions" %}</h1>
     <p>{% blocktrans %}Ubuntu users can install a PPA
-    for development and stable versions of Dolphin here: <a href="https://wiki.dolphin-emu.org/index.php?title=Installing_Dolphin#Ubuntu">Installing Dolphin</a>
+    for development and legacy versions of Dolphin here: <a href="https://wiki.dolphin-emu.org/index.php?title=Installing_Dolphin#Ubuntu">Installing Dolphin</a>
     {% endblocktrans %}</p>
     <p>{% blocktrans %}Users of other Linux distributions can look here to compile Dolphin: <a href="https://wiki.dolphin-emu.org/index.php?title=Building_Dolphin_on_Linux">Building Dolphin on Linux</a>
     {% endblocktrans %}</p>
