@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-06 02:28+0100\n"
+"POT-Creation-Date: 2023-07-04 15:13-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: blog/admin.py:47
 msgid "Content"
@@ -510,8 +510,8 @@ msgstr ""
 #: downloads/models.py:105
 #, python-format
 msgid ""
-"(<a href=\"%(pr_url)s\">PR #%(pr_id)s</a> from <a href=\"%(author_url)s\">"
-"%(author)s</a>)"
+"(<a href=\"%(pr_url)s\">PR #%(pr_id)s</a> from <a "
+"href=\"%(author_url)s\">%(author)s</a>)"
 msgstr ""
 
 #: downloads/templates/downloads-branches.html:5
@@ -566,9 +566,9 @@ msgstr ""
 #: downloads/templates/downloads-index.html:40
 msgid ""
 "The Windows beta versions <b>require</b> the <a href=\"https://support."
-"microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads"
-"\">64-bit Visual C++ redistributable for Visual Studio 2022</a> to be "
-"installed."
+"microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-"
+"downloads\">64-bit Visual C++ redistributable for Visual Studio 2022</a> to "
+"be installed."
 msgstr ""
 
 #: downloads/templates/downloads-index.html:48
@@ -595,23 +595,23 @@ msgid ""
 msgstr ""
 
 #: downloads/templates/downloads-index.html:81
-msgid "Stable versions"
+msgid "Legacy versions"
 msgstr ""
 
 #: downloads/templates/downloads-index.html:84
 msgid ""
 "\n"
-"    The stable versions below are years out of date and missing countless "
+"    The legacy versions below are years out of date and missing countless "
 "features and bug fixes.\n"
-"    <a href=\"#download-beta\">Beta</a> or <a href=\"#download-dev"
-"\">development</a> versions are a\n"
-"    better choice for almost all users; the stable versions should only be "
+"    <a href=\"#download-beta\">Beta</a> or <a href=\"#download-"
+"dev\">development</a> versions are a\n"
+"    better choice for almost all users; the legacy versions should only be "
 "used if you have\n"
 "    a specific need for them.\n"
 msgstr ""
 
 #: downloads/templates/downloads-index.html:107
-msgid "No stable release yet"
+msgid "No legacy release yet"
 msgstr ""
 
 #: downloads/templates/downloads-index.html:114
@@ -621,7 +621,7 @@ msgstr ""
 #: downloads/templates/downloads-index.html:115
 msgid ""
 "Ubuntu users can install a PPA\n"
-"    for development and stable versions of Dolphin here: <a href=\"https://"
+"    for development and legacy versions of Dolphin here: <a href=\"https://"
 "wiki.dolphin-emu.org/index.php?title=Installing_Dolphin#Ubuntu\">Installing "
 "Dolphin</a>\n"
 "    "
@@ -629,9 +629,9 @@ msgstr ""
 
 #: downloads/templates/downloads-index.html:118
 msgid ""
-"Users of other Linux distributions can look here to compile Dolphin: <a href="
-"\"https://wiki.dolphin-emu.org/index.php?title=Building_Dolphin_on_Linux"
-"\">Building Dolphin on Linux</a>\n"
+"Users of other Linux distributions can look here to compile Dolphin: <a "
+"href=\"https://wiki.dolphin-emu.org/index.php?"
+"title=Building_Dolphin_on_Linux\">Building Dolphin on Linux</a>\n"
 "    "
 msgstr ""
 
@@ -746,7 +746,7 @@ msgstr ""
 
 #: homepage/templates/homepage-home.html:48
 #, python-format
-msgid "Download %(last_release)s for Windows, Mac and Linux »"
+msgid "Download %(last_beta)s for Windows, Mac and Linux »"
 msgstr ""
 
 #: homepage/templates/homepage-home.html:109
