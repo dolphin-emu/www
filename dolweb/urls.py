@@ -5,7 +5,9 @@ from django.conf import settings
 from django.conf.urls import include, url
 from django.conf.urls.static import static
 from django.contrib import admin
+from django.contrib.staticfiles.storage import staticfiles_storage
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
+from django.views.generic.base import RedirectView
 from dolweb.homepage.views import home
 from dolweb.management.views import run_command
 
@@ -41,6 +43,9 @@ urlpatterns = [
 
     # Auto-update checking.
     url(r'^update/', include('dolweb.update.urls')),
+
+    # ads.txt
+    url(r"^ads.txt$", RedirectView.as_view(url=staticfiles_storage.url("ads.txt"))),
 ]
 
 urlpatterns += staticfiles_urlpatterns()
