@@ -175,3 +175,31 @@ def _check_on_manually_maintained_track(request, track, version, old_platform, n
         return _make_up_to_date_response()
     changelog = _changelog_from_update_track(newer_versions)
     return _make_outdated_response(version, new_version, old_platform, new_platform, changelog)
+
+
+@cache_control(max_age=15)
+def info(request, updater_ver, version, platform):
+    if updater_ver != "1":
+        return _error_response(400,
+                               "Unsupported updater version %r" % updater_ver)
+
+    target_system = _UPDATE_SYSTEM_TO_ARTIFACT_NAME.get(platform)
+    if target_system is None:
+        return _error_response(400,
+                               "Unsupported platform %r" % platform)
+
+    try:
+        version = DevVersion.objects.get(hash=version)
+    except DevVersion.DoesNotExist:
+        return _error_response(404, "No version %r exists" % version)
+
+    if version.artifacts.filter(target_system=target_system).count() == 0:
+        return _error_response(404, "No version %r exists on platform %r" % (version, platform))
+
+    return _make_info_response(version, platform)
+
+def _make_info_response(version, platform):
+    return JsonResponse({
+        "content-store": settings.UPDATE_CONTENT_STORE_URL,
+        "info": _serialize_version(version, platform),
+    })
