@@ -5,14 +5,14 @@
 # Translators:
 # Delirious <delirious@freemail.hu>, 2013
 # Delirious <delirious@freemail.hu>, 2013
-# Evin <tomevin1@gmail.com>, 2016
+# Evin, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-04-11 23:51+0200\n"
-"PO-Revision-Date: 2017-09-23 18:48+0000\n"
-"Last-Translator: Evin <tomevin1@gmail.com>\n"
+"POT-Creation-Date: 2023-01-06 02:28+0100\n"
+"PO-Revision-Date: 2013-01-23 05:00+0000\n"
+"Last-Translator: Evin, 2016\n"
 "Language-Team: Hungarian (http://www.transifex.com/delroth/dolphin-emu/language/hu/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,30 +20,30 @@ msgstr ""
 "Language: hu\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: blog/admin.py:45
+#: blog/admin.py:47
 msgid "Content"
 msgstr "Tartalom"
 
-#: blog/feeds.py:24
+#: blog/feeds.py:27
 #, python-format
 msgid "Entries for the series %s"
 msgstr "A(z) %s sorozat bejegyzései"
 
-#: blog/feeds.py:27
+#: blog/feeds.py:30
 #, python-format
 msgid "The latest entries for the series %s"
 msgstr "A(z) %s sorozat utolsó bejegyzései"
 
-#: blog/models.py:20
+#: blog/models.py:39
 msgid "image"
 msgstr "kép"
 
-#: blog/models.py:21
+#: blog/models.py:40
 msgid "Used for illustration."
 msgstr "Illusztrációhoz használva."
 
 #: blog/templates/blog_sidebar.html:6
-#: blog/templates/zinnia/tags/search_form.html:7
+#: blog/templates/zinnia/tags/search_form.html:6
 msgid "Search articles"
 msgstr "Cikkek keresése"
 
@@ -52,7 +52,7 @@ msgid "Blog tags"
 msgstr "Blog címkék"
 
 #: blog/templates/blog_sidebar.html:36
-#: blog/templates/zinnia/_entry_detail_base.html:83
+#: blog/templates/zinnia/_entry_detail_base.html:79
 msgid "Blog series"
 msgstr "Blog sorozatok"
 
@@ -60,7 +60,7 @@ msgstr "Blog sorozatok"
 msgid "See all"
 msgstr "Mind mutat"
 
-#: blog/templates/series-index.html:22
+#: blog/templates/series-index.html:20
 #, python-format
 msgid ""
 "\n"
@@ -73,241 +73,271 @@ msgid_plural ""
 msgstr[0] "\n%(count)s bejegyzés\n  "
 msgstr[1] "\n%(count)s bejegyzés\n  "
 
-#: blog/templates/series-index.html:27
+#: blog/templates/series-index.html:25
 msgid "RSS feed:"
 msgstr "RSS-hírcsatorna:"
 
-#: blog/templates/series-index.html:37
+#: blog/templates/series-index.html:35
 msgid "No blog series yet."
 msgstr "Még nincs blog sorozat."
 
-#: blog/templates/zinnia/_entry_detail_base.html:26
-#: homepage/templates/homepage-home.html:122
+#: blog/templates/zinnia/_entry_detail_base.html:22
+#: homepage/templates/homepage-home.html:119
 msgid "Written by"
 msgstr "Írta:"
 
-#: blog/templates/zinnia/_entry_detail_base.html:30
-#: homepage/templates/homepage-home.html:126
+#: blog/templates/zinnia/_entry_detail_base.html:26
+#: homepage/templates/homepage-home.html:123
 #, python-format
 msgid "Show all %(author)s's entries"
 msgstr "%(author)s minden bejegyzése"
 
-#: blog/templates/zinnia/_entry_detail_base.html:32
-#: homepage/templates/homepage-home.html:128
+#: blog/templates/zinnia/_entry_detail_base.html:28
+#: homepage/templates/homepage-home.html:125
 msgid "on"
 msgstr "-"
 
-#: blog/templates/zinnia/_entry_detail_base.html:34
-#: homepage/templates/homepage-home.html:130
+#: blog/templates/zinnia/_entry_detail_base.html:30
+#: homepage/templates/homepage-home.html:127
 msgid "Written on"
 msgstr "Megírva:"
 
-#: blog/templates/zinnia/_entry_detail_base.html:42
+#: blog/templates/zinnia/_entry_detail_base.html:38
 msgid "Last update on"
 msgstr "Utoljára frissítve:"
 
-#: blog/templates/zinnia/_entry_detail_base.html:44
+#: blog/templates/zinnia/_entry_detail_base.html:40
 #, python-format
 msgid "Short URL to %(object)s"
 msgstr "%(object)s rövid linkje"
 
-#: blog/templates/zinnia/_entry_detail_base.html:45
+#: blog/templates/zinnia/_entry_detail_base.html:41
 msgid "Short link"
 msgstr "Rövid link"
 
-#: blog/templates/zinnia/_entry_detail_base.html:46
-#: homepage/templates/homepage-home.html:138
+#: blog/templates/zinnia/_entry_detail_base.html:42
+#: homepage/templates/homepage-home.html:135
 msgid "Visit forum thread for this article"
 msgstr "A cikk fórumbejegyzésére ugrás"
 
-#: blog/templates/zinnia/_entry_detail_base.html:46
-#: homepage/templates/homepage-home.html:138
+#: blog/templates/zinnia/_entry_detail_base.html:42
+#: homepage/templates/homepage-home.html:135
 msgid "Forum thread"
 msgstr "Fórumbejegyzés"
 
-#: blog/templates/zinnia/_entry_detail_base.html:63
+#: blog/templates/zinnia/_entry_detail_base.html:59
 #, python-format
 msgid "Continue reading %(object)s"
 msgstr "%(object)s olvasásának folytatása"
 
-#: blog/templates/zinnia/_entry_detail_base.html:65
+#: blog/templates/zinnia/_entry_detail_base.html:61
 msgid "Continue reading"
 msgstr "Olvasás folytatása"
 
-#: blog/templates/zinnia/_entry_detail_base.html:74
+#: blog/templates/zinnia/_entry_detail_base.html:70
 #, python-format
 msgid ""
 "You can continue the discussion in the <a href=\"%(url)s\" title=\"Visit "
 "forum thread for this article\">forum thread</a> of this article."
 msgstr "A cikkhez tartozó <a href=\"%(url)s\" title=”A cikk fórumbejegyzésére ugrás”>fórumbejegyzésben</a> hozzászólhatsz a cikkhez."
 
-#: blog/templates/zinnia/_entry_detail_base.html:85
+#: blog/templates/zinnia/_entry_detail_base.html:81
 #, python-format
 msgid ""
 "This article is number %(nth)s within the blog series\n"
 "    <a href=\"%(url)s\"><em>%(series)s</em></a>."
 msgstr "Ez a cikk a(z) %(nth)s. a(z) <a href=\"%(url)s”><em>%(series)s</em></a> blogsorozaton belül."
 
-#: blog/templates/zinnia/_entry_detail_base.html:90
+#: blog/templates/zinnia/_entry_detail_base.html:85
 msgid "‹ Previous article in series"
 msgstr "‹ A sorozat előző cikke"
 
-#: blog/templates/zinnia/_entry_detail_base.html:92
+#: blog/templates/zinnia/_entry_detail_base.html:87
 msgid "Next article in series ›"
 msgstr "‹ A sorozat következő cikke"
 
-#: blog/templates/zinnia/_entry_detail_base.html:142
+#: blog/templates/zinnia/_entry_detail_base.html:99
 msgid "Tags"
 msgstr "Címkék"
 
-#: blog/templates/zinnia/_entry_detail_base.html:146
+#: blog/templates/zinnia/_entry_detail_base.html:103
 #, python-format
 msgid "Show all entries tagged by %(tag)s"
 msgstr "%(tag)s címkével jelzett minden bejegyzés"
 
-#: blog/templates/zinnia/_entry_detail_base.html:149
+#: blog/templates/zinnia/_entry_detail_base.html:106
 msgid "No tags"
 msgstr "Nincs címke"
 
-#: blog/templates/zinnia/_entry_detail_base.html:156
+#: blog/templates/zinnia/_entry_detail_base.html:113
 msgid "Categories"
 msgstr "Kategóriák"
 
-#: blog/templates/zinnia/_entry_detail_base.html:160
+#: blog/templates/zinnia/_entry_detail_base.html:117
 #, python-format
 msgid "Show all entries in %(category)s"
 msgstr "%(category)s minden bejegyzése"
 
-#: blog/templates/zinnia/_entry_detail_base.html:163
+#: blog/templates/zinnia/_entry_detail_base.html:120
 msgid "No categories"
 msgstr "Nincs kategória"
 
-#: blog/templates/zinnia/entry_detail_base.html:22
+#: blog/templates/zinnia/entry_detail_base.html:33
 msgid "RSS Feed of discussions on"
 msgstr "Beszélgetések RSS-hírcsatornája:"
 
-#: blog/templates/zinnia/entry_detail_base.html:24
+#: blog/templates/zinnia/entry_detail_base.html:35
 msgid "RSS Feed of comments on"
 msgstr "Megjegyzések RSS-hírcsatornája:"
 
-#: blog/templates/zinnia/entry_detail_base.html:26
+#: blog/templates/zinnia/entry_detail_base.html:37
 msgid "RSS Feed of pingbacks on"
 msgstr "Pingback RSS-hírcsatornája:"
 
-#: blog/templates/zinnia/entry_detail_base.html:28
+#: blog/templates/zinnia/entry_detail_base.html:39
 msgid "RSS Feed of trackbacks on"
 msgstr "Trackback RSS-hírcsatornája:"
 
-#: blog/templates/zinnia/entry_detail_base.html:46
+#: blog/templates/zinnia/entry_detail_base.html:57
 msgid "Next entry"
 msgstr "Következő bejegyzés"
 
-#: blog/templates/zinnia/entry_detail_base.html:58
+#: blog/templates/zinnia/entry_detail_base.html:69
 msgid "Previous entry"
 msgstr "Előző bejegyzés"
 
-#: blog/templates/zinnia/entry_detail_base.html:70
+#: blog/templates/zinnia/entry_detail_base.html:81
 msgid "Related entries"
 msgstr "Kapcsolódó bejegyzések"
 
-#: blog/templates/zinnia/entry_detail_base.html:82
+#: blog/templates/zinnia/entry_detail_base.html:93
 msgid "Similar entries"
 msgstr "Hasonló bejegyzések"
 
-#: blog/templates/zinnia/entry_detail_base.html:224
-#: blog/templates/zinnia/entry_detail_base.html:225
+#: blog/templates/zinnia/entry_detail_base.html:235
+#: blog/templates/zinnia/entry_detail_base.html:236
 msgid "Edit the entry"
 msgstr "Bejegyzés szerkesztése"
 
-#: blog/templates/zinnia/entry_list.html:5
+#: blog/templates/zinnia/entry_list.html:4
 msgid "Latest entries for"
 msgstr "Utolsó bejegyzése:"
 
-#: blog/templates/zinnia/entry_list.html:5
+#: blog/templates/zinnia/entry_list.html:4
 msgid "the category"
 msgstr "a kategória"
 
-#: blog/templates/zinnia/entry_list.html:5
+#: blog/templates/zinnia/entry_list.html:4
 msgid "the tag"
 msgstr "a címke"
 
-#: blog/templates/zinnia/entry_list.html:5
+#: blog/templates/zinnia/entry_list.html:4
 msgid "the author"
 msgstr "a szerző"
 
-#: blog/templates/zinnia/entry_list.html:5
+#: blog/templates/zinnia/entry_list.html:4
 msgid "page"
 msgstr "oldal"
 
-#: blog/templates/zinnia/entry_list.html:10
-#: blog/templates/zinnia/entry_list.html:13
-#: blog/templates/zinnia/entry_list.html:16
+#: blog/templates/zinnia/entry_list.html:9
+#: blog/templates/zinnia/entry_list.html:12
+#: blog/templates/zinnia/entry_list.html:15
 msgid "RSS Feed"
 msgstr "RSS-hírfolyam"
 
-#: blog/templates/zinnia/entry_list.html:20
+#: blog/templates/zinnia/entry_list.html:19
 msgid "Latest entries"
 msgstr "Legutolsó bejegyzések"
 
-#: blog/templates/zinnia/entry_list.html:20
+#: blog/templates/zinnia/entry_list.html:19
 msgid "Category"
 msgstr "Kategória"
 
-#: blog/templates/zinnia/entry_list.html:20
+#: blog/templates/zinnia/entry_list.html:19
 msgid "Tag"
 msgstr "Címke"
 
-#: blog/templates/zinnia/entry_list.html:20
+#: blog/templates/zinnia/entry_list.html:19
 msgid "Author"
 msgstr "Szerző"
 
-#: blog/templates/zinnia/entry_list.html:20
+#: blog/templates/zinnia/entry_list.html:19
 msgid "Page"
 msgstr "Oldal"
 
-#: blog/templates/zinnia/entry_list.html:28
+#: blog/templates/zinnia/entry_list.html:27
 #, python-format
 msgid "Category archives: %(category)s"
 msgstr "Kategória archívum: %(category)s"
 
-#: blog/templates/zinnia/entry_list.html:35
+#: blog/templates/zinnia/entry_list.html:34
 #, python-format
 msgid "Tag archives: %(tag)s"
 msgstr "Címke archívum: %(tag)s"
 
-#: blog/templates/zinnia/entry_list.html:39
+#: blog/templates/zinnia/entry_list.html:38
 #, python-format
 msgid "Author archives: %(author)s"
 msgstr "Szerző archívum: %(author)s"
 
-#: blog/templates/zinnia/entry_list.html:48
+#: blog/templates/zinnia/entry_list.html:47
 msgid "No entries yet."
 msgstr "Még nincs bejegyzés."
 
+#: blog/templates/zinnia/entry_list.html:66
 #: blog/templates/zinnia/entry_list.html:67
-#: blog/templates/zinnia/entry_list.html:68
 msgid "Edit the category"
 msgstr "Kategória szerkesztése"
 
+#: blog/templates/zinnia/entry_list.html:73
 #: blog/templates/zinnia/entry_list.html:74
-#: blog/templates/zinnia/entry_list.html:75
 msgid "Edit the tag"
 msgstr "Címke szerkesztése"
 
+#: blog/templates/zinnia/entry_list.html:80
 #: blog/templates/zinnia/entry_list.html:81
-#: blog/templates/zinnia/entry_list.html:82
 msgid "Edit the author"
 msgstr "Szerző szerkesztése"
 
-#: blog/templates/zinnia/skeleton.html:5
+#: blog/templates/zinnia/entry_search.html:4
+#: blog/templates/zinnia/entry_search.html:6
+#: blog/templates/zinnia/entry_search.html:18
+#, python-format
+msgid "Search results for '%(pattern)s'"
+msgstr ""
+
+#: blog/templates/zinnia/entry_search.html:11
+#: blog/templates/zinnia/entry_search.html:24
+#: blog/templates/zinnia/entry_search.html:25
+#, python-format
+msgid "RSS feed of search results for '%(pattern)s'"
+msgstr ""
+
+#: blog/templates/zinnia/entry_search.html:32
+#, python-format
+msgid "%(entry_count)s entry found"
+msgid_plural "%(entry_count)s entries found"
+msgstr[0] ""
+msgstr[1] ""
+
+#: blog/templates/zinnia/entry_search.html:43
+msgid "Nothing found."
+msgstr ""
+
+#: blog/templates/zinnia/skeleton.html:4
 msgid "Latest news for Dolphin Emulator"
 msgstr "Legfrissebb Dolphin emulátor hír"
 
-#: blog/templates/zinnia/skeleton.html:8
+#: blog/templates/zinnia/skeleton.html:7
 msgid "Articles"
 msgstr "Cikkek"
 
-#: blog/templates/zinnia/tags/search_form.html:18
+#: blog/templates/zinnia/skeleton.html:15
+#: homepage/templates/homepage-home.html:108
+msgid "RSS feed of the latest articles"
+msgstr "A legújabb cikkek RSS-hírcsatornája"
+
+#: blog/templates/zinnia/tags/search_form.html:17
 msgid ""
 "You can use - to exclude words or phrases, &quot;double quotes&quot; for "
 "exact phrases and the AND/OR boolean operators combined with parenthesis for"
@@ -400,7 +430,7 @@ msgid "Game title (click for details)"
 msgstr "Játék cím (kattints a részletekért)"
 
 #: compat/templates/compat-list.html:66
-#: homepage/templates/homepage-home.html:95 templates/_base.html:77
+#: homepage/templates/homepage-home.html:95 templates/_base.html:74
 msgid "Compatibility"
 msgstr "Kompatibilitás"
 
@@ -412,37 +442,37 @@ msgstr "Utoljára frissítve"
 msgid "Your query does not match any game."
 msgstr "A lekérdezésednek nem felel meg egy játék sem."
 
-#: compat/templatetags/compat.py:9
+#: compat/templatetags/compat.py:12
 msgid "Unknown"
 msgstr "Ismeretlen"
 
-#: compat/templatetags/compat.py:10
+#: compat/templatetags/compat.py:13
 msgid "Broken"
 msgstr "Hibás"
 
-#: compat/templatetags/compat.py:11
+#: compat/templatetags/compat.py:14
 msgid "Intro/Menu"
 msgstr "Bevezető/Menü"
 
-#: compat/templatetags/compat.py:12
+#: compat/templatetags/compat.py:15
 msgid "Starts"
 msgstr "Elindul"
 
-#: compat/templatetags/compat.py:13
+#: compat/templatetags/compat.py:16
 msgid "Playable"
 msgstr "Játszható"
 
-#: compat/templatetags/compat.py:14
+#: compat/templatetags/compat.py:17
 msgid "Perfect"
 msgstr "Tökéletes"
 
-#: docs/templates/docs-faq.html:6
+#: docs/templates/docs-faq.html:5
 msgid ""
 "The Official Dolphin FAQ answers all the questions that people often ask "
 "about Dolphin."
 msgstr "A hivatalos Dolphin GYIK mindeazokkal a kérdésekkel, melyeket a leggyakrabban feltesznek a Dolphinnel kapcsolatban."
 
-#: docs/templates/docs-faq.html:8
+#: docs/templates/docs-faq.html:7
 msgid "Frequently Asked Questions"
 msgstr "Gyakran ismételt kérdések"
 
@@ -454,7 +484,7 @@ msgstr "Vissza az útmutatók listájához"
 msgid "See all the guides written by the Dolphin team about the emulator."
 msgstr "Minden útmutató, melyet a Dolphin csapat az emulátoról írt."
 
-#: docs/templates/docs-guides-index.html:7 templates/_base.html:76
+#: docs/templates/docs-guides-index.html:7 templates/_base.html:73
 msgid "Guides"
 msgstr "Útmutatók"
 
@@ -466,16 +496,20 @@ msgstr "Útmutatók és dokumentációk"
 msgid "No published guide available"
 msgstr "Nem jelent meg útmutató"
 
-#: downloads/models.py:36 downloads/models.py:54
+#: docs/templates/docs-privacy.html:4
+msgid "Privacy Policy for the Dolphin Emulator and its services."
+msgstr ""
+
+#: docs/templates/docs-privacy.html:6 templates/_base.html:121
+msgid "Privacy Policy"
+msgstr ""
+
+#: downloads/models.py:40 downloads/models.py:57
 #, python-format
 msgid "Dolphin %s"
 msgstr "Dolphin %s"
 
-#: downloads/models.py:78
-msgid "Change with no description"
-msgstr "Leírás nélküli módosítás"
-
-#: downloads/models.py:81
+#: downloads/models.py:105
 #, python-format
 msgid ""
 "(<a href=\"%(pr_url)s\">PR #%(pr_id)s</a> from <a "
@@ -493,7 +527,7 @@ msgid "<tt>%(branch)s</tt> branch"
 msgstr "<tt>%(branch)s</tt> ág"
 
 #: downloads/templates/downloads-branches.html:21
-#: downloads/templates/downloads-index.html:45
+#: downloads/templates/downloads-index.html:63
 msgid "View older versions »"
 msgstr "Régebbi verziók megtekintése »"
 
@@ -513,64 +547,89 @@ msgid ""
 msgstr "A Dolphin emulátor legfrissebb verziójának (%(ver)s) letöltése a hivatalos weboldalról."
 
 #: downloads/templates/downloads-index.html:8
-#: downloads/templates/downloads-index.html:27 templates/_base.html:72
+#: downloads/templates/downloads-index.html:27 templates/_base.html:69
 msgid "Download"
 msgstr "Letöltés"
 
 #: downloads/templates/downloads-index.html:31
-msgid "Development versions"
-msgstr "Fejlesztői verziók"
+msgid "Beta versions"
+msgstr ""
 
 #: downloads/templates/downloads-index.html:33
 msgid ""
 "\n"
-"    <p>Development versions are released every time a developer makes a change to\n"
+"    <p>Beta versions are released every month, usually accompanied by a <em>Progress Report</em>\n"
+"    article. Use the latest beta version if you prefer stability over the newest features in the\n"
+"    <a href=\"#download-dev\">development versions</a>.</p>\n"
+msgstr ""
+
+#: downloads/templates/downloads-index.html:40
+msgid ""
+"The Windows beta versions <b>require</b> the <a "
+"href=\"https://support.microsoft.com/en-us/help/2977003/the-latest-"
+"supported-visual-c-downloads\">64-bit Visual C++ redistributable for Visual "
+"Studio 2022</a> to be installed."
+msgstr ""
+
+#: downloads/templates/downloads-index.html:48
+msgid "Development versions"
+msgstr "Fejlesztői verziók"
+
+#: downloads/templates/downloads-index.html:51
+msgid ""
+"Development versions are released every time a developer makes a change to\n"
 "    Dolphin, several times every day! Using development versions enables you to\n"
 "    use the latest and greatest improvements to the project. They are however\n"
-"    less tested than stable versions of the emulator.</p>\n"
-"\n"
-"    <p>The development versions require the <a href=\"https://www.microsoft.com/en-us/download/details.aspx?id=48145\">64-bit Visual C++ redistributable for Visual Studio 2015</a>\n"
-"    to be installed.</p>\n"
-msgstr "\n<p>A fejlesztői verziók akkor frissülnek, mikor egy fejlesztő módosítást végez a Dolphinen, naponta akár többször is! A fejlesztői verzióval a projekt legfrissebb és legújabb fejesztéseit próbálhatod ki. Azonban kevésbé teszteltek, mint az emulátor stabil verziói.</p>\n\n    <p>A fejlesztői verziókhoz a <a href=\"https://www.microsoft.com/en-us/download/details.aspx?id=48145\">64-bit Visual C++ redistributable for Visual Studio 2015</a> telepítése szükséges.</p>\n"
+"    less tested than <a href=\"#download-beta\">beta versions</a> of the emulator."
+msgstr ""
 
-#: downloads/templates/downloads-index.html:63
+#: downloads/templates/downloads-index.html:58
+msgid ""
+"The Windows development versions <b>require</b> the <a "
+"href=\"https://support.microsoft.com/en-us/help/2977003/the-latest-"
+"supported-visual-c-downloads\">64-bit Visual C++ redistributable for Visual "
+"Studio 2022</a> to be installed."
+msgstr ""
+
+#: downloads/templates/downloads-index.html:81
 msgid "Stable versions"
 msgstr "Stabil verziók"
 
-#: downloads/templates/downloads-index.html:65
+#: downloads/templates/downloads-index.html:84
 msgid ""
 "\n"
-"    Stable versions are released after a lot of testing to ensure emulation\n"
-"    performance and stability. However, since they are released less often,\n"
-"    they might be outdated and lacking some new features.\n"
-msgstr "\nA stabil verziók rengeteg tesztelés után kerülnek kiadásra, amikor megfelelő az emuláció, a teljesítmény és a stabilitás. Azonban mivel kevésbé gyakran kerülnek kiadásra, talán elavultak lehetnek és kevesebb új funkcióval bírhatnak.\n"
+"    The stable versions below are years out of date and missing countless features and bug fixes.\n"
+"    <a href=\"#download-beta\">Beta</a> or <a href=\"#download-dev\">development</a> versions are a\n"
+"    better choice for almost all users; the stable versions should only be used if you have\n"
+"    a specific need for them.\n"
+msgstr ""
 
-#: downloads/templates/downloads-index.html:87
+#: downloads/templates/downloads-index.html:107
 msgid "No stable release yet"
 msgstr "Nincs még stabil kiadás"
 
-#: downloads/templates/downloads-index.html:94
-msgid "Older Ubuntu (< 15.04) and users of other Linux distributions"
-msgstr "Régebbi Ubuntu (< 15.04) és egyéb Linux kiadások felhasználói"
+#: downloads/templates/downloads-index.html:114
+msgid "Linux distributions"
+msgstr ""
 
-#: downloads/templates/downloads-index.html:95
+#: downloads/templates/downloads-index.html:115
 msgid ""
-"Ubuntu 14.10 and older users can install a PPA \n"
+"Ubuntu users can install a PPA\n"
 "    for development and stable versions of Dolphin here: <a href=\"https://wiki.dolphin-emu.org/index.php?title=Installing_Dolphin#Ubuntu\">Installing Dolphin</a>\n"
 "    "
-msgstr "Az Ubuntu 14.10 vagy annél régebbi felhasználók telepíthetnek egy PPA-t a Dolphin fejlesztői és stabil változataihoz: <a href=\"https://wiki.dolphin-emu.org/index.php?title=Installing_Dolphin#Ubuntu”>Dolphin telepítése</a>\n    "
+msgstr ""
 
-#: downloads/templates/downloads-index.html:98
+#: downloads/templates/downloads-index.html:118
 msgid ""
 "Users of other Linux distributions can look here to compile Dolphin: <a href=\"https://wiki.dolphin-emu.org/index.php?title=Building_Dolphin_on_Linux\">Building Dolphin on Linux</a>\n"
 "    "
 msgstr "Egyéb Linux kiadást használó felhasználók itt találnak leírást a Dolphin lefordításához: <a href=\"https://wiki.dolphin-emu.org/index.php?title=Building_Dolphin_on_Linux”>Dolphin legenerálása Linuxon</a>\n    "
 
-#: downloads/templates/downloads-index.html:103
+#: downloads/templates/downloads-index.html:123
 msgid "Source code"
 msgstr "Forráskód"
 
-#: downloads/templates/downloads-index.html:105
+#: downloads/templates/downloads-index.html:125
 msgid ""
 "\n"
 "    The latest version of the Dolphin source code can be downloaded from the\n"
@@ -578,7 +637,7 @@ msgid ""
 "    "
 msgstr "\nA Dolphin forráskódjának legújabb verziója letölthető a Git verziókezelő projektből.\n    "
 
-#: downloads/templates/downloads-index.html:113
+#: downloads/templates/downloads-index.html:133
 #, python-format
 msgid ""
 "\n"
@@ -586,11 +645,11 @@ msgid ""
 "    "
 msgstr "\nValamint <a href=”%(GIT_BROWSE_URL)s”>böngészhetsz a forráskód jelenlegi verziójában</a>.\n    "
 
-#: downloads/templates/downloads-index.html:120
+#: downloads/templates/downloads-index.html:140
 msgid "Reporting bugs"
 msgstr "Hibajelentés"
 
-#: downloads/templates/downloads-index.html:122
+#: downloads/templates/downloads-index.html:142
 #, python-format
 msgid ""
 "\n"
@@ -655,7 +714,7 @@ msgid "GameCube/Wii games on PC"
 msgstr "GameCube/Wii játékok számítógépen"
 
 #: homepage/templates/homepage-home.html:37 templates/_base.html:10
-#: templates/_base.html.py:68
+#: templates/_base.html:65
 msgid "Dolphin Emulator"
 msgstr "Dolphin emulátor"
 
@@ -675,24 +734,20 @@ msgstr "\nA <b>Dolphin</b> egy emulátor két friss Nintendo videojáték konzol
 msgid "Download %(last_release)s for Windows, Mac and Linux »"
 msgstr "%(last_release)s letöltése Windows, Mac, Linux rendszerre »"
 
-#: homepage/templates/homepage-home.html:108
-msgid "RSS feed of the latest articles"
-msgstr "A legújabb cikkek RSS-hírcsatornája"
-
 #: homepage/templates/homepage-home.html:109
 msgid "Latest articles"
 msgstr "Legújabb cikkek"
 
-#: homepage/templates/homepage-home.html:136
+#: homepage/templates/homepage-home.html:133
 #, python-format
 msgid "/ Part of series <a href=\"%(url)s\">%(name)s</a>"
 msgstr "/ <a href=\"%(url)s”>%(name)s</a> sorozat része"
 
-#: homepage/templates/homepage-home.html:143
+#: homepage/templates/homepage-home.html:140
 msgid "Read this article"
 msgstr "Cikk elolvasása"
 
-#: homepage/templates/homepage-home.html:147
+#: homepage/templates/homepage-home.html:144
 msgid "No articles yet."
 msgstr "Nincs még cikk."
 
@@ -710,7 +765,7 @@ msgstr "Pillanatkép galéria"
 msgid "Media gallery"
 msgstr "Média galéria"
 
-#: templates/404.html:5 templates/404.html.py:8
+#: templates/404.html:5 templates/404.html:8
 msgid "Page not found"
 msgstr "Az oldal nem található"
 
@@ -718,7 +773,7 @@ msgstr "Az oldal nem található"
 msgid "The URL you tried to access does not exist."
 msgstr "Az elérni próbált URL nem létezik."
 
-#: templates/500.html:5 templates/500.html.py:8
+#: templates/500.html:5 templates/500.html:8
 msgid "Internal Server Error"
 msgstr "Belső szerverhiba"
 
@@ -728,39 +783,46 @@ msgid ""
 " in a few seconds."
 msgstr "Hiba lépett fel az oldal elérése közben. Pár másodperc múlva frissítsd az oldalt."
 
-#: templates/_base.html:23
+#: templates/_base.html:22
 msgid "Latest blog articles"
 msgstr "Utolsó blogbejegyzés"
 
-#: templates/_base.html:73
+#: templates/_base.html:70
 msgid "Blog"
 msgstr "Blog"
 
-#: templates/_base.html:74
+#: templates/_base.html:71
 msgid "Screenshots"
 msgstr "Pillanatképek"
 
-#: templates/_base.html:75
+#: templates/_base.html:72
 msgid "FAQ"
 msgstr "GYIK"
 
+#: templates/_base.html:76
+msgid "Community"
+msgstr ""
+
 #: templates/_base.html:78
+msgid "Discord"
+msgstr ""
+
+#: templates/_base.html:79
 msgid "Forum"
 msgstr "Fórum"
 
-#: templates/_base.html:79
+#: templates/_base.html:80
 msgid "Wiki"
 msgstr "Wiki"
 
-#: templates/_base.html:80
-msgid "Code"
-msgstr "Kód"
+#: templates/_base.html:81
+msgid "GitHub"
+msgstr ""
 
-#: templates/_base.html:116
-#, python-format
-msgid ""
-"\n"
-"            &copy; 2014 Dolphin Emulator Project -\n"
-"            <a href=\"%(WEBSITE_GIT_URL)s\">Website source code</a>\n"
-"            "
-msgstr "\n&copy; 2014 Dolphin emulátor projekt - <a href=\"%(WEBSITE_GIT_URL)s\">Weboldal forráskódja</a>            "
+#: templates/_base.html:119
+msgid "&copy; Dolphin Emulator Project"
+msgstr ""
+
+#: templates/_base.html:120
+msgid "Website Source Code"
+msgstr ""

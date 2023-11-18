@@ -16,7 +16,6 @@
     {% endthumbnail %}
   {% endif %}
   <div class="innerdiv">
-  {# <h2 id="serie-{{ serie.pk }}"><a href="{% url 'dolweb.blog.views.serie_view' uid=serie.pk %}">{{ serie.name }}</a> #}
   <h2 id="series-{{ series.pk }}">{{ series.name }}
   <small>{% blocktrans count count=series.entries.count %}
     {{ count }} entry

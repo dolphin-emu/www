@@ -38,7 +38,7 @@ class Text(models.Model):
         return 'Blob %d: %s' % (self.id, self.data[:100])
 
     class Meta:
-        db_table = 'pagecontent'
+        db_table = 'text'
         verbose_name = 'MediaWiki Text Blob'
         verbose_name_plural = 'MediaWiki Text Blobs'
 
@@ -49,10 +49,10 @@ class Revision(models.Model):
     timestamp = models.CharField(db_column='rev_timestamp', max_length=14)
 
     def __str__(self):
-        return '%s for %s' % (self.timestamp_raw, self.page)
+        return '%s for %s' % (self.timestamp, self.page)
 
     class Meta:
-        db_table = 'revision'
+        db_table = 'old_revision'
         verbose_name = 'MediaWiki Revision'
         verbose_name_plural = 'MediaWiki Revisions'
 

@@ -35,27 +35,8 @@
         {% block "extracss" %}
         {% endblock %}
 
-        {% if GOOGLE_ANALYTICS_ACCOUNT %}
-        <script type="text/javascript">
-          var _gaq = _gaq || [];
-          _gaq.push(['_setAccount', '{{ GOOGLE_ANALYTICS_ACCOUNT }}']);
-          _gaq.push(['_setDomainName', 'dolphin-emu.org']);
-          _gaq.push(['_trackPageview']);
-
-          (function() {
-            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-          })();
-
-          window.google_analytics_uacct = "{{ GOOGLE_ANALYTICS_ACCOUNT }}";
-        </script>
-        {% endif %}
-
-        <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
-        <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/highcharts/6.1.1/highcharts.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/highcharts/6.1.1/modules/data.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/9.3.2/highcharts.js" integrity="sha512-dm3Cn0X6XyRMz52WqL1wag+e2WCNAnggh2+4mv/9Ngd+IhBIH9NEQYUZ4g3A6GJUbhKrGw5hErqcFIyk73lUgA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/9.3.2/modules/data.min.js" integrity="sha512-8b+GXbLsl2QWPgMMRF/q2/fBYSHd/xl0IezPaedR+yNdRtfjhEWPxJ4jaBSMfWmpIm04KJwC2RROO7auA1yxXg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script>
           var CHART_ID = 0;
           function addChart(options) {
@@ -67,24 +48,9 @@
             options['chart']['style']['fontFamily'] = 'Helvetica Neue,Helvetica,Arial,sans-serif';
             Highcharts.chart("chart" + CHART_ID, options);
           }
-          window.addEventListener("load", function(){
-            window.cookieconsent.initialise({
-              "content": {
-                "message": "{% trans "We use cookies to personalise content and ads, to provide social media features and to analyse our traffic. We also share information about your use of our site with our social media, advertising and analytics partners who may combine it with other information you’ve provided to them or they’ve collected from your use of their services." %}",
-                "link": "Learn more",
-                "href": "https://cookiesandyou.com/",
-              },
-              "palette": {
-                "popup": {
-                  "background": "#000"
-                },
-                "button": {
-                  "background": "#f1d600"
-                }
-              }
-            })
-          });
         </script>
+
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8646203626363069" crossorigin="anonymous"></script>
     </head>
 
     <body>
@@ -108,9 +74,15 @@
                         <li><a href="{% url 'docs_faq' %}">{% trans "FAQ" %}</a></li>
                         <li><a href="{% url 'docs_guides_index' %}">{% trans "Guides" %}</a></li>
                         <li><a href="{% url 'compat_index' %}">{% trans "Compatibility" %}</a></li>
-                        <li><a href="{{ FORUM_URL }}">{% trans "Forum" %}</a></li>
-                        <li><a href="{{ WIKI_URL }}">{% trans "Wiki" %}</a></li>
-                        <li><a href="{{ GIT_BROWSE_URL }}">{% trans "Code" %}</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">{% trans "Community" %} <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="{{ DISCORD_URL }}">{% trans "Discord" %}</a></li>
+                                <li><a href="{{ FORUM_URL }}">{% trans "Forum" %}</a></li>
+                                <li><a href="{{ WIKI_URL }}">{% trans "Wiki" %}</a></li>
+                                <li><a href="{{ GIT_BROWSE_URL }}">{% trans "GitHub" %}</a></li>
+                            </ul>
+                        </li>
                     </ul>
                     <ul class="nav navbar-nav pull-right">
                         <li class="dropdown">
@@ -149,11 +121,16 @@
             {% trans "&copy; Dolphin Emulator Project" %} -
             <a href="{{ WEBSITE_GIT_URL }}">{% trans "Website Source Code" %}</a> -
             <a href="{% url 'docs_privacy' %}">{% trans "Privacy Policy" %}</a>
+
+            <a href="https://social.dolphin-emu.org/@dolphin" rel="me" style="display: none;">Mastodon verification</a>
         </p>
         </footer>
 
         <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
         <script src="{% static "js/bootstrap.min.js" %}"></script>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
         {% block "extrajs" %}
         {% endblock %}
     </body>

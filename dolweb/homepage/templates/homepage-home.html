@@ -45,7 +45,7 @@
             {% endblocktrans %}
             </p>
 
-            <p class="download-btn"><a class="btn btn-primary btn-lg" href="{% url 'downloads_index' %}?ref=btn"><i class="icon-download-alt"></i> {% blocktrans %}Download {{ last_release }} for Windows, Mac and Linux »{% endblocktrans %}</a></p>
+            <p class="download-btn"><a class="btn btn-primary btn-lg" href="{% url 'downloads_index' %}?ref=btn"><i class="icon-download-alt"></i> {% blocktrans %}Download {{ last_beta }} for Windows, Mac and Linux »{% endblocktrans %}</a></p>
             {% if FB_LIKE_PAGE %}
             <div class="fb-like" data-href="{{ FB_LIKE_PAGE }}" data-send="false" data-layout="button_count" data-width="100" data-show-faces="true"></div>
             {% endif %}

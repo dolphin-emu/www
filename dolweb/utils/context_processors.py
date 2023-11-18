@@ -5,6 +5,7 @@ from django.conf import settings
 
 def website_urls(request):
     return {
+        "DISCORD_URL": settings.DISCORD_URL,
         "FORUM_URL": settings.FORUM_URL,
         "WIKI_URL": settings.WIKI_URL,
         "GIT_BROWSE_URL": settings.GIT_BROWSE_URL,
@@ -12,7 +13,6 @@ def website_urls(request):
         "GIT_COMMIT_URL": settings.GIT_COMMIT_URL,
         "WEBSITE_GIT_URL": settings.WEBSITE_GIT_URL,
         "ISSUES_URL": settings.ISSUES_URL,
-        "GOOGLE_ANALYTICS_ACCOUNT": settings.GOOGLE_ANALYTICS_ACCOUNT,
         "DEFAULT_HOST": settings.DEFAULT_HOST,
     }
 

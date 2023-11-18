@@ -3,17 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# enolp <enolp@softastur.org>, 2020
-# Ḷḷumex03 <tornes@opmbx.org>, 2013-2014
-# Ḷḷumex03 <tornes@opmbx.org>, 2014
-# Ḷḷumex03 <tornes@opmbx.org>, 2015
+# enolp <enolp@softastur.org>, 2020,2022
+# Ḷḷumex03, 2013-2014
+# Ḷḷumex03, 2014
+# Ḷḷumex03, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: Dolphin Emulator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-04-11 23:51+0200\n"
-"PO-Revision-Date: 2020-03-04 12:17+0000\n"
-"Last-Translator: enolp <enolp@softastur.org>\n"
+"POT-Creation-Date: 2023-01-06 02:28+0100\n"
+"PO-Revision-Date: 2013-01-23 05:00+0000\n"
+"Last-Translator: enolp <enolp@softastur.org>, 2020,2022\n"
 "Language-Team: Asturian (http://www.transifex.com/delroth/dolphin-emu/language/ast/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -21,30 +21,30 @@ msgstr ""
 "Language: ast\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: blog/admin.py:45
+#: blog/admin.py:47
 msgid "Content"
 msgstr "Conteníu"
 
-#: blog/feeds.py:24
+#: blog/feeds.py:27
 #, python-format
 msgid "Entries for the series %s"
 msgstr "Entraes pa la serie %s"
 
-#: blog/feeds.py:27
+#: blog/feeds.py:30
 #, python-format
 msgid "The latest entries for the series %s"
 msgstr "Les caberes entraes pa la serie %s"
 
-#: blog/models.py:20
+#: blog/models.py:39
 msgid "image"
 msgstr "semeya"
 
-#: blog/models.py:21
+#: blog/models.py:40
 msgid "Used for illustration."
 msgstr "Usáu pa ilustración."
 
 #: blog/templates/blog_sidebar.html:6
-#: blog/templates/zinnia/tags/search_form.html:7
+#: blog/templates/zinnia/tags/search_form.html:6
 msgid "Search articles"
 msgstr "Guetar artículos"
 
@@ -53,7 +53,7 @@ msgid "Blog tags"
 msgstr "Marques del blogue"
 
 #: blog/templates/blog_sidebar.html:36
-#: blog/templates/zinnia/_entry_detail_base.html:83
+#: blog/templates/zinnia/_entry_detail_base.html:79
 msgid "Blog series"
 msgstr "Series del blogue"
 
@@ -61,7 +61,7 @@ msgstr "Series del blogue"
 msgid "See all"
 msgstr "Ver too"
 
-#: blog/templates/series-index.html:22
+#: blog/templates/series-index.html:20
 #, python-format
 msgid ""
 "\n"
@@ -74,241 +74,271 @@ msgid_plural ""
 msgstr[0] "\n    %(count)s entrada\n  "
 msgstr[1] "\n    %(count)s entraes\n  "
 
-#: blog/templates/series-index.html:27
+#: blog/templates/series-index.html:25
 msgid "RSS feed:"
 msgstr "Feed RSS:"
 
-#: blog/templates/series-index.html:37
+#: blog/templates/series-index.html:35
 msgid "No blog series yet."
 msgstr "Entá nun hai series del blogue"
 
-#: blog/templates/zinnia/_entry_detail_base.html:26
-#: homepage/templates/homepage-home.html:122
+#: blog/templates/zinnia/_entry_detail_base.html:22
+#: homepage/templates/homepage-home.html:119
 msgid "Written by"
 msgstr "Escritu por"
 
-#: blog/templates/zinnia/_entry_detail_base.html:30
-#: homepage/templates/homepage-home.html:126
+#: blog/templates/zinnia/_entry_detail_base.html:26
+#: homepage/templates/homepage-home.html:123
 #, python-format
 msgid "Show all %(author)s's entries"
 msgstr "Amosar toles entraes de %(author)s"
 
-#: blog/templates/zinnia/_entry_detail_base.html:32
-#: homepage/templates/homepage-home.html:128
+#: blog/templates/zinnia/_entry_detail_base.html:28
+#: homepage/templates/homepage-home.html:125
 msgid "on"
 msgstr "en"
 
-#: blog/templates/zinnia/_entry_detail_base.html:34
-#: homepage/templates/homepage-home.html:130
+#: blog/templates/zinnia/_entry_detail_base.html:30
+#: homepage/templates/homepage-home.html:127
 msgid "Written on"
 msgstr "Escritu en"
 
-#: blog/templates/zinnia/_entry_detail_base.html:42
+#: blog/templates/zinnia/_entry_detail_base.html:38
 msgid "Last update on"
 msgstr "Caberu anovamientu'l"
 
-#: blog/templates/zinnia/_entry_detail_base.html:44
+#: blog/templates/zinnia/_entry_detail_base.html:40
 #, python-format
 msgid "Short URL to %(object)s"
 msgstr "URL curtia a %(object)s"
 
-#: blog/templates/zinnia/_entry_detail_base.html:45
+#: blog/templates/zinnia/_entry_detail_base.html:41
 msgid "Short link"
 msgstr "Enllaz curtiu"
 
-#: blog/templates/zinnia/_entry_detail_base.html:46
-#: homepage/templates/homepage-home.html:138
+#: blog/templates/zinnia/_entry_detail_base.html:42
+#: homepage/templates/homepage-home.html:135
 msgid "Visit forum thread for this article"
 msgstr "Visitar el filu d'esti artículu nel foru"
 
-#: blog/templates/zinnia/_entry_detail_base.html:46
-#: homepage/templates/homepage-home.html:138
+#: blog/templates/zinnia/_entry_detail_base.html:42
+#: homepage/templates/homepage-home.html:135
 msgid "Forum thread"
 msgstr "Filu del foru"
 
-#: blog/templates/zinnia/_entry_detail_base.html:63
+#: blog/templates/zinnia/_entry_detail_base.html:59
 #, python-format
 msgid "Continue reading %(object)s"
 msgstr "Siguir lleendo %(object)s"
 
-#: blog/templates/zinnia/_entry_detail_base.html:65
+#: blog/templates/zinnia/_entry_detail_base.html:61
 msgid "Continue reading"
 msgstr "Siguir lleendo"
 
-#: blog/templates/zinnia/_entry_detail_base.html:74
+#: blog/templates/zinnia/_entry_detail_base.html:70
 #, python-format
 msgid ""
 "You can continue the discussion in the <a href=\"%(url)s\" title=\"Visit "
 "forum thread for this article\">forum thread</a> of this article."
 msgstr "Pues siguir el discutiniu nel <a href=\"%(url)s\" title=\"Visit forum thread for this article\">filu</a> d'esti artículu, nel foru."
 
-#: blog/templates/zinnia/_entry_detail_base.html:85
+#: blog/templates/zinnia/_entry_detail_base.html:81
 #, python-format
 msgid ""
 "This article is number %(nth)s within the blog series\n"
 "    <a href=\"%(url)s\"><em>%(series)s</em></a>."
 msgstr "Esti artículu ye'l númberu %(nth)s dientro la serie del blogue\n    <a href=\"%(url)s\"><em>%(series)s</em></a>."
 
-#: blog/templates/zinnia/_entry_detail_base.html:90
+#: blog/templates/zinnia/_entry_detail_base.html:85
 msgid "‹ Previous article in series"
 msgstr "‹ Artículu postreru na serie"
 
-#: blog/templates/zinnia/_entry_detail_base.html:92
+#: blog/templates/zinnia/_entry_detail_base.html:87
 msgid "Next article in series ›"
 msgstr "Artículu siguiente na serie ›"
 
-#: blog/templates/zinnia/_entry_detail_base.html:142
+#: blog/templates/zinnia/_entry_detail_base.html:99
 msgid "Tags"
 msgstr "Marques"
 
-#: blog/templates/zinnia/_entry_detail_base.html:146
+#: blog/templates/zinnia/_entry_detail_base.html:103
 #, python-format
 msgid "Show all entries tagged by %(tag)s"
 msgstr "Amosar toles entraes marcaes per %(tag)s"
 
-#: blog/templates/zinnia/_entry_detail_base.html:149
+#: blog/templates/zinnia/_entry_detail_base.html:106
 msgid "No tags"
 msgstr "Nun hai marques"
 
-#: blog/templates/zinnia/_entry_detail_base.html:156
+#: blog/templates/zinnia/_entry_detail_base.html:113
 msgid "Categories"
-msgstr "Estayes"
+msgstr "Categoríes"
 
-#: blog/templates/zinnia/_entry_detail_base.html:160
+#: blog/templates/zinnia/_entry_detail_base.html:117
 #, python-format
 msgid "Show all entries in %(category)s"
 msgstr "Amosar toles entraes en %(category)s"
 
-#: blog/templates/zinnia/_entry_detail_base.html:163
+#: blog/templates/zinnia/_entry_detail_base.html:120
 msgid "No categories"
 msgstr "Nun hai estayes"
 
-#: blog/templates/zinnia/entry_detail_base.html:22
+#: blog/templates/zinnia/entry_detail_base.html:33
 msgid "RSS Feed of discussions on"
 msgstr "Feed RSS d'alderiques en"
 
-#: blog/templates/zinnia/entry_detail_base.html:24
+#: blog/templates/zinnia/entry_detail_base.html:35
 msgid "RSS Feed of comments on"
 msgstr "Feed RSS de comentarios en"
 
-#: blog/templates/zinnia/entry_detail_base.html:26
+#: blog/templates/zinnia/entry_detail_base.html:37
 msgid "RSS Feed of pingbacks on"
 msgstr "RSS Feed de pingbacks en"
 
-#: blog/templates/zinnia/entry_detail_base.html:28
+#: blog/templates/zinnia/entry_detail_base.html:39
 msgid "RSS Feed of trackbacks on"
 msgstr "RSS Feed de trackbacks en"
 
-#: blog/templates/zinnia/entry_detail_base.html:46
+#: blog/templates/zinnia/entry_detail_base.html:57
 msgid "Next entry"
 msgstr "Entrada siguiente"
 
-#: blog/templates/zinnia/entry_detail_base.html:58
+#: blog/templates/zinnia/entry_detail_base.html:69
 msgid "Previous entry"
 msgstr "Entrada postrera"
 
-#: blog/templates/zinnia/entry_detail_base.html:70
+#: blog/templates/zinnia/entry_detail_base.html:81
 msgid "Related entries"
 msgstr "Entraes rellacionaes"
 
-#: blog/templates/zinnia/entry_detail_base.html:82
+#: blog/templates/zinnia/entry_detail_base.html:93
 msgid "Similar entries"
 msgstr "Entraes paecíes"
 
-#: blog/templates/zinnia/entry_detail_base.html:224
-#: blog/templates/zinnia/entry_detail_base.html:225
+#: blog/templates/zinnia/entry_detail_base.html:235
+#: blog/templates/zinnia/entry_detail_base.html:236
 msgid "Edit the entry"
 msgstr "Editar la entrada"
 
-#: blog/templates/zinnia/entry_list.html:5
+#: blog/templates/zinnia/entry_list.html:4
 msgid "Latest entries for"
 msgstr "Caberes entraes de"
 
-#: blog/templates/zinnia/entry_list.html:5
+#: blog/templates/zinnia/entry_list.html:4
 msgid "the category"
-msgstr "la estaya"
+msgstr "la categoría"
 
-#: blog/templates/zinnia/entry_list.html:5
+#: blog/templates/zinnia/entry_list.html:4
 msgid "the tag"
 msgstr "la marca"
 
-#: blog/templates/zinnia/entry_list.html:5
+#: blog/templates/zinnia/entry_list.html:4
 msgid "the author"
 msgstr "l'autor"
 
-#: blog/templates/zinnia/entry_list.html:5
+#: blog/templates/zinnia/entry_list.html:4
 msgid "page"
 msgstr "páxina"
 
-#: blog/templates/zinnia/entry_list.html:10
-#: blog/templates/zinnia/entry_list.html:13
-#: blog/templates/zinnia/entry_list.html:16
+#: blog/templates/zinnia/entry_list.html:9
+#: blog/templates/zinnia/entry_list.html:12
+#: blog/templates/zinnia/entry_list.html:15
 msgid "RSS Feed"
 msgstr "Feed RSS"
 
-#: blog/templates/zinnia/entry_list.html:20
+#: blog/templates/zinnia/entry_list.html:19
 msgid "Latest entries"
 msgstr "Entraes caberes"
 
-#: blog/templates/zinnia/entry_list.html:20
+#: blog/templates/zinnia/entry_list.html:19
 msgid "Category"
-msgstr "Estaya"
+msgstr "Categoría"
 
-#: blog/templates/zinnia/entry_list.html:20
+#: blog/templates/zinnia/entry_list.html:19
 msgid "Tag"
 msgstr "Marca"
 
-#: blog/templates/zinnia/entry_list.html:20
+#: blog/templates/zinnia/entry_list.html:19
 msgid "Author"
 msgstr "Autor"
 
-#: blog/templates/zinnia/entry_list.html:20
+#: blog/templates/zinnia/entry_list.html:19
 msgid "Page"
 msgstr "Páxina"
 
-#: blog/templates/zinnia/entry_list.html:28
+#: blog/templates/zinnia/entry_list.html:27
 #, python-format
 msgid "Category archives: %(category)s"
 msgstr "Archivos d'estayes: %(category)s"
 
-#: blog/templates/zinnia/entry_list.html:35
+#: blog/templates/zinnia/entry_list.html:34
 #, python-format
 msgid "Tag archives: %(tag)s"
 msgstr "Archivos de marques: %(tag)s"
 
-#: blog/templates/zinnia/entry_list.html:39
+#: blog/templates/zinnia/entry_list.html:38
 #, python-format
 msgid "Author archives: %(author)s"
 msgstr "Archivos d'autor: %(author)s"
 
-#: blog/templates/zinnia/entry_list.html:48
+#: blog/templates/zinnia/entry_list.html:47
 msgid "No entries yet."
 msgstr "Entá nun hai entraes."
 
+#: blog/templates/zinnia/entry_list.html:66
 #: blog/templates/zinnia/entry_list.html:67
-#: blog/templates/zinnia/entry_list.html:68
 msgid "Edit the category"
 msgstr "Editar la estaya"
 
+#: blog/templates/zinnia/entry_list.html:73
 #: blog/templates/zinnia/entry_list.html:74
-#: blog/templates/zinnia/entry_list.html:75
 msgid "Edit the tag"
 msgstr "Editar la marca"
 
+#: blog/templates/zinnia/entry_list.html:80
 #: blog/templates/zinnia/entry_list.html:81
-#: blog/templates/zinnia/entry_list.html:82
 msgid "Edit the author"
 msgstr "Editar l'autor"
 
-#: blog/templates/zinnia/skeleton.html:5
+#: blog/templates/zinnia/entry_search.html:4
+#: blog/templates/zinnia/entry_search.html:6
+#: blog/templates/zinnia/entry_search.html:18
+#, python-format
+msgid "Search results for '%(pattern)s'"
+msgstr ""
+
+#: blog/templates/zinnia/entry_search.html:11
+#: blog/templates/zinnia/entry_search.html:24
+#: blog/templates/zinnia/entry_search.html:25
+#, python-format
+msgid "RSS feed of search results for '%(pattern)s'"
+msgstr ""
+
+#: blog/templates/zinnia/entry_search.html:32
+#, python-format
+msgid "%(entry_count)s entry found"
+msgid_plural "%(entry_count)s entries found"
+msgstr[0] ""
+msgstr[1] ""
+
+#: blog/templates/zinnia/entry_search.html:43
+msgid "Nothing found."
+msgstr ""
+
+#: blog/templates/zinnia/skeleton.html:4
 msgid "Latest news for Dolphin Emulator"
 msgstr "Caberes anuncies del emulador Dolphin"
 
-#: blog/templates/zinnia/skeleton.html:8
+#: blog/templates/zinnia/skeleton.html:7
 msgid "Articles"
 msgstr "Artículos"
 
-#: blog/templates/zinnia/tags/search_form.html:18
+#: blog/templates/zinnia/skeleton.html:15
+#: homepage/templates/homepage-home.html:108
+msgid "RSS feed of the latest articles"
+msgstr "Feed RSS de los caberos artículos"
+
+#: blog/templates/zinnia/tags/search_form.html:17
 msgid ""
 "You can use - to exclude words or phrases, &quot;double quotes&quot; for "
 "exact phrases and the AND/OR boolean operators combined with parenthesis for"
@@ -401,7 +431,7 @@ msgid "Game title (click for details)"
 msgstr "Títulu'l xuegu (primi pa los detalles)"
 
 #: compat/templates/compat-list.html:66
-#: homepage/templates/homepage-home.html:95 templates/_base.html:77
+#: homepage/templates/homepage-home.html:95 templates/_base.html:74
 msgid "Compatibility"
 msgstr "Compatibilidá"
 
@@ -413,37 +443,37 @@ msgstr "Anovamientu caberu"
 msgid "Your query does not match any game."
 msgstr "La to petición nun concasa con dengún xuegu"
 
-#: compat/templatetags/compat.py:9
+#: compat/templatetags/compat.py:12
 msgid "Unknown"
 msgstr "Desconocíu"
 
-#: compat/templatetags/compat.py:10
+#: compat/templatetags/compat.py:13
 msgid "Broken"
 msgstr "Nun furrula"
 
-#: compat/templatetags/compat.py:11
+#: compat/templatetags/compat.py:14
 msgid "Intro/Menu"
 msgstr "Intro/Menú"
 
-#: compat/templatetags/compat.py:12
+#: compat/templatetags/compat.py:15
 msgid "Starts"
 msgstr "Aníciase"
 
-#: compat/templatetags/compat.py:13
+#: compat/templatetags/compat.py:16
 msgid "Playable"
 msgstr "Pue xugase"
 
-#: compat/templatetags/compat.py:14
+#: compat/templatetags/compat.py:17
 msgid "Perfect"
 msgstr "Perfeutu"
 
-#: docs/templates/docs-faq.html:6
+#: docs/templates/docs-faq.html:5
 msgid ""
 "The Official Dolphin FAQ answers all the questions that people often ask "
 "about Dolphin."
 msgstr "El FAQ oficial de Dolphin respuende a toles entrugues que la xente suel entrugar tocante Dolphin."
 
-#: docs/templates/docs-faq.html:8
+#: docs/templates/docs-faq.html:7
 msgid "Frequently Asked Questions"
 msgstr "Entrugues más frecuentes"
 
@@ -455,7 +485,7 @@ msgstr "Tornar al llistáu de guíes"
 msgid "See all the guides written by the Dolphin team about the emulator."
 msgstr "Mira les guíes escrites pol equipu Dolphin tocante l'emulador."
 
-#: docs/templates/docs-guides-index.html:7 templates/_base.html:76
+#: docs/templates/docs-guides-index.html:7 templates/_base.html:73
 msgid "Guides"
 msgstr "Guíes"
 
@@ -467,16 +497,20 @@ msgstr "Guíes y documentación"
 msgid "No published guide available"
 msgstr "Nun hai espublizada una guía disponible"
 
-#: downloads/models.py:36 downloads/models.py:54
+#: docs/templates/docs-privacy.html:4
+msgid "Privacy Policy for the Dolphin Emulator and its services."
+msgstr ""
+
+#: docs/templates/docs-privacy.html:6 templates/_base.html:121
+msgid "Privacy Policy"
+msgstr ""
+
+#: downloads/models.py:40 downloads/models.py:57
 #, python-format
 msgid "Dolphin %s"
 msgstr "Dolphin %s"
 
-#: downloads/models.py:78
-msgid "Change with no description"
-msgstr "Camudar ensin descripción"
-
-#: downloads/models.py:81
+#: downloads/models.py:105
 #, python-format
 msgid ""
 "(<a href=\"%(pr_url)s\">PR #%(pr_id)s</a> from <a "
@@ -494,7 +528,7 @@ msgid "<tt>%(branch)s</tt> branch"
 msgstr "<tt>%(branch)s</tt> rama"
 
 #: downloads/templates/downloads-branches.html:21
-#: downloads/templates/downloads-index.html:45
+#: downloads/templates/downloads-index.html:63
 msgid "View older versions »"
 msgstr "Ver versiones más vieyes »"
 
@@ -514,64 +548,89 @@ msgid ""
 msgstr "Baxa la cabera versión de Dolphin Emulator (%(ver)s) dende'l sitiu web oficial."
 
 #: downloads/templates/downloads-index.html:8
-#: downloads/templates/downloads-index.html:27 templates/_base.html:72
+#: downloads/templates/downloads-index.html:27 templates/_base.html:69
 msgid "Download"
 msgstr "Baxar"
 
 #: downloads/templates/downloads-index.html:31
-msgid "Development versions"
-msgstr "Versiones en desendolcu"
+msgid "Beta versions"
+msgstr ""
 
 #: downloads/templates/downloads-index.html:33
 msgid ""
 "\n"
-"    <p>Development versions are released every time a developer makes a change to\n"
-"    Dolphin, several times every day! Using development versions enables you to\n"
-"    use the latest and greatest improvements to the project. They are however\n"
-"    less tested than stable versions of the emulator.</p>\n"
-"\n"
-"    <p>The development versions require the <a href=\"https://www.microsoft.com/en-us/download/details.aspx?id=48145\">64-bit Visual C++ redistributable for Visual Studio 2015</a>\n"
-"    to be installed.</p>\n"
+"    <p>Beta versions are released every month, usually accompanied by a <em>Progress Report</em>\n"
+"    article. Use the latest beta version if you prefer stability over the newest features in the\n"
+"    <a href=\"#download-dev\">development versions</a>.</p>\n"
 msgstr ""
 
-#: downloads/templates/downloads-index.html:63
+#: downloads/templates/downloads-index.html:40
+msgid ""
+"The Windows beta versions <b>require</b> the <a "
+"href=\"https://support.microsoft.com/en-us/help/2977003/the-latest-"
+"supported-visual-c-downloads\">64-bit Visual C++ redistributable for Visual "
+"Studio 2022</a> to be installed."
+msgstr ""
+
+#: downloads/templates/downloads-index.html:48
+msgid "Development versions"
+msgstr "Versiones en desendolcu"
+
+#: downloads/templates/downloads-index.html:51
+msgid ""
+"Development versions are released every time a developer makes a change to\n"
+"    Dolphin, several times every day! Using development versions enables you to\n"
+"    use the latest and greatest improvements to the project. They are however\n"
+"    less tested than <a href=\"#download-beta\">beta versions</a> of the emulator."
+msgstr ""
+
+#: downloads/templates/downloads-index.html:58
+msgid ""
+"The Windows development versions <b>require</b> the <a "
+"href=\"https://support.microsoft.com/en-us/help/2977003/the-latest-"
+"supported-visual-c-downloads\">64-bit Visual C++ redistributable for Visual "
+"Studio 2022</a> to be installed."
+msgstr ""
+
+#: downloads/templates/downloads-index.html:81
 msgid "Stable versions"
 msgstr "Versiones estables"
 
-#: downloads/templates/downloads-index.html:65
+#: downloads/templates/downloads-index.html:84
 msgid ""
 "\n"
-"    Stable versions are released after a lot of testing to ensure emulation\n"
-"    performance and stability. However, since they are released less often,\n"
-"    they might be outdated and lacking some new features.\n"
-msgstr "\nLes versiones estables asoléyense dempués de milenta comprobaciones p'asegurar el rindimientu y estabilidá na emulación. Por embargu, tarden n'asoleyase, puen tar ensin anovar y faltes de carauterístiques nueves.\n"
+"    The stable versions below are years out of date and missing countless features and bug fixes.\n"
+"    <a href=\"#download-beta\">Beta</a> or <a href=\"#download-dev\">development</a> versions are a\n"
+"    better choice for almost all users; the stable versions should only be used if you have\n"
+"    a specific need for them.\n"
+msgstr ""
 
-#: downloads/templates/downloads-index.html:87
+#: downloads/templates/downloads-index.html:107
 msgid "No stable release yet"
 msgstr "Entá nun hai versiones estables"
 
-#: downloads/templates/downloads-index.html:94
-msgid "Older Ubuntu (< 15.04) and users of other Linux distributions"
+#: downloads/templates/downloads-index.html:114
+msgid "Linux distributions"
 msgstr ""
 
-#: downloads/templates/downloads-index.html:95
+#: downloads/templates/downloads-index.html:115
 msgid ""
-"Ubuntu 14.10 and older users can install a PPA \n"
+"Ubuntu users can install a PPA\n"
 "    for development and stable versions of Dolphin here: <a href=\"https://wiki.dolphin-emu.org/index.php?title=Installing_Dolphin#Ubuntu\">Installing Dolphin</a>\n"
 "    "
 msgstr ""
 
-#: downloads/templates/downloads-index.html:98
+#: downloads/templates/downloads-index.html:118
 msgid ""
 "Users of other Linux distributions can look here to compile Dolphin: <a href=\"https://wiki.dolphin-emu.org/index.php?title=Building_Dolphin_on_Linux\">Building Dolphin on Linux</a>\n"
 "    "
 msgstr ""
 
-#: downloads/templates/downloads-index.html:103
+#: downloads/templates/downloads-index.html:123
 msgid "Source code"
 msgstr "Códigu fonte"
 
-#: downloads/templates/downloads-index.html:105
+#: downloads/templates/downloads-index.html:125
 msgid ""
 "\n"
 "    The latest version of the Dolphin source code can be downloaded from the\n"
@@ -579,7 +638,7 @@ msgid ""
 "    "
 msgstr "\nLa cabera versión del códigu fonte de Dolphin pue baxase del repositoriu\nGIT."
 
-#: downloads/templates/downloads-index.html:113
+#: downloads/templates/downloads-index.html:133
 #, python-format
 msgid ""
 "\n"
@@ -587,11 +646,11 @@ msgid ""
 "    "
 msgstr "\nTamién pues <a href=\"%(GIT_BROWSE_URL)s\"> restolar la versión más anovada del códigu fonte</a>.\n    "
 
-#: downloads/templates/downloads-index.html:120
+#: downloads/templates/downloads-index.html:140
 msgid "Reporting bugs"
 msgstr "Informar fallos"
 
-#: downloads/templates/downloads-index.html:122
+#: downloads/templates/downloads-index.html:142
 #, python-format
 msgid ""
 "\n"
@@ -656,7 +715,7 @@ msgid "GameCube/Wii games on PC"
 msgstr "Xuegos de GameCube y Wii nel PC"
 
 #: homepage/templates/homepage-home.html:37 templates/_base.html:10
-#: templates/_base.html.py:68
+#: templates/_base.html:65
 msgid "Dolphin Emulator"
 msgstr "Emulador Dolphin"
 
@@ -676,24 +735,20 @@ msgstr "\n<b>Dolphin</b> ye un emulador pa dos consoles de Nintendo d'apocayá: 
 msgid "Download %(last_release)s for Windows, Mac and Linux »"
 msgstr "Baxar %(last_release)s pa Linux, Mac y Windows »"
 
-#: homepage/templates/homepage-home.html:108
-msgid "RSS feed of the latest articles"
-msgstr "Feed RSS de los caberos artículos"
-
 #: homepage/templates/homepage-home.html:109
 msgid "Latest articles"
 msgstr "Artículos caberos"
 
-#: homepage/templates/homepage-home.html:136
+#: homepage/templates/homepage-home.html:133
 #, python-format
 msgid "/ Part of series <a href=\"%(url)s\">%(name)s</a>"
 msgstr "/ Parte la series <a href=\"%(url)s\">%(name)s</a>"
 
-#: homepage/templates/homepage-home.html:143
+#: homepage/templates/homepage-home.html:140
 msgid "Read this article"
 msgstr "Lleer esti artículu"
 
-#: homepage/templates/homepage-home.html:147
+#: homepage/templates/homepage-home.html:144
 msgid "No articles yet."
 msgstr "Entá nun hai artículos."
 
@@ -711,7 +766,7 @@ msgstr "Galería de captures de pantalla"
 msgid "Media gallery"
 msgstr "Galería multimedia"
 
-#: templates/404.html:5 templates/404.html.py:8
+#: templates/404.html:5 templates/404.html:8
 msgid "Page not found"
 msgstr "Nun s'alcontró la páxina"
 
@@ -719,7 +774,7 @@ msgstr "Nun s'alcontró la páxina"
 msgid "The URL you tried to access does not exist."
 msgstr "L'enllaz al qu'intentes acceder nun esiste."
 
-#: templates/500.html:5 templates/500.html.py:8
+#: templates/500.html:5 templates/500.html:8
 msgid "Internal Server Error"
 msgstr "Fallu internu del sirvidor"
 
@@ -727,41 +782,48 @@ msgstr "Fallu internu del sirvidor"
 msgid ""
 "There was an error while trying to access this page. Please refresh the page"
 " in a few seconds."
-msgstr "Hebo un fallu mentanto se tentaba d'acceder a esta páxina. Refresca la páxina nun momentu, por favor."
+msgstr "Hebo un fallu mentanto se tentaba d'acceder a esta páxina. Refresca la páxina nun momentu."
 
-#: templates/_base.html:23
+#: templates/_base.html:22
 msgid "Latest blog articles"
 msgstr "Artículos caberos del blogue"
 
-#: templates/_base.html:73
+#: templates/_base.html:70
 msgid "Blog"
 msgstr "Blogue"
 
-#: templates/_base.html:74
+#: templates/_base.html:71
 msgid "Screenshots"
 msgstr "Captures de pantalla"
 
-#: templates/_base.html:75
+#: templates/_base.html:72
 msgid "FAQ"
 msgstr "FAQ"
 
+#: templates/_base.html:76
+msgid "Community"
+msgstr ""
+
 #: templates/_base.html:78
+msgid "Discord"
+msgstr ""
+
+#: templates/_base.html:79
 msgid "Forum"
 msgstr "Foru"
 
-#: templates/_base.html:79
+#: templates/_base.html:80
 msgid "Wiki"
 msgstr "Wiki"
 
-#: templates/_base.html:80
-msgid "Code"
-msgstr "Códigu"
+#: templates/_base.html:81
+msgid "GitHub"
+msgstr ""
 
-#: templates/_base.html:116
-#, python-format
-msgid ""
-"\n"
-"            &copy; 2014 Dolphin Emulator Project -\n"
-"            <a href=\"%(WEBSITE_GIT_URL)s\">Website source code</a>\n"
-"            "
-msgstr "\n&copy; 2014 Dolphin Emulator Project -\n<a href=\"%(WEBSITE_GIT_URL)s\">Sitiu'l códigu fonte</a>\n            "
+#: templates/_base.html:119
+msgid "&copy; Dolphin Emulator Project"
+msgstr ""
+
+#: templates/_base.html:120
+msgid "Website Source Code"
+msgstr ""

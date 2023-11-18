@@ -2,17 +2,21 @@
 
 pkgs.mkShell {
   buildInputs = (with pkgs; [
-    python37Full
+    python39Full
+
+    gettext
+    transifex-client
 
     # CPython extension common build deps.
     git
     openssl
     libjpeg
-    pkgconfig
+    pkg-config
     stdenv
     zlib
     postgresql
-  ]) ++ (with pkgs.python37Packages; [
+    libffi
+  ]) ++ (with pkgs.python39Packages; [
     setuptools
     virtualenv
     pip

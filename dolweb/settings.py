@@ -249,6 +249,10 @@ LOGGING = {
         }
     },
     'handlers': {
+        'null': {
+            'level': 'DEBUG',
+            'class': 'logging.NullHandler',
+        },
     },
     'loggers': {
         'django.request': {
@@ -256,12 +260,17 @@ LOGGING = {
             'level': 'ERROR',
             'propagate': True,
         },
+        'django.security.DisallowedHost': {
+            'handlers': ['null'],
+            'propagate': False,
+        },
     }
 }
 
 TEST_RUNNER = 'django.test.runner.DiscoverRunner'
 
 # Links and templates for links to other Dolphin properties.
+DISCORD_URL = "https://discord.dolphin-emu.org/"
 FORUM_URL = "https://forums.dolphin-emu.org/"
 WIKI_URL = "https://wiki.dolphin-emu.org/"
 GIT_AUTHOR_URL = "https://github.com/%s"
@@ -287,9 +296,6 @@ WIKI_DB_READ_ONLY = True
 # In production, this has to be the Mediawiki database. In testing, this should
 # be the default database, which is where the tables are syncdb'd.
 WIKI_DB_NAME = 'wiki'
-
-# Google analytics account ID, or '' to disable GA tracking.
-GOOGLE_ANALYTICS_ACCOUNT = ''
 
 # Social media links information.
 FB_LIKE_PAGE = 'http://www.facebook.com/dolphin.emu'
