@@ -1,0 +1,16 @@
+{% load staticfiles %}
+{% load i18n %}
+
+<div role="alert" class="alert alert-info">
+    <div class="skg-alert">
+        {% blocktrans with url="https://www.stopkillinggames.com" %}
+        Our mission is to preserve video games. If you are an EU citizen
+        you can help us in our mission by signing the
+        <a href="{{url}}">Stop Killing Games</a>
+        EU initiative!
+        {% endblocktrans %}
+        <div class="skg-btn">
+            <a href="https://eci.ec.europa.eu/045/public/" role="button" class="btn btn-info">{% trans "Sign Now" %}</a>
+        </div>
+    </div>
+</div>
