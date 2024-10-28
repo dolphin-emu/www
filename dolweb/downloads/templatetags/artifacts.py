@@ -13,7 +13,10 @@ def artifact_sort(artifacts):
         ('macOS', 0x4000),
         ('Mac OS X', 0x3ff0), # for historical builds
         ('Android', 0x2000),
+        ('Linux', 0x1010),
         ('Ubuntu', 0x1000),
+        ('Flatpak', 0x20),
+        ('x86_64', 0x10),
         ('x64', 0x8),
         ('x86', 0x4),
         ('Universal', 0x2),
