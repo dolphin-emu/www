@@ -30,6 +30,8 @@ def guess_system_from_ua(request):
         return { "USER_OS": "ubu" }
     elif "Android" in ua:
         return { "USER_OS": "android" }
+    elif "Linux" in ua:
+        return { "USER_OS": "linux-generic" }
     else:
         return { "USER_OS": "unknown" }
 
