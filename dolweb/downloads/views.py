@@ -5,7 +5,7 @@ from annoying.decorators import render_to
 from django.conf import settings
 from django.core.paginator import EmptyPage
 from django.http import Http404, HttpResponse, JsonResponse
-from django.shortcuts import get_object_or_404
+from django.shortcuts import get_object_or_404, get_list_or_404
 from django.views.decorators.cache import cache_control
 from django.views.decorators.csrf import csrf_exempt
 from django.views.decorators.vary import vary_on_headers
@@ -71,9 +71,10 @@ def view_dev_release(request, hash):
 @vary_on_headers('User-Agent')
 @render_to('downloads-view-devrel.html')
 def view_dev_release_by_name(request, branch, name):
-    release = get_object_or_404(DevVersion, branch=branch, shortrev=name)
+    releases = get_list_or_404(DevVersion, branch=branch, shortrev=name)
+    releases.sort(key=lambda ver: ver.date)
 
-    return { 'ver': release }
+    return { 'ver': releases[0] }
 
 @vary_on_headers('User-Agent')
 @render_to('downloads-view-release.html')
