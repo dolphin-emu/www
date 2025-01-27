@@ -65,16 +65,20 @@ def buildlist(request):
 @render_to('downloads-view-devrel.html')
 def view_dev_release(request, hash):
     release = get_object_or_404(DevVersion, hash=hash)
+    releases = DevVersion.objects.filter(branch=release.branch,
+                                         shortrev=release.shortrev)
+    dupes = releases.exclude(hash=hash).order_by('date')
 
-    return { 'ver': release }
+    return { 'ver': release, 'dupes': dupes }
 
 @vary_on_headers('User-Agent')
 @render_to('downloads-view-devrel.html')
 def view_dev_release_by_name(request, branch, name):
     releases = get_list_or_404(DevVersion, branch=branch, shortrev=name)
     releases.sort(key=lambda ver: ver.date)
+    release, dupes = releases[0], releases[1:]
 
-    return { 'ver': releases[0] }
+    return { 'ver': release, 'dupes': dupes }
 
 @vary_on_headers('User-Agent')
 @render_to('downloads-view-release.html')

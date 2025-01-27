@@ -17,6 +17,18 @@
     data-ad-slot="5299890518"></ins>
 </div>
 
+{% if dupes %}
+    {% for dupe in dupes %}{% with br=ver.revbranch hash=dupe.hash url=dupe.get_absolute_url %}
+        <p>{% blocktrans %}{{ br }} can also refer to <a href="{{ url }}">{{ hash }}</a>.{% endblocktrans %}</p>
+    {% endwith %}{% endfor %}
+
+    <p>{% blocktrans count num=dupes|length trimmed %}
+        Some or all of the download links below may be based on that version.
+        {% plural %}
+        Some or all of the download links below may be based on those versions.
+    {% endblocktrans %}</p>
+{% endif %}
+
 <div class="row">
     <div class="col-md-5">
         <dl>
