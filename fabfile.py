@@ -18,7 +18,6 @@ def deploy(c, root, branch):
                        "localefixes/locale/ko/LC_MESSAGES/django.mo")
             c.run(activate + " && django-admin compilemessages")
     c.run("scripts/restart-apps.sh")
-
 @task(hosts=_HOSTS)
 def deploy_stable(c):
     deploy(c, "/home/dolphin-emu/apps/www", "stable")
