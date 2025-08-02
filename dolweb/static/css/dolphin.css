@@ -170,31 +170,6 @@ div#download-stable h1, div#download-dev h1, div#download-source h1 {
     text-align: center;
 }
 
-.skg-btn {
-    margin-left: 1.0em;
-    text-align: center;
-}
-
-.skg-alert {
-    line-height: 2.0em;
-}
-
-@media (min-width: 768px) {
-    .skg-btn {
-        display: inline-block;
-    }
-
-    .skg-alert {
-        background-image: url("../img/skglogo.svg");
-        background-repeat: no-repeat;
-        background-position-y: center;
-        background-size: 80px;
-        padding-left: 90px;
-        padding-top: 2px;
-        padding-bottom: 2px;
-    }
-}
-
 .fb-like {
     height: 20px;
     display: inline-block;
