@@ -30,7 +30,7 @@
 {% endblocktrans %}</div>
 
 <div class="alert alert-info">
-    <p>{% blocktrans %}Linux users can add the following Flatpak repository: <code>https://flatpak.dolphin-emu.org/releases.flatpakrepo</code>{% endblocktrans %}</p>
+    <p>{% blocktrans %}Linux users can also use the <a href="#flatpak">official Flatpak repository</a>.{% endblocktrans %}</p>
 </div>
 
 <div class="alert alert-danger">
@@ -53,7 +53,7 @@
 </div>
 
 <div class="alert alert-info">
-    <p>{% blocktrans %}Linux users can add the following Flatpak repository: <code>https://flatpak.dolphin-emu.org/dev.flatpakrepo</code>{% endblocktrans %}</p>
+    <p>{% blocktrans %}Linux users can also use the <a href="#flatpak">official Flatpak repository</a>.{% endblocktrans %}</p>
 </div>
 
 <div class="alert alert-danger">
@@ -81,9 +81,30 @@ src="//pagead2.googlesyndication.com/pagead/show_ads.js">
 
 <div id="other-linux">
     <h1>{% trans "Linux distributions" %}</h1>
-    <p>{% blocktrans %}
-    We are now offering official Linux development builds in the Flatpak format. If you would like to install these builds, we recommend adding our repository at <code>https://flatpak.dolphin-emu.org/dev.flatpakrepo</code>.
-    {% endblocktrans %}
+    <div id="flatpak">
+        <h2>{% trans "Flatpak" %}</h2>
+        <p>{% blocktrans %}
+        We provide official Flatpak packages for Dolphin. To get started, add one of our Flatpak repositories:
+        {% endblocktrans %}</p>
+
+        <h3>{% trans "Add the repository" %}</h3>
+        <strong>{% trans "Stable releases" %}</strong>
+        <pre class="always-ltr">
+$ flatpak remote-add --if-not-exists --user dolphin https://flatpak.dolphin-emu.org/releases.flatpakrepo</pre>
+        <strong>{% trans "Development releases" %}</strong>
+        <pre class="always-ltr">
+$ flatpak remote-add --if-not-exists --user dolphin-dev https://flatpak.dolphin-emu.org/dev.flatpakrepo</pre>
+
+        <h3>{% trans "Install Dolphin" %}</h3>
+        <strong>{% trans "Stable build" %}</strong>
+        <pre class="always-ltr">
+$ flatpak install dolphin org.DolphinEmu.dolphin-emu</pre>
+        <strong>{% trans "Development build" %}</strong>
+        <pre class="always-ltr">
+$ flatpak install dolphin-dev org.DolphinEmu.dolphin-emu</pre>
+    </div>
+
+    <h2>{% trans "Building" %}</h2>
     <p>{% blocktrans %}
     If you would like to compile your own build, please refer to our <a href="https://github.com/dolphin-emu/dolphin/wiki/Building-for-Linux">Building for Linux guide</a>.
     {% endblocktrans %}</p>
@@ -98,7 +119,7 @@ src="//pagead2.googlesyndication.com/pagead/show_ads.js">
     {% endblocktrans %}</p>
 
     <pre class="always-ltr">
-    $ git clone {{ GIT_CLONE_URL }}</pre>
+$ git clone {{ GIT_CLONE_URL }}</pre>
 
     <p>{% blocktrans %}
     You can also <a href="{{ GIT_BROWSE_URL }}">browse the current version of the source code</a>.
