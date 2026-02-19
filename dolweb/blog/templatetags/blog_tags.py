@@ -20,7 +20,7 @@ def get_recent_blog_series(number=5):
 @register.filter
 def cuthere_excerpt(content):
     try:
-        cut_here = BeautifulSoup(content).find('a', id='cuthere', features='html.parser')
+        cut_here = BeautifulSoup(content, features='html.parser').find('a', id='cuthere')
         return ''.join(map(str, reversed(cut_here.parent.find_previous_siblings())))
     except AttributeError:
         return defaultfilters.truncatewords(content, 100)
