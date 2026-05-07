@@ -282,9 +282,6 @@ div.realign.ratings-stats {
     text-align: center;
 }
 
-.compat-list tbody tr {
-    vertical-align: center;
-}
 
 .compat-list tbody tr:nth-child(2n) {
     background-color: #eee;
