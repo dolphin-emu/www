@@ -44,7 +44,7 @@ class CountryRedirectMiddleware:
     def __call__(self, request):
         guess = guess_lang_from_request(request)
         if guess is not None:
-            return HttpResponseRedirect("http://%s.%s%s?cr=%s" %
+            return HttpResponseRedirect("https://%s.%s%s?cr=%s" %
                                         (guess, settings.DEFAULT_HOST,
                                          request.path, guess))
 
