@@ -9,7 +9,6 @@ from django.contrib.staticfiles.storage import staticfiles_storage
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from django.views.generic.base import RedirectView, TemplateView
 from dolweb.homepage.views import home
-from dolweb.management.views import run_command
 
 # Monkey patching ftw...
 import dolweb.utils.monkey
@@ -37,9 +36,6 @@ urlpatterns = [
 
     # Django administration
     url(r'^admin/', admin.site.urls),
-
-    # Management interface
-    url(r'^mgmt/(?P<cmd>.+)$', run_command, name='mgmt_run_command'),
 
     # Auto-update checking.
     url(r'^update/', include('dolweb.update.urls')),

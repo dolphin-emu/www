@@ -225,7 +225,6 @@ INSTALLED_APPS = (
     'dolweb.homepage',
     'dolweb.downloads',
     'dolweb.docs',
-    'dolweb.management',
     'dolweb.media',
     'dolweb.compat',
     'dolweb.localefixes',
@@ -337,14 +336,6 @@ ZINNIA_MARKDOWN_EXTENSIONS = [
 BLOG_ETHERPAD_URL = ''
 BLOG_ETHERPAD_API_KEY = ''
 BLOG_ETHERPAD_HMAC_KEY = ''
-
-# Whitelist for the management interface.
-#
-# WARNING: This management interface gives shell access on the web server. TAKE
-# IT SERIOUSLY and do not let untrusted users in the whitelist.
-#
-# This variable is a list of ('username', 'password').
-MGMT_AUTHORIZED_USERS = []
 
 # Names of the automatically maintained auto-update tracks and what branch they
 # follow.
