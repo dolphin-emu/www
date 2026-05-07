@@ -4,7 +4,7 @@
 from annoying.decorators import render_to
 from django.views.decorators.cache import cache_page
 from dolweb.compat.models import Page, Namespace, get_category_id, \
-                                 CategoryLink
+                                 CategoryLink, populate_latest_text
 
 import hashlib
 import string
@@ -40,27 +40,29 @@ def list_compat(request, first_char=NOT_ALPHA_CHAR, filter_by=None):
         filter_by = None
 
     # Select all the relevant ratings pages
-    ratings = (Page.objects.filter(namespace=Namespace.TEMPLATE,
+    ratings = (Page.objects.with_latest_text_in(ratings_list)
+                           .filter(namespace=Namespace.TEMPLATE,
                                    title_url__istartswith=ratings_start,
-                                   len=1,
-                                   latest__text__data_raw__in=ratings_list)
+                                   len=1)
                            .exclude(title_url='Ratings/'))
     if first_char == NOT_ALPHA_CHAR:
         ratings = ratings.filter(title_url__iregex=r'^Ratings/[^a-zA-Z].*$')
-    ratings = ratings.select_related('latest__text', 'latest').order_by('title_url')
+    ratings = ratings.select_related('latest').order_by('title_url')
 
     # Re-sort ratings, this time without case taken into account
     ratings = list(ratings)
+    populate_latest_text(ratings)
     ratings.sort(key=lambda v: v.title_url.lower())
 
     # Then select all the relevant game pages, maybe with some false-positives.
     # Query the category links at the same time to avoid having one query per row.
-    categories = CategoryLink.objects.filter(cat__in=CATEGORIES.keys(),
+    categories = CategoryLink.objects.filter(target__namespace=Namespace.CATEGORY,
+                                             target__title_url__in=CATEGORIES.keys(),
                                              page__namespace=Namespace.MAIN,
                                              page__title_url__istartswith=gpages_start)
     if first_char == NOT_ALPHA_CHAR:
         categories = categories.filter(page__title_url__iregex=r'^[^a-zA-Z].*$')
-    categories = categories.select_related('page', 'page__latest')
+    categories = categories.select_related('page', 'page__latest', 'target')
 
     # Make a categories dict using the titles
     cat_dict = {}
