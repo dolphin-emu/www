@@ -30,6 +30,7 @@ class Migration(migrations.Migration):
 
     dependencies = [
         ('downloads', '0004_release_add_tagged'),
+        ('update', '0001_initial'),
     ]
 
     operations = [
