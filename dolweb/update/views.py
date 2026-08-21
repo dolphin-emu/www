@@ -16,6 +16,8 @@ _UPDATE_SYSTEM_TO_ARTIFACT_NAME = {
     'macos-universal': 'macOS (ARM/Intel Universal)',
 }
 
+_ANDROID_ARTIFACT_NAME = 'Android'
+
 
 def _error_response(code, msg):
     return JsonResponse({"error": msg}, status=code)
@@ -23,6 +25,17 @@ def _error_response(code, msg):
 
 def _make_up_to_date_response():
     return JsonResponse({"status": "up-to-date"})
+
+
+def _latest_android_artifact_url(version_model, **filters):
+    """Return the Android artifact URL from the latest matching version."""
+    version = version_model.objects.filter(
+        artifacts__target_system=_ANDROID_ARTIFACT_NAME,
+        **filters).order_by('-date').first()
+    if version is None:
+        return None
+
+    return version.artifacts.get(target_system=_ANDROID_ARTIFACT_NAME).url
 
 
 def _get_manifest_url(version, platform):
@@ -109,6 +122,21 @@ def latest(request, track):
         'artifacts': artifacts
     }
     return JsonResponse(data)
+
+
+@cache_control(max_age=15)
+def obtainium(request):
+    """Return APK URLs on a special 'page' for Obtainium."""
+    beta_url = _latest_android_artifact_url(ReleaseVersion)
+    dev_url = _latest_android_artifact_url(DevVersion, branch='master')
+
+    if beta_url is None or dev_url is None:
+        return _error_response(404, 'No latest Android APK found')
+
+    return JsonResponse({
+        'beta': beta_url,
+        'dev': dev_url,
+    })
 
 
 @cache_control(max_age=15)

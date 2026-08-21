@@ -18,4 +18,7 @@ urlpatterns = [
     url(r'^info/v(?P<updater_ver>\d+)/(?P<version>[0-9a-f]{40})/?(?P<platform>[A-Za-z0-9-_]+)?$',
         views.info,
         name='update_info'),
+
+    # /update/obtainium/
+    url(r'^obtainium/?$', views.obtainium, name='update_obtainium'),
 ]
