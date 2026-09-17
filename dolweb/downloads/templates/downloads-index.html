@@ -88,12 +88,30 @@ src="//pagead2.googlesyndication.com/pagead/show_ads.js">
         {% endblocktrans %}</p>
 
         <h3>{% trans "Add the repository" %}</h3>
+        <p>{% blocktrans %}
+        Flatpak repositories can be added either for your user account only, or system-wide for all users. Dolphin's Flatpak
+        depends on a runtime provided by Flathub, so Flathub and Dolphin's repository must be added at the same scope, or
+        installation will fail. First, check whether Flathub is already installed for your user:
+        {% endblocktrans %}</p>
+        <pre class="always-ltr">
+$ flatpak remotes --user</pre>
+        <p>{% blocktrans %}
+        If Flathub shows up in this list, use <code>--user</code> in the commands below. Otherwise, check the
+        system-wide list:
+        {% endblocktrans %}</p>
+        <pre class="always-ltr">
+$ flatpak remotes --system</pre>
+        <p>{% blocktrans %}
+        If Flathub is listed here instead, use <code>--system</code> below. If
+        these commands come back empty, you may need to add the <a href="https://flathub.org/setup">Flathub</a> repository.
+        {% endblocktrans %}</p>
+
         <strong>{% trans "Releases" %}</strong>
         <pre class="always-ltr">
-$ flatpak remote-add --if-not-exists --user dolphin https://flatpak.dolphin-emu.org/releases.flatpakrepo</pre>
+$ flatpak remote-add --if-not-exists <--user/--system> dolphin https://flatpak.dolphin-emu.org/releases.flatpakrepo</pre>
         <strong>{% trans "Development versions" %}</strong>
         <pre class="always-ltr">
-$ flatpak remote-add --if-not-exists --user dolphin-dev https://flatpak.dolphin-emu.org/dev.flatpakrepo</pre>
+$ flatpak remote-add --if-not-exists <--user/--system> dolphin-dev https://flatpak.dolphin-emu.org/dev.flatpakrepo</pre>
 
         <h3>{% trans "Install Dolphin" %}</h3>
         <strong>{% trans "Release" %}</strong>
