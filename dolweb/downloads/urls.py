@@ -1,24 +1,24 @@
 # Copyright (c) 2018 Dolphin Emulator Website Contributors
 # SPDX-License-Identifier: MIT
 
-from django.conf.urls import url
+from django.urls import re_path
 from dolweb.downloads import views
 
 urlpatterns = [
-    url(r'^$', views.index, name='downloads_index'),
-    url(r'^branches/$', views.branches, name='downloads_branches'),
-    url(r'^new/$', views.new, name='downloads_new'),
+    re_path(r'^$', views.index, name='downloads_index'),
+    re_path(r'^branches/$', views.branches, name='downloads_branches'),
+    re_path(r'^new/$', views.new, name='downloads_new'),
 
-    url(r'list/(?P<branch>[a-zA-Z0-9._-]+)/(?:(?P<page>\d+)/)?$', views.list, name='downloads_list'),
+    re_path(r'list/(?P<branch>[a-zA-Z0-9._-]+)/(?:(?P<page>\d+)/)?$', views.list, name='downloads_list'),
 
-    url(r'^dev/(?P<hash>[0-9a-f]{40})/$', views.view_dev_release,
+    re_path(r'^dev/(?P<hash>[0-9a-f]{40})/$', views.view_dev_release,
         name='downloads_view_devrel'),
-    url(r'^dev/(?P<branch>.*?)/(?P<name>.*?)/$', views.view_dev_release_by_name,
+    re_path(r'^dev/(?P<branch>.*?)/(?P<name>.*?)/$', views.view_dev_release_by_name,
         name='downloads_view_devrel_by_name'),
 
-    url(r'^release/(?P<name>.*?)/$', views.view_release,
+    re_path(r'^release/(?P<name>.*?)/$', views.view_release,
         name='downloads_view_release'),
 
-    url(r'^latest/(?P<branch>[a-zA-Z0-9._-]+)/$', views.get_latest, name='downloads_get_latest'),
-    url(r'^buildlist$', views.buildlist, name='buildlist_index'),
+    re_path(r'^latest/(?P<branch>[a-zA-Z0-9._-]+)/$', views.get_latest, name='downloads_get_latest'),
+    re_path(r'^buildlist$', views.buildlist, name='buildlist_index'),
 ]
