@@ -7,7 +7,7 @@ register = Library()
 from bs4 import BeautifulSoup
 from django.conf import settings
 from django.template import defaultfilters
-from dolweb.blog.models import BlogSeries
+from zinnia.models import BlogSeries
 
 @register.inclusion_tag('blog_chunk_series.html')
 def get_recent_blog_series(number=5):

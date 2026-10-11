@@ -10,10 +10,7 @@ from django.utils.translation import gettext_lazy as _
 from zinnia.models.entry import Entry
 from zinnia.admin.entry import EntryAdmin
 from zinnia.admin.forms import EntryAdminForm
-from dolweb.blog.models import BlogSeries, ForumThreadForEntry
-
-class BlogSeriesAdmin(admin.ModelAdmin):
-    pass
+from dolweb.blog.models import ForumThreadForEntry
 
 class ForumThreadForEntryAdmin(admin.ModelAdmin):
     pass
@@ -49,6 +46,6 @@ class BlogEntryAdmin(EntryAdmin):
     }),) + EntryAdmin.fieldsets[1:]
 
 
+admin.site.unregister(Entry)
 admin.site.register(Entry, BlogEntryAdmin)
-admin.site.register(BlogSeries, BlogSeriesAdmin)
 admin.site.register(ForumThreadForEntry, ForumThreadForEntryAdmin)

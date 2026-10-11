@@ -12,7 +12,7 @@ from zinnia.models.entry import Entry
 from django.views.decorators.csrf import csrf_exempt
 from zinnia.views.mixins.entry_preview import EntryPreviewMixin
 
-from dolweb.blog.models import BlogSeries
+from zinnia.models import BlogSeries
 
 import hashlib
 import hmac

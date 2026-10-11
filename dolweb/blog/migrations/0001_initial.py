@@ -4,6 +4,13 @@ from django.db import migrations, models
 import django.db.models.deletion
 
 
+def create_series_if_missing(apps, schema_editor):
+    # Zinnia now owns this table and may have created it first on a fresh install.
+    series = apps.get_model('blog', 'BlogSeries')
+    if series._meta.db_table not in schema_editor.connection.introspection.table_names():
+        schema_editor.create_model(series)
+
+
 class Migration(migrations.Migration):
 
     initial = True
@@ -13,15 +20,20 @@ class Migration(migrations.Migration):
     ]
 
     operations = [
-        migrations.CreateModel(
-            name='BlogSeries',
-            fields=[
-                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('name', models.CharField(db_index=True, max_length=255)),
-                ('visible', models.BooleanField(default=True)),
-                ('image', models.ImageField(blank=True, help_text='Used for illustration.', upload_to='uploads/zinnia', verbose_name='image')),
+        migrations.SeparateDatabaseAndState(
+            state_operations=[
+                migrations.CreateModel(
+                    name='BlogSeries',
+                    fields=[
+                        ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+                        ('name', models.CharField(db_index=True, max_length=255)),
+                        ('visible', models.BooleanField(default=True)),
+                        ('image', models.ImageField(blank=True, help_text='Used for illustration.', upload_to='uploads/zinnia', verbose_name='image')),
+                    ],
+                ),
             ],
         ),
+        migrations.RunPython(create_series_if_missing),
         migrations.CreateModel(
             name='ForumThreadForEntry',
             fields=[
