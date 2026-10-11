@@ -181,22 +181,6 @@ msgstr "Afişează toate înregistrările din %(category)s"
 msgid "No categories"
 msgstr "Nici o categorie"
 
-#: blog/templates/zinnia/entry_detail_base.html:22
-msgid "RSS Feed of discussions on"
-msgstr "Flux RSS pentru discuții din"
-
-#: blog/templates/zinnia/entry_detail_base.html:24
-msgid "RSS Feed of comments on"
-msgstr "Flux RSS pentru comentarii din"
-
-#: blog/templates/zinnia/entry_detail_base.html:26
-msgid "RSS Feed of pingbacks on"
-msgstr "Flux RSS pentru pingback-uri din"
-
-#: blog/templates/zinnia/entry_detail_base.html:28
-msgid "RSS Feed of trackbacks on"
-msgstr "Flux RSS pentru trackback-uri din"
-
 #: blog/templates/zinnia/entry_detail_base.html:46
 msgid "Next entry"
 msgstr "Următoarea înregistrare"

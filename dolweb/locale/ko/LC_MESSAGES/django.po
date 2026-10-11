@@ -182,22 +182,6 @@ msgstr "%(category)s 에 속한 모든 게시글 보기"
 msgid "No categories"
 msgstr "범주가 없음"
 
-#: blog/templates/zinnia/entry_detail_base.html:33
-msgid "RSS Feed of discussions on"
-msgstr "RSS 피드에서 글 보이기"
-
-#: blog/templates/zinnia/entry_detail_base.html:35
-msgid "RSS Feed of comments on"
-msgstr "RSS 피드에서 댓글 보이기"
-
-#: blog/templates/zinnia/entry_detail_base.html:37
-msgid "RSS Feed of pingbacks on"
-msgstr "RSS 피드에서 핑백 보이기"
-
-#: blog/templates/zinnia/entry_detail_base.html:39
-msgid "RSS Feed of trackbacks on"
-msgstr "RSS 피드에서 트랙백 보이기"
-
 #: blog/templates/zinnia/entry_detail_base.html:57
 msgid "Next entry"
 msgstr "다음 게시글"

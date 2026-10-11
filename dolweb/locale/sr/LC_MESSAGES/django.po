@@ -180,22 +180,6 @@ msgstr ""
 msgid "No categories"
 msgstr ""
 
-#: blog/templates/zinnia/entry_detail_base.html:22
-msgid "RSS Feed of discussions on"
-msgstr ""
-
-#: blog/templates/zinnia/entry_detail_base.html:24
-msgid "RSS Feed of comments on"
-msgstr ""
-
-#: blog/templates/zinnia/entry_detail_base.html:26
-msgid "RSS Feed of pingbacks on"
-msgstr ""
-
-#: blog/templates/zinnia/entry_detail_base.html:28
-msgid "RSS Feed of trackbacks on"
-msgstr ""
-
 #: blog/templates/zinnia/entry_detail_base.html:46
 msgid "Next entry"
 msgstr ""

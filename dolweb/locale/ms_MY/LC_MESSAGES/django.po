@@ -179,22 +179,6 @@ msgstr "Tunjuk semua masukan dalam %(category)s"
 msgid "No categories"
 msgstr "Tiada kategori"
 
-#: blog/templates/zinnia/entry_detail_base.html:22
-msgid "RSS Feed of discussions on"
-msgstr "Suapan RSS perbincangan pada"
-
-#: blog/templates/zinnia/entry_detail_base.html:24
-msgid "RSS Feed of comments on"
-msgstr "Suapan RSS ulasan pada"
-
-#: blog/templates/zinnia/entry_detail_base.html:26
-msgid "RSS Feed of pingbacks on"
-msgstr "Suapan RSS ping balik pada"
-
-#: blog/templates/zinnia/entry_detail_base.html:28
-msgid "RSS Feed of trackbacks on"
-msgstr "Suapan RSS surih balik pada"
-
 #: blog/templates/zinnia/entry_detail_base.html:46
 msgid "Next entry"
 msgstr "Masukan berikutnya"

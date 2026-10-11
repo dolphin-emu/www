@@ -182,22 +182,6 @@ msgstr "Hvis alle indtastninger i %(category)s"
 msgid "No categories"
 msgstr "Ingen kategorier"
 
-#: blog/templates/zinnia/entry_detail_base.html:22
-msgid "RSS Feed of discussions on"
-msgstr "RSS Feed af diskussioner på"
-
-#: blog/templates/zinnia/entry_detail_base.html:24
-msgid "RSS Feed of comments on"
-msgstr "RSS Feed af kommentarer på"
-
-#: blog/templates/zinnia/entry_detail_base.html:26
-msgid "RSS Feed of pingbacks on"
-msgstr "RSS Feed af pingbacks på"
-
-#: blog/templates/zinnia/entry_detail_base.html:28
-msgid "RSS Feed of trackbacks on"
-msgstr "RSS Feed af trackbacks på"
-
 #: blog/templates/zinnia/entry_detail_base.html:46
 msgid "Next entry"
 msgstr "Næste indtastning"

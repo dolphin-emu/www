@@ -219,7 +219,6 @@ INSTALLED_APPS = (
     'debug_toolbar',
     'sorl.thumbnail',
     # Blog dependencies
-    'django_comments',
     'tagging',
     'mptt',
 
@@ -323,7 +322,6 @@ TRANSIFEX_FAQ_RESOURCE = ''
 # Blog settings
 HOMEPAGE_ARTICLES = 3
 FORUM_URL_FOR_THREAD = 'https://forums.dolphin-emu.org/showthread.php?tid={id}'
-ZINNIA_MAIL_COMMENT_AUTHORS = False
 ZINNIA_FEEDS_FORMAT = 'atom'
 ZINNIA_FEEDS_MAX_ITEMS = 20
 ZINNIA_PROTOCOL = 'https'

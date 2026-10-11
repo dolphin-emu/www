@@ -182,22 +182,6 @@ msgstr "Amosar tódolos artigos da categoría %(category)s"
 msgid "No categories"
 msgstr "Sen categorías"
 
-#: blog/templates/zinnia/entry_detail_base.html:33
-msgid "RSS Feed of discussions on"
-msgstr "Fonte RSS da discusión en"
-
-#: blog/templates/zinnia/entry_detail_base.html:35
-msgid "RSS Feed of comments on"
-msgstr "Fonte RSS dos comentarios en"
-
-#: blog/templates/zinnia/entry_detail_base.html:37
-msgid "RSS Feed of pingbacks on"
-msgstr "Fonte RSS dos pingbacks en"
-
-#: blog/templates/zinnia/entry_detail_base.html:39
-msgid "RSS Feed of trackbacks on"
-msgstr "Fonte RSS dos trackBack en"
-
 #: blog/templates/zinnia/entry_detail_base.html:57
 msgid "Next entry"
 msgstr "Artigo seguinte"

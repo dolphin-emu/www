@@ -188,22 +188,6 @@ msgstr "显示所有在 %(category)s 中的文章"
 msgid "No categories"
 msgstr "无分类"
 
-#: blog/templates/zinnia/entry_detail_base.html:33
-msgid "RSS Feed of discussions on"
-msgstr "在这个讨论中的 RSS 源："
-
-#: blog/templates/zinnia/entry_detail_base.html:35
-msgid "RSS Feed of comments on"
-msgstr "RSS 源评论"
-
-#: blog/templates/zinnia/entry_detail_base.html:37
-msgid "RSS Feed of pingbacks on"
-msgstr "RSS 源广播"
-
-#: blog/templates/zinnia/entry_detail_base.html:39
-msgid "RSS Feed of trackbacks on"
-msgstr "RSS 源引用"
-
 #: blog/templates/zinnia/entry_detail_base.html:57
 msgid "Next entry"
 msgstr "下一篇文章"

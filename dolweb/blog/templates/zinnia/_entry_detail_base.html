@@ -1,4 +1,4 @@
-{% load comments i18n thumbnail %}
+{% load i18n thumbnail %}
 <div id="entry-{{ object.pk }}" class="hentry{% if object.featured %} featured{% endif %}">
   {% if object.draft %}
   <div class="draft-warning blink">
@@ -76,8 +76,6 @@
     <div class="col-md-6">
     {% block entry-series %}
     {% include "zinnia/tags/entry_series.html" %}
-    {% endblock %}
-    {% block entry-comments %}
     {% endblock %}
     </div>
 

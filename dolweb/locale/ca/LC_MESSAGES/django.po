@@ -182,22 +182,6 @@ msgstr "Mostrar totes les entrades en %(category)s"
 msgid "No categories"
 msgstr "Sense categories"
 
-#: blog/templates/zinnia/entry_detail_base.html:33
-msgid "RSS Feed of discussions on"
-msgstr "Canal RSS dels debats sobre"
-
-#: blog/templates/zinnia/entry_detail_base.html:35
-msgid "RSS Feed of comments on"
-msgstr "Canal RSS dels comentaris sobre"
-
-#: blog/templates/zinnia/entry_detail_base.html:37
-msgid "RSS Feed of pingbacks on"
-msgstr "Canal RSS dels pingbacks sobre"
-
-#: blog/templates/zinnia/entry_detail_base.html:39
-msgid "RSS Feed of trackbacks on"
-msgstr "Canal RSS dels trackbacks sobre"
-
 #: blog/templates/zinnia/entry_detail_base.html:57
 msgid "Next entry"
 msgstr "Entrada següent"

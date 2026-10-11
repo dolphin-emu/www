@@ -182,22 +182,6 @@ msgstr "Εμφάνιση όλων των καταχωρήσεων σε  %(catego
 msgid "No categories"
 msgstr "Καμία κατηγορία"
 
-#: blog/templates/zinnia/entry_detail_base.html:33
-msgid "RSS Feed of discussions on"
-msgstr "RSS Feed των συζητήσεων για"
-
-#: blog/templates/zinnia/entry_detail_base.html:35
-msgid "RSS Feed of comments on"
-msgstr "RSS Feed σχολίων σχετικά με"
-
-#: blog/templates/zinnia/entry_detail_base.html:37
-msgid "RSS Feed of pingbacks on"
-msgstr "RSS ροή των pingbacks προς"
-
-#: blog/templates/zinnia/entry_detail_base.html:39
-msgid "RSS Feed of trackbacks on"
-msgstr "RSS ροή των trackbacks προς"
-
 #: blog/templates/zinnia/entry_detail_base.html:57
 msgid "Next entry"
 msgstr "Επόμενη καταχώρηση"

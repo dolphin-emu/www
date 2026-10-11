@@ -184,22 +184,6 @@ msgstr "Toon alle inzendingen in %(category)s"
 msgid "No categories"
 msgstr "Geen categorieën"
 
-#: blog/templates/zinnia/entry_detail_base.html:33
-msgid "RSS Feed of discussions on"
-msgstr "RSS-Feed van discussies op"
-
-#: blog/templates/zinnia/entry_detail_base.html:35
-msgid "RSS Feed of comments on"
-msgstr "RSS-Feed van comments op"
-
-#: blog/templates/zinnia/entry_detail_base.html:37
-msgid "RSS Feed of pingbacks on"
-msgstr "RSS-Feed van pingbacks op"
-
-#: blog/templates/zinnia/entry_detail_base.html:39
-msgid "RSS Feed of trackbacks on"
-msgstr "RSS-Feed van trackbacks op"
-
 #: blog/templates/zinnia/entry_detail_base.html:57
 msgid "Next entry"
 msgstr "Volgende inzending"
