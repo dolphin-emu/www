@@ -128,4 +128,6 @@ class Artifact(models.Model):
 
     class Meta:
         unique_together = ('version', 'target_system')
-        index_together = ('version', 'target_system')
+        indexes = [
+            models.Index(fields=['version', 'target_system'], name='downloads_artifact_version_idx'),
+        ]
