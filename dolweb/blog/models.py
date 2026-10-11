@@ -6,9 +6,7 @@ from django.db import models
 from django.utils.html import linebreaks
 from django.utils.translation import gettext as _
 
-from zinnia.markups import textile
 from zinnia.markups import markdown
-from zinnia.markups import restructuredtext
 from zinnia.settings import UPLOAD_TO, MARKUP_LANGUAGE
 from zinnia.managers import DRAFT, PUBLISHED
 from zinnia.models_bases.entry import AbstractEntry
@@ -16,17 +14,7 @@ from zinnia.models_bases.entry import AbstractEntry
 
 def render_to_html(content):
     if MARKUP_LANGUAGE == 'markdown':
-        # TODO: Remove when Zinnia supports non-string Markdown exts.
-        import markdown
-        from zinnia.settings import MARKDOWN_EXTENSIONS
-        from django.utils.encoding import force_str
-        return markdown.markdown(force_str(content),
-                                 extensions=MARKDOWN_EXTENSIONS,
-                                 safe_mode=False)
-    elif MARKUP_LANGUAGE == 'textile':
-        return textile(content)
-    elif MARKUP_LANGUAGE == 'restructuredtext':
-        return restructuredtext(content)
+        return markdown(content)
     return linebreaks(content)
 
 
