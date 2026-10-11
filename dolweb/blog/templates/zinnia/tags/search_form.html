@@ -1,18 +1,20 @@
-{% load i18n %}
-{% load static %}
+{% extends "zinnia/tags/search_form.html" %}
+{% load i18n zinnia %}
 
-<form method="get" action="{% url 'zinnia:entry_search' %}" role="search">
+{% block search_filters %}
+    {{ block.super }}
+    {% if search_domain and search_domain == DEFAULT_HOST %}
+    <input type="hidden" name="as_q" value="-site:*.{{ search_domain }}" />
+    {% endif %}
+{% endblock %}
+
+{% block search_fields %}
     <div class="input-group">
-        <input type="text" placeholder="{% trans "Search articles" %}" name="pattern" class="form-control" />
+        <input type="text" name="q" placeholder="{% trans "Search articles" %}" class="form-control" required />
         <span class="input-group-btn">
             <button type="submit" class="btn">
                 <i class="icon-search"></i>
             </button>
         </span>
     </div>
-</form>
-
-<p class="alert alert-info" style="margin-top: 1em">
-<img src="{% static "zinnia/img/help.png" %}" alt="?" class="help" width="14" height="14" />
-{% trans "You can use - to exclude words or phrases, &quot;double quotes&quot; for exact phrases and the AND/OR boolean operators combined with parenthesis for complex queries." %}
-</p>
+{% endblock %}
