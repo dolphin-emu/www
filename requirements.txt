@@ -1,5 +1,6 @@
 asgiref==3.8.1
 asn1crypto==1.5.1
+backports.zoneinfo==0.2.1; python_version < '3.9'
 bcrypt==5.0.0
 beautifulsoup4==4.15.0
 certifi==2026.7.22
