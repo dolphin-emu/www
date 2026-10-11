@@ -19,4 +19,6 @@ class UpdateTrack(models.Model):
 
     class Meta:
         unique_together = ('name', 'version')
-        index_together = ('name', 'version')
+        indexes = [
+            models.Index(fields=['name', 'version'], name='update_track_name_version_idx'),
+        ]
