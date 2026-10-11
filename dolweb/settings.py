@@ -335,9 +335,9 @@ ZINNIA_MARKDOWN_EXTENSIONS = [
     'markdown.extensions.tables',
 ]
 
-BLOG_ETHERPAD_URL = ''
-BLOG_ETHERPAD_API_KEY = ''
-BLOG_ETHERPAD_HMAC_KEY = ''
+ZINNIA_ETHERPAD_URL = ''
+ZINNIA_ETHERPAD_API_KEY = ''
+ZINNIA_ETHERPAD_HMAC_KEY = ''
 
 # Names of the automatically maintained auto-update tracks and what branch they
 # follow.
