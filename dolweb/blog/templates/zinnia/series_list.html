@@ -1,0 +1,18 @@
+{% extends "zinnia/series_list.html" %}
+{% load i18n thumbnail %}
+
+{% block "metadescr" %}{% trans "List of blog series" %}{% endblock %}
+{% block series-class %}well clearfix series{% endblock %}
+{% block series-details-class %}innerdiv{% endblock %}
+
+{% block series-image %}
+{% if series.image %}
+  {% thumbnail series.image "120x120" crop="center" format="PNG" as im %}
+  <img src="{{ im.url }}" alt="{% trans 'Series illustration' %}" class="pull-left thumbnail" width="{{ im.width }}" height="{{ im.height }}" />
+  {% endthumbnail %}
+{% endif %}
+{% endblock %}
+
+{% block series-feed %}
+<p>{% trans "RSS feed:" %} <a href="{% url 'zinnia:series_feed' pk=series.pk %}" class="rss-tag"><i class="icon-rss"></i></a></p>
+{% endblock %}

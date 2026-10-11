@@ -75,20 +75,7 @@
   <div class="entry-footer row">
     <div class="col-md-6">
     {% block entry-series %}
-    {% if object.within_series %}
-    <h4>{% trans "Blog series" %}</h4>
-    {% url 'dolweb_blog_series' uid=object.within_series.pk as series_url %}
-    <p>{% blocktrans with nth=object.series_index url=series_url series=object.within_series %}This article is number {{ nth }} within the blog series
-    <a href="{{ url }}"><em>{{ series }}</em></a>.{% endblocktrans %}
-    {% with previous=object.previous_entry_in_series next=object.next_entry_in_series %}
-    {% if previous or next %}
-      {% if previous %}<a href="{{ previous.get_absolute_url }}">{% trans "‹ Previous article in series" %}</a>{% endif %}
-      {% if previous and next %}/{% endif %}
-      {% if next %}<a href="{{ next.get_absolute_url }}">{% trans "Next article in series ›" %}</a>{% endif %}
-    </p>
-    {% endif %}
-    {% endwith %}
-    {% endif %}
+    {% include "zinnia/tags/entry_series.html" %}
     {% endblock %}
     {% block entry-comments %}
     {% endblock %}

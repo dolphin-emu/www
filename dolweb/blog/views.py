@@ -1,9 +1,7 @@
 # Copyright (c) 2018 Dolphin Emulator Website Contributors
 # SPDX-License-Identifier: MIT
 
-from annoying.decorators import render_to
 from django.conf import settings
-from django.core.paginator import Paginator, EmptyPage
 from django.db import models
 from django.dispatch import receiver
 from django.http import Http404, HttpResponse
@@ -12,20 +10,12 @@ from zinnia.models.entry import Entry
 from django.views.decorators.csrf import csrf_exempt
 from zinnia.views.mixins.entry_preview import EntryPreviewMixin
 
-from zinnia.models import BlogSeries
-
 import hashlib
 import hmac
 import json
 import requests
 import uuid
 
-
-@render_to('series-index.html')
-def series_index(request, page=None, uid=None):
-    all_series = BlogSeries.objects.filter(visible=True)
-
-    return {'all_series': all_series}
 
 # TODO(delroth): Ugly. Should really authenticate these requests, but we don't
 # have a nice SSO story at the moment.

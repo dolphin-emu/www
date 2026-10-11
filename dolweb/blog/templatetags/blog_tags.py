@@ -5,17 +5,7 @@ from django.template import Library
 register = Library()
 
 from bs4 import BeautifulSoup
-from django.conf import settings
 from django.template import defaultfilters
-from zinnia.models import BlogSeries
-
-@register.inclusion_tag('blog_chunk_series.html')
-def get_recent_blog_series(number=5):
-    """Return the most recent visible blog series"""
-    return {
-        'recent_series': BlogSeries.objects.filter(visible=True)[:number],
-    }
-
 
 @register.filter
 def cuthere_excerpt(content):

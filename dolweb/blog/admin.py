@@ -5,7 +5,6 @@ from django.conf import settings
 from django.contrib import admin
 from django.forms import Widget
 from django.template.loader import render_to_string
-from django.utils.translation import gettext_lazy as _
 
 from zinnia.models.entry import Entry
 from zinnia.admin.entry import EntryAdmin
@@ -40,10 +39,6 @@ class BlogEntryAdminForm(EntryAdminForm):
 
 class BlogEntryAdmin(EntryAdmin):
     form = BlogEntryAdminForm
-
-    fieldsets = ((_('Content'), {
-        'fields': (('title', 'status'), 'lead', 'content', 'within_series')
-    }),) + EntryAdmin.fieldsets[1:]
 
 
 admin.site.unregister(Entry)
