@@ -212,7 +212,6 @@ INSTALLED_APPS = (
     'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'django.contrib.admin',
     'django.contrib.humanize',
 
     # External
@@ -225,6 +224,7 @@ INSTALLED_APPS = (
     'mptt',
 
     # Internal
+    'dolweb.admin.DolphinAdminConfig',
     'dolweb.homepage',
     'dolweb.downloads',
     'dolweb.docs',
