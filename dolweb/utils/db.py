@@ -20,7 +20,7 @@ class WikiRouter(object):
     def allow_relation(self, o1, o2, **hints):
         return None
 
-    def allow_syncdb(self, db, model):
+    def allow_migrate(self, db, app_label, model_name=None, **hints):
         if db == 'wiki':
-            return settings.WIKI_DB_READ_ONLY
+            return not settings.WIKI_DB_READ_ONLY
         return True

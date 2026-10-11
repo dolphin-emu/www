@@ -286,15 +286,13 @@ UPDATE_MANIFEST_URL = "https://update.dolphin-emu.org/manifest/%s/%s/%s/%s.manif
 # hostname.
 DEFAULT_HOST = "dolphin-emu.org"
 
-# Should the access to the wiki database be read-only. In production, you DO
-# want this enabled since otherwise syncdb might kill the wiki database. In
-# testing, you want to disable this so that syncdb installs a schema on your
-# testing database.
+# Keep Django model migrations from creating tables in the MediaWiki database in
+# production. Set this to False only for a separate, writable local wiki database.
 WIKI_DB_READ_ONLY = True
 
 # Name of the DATABASES entry that contains Wiki tables (page, revision, ...).
 # In production, this has to be the Mediawiki database. In testing, this should
-# be the default database, which is where the tables are syncdb'd.
+# be the default database, which is where the tables are migrated.
 WIKI_DB_NAME = 'wiki'
 
 # Social media links information.
