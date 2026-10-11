@@ -8,4 +8,7 @@ from dolweb.update.models import UpdateTrack
 class UpdateTrackAdmin(admin.ModelAdmin):
     list_display = ('name', 'version')
     ordering = ('-version__date', 'name')
+    autocomplete_fields = ('version',)
+
+
 admin.site.register(UpdateTrack, UpdateTrackAdmin)

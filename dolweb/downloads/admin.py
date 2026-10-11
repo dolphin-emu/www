@@ -2,7 +2,30 @@
 # SPDX-License-Identifier: MIT
 
 from django.contrib import admin
-from dolweb.downloads.models import Artifact, BranchInfo, ReleaseVersion, DevVersion
+from dolweb.downloads.models import Artifact, BranchInfo, DownloadableVersion, ReleaseVersion, DevVersion
+
+class DownloadableVersionAdmin(admin.ModelAdmin):
+    # The shared version model supplies the update-track autocomplete only.
+    search_fields = ('^shortrev',)
+    ordering = ('-date', '-pk')
+
+    def get_model_perms(self, request):
+        return {}
+
+    def has_view_permission(self, request, obj=None):
+        return (super().has_view_permission(request, obj)
+                or request.user.has_perm('update.add_updatetrack')
+                or request.user.has_perm('update.change_updatetrack'))
+
+    def has_add_permission(self, request):
+        return False
+
+    def has_change_permission(self, request, obj=None):
+        return False
+
+    def has_delete_permission(self, request, obj=None):
+        return False
+admin.site.register(DownloadableVersion, DownloadableVersionAdmin)
 
 class BranchInfoAdmin(admin.ModelAdmin):
     list_display = ('name', 'visible')
