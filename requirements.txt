@@ -8,7 +8,7 @@ chardet==5.2.0
 cryptography==47.0.0
 Django==5.0.14
 django-annoying==0.10.8
-django-blog-zinnia @ git+https://github.com/dolphin-emu/django-blog-zinnia.git@d607ea880ad8f080f2291d153572af6f5b0c854c
+django-blog-zinnia @ git+https://github.com/dolphin-emu/django-blog-zinnia.git@4f423ffe410260c7c21abe3bf7217d5f8c7cdb16
 django-bootstrap-form==3.4
 django-contrib-comments==2.2.0
 django-debug-toolbar==4.1.0
