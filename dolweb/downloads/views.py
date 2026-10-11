@@ -90,7 +90,7 @@ def view_release(request, name):
 @cache_control(max_age=15)
 @vary_on_headers('User-Agent')
 @render_to('downloads-list.html')
-def list(request, branch, page):
+def list(request, branch, page=None):
     if page is None:
         page = 1
 
