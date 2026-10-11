@@ -2,7 +2,7 @@
 
 pkgs.mkShell {
   buildInputs = (with pkgs; [
-    python39Full
+    python312
 
     gettext
     transifex-client
@@ -16,7 +16,7 @@ pkgs.mkShell {
     zlib
     postgresql
     libffi
-  ]) ++ (with pkgs.python39Packages; [
+  ]) ++ (with pkgs.python312Packages; [
     setuptools
     virtualenv
     pip

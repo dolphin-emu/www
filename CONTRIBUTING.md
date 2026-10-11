@@ -25,7 +25,7 @@ require more involved staging.
 Running a testing instance locally
 ----------------------------------
 
-First of all, create a Python 3.6+ virtual environment and make sure you
+First of all, create a Python 3.12 virtual environment and make sure you
 are in it (``echo $VIRTUAL_ENV``). Then install all the required dependencies
 with ``pip``:
 
