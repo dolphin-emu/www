@@ -1,15 +1,14 @@
 asgiref==3.8.1
 asn1crypto==1.5.1
-backports.zoneinfo==0.2.1; python_version < '3.9'
 bcrypt==5.0.0
 beautifulsoup4==4.15.0
 certifi==2026.7.22
-cffi==1.17.1
+cffi==2.0.0
 chardet==5.2.0
 cryptography==47.0.0
 Django==4.2.30
 django-annoying==0.10.8
-django-blog-zinnia @ git+https://github.com/dolphin-emu/django-blog-zinnia.git@b3a86869c7102a9249b02464d82fa16cf39b985a
+django-blog-zinnia @ git+https://github.com/dolphin-emu/django-blog-zinnia.git@d607ea880ad8f080f2291d153572af6f5b0c854c
 django-bootstrap-form==3.4
 django-contrib-comments==2.2.0
 django-debug-toolbar==4.1.0
@@ -28,7 +27,7 @@ paramiko==3.5.1
 Pillow==10.4.0
 pip-autoremove==0.10.0
 polib==1.2.0
-psycopg2-binary==2.8.6
+psycopg2-binary==2.9.11
 pyasn1==0.6.4
 pycparser==2.23
 pymongo==4.10.1
