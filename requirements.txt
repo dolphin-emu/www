@@ -6,7 +6,7 @@ certifi==2026.7.22
 cffi==2.0.0
 chardet==5.2.0
 cryptography==47.0.0
-Django==4.2.30
+Django==5.0.14
 django-annoying==0.10.8
 django-blog-zinnia @ git+https://github.com/dolphin-emu/django-blog-zinnia.git@d607ea880ad8f080f2291d153572af6f5b0c854c
 django-bootstrap-form==3.4
