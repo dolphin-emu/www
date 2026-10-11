@@ -19,8 +19,8 @@ def render_to_html(content):
         # TODO: Remove when Zinnia supports non-string Markdown exts.
         import markdown
         from zinnia.settings import MARKDOWN_EXTENSIONS
-        from django.utils.encoding import force_text
-        return markdown.markdown(force_text(content),
+        from django.utils.encoding import force_str
+        return markdown.markdown(force_str(content),
                                  extensions=MARKDOWN_EXTENSIONS,
                                  safe_mode=False)
     elif MARKUP_LANGUAGE == 'textile':
