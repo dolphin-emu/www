@@ -4,7 +4,7 @@
 from django.conf import settings
 from django.http import HttpResponseRedirect
 from django.utils.translation.trans_real import parse_accept_lang_header
-from dolweb.utils.monkey import TO_FULL_INVERTED
+from dolweb.utils.locale import TO_FULL_INVERTED
 
 import datetime
 

@@ -3,7 +3,7 @@
 
 from django import template
 from django.conf import settings
-from dolweb.utils.monkey import TO_FULL
+from dolweb.utils.locale import TO_FULL
 
 register = template.Library()
 

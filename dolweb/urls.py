@@ -10,9 +10,6 @@ from django.urls import include, re_path
 from django.views.generic.base import RedirectView, TemplateView
 from dolweb.homepage.views import home
 
-# Monkey patching ftw...
-import dolweb.utils.monkey
-
 admin.autodiscover()
 
 urlpatterns = [

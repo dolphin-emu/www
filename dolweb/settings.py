@@ -177,7 +177,7 @@ MIDDLEWARE = (
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'django.middleware.locale.LocaleMiddleware',
+    'dolweb.utils.locale.HostLocaleMiddleware',
     'dolweb.utils.country_redirect.CountryRedirectMiddleware',
     # Uncomment the next line for simple clickjacking protection:
 )
