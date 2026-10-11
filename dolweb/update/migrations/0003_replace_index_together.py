@@ -3,7 +3,7 @@
 from django.db import migrations, models
 
 
-def rename_legacy_index(apps, schema_editor):
+def ensure_named_index(apps, schema_editor):
     model = apps.get_model('update', 'UpdateTrack')
     fields = ('name', 'version')
     columns = [model._meta.get_field(field).column for field in fields]
@@ -15,6 +15,12 @@ def rename_legacy_index(apps, schema_editor):
         if constraint['index'] and not constraint['unique']
         and constraint['columns'] == columns
     ]
+    index = models.Index(fields=fields, name='update_track_name_version_idx')
+    if not names:
+        # Some existing databases have only the unique_together constraint.
+        # Create the separate index declared by the new model state.
+        schema_editor.add_index(model, index)
+        return
     if len(names) != 1:
         raise ValueError(
             'Expected one non-unique index on %s(%s); found %s'
@@ -23,7 +29,7 @@ def rename_legacy_index(apps, schema_editor):
         schema_editor.rename_index(
             model,
             models.Index(fields=fields, name=names[0]),
-            models.Index(fields=fields, name='update_track_name_version_idx'))
+            index)
 
 
 class Migration(migrations.Migration):
@@ -36,7 +42,7 @@ class Migration(migrations.Migration):
         migrations.SeparateDatabaseAndState(
             database_operations=[
                 migrations.RunPython(
-                    rename_legacy_index,
+                    ensure_named_index,
                     # The index still covers the same columns when rolled back.
                     # Retain its name, as Django's unnamed RenameIndex does.
                     migrations.RunPython.noop,
