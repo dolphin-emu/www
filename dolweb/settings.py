@@ -322,6 +322,7 @@ TRANSIFEX_FAQ_RESOURCE = ''
 # Blog settings
 HOMEPAGE_ARTICLES = 3
 FORUM_URL_FOR_THREAD = 'https://forums.dolphin-emu.org/showthread.php?tid={id}'
+FORCE_LOWERCASE_TAGS = True
 ZINNIA_FEEDS_FORMAT = 'atom'
 ZINNIA_FEEDS_MAX_ITEMS = 20
 ZINNIA_PROTOCOL = 'https'
