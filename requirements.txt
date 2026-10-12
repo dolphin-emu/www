@@ -6,7 +6,7 @@ cffi==2.0.0
 cryptography==47.0.0
 Django==5.2.18
 django-annoying==0.10.8
-django-blog-zinnia @ git+https://github.com/dolphin-emu/django-blog-zinnia.git@8933113fd4e2ccaf0654436884b06d997e07933a
+django-blog-zinnia @ git+https://github.com/dolphin-emu/django-blog-zinnia.git@64b33b20360becf8509a413654f963e1769d9b37
 django-bootstrap-form==3.4
 django-debug-toolbar==4.1.0
 django-js-asset==2.0.0
