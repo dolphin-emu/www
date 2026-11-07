@@ -17,6 +17,7 @@ CATEGORIES = {
     'WiiWare_games': 'wiiware',
     'Wii_Channels': 'channel',
     'Virtual_Console_games': 'virtual-console',
+    'Triforce_games': 'triforce',
 }
 
 @cache_page(60 * 5)

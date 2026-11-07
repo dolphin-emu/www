@@ -9,9 +9,9 @@
 {% load thumbnail %}
 {% load zinnia %}
 
-{% block "metadescr" %}{% blocktrans with ver=last_master.shortrev %}Official website of Dolphin, the GameCube and Wii emulator. Download the latest version ({{ ver }}) now or ask questions on our forums for help.{% endblocktrans %}{% endblock %}
+{% block "metadescr" %}{% blocktrans with ver=last_master.shortrev %}Official website of Dolphin: the GameCube, Wii, and Triforce emulator. Download the latest version ({{ ver }}) now or ask questions on our forums for help.{% endblocktrans %}{% endblock %}
 
-{% block "title" %}{% trans "GameCube/Wii games on PC" %}{% endblock %}
+{% block "title" %}{% trans "GameCube/Wii/Triforce emulator" %}{% endblock %}
 
 {% block "bodystart" %}
     {% if FB_LIKE_PAGE %}
@@ -37,10 +37,11 @@
             <h1 class="title">{% trans "Dolphin Emulator" %}</h1>
             <p class="intro">
             {% blocktrans %}
-            <b>Dolphin</b> is an emulator for two recent Nintendo video game
-            consoles: the <b>GameCube</b> and the <b>Wii</b>. It allows PC
-            gamers to enjoy games for these two consoles in <b>full HD</b>
-            (1080p) with several enhancements: compatibility with all PC
+            <b>Dolphin</b> is an emulator for two Nintendo video game
+            consoles and a Sega arcade system: the <b>GameCube</b>,
+            the <b>Wii</b>, and the <b>Triforce</b>. It allows gamers
+            to enjoy games for these three platforms with several
+            enhancements: higher resolutions, compatibility with most
             controllers, turbo speed, networked multiplayer, and even more!
             {% endblocktrans %}
             </p>
