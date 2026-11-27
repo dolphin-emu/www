@@ -11,7 +11,7 @@ from dolweb.update.models import UpdateTrack
 # artifact instead.
 _UPDATE_SYSTEM_TO_ARTIFACT_NAME = {
     'win': 'Windows x64',
-    'win-arm64': 'Windows ARM64',
+    'win-arm64': 'Windows arm64',
     'macos': 'macOS (Intel)',
     'macos-universal': 'macOS (ARM/Intel Universal)',
 }
